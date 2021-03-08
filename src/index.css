@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar{
+  background-image: url("./images/blueBanner.png");
+  background-repeat: no-repeat;  
+  background-size: 100% 100%;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5% ;
+  color: rgb(255, 208, 2);
+}
