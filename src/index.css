@@ -17,7 +17,8 @@ code {
   background-repeat: no-repeat;  
   background-size: 100% 100%;
   width: 100%;
-  padding-left: 5%;
-  padding-right: 5% ;
+  padding-left: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   color: rgb(255, 208, 2);
 }
