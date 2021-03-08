@@ -7,6 +7,7 @@ import {fetchPosts} from './actions/fetchPosts'
 
 //components
 import Home from './components/home'
+import NavBar from './components/nav'
 
 
 
@@ -25,8 +26,9 @@ class App extends React.Component{
   render(){
     return (
       <div className="App">
+        <NavBar />
         <Switch>
-        <Route exact path ="/" render={()=> <Home />}/>
+        <Route exact path ="/" render={()=> <Home posts={this.props.posts} />}/>
         </Switch>
       </div>
     );

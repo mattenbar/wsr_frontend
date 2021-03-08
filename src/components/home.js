@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-// import {connect} from 'react-redux'
+import {connect} from 'react-redux'
 // import {Link} from "react-router-dom"
 
 class Home extends Component {
@@ -12,4 +12,11 @@ class Home extends Component {
   }
 }
 
-export default Home
+function mSTP(state){
+  return {
+    posts: state.posts,
+    
+  }
+}
+
+export default connect(mSTP)(Home)
