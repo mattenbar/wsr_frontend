@@ -7,7 +7,7 @@ import {fetchPosts} from './actions/fetchPosts'
 
 //components
 import Home from './components/home'
-import NavBar from './components/nav'
+import NavBar from './components/navbar/nav'
 
 
 

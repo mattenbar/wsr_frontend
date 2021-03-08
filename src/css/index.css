@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* padding: 2em; */
+}
+
+.navbar {
+    background-image: url("../images/blueBanner.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: rgb(255, 208, 2);
+}
+
+.nav-header {
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.75em;
+    text-transform: uppercase;
+}
+
+.nav-header h1 {
+    /* margin-right: 2em; */
+    margin-top: -0.2em;
+    margin-bottom: -0.2em;
+    padding-left: 0.5em;
+    letter-spacing: 0.05em;
+}
+
+.auth-buttons {
+    float: right;
+    margin-top: -5%;
+    padding: 2em;
+}
+
+.auth-buttons__yellow {
+    margin: 0.5em;
+    padding: 0.5em;
+    width: 100px;
+    color: rgb(255, 208, 2);
+    background-color: Transparent;
+    border: none;
+    font-size: 1.15em;
+    text-transform: uppercase;
+}
+
+.divider {
+    font-size: 2em;
+}
