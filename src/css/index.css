@@ -15,6 +15,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* padding: 2em; */
+    font-family: europaRegular ;
 }
 
 /* -----------------------------------NAVBAR---------------------------------------------- */
@@ -153,7 +154,7 @@ body {
 
 /* -----------------------------------START HOME---------------------------------------------- */
 
-/* -----------------------------------START HOME/ LINKS BAR---------------------------------------------- */
+/* -----------------------------------START HOME/ LINKS BAR----------------------------------- */
 
 .linksBar {
     padding: 2%;
@@ -170,6 +171,13 @@ body {
 .linksBar a:hover{
     text-decoration: underline;
 }
-/* -----------------------------------END HOME/ LINKS BAR---------------------------------------------- */
+/* -----------------------------------END HOME/ LINKS BAR----------------------------------- */
 
 /* -----------------------------------END HOME---------------------------------------------- */
+
+
+@font-face {
+    font-family: europaRegular;
+    src: url("../fonts/EuropaRegular.ttf") format('truetype');
+  }
+  
