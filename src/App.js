@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import {fetchPosts} from './actions/fetchPosts'
 
 //components
-import Home from './components/home'
+import Home from './components/home/home'
 import NavBar from './components/navbar/nav'
 
 
