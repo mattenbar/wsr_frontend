@@ -49,7 +49,7 @@ body {
     /* float: left; */
     display: table-cell;
     vertical-align: middle;
-    padding: 2em 1rem;
+    padding: 1em 1rem;
     color: rgb(255, 208, 2);
     overflow: hidden;
 }
@@ -95,6 +95,32 @@ body {
     font-size: 1.15em;
 }
 
+/* -----------------------------------search bar---------------------------------------------- */
+
+.header-search-bar {
+    padding-bottom: 3em;
+    margin-top: -5em;
+}
+
+.searchbar button {
+    width: 7em;
+    height: 50px;
+    border: none;
+    border: solid 3px rgb(255, 208, 2);
+    border-radius: 5px;
+    background: Transparent;
+    font-size: 25px;
+    /* background-color: Transparent;
+    border: 1px rgb(255, 208, 2); */
+    color: rgb(255, 208, 2);
+    margin-left: 0.5em;
+}
+
+.search-icon {
+    width: 15%;
+    float: left;
+    margin-left: 0.5em;
+}
 /* -----------------------------------social media buttons---------------------------------------------- */
 .social-media-buttons {
     /* display: flex;
