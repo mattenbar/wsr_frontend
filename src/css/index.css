@@ -17,6 +17,7 @@ body {
     /* padding: 2em; */
 }
 
+/* -----------------------------------NAVBAR---------------------------------------------- */
 .navbar {
     background-image: url("../images/blueBanner.png");
     background-repeat: no-repeat;
@@ -31,7 +32,7 @@ body {
 .nav-header {
     /* font-family: "Roboto", sans-serif; */
     font-family: "Open Sans", sans-serif;
-    font-size: 1.75em;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
@@ -59,7 +60,93 @@ body {
     font-size: 1.15em;
     text-transform: uppercase;
 }
+.auth-buttons__yellow a {
+    text-decoration: none;
+    color: rgb(255, 208, 2);
+}
 
 .divider {
     font-size: 2em;
 }
+
+/* -----------------------------------POP UP---------------------------------------------- */
+
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.popup__content {
+    width: 50%;
+    height: 40rem;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: black;
+    border-radius: 3px;
+    display: table;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.4s 0.2s;
+}
+
+.popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__close:link,
+.popup__close:visited {
+    color: #013b5a;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 2.5em;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+    line-height: 1;
+}
+
+.popup__close:hover {
+    color: #3d99ca;
+    font-size: 3em;
+    transition: all 0.3s;
+    text-shadow: 2px 2px 4px grey;
+}
+
+.popup__left {
+    height: 100%;
+    width: 33.33%;
+    background-color: #013b5a;
+    /* float: left; */
+    display: table-cell;
+}
+
+.popup__right {
+    width: 66.66%;
+    /* float: right; */
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2em 4rem;
+}
+
+/* -----------------------------------END POP UP---------------------------------------------- */
+
+/* -----------------------------------END NAVBAR---------------------------------------------- */

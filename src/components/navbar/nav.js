@@ -1,5 +1,6 @@
 import React from "react";
 import AuthButtons from './authButtons';
+import PopUp from './popUp'
 
 const NavBar = (props) => {
     return (
@@ -12,6 +13,7 @@ const NavBar = (props) => {
             <div className="header-login-signup">
                 <AuthButtons/>
             </div>
+            <PopUp />
         </div>
     );
 };
