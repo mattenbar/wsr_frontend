@@ -5,7 +5,7 @@ function authButtons(props) {
         <div className="auth-buttons">
             <button className="auth-buttons__yellow" ><a href="#popup">Sign Up</a></button>
             <span className="divider">|</span>
-            <button className="auth-buttons__yellow"><a href="#popup">Sign In</a></button>
+            <button className="auth-buttons__yellow"><a href="#popup2">Sign In</a></button>
         </div>
     );
 }
