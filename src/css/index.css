@@ -15,19 +15,43 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* padding: 2em; */
-    font-family: europaRegular ;
+    font-family: europaRegular;
 }
 
 /* -----------------------------------NAVBAR---------------------------------------------- */
+
 .navbar {
-    background-image: url("../images/blueBanner.png");
+    /* background-image: url("../images/blueBanner.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
+
     width: 100%;
-    padding-left: 3%;
+    display: table;
+    /* padding-left: 3%;
     padding-top: 1%;
-    padding-bottom: 1%;
+    padding-bottom: 1%; */
+}
+
+.nav-left {
+    width: 5%;
+    background-color: rgb(255, 208, 2);
+    /* float: left; */
+    display: table-cell;
+}
+
+.nav-right {
+    width: 95%;
+    background: linear-gradient(
+        90deg,
+        rgba(40, 115, 172, 1) 0%,
+        rgba(0, 59, 91, 1) 59%
+    );
+    /* float: left; */
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2em 1rem;
     color: rgb(255, 208, 2);
+    overflow: hidden;
 }
 
 .nav-header {
@@ -45,20 +69,21 @@ body {
     letter-spacing: 0.05em;
 }
 
-.auth-buttons {
+.header-right {
     float: right;
     margin-top: -5%;
-    padding: 2em;
+    /* padding: 2em; */
+    margin-right: -19em;
 }
 
 .auth-buttons__yellow {
-    margin: 0.5em;
-    padding: 0.5em;
+    /* margin: 0.5em; */
+    /* padding: 0.5em; */
     width: 100px;
     color: rgb(255, 208, 2);
     background-color: Transparent;
     border: none;
-    font-size: 1.15em;
+    font-size: 1em;
     text-transform: uppercase;
 }
 .auth-buttons__yellow a {
@@ -67,8 +92,21 @@ body {
 }
 
 .divider {
-    font-size: 2em;
+    font-size: 1.15em;
 }
+
+/* -----------------------------------social media buttons---------------------------------------------- */
+.social-media-buttons {
+    /* display: flex;
+    justify-content: space-between; */
+    /* margin-right: 20em; */
+}
+.smb-yellow {
+    width: 12%;
+    padding: 0 1em;
+}
+
+/* -----------------------------------END social media buttons---------------------------------------------- */
 
 /* -----------------------------------POP UP---------------------------------------------- */
 
@@ -161,23 +199,20 @@ body {
     text-align: justify;
 }
 
-.linksBar a{
-    color:black;
+.linksBar a {
+    color: black;
     text-decoration: none;
     padding-right: 2%;
-    
 }
 
-.linksBar a:hover{
+.linksBar a:hover {
     text-decoration: underline;
 }
 /* -----------------------------------END HOME/ LINKS BAR----------------------------------- */
 
 /* -----------------------------------END HOME---------------------------------------------- */
 
-
 @font-face {
     font-family: europaRegular;
-    src: url("../fonts/EuropaRegular.ttf") format('truetype');
-  }
-  
+    src: url("../fonts/EuropaRegular.ttf") format("truetype");
+}
