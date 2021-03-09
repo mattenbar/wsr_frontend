@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 class LinksBar extends Component {
   render(){
     return(
-      <div>
+      <div className="linksBar">
         <a href="">POINT-COUNTERPOINT</a> &nbsp;
         <a href="">CAPITAL CONNECTIONS</a>&nbsp;
         <a href="">DIGITAL DOMAIN</a>&nbsp;

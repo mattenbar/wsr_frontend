@@ -15,6 +15,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* padding: 2em; */
+    font-family: europaRegular ;
 }
 
 /* -----------------------------------NAVBAR---------------------------------------------- */
@@ -150,3 +151,33 @@ body {
 /* -----------------------------------END POP UP---------------------------------------------- */
 
 /* -----------------------------------END NAVBAR---------------------------------------------- */
+
+/* -----------------------------------START HOME---------------------------------------------- */
+
+/* -----------------------------------START HOME/ LINKS BAR----------------------------------- */
+
+.linksBar {
+    padding: 2%;
+    text-align: justify;
+}
+
+.linksBar a{
+    color:black;
+    text-decoration: none;
+    padding-right: 2%;
+    
+}
+
+.linksBar a:hover{
+    text-decoration: underline;
+}
+/* -----------------------------------END HOME/ LINKS BAR----------------------------------- */
+
+/* -----------------------------------END HOME---------------------------------------------- */
+
+
+@font-face {
+    font-family: europaRegular;
+    src: url("../fonts/EuropaRegular.ttf") format('truetype');
+  }
+  
