@@ -51,7 +51,7 @@ function SignupForm(props) {
             [user["company_name"]]: data.company_name
 
         })
-        debugger
+        // debugger
         // props.handleLogin(user)
         
     }
