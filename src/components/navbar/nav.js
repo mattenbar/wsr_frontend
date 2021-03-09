@@ -1,8 +1,10 @@
 import React from "react";
 import AuthButtons from './authButtons';
-import PopUp from './popUp'
+import PopUpSignUp from './popUpSignUp'
+import PopUpSignIn from './popUpSignIn'
 
 const NavBar = (props) => {
+    // console.log("navbar", props)
     return (
         <div className="navbar">
             <div className="nav-header">
@@ -13,7 +15,8 @@ const NavBar = (props) => {
             <div className="header-login-signup">
                 <AuthButtons/>
             </div>
-            <PopUp />
+            <PopUpSignUp handleSignIn={props.handleSignIn} />
+            <PopUpSignIn />
         </div>
     );
 };
