@@ -3,6 +3,7 @@ import AuthButtons from './authButtons';
 import PopUpSignUp from './popUpSignUp';
 import PopUpSignIn from './popUpSignIn';
 import SocialMediaButtons from './socialMediaButtons';
+import SearchBar from './searchBar';
 
 const NavBar = (props) => {
     // console.log("navbar", props)
@@ -17,6 +18,9 @@ const NavBar = (props) => {
                         <h1>Report</h1>
                     </div>
                     <div className="header-right">
+                        <div className="header-search-bar">
+                            <SearchBar />   
+                        </div>
                         <div className="media-buttons">
                             <SocialMediaButtons />
                         </div>
