@@ -10,7 +10,13 @@ function SignupForm(props) {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
-    const [user, setUser] = useState({})
+    const [user, setUser] = useState({
+        id: '',
+        first_name: '',
+        last_name: '',
+        email: '',
+        company_name: ''
+    })
 
     const handleFirstNameChange = (e) => {
         setFirstNameChange(e.target.value)
@@ -32,11 +38,20 @@ function SignupForm(props) {
         setPassword(e.target.value)
     }
 
-    const handleLogin = () => {
-        debugger
+    const handleLogin = (data) => {
+        
         // console.log("user", user)
         // console.log("props", props)
-        // setUser(user)
+        setUser({
+            ...user,
+            [user["id"]]: data.id,
+            [user["first_name"]]: data.first_name,
+            [user["last_name"]]: data.last_name,
+            [user["email"]]: data.email,
+            [user["company_name"]]: data.company_name
+
+        })
+        debugger
         // props.handleLogin(user)
         
     }
@@ -64,8 +79,9 @@ function SignupForm(props) {
             // debugger
             if (data.jwt) {
                 localStorage.setItem("token", data.jwt)
-                debugger
+                
                 props.handleLogin ? props.handleLogin(data.user) : handleLogin(data.user)
+                debugger
                 alert("Your User Has Been Saved")
             } else {
                 alert(data.errors.map( error => error))
@@ -83,6 +99,7 @@ function SignupForm(props) {
 
 
     return (
+        console.log(user),
         <div className="signup-form">
             <form className="form" onSubmit={handleSubmit}>
                 <div className="field">

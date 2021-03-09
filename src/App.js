@@ -23,10 +23,10 @@ class App extends React.Component{
     this.props.dispatchFetchPosts()
   }
 
-  handleSignIn = (data) => {
+  handleSignIn = (user) => {
     debugger
     this.setState({
-      // user: data.user
+      user: user
     })
   }
 
