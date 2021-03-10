@@ -9,6 +9,7 @@ import {fetchPosts} from './actions/fetchPosts'
 import Home from './components/home/home'
 import NavBar from './components/navbar/nav'
 import Footer from './components/footer/footer'
+import Ads from './components/ads/ads'
 
 
 class App extends React.Component{
@@ -38,6 +39,7 @@ class App extends React.Component{
         <Switch >
         <Route exact path ="/" render={()=> <Home posts={this.props.posts} />}/>
         </Switch>
+        <Ads />
         <Footer />
       </div>
     );
