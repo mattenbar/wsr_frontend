@@ -20,7 +20,7 @@ class LinksBar extends Component {
         <a href="">NOTEWORTHY NOTES</a>&nbsp;
         <a href="">NEWSMAKERS ROUNDUP</a>&nbsp;
         <a href="">TRANSACTIONS AND TRANSITIONS</a>&nbsp;
-        <a href="">FROM OUT PARTNERS</a>
+        <a href="">FROM OUR PARTNERS</a>
       </div>
     )
   }
