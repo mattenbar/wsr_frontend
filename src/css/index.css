@@ -85,10 +85,18 @@ body {
     border: none;
     font-size: 1em;
     text-transform: uppercase;
+    transition: all 0.5s ease;
 }
 .auth-buttons__yellow a {
     text-decoration: none;
     color: rgb(255, 208, 2);
+}
+
+.auth-buttons__yellow:hover,
+.auth-buttons__yellow:active {
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 4px grey;
 }
 
 .divider {
@@ -130,6 +138,14 @@ body {
 .smb-yellow {
     width: 12%;
     padding: 0 1em;
+    transition: all 0.5s ease;
+}
+
+.smb-yellow:hover,
+.smb-yellow:active {
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 4px grey;
 }
 
 /* -----------------------------------END social media buttons---------------------------------------------- */
@@ -199,7 +215,12 @@ body {
 .popup__left {
     height: 100%;
     width: 33.33%;
-    background-color: #013b5a;
+    /* background-color: #013b5a; */
+    background: linear-gradient(
+        90deg,
+        rgba(40, 115, 172, 1) 0%,
+        rgba(0, 59, 91, 1) 95%
+    );
     /* float: left; */
     display: table-cell;
 }
@@ -317,7 +338,7 @@ body {
 }
 
 .footer-social-media-links {
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     position: relative;
 }
 
@@ -334,6 +355,14 @@ body {
 .smb-black {
     width: 20%;
     padding: 0 1em;
+    transition: all 0.5s ease;
+}
+
+.smb-black:hover,
+.smb-black:active {
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 4px grey;
 }
 
 @media screen and (min-width: 700px) {
