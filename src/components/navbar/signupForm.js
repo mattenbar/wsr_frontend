@@ -81,8 +81,8 @@ function SignupForm(props) {
                 localStorage.setItem("token", data.jwt)
                 
                 props.handleLogin ? props.handleLogin(data.user) : handleLogin(data.user)
-                debugger
-                alert("Your User Has Been Saved")
+                // debugger
+                alert("Successfully Signed Up")
             } else {
                 alert(data.errors.map( error => error))
             }
@@ -116,7 +116,7 @@ function SignupForm(props) {
                 </div>
                 <div className="field">
                     <label>Email</label>
-                    <input type="text" onChange={handleEmailChange} value={email} />
+                    <input type="email" onChange={handleEmailChange} value={email} />
                 </div>
                 <div className="field">
                     <label>Password</label>

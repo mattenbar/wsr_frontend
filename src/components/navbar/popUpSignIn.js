@@ -11,7 +11,7 @@ function popUpSignIn(props) {
                 <div className="popup__right" >
                     <a href="#" className="popup__close">&times;</a>
                     <h1 className="heading-secondary" >Sign In</h1>
-                    <h3 className="heading-tertiary">This should be a Sign Up Link</h3>
+                    <h3 className="heading-tertiary">Log In To Your Account</h3>
                     <SigninForm />
                 </div>
             </div>
