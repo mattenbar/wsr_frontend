@@ -223,12 +223,14 @@ body {
 .linksBar {
     padding: 2%;
     text-align: justify;
+    font-size: 0.75em;
 }
 
 .linksBar a {
     color: black;
     text-decoration: none;
     padding-right: 2%;
+    text-align: justify;
 }
 
 .linksBar a:hover {
@@ -245,6 +247,41 @@ body {
 
 /* -----------------------------------FOOTER---------------------------------------------- */
 
+.footer-main {
+    margin: 0 auto;
+    border: none;
+    border-top: solid 3px black;
+    height: 15vh;
+    width: 90%;
+    position: absolute;
+    bottom: 3em;
+    left: 5%;
+}
+
+.footer-links {
+    /* background-color: blueviolet; */
+}
+
+.footer-social-media-links {
+    background-color: cornflowerblue;
+    position: relative;
+}
+
+.second-row-social-media {
+    margin-top: 2em;
+    /* background: yellow; */
+    position: absolute;
+    top: 50%;
+    left: 55%;
+
+    transform: translate(-50%, -50%);
+}
+
+.smb-black {
+    width: 20%;
+    padding: 0 1em;
+}
+
 @media screen and (min-width: 700px) {
     .footer-sections {
         display: flex;
@@ -252,21 +289,11 @@ body {
 }
 
 .footer {
-    height: 20vh;
-    width: 90%;
-    /* background-color: antiquewhite; */
-    margin: 0% auto;
-    border: none;
-    border-top: solid 3px black;
-    position: absolute;
-    bottom: 4em;
-    left: 5%;
     grid-column: full-start / full-end;
-    padding: 1rem;
+    /* padding: 1rem; */
     flex: 6;
     color: black;
 }
-/* ------------------------------------------- */
 
 .nav {
     list-style: none;
@@ -280,7 +307,7 @@ body {
 .nav__link:visited {
     /* margin-top: 4rem; */
     margin-right: 2rem;
-    margin-top: 3.25em;
+    margin-top: 1em;
     font-size: 1.4rem;
     color: black;
     text-decoration: none;
@@ -295,21 +322,6 @@ body {
     transform: translateY(-3px);
     transition: all 0.5s ease;
     border-radius: 0.25em;
-}
-
-.second-row-social-media {
-    display: grid;
-}
-
-.copyright {
-    font-size: 1rem;
-    color: lightgray;
-    margin-top: 1rem;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 2em;
-    text-align: center;
-    width: 70%;
 }
 
 .social-media-logo {
