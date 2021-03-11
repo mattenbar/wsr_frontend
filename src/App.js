@@ -10,6 +10,7 @@ import Home from './components/home/home'
 import NavBar from './components/navbar/nav'
 import Footer from './components/footer/footer'
 import Ads from './components/ads/ads'
+import ContactUs from './components/contact us/contact'
 
 
 class App extends React.Component{
@@ -39,6 +40,7 @@ class App extends React.Component{
         <NavBar handleSignIn={this.handleSignIn} />
         <Switch >
           <Route exact path ="/" render={()=> <Home posts={this.props.posts} />}/>
+          <Route exact path ="/contact-us" render={()=> <ContactUs />}/>
         </Switch>
         <Ads />
         <Footer />
