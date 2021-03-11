@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { API_URL } from '../../apiConstants';
+import history from '../../history';
 
 
 function SigninForm(props) {
-
+    console.log("signinform", props)
+    
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
@@ -38,8 +40,9 @@ function SigninForm(props) {
             localStorage.setItem("token", data.jwt)
             alert(data.success)
             // props.handleLogIn(data.user)
-            debugger
+            // debugger
         })
+        history.back('/');
         setEmail('')
         setPassword('')
     }

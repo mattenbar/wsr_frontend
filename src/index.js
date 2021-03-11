@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import history from "./history";
 
 import './css/index.css';
 import App from './App';
@@ -18,7 +19,7 @@ const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)))
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
+    <Router history={history}>
       <App />
     </Router>
   </Provider>,

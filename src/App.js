@@ -13,7 +13,7 @@ import Ads from './components/ads/ads'
 
 
 class App extends React.Component{
-
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -33,11 +33,12 @@ class App extends React.Component{
   }
 
   render(){
+    console.log("app", this.props)
     return (
       <div className="App">
         <NavBar handleSignIn={this.handleSignIn} />
         <Switch >
-        <Route exact path ="/" render={()=> <Home posts={this.props.posts} />}/>
+          <Route exact path ="/" render={()=> <Home posts={this.props.posts} />}/>
         </Switch>
         <Ads />
         <Footer />

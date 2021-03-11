@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { API_URL } from '../../apiConstants';
-
+import history from '../../history';
 
 function SignupForm(props) {
     // dconsole.log(props)
@@ -90,6 +90,7 @@ function SignupForm(props) {
         .catch(() => {
             alert("Unable to SignUp At This Time")
         })
+        history.back('/');
         setFirstNameChange('')
         setLastNameChange('')
         setCompany('')

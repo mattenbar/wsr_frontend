@@ -292,7 +292,7 @@ body {
     width: 45%;
     height: 200px;
     margin: 1em;
-    background-color: yellow;
+    /* background-color: yellow; */
     object-fit: cover;
 }
 
