@@ -282,7 +282,7 @@ body {
     width: 90%;
     /* height: 30vh; */
     /* margin-top: -0.25em; */
-    margin-left: 7%;
+    margin-left: 6.25%;
     margin-bottom: 0.5em;
     /* margin-left: 8em; */
     display: inline-block;
@@ -292,7 +292,7 @@ body {
     width: 45%;
     height: 200px;
     margin: 1em;
-    background-color: yellow;
+    /* background-color: yellow; */
     object-fit: cover;
 }
 
@@ -318,7 +318,7 @@ body {
     float: right;
 } */
 
-/* -----------------------------------END SPACE---------------------------------------------- */
+/* -----------------------------------END AD SPACE---------------------------------------------- */
 
 /* -----------------------------------FOOTER---------------------------------------------- */
 
