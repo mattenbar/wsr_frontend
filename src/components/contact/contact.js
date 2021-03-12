@@ -1,6 +1,6 @@
 import React from 'react'
 
-function footer(props) {
+function contact(props) {
   return (
       <div className="contact_us">
           <h1>CONTACT US</h1>
@@ -19,4 +19,4 @@ function footer(props) {
   );
 }
 
-export default footer;
+export default contact;
