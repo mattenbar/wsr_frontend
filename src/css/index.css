@@ -396,6 +396,12 @@ body {
     justify-content: space-between;
 }
 
+.nm-cards {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+}
+
 .nm-carousel,
 .transactions-carousel {
     width: 48%;
