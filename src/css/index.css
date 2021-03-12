@@ -516,13 +516,11 @@ body {
 }
 
 .blackLine {
-    border-bottom: 0.5px black;
+    border-bottom: solid 2px black;
     display: block;
-    margin-left: 10%;
-    margin-right: 10%;
     color: black;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5%;
+    width: 90%;
 }
 
 /* -----------------------------------END Contact Us---------------------------------------------- */
