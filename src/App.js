@@ -6,6 +6,7 @@ import { connect } from 'react-redux'
 import {fetchPosts} from './actions/fetchPosts'
 
 //components
+
 import Home from './components/home/home';
 import NavBar from './components/navbar/nav';
 import Footer from './components/footer/footer';
@@ -15,6 +16,7 @@ import AboutUs from './components/about/aboutUs';
 import Partners from './components/partners/partners';
 import Board from './components/board/board';
 import Archives from './components/archives/archives';
+
 
 
 class App extends React.Component{
