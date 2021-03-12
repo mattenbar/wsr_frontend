@@ -10,7 +10,7 @@ import Home from './components/home/home'
 import NavBar from './components/navbar/nav'
 import Footer from './components/footer/footer'
 import Ads from './components/ads/ads'
-import ContactUs from './components/contact us/contact'
+import ContactUs from './components/contact/contact'
 import Board from './components/our board/board'
 
 
