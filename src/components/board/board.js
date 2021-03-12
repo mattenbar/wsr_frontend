@@ -10,6 +10,8 @@ import MarryOsaka from './marryOsaka'
 import ChrisPaulitz from './chrisPaulitz'
 import JimRoth from './jimRoth'
 import SusanThedar from './susanThedar'
+import CathyWeathorford from './cathyWeatherford'
+import SidYenamandra from './sidYenamandra'
 
 class Board extends Component{
   render(){
@@ -25,6 +27,8 @@ class Board extends Component{
         <ChrisPaulitz />
         <JimRoth />
         <SusanThedar />
+        <CathyWeathorford />
+        <SidYenamandra />
       </div>
     )
   }
