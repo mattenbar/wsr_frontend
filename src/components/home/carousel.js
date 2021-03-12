@@ -43,7 +43,7 @@ function carousel(props) {
                     <a href="#" >
                         <img src="carouselImages/digitalDomain.png" class="model" />
                         {/* header */}
-                        <h2>CAPITAL CONNECTIONS</h2>
+                        <h2>DIGITAL DOMAINS</h2>
                     </a>
                 </div>
             </div>
@@ -53,7 +53,7 @@ function carousel(props) {
                     <a href="#" >
                         <img src="carouselImages/shoutOuts.png" class="model" />
                         {/* header */}
-                        <h2>CAPITAL CONNECTIONS</h2>
+                        <h2>SHOUT-OUTS & PUTDOWNS </h2>
                     </a>
                 </div>
             </div>
