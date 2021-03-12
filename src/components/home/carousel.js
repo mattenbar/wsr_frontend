@@ -16,89 +16,92 @@ function carousel(props) {
         cssEase: "linear"
     }
     return (
-        <Slider {...settings} >
-            <div className="carousel-wrapper" >
-                <div className="box">
-                    <a href="#" >
+        <div className="carousel-top" >
+            <Slider {...settings} >
+            
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        <a href="#" >
+                            {/* model */}
+                            <img src="carouselImages/pointCounterpoint.png" class="model" />
+                            {/* header */}
+                            <h2>POINT-COUNTERPOINT</h2>
+                        </a>
+                    </div>
+                </div>
+                <div className="carousel-wrapper" >
+                    <div className="box">
                         {/* model */}
-                        <img src="carouselImages/pointCounterpoint.png" class="model" />
-                        {/* header */}
-                        <h2>POINT-COUNTERPOINT</h2>
-                    </a>
+                        <a href="#" >
+                            <img src="carouselImages/capitalConnections.png" class="model" />
+                            {/* header */}
+                            <h2>CAPITAL CONNECTIONS</h2>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div className="carousel-wrapper" >
-                <div className="box">
-                    {/* model */}
-                    <a href="#" >
-                        <img src="carouselImages/capitalConnections.png" class="model" />
-                        {/* header */}
-                        <h2>CAPITAL CONNECTIONS</h2>
-                    </a>
-                </div>
-            </div>
-            <div className="carousel-wrapper" >
-                <div className="box">
-                    {/* model */}
-                    <a href="#" >
-                        <img src="carouselImages/digitalDomain.png" class="model" />
-                        {/* header */}
-                        <h2>CAPITAL CONNECTIONS</h2>
-                    </a>
-                </div>
-            </div>
-            <div className="carousel-wrapper" >
-                <div className="box">
-                    {/* model */}
-                    <a href="#" >
-                        <img src="carouselImages/shoutOuts.png" class="model" />
-                        {/* header */}
-                        <h2>CAPITAL CONNECTIONS</h2>
-                    </a>
-                </div>
-            </div>
-            <div className="carousel-wrapper" >
-                <div className="box">
-                    <a href="#" >
+                <div className="carousel-wrapper" >
+                    <div className="box">
                         {/* model */}
-                        <img src="carouselImages/pointCounterpoint.png" class="model" />
-                        {/* header */}
-                        <h2>POINT-COUNTERPOINT</h2>
-                    </a>
+                        <a href="#" >
+                            <img src="carouselImages/digitalDomain.png" class="model" />
+                            {/* header */}
+                            <h2>DIGITAL DOMAINS</h2>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div className="carousel-wrapper" >
-                <div className="box">
-                    {/* model */}
-                    <a href="#" >
-                        <img src="carouselImages/capitalConnections.png" class="model" />
-                        {/* header */}
-                        <h2>CAPITAL CONNECTIONS</h2>
-                    </a>
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        {/* model */}
+                        <a href="#" >
+                            <img src="carouselImages/shoutOuts.png" class="model" />
+                            {/* header */}
+                            <h2>SHOUT-OUTS & </h2>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div className="carousel-wrapper" >
-                <div className="box">
-                    {/* model */}
-                    <a href="#" >
-                        <img src="carouselImages/digitalDomain.png" class="model" />
-                        {/* header */}
-                        <h2>CAPITAL CONNECTIONS</h2>
-                    </a>
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        <a href="#" >
+                            {/* model */}
+                            <img src="carouselImages/pointCounterpoint.png" class="model" />
+                            {/* header */}
+                            <h2>POINT-COUNTERPOINT</h2>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div className="carousel-wrapper" >
-                <div className="box">
-                    {/* model */}
-                    <a href="#" >
-                        <img src="carouselImages/shoutOuts.png" class="model" />
-                        {/* header */}
-                        <h2>CAPITAL CONNECTIONS</h2>
-                    </a>
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        {/* model */}
+                        <a href="#" >
+                            <img src="carouselImages/capitalConnections.png" class="model" />
+                            {/* header */}
+                            <h2>CAPITAL CONNECTIONS</h2>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-        </Slider>
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        {/* model */}
+                        <a href="#" >
+                            <img src="carouselImages/digitalDomain.png" class="model" />
+                            {/* header */}
+                            <h2>CAPITAL CONNECTIONS</h2>
+                        </a>
+                    </div>
+                </div>
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        {/* model */}
+                        <a href="#" >
+                            <img src="carouselImages/shoutOuts.png" class="model" />
+                            {/* header */}
+                            <h2>CAPITAL CONNECTIONS</h2>
+                        </a>
+                    </div>
+                </div>
+            
+            </Slider>
+        </div>
     );
 }
 

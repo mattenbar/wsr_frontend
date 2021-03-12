@@ -241,10 +241,9 @@ body {
 
 /* -------------------START image/link carousel------------- */
 
-.slick-slider {
+.carousel-top {
     width: 100%;
     height: 30vh;
-    /* background-color: tomato; */
     margin: 0 0 2em 0;
 
     /* display: flex; */
@@ -328,8 +327,148 @@ body {
     margin-bottom: 0.5em;
 }
 
-/* -------------------START image/link carousel------------- */
+/* -------------------END image/link carousel------------- */
+/* -------------------START features---------------------- */
+.features {
+    width: 100%;
+    height: 50vh;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+    border-top: 2px solid black;
+    /* padding-bottom: -2em; */
+    text-align: center;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+}
 
+.features h1 {
+    width: 26%;
+    margin-left: 37%;
+    margin-left: 37%;
+    margin-top: -18px;
+    background: white;
+}
+
+.feature-wrapper {
+    /* display: grid;
+    grid-template-columns: 200px 50px 400px 50px 200px;
+    grid-template-rows: auto;
+    grid-template-areas: "small-square . middle-square . small-square"; */
+    margin-top: 2em;
+    height: 75%;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+}
+
+.small-square {
+    /* margin-top: 6em; */
+    width: 25%;
+    height: 100%;
+    /* background-color: coral; */
+}
+
+.small-square img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.middle-square {
+    /* margin-top: 6em; */
+    width: 35%;
+    height: 100%;
+    /* background-color: darkblue; */
+}
+
+.middle-square img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+
+/* --------------------END features---------------------- */
+/* -------------------START newsmakers roundup/transactions & transitions---------------------- */
+
+.newsmakers-transactions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nm-carousel,
+.transactions-carousel {
+    width: 48%;
+    height: 40vh;
+    margin: 0 0 2em 0;
+
+    /* display: flex; */
+
+    border-top: 2px solid black;
+    /* padding-bottom: -2em; */
+    text-align: center;
+    /* float: left; */
+}
+
+.nm-carousel h1,
+.transactions-carousel h1 {
+    width: 40%;
+    margin-left: 30%;
+    margin-left: 30%;
+    margin-top: -13px;
+    background: white;
+    font-size: 1em;
+}
+
+/* -------------------END newsmakers roundup/transactions & transitions---------------------- */
+/* -------------------START this issue---------------------- */
+
+.ti-carousel {
+    width: 100%;
+    height: 40vh;
+    margin: 0 0 2em 0;
+
+    /* display: flex; */
+
+    border-top: 2px solid black;
+    /* padding-bottom: -2em; */
+    text-align: center;
+}
+
+.ti-carousel h1 {
+    width: 12%;
+    margin-left: 44%;
+    margin-left: 44%;
+    margin-top: -18px;
+    background: white;
+}
+
+.ti-carousel-wrapper {
+    position: relative;
+    width: 80%;
+    box-sizing: border-box;
+    margin-top: -2em;
+    /* margin-bottom: -2em; */
+    justify-content: center;
+    align-items: center;
+}
+
+.ti-carousel-wrapper:active,
+.ti-carousel-wrapper:hover,
+.ti-carousel-wrapper:focus {
+    outline: none;
+    border: none;
+}
+.circular-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+/* -------------------END this issue---------------------- */
 /* -------------------START HOME/ LINKS BAR----------------- */
 
 .linksBar {
@@ -363,7 +502,7 @@ body {
 
 /* -----------------------------------Contact Us---------------------------------------------- */
 
-.contact_us h1{
+.contact_us h1 {
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
@@ -371,22 +510,20 @@ body {
     font-size: 3vw;
 }
 
-.contact_us p{
+.contact_us p {
     font-size: 2vw;
     padding: 2%;
 }
 
-.blackLine{
-    border-bottom: .5px black;
+.blackLine {
+    border-bottom: 0.5px black;
     display: block;
     margin-left: 10%;
     margin-right: 10%;
     color: black;
     margin-top: 5%;
     margin-bottom: 5%;
-  }
-
-
+}
 
 /* -----------------------------------END Contact Us---------------------------------------------- */
 
@@ -397,7 +534,7 @@ body {
     width: 90%;
     /* height: 30vh; */
     /* margin-top: -0.25em; */
-    margin-left: 6.25%;
+    margin-left: 6.75%;
     margin-bottom: 0.5em;
     /* margin-left: 8em; */
     display: inline-block;
@@ -438,11 +575,14 @@ body {
 /* -----------------------------------FOOTER---------------------------------------------- */
 
 .footer-main {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     border: none;
     border-top: solid 3px black;
     /* height: 15vh; */
     width: 90%;
+    margin-left: 6%;
+    margin-right: 5%;
+    margin-bottom: 6em;
     /* position: absolute;
     bottom: 6em;
     left: 5%; */
@@ -459,6 +599,7 @@ body {
 
 .second-row-social-media {
     margin-top: 2em;
+    margin-bottom: 1em;
     /* background: yellow; */
     position: absolute;
     top: 50%;

@@ -6,28 +6,33 @@ function footerLinks(props) {
         <main className="footer-sections">
             <section className="footer">
                 <ul className="nav">
+                <li className="nav__item">
+                        <Link to="/" className="nav__link">
+                            HOME
+                        </Link>
+                    </li>
                     <li className="nav__item">
-                        <Link to="#" className="nav__link">
+                        <Link to="/about" className="nav__link">
                             ABOUT US
                         </Link>
                     </li>
                     <li className="nav__item">
-                        <Link to="#" className="nav__link">
+                        <Link to="/our-partners" className="nav__link">
                             OUR PARTNERS
                         </Link>
                     </li>
                     <li className="nav__item">
-                        <Link to="#" className="nav__link">
+                        <Link to="/our-board" className="nav__link">
                             OUR BOARD
                         </Link>
                     </li>
                     <li className="nav__item">
-                        <Link to="#" className="nav__link">
+                        <Link to="/contact-us" className="nav__link">
                             CONTACT US
                         </Link>
                     </li>
                     <li className="nav__item">
-                        <Link to="#" className="nav__link">
+                        <Link to="/archives" className="nav__link">
                             ARCHIVES
                         </Link>
                     </li>
