@@ -11,6 +11,7 @@ import NavBar from './components/navbar/nav'
 import Footer from './components/footer/footer'
 import Ads from './components/ads/ads'
 import ContactUs from './components/contact us/contact'
+import Board from './components/our board/board'
 
 
 class App extends React.Component{
@@ -41,6 +42,7 @@ class App extends React.Component{
         <Switch >
           <Route exact path ="/" render={()=> <Home posts={this.props.posts} />}/>
           <Route exact path ="/contact-us" render={()=> <ContactUs />}/>
+          <Route exact path ="/our-board" render={()=> <Board />}/>
         </Switch>
         <Ads />
         <Footer />
