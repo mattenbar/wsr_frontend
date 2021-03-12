@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-function board(props) {
-    return (
-        <div>
-            
-        </div>
-    );
+//import board members
+import MattBrown from './mattBrown'
+import BrendanClark from './brendanClark'
+
+class Board extends Component{
+  render(){
+    return(
+      <div className="board-container">
+        <MattBrown />
+        <BrendanClark />
+      </div>
+    )
+  }
 }
 
-export default board;
+export default Board
