@@ -255,6 +255,7 @@ body {
 
 @media screen and (max-width: 1200px) {
     .carousel-top {
+        height: 25vh;
         margin: 0 0 0 0;
         padding-bottom: 0em;
     }
@@ -415,10 +416,24 @@ body {
     justify-content: space-around;
 }
 
+@media screen and (max-width: 1200px) {
+    .nm-carousel,
+    .transactions-carousel {
+        height: 30vh;
+        margin: 0 0 0 0;
+    }
+
+    .nm-carousel h1,
+    .transactions-carousel h1 {
+        margin-top: -12px;
+        font-size: 1.5em;
+    }
+}
+
 .nm-carousel,
 .transactions-carousel {
     width: 48%;
-    height: 40vh;
+    height: 37vh;
     margin: 0 0 2em 0;
 
     /* display: flex; */
@@ -442,9 +457,23 @@ body {
 /* -------------------END newsmakers roundup/transactions & transitions---------------------- */
 /* -------------------START this issue---------------------- */
 
+@media screen and (max-width: 1200px) {
+    .ti-carousel {
+        height: 30vh;
+        margin: 0 0 0em 0;
+    }
+
+    .circular-image {
+        width: 200px;
+        height: 200px;
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+}
+
 .ti-carousel {
     width: 100%;
-    height: 40vh;
+    height: 37vh;
     margin: 0 0 2em 0;
 
     /* display: flex; */
@@ -456,7 +485,6 @@ body {
 
 .ti-carousel h1 {
     width: 12%;
-    margin-left: 44%;
     margin-left: 44%;
     margin-top: -18px;
     background: white;
@@ -572,7 +600,7 @@ body {
 
 .ad-image1 {
     width: 45%;
-    height: 200px;
+    height: 250px;
     margin: 1em;
     /* background-color: yellow; */
     object-fit: cover;
