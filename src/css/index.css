@@ -253,6 +253,12 @@ body {
     padding-bottom: -2em;
 }
 
+@media screen and (max-width: 768px) {
+    .carousel-top {
+        margin: 0 0 0 0;
+    }
+}
+
 .slick-prev {
     margin-left: 60px;
     z-index: 1020;
