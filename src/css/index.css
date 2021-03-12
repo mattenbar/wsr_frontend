@@ -327,7 +327,88 @@ body {
     margin-bottom: 0.5em;
 }
 
-/* -------------------START image/link carousel------------- */
+/* -------------------END image/link carousel------------- */
+/* -------------------START features---------------------- */
+.features {
+    width: 100%;
+    height: 50vh;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+    border-top: 2px solid black;
+    /* padding-bottom: -2em; */
+    text-align: center;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+}
+
+.features h1 {
+    width: 26%;
+    margin-left: 37%;
+    margin-left: 37%;
+    margin-top: -18px;
+    background: white;
+}
+
+.feature-wrapper {
+    /* display: grid;
+    grid-template-columns: 200px 50px 400px 50px 200px;
+    grid-template-rows: auto;
+    grid-template-areas: "small-square . middle-square . small-square"; */
+    margin-top: 2em;
+    height: 75%;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+}
+
+.small-square {
+    /* margin-top: 6em; */
+    width: 25%;
+    height: 100%;
+    background-color: coral;
+}
+
+.middle-square {
+    /* margin-top: 6em; */
+    width: 35%;
+    height: 100%;
+    background-color: darkblue;
+}
+
+/* --------------------END features---------------------- */
+/* -------------------START newsmakers roundup/transactions & transitions---------------------- */
+
+.newsmakers-transactions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nm-carousel,
+.transactions-carousel {
+    width: 48%;
+    height: 40vh;
+    margin: 0 0 2em 0;
+
+    /* display: flex; */
+
+    border-top: 2px solid black;
+    /* padding-bottom: -2em; */
+    text-align: center;
+    /* float: left; */
+}
+
+.nm-carousel h1,
+.transactions-carousel h1 {
+    width: 40%;
+    margin-left: 30%;
+    margin-left: 30%;
+    margin-top: -13px;
+    background: white;
+    font-size: 1em;
+}
+
+/* -------------------END newsmakers roundup/transactions & transitions---------------------- */
 /* -------------------START this issue---------------------- */
 
 .ti-carousel {
@@ -375,6 +456,7 @@ body {
     margin-bottom: 1em;
 }
 
+/* -------------------END this issue---------------------- */
 /* -------------------START HOME/ LINKS BAR----------------- */
 
 .linksBar {
