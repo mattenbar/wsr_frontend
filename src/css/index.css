@@ -366,14 +366,26 @@ body {
     /* margin-top: 6em; */
     width: 25%;
     height: 100%;
-    background-color: coral;
+    /* background-color: coral; */
+}
+
+.small-square img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
 }
 
 .middle-square {
     /* margin-top: 6em; */
     width: 35%;
     height: 100%;
-    background-color: darkblue;
+    /* background-color: darkblue; */
+}
+
+.middle-square img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
 }
 
 /* --------------------END features---------------------- */
