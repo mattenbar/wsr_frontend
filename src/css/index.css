@@ -477,20 +477,33 @@ body {
 /* -------------------END this issue---------------------- */
 /* -------------------START HOME/ LINKS BAR----------------- */
 
-.linksBar {
+.linksBar-top,
+.linksBar-bottom {
     padding: 2%;
     text-align: justify;
     font-size: 0.75em;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+.linksBar-top {
+    margin-bottom: -4em;
+    letter-spacing: 2px;
+}
+.linksBar-bottom {
+    margin-right: 2em;
 }
 
-.linksBar a {
+.linksBar-top a,
+.linksBar-bottom a {
     color: black;
     text-decoration: none;
-    padding-right: 2%;
+    /* padding-right: 2%; */
     text-align: justify;
 }
 
-.linksBar a:hover {
+.linksBar-top a:hover,
+.linksBar-bottom a:hover {
     text-decoration: underline;
 }
 
