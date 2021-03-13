@@ -306,11 +306,11 @@ body {
     margin: 1.5em 0.75em;
 }
 
-@media screen and (min-width: 100em) {
+/* @media screen and (min-width: 100em) {
     .box {
         margin: 1.5em 0.75em 0 0.75em;
     }
-}
+} */
 
 .slick-slider ul {
     list-style: none;

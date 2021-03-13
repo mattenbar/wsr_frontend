@@ -4,7 +4,7 @@ import Slider from "react-slick";
 function transactions(props) {
     return (
         <div className="nm-carousel">
-            <h1>NEWSMAKERS ROUNDUP</h1>
+            <h1>TRANSACTIONS & TRANSITIONS</h1>
             <div className="nm-cards" >
                 <div className="ti-carousel-wrapper">
                     <div className="box">
