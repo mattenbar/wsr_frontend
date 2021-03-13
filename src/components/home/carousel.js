@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 function carousel(props) {
     let settings = {
         arrows: true,
@@ -52,9 +53,9 @@ function carousel(props) {
             
                 <div className="carousel-wrapper" >
                     <div className="box">
-                        <a href="#" >
+                        <a href="/point-counterpoint" >
                             {/* model */}
-                            <img src="carouselImages/pointCounterpoint.png" class="model" />
+                            <img src="carouselImages/PointCounterPoint.png" class="model" />
                             {/* header */}
                             <h2>POINT-COUNTERPOINT</h2>
                         </a>
@@ -63,8 +64,8 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="#" >
-                            <img src="carouselImages/capitalConnections.png" class="model" />
+                        <a href="capital-connections" >
+                            <img src="carouselImages/CapitolConnections.png" class="model" />
                             {/* header */}
                             <h2>CAPITAL CONNECTIONS</h2>
                         </a>
@@ -73,8 +74,8 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="#" >
-                            <img src="carouselImages/digitalDomain.png" class="model" />
+                        <a href="/digital-domains" >
+                            <img src="carouselImages/DigitalDomains.png" class="model" />
                             {/* header */}
                             <h2>DIGITAL DOMAINS</h2>
                         </a>
@@ -83,50 +84,139 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="#" >
-                            <img src="carouselImages/shoutOuts.png" class="model" />
+                        <a href="/shout-outs-and-put-downs" >
+                            <img src="carouselImages/ShoutOuts.png" class="model" />
                             {/* header */}
-                            <h2>SHOUT-OUTS & </h2>
+                            <h2>SHOUT-OUTS & PUT DOWNS</h2>
                         </a>
                     </div>
                 </div>
                 <div className="carousel-wrapper" >
                     <div className="box">
-                        <a href="#" >
+                        <a href="beltway-and-beyond" >
+                            <img src="carouselImages/Beltway&Beyond.png" class="model" />
                             {/* model */}
-                            <img src="carouselImages/pointCounterpoint.png" class="model" />
                             {/* header */}
-                            <h2>POINT-COUNTERPOINT</h2>
+                            <h2>BELTWAY AND BEYOND</h2>
                         </a>
                     </div>
                 </div>
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="#" >
-                            <img src="carouselImages/capitalConnections.png" class="model" />
+                        <a href="/lawyer-land" >
+                            <img src="carouselImages/LawyerLand.png" class="model" />
                             {/* header */}
-                            <h2>CAPITAL CONNECTIONS</h2>
+                            <h2>LAWYER LAND</h2>
                         </a>
                     </div>
                 </div>
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="#" >
-                            <img src="carouselImages/digitalDomain.png" class="model" />
+                        <a href="/nightmare-on-compliance-st" >
+                            <img src="carouselImages/NightmareOnCompSt.png" class="model" />
                             {/* header */}
-                            <h2>CAPITAL CONNECTIONS</h2>
+                            <h2>NIGHTMARE ON COMPLIANCE ST</h2>
                         </a>
                     </div>
                 </div>
+                
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="#" >
-                            <img src="carouselImages/shoutOuts.png" class="model" />
+                        <a href="/buy-it-or-build-it" >
+                            <img src="carouselImages/BuyItOrBuildIt.png" class="model" />
                             {/* header */}
-                            <h2>CAPITAL CONNECTIONS</h2>
+                            <h2>BUY IT OR BUILD IT?</h2>
+                        </a>
+                    </div>
+                </div>
+                
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        {/* model */}
+                        <a href="/wallet-share" >
+                            <img src="carouselImages/WalletShare.png" class="model" />
+                            {/* header */}
+                            <h2>WALLET SHARE</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        {/* model */}
+                        <a href="family-feuds" >
+                            <img src="carouselImages/FamilyFeuds.png" class="model" />
+                            {/* header */}
+                            <h2>FAMILY FEUDS</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        {/* model */}
+                        <a href="/product-strategies" >
+                            <img src="carouselImages/ProductStrategies.png" class="model" />
+                            {/* header */}
+                            <h2>PRODUCT STRATEGIES</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        {/* model */}
+                        <a href="/letters-from-larry" >
+                            <img src="carouselImages/LettersFromLarry.png" class="model" />
+                            {/* header */}
+                            <h2>LETTERS FROM LARRY</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        {/* model */}
+                        <a href="/noteworthy-notes" >
+                            <img src="carouselImages/NoteworthyNotes.png" class="model" />
+                            {/* header */}
+                            <h2>NOTEWORTHY NOTES</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        {/* model */}
+                        <a href="/newsmakers-roundup" >
+                            <img src="carouselImages/NewsMakersRoundUp.png" class="model" />
+                            {/* header */}
+                            <h2>NEWSMAKERS ROUNDUP</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        {/* model */}
+                        <a href="/transactions-and-transitions" >
+                            <img src="carouselImages/Transactions&Trans.png" class="model" />
+                            {/* header */}
+                            <h2>TRANSACTIONS AND TRANSITIONS</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        {/* model */}
+                        <a href="/from-our-partners" >
+                            <img src="carouselImages/FromOurPartners.png" class="model" />
+                            {/* header */}
+                            <h2>FROM OUR PARTNERS</h2>
                         </a>
                     </div>
                 </div>
