@@ -18,7 +18,7 @@ class LinksBar extends Component {
           <a href="">WALLET SHARE</a>&nbsp;
           <a href="">FAMILY FEUDS</a>&nbsp;
           <a href="">PRODUCT STRATEGIES</a>&nbsp;
-          <a href="">LETTERS ROM LARRY</a>&nbsp;
+          <a href="">LETTERS FROM LARRY</a>&nbsp;
           <a href="">NOTEWORTHY NOTES</a>&nbsp;
           <a href="">NEWSMAKERS ROUNDUP</a>&nbsp;
           <a href="">TRANSACTIONS AND TRANSITIONS</a>&nbsp;
