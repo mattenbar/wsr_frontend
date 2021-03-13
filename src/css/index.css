@@ -63,8 +63,14 @@ body {
 }
 
 .nav-header h1 {
+    color: rgb(255, 208, 2);
     padding-left: 0.25em;
     letter-spacing: 0.05em;
+    text-decoration: none;
+}
+
+.nav-header a {
+    text-decoration: none;
 }
 
 .header-right {
