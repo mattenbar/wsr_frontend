@@ -10,7 +10,7 @@ function carousel(props) {
         // nextArrow:"<img class='a-right control-c next slick-next' src='carouselImages/arrow-right.png'>",
         dots: false,
         infinite: true, 
-        speed: 500,
+        speed: 600,
         slidesToShow: 4,
         slidesToScroll: 1,
         cssEase: "linear",
@@ -25,12 +25,19 @@ function carousel(props) {
                 {
                 breakpoint: 1008,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 4,
                     slidesToScroll: 1
                 }
                 },
                 {
-                breakpoint: 800,
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
