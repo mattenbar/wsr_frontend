@@ -13,9 +13,11 @@ const NavBar = (props) => {
                 <div className="nav-left"></div>
                 <div className="nav-right">
                     <div className="nav-header">
+                        <a href="/">
                         <h1>Wealth</h1>
                         <h1>Solutions</h1>
                         <h1>Report</h1>
+                        </a>
                     </div>
                     <div className="header-right">
                         <div className="header-search-bar">
