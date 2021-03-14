@@ -444,11 +444,9 @@ body {
 
 .carousel-top {
     width: 100%;
-    /* height: 30vh; */
     margin: 0 0 3em 0;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    padding-bottom: -2em;
 }
 
 .slick-prev {
@@ -469,15 +467,8 @@ body {
 
 .carousel-wrapper {
     position: relative;
-    /* width: 40%; */
-    /* padding: 0 1em; */
-    /* padding-left: 5.75em; */
-    /* padding-right: 4em; */
-    /* box-sizing: border-box; */
     margin-top: -2em;
     margin-bottom: -2em;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 .carousel-wrapper:active,
@@ -488,7 +479,7 @@ body {
 }
 
 .box {
-    margin: 1.5em 0.75em;
+    /* margin: 1.5em 0.75em; */
 }
 
 .slick-slider ul {
@@ -500,44 +491,44 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     color: black;
     height: 100%;
     /* width: 50%; */
     /* padding-right: 10em; */
+    margin-top: 3em;
     margin-bottom: 3em;
+    margin-right: -5em;
+    margin-left: -5em;
 }
 
 .model {
-    margin-top: 1em;
+    /* margin-top: 1em; */
     height: 30%;
 }
 
 .box h2 {
-    font-size: 0.75em;
+    font-size: 0.5em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
+.top-carousel-model {
+    width: 35%;
+}
+
 @media (min-width: 43.75em) {
+    .slick-slider a {
+        margin-top: 2.25em;
+        margin-bottom: 2.5em;
+    }
+
     .box h2 {
         font-size: 1em;
     }
 }
 
 @media (min-width: 62em) {
-    .carousel-top {
-        width: 100%;
-        height: 30vh;
-        margin: 0 0 2em 0;
-
-        /* display: flex; */
-
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
-        padding-bottom: -2em;
-    }
-
     .slick-prev {
         margin-left: 60px;
         z-index: 1020;
@@ -559,8 +550,7 @@ body {
         width: 80%;
         /* padding: 0 1em; */
         box-sizing: border-box;
-        margin-top: -2em;
-        margin-bottom: -2em;
+        /* margin-top: -2em; */
         justify-content: center;
         align-items: center;
     }
@@ -573,14 +563,7 @@ body {
     }
 
     .box {
-        /* width: 25%; */
-        /* height: 90%; */
-        /* background-color: #fff; */
-        /* border-radius: 10px;
-        box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5); */
-
-        /* box-sizing: border-box; */
-        margin: 1.5em 0.75em;
+        margin-top: 2em; /*this is where to fix the big screeen!!!!!! */
     }
 
     .slick-slider ul {
@@ -588,27 +571,27 @@ body {
     }
 
     .slick-slider a {
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        color: black;
+        margin-right: -5em;
+        margin-left: -5em;
     }
 
-    .model {
+    /* .model {
         height: 65%;
-    }
+    } */
 
     .box img {
         /* margin-bottom: -3em; */
-        margin-top: 1.5em;
-        width: 35%;
+        /* margin-top: 1em; */ /* this might need to be added!!!!!!!!! */
+        /* width: 35%; */
+    }
+
+    .top-carousel-model {
+        width: 25%;
     }
 
     .box h2 {
         /* margin: 0 1em 1em 1em; */
-        font-size: 1.5em;
+        font-size: 1.25em;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
@@ -619,9 +602,10 @@ body {
 
 /* -------------------END image/link carousel------------- */
 /* -------------------START features---------------------- */
+
 .features {
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     margin-top: 2.5em;
     margin-bottom: 2em;
     border-top: 2px solid black;
@@ -634,22 +618,25 @@ body {
 
 .features h1 {
     font-size: 1em;
-    width: 40%;
-    margin-left: 30%;
-    margin-left: 30%;
-    margin-top: -18px;
+    width: 50%;
+    margin-left: 25%;
+    margin-left: 25%;
+    margin-top: -11px;
     background: white;
 }
 
 .features h2 {
-    font-size: 1em;
+    font-size: 0.75em;
+}
+
+.features p {
+    font-size: 0.25em;
 }
 
 .feature-wrapper {
-    margin-top: 2em;
+    margin-top: 1em;
     height: 75%;
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-around;
 }
 
@@ -658,6 +645,11 @@ body {
     width: 25%;
     height: 100%;
     /* background-color: coral; */
+}
+.small-square a,
+.middle-square a {
+    color: black;
+    text-decoration: none;
 }
 
 .small-square img {
@@ -680,20 +672,30 @@ body {
 }
 
 @media (min-width: 43.75em) {
+    .features {
+        height: 30vh;
+        margin: 0;
+    }
+
+    .features h1 {
+        font-size: 1.5em;
+        width: 40%;
+        margin-left: 30%;
+        margin-left: 30%;
+    }
+
+    .features h2 {
+        font-size: 1em;
+    }
+
+    .features p {
+        font-size: 0.75em;
+    }
 }
 
 @media (min-width: 62em) {
     .features {
-        width: 100%;
         height: 50vh;
-        margin-top: 2.5em;
-        margin-bottom: 2em;
-        border-top: 2px solid black;
-        /* padding-bottom: -2em; */
-        text-align: center;
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-between; */
     }
 
     .features h1 {
@@ -702,49 +704,18 @@ body {
         margin-left: 37%;
         margin-left: 37%;
         margin-top: -18px;
-        background: white;
     }
 
     .features h2 {
         font-size: 1.5em;
     }
 
+    .features p {
+        font-size: 1em;
+    }
+
     .feature-wrapper {
-        /* display: grid;
-        grid-template-columns: 200px 50px 400px 50px 200px;
-        grid-template-rows: auto;
-        grid-template-areas: "small-square . middle-square . small-square"; */
         margin-top: 2em;
-        height: 75%;
-        display: flex;
-        /* flex-direction: row; */
-        justify-content: space-around;
-    }
-
-    .small-square {
-        /* margin-top: 6em; */
-        width: 25%;
-        height: 100%;
-        /* background-color: coral; */
-    }
-
-    .small-square img {
-        width: 100%;
-        height: 85%;
-        object-fit: cover;
-    }
-
-    .middle-square {
-        /* margin-top: 6em; */
-        width: 35%;
-        height: 100%;
-        /* background-color: darkblue; */
-    }
-
-    .middle-square img {
-        width: 100%;
-        height: 85%;
-        object-fit: cover;
     }
 }
 
@@ -753,60 +724,113 @@ body {
 
 /* --------------------END features---------------------- */
 /* -------------------START newsmakers roundup/transactions & transitions---------------------- */
-
-.newsmakers-transactions {
-    display: flex;
-    justify-content: space-between;
-}
-
 .nm-cards {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-around;
-}
-
-@media screen and (min-width: 1200px) {
-    .nm-carousel,
-    .transactions-carousel {
-        height: 30vh;
-        margin: 0 0 0 0;
-    }
-
-    .nm-carousel h1,
-    .transactions-carousel h1 {
-        margin-top: -12px;
-        font-size: 1.5em;
-    }
+    margin-top: 0.5em;
 }
 
 .nm-carousel,
 .transactions-carousel {
-    width: 48%;
+    width: 100%;
     height: 37vh;
-    margin: 0 0 2em 0;
-
-    /* display: flex; */
-
     border-top: 2px solid black;
-    /* padding-bottom: -2em; */
     text-align: center;
-    /* float: left; */
 }
 
 .nm-carousel h1,
 .transactions-carousel h1 {
-    width: 40%;
-    margin-left: 30%;
-    margin-left: 30%;
+    width: 66%;
+    margin-left: 17%;
+    margin-right: 17%;
     margin-top: -13px;
     background: white;
     font-size: 1em;
 }
 
+.nm-carousel a,
+.transactions-carousel a {
+    text-decoration: none;
+    color: black;
+}
+
+.nm-carousel h2,
+.transactions-carousel h2 {
+    margin-top: -1em;
+    font-size: 0.75em;
+}
+
+.nm-carousel p,
+.transactions-carousel p {
+    font-size: 0.5em;
+}
+
+@media (min-width: 43.75em) {
+    .nm-cards {
+        margin-top: 1em;
+    }
+
+    .nm-carousel,
+    .transactions-carousel {
+        /* width: 48%;*/
+        height: 25vh;
+        margin-top: 1.5em;
+    }
+
+    /* .nm-carousel h1,
+    .transactions-carousel h1 {
+        font-size: 1.25em;
+    } */
+
+    .newsmakers-transactions {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 62em) {
+    .nm-cards {
+        margin-top: -1em;
+    }
+
+    .nm-carousel,
+    .transactions-carousel {
+        width: 48%;
+        height: 33vh;
+    }
+
+    .nm-carousel h1 {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 1.25em;
+    }
+
+    .transactions-carousel h1 {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        font-size: 1.25em;
+    }
+
+    .nm-carousel h2,
+    .transactions-carousel h2 {
+        font-size: 1.25em;
+    }
+
+    .nm-carousel p,
+    .transactions-carousel p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 87em) {
+}
+
 /* -------------------END newsmakers roundup/transactions & transitions---------------------- */
 /* -------------------START this issue---------------------- */
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .ti-carousel {
         height: 30vh;
         margin: 0 0 0em 0;
@@ -818,7 +842,7 @@ body {
         padding: 1em;
         margin-bottom: 2em;
     }
-}
+} */
 
 .ti-carousel {
     width: 100%;
@@ -843,7 +867,7 @@ body {
     position: relative;
     width: 80%;
     box-sizing: border-box;
-    margin-top: -2em;
+    /* margin-top: -2em; */
     /* margin-bottom: -2em; */
     justify-content: center;
     align-items: center;
