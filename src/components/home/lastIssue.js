@@ -14,119 +14,150 @@ function lastIssue(props) {
         slidesToShow: 4,
         slidesToScroll: 1,
         cssEase: "linear",
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+                },
+                {
+                breakpoint: 1008,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+                }
+
+            ]
     };
     return (
-        <div className="ti-carousel">
+        <div className="ticrsl">
             <h1>LAST ISSUE</h1>
             <Slider {...settings}>
-                <div className="ti-carousel-wrapper">
-                    <div className="box">
-                        <a href="#">
+                <div className="ticrslwrapper">
+                <div className="ti-box">
+                        <a href="#" className="ti-a">
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
                                 class="circular-image"
                             />
                             {/* header */}
-                            <p>Headline Headline Headline</p>
+                            <h2>Headline Headline Headline</h2>
                             <p>by Author Name</p>
                         </a>
                     </div>
                 </div>
-                <div className="ti-carousel-wrapper">
-                    <div className="box">
-                        <a href="#">
+                <div className="ticrslwrapper">
+                <div className="ti-box">
+                        <a href="#" className="ti-a">
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
                                 class="circular-image"
                             />
                             {/* header */}
-                            <p>Headline Headline Headline</p>
+                            <h2>Headline Headline Headline</h2>
                             <p>by Author Name</p>
                         </a>
                     </div>
                 </div>
-                <div className="ti-carousel-wrapper">
-                    <div className="box">
-                        <a href="#">
+                <div className="ticrslwrapper">
+                <div className="ti-box">
+                        <a href="#" className="ti-a">
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
                                 class="circular-image"
                             />
                             {/* header */}
-                            <p>Headline Headline Headline</p>
+                            <h2>Headline Headline Headline</h2>
                             <p>by Author Name</p>
                         </a>
                     </div>
                 </div>
-                <div className="ti-carousel-wrapper">
-                    <div className="box">
-                        <a href="#">
+                <div className="ticrslwrapper">
+                <div className="ti-box">
+                        <a href="#" className="ti-a">
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
                                 class="circular-image"
                             />
                             {/* header */}
-                            <p>Headline Headline Headline</p>
+                            <h2>Headline Headline Headline</h2>
                             <p>by Author Name</p>
                         </a>
                     </div>
                 </div>
-                <div className="ti-carousel-wrapper">
-                    <div className="box">
-                        <a href="#">
+                <div className="ticrslwrapper">
+                <div className="ti-box">
+                        <a href="#" className="ti-a">
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
                                 class="circular-image"
                             />
                             {/* header */}
-                            <p>Headline Headline Headline</p>
+                            <h2>Headline Headline Headline</h2>
                             <p>by Author Name</p>
                         </a>
                     </div>
                 </div>
-                <div className="ti-carousel-wrapper">
-                    <div className="box">
-                        <a href="#">
+                <div className="ticrslwrapper">
+                <div className="ti-box">
+                        <a href="#" className="ti-a">
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
                                 class="circular-image"
                             />
                             {/* header */}
-                            <p>Headline Headline Headline</p>
+                            <h2>Headline Headline Headline</h2>
                             <p>by Author Name</p>
                         </a>
                     </div>
                 </div>
-                <div className="ti-carousel-wrapper">
-                    <div className="box">
-                        <a href="#">
+                <div className="ticrslwrapper">
+                <div className="ti-box">
+                        <a href="#" className="ti-a">
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
                                 class="circular-image"
                             />
                             {/* header */}
-                            <p>Headline Headline Headline</p>
+                            <h2>Headline Headline Headline</h2>
                             <p>by Author Name</p>
                         </a>
                     </div>
                 </div>
-                <div className="ti-carousel-wrapper">
-                    <div className="box">
-                        <a href="#">
+                <div className="ticrslwrapper">
+                <div className="ti-box">
+                        <a href="#" className="ti-a">
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
                                 class="circular-image"
                             />
                             {/* header */}
-                            <p>Headline Headline Headline</p>
+                            <h2>Headline Headline Headline</h2>
                             <p>by Author Name</p>
                         </a>
                     </div>
