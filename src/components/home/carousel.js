@@ -53,7 +53,7 @@ function carousel(props) {
             
                 <div className="carousel-wrapper" >
                     <div className="box">
-                        <a href="/point-counterpoint" >
+                        <a href="/point-counterpoint" className="crsltop">
                             {/* model */}
                             <img src="carouselImages/PointCounterPoint.png" class="top-carousel-model" />
                             {/* header */}
@@ -64,7 +64,7 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="capital-connections" >
+                        <a href="capital-connections" className="crsltop">
                             <img src="carouselImages/CapitolConnections.png" class="top-carousel-model" />
                             {/* header */}
                             <h2>CAPITAL CONNECTIONS</h2>
@@ -74,7 +74,7 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/digital-domains" >
+                        <a href="/digital-domains" className="crsltop">
                             <img src="carouselImages/DigitalDomains.png" class="top-carousel-model" />
                             {/* header */}
                             <h2>DIGITAL DOMAINS</h2>
@@ -84,7 +84,7 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/shout-outs-and-put-downs" >
+                        <a href="/shout-outs-and-put-downs" className="crsltop">
                             <img src="carouselImages/ShoutOuts.png" class="top-carousel-model" />
                             {/* header */}
                             <h2>SHOUT-OUTS & PUT DOWNS</h2>
@@ -93,7 +93,7 @@ function carousel(props) {
                 </div>
                 <div className="carousel-wrapper" >
                     <div className="box">
-                        <a href="beltway-and-beyond" >
+                        <a href="beltway-and-beyond" className="crsltop">
                             <img src="carouselImages/Beltway&Beyond.png" class="top-carousel-model" />
                             {/* model */}
                             {/* header */}
@@ -104,7 +104,7 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/lawyer-land" >
+                        <a href="/lawyer-land" className="crsltop">
                             <img src="carouselImages/LawyerLand.png" class="top-carousel-model" />
                             {/* header */}
                             <h2>LAWYER LAND</h2>
@@ -114,7 +114,7 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/nightmare-on-compliance-st" >
+                        <a href="/nightmare-on-compliance-st" className="crsltop">
                             <img src="carouselImages/NightmareOnCompSt.png" class="top-carousel-model" />
                             {/* header */}
                             <h2>NIGHTMARE ON COMPLIANCE ST</h2>
@@ -125,7 +125,7 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/buy-it-or-build-it" >
+                        <a href="/buy-it-or-build-it" className="crsltop">
                             <img src="carouselImages/BuyItOrBuildIt.png" class="top-carousel-model" />
                             {/* header */}
                             <h2>BUY IT OR BUILD IT?</h2>
@@ -136,7 +136,7 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/wallet-share" >
+                        <a href="/wallet-share" className="crsltop" >
                             <img src="carouselImages/WalletShare.png" class="top-carousel-model" />
                             {/* header */}
                             <h2>WALLET SHARE</h2>
@@ -147,7 +147,7 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="family-feuds" >
+                        <a href="family-feuds" className="crsltop">
                             <img src="carouselImages/FamilyFeuds.png" class="top-carousel-model" />
                             {/* header */}
                             <h2>FAMILY FEUDS</h2>
@@ -158,7 +158,7 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/product-strategies" >
+                        <a href="/product-strategies" className="crsltop">
                             <img src="carouselImages/ProductStrategies.png" class="top-carousel-model" />
                             {/* header */}
                             <h2>PRODUCT STRATEGIES</h2>
@@ -169,7 +169,7 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/letters-from-larry" >
+                        <a href="/letters-from-larry" className="crsltop">
                             <img src="carouselImages/LettersFromLarry.png" class="top-carousel-model" />
                             {/* header */}
                             <h2>LETTERS FROM LARRY</h2>
@@ -180,7 +180,7 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/noteworthy-notes" >
+                        <a href="/noteworthy-notes" className="crsltop">
                             <img src="carouselImages/NoteworthyNotes.png" class="top-carousel-model" />
                             {/* header */}
                             <h2>NOTEWORTHY NOTES</h2>
@@ -191,7 +191,7 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/newsmakers-roundup" >
+                        <a href="/newsmakers-roundup" className="crsltop">
                             <img src="carouselImages/NewsMakersRoundUp.png" class="top-carousel-model" />
                             {/* header */}
                             <h2>NEWSMAKERS ROUNDUP</h2>
@@ -202,7 +202,7 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/transactions-and-transitions" >
+                        <a href="/transactions-and-transitions" className="crsltop">
                             <img src="carouselImages/Transactions&Trans.png" class="top-carousel-model" />
                             {/* header */}
                             <h2>TRANSACTIONS AND TRANSITIONS</h2>
@@ -213,7 +213,7 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/from-our-partners" >
+                        <a href="/from-our-partners" className="crsltop">
                             <img src="carouselImages/FromOurPartners.png" class="top-carousel-model" />
                             {/* header */}
                             <h2>FROM OUR PARTNERS</h2>

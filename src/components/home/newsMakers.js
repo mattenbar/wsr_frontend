@@ -3,14 +3,14 @@ import Slider from "react-slick";
 
 function newsMakers(props) {
     return (
-        <div className="nm-carousel">
+        <div className="nmcrsl">
             <h1>NEWSMAKERS ROUNDUP</h1>
             <div className="nm-cards" >
                 <div className="ti-carousel-wrapper">
                     <div className="box">
                         <a href="#">
                             {/* model */}
-                            <img
+                            <img 
                                 src="https://i.imgur.com/uBljRiB.jpg"
                                 class="circular-image"
                             />
