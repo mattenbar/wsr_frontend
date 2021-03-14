@@ -6,8 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 function lastIssue(props) {
     let settings = {
         arrows: true,
-        // prevArrow:"<img class='a-left control-c prev slick-prev' src='carouselImages/arrow-left.png'>",
-        // nextArrow:"<img class='a-right control-c next slick-next' src='carouselImages/arrow-right.png'>",
+        // prevArrow:"<img className='a-left control-c prev slick-prev' src='carouselImages/arrow-left.png'>",
+        // nextArrow:"<img className='a-right control-c next slick-next' src='carouselImages/arrow-right.png'>",
         dots: false,
         infinite: true,
         speed: 500,
@@ -56,7 +56,7 @@ function lastIssue(props) {
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
-                                class="circular-image"
+                                className="circular-image"
                             />
                             {/* header */}
                             <h2>Headline Headline Headline</h2>
@@ -70,7 +70,7 @@ function lastIssue(props) {
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
-                                class="circular-image"
+                                className="circular-image"
                             />
                             {/* header */}
                             <h2>Headline Headline Headline</h2>
@@ -84,7 +84,7 @@ function lastIssue(props) {
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
-                                class="circular-image"
+                                className="circular-image"
                             />
                             {/* header */}
                             <h2>Headline Headline Headline</h2>
@@ -98,7 +98,7 @@ function lastIssue(props) {
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
-                                class="circular-image"
+                                className="circular-image"
                             />
                             {/* header */}
                             <h2>Headline Headline Headline</h2>
@@ -112,7 +112,7 @@ function lastIssue(props) {
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
-                                class="circular-image"
+                                className="circular-image"
                             />
                             {/* header */}
                             <h2>Headline Headline Headline</h2>
@@ -126,7 +126,7 @@ function lastIssue(props) {
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
-                                class="circular-image"
+                                className="circular-image"
                             />
                             {/* header */}
                             <h2>Headline Headline Headline</h2>
@@ -140,7 +140,7 @@ function lastIssue(props) {
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
-                                class="circular-image"
+                                className="circular-image"
                             />
                             {/* header */}
                             <h2>Headline Headline Headline</h2>
@@ -154,7 +154,7 @@ function lastIssue(props) {
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
-                                class="circular-image"
+                                className="circular-image"
                             />
                             {/* header */}
                             <h2>Headline Headline Headline</h2>

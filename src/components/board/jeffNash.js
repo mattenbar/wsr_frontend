@@ -5,7 +5,7 @@ function jeffNash(props) {
   return (
       <div>
         <p>
-        <img src={jeffNashImage}/>
+        <img src={jeffNashImage} alt="Jeff Nash"/>
           <br/>
           As CEO of BridgeMark Strategies, Jeff leverages his 25+ years of industry experience and over 20 years of experience coaching and consulting with financial advisors to help them navigate major transition decisions such as Broker/Dealer changes and succession planning.  Areas of expertise include:
             <ul>

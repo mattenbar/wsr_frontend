@@ -50,7 +50,7 @@ class App extends React.Component{
           <Route exact path ="/our-partners" render={()=> <Partners />}/>
           <Route exact path ="/our-board" render={()=> <Board />}/>
           <Route exact path ="/contact-us" render={()=> <ContactUs />}/>
-          <Route exact path ="/archives" render={()=> <Archives />}/>
+          <Route exact path ="/archives" render={()=> <Archives posts={this.props.posts}/>}/>
         </Switch>
         <Ads />
         <Footer />

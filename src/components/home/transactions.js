@@ -12,7 +12,7 @@ function transactions(props) {
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
-                                class="circular-image"
+                                className="circular-image"
                             />
                             {/* header */}
                             <h2>Headline Headline Headline</h2>
@@ -26,7 +26,7 @@ function transactions(props) {
                             {/* model */}
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
-                                class="circular-image"
+                                className="circular-image"
                             />
                             {/* header */}
                             <h2>Headline Headline Headline</h2>

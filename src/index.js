@@ -6,7 +6,7 @@ import './css/index.css';
 import App from './App';
 
 import thunk from 'redux-thunk'
-import {BrowserRouter as Router} from 'react-router-dom'
+import { Router} from 'react-router-dom'
 
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
