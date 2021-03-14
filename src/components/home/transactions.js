@@ -15,7 +15,7 @@ function transactions(props) {
                                 class="circular-image"
                             />
                             {/* header */}
-                            <p>Headline Headline Headline</p>
+                            <h2>Headline Headline Headline</h2>
                             <p>by Author Name</p>
                         </a>
                     </div>
@@ -29,7 +29,7 @@ function transactions(props) {
                                 class="circular-image"
                             />
                             {/* header */}
-                            <p>Headline Headline Headline</p>
+                            <h2>Headline Headline Headline</h2>
                             <p>by Author Name</p>
                         </a>
                     </div>
