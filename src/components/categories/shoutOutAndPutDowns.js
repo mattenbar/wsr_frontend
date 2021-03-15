@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-function CapitalConnections(props) {
+function ShoutOut(props) {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/v1/categories/1")
+        fetch("http://localhost:3000/api/v1/categories/4")
             .then((res) => res.json())
             .then((result) => {
                 // console.log(result.posts.data)
@@ -18,15 +18,16 @@ function CapitalConnections(props) {
     return (
         console.log(posts),
         <div className="category-show">
-            <img src="carouselImages/CapitolConnections.png" alt=""></img>
+            <img src="carouselImages/ShoutOuts.png" alt=""></img>
             <h1>
-              &nbsp; CAPITAL 
+              &nbsp; SHOUT OUTS
               <br/>
-              &nbsp; CONNECTIONS
+              &nbsp; AND PUT DOWNS
             </h1>
             <span className="blackLineFull"></span>
+           
         </div>
     );
 }
 
-export default CapitalConnections;
+export default ShoutOut;

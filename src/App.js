@@ -16,9 +16,15 @@ import AboutUs from './components/about/aboutUs';
 import Partners from './components/partners/partners';
 import Board from './components/board/board';
 import Archives from './components/archives/archives';
+// import category components
 import CapitalConnections from './components/categories/capitalConnections';
 import DigitalDomains from './components/categories/digitalDomains';
 import PointCounterPoint from './components/categories/pointCounterPoint';
+import ShoutOut from './components/categories/shoutOutAndPutDowns'
+import Beltway from './components/categories/beltwayAndBeyong'
+import LawyerLand from './components/categories/lawyerLand'
+import Nightmare from './components/categories/nightmare'
+import BuyItOrBuildIt from './components/categories/buyItOrBuildIt'
 
 
 
@@ -54,9 +60,15 @@ class App extends React.Component{
           <Route exact path ="/our-board" render={()=> <Board />}/>
           <Route exact path ="/contact-us" render={()=> <ContactUs />}/>
           <Route exact path ="/archives" render={()=> <Archives posts={this.props.posts}/>}/>
-          <Route exact path ="/capital-connections" render={()=> <CapitalConnections posts={this.props.posts}/>}/>
-          <Route exact path ="/digital-domains" render={()=> <DigitalDomains posts={this.props.posts}/>}/>
-          <Route exact path ="/point-counterpoint" render={()=> <PointCounterPoint posts={this.props.posts}/>}/>
+          {/* category pages */}
+          <Route exact path ="/capital-connections" render={()=> <CapitalConnections />}/>
+          <Route exact path ="/digital-domains" render={()=> <DigitalDomains />}/>
+          <Route exact path ="/point-counterpoint" render={()=> <PointCounterPoint />}/>
+          <Route exact path ="/shout-out-and-put-downs" render={()=> <ShoutOut />}/>
+          <Route exact path ="/beltway-and-beyond" render={()=> <Beltway />}/>
+          <Route exact path ="/lawyer-land" render={()=> <LawyerLand />}/>
+          <Route exact path ="/nightmare-on-compliance-st" render={()=> <Nightmare />}/>
+          <Route exact path ="/buy-it-or-build-it" render={()=> <BuyItOrBuildIt />}/>
         </Switch>
         <Ads />
         <Footer />

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-function CapitalConnections(props) {
+function Nightmare(props) {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/v1/categories/1")
+        fetch("http://localhost:3000/api/v1/categories/7")
             .then((res) => res.json())
             .then((result) => {
                 // console.log(result.posts.data)
@@ -18,15 +18,16 @@ function CapitalConnections(props) {
     return (
         console.log(posts),
         <div className="category-show">
-            <img src="carouselImages/CapitolConnections.png" alt=""></img>
+            <img src="carouselImages/NightmareOnCompSt.png" alt=""></img>
             <h1>
-              &nbsp; CAPITAL 
+              &nbsp; NIGHTMARE
               <br/>
-              &nbsp; CONNECTIONS
+              &nbsp; ON COMPLIANCE ST
             </h1>
             <span className="blackLineFull"></span>
+           
         </div>
     );
 }
 
-export default CapitalConnections;
+export default Nightmare;
