@@ -27,6 +27,7 @@ import Nightmare from './components/categories/nightmare'
 import BuyItOrBuildIt from './components/categories/buyItOrBuildIt'
 import WalletShare from './components/categories/walletShare'
 import FamilyFeuds from './components/categories/familyFeuds'
+import ProductStrategies from './components/categories/productStrategies'
 
 
 
@@ -73,6 +74,7 @@ class App extends React.Component{
           <Route exact path ="/buy-it-or-build-it" render={()=> <BuyItOrBuildIt />}/>
           <Route exact path ="/wallet-share" render={()=> <WalletShare />}/>
           <Route exact path ="/family-feuds" render={()=> <FamilyFeuds />}/>
+          <Route exact path ="/product-strategies" render={()=> <ProductStrategies />}/>
         </Switch>
         <Ads />
         <Footer />
