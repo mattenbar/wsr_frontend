@@ -112,6 +112,7 @@ body {
 
 .divider {
     font-size: 1.15em;
+    color: rgb(255, 208, 2);
 }
 
 @media (min-width: 43.75em) {
@@ -199,7 +200,7 @@ body {
     width: 15%;
     float: left;
     margin-left: 0.5em;
-    
+
 }
 
 @media (min-width: 43.75em) {
@@ -1016,6 +1017,55 @@ body {
 }
 
 /* -----------------------------------END Contact Us---------------------------------------------- */
+
+
+/* -----------------------------------START OUR BOARD---------------------------------------------- */
+
+.board-container { 
+    display: grid;
+}
+
+.individual {
+
+}
+
+.individualImage {
+    width: 50%;
+
+}
+
+@media (min-width: 43.75em) {
+    .board-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .individualImage {
+        width: 25%;
+    
+    }
+}
+
+@media (min-width: 62em) {
+    /* .board-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } */
+
+
+    .individualImage {
+        width: 25%;
+    
+    }
+}
+
+@media (min-width: 87em) {
+
+}
+
+
+/* -----------------------------------END OUR BOARD---------------------------------------------- */
+
 
 /* -----------------------------------AD SPACE---------------------------------------------- */
 
