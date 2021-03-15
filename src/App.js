@@ -28,6 +28,7 @@ import BuyItOrBuildIt from './components/categories/buyItOrBuildIt'
 import WalletShare from './components/categories/walletShare'
 import FamilyFeuds from './components/categories/familyFeuds'
 import ProductStrategies from './components/categories/productStrategies'
+import LettersFromLarry from './components/categories/lettersFromLarry'
 
 
 
@@ -75,6 +76,7 @@ class App extends React.Component{
           <Route exact path ="/wallet-share" render={()=> <WalletShare />}/>
           <Route exact path ="/family-feuds" render={()=> <FamilyFeuds />}/>
           <Route exact path ="/product-strategies" render={()=> <ProductStrategies />}/>
+          <Route exact path ="/letters-from-larry" render={()=> <LettersFromLarry />}/>
         </Switch>
         <Ads />
         <Footer />
