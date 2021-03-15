@@ -32,6 +32,7 @@ import LettersFromLarry from './components/categories/lettersFromLarry'
 import NoteworthyNotes from './components/categories/noteworthyNotes'
 import NewsMakersRoundUp from './components/categories/newsmakersRoundup'
 import TransactionsAndTransitions from './components/categories/transactionsAndTransitions'
+import FromOurPartners from './components/categories/fromOutPartners'
 
 
 
@@ -83,6 +84,7 @@ class App extends React.Component{
           <Route exact path ="/noteworthy-notes" render={()=> <NoteworthyNotes />}/>
           <Route exact path ="/newsmakers-roundup" render={()=> <NewsMakersRoundUp />}/>
           <Route exact path ="/transactions-and-transitions" render={()=> <TransactionsAndTransitions />}/>
+          <Route exact path ="/from-our-partners" render={()=> <FromOurPartners />}/>
 
         </Switch>
         <Ads />
