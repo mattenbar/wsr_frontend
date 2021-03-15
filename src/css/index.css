@@ -1082,10 +1082,10 @@ body {
         /* left: 50%; */
     }
 
-    .individualImage {
+    /* .individualImage {
         width: 25%;
         
-    }
+    } */
 }
 
 @media (min-width: 62em) {
@@ -1096,7 +1096,7 @@ body {
 
 
     .individualImage {
-        width: 35%;
+        /* width: 35%; */
         overflow: hidden;
     }
 }

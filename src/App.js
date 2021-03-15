@@ -16,9 +16,9 @@ import AboutUs from './components/about/aboutUs';
 import Partners from './components/partners/partners';
 import Board from './components/board/board';
 import Archives from './components/archives/archives';
-import CapitalConnections from './components/categories/capitalConnections'
-import DigitalDomains from './components/categories/digitalDomains'
-import PointCounterPoint from './components/categories/pointCounterPoint'
+import CapitalConnections from './components/categories/capitalConnections';
+import DigitalDomains from './components/categories/digitalDomains';
+import PointCounterPoint from './components/categories/pointCounterPoint';
 
 
 
