@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-function NewsmakersRoundup(props) {
+function TransactionsAndTransitions(props) {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/v1/categories/14")
+        fetch("http://localhost:3000/api/v1/categories/15")
             .then((res) => res.json())
             .then((result) => {
                 // console.log(result.posts.data)
@@ -18,11 +18,11 @@ function NewsmakersRoundup(props) {
     return (
         console.log(posts),
         <div className="category-show">
-            <img src="carouselImages/NewsMakersRoundUp.png" alt=""></img>
+            <img src="carouselImages/Transactions&Trans.png" alt=""></img>
             <h1>
-              &nbsp; NEWSMAKERS
+              &nbsp; TRANSACTIONS
               <br/>
-              &nbsp; ROUND UP
+              &nbsp; AND TRANSITIONS
             </h1>
             <span className="blackLineFull"></span>
            
@@ -30,4 +30,4 @@ function NewsmakersRoundup(props) {
     );
 }
 
-export default NewsmakersRoundup;
+export default TransactionsAndTransitions;
