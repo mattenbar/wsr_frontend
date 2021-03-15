@@ -199,6 +199,7 @@ body {
     width: 15%;
     float: left;
     margin-left: 0.5em;
+    
 }
 
 @media (min-width: 43.75em) {
@@ -240,6 +241,7 @@ body {
     width: 25%;
     padding: 1em 1em 0 1em;
     transition: all 0.5s ease;
+    
 }
 
 .smb-yellow:hover,
@@ -961,6 +963,34 @@ body {
 /* -------------------END this issue---------------------- */
 
 /* -----------------------------------END HOME---------------------------------------------- */
+
+/* -----------------------------------CATEGORIES---------------------------------------------- */
+
+.category-show img{
+    border-right: solid black;
+    width: 10%;
+    margin-bottom: 0;
+    float: left;
+}
+
+.blackLineFull {
+    margin-top: 0;
+    border-bottom: solid 2px black;
+    display: block;
+    color: black;
+    width: 100%;
+}
+
+.category-show h1{
+    font-size: 4.1vw;
+}
+
+
+
+
+
+/* -----------------------------------END CATEGORIES------------------------------------------- */
+
 
 /* -----------------------------------Contact Us---------------------------------------------- */
 

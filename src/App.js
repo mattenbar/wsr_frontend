@@ -16,6 +16,7 @@ import AboutUs from './components/about/aboutUs';
 import Partners from './components/partners/partners';
 import Board from './components/board/board';
 import Archives from './components/archives/archives';
+import CapitalConnections from './components/categories/capitalConnections'
 
 
 
@@ -51,6 +52,7 @@ class App extends React.Component{
           <Route exact path ="/our-board" render={()=> <Board />}/>
           <Route exact path ="/contact-us" render={()=> <ContactUs />}/>
           <Route exact path ="/archives" render={()=> <Archives posts={this.props.posts}/>}/>
+          <Route exact path ="/capital-connections" render={()=> <CapitalConnections posts={this.props.posts}/>}/>
         </Switch>
         <Ads />
         <Footer />
