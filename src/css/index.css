@@ -990,6 +990,55 @@ body {
 
 /* -----------------------------------END Contact Us---------------------------------------------- */
 
+
+/* -----------------------------------START OUR BOARD---------------------------------------------- */
+
+.board-container { 
+    display: grid;
+}
+
+.individual {
+
+}
+
+.individualImage {
+    width: 50%;
+
+}
+
+@media (min-width: 43.75em) {
+    .board-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .individualImage {
+        width: 25%;
+    
+    }
+}
+
+@media (min-width: 62em) {
+    /* .board-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } */
+
+
+    .individualImage {
+        width: 25%;
+    
+    }
+}
+
+@media (min-width: 87em) {
+
+}
+
+
+/* -----------------------------------END OUR BOARD---------------------------------------------- */
+
+
 /* -----------------------------------AD SPACE---------------------------------------------- */
 
 .main-bottom-ads {

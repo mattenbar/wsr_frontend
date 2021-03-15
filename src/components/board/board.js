@@ -16,19 +16,23 @@ import SidYenamandra from './sidYenamandra'
 class Board extends Component{
   render(){
     return(
-      <div className="board-container">
-        <h1>Our Board</h1>
-        <MattBrown />
-        <BrendanClark />
-        <LisaGok />
-        <HarryGrand />
-        <JeffNash />
-        <MarryOsaka />
-        <ChrisPaulitz />
-        <JimRoth />
-        <SusanThedar />
-        <CathyWeathorford />
-        <SidYenamandra />
+      <div className="board">
+        <div className="borad-header">
+          <h1>Our Board</h1>
+        </div>
+        <div className="board-container">
+          <MattBrown />
+          <BrendanClark />
+          <LisaGok />
+          <HarryGrand />
+          <JeffNash />
+          <MarryOsaka />
+          <ChrisPaulitz />
+          <JimRoth />
+          <SusanThedar />
+          <CathyWeathorford />
+          <SidYenamandra />
+        </div>
       </div>
     )
   }
