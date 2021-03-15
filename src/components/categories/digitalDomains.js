@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from 'react';
 
-
-
 function DigitalDomains(props) {
 
   const [posts, setPosts] = useState([])
