@@ -26,6 +26,7 @@ import LawyerLand from './components/categories/lawyerLand'
 import Nightmare from './components/categories/nightmare'
 import BuyItOrBuildIt from './components/categories/buyItOrBuildIt'
 import WalletShare from './components/categories/walletShare'
+import FamilyFeuds from './components/categories/familyFeuds'
 
 
 
@@ -71,6 +72,7 @@ class App extends React.Component{
           <Route exact path ="/nightmare-on-compliance-st" render={()=> <Nightmare />}/>
           <Route exact path ="/buy-it-or-build-it" render={()=> <BuyItOrBuildIt />}/>
           <Route exact path ="/wallet-share" render={()=> <WalletShare />}/>
+          <Route exact path ="/family-feuds" render={()=> <FamilyFeuds />}/>
         </Switch>
         <Ads />
         <Footer />
