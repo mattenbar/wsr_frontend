@@ -112,6 +112,7 @@ body {
 
 .divider {
     font-size: 1.15em;
+    color: rgb(255, 208, 2);
 }
 
 @media (min-width: 43.75em) {
@@ -199,6 +200,8 @@ body {
     width: 15%;
     float: left;
     margin-left: 0.5em;
+    color: rgb(255, 208, 2);
+    fill:#FFD002;
 }
 
 @media (min-width: 43.75em) {
