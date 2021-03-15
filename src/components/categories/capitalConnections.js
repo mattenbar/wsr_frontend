@@ -13,7 +13,6 @@ function capitalConnections(props) {
               &nbsp; CONNECTIONS
             </h1>
             <span className="blackLineFull"></span>
-           
         </div>
     );
 }
