@@ -17,7 +17,7 @@ class Board extends Component{
   render(){
     return(
       <div className="board">
-        <div className="borad-header">
+        <div className="board-header">
           <h1>Our Board</h1>
         </div>
         <div className="board-container">
