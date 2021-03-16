@@ -1053,6 +1053,7 @@ body {
     padding-left: 2em;
     padding-right: 2em;
     font-size: .75em;
+    grid-auto-rows: 30em;
     /* margin-top: -10em; */
     
 }
@@ -1061,6 +1062,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     /* border-bottom: 1px solid #000; */
 }
 
@@ -1085,6 +1087,9 @@ body {
     font-size: 1.25em;
     text-transform: uppercase;
     transition: all 0.5s ease;
+    position: absolute;
+    bottom: 0;
+    right: 4em;
    
 }
 
@@ -1104,7 +1109,7 @@ body {
     .board-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 30em;
+        grid-auto-rows: 15em;
         
         align-content: space-evenly;
         /* min-height: 0; */
@@ -1123,6 +1128,8 @@ body {
         width: 25%;
         
     } */
+
+
 }
 
 @media (min-width: 62em) {
