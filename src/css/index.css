@@ -1075,6 +1075,31 @@ body {
 
 }
 
+/* auth-buttons__yellow */
+.popupbuttonboard {
+    width: 200px;
+    text-decoration: none;
+    color: rgba(40, 115, 172);
+    background-color: Transparent;
+    border: none;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+   
+}
+
+.popupbuttonboard a{
+    text-decoration: none;
+    color: rgba(40, 115, 172);
+}
+
+.popupbuttonboard:hover,
+.popupbuttonboard:active {
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 4px grey;
+}
+
 @media (min-width: 43.75em) {
     .board-container{
         display: grid;
@@ -1103,16 +1128,24 @@ body {
 @media (min-width: 62em) {
     .board-container{
         font-size: 1em;
-        grid-auto-rows: 20em;
+        grid-auto-rows: 15em;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .individual {
         grid-row: auto / span 2;
+        position: relative;
     }
 
 
     .individualImage {
-        width: 35%;
+        width: 50%;
+    }
+
+    .popupbuttonboard {
+        position: absolute;
+        bottom: 0;
+        right: 2em;
     }
 }
 

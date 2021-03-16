@@ -1,7 +1,7 @@
 import React from 'react';
 
 function popUpBoard(props) {
-    // console.log("popupsignup", props)
+    console.log("popupboard", props)
     return (
         <div className="popup" id="popupboard"> 
             <div className="popup__content">
