@@ -23,7 +23,8 @@ class PostInput extends React.Component {
     let post = {...this.state.post}
     let currentState = post
     let {name, value} = event.target
-    currentState[name] = value
+    // currentState[name] = value
+    name === "image" ? currentState[name] = event.currentTarget.files[0] : currentState[name] = value
     this.setState({
       post: currentState
     })
@@ -69,7 +70,13 @@ class PostInput extends React.Component {
             <div className="postForm">
               <label>Content</label>
               <textarea onChange={this.handlePostChange} type="textarea" value={this.state.post.content} name="content" />
-            </div>   
+            </div>  
+
+            <div className="postForm">
+              <label>Image</label>
+              <input id="files-upload" type="file" name="image" accept="image/*" onChange={this.handlePostChange} />
+            </div> 
+            <button type="submit">Submit</button>
           </form>
         </div>
       ) 
