@@ -1092,7 +1092,7 @@ body {
 
 @media (min-width: 62em) {
     .board-container{
-        font-size: .75em;
+        font-size: 1em;
         grid-auto-rows: 20em;
     }
 
