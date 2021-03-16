@@ -1,15 +1,3 @@
-// import brendanClarkImage from './images/brendanClark.png';
-// import cathyWeatherfordImage from './images/cathyWeatherford.jpg';
-// import chrisPaulitzImage from './images/chrisPaulitz.png';
-// import harryGrandImage from './images/harryGrand.jpg';
-// import jeffNashImage from './images/jeffNash.jpg';
-// import jimRothImage from './images/jimRoth.jpg';
-// import lisaGokImage from './images/lisaGok.jpg';
-// import maryOsakaImage from './images/maryOsaka.jpg';
-// import mattImage from './images/mattBrown.png';
-// import sidYenamandraImage from './images/sidYenamandra.jpg';
-// import susanThedarImage from './images/susanThedar.png';
-
 
 export const boardMembers = [
     {
