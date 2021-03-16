@@ -12,6 +12,7 @@ class LinksBar extends Component {
           <a href="/beltway-and-beyond">BELTWAY AND BEYOND</a>&nbsp;
           <a href="/lawyer-land">LAWYER LAND</a>&nbsp;
           <a href="/nightmare-on-compliance-st">NIGHTMARE ON COMPLIANCE ST</a>&nbsp;
+          <br/><br/>
         </div>
         <div className="linksBar-bottom">
           <a href="/buy-it-or-build-it">BUY IT OR BUILD IT?</a>&nbsp;

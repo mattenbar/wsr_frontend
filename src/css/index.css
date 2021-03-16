@@ -442,6 +442,16 @@ body {
 }
 
 @media (min-width: 87em) {
+    .linksBar-top,
+    .linksBar-bottom {
+    padding: 2%;
+    text-align: justify;
+    font-size: 1.3em;
+    color: black;
+    /* padding-right: 1em;
+    padding-left: 1em; */
+    padding: 2em;
+}
 }
 
 /* -------------------END HOME/ LINKS BAR------------------- */
