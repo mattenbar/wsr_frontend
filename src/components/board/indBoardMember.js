@@ -7,6 +7,9 @@ function indBoardMember(props) {
             <span>
                 <img className="individualImage" src={props.img} alt={props.name}/>
                 <h1>{props.name}</h1>
+                <br />
+                <h3>{props.title}</h3>
+                <br />
                 <p>{props.about}</p>
             </span>
             <div className="seemoreboard" >
