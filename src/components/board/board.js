@@ -22,17 +22,19 @@ class Board extends Component{
         </div>
         <div className="board-container">
           <MattBrown />
-          <BrendanClark />
-          <LisaGok />
-          <HarryGrand />
-          <JeffNash />
-          <MarryOsaka />
           <ChrisPaulitz />
-          <JimRoth />
+          
+          <LisaGok />
+          <JeffNash />
+          <SidYenamandra />
+          <MarryOsaka />
+          <HarryGrand />
+          <BrendanClark />
           <SusanThedar />
           <CathyWeathorford />
-          <SidYenamandra />
+          
         </div>
+        <JimRoth />
       </div>
     )
   }
