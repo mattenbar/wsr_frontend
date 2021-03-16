@@ -36,18 +36,6 @@ boardMembersMapped = () => {
         </div>
         <div className="board-container">
           {this.boardMembersMapped()}
-
-          {/* <MattBrown />
-          <ChrisPaulitz />
-          <LisaGok />
-          <JeffNash />
-          <SidYenamandra />
-          <MaryOsaka />
-          <HarryGrand />
-          <BrendanClark />
-          <SusanThedar />
-          <CathyWeathorford />
-          <JimRoth /> */}
         </div>
       </div>
     )

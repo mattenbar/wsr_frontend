@@ -1053,6 +1053,7 @@ body {
     padding-left: 2em;
     padding-right: 2em;
     font-size: .75em;
+    grid-auto-rows: 30em;
     /* margin-top: -10em; */
     
 }
@@ -1061,6 +1062,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     /* border-bottom: 1px solid #000; */
 }
 
@@ -1075,11 +1077,39 @@ body {
 
 }
 
+/* auth-buttons__yellow */
+.popupbuttonboard {
+    width: 200px;
+    text-decoration: none;
+    color: rgba(40, 115, 172);
+    background-color: Transparent;
+    border: none;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    position: absolute;
+    bottom: 0;
+    right: 4em;
+   
+}
+
+.popupbuttonboard a{
+    text-decoration: none;
+    color: rgba(40, 115, 172);
+}
+
+.popupbuttonboard:hover,
+.popupbuttonboard:active {
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 4px grey;
+}
+
 @media (min-width: 43.75em) {
     .board-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 30em;
+        grid-auto-rows: 15em;
         
         align-content: space-evenly;
         /* min-height: 0; */
@@ -1098,21 +1128,31 @@ body {
         width: 25%;
         
     } */
+
+
 }
 
 @media (min-width: 62em) {
     .board-container{
         font-size: 1em;
-        grid-auto-rows: 20em;
+        grid-auto-rows: 15em;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .individual {
         grid-row: auto / span 2;
+        position: relative;
     }
 
 
     .individualImage {
-        width: 35%;
+        width: 50%;
+    }
+
+    .popupbuttonboard {
+        position: absolute;
+        bottom: 0;
+        right: 2em;
     }
 }
 

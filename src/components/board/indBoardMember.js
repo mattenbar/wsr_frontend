@@ -9,13 +9,12 @@ function indBoardMember(props) {
                 <h1>{props.name}</h1>
                 <br />
                 <h3>{props.title}</h3>
-                <br />
-                <p>{props.about}</p>
             </span>
             <div className="seemoreboard" >
-            <button className="auth-buttons__yellow"><a href="#popupboard">Learn More</a></button>
+            <button className="popupbuttonboard"><a href="#popupboard">Learn More</a></button>
+                <PopUpBoard name={props.name} title={props.title} about={props.about} key={props.key}/>
             </div>
-            <PopUpBoard name={props.name} title={props.title} about={props.about} />
+            
         </div>
     );
 }
