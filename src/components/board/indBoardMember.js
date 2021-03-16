@@ -10,14 +10,14 @@ function indBoardMember(props) {
         <div className="individual" >
             <span>
                 <img className="individualImage" src={props.img} alt={props.name}/>
-                <h1>{props.name}</h1>
+                <h1 className="boardname" >{props.name}</h1>
                 <br />
                 <h3>{props.title}</h3>
-            </span>
-            <div className="seemoreboard" >
+                <div className="seemoreboard" >
             <button className="popupbuttonboard"><a href={`#${props.name}`}>Learn More</a></button>
                 <PopUpBoard name={props.name} title={props.title} about={props.about}/>
             </div>
+            </span>
             
         </div>
     );

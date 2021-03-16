@@ -1032,7 +1032,8 @@ body {
 /* -----------------------------------START OUR BOARD---------------------------------------------- */
 
 .board {
-    text-align: center
+    text-align: center;
+    margin-bottom: 3em;
 }
 
 .board-header {
@@ -1077,6 +1078,10 @@ body {
 
 }
 
+.boardname {
+    text-transform: uppercase;
+}
+
 /* auth-buttons__yellow */
 .popupbuttonboard {
     width: 200px;
@@ -1087,9 +1092,10 @@ body {
     font-size: 1.25em;
     text-transform: uppercase;
     transition: all 0.5s ease;
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    right: 4em;
+    right: 4em; */
+    margin-top: 2em;
    
 }
 
@@ -1135,7 +1141,7 @@ body {
 @media (min-width: 62em) {
     .board-container{
         font-size: 1em;
-        grid-auto-rows: 15em;
+        grid-auto-rows: 12em;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -1150,9 +1156,7 @@ body {
     }
 
     .popupbuttonboard {
-        position: absolute;
-        bottom: 0;
-        right: 2em;
+       margin-top: 1.5em;
     }
 }
 
