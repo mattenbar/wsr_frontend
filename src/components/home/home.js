@@ -14,7 +14,7 @@ import LastIssue from './lastIssue';
 class Home extends Component {
   render(){
     return(
-      
+      console.log(this.props),
       <div className="home-container">
         <LinksBar />
         <Carousel />

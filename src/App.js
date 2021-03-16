@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 
 //actions
 import {fetchPosts} from './actions/fetchPosts'
+import {fetchCategories} from './actions/fetchCategories'
 
 //components
 
@@ -47,6 +48,7 @@ class App extends React.Component{
 
   componentDidMount(){
     this.props.dispatchFetchPosts()
+    this.props.dispatchFetchCategories()
   }
 
   handleSignIn = (user) => {
@@ -62,7 +64,7 @@ class App extends React.Component{
       <div className="App">
         <NavBar handleSignIn={this.handleSignIn} />
         <Switch >
-          <Route exact path ="/" render={()=> <Home posts={this.props.posts} />}/>
+          <Route exact path ="/" render={()=> <Home posts={this.props.posts} categories={this.props.categories}/>}/>
           <Route exact path ="/about" render={()=> <AboutUs />}/>
           <Route exact path ="/our-partners" render={()=> <Partners />}/>
           <Route exact path ="/our-board" render={()=> <Board />}/>
@@ -97,12 +99,14 @@ class App extends React.Component{
 function mSTP(state){
   return {
     posts: state.posts,
+    categories: state.categories
   }
 }
 
 function mDTP(dispatch){
   return {
     dispatchFetchPosts: (posts) => dispatch(fetchPosts(posts)),
+    dispatchFetchCategories: (categories) => dispatch(fetchCategories(categories))
   }
 }
 
