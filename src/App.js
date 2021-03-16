@@ -17,6 +17,7 @@ import AboutUs from './components/about/aboutUs';
 import Partners from './components/partners/partners';
 import Board from './components/board/board';
 import Archives from './components/archives/archives';
+import PostInput from './components/admin/postInput'
 // import category components
 import CapitalConnections from './components/categories/capitalConnections';
 import DigitalDomains from './components/categories/digitalDomains';
@@ -70,6 +71,7 @@ class App extends React.Component{
           <Route exact path ="/our-board" render={()=> <Board />}/>
           <Route exact path ="/contact-us" render={()=> <ContactUs />}/>
           <Route exact path ="/archives" render={()=> <Archives posts={this.props.posts}/>}/>
+          <Route exact path ="/submit" render={()=> <PostInput posts={this.props.posts} categories={this.props.categories} />}/>
           {/* category pages */}
           <Route exact path ="/capital-connections" render={()=> <CapitalConnections />}/>
           <Route exact path ="/digital-domains" render={()=> <DigitalDomains />}/>
