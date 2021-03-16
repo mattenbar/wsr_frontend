@@ -1,9 +1,9 @@
 import React from 'react';
 
 function popUpBoard(props) {
-    console.log("popupboard", props)
+    // console.log("popupboard", props)
     return (
-        <div className="popup" id="popupboard"> 
+        <div className="popup" id={props.name}> 
             <div className="popup__content">
                 <div className="popup__left">
 
