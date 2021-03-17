@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { API_URL } from '../../apiConstants';
 
 function DigitalDomains(props) {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/v1/categories/2")
+        fetch(API_URL + "/categories/2")
             .then((res) => res.json())
             .then((result) => {
                 // console.log(result.posts.data)

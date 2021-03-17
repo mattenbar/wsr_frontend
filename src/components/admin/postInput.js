@@ -1,8 +1,7 @@
-import React from 'react'
-import {connect} from 'react-redux'
-import {addPost} from '../../actions/addPost'
-
-
+import React from 'react';
+import {connect} from 'react-redux';
+import {addPost} from '../../actions/addPost';
+import { addImage } from '../../actions/addImage';
 
 class PostInput extends React.Component {
 
@@ -11,28 +10,49 @@ class PostInput extends React.Component {
       title: '',
       content: '',
       author: '',
-      image: '',
+      image: {},
       category_id: 0
     },
     category:{
       name: ''}
     }
   
-  
   handlePostChange = (event) => {
     let post = {...this.state.post}
     let currentState = post
     let {name, value} = event.target
     // currentState[name] = value
-    name === "image" ? currentState[name] = event.currentTarget.files[0] : currentState[name] = value
+    // if (name === "image") {
+    //   // const files = document.querySelector("[type=file]").files
+    //   // let file = files[0]
+    //   // let formData = new FormData()
+    //   // formData.append("file", file)
+    //   this.handleImageUpdate()
+    //   // currentState[name] = formData
+    // } else {
+      currentState[name] = value
+    // }
     this.setState({
       post: currentState
     })
+    
+  }
+
+  handleImageUpdate = () => {
+    // debugger
+    const files = document.querySelector("[type=file]").files
+    let file = files[0]
+    let formData = new FormData()
+    formData.append("file", file)
+    formData.append("title", this.state.title)
+    this.props.dispatchAddImage(formData)
   }
 
   handlePostSubmit = (event) => {
+    // debugger
     event.preventDefault()
     this.props.dispatchAddPost(this.state.post)
+    this.handleImageUpdate()
     this.setState({
       post: {
         title: '',
@@ -95,7 +115,8 @@ function mSTP(state){
 
 function mDTP(dispatch){
   return {
-    dispatchAddPost: (post) => dispatch(addPost(post))
+    dispatchAddPost: (post) => dispatch(addPost(post)),
+    dispatchAddImage: (formData) => dispatch(addPost(formData))
   }
 }
 
