@@ -85,6 +85,7 @@ function lastIssue(props) {
                             <img
                                 src="https://i.imgur.com/uBljRiB.jpg"
                                 className="circular-image"
+                                alt="circular1"
                             />
                             {/* header */}
                             <h2>Headline Headline Headline</h2>
