@@ -5,9 +5,15 @@ export default function managePosts(state = [], action) {
             return state.concat(action.payload.post.data);
 
         case 'ADD_POST':
-            return state.concat(action.payload.post.data);
+            const post = action.payload
+            debugger
+            return state.concat(action.payload);
+            // const job = action.payload
+            // return { ...state, jobs: [job, ...state.jobs] }
+            
 
         default:
             return state;
     }
 }
+
