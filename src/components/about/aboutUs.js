@@ -2,9 +2,12 @@ import React from 'react';
 
 function aboutUs(props) {
     return (
-        <div>
-            
+        <div className="board">
+        <div className="board-header">
+          <h1>ABOUT US</h1>
         </div>
+        
+      </div>
     );
 }
 
