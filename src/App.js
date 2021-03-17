@@ -10,6 +10,7 @@ import {fetchCategories} from './actions/fetchCategories'
 
 import Home from './components/home/home';
 import NavBar from './components/navbar/nav';
+import Search from './components/navbar/search';
 import Footer from './components/footer/footer';
 import Ads from './components/ads/ads';
 import ContactUs from './components/contact/contact';
@@ -66,6 +67,7 @@ class App extends React.Component{
         <NavBar handleSignIn={this.handleSignIn} />
         <Switch >
           <Route exact path ="/" render={()=> <Home posts={this.props.posts} categories={this.props.categories}/>}/>
+          <Route exact path ="/search" render={()=> <Search posts={this.props.posts} categories={this.props.categories} /> } />
           <Route exact path ="/about" render={()=> <AboutUs />}/>
           <Route exact path ="/our-partners" render={()=> <Partners />}/>
           <Route exact path ="/our-board" render={()=> <Board />}/>
