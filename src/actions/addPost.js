@@ -1,27 +1,28 @@
-import { API_URL } from '../apiConstants';
-
 export const addPost = (data) => {
-  // debugger
-  return ((dispatch) => {
-    // debugger
-    
-    fetch(API_URL + '/posts', {
+
+  return (dispatch) => {
+    let body = new FormData()
+    body.append("image", data.image)
+    fetch("http://localhost:3000/api/v1/image_upload",{
+    method: "PUT",
+    body
+    })
+    .then(resp => resp.json())
+    .then(json => {
+      data.image = json.image
+      fetch('http://localhost:3000/api/v1/posts', {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
       method: 'POST',
       body: JSON.stringify(data)
-      // body: JSON.stringify({
-      //     title: data.title,
-      //     author: data.author,
-      //     content: data.content,
-      //     category_id: data.category_id
-      //   })
     })
     .then(response => response.json())
-    .then(data=> {
-      dispatch({type: 'ADD_POST', payload: data})
+    .then(post=> dispatch({type: 'ADD_POST', payload: post}))
     })
-  })
+
+    
+  }
+
 }

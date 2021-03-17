@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {addPost} from '../../actions/addPost';
-import { addImage } from '../../actions/addImage';
+
 
 class PostInput extends React.Component {
 
@@ -20,39 +20,29 @@ class PostInput extends React.Component {
   handlePostChange = (event) => {
     let post = {...this.state.post}
     let currentState = post
-    let {name, value} = event.target
-    // currentState[name] = value
-    // if (name === "image") {
-    //   // const files = document.querySelector("[type=file]").files
-    //   // let file = files[0]
-    //   // let formData = new FormData()
-    //   // formData.append("file", file)
-    //   this.handleImageUpdate()
-    //   // currentState[name] = formData
-    // } else {
-      currentState[name] = value
-    // }
+    let {name, value} = event.target 
+    currentState[name] = value
     this.setState({
       post: currentState
     })
-    
   }
 
-  handleImageUpdate = () => {
-    // debugger
-    const files = document.querySelector("[type=file]").files
-    let file = files[0]
-    let formData = new FormData()
-    formData.append("file", file)
-    formData.append("title", this.state.title)
-    this.props.dispatchAddImage(formData)
+  handleImageChange = (event) => {
+    let post = {...this.state.post}
+    let currentState = post
+    currentState["image"] = event.target.files[0]
+    this.setState({
+      post: currentState
+    })
   }
+
+  
+
+
 
   handlePostSubmit = (event) => {
-    // debugger
     event.preventDefault()
     this.props.dispatchAddPost(this.state.post)
-    this.handleImageUpdate()
     this.setState({
       post: {
         title: '',
@@ -94,7 +84,7 @@ class PostInput extends React.Component {
 
             <div className="postForm">
               <label>Image</label>
-              <input id="files-upload" type="file" name="image" accept="image/*" onChange={this.handlePostChange} />
+              <input id="files-upload" type="file" name="image" accept="image/*" onChange={this.handleImageChange} />
             </div> 
             <button type="submit">Submit</button>
           </form>
