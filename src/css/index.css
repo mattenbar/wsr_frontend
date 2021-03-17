@@ -203,6 +203,15 @@ body {
 
 }
 
+.searchPage{
+    margin-top: 3em;
+    margin-left: 40%;
+}
+
+.searchImage {
+    width: 20%;
+}
+
 @media (min-width: 43.75em) {
     .searchbar button {
         width: 7.5em;
