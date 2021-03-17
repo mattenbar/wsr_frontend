@@ -6,10 +6,16 @@ export default function managePosts(state = [], action) {
 
         case 'ADD_POST':
             const post = action.payload
-            debugger
+            console.log(post)
+            // debugger
             return state.concat(action.payload);
             // const job = action.payload
             // return { ...state, jobs: [job, ...state.jobs] }
+
+        case 'ADD_IMAGE':
+            debugger
+            return state.concat(action.payload)
+            
             
 
         default:
