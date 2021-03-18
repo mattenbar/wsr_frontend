@@ -1,3 +1,90 @@
+// import React, { useState, useRef, useEffect } from 'react';
+
+// const SearchbarDropdown = (props) => {
+//  console.log("options", props.options)
+//     const { options, onInputChange } = props
+//     const ulRef = useRef();
+//     const inputRef = useRef();
+
+//     // useEffect(() => {
+//     //     inputRef.current.addEventListener('click', (event) => {
+//     //         event.stopPropagation();
+//     //         ulRef.current.style.display = 'flex';
+//     //         onInputChange(event);
+//     //     });
+//     //     document.addEventListener('click', (event) => {
+//     //         ulRef.current.style.display = 'none';
+//     //     });
+//     // }, []);
+//     if (options.length > 0) {
+//         return (
+//             <div className="search-bar-dropdown">
+//                     <input
+//                         type="search"
+//                         className="form-control"
+//                         ref={inputRef}
+//                         onChange={onInputChange}
+//                     />
+//                     <ul id="results" className="list-group" ref={ulRef}>
+//                         {options.map((option) => {
+//                         return (
+//                             <button
+//                             type="button"
+//                             onClick={(e) => {
+//                                 inputRef.current.value = option;
+//                             }}
+//                             className="list-group-item list-group-item-action"
+//                             >
+//                             {option.attribute.title}
+//                             </button>
+//                         );
+//                         })}
+//                     </ul>
+//             </div>
+//         )
+//     } else {
+//         return (
+//             <div className="search-bar-dropdown">
+//                     <input
+//                         type="search"
+//                         className="form-control"
+//                         ref={inputRef}
+//                         onChange={onInputChange}
+//                     />
+//             </div>
+//         )
+//     }
+    
+    
+// }
+
+// function SearchBar(props) {
+
+//     const posts = props.posts.posts
+//     const [searchResults, setSearchResults] = useState([])
+    
+//     const handleOnChange = (e) => {
+//         let value = e.target.value
+//         setSearchResults(posts.filter(post => post.attributes.title.toLowerCase().includes(value.toLowerCase()) ||
+//             post.attributes.author.toLowerCase().includes(value.toLowerCase()) ||
+//             post.attributes.content.toLowerCase().includes(value.toLowerCase())
+//         ))
+//     }
+
+
+//     return (
+//         console.log("searchBar1", posts),
+//         <div>
+//             <SearchbarDropdown options={searchResults} onInputChange={handleOnChange} />
+//         </div>
+//     )
+// }
+
+// export default SearchBar;
+
+
+// -----------------------------------------------------------------------------
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -12,6 +99,8 @@ function searchBar(props) {
 }
 
 export default searchBar;
+
+// -----------------------------------------------------------------------------
 
 // import React, { useState } from "react";
 // import { Route } from "react-router-dom";
