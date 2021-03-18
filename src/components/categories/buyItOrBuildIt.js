@@ -19,14 +19,15 @@ function BuyItOrBuildIt(props) {
     return (
         console.log(posts),
         <div className="category-show">
-            <img src="carouselImages/BuyItOrBuildIt.png" alt=""></img>
-            <h1>
-              &nbsp; BUY IT
-              <br/>
-              &nbsp; OR BUILD IT?
-            </h1>
-            <span className="blackLineFull"></span>
-           
+            <div className="category-image"><img src="carouselImages/BuyItOrBuildIt.png" alt=""></img></div>
+            <div className="category-header">
+                <h1>
+                    BUY IT
+                    <br/>
+                    OR BUILD IT?
+                </h1>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+            </div>
         </div>
     );
 }

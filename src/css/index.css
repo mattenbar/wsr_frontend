@@ -1350,6 +1350,7 @@ body {
 .category-header {
     padding: 1em;
     float: left;
+    text-transform: uppercase;
 }
 
 .category-image{

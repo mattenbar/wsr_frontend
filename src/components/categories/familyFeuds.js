@@ -19,13 +19,15 @@ function FamilyFeuds(props) {
     return (
         console.log(posts),
         <div className="category-show">
-            <img src="carouselImages/FamilyFeuds.png" alt=""></img>
-            <h1>
-              &nbsp; FAMILY
-              <br/>
-              &nbsp; FEUDS
-            </h1>
-            <span className="blackLineFull"></span>
+            <div className="category-image"><img src="carouselImages/FamilyFeuds.png" alt=""></img></div>
+            <div className="category-header">
+                <h1>
+                    FAMILY 
+                    <br/>
+                    FEUDS
+                </h1>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+            </div>
            
         </div>
     );
