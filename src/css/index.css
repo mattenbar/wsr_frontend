@@ -1358,6 +1358,10 @@ body {
     border-right: solid black;
 }
 
+.category-image img{
+    margin-top: 1em;
+}
+
 
 /* -----------------------------------END CATEGORIES------------------------------------------- */
 

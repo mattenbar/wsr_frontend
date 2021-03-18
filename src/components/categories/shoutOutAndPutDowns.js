@@ -19,13 +19,15 @@ function ShoutOut(props) {
     return (
         console.log(posts),
         <div className="category-show">
-            <img src="carouselImages/ShoutOuts.png" alt=""></img>
-            <h1>
-              &nbsp; SHOUT OUTS
-              <br/>
-              &nbsp; AND PUT DOWNS
-            </h1>
-            <span className="blackLineFull"></span>
+            <div className="category-image"><img src="carouselImages/ShoutOuts.png" alt=""></img></div>
+            <div className="category-header">
+                <h1>
+                    SHOUT OUTS
+                    <br/>
+                    AND PUT DOWNS
+                </h1>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+            </div>
            
         </div>
     );

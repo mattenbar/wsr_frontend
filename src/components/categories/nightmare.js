@@ -19,14 +19,15 @@ function Nightmare(props) {
     return (
         console.log(posts),
         <div className="category-show">
-            <img src="carouselImages/NightmareOnCompSt.png" alt=""></img>
-            <h1>
-              &nbsp; NIGHTMARE
-              <br/>
-              &nbsp; ON COMPLIANCE ST
-            </h1>
-            <span className="blackLineFull"></span>
-           
+            <div className="category-image"><img src="carouselImages/NightmareOnCompSt.png" alt=""></img></div>
+            <div className="category-header">
+                <h1>
+                    nightmare
+                    <br/>
+                    on compliance st.
+                </h1>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+            </div>
         </div>
     );
 }

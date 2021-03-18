@@ -19,13 +19,15 @@ function TransactionsAndTransitions(props) {
     return (
         console.log(posts),
         <div className="category-show">
-            <img src="carouselImages/Transactions&Trans.png" alt=""></img>
-            <h1>
-              &nbsp; TRANSACTIONS
-              <br/>
-              &nbsp; AND TRANSITIONS
-            </h1>
-            <span className="blackLineFull"></span>
+            <div className="category-image"><img src="carouselImages/Transactions&Trans.png" alt=""></img></div>
+            <div className="category-header">
+                <h1>
+                    TRANSACTIONS
+                    <br/>
+                    AND TRANSITIONS
+                </h1>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+            </div>
            
         </div>
     );

@@ -19,14 +19,15 @@ function NoteworthyNotes(props) {
     return (
         console.log(posts),
         <div className="category-show">
-            <img src="carouselImages/NoteworthyNotes.png" alt=""></img>
-            <h1>
-              &nbsp; NOTEWORTHY
-              <br/>
-              &nbsp; NOTES
-            </h1>
-            <span className="blackLineFull"></span>
-           
+            <div className="category-image"><img src="carouselImages/NoteworthyNotes.png" alt=""></img></div>
+            <div className="category-header">
+                <h1>
+                    noteworthy
+                    <br/>
+                    notes
+                </h1>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+            </div>
         </div>
     );
 }
