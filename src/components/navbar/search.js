@@ -40,7 +40,6 @@ export function Search(props) {
                     return (
                     <div>
                         <li>
-                            <img className="searchImage" src={post.attributes.image} />
                             <h1>{post.attributes.title}</h1>
 
                         </li>
