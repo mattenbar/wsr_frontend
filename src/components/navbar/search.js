@@ -1,93 +1,77 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React, { useState } from 'react';
 import Article from './article';
 
-class Search extends React.Component {
+export function Search(props) {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            posts: this.props.posts,
-            searchTerm: "",
-            searchTerms: [],
-            searchResults: [],
-            sorryMessage: ""
-        }
-    }
+    const [posts, setPosts] = useState(props.posts)
+    const [searchTerm, setSearchTerm] = useState("")
+    const [searchTerms, setSearchTerms] = useState([])
+    const [searchResults, setSearchResults] = useState([])
+    const [sorryMessage, setSorryMessage] = useState("")
 
-    handleOnChange = (e) => {
-        // console.log("searchTerm", e.target.value)
+    const handleOnChange = (e) => {
         let values = e.target.value
-        this.setState({
-            searchTerm: values
-        })
+        setSearchTerm(values)
         let valuesSplit = values.split(' ')
-        this.setState({
-            searchTerms: valuesSplit
-        })
+        setSearchTerms(valuesSplit)
     }
 
-    handleOnSubmit = (e) => {
+    const handleOnSubmit = (e) => {
         e.preventDefault()
         const filteredPosts = []
-        if (this.state.searchTerms.length > 0) {
-            for(let i = 0; i < this.state.searchTerms.length; i++) {
-                filteredPosts.push(this.state.posts.filter(post => {
-                    post.attributes.title.toLowerCase().includes(this.state.searchTerms[i].toLowerCase()) ||
-                    post.attributes.author.toLowerCase().includes(this.state.searchTerms[i].toLowerCase()) ||
-                    post.attributes.content.toLowerCase().includes(this.state.searchTerms[i].toLowerCase())
-                }))
+        if (searchTerms.length > 0) {
+            for(let i = 0; i < searchTerms.length; i++) {
+                filteredPosts.push(...props.posts.filter(post => post.attributes.title.toLowerCase().includes(searchTerms[i].toLowerCase()) ||
+                    post.attributes.author.toLowerCase().includes(searchTerms[i].toLowerCase()) ||
+                    post.attributes.content.toLowerCase().includes(searchTerms[i].toLowerCase())
+                ))
             }
-            this.setState({
-                searchResults: filteredPosts
-            })
+            setSearchResults(filteredPosts)
             if (filteredPosts.length === 0) {
-                this.setState({
-                    sorryMessage: 'There are no articles that match your search.'
-                })
+                setSorryMessage('There are no articles that match your search.')
             }
         }
-    }
+    }   
 
+    let postsMapped
 
-    render() {
-
-        console.log("search", this.props.posts)
-
-        let postsMapped
-        
-        if (this.props.posts.length > 0) {
-            let posts = this.props.posts
-            postsMapped = posts.map(post => { 
-                return (
-                <div>
-                    <li>
-                        <img className="searchImage" src={post.attributes.image} />
-                        <h1>{post.attributes.title}</h1>
-
-                    </li>
-                </div>
-                )
-            })
-            return (
-                <div className="searchPage">
-                    <form onSubmit={this.handleOnSubmit} >
-                        <label className="search-icon" >SEARCH</label>
-                        <input type="search" className="input" value={this.state.searchTerm} onChange={this.handleOnChange}/>
-                    </form>
+        if (searchResults.length > 0) {
+                postsMapped = searchResults.map(post => { 
+                    return (
                     <div>
-                        <ul>{postsMapped}</ul>
+                        <li>
+                            <img className="searchImage" src={post.attributes.image} />
+                            <h1>{post.attributes.title}</h1>
+
+                        </li>
                     </div>
-                </div>
-            )
+                    )
+                })
+                return (
+                    <div className="searchPage">
+                        <form onSubmit={handleOnSubmit} >
+                            <label className="search-icon" >SEARCH</label>
+                            <input type="search" className="input" value={searchTerm} onChange={handleOnChange}/>
+                        </form>
+                        <div>
+                            <ul>{postsMapped}</ul>
+                        </div>
+                    </div>
+                )
         } else {
             return (
                 <div>
-                    <button><img className="search-icon" src='/search.svg' /></button>
+                    <form onSubmit={handleOnSubmit} >
+                        <label className="search-icon" >SEARCH</label>
+                        <input type="search" className="input" value={searchTerm} onChange={handleOnChange}/>
+                    </form>
+                    {console.log("you are here", sorryMessage)}
+                    {sorryMessage && (
+                        <div>{sorryMessage}</div>
+                    )}
                 </div>
             )
         }
-    }
 }
 
 export default Search;
