@@ -64,7 +64,7 @@ class App extends React.Component{
     // console.log("app", this.props)
     return (
       <div className="App">
-        <NavBar handleSignIn={this.handleSignIn} />
+        <NavBar handleSignIn={this.handleSignIn} posts={this.props.posts} categories={this.props.categories}/>
         <Switch >
           <Route exact path ="/" render={()=> <Home posts={this.props.posts} categories={this.props.categories}/>}/>
           <Route exact path ="/search" render={()=> <Search posts={this.props.posts} categories={this.props.categories} /> } />
