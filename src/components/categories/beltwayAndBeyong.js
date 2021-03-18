@@ -19,14 +19,15 @@ function Beltway(props) {
     return (
         console.log(posts),
         <div className="category-show">
-            <img src="carouselImages/Beltway&Beyond.png" alt=""></img>
-            <h1>
-              &nbsp; BELTWAY
-              <br/>
-              &nbsp; AND BEYOND
-            </h1>
-            <span className="blackLineFull"></span>
-           
+            <div className="category-image"><img src="carouselImages/Beltway&Beyond.png" alt=""></img></div>
+            <div className="category-header">
+                <h1>
+                    BELTWAY 
+                    <br/>
+                    AND BEYOND
+                </h1>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+            </div>
         </div>
     );
 }
