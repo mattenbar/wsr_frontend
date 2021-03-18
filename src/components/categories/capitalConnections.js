@@ -19,13 +19,15 @@ function CapitalConnections(props) {
     return (
         console.log(posts),
         <div className="category-show">
-            <img src="carouselImages/CapitolConnections.png" alt=""></img>
-            <h1>
-              &nbsp; CAPITAL 
-              <br/>
-              &nbsp; CONNECTIONS
-            </h1>
-            <span className="blackLineFull"></span>
+            <div className="category-image"><img src="carouselImages/CapitolConnections.png" alt=""></img></div>
+            <div className="category-header">
+                <h1>
+                    CAPITAL 
+                    <br/>
+                    CONNECTIONS
+                </h1>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+            </div>
         </div>
     );
 }

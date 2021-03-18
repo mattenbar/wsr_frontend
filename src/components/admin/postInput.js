@@ -63,7 +63,7 @@ class PostInput extends React.Component {
 
     if (c){
       return (
-        <div >
+        <div className="postInput">
           <form onSubmit={this.handlePostSubmit} >
             <div className="postForm">
               <label>Title</label>
