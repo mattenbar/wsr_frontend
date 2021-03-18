@@ -66,8 +66,8 @@ class App extends React.Component{
       <div className="App">
         <NavBar handleSignIn={this.handleSignIn} posts={this.props.posts} categories={this.props.categories}/>
         <Switch >
-          <Route exact path ="/" render={()=> <Home posts={this.props.posts} categories={this.props.categories}/>}/>
-          <Route exact path ="/search" render={()=> <Search posts={this.props.posts} categories={this.props.categories} /> } />
+          <Route exact path ="/" render={()=> <Home posts={this.props.posts} categories={this.props.categories} search={this.props.search}/>}/>
+          <Route exact path ="/search" render={()=> <Search posts={this.props.posts} categories={this.props.categories} search={this.props.search}/> } />
           <Route exact path ="/about" render={()=> <AboutUs />}/>
           <Route exact path ="/our-partners" render={()=> <Partners />}/>
           <Route exact path ="/our-board" render={()=> <Board />}/>
@@ -103,7 +103,8 @@ class App extends React.Component{
 function mSTP(state){
   return {
     posts: state.posts,
-    categories: state.categories
+    categories: state.categories,
+    search: state.search
   }
 }
 

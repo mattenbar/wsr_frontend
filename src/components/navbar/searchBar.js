@@ -1,187 +1,115 @@
-// import React, { useState, useRef, useEffect } from 'react';
+import React, { Component } from "react";
+import { connect } from 'react-redux'
+import { Route } from "react-router-dom";
+import { searchAction } from '../../actions/searchAction';
+// import history from '../../history';
 
-// const SearchbarDropdown = (props) => {
-//  console.log("options", props.options)
-//     const { options, onInputChange } = props
-//     const ulRef = useRef();
-//     const inputRef = useRef();
+import { withRouter } from "react-router";
 
-//     // useEffect(() => {
-//     //     inputRef.current.addEventListener('click', (event) => {
-//     //         event.stopPropagation();
-//     //         ulRef.current.style.display = 'flex';
-//     //         onInputChange(event);
-//     //     });
-//     //     document.addEventListener('click', (event) => {
-//     //         ulRef.current.style.display = 'none';
-//     //     });
-//     // }, []);
-//     if (options.length > 0) {
-//         return (
-//             <div className="search-bar-dropdown">
-//                     <input
-//                         type="search"
-//                         className="form-control"
-//                         ref={inputRef}
-//                         onChange={onInputChange}
-//                     />
-//                     <ul id="results" className="list-group" ref={ulRef}>
-//                         {options.map((option) => {
-//                         return (
-//                             <button
-//                             type="button"
-//                             onClick={(e) => {
-//                                 inputRef.current.value = option;
-//                             }}
-//                             className="list-group-item list-group-item-action"
-//                             >
-//                             {option.attribute.title}
-//                             </button>
-//                         );
-//                         })}
-//                     </ul>
-//             </div>
-//         )
-//     } else {
-//         return (
-//             <div className="search-bar-dropdown">
-//                     <input
-//                         type="search"
-//                         className="form-control"
-//                         ref={inputRef}
-//                         onChange={onInputChange}
-//                     />
-//             </div>
-//         )
-//     }
+import Search from './search';
+
+
+class SearchBar extends React.Component {
+
+    state = {
+        searchTerm: "",
+    }
+
+    // const [searchTerm, setSearchTerm] = useState("")
+    // const [searchTerms, setSearchTerms] = useState([])
+    // const [searchResults, setSearchResults] = useState([])
+    // const [sorryMessage, setSorryMessage] = useState("")
+
+    handleOnChange = (e) => {
+        let searchTerm = {...this.state}
+        let currentState = searchTerm
+        //let {name, value} = e.target
+        currentState["searchTerm"] = e.target.value
+        //debugger
+        this.setState({
+            searchTerm: currentState.searchTerm
+        })
+    }
+
+    handleOnSubmit = (e) => {
+        e.preventDefault()
+        this.props.dispatchSearch(this.state.searchTerm)
+        this.setState({
+            searchTerm: ""
+        })
+        // this.props.history.push('/search')
+    }
+
+    // handleOnSubmit = (e) => {
+    //     e.preventDefault()
+    //     const filteredPosts = []
+    //     if (searchTerms.length > 0) {
+    //         for(let i = 0; i < searchTerms.length; i++) {
+    //             filteredPosts.push(...props.posts.filter(post => post.attributes.title.toLowerCase().includes(searchTerms[i].toLowerCase()) ||
+    //                 post.attributes.author.toLowerCase().includes(searchTerms[i].toLowerCase()) ||
+    //                 post.attributes.content.toLowerCase().includes(searchTerms[i].toLowerCase())
+    //             ))
+    //         }
+    //         setSearchResults(filteredPosts)
+    //         if (filteredPosts.length === 0) {
+    //             setSorryMessage('There are no articles that match your search.')
+    //         }
+    //     }
+        // debugger
+
+        // props.history.push({ 
+        //     pathname: '/search',
+        //     state: searchResults
+        // });
+
+        // debugger
     
+        // props.history.push('/search', {searchResults: searchResults})
+
+        // return (
+        //     <Route
+        //     exact
+        //     path={'/search'}
+        //     render={props => (
+        //     <Search { ...props }
+        //     searchResults={searchResults}
+        //     />
+        //     )}
+        //     />
+        // )
     
-// }
+    render() {
+        return (
+            // console.log("searchBar1", props),
+            <div className="searchbar">
 
-// function SearchBar(props) {
-
-//     const posts = props.posts.posts
-//     const [searchResults, setSearchResults] = useState([])
-    
-//     const handleOnChange = (e) => {
-//         let value = e.target.value
-//         setSearchResults(posts.filter(post => post.attributes.title.toLowerCase().includes(value.toLowerCase()) ||
-//             post.attributes.author.toLowerCase().includes(value.toLowerCase()) ||
-//             post.attributes.content.toLowerCase().includes(value.toLowerCase())
-//         ))
-//     }
-
-
-//     return (
-//         console.log("searchBar1", posts),
-//         <div>
-//             <SearchbarDropdown options={searchResults} onInputChange={handleOnChange} />
-//         </div>
-//     )
-// }
-
-// export default SearchBar;
-
-
-// -----------------------------------------------------------------------------
-
-import React from 'react';
-import { Link } from 'react-router-dom';
-
-function searchBar(props) {
-    return (
-        <div className="searchbar">
-            <Link to='/search'>
-                <button ><img className="search-icon" src='/search.svg' /></button>
-            </Link>
-        </div>
-    );
+                <form onSubmit={this.handleOnSubmit} >
+                    <label className="search-icon">SEARCH</label>
+                    <input
+                        type="search"
+                        className="input"
+                        value={this.state.searchTerm}
+                        onChange={this.handleOnChange}
+                    />
+                </form>
+            </div>
+        );
+    }
 }
 
-export default searchBar;
+function mSTP(state){
+    return {
+        search: state.searchTerm
+    }
+}
 
-// -----------------------------------------------------------------------------
-
-// import React, { useState } from "react";
-// import { Route } from "react-router-dom";
-// // import history from '../../history';
-
-// import { withRouter } from "react-router";
-
-// import Search from './search';
+function mDTP(dispatch){
+    return {
+        dispatchSearch: (searchTerm) => dispatch(searchAction(searchTerm))
+    }
+}
 
 
-// function SearchBar(props) {
 
-//     const [searchTerm, setSearchTerm] = useState("")
-//     const [searchTerms, setSearchTerms] = useState([])
-//     const [searchResults, setSearchResults] = useState([])
-//     const [sorryMessage, setSorryMessage] = useState("")
-
-//     const handleOnChange = (e) => {
-//         let values = e.target.value
-//         setSearchTerm(values)
-//         let valuesSplit = values.split(' ')
-//         setSearchTerms(valuesSplit)
-//     }
-
-//     const handleOnSubmit = (e) => {
-//         e.preventDefault()
-//         const filteredPosts = []
-//         if (searchTerms.length > 0) {
-//             for(let i = 0; i < searchTerms.length; i++) {
-//                 filteredPosts.push(...props.posts.filter(post => post.attributes.title.toLowerCase().includes(searchTerms[i].toLowerCase()) ||
-//                     post.attributes.author.toLowerCase().includes(searchTerms[i].toLowerCase()) ||
-//                     post.attributes.content.toLowerCase().includes(searchTerms[i].toLowerCase())
-//                 ))
-//             }
-//             setSearchResults(filteredPosts)
-//             if (filteredPosts.length === 0) {
-//                 setSorryMessage('There are no articles that match your search.')
-//             }
-//         }
-//         // debugger
-
-//         // props.history.push({ 
-//         //     pathname: '/search',
-//         //     state: searchResults
-//         // });
-
-//         // debugger
-    
-//         props.history.push('/search', {searchResults: searchResults})
-
-//         // return (
-//         //     <Route
-//         //     exact
-//         //     path={'/search'}
-//         //     render={props => (
-//         //     <Search { ...props }
-//         //     searchResults={searchResults}
-//         //     />
-//         //     )}
-//         //     />
-//         // )
-//     } 
-
-//     return (
-//         console.log("searchBar1", props),
-//         <div className="searchbar">
-//             {/* <Link to='/search'>
-//                 <button ><img className="search-icon" src='/search.svg' /></button>
-//             </Link> */}
-//             <form onSubmit={handleOnSubmit} >
-//                 <label className="search-icon">SEARCH</label>
-//                 <input
-//                     type="search"
-//                     className="input"
-//                     value={searchTerm}
-//                     onChange={handleOnChange}
-//                 />
-//             </form>
-//         </div>
-//     );
-// }
-
-// export default withRouter(SearchBar);
-// // export default SearchBar;
+export default connect(mSTP, mDTP)(SearchBar);
+// export default SearchBar;
