@@ -15,11 +15,6 @@ class SearchBar extends React.Component {
         searchTerm: "",
     }
 
-    // const [searchTerm, setSearchTerm] = useState("")
-    // const [searchTerms, setSearchTerms] = useState([])
-    // const [searchResults, setSearchResults] = useState([])
-    // const [sorryMessage, setSorryMessage] = useState("")
-
     handleOnChange = (e) => {
         let searchTerm = {...this.state}
         let currentState = searchTerm
@@ -37,46 +32,9 @@ class SearchBar extends React.Component {
         this.setState({
             searchTerm: ""
         })
-        // this.props.history.push('/search')
+        this.props.history.push('/search')
     }
 
-    // handleOnSubmit = (e) => {
-    //     e.preventDefault()
-    //     const filteredPosts = []
-    //     if (searchTerms.length > 0) {
-    //         for(let i = 0; i < searchTerms.length; i++) {
-    //             filteredPosts.push(...props.posts.filter(post => post.attributes.title.toLowerCase().includes(searchTerms[i].toLowerCase()) ||
-    //                 post.attributes.author.toLowerCase().includes(searchTerms[i].toLowerCase()) ||
-    //                 post.attributes.content.toLowerCase().includes(searchTerms[i].toLowerCase())
-    //             ))
-    //         }
-    //         setSearchResults(filteredPosts)
-    //         if (filteredPosts.length === 0) {
-    //             setSorryMessage('There are no articles that match your search.')
-    //         }
-    //     }
-        // debugger
-
-        // props.history.push({ 
-        //     pathname: '/search',
-        //     state: searchResults
-        // });
-
-        // debugger
-    
-        // props.history.push('/search', {searchResults: searchResults})
-
-        // return (
-        //     <Route
-        //     exact
-        //     path={'/search'}
-        //     render={props => (
-        //     <Search { ...props }
-        //     searchResults={searchResults}
-        //     />
-        //     )}
-        //     />
-        // )
     
     render() {
         return (
@@ -84,12 +42,14 @@ class SearchBar extends React.Component {
             <div className="searchbar">
 
                 <form onSubmit={this.handleOnSubmit} >
-                    <label className="search-icon">SEARCH</label>
+                    {/* <label className="search-icon">SEARCH</label> */}
                     <input
+                        
                         type="search"
-                        className="input"
+                        className="searchbarinput"
                         value={this.state.searchTerm}
                         onChange={this.handleOnChange}
+                        placeholder="&#xF002;"
                     />
                 </form>
             </div>
@@ -111,5 +71,5 @@ function mDTP(dispatch){
 
 
 
-export default connect(mSTP, mDTP)(SearchBar);
+export default withRouter(connect(mSTP, mDTP)(SearchBar));
 // export default SearchBar;
