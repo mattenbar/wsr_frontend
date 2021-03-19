@@ -23,7 +23,7 @@ const NavBar = (props) => {
                         <div className="header-search-bar">
                             <SearchBar posts={props.posts} />   
                         </div>
-                        <div className="media-buttons">
+                        <div className="mediaButtons">
                             <SocialMediaButtons />
                         </div>
                         <div className="header-login-signup">

@@ -19,14 +19,15 @@ function WalletShare(props) {
     return (
         console.log(posts),
         <div className="category-show">
-            <img src="carouselImages/WalletShare.png" alt=""></img>
-            <h1>
-              &nbsp; WALLET
-              <br/>
-              &nbsp; SHARE
-            </h1>
-            <span className="blackLineFull"></span>
-           
+            <div className="category-image"><img src="carouselImages/WalletShare.png" alt=""></img></div>
+            <div className="category-header">
+                <h1>
+                    wallet
+                    <br/>
+                    share
+                </h1>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+            </div>
         </div>
     );
 }
