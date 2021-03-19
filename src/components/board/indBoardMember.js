@@ -6,7 +6,7 @@ function indBoardMember(props) {
 
     // const boardName = props.name
     return (
-        console.log(props),
+        // console.log(props),
         <div className="individual" >
             <span>
                 <img className="individualImage" src={props.img} alt={props.name}/>
