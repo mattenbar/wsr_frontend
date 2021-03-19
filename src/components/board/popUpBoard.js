@@ -4,10 +4,10 @@ function popUpBoard(props) {
     return (
         <div className="popup" id={props.name}> 
             <div className="popup__content">
-                <div className="popup__left">
+                <div className="boardpopup__left">
 
                 </div>
-                <div className="popup__right" >
+                <div className="boardpopup__right" >
                 <a href="#" className="popup__close">&times;</a>
                     <div>
                         <h1>{props.name}</h1>
