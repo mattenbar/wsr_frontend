@@ -202,8 +202,13 @@ body {
     }
 
     .social-media-buttons {
-        margin-left: 3.5em;
+        margin-left: 0em;
     }
+
+    .mediaButtons{
+        margin-right: 3em;
+    }
+
     
     .header-login-signup {
         margin-left: -1em;
@@ -239,6 +244,8 @@ body {
     }
 
     
+
+    
 }
 
 /* -----------------------------------search bar---------------------------------------------- */
@@ -265,17 +272,6 @@ body {
     font-size: 1.5em;
 }
 
-/* .searchbar button {
-    width: 11em;
-    height: 50px;
-    border: none;
-    border: solid 3px rgb(255, 208, 2);
-    border-radius: 5px;
-    background: Transparent;
-    font-size: 25px;
-    color: rgb(255, 208, 2);
-    margin-left: 0.4em;
-} */
 
 .search-icon {
     width: 15%;
@@ -313,8 +309,20 @@ body {
 
 @media (min-width: 100em) {
     .header-search-bar {
-        margin-left: -.5em;
-        margin-top: -9.2em;
+        margin-top: -10em;
+        margin-left: 1em;
+    }
+    
+    .searchbarinput {
+        font-size: 1.4em;
+        padding-top: 1em;
+        padding-bottom: .5em;
+        padding-left: .5em;
+    }
+    
+    .searchbarinput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(255, 208, 2);
+        font-size: 1.5em;
     }
     
 }
@@ -350,11 +358,9 @@ body {
 
 @media (min-width: 100em) {
     .smb-yellow {
-        width: 15%;
+        width: 17%;
         margin-top: 1.75em;
-        /* padding: 1em 1em 0 1em; */
-        /* transition: all 0.5s ease; */
-        
+        padding: 1em 1.25em 0 1.25em;
     }
 
     
@@ -408,8 +414,8 @@ body {
 .popup__close:visited {
     color: #013b5a;
     position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
+    top: .5rem;
+    right: 1rem;
     font-size: 2.5em;
     text-decoration: none;
     display: inline-block;
@@ -497,7 +503,7 @@ body {
         text-transform: uppercase;
         font-weight: 100;
         padding-left: .5em;
-        padding-top: 7%;
+        vertical-align: middle;
     }
     
     .leftpopupleft {
@@ -576,18 +582,22 @@ body {
 }
 
 @media (min-width: 100em) {
+
+
     .popup__content {
         height: 15rem;
         top: 50%;
+        width: auto;
     }
 
     .popup__left {
         height: 100%;
-        width: 35%;
-        
+        width: 40%;
         font-size: 1.5em;
         padding-left: .5em;
-        padding-top: 4%;
+        vertical-align: middle;
+        padding-bottom: 1em;
+        
     }
     
     .leftpopupleft {
@@ -1420,6 +1430,29 @@ body {
 
 /* -----------------------------------END CATEGORIES------------------------------------------- */
 
+/* -----------------------------------START ARCHIVES------------------------------------------- */
+
+.archive-header {
+    width: 100%;
+    font-size: 1.15em;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-bottom: solid 3px black;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* -----------------------------------END ARCHIVES------------------------------------------- */
+
+
+
 
 /* -----------------------------------Contact Us---------------------------------------------- */
 
@@ -1572,7 +1605,7 @@ body {
     .boardpopup__left {
     
             height: 100%;
-            width: 15%;
+            width: 5%;
             font-size: 1em;
             visibility: visible;
             display: content;
@@ -1684,6 +1717,20 @@ body {
 
     .individual h3{
         font-size: large;
+    }
+
+    .boardpopup__right h1 {
+        margin-top: 1em;
+        font-size: 2vw;
+    }
+    
+    .boardpopup__right h2 {
+        font-size: 1.5vw;
+    }
+
+    .boardpopup__right p {
+        font-size: 1vw;
+        margin-bottom: 2em;
     }
     
 
