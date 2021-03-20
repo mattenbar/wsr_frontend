@@ -57,14 +57,14 @@ class App extends React.Component{
   }
 
   handleSignIn = (user) => {
-    debugger
+    // debugger
     this.setState({
       user: user
     })
   }
 
   render(){
-    // console.log("app", this.props)
+    
     return (
       <div className="App">
         <NavBar handleSignIn={this.handleSignIn} posts={this.props.posts} categories={this.props.categories}/>

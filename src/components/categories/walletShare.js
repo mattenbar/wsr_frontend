@@ -8,7 +8,7 @@ function WalletShare(props) {
         fetch(API_URL + "/categories/9")
             .then((res) => res.json())
             .then((result) => {
-                // console.log(result.posts.data)
+    
                 setPosts(result.posts.data);
             })
             .catch((err) => {
@@ -17,7 +17,7 @@ function WalletShare(props) {
     }, []);
 
     return (
-        console.log(posts),
+
         <div className="category-show">
             <div className="category-image"><img src="carouselImages/WalletShare.png" alt=""></img></div>
             <div className="category-header">

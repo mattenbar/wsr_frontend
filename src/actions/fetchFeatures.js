@@ -9,6 +9,7 @@ export function fetchFeatures(data){
     fetch(API_URL + "/features")
       .then(res => res.json())
       .then(featuresObj => {
+        
         dispatch({type: FETCH_FEATURES, payload: featuresObj})
       })
     }

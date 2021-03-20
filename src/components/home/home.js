@@ -14,11 +14,10 @@ import LastIssue from './lastIssue';
 class Home extends Component {
   render(){
     return(
-      console.log(this.props),
       <div className="home-container">
         <LinksBar />
         <Carousel />
-        <Features />
+        <Features features={this.props.features} posts={this.props.posts}/>
         <div className="home-triple-row-grid" >
           <div className="newsmakers-transactions" >
             <NewsMakers />

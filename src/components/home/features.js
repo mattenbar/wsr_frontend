@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 function features(props) {
+
+    console.log(props)
+ 
     return (
         <div className="features">
             <h1>TODAY'S TOP FEATURES</h1>
