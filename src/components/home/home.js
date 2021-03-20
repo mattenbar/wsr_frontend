@@ -12,9 +12,6 @@ import ThisIssue from './thisIssue';
 import LastIssue from './lastIssue';
 
 class Home extends Component {
-
-
-
   render(){
 
     return(
@@ -38,6 +35,7 @@ class Home extends Component {
 function mSTP(state){
   return {
     posts: state.posts,
+    user: state.user
     
   }
 }

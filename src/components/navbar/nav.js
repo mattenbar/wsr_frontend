@@ -6,7 +6,9 @@ import SocialMediaButtons from './socialMediaButtons';
 import SearchBar from './searchBar';
 
 const NavBar = (props) => {
+
     return (
+        console.log("navbar", props),
         <>
             <div className="navbar">
                 <div className="nav-left"></div>
@@ -25,8 +27,9 @@ const NavBar = (props) => {
                         <div className="mediaButtons">
                             <SocialMediaButtons />
                         </div>
+                        
                         <div className="header-login-signup">
-                            <AuthButtons/>
+                            <AuthButtons user={props.user.user} />
                         </div>
                     </div>
                 </div>

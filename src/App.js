@@ -6,6 +6,7 @@ import { connect } from 'react-redux'
 import {fetchPosts} from './actions/fetchPosts'
 import {fetchCategories} from './actions/fetchCategories'
 import {fetchFeatures} from './actions/fetchFeatures'
+import { getUser } from './actions/userAuth/getUser';
 
 //components
 
@@ -39,37 +40,34 @@ import TransactionsAndTransitions from './components/categories/transactionsAndT
 import FromOurPartners from './components/categories/fromOutPartners'
 
 
-
-
 class App extends React.Component{
-  
-  constructor(props) {
-    super(props);
-    this.state = {
-      user: {}
-    }
-  }
 
   componentDidMount(){
     this.props.dispatchFetchPosts()
     this.props.dispatchFetchCategories()
     this.props.dispatchFetchFeatures()
+    
+    const token = localStorage.getItem("token")
+    if (token) {
+      this.props.dispatchGetUser(token)
+    }
+    // this.userLogin()
   }
 
-  handleSignIn = (user) => {
-    // debugger
-    this.setState({
-      user: user
-    })
-  }
+  // userLogin = () => {
+  //   const token = localStorage.getItem("token")
+  //   if (token) {
+  //     // this.props.dispatchGetUser(token)
+  //   }
+  // }
 
   render(){
     
     return (
       <div className="App">
-        <NavBar handleSignIn={this.handleSignIn} posts={this.props.posts} categories={this.props.categories}/>
+        <NavBar posts={this.props.posts} categories={this.props.categories} user={this.props.user}/>
         <Switch >
-          <Route exact path ="/" render={(routerProps)=> <Home {...routerProps} posts={this.props.posts} categories={this.props.categories} search={this.props.search} features={this.props.features}/>}/>
+          <Route exact path ="/" render={()=> <Home posts={this.props.posts} categories={this.props.categories} search={this.props.search} features={this.props.features} user={this.props.user} />}/>
           <Route exact path ="/search" render={()=> <Search posts={this.props.posts} categories={this.props.categories} search={this.props.search}/> } />
           <Route exact path ="/about" render={()=> <AboutUs />}/>
           <Route exact path ="/our-partners" render={()=> <Partners />}/>
@@ -107,7 +105,8 @@ function mSTP(state){
     posts: state.posts,
     categories: state.categories,
     search: state.search,
-    features: state.features
+    features: state.features,
+    user: state.user
   }
 }
 
@@ -115,7 +114,8 @@ function mDTP(dispatch){
   return {
     dispatchFetchPosts: (posts) => dispatch(fetchPosts(posts)),
     dispatchFetchCategories: (categories) => dispatch(fetchCategories(categories)),
-    dispatchFetchFeatures: (features) => dispatch(fetchFeatures(features))
+    dispatchFetchFeatures: (features) => dispatch(fetchFeatures(features)),
+    dispatchGetUser: (user) => dispatch(getUser(user))
   }
 }
 
