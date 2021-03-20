@@ -7,7 +7,7 @@ class LinksBar extends Component {
         <div className="linksBar-top">
             <a href="/point-counterpoint">POINT-COUNTERPOINT</a> &nbsp;
             <a href="/capital-connections">CAPITAL CONNECTIONS</a>&nbsp;
-            <a href="/digital-domains">DIGITAL DOMAINS</a>&nbsp;
+            <a href="/the-digital-domain">THE DIGITAL DOMAIN</a>&nbsp;
             <a href="/shout-out-and-put-downs">SHOUT OUTS & PUT DOWNS</a>&nbsp;
             <a href="/beltway-and-beyond">BELTWAY AND BEYOND</a>&nbsp;
             <a href="/lawyer-land">LAWYER LAND</a>&nbsp;
