@@ -5,9 +5,10 @@ function transactions(props) {
 
     if (props.posts){
 
-        let posts = props.posts.attributes.posts.reverse()
-        let firstPost = posts[0]
-        let secondPost = posts[1]
+        let posts = props.posts.attributes.posts
+        let lastTwoPosts = posts.slice(-2)
+        let firstPost = lastTwoPosts[1]
+        let secondPost = lastTwoPosts[0]
 
         return (   
             <div className="trcrsl">
@@ -15,7 +16,7 @@ function transactions(props) {
                 <div className="nm-cards" >
                     <div className="ti-carousel-wrapper">
                         <div className="box">
-                            <a href="#">
+                            <a href="/">
                                 {/* model */}
                                 <img
                                     src={firstPost.image}
@@ -29,7 +30,7 @@ function transactions(props) {
                     </div>
                     <div className="ti-carousel-wrapper">
                         <div className="box">
-                            <a href="#">
+                            <a href="/">
                                 {/* model */}
                                 <img
                                     src={secondPost.image}
