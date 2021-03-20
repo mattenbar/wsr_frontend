@@ -100,7 +100,7 @@ function SignupForm(props) {
 
 
     return (
-        console.log(user),
+        // console.log(user),
         <div className="signup-form">
             <form className="form" onSubmit={handleSubmit}>
                 <div className="field">

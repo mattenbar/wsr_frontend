@@ -39,7 +39,7 @@ class Search extends React.Component {
     }
 
     render() {
-        console.log("search mSTP", this.state)
+        // console.log("search mSTP", this.state)
         
         let postsMapped
         if (this.state.searchResults.length > 0) {

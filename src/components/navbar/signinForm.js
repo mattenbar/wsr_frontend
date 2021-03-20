@@ -4,7 +4,7 @@ import history from '../../history';
 
 
 function SigninForm(props) {
-    console.log("signinform", props)
+    // console.log("signinform", props)
     
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')

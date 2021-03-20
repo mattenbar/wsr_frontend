@@ -2,11 +2,9 @@ import React from 'react';
 import PopUpBoard from './popUpBoard'
 
 function indBoardMember(props) {
-    // href link fragment identifier (#)
-
-    // const boardName = props.name
+    
     return (
-        // console.log(props),
+        
         <div className="individual" >
             <span>
                 <img className="individualImage" src={props.img} alt={props.name}/>

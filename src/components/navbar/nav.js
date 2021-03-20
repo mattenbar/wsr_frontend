@@ -6,7 +6,6 @@ import SocialMediaButtons from './socialMediaButtons';
 import SearchBar from './searchBar';
 
 const NavBar = (props) => {
-    console.log("navbar", props)
     return (
         <>
             <div className="navbar">
