@@ -12,6 +12,9 @@ import ThisIssue from './thisIssue';
 import LastIssue from './lastIssue';
 
 class Home extends Component {
+
+  
+
   render(){
     return(
       <div className="home-container">
