@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 //actions
 import {fetchPosts} from './actions/fetchPosts'
 import {fetchCategories} from './actions/fetchCategories'
+import {fetchFeatures} from './actions/fetchFeatures'
 
 //components
 
@@ -39,6 +40,7 @@ import FromOurPartners from './components/categories/fromOutPartners'
 
 
 
+
 class App extends React.Component{
   
   constructor(props) {
@@ -51,6 +53,7 @@ class App extends React.Component{
   componentDidMount(){
     this.props.dispatchFetchPosts()
     this.props.dispatchFetchCategories()
+    this.props.dispatchFetchFeatures()
   }
 
   handleSignIn = (user) => {
@@ -66,7 +69,7 @@ class App extends React.Component{
       <div className="App">
         <NavBar handleSignIn={this.handleSignIn} posts={this.props.posts} categories={this.props.categories}/>
         <Switch >
-          <Route exact path ="/" render={()=> <Home posts={this.props.posts} categories={this.props.categories} search={this.props.search}/>}/>
+          <Route exact path ="/" render={()=> <Home posts={this.props.posts} categories={this.props.categories} search={this.props.search} features={this.props.features}/>}/>
           <Route exact path ="/search" render={()=> <Search posts={this.props.posts} categories={this.props.categories} search={this.props.search}/> } />
           <Route exact path ="/about" render={()=> <AboutUs />}/>
           <Route exact path ="/our-partners" render={()=> <Partners />}/>
@@ -91,7 +94,6 @@ class App extends React.Component{
           <Route exact path ="/newsmakers-roundup" render={()=> <NewsMakersRoundUp />}/>
           <Route exact path ="/transactions-and-transitions" render={()=> <TransactionsAndTransitions />}/>
           <Route exact path ="/from-our-partners" render={()=> <FromOurPartners />}/>
-
         </Switch>
         <Ads />
         <Footer />
@@ -104,14 +106,16 @@ function mSTP(state){
   return {
     posts: state.posts,
     categories: state.categories,
-    search: state.search
+    search: state.search,
+    features: state.features
   }
 }
 
 function mDTP(dispatch){
   return {
     dispatchFetchPosts: (posts) => dispatch(fetchPosts(posts)),
-    dispatchFetchCategories: (categories) => dispatch(fetchCategories(categories))
+    dispatchFetchCategories: (categories) => dispatch(fetchCategories(categories)),
+    dispatchFetchFeatures: (features) => dispatch(fetchFeatures(features))
   }
 }
 

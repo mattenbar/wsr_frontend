@@ -2,8 +2,15 @@ import React from 'react';
 
 function partners(props) {
     return (
-        <div>
-            
+        <div className="partner">
+            <div className="partners-header">
+                <h1>PARTNERS</h1>
+            </div>
+            <div className="partners-container">
+                <img src="PartnersImages/Advisor.png" alt="advisor"  />
+                <br/>
+                <img src="PartnersImages/Berkshire.png" alt="advisor"  />
+            </div>
         </div>
     );
 }

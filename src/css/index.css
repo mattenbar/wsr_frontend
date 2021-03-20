@@ -309,7 +309,7 @@ body {
 
 @media (min-width: 100em) {
     .header-search-bar {
-        margin-top: -10em;
+        margin-top: -8.5em;
         margin-left: 1em;
     }
     
@@ -1404,12 +1404,14 @@ body {
 
 .category-show h1{
     font-size: 3vw;
+    padding-left: .3em;
 }
 
 .category-show h4{
     font-size: 1.4vw;
     color: rgba(0, 59, 91);
     text-transform: uppercase;
+    padding-left: .75em;
 }
 
 .category-header {
@@ -1445,11 +1447,35 @@ body {
 
 
 
-
-
-
-
 /* -----------------------------------END ARCHIVES------------------------------------------- */
+
+/* -----------------------------------START PARTNERS------------------------------------------- */
+
+.partners-header {
+    width: 100%;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-bottom: solid 3px black;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.partners-container {
+    text-align: center;
+    
+}
+
+.partners-container img{
+    width: 50%;
+    padding: 2%;
+    
+}
+
+
+
+/* -----------------------------------END PARTNERS------------------------------------------- */
 
 
 
@@ -1669,7 +1695,7 @@ body {
     
     .board-header {
         width: 100%;
-        font-size: 1.15em;
+        font-size: 2em;
         text-transform: uppercase;
         font-weight: 300;
         border-bottom: solid 3px black;
