@@ -12,8 +12,8 @@ import ThisIssue from './thisIssue';
 import LastIssue from './lastIssue';
 
 class Home extends Component {
-
   render(){
+
     return(
       <div className="home-container">
         <LinksBar />
@@ -21,8 +21,8 @@ class Home extends Component {
         <Features features={this.props.features} posts={this.props.posts}/>
         <div className="home-triple-row-grid" >
           <div className="newsmakers-transactions" >
-            <NewsMakers />
-            <Transactions />
+            <NewsMakers posts={this.props.categories["13"]}/>
+            <Transactions posts={this.props.categories["14"]}/>
           </div>
           <ThisIssue />
           <LastIssue />
