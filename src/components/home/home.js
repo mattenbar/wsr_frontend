@@ -16,7 +16,7 @@ class Home extends Component {
 
 
   render(){
-    console.log("home - ", this.props.categories)
+
     return(
       <div className="home-container">
         <LinksBar />
@@ -25,7 +25,7 @@ class Home extends Component {
         <div className="home-triple-row-grid" >
           <div className="newsmakers-transactions" >
             <NewsMakers post={this.props.categories["13"]}/>
-            <Transactions />
+            <Transactions post={this.props.categories["14"]}/>
           </div>
           <ThisIssue />
           <LastIssue />
