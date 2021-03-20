@@ -2,10 +2,12 @@ import { combineReducers } from 'redux'
 import postReducer from './postReducer'
 import categoryReducer from './categoryReducer'
 import searchReducer from './searchReducer'
+import featuresReducer from './featuresReducer'
 
 
 export default combineReducers({
   posts: postReducer,
   categories: categoryReducer,
-  search: searchReducer
+  search: searchReducer,
+  features: featuresReducer
 })
