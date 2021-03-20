@@ -4,7 +4,7 @@ function features(props) {
 
     
     if (props.features.length > 0) {
-        console.log(props.features[1]["attributes"])
+        
         let leftFeature = props.features[0]["attributes"]["post"]
         let mainFeature = props.features[1]["attributes"]["post"]
         let rightFeature = props.features[2]["attributes"]["post"]
