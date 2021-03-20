@@ -13,8 +13,6 @@ import LastIssue from './lastIssue';
 
 class Home extends Component {
 
-  
-
   render(){
     return(
       <div className="home-container">
@@ -37,6 +35,7 @@ class Home extends Component {
 function mSTP(state){
   return {
     posts: state.posts,
+    user: state.user
     
   }
 }

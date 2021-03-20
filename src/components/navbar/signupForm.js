@@ -5,10 +5,14 @@ import history from '../../history';
 import { useSelector, useDispatch } from 'react-redux';
 
 // action:
-import { postUser, signupUser } from '../../actions/userAuth/signupUser';
+import { signupUser } from '../../actions/userAuth/signupUser';
 
 
 function SignupForm(props) {
+
+    const signedinUser = useSelector((state) => {
+        return state.user
+    })
 
     const [first_name, setFirstNameChange] = useState('');
     const [last_name, setLastNameChange] = useState('');
@@ -56,7 +60,7 @@ function SignupForm(props) {
         setCompany('')
         setEmail('')
         setPassword('')
-
+        console.log("formuser", signedinUser)
         history.back('/');
     }
 
