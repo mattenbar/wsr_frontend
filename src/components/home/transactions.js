@@ -9,7 +9,7 @@ function transactions(props) {
         let firstPost = posts[0]
         let secondPost = posts[1]
 
-        return (
+        return (   
             <div className="trcrsl">
                 <h1>TRANSACTIONS & TRANSITIONS</h1>
                 <div className="nm-cards" >
