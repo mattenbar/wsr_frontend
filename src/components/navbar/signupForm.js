@@ -2,13 +2,20 @@ import React, { useState } from 'react';
 import { API_URL } from '../../apiConstants';
 import history from '../../history';
 
+// redux hooks:
+import { useSelector, useDispatch } from 'react-redux';
+
+// action:
+import { postUser, signupUser } from '../../actions/userAuth/signupUser';
+
+
 function SignupForm(props) {
     // dconsole.log(props)
-    const [first_name, setFirstNameChange] = useState('')
-    const [last_name, setLastNameChange] = useState('')
-    const [company_name, setCompany] = useState('')
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+    const [first_name, setFirstNameChange] = useState('');
+    const [last_name, setLastNameChange] = useState('');
+    const [company_name, setCompany] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
     const [user, setUser] = useState({
         id: '',
@@ -16,7 +23,9 @@ function SignupForm(props) {
         last_name: '',
         email: '',
         company_name: ''
-    })
+    });
+
+    const dispatch = useDispatch();
 
     const handleFirstNameChange = (e) => {
         setFirstNameChange(e.target.value)
@@ -53,43 +62,37 @@ function SignupForm(props) {
         })
         // debugger
         // props.handleLogin(user)
-        
     }
 
     const handleSubmit = (e) => {
         // console.log("signupform", props)
         e.preventDefault()
-        fetch(API_URL + `/users`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Accept": "application/json"
-            },
-            body: JSON.stringify({
-                first_name,
-                last_name,
-                company_name,
-                email,
-                password
-            })
-        })
-        
-        .then(res => res.json())
-        .then(data => {
-            // debugger
-            if (data.jwt) {
-                localStorage.setItem("token", data.jwt)
+
+        const user = {
+            first_name: first_name,
+            last_name: last_name,
+            company_name: company_name,
+            email: email,
+            password: password
+        }
+
+        dispatch(signupUser(user))
+  
+        // .then(data => {
+        //     // debugger
+        //     if (data.jwt) {
+        //         localStorage.setItem("token", data.jwt)
                 
-                props.handleLogin ? props.handleLogin(data.user) : handleLogin(data.user)
-                // debugger
-                alert("Successfully Signed Up")
-            } else {
-                alert(data.errors.map( error => error))
-            }
-        })
-        .catch(() => {
-            alert("Unable to SignUp At This Time")
-        })
+        //         props.handleLogin ? props.handleLogin(data.user) : handleLogin(data.user)
+        //         // debugger
+        //         alert("Successfully Signed Up")
+        //     } else {
+        //         alert(data.errors.map( error => error))
+        //     }
+        // })
+        // .catch(() => {
+        //     alert("Unable to SignUp At This Time")
+        // })
         history.back('/');
         setFirstNameChange('')
         setLastNameChange('')
