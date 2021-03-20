@@ -10,8 +10,6 @@ function newsMakers(props) {
         let secondPost = posts[1]
 
         return (
-            console.log("in newsmakers - ", firstPost),
-            
             <div className="nmcrsl">
                 <h1>NEWSMAKERS ROUNDUP</h1>
                 <div className="nm-cards" >
@@ -26,7 +24,7 @@ function newsMakers(props) {
                                 />
                                 {/* header */}
                                 <h2>{firstPost.title}</h2>
-                                <p>by c</p>
+                                <p>by {firstPost.author}</p>
                             </a>
                         </div>
                     </div>
