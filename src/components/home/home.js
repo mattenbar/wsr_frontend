@@ -13,9 +13,10 @@ import LastIssue from './lastIssue';
 
 class Home extends Component {
 
-  
+
 
   render(){
+    console.log("home - ", this.props.categories)
     return(
       <div className="home-container">
         <LinksBar />
@@ -23,7 +24,7 @@ class Home extends Component {
         <Features features={this.props.features} posts={this.props.posts}/>
         <div className="home-triple-row-grid" >
           <div className="newsmakers-transactions" >
-            <NewsMakers />
+            <NewsMakers post={this.props.categories["13"]}/>
             <Transactions />
           </div>
           <ThisIssue />

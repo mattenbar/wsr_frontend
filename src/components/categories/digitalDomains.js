@@ -23,7 +23,7 @@ function DigitalDomains(props) {
                 <div className="category-image"><img src="carouselImages/DigitalDomains.png" alt=""></img></div>
                 <div className="category-header">
                     <h1>
-                        DIGITAL
+                        THE DIGITAL
                         <br/>
                         DOMAINS
                     </h1>

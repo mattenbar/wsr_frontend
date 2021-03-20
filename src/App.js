@@ -69,7 +69,7 @@ class App extends React.Component{
       <div className="App">
         <NavBar handleSignIn={this.handleSignIn} posts={this.props.posts} categories={this.props.categories}/>
         <Switch >
-          <Route exact path ="/" render={()=> <Home posts={this.props.posts} categories={this.props.categories} search={this.props.search} features={this.props.features}/>}/>
+          <Route exact path ="/" render={(routerProps)=> <Home {...routerProps} posts={this.props.posts} categories={this.props.categories} search={this.props.search} features={this.props.features}/>}/>
           <Route exact path ="/search" render={()=> <Search posts={this.props.posts} categories={this.props.categories} search={this.props.search}/> } />
           <Route exact path ="/about" render={()=> <AboutUs />}/>
           <Route exact path ="/our-partners" render={()=> <Partners />}/>
@@ -78,8 +78,8 @@ class App extends React.Component{
           <Route exact path ="/archives" render={()=> <Archives posts={this.props.posts}/>}/>
           <Route exact path ="/submit" render={()=> <PostInput posts={this.props.posts} categories={this.props.categories} />}/>
           {/* category pages */}
-          <Route exact path ="/capital-connections" render={()=> <CapitalConnections />}/>
-          <Route exact path ="/digital-domains" render={()=> <DigitalDomains />}/>
+          <Route exact path ="/capital-connections" render={()=> <CapitalConnections posts={this.props.categories}/>}/>
+          <Route exact path ="/the-digital-domain" render={()=> <DigitalDomains />}/>
           <Route exact path ="/point-counterpoint" render={()=> <PointCounterPoint />}/>
           <Route exact path ="/shout-out-and-put-downs" render={()=> <ShoutOut />}/>
           <Route exact path ="/beltway-and-beyond" render={()=> <Beltway />}/>
