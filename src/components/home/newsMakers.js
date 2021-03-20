@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 
 function newsMakers(props) {
+
+    
     return (
         <div className="nmcrsl">
             <h1>NEWSMAKERS ROUNDUP</h1>
