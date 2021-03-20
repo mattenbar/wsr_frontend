@@ -17,7 +17,8 @@ function Beltway(props) {
     }, []);
 
     return (
-       
+        // posts has actual articles now not just the post id - posts[number]["attributes"] gets the post
+        console.log(posts), 
         <div className="category-show">
             <div className="category-image"><img src="carouselImages/Beltway&Beyond.png" alt=""></img></div>
             <div className="category-header">
