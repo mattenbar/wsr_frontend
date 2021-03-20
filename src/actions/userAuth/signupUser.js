@@ -27,12 +27,15 @@ export const signupUser = ({ first_name, last_name, email, password, company_nam
     .then(data => {
         if (data.user !== undefined) {
             localStorage.setItem("token", data.jwt)
+            alert("Successfully Signed Up")
             return dispatch({ type: POST_USER_SUCCESS, payload: data })
         } else {
+            alert(data.errors.map(error => error))
             return dispatch({ type: POST_USER_ERRORS, payload: data })
         }
     })
     .catch(err => {
+        alert("Unable to SignUp At This Time")
         return dispatch({ type: POST_USER_FAILURE, payload: err })
     })
 }

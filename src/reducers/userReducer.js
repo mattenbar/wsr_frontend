@@ -5,7 +5,8 @@ const initialState = {
     error: "",
     errors: [],
     user: {},
-    jwt: ""
+    jwt: "",
+    loggedIn: false
 };
 
 const userReducer = ( state = initialState, action) => {
@@ -14,7 +15,8 @@ const userReducer = ( state = initialState, action) => {
             return {...state, isLoading: true}
 
         case POST_USER_SUCCESS:
-            return {...state, isLoading: false, user: action.payload.user, jwt: action.payload.jwt}
+            
+            return {...state, isLoading: false, user: action.payload.user, jwt: action.payload.jwt, loggedIn: true}
 
         case POST_USER_ERRORS:
             return {...state, isLoading: false, errors: action.payload.errors}
