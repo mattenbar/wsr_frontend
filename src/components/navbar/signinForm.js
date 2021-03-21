@@ -1,13 +1,23 @@
 import React, { useState } from 'react';
-import { API_URL } from '../../apiConstants';
 import history from '../../history';
 
+// redux hooks:
+import { useSelector, useDispatch } from 'react-redux';
+
+// action:
+import { signinUser } from '../../actions/userAuth/signinUser'
 
 function SigninForm(props) {
-    // console.log("signinform", props)
+
+    const signedinUser = useSelector((state) => {
+        console.log("sign in", state)
+        // return state.user
+    })
     
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const dispatch = useDispatch();
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value)
@@ -19,32 +29,18 @@ function SigninForm(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch(API_URL + '/login', {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Accept": "application/json"
-            },
-            body: JSON.stringify({
-                email,
-                password
-            })
-        })
 
-        .then(res => res.json())
-        .then(data => {
-            // debugger
-            if (data.failure) {
-                alert(data.failure)
-            }
-            localStorage.setItem("token", data.jwt)
-            alert(data.success)
-            // props.handleLogIn(data.user)
-            // debugger
-        })
-        history.back('/');
+        const user = {
+            email: email,
+            password: password
+        }
+
+        dispatch(signinUser(user))
+        
         setEmail('')
         setPassword('')
+
+        history.back('/');
     }
 
     return (
