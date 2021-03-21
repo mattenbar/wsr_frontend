@@ -60,7 +60,7 @@ function SignupForm(props) {
         setCompany('')
         setEmail('')
         setPassword('')
-        console.log("formuser", signedinUser)
+        
         history.back('/');
     }
 
