@@ -10,7 +10,7 @@ import { signinUser } from '../../actions/userAuth/signinUser'
 function SigninForm(props) {
 
     const signedinUser = useSelector((state) => {
-        console.log("sign in", state)
+        // console.log("sign in", state)
         // return state.user
     })
     
