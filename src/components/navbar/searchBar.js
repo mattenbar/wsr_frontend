@@ -34,7 +34,6 @@ class SearchBar extends React.Component {
         })
         this.props.history.push('/search')
     }
-
     
     render() {
         return (
@@ -68,8 +67,6 @@ function mDTP(dispatch){
         dispatchSearch: (searchTerm) => dispatch(searchAction(searchTerm))
     }
 }
-
-
 
 export default withRouter(connect(mSTP, mDTP)(SearchBar));
 // export default SearchBar;

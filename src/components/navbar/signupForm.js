@@ -1,46 +1,34 @@
 import React, { useState } from 'react';
 import history from '../../history';
-
 // redux hooks:
 import { useSelector, useDispatch } from 'react-redux';
-
 // action:
 import { signupUser } from '../../actions/userAuth/signupUser';
 
-
 function SignupForm(props) {
-
-    const signedinUser = useSelector((state) => {
-        return state.user
-    })
-
     const [first_name, setFirstNameChange] = useState('');
     const [last_name, setLastNameChange] = useState('');
     const [company_name, setCompany] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const dispatch = useDispatch();
-
     const handleFirstNameChange = (e) => {
         setFirstNameChange(e.target.value)
     }
-
     const handleLastNameChange = (e) => {
         setLastNameChange(e.target.value)
     }
-
     const handleCompanyChange = (e) => {
         setCompany(e.target.value)
     }
-
     const handleEmailChange = (e) => {
         setEmail(e.target.value)
     }
-
     const handlePasswordChange = (e) => {
         setPassword(e.target.value)
     }
+
+    const dispatch = useDispatch();
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -64,6 +52,9 @@ function SignupForm(props) {
         history.back('/');
     }
 
+    const signedinUser = useSelector((state) => {
+        return state.user
+    })
 
     return (
         <div className="signup-form">
