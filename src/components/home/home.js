@@ -24,7 +24,7 @@ class Home extends Component {
             <NewsMakers posts={this.props.categories["13"]}/>
             <Transactions posts={this.props.categories["14"]}/>
           </div>
-          <ThisIssue />
+          <ThisIssue posts={this.props.posts.slice(-5)}/>
           <LastIssue />
         </div>
       </div>

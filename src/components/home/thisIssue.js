@@ -6,8 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 function thisIssue(props) {
     let settings = {
         arrows: true,
-        // prevArrow:"<img className='a-left control-c prev slick-prev' src='carouselImages/arrow-left.png'>",
-        // nextArrow:"<img className='a-right control-c next slick-next' src='carouselImages/arrow-right.png'>",
         dots: false,
         infinite: true, 
         speed: 500,
@@ -46,102 +44,45 @@ function thisIssue(props) {
 
             ]
     }
-    return (
-        <div className="ticrsl" >
-            <h1>THIS ISSUE</h1>
-            <Slider {...settings} >
-                <div className="ticrslwrapper" >
-                    <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img src="https://i.imgur.com/uBljRiB.jpg" className="circular-image" />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
-                <div className="ticrslwrapper" >
-                    <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img src="https://i.imgur.com/uBljRiB.jpg" className="circular-image" />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
-                <div className="ticrslwrapper" >
-                    <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img src="https://i.imgur.com/uBljRiB.jpg" className="circular-image" />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
-                <div className="ticrslwrapper" >
-                    <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img src="https://i.imgur.com/uBljRiB.jpg" className="circular-image" />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
-                <div className="ticrslwrapper" >
-                    <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img src="https://i.imgur.com/uBljRiB.jpg" className="circular-image" />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
-                <div className="ticrslwrapper" >
-                    <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img src="https://i.imgur.com/uBljRiB.jpg" className="circular-image" />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
-                <div className="ticrslwrapper" >
-                    <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img src="https://i.imgur.com/uBljRiB.jpg" className="circular-image" />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
-                <div className="ticrslwrapper" >
-                    <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img src="https://i.imgur.com/uBljRiB.jpg" className="circular-image" />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
 
-            </Slider>
-        </div>
-    );
+
+
+
+    if(props.posts.length > 0){
+
+        let cItems = props.posts.map(post => {
+            return(
+                <div className="ticrslwrapper" >
+                        <div className="ti-box">
+                            <a href="#" className="ti-a">
+                                {/* model */}
+                                <img src={post.attributes.image} className="circular-image" />
+                                {/* header */}
+                                <h2>{post.attributes.title}</h2>
+                                <p>by {post.attributes.author}</p>
+                            </a>
+                        </div>
+                    </div>
+            )
+        })
+
+        return (
+            console.log("this issue - ", props.posts),
+    
+            <div className="ticrsl" >
+                <h1>THIS ISSUE</h1>
+                <Slider {...settings} >
+                    {cItems}
+    
+                </Slider>
+            </div>
+        );
+        
+    } else {
+        return(<div></div>)
+    }
+
+    
 }
 
 export default thisIssue;
