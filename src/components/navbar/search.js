@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
+import { withRouter } from "react-router";
+
 class Search extends React.Component {
 
     state = {
@@ -12,62 +14,112 @@ class Search extends React.Component {
         sorryMessage: ''
     }
 
-    searchPosts = (posts, searchTerm, searchTerms) => {
-        const filteredPosts = []
-        if (searchTerms.length > 0) {
-            for(let i = 0; i < searchTerms.length; i++) {
-                filteredPosts.push(posts.filter( post => post["attributes"]["title"].toLowerCase().includes(searchTerms[i].toLowerCase()) ||
-                    post["attributes"]["author"].toLowerCase().includes(searchTerms[i].toLowerCase()) ||
-                    post["attributes"]["content"].toLowerCase().includes(searchTerms[i].toLowerCase())
-                ))
+    searchPosts = () => {
+        // debugger
+        if (this.state.searchTerm.length > 0) {
+            let posts = this.props.posts
+
+                let newSearchTerm = this.state.searchTerm
+                // debugger
+                let searchTerms = newSearchTerm.split(' ')
+            
+            const filteredPosts = []
+            
+            // debugger
+            if (searchTerms.length > 0) {
+                for(let i = 0; i < searchTerms.length; i++) {
+                    filteredPosts.push(posts.filter( post => post["attributes"]["title"].toLowerCase().includes(searchTerms[i].toLowerCase()) ||
+                        post["attributes"]["author"].toLowerCase().includes(searchTerms[i].toLowerCase()) ||
+                        post["attributes"]["content"].toLowerCase().includes(searchTerms[i].toLowerCase())
+                    ))
+                }
             }
-        }
-        
-        let filteredPostsCount = filteredPosts[0].length
-        if (filteredPostsCount > 0) {
+            
+            let filteredPostsCount = filteredPosts[0].length
+            if (filteredPostsCount > 0) {
+                this.setState({
+                    searchResults: filteredPosts
+                })
+            } else if (filteredPostsCount === 0) {
+                this.setState({
+                    sorryMessage: 'There are no articles that match your search.'
+                })
+            }
             this.setState({
-                searchResults: filteredPosts
-            })
-        } else if (filteredPostsCount === 0) {
-            this.setState({
-                sorryMessage: 'There are no articles that match your search.'
-            })
+                searchTerm: ""
+            });
         }
-        this.setState({
-            searchTerm: ""
-        });
+        // this.props.history.push('/search')
     }
 
     componentDidMount = () => {
+        console.log("component Mounted", this.props.search)
+        // console.log("searchTerm", this.state.searchTerm)
+        // debugger
+        // if (this.state.searchTerm !== undefined) {
+            this.setState({
+                searchTerm: this.props.search
+            });
+            
+        if (this.props.search.length !== 0) {
+            // let posts = this.props.posts
 
-        if (this.state.searchTerm !== undefined) {
-            let posts = this.props.posts
-            let searchTerm = this.props.search
-            let searchTerms = searchTerm.split(' ')
-        
-            this.searchPosts(posts, searchTerm, searchTerms)
+            // this.setState({
+            //     searchTerm: this.props.search
+            // });
+
+            // let newSearchTerm = this.state.searchTerm
+            // // debugger
+            // let searchTerms = newSearchTerm.split(' ')
+            // this.searchPosts(posts, searchTerms)
+            this.searchPosts()
         }
         
     }
 
-    handleOnChange = (e) => {
-        console.log("e", e)
-        this.setState({
-            searchTerm: e.target.value
-        });
+    componentWillReceiveProps(props) {
+        this.setState({ searchTerm: this.props.search })
+        if (this.props.search.length !== 0) {
+            this.searchPosts()
+        }
+        
     }
 
-    handleOnSubmit = (e) => {
-        e.preventDefault()
+    componentDidUpdate = (props) => {
+        // console.log("it updated", props)
+        // if (this.state.searchTerm !== this.props.search) {
+        //     this.props.history.push('/search')
+        // }
+        // // debugger
+        // if (this.state.searchTerm !== this.props.search) {
+        //     let posts = this.props.posts
 
-        let posts = this.props.posts
-        let searchTerm = this.state.searchTerm
-        let searchTerms = searchTerm.split(' ')
+        //     let newSearchTerm = this.state.searchTerm
+        //     // debugger
+        //     let searchTerms = newSearchTerm.split(' ')
+        //     this.searchPosts(posts, searchTerms)
+        // }
+    }
 
-        this.searchPosts(posts, searchTerm, searchTerms)
-    } 
+    // handleOnChange = (e) => {
+    //     console.log("e", e)
+    //     this.setState({
+    //         searchTerm: e.target.value
+    //     });
+    // }
+
+    // handleOnSubmit = (e) => {
+    //     e.preventDefault()
+
+    //     let posts = this.props.posts
+    //     let searchTerm = this.state.searchTerm
+    //     let searchTerms = searchTerm.split(' ')
+
+    //     this.searchPosts(posts, searchTerm, searchTerms)
+    // } 
 
     render() {
+        // console.log("search reducer ", this.props)
         // debugger
         let postsMapped
         
@@ -77,7 +129,7 @@ class Search extends React.Component {
                 postsMapped = posts.map(post => { 
                     // debugger
                     return (
-                        <div>
+                        <div key={post.id}>
                             <li>
                                 <h3>{post.attributes.title}</h3>
                             </li>
@@ -86,10 +138,10 @@ class Search extends React.Component {
                 })
                 return (
                     <div className="searchPage">
-                        <form onSubmit={this.handleOnSubmit} >
+                        {/* <form onSubmit={this.handleOnSubmit} >
                             <label className="search-icon" >SEARCH</label>
                             <input type="search" className="input" value={this.state.searchTerm} onChange={this.handleOnChange}/>
-                        </form>
+                        </form> */}
                         <div>
                             <ul>{postsMapped}</ul>
                         </div>
@@ -98,10 +150,10 @@ class Search extends React.Component {
         } else if (this.state.sorryMessage !== ""){
             return (
                 <div>
-                    <form onSubmit={this.handleOnSubmit} >
+                    {/* <form onSubmit={this.handleOnSubmit} >
                         <label className="search-icon" >SEARCH</label>
                         <input type="search" className="input" value={this.state.searchTerm} onChange={this.handleOnChange}/>
-                    </form>
+                    </form> */}
                     <div><h2>{this.state.sorryMessage}</h2></div>
                 </div>
             )
@@ -109,10 +161,10 @@ class Search extends React.Component {
             return (
                 
                 <div>
-                    <form onSubmit={this.handleOnSubmit} >
+                    {/* <form onSubmit={this.handleOnSubmit} >
                         <label className="search-icon" >SEARCH</label>
                         <input type="search" className="input" value={this.state.searchTerm} onChange={this.handleOnChange}/>
-                    </form>
+                    </form> */}
                     <div><h2>Please Enter In Your Search Above</h2></div>
                 </div>
             )
@@ -122,8 +174,8 @@ class Search extends React.Component {
 
 function mSTP(state){
     return {
-        search: state.search[0]
+        search: state.search
     }
 }
 
-export default connect(mSTP)(Search);
+export default withRouter(connect(mSTP)(Search));
