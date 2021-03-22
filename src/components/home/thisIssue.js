@@ -67,8 +67,6 @@ function thisIssue(props) {
         })
 
         return (
-            console.log("this issue - ", props.posts),
-    
             <div className="ticrsl" >
                 <h1>THIS ISSUE</h1>
                 <Slider {...settings} >

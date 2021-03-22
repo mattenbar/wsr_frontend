@@ -46,126 +46,42 @@ function lastIssue(props) {
 
             ]
     };
-    return (
-        <div className="ticrsl">
-            <h1>LAST ISSUE</h1>
-            <Slider {...settings}>
-                <div className="ticrslwrapper">
-                <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img
-                                src="https://i.imgur.com/uBljRiB.jpg"
-                                className="circular-image"
-                            />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
+
+
+    if(props.posts.length > 0){
+
+        let cItems = props.posts.map(post => {
+            return(
+                <div className="ticrslwrapper" >
+                        <div className="ti-box">
+                            <a href="#" className="ti-a">
+                                {/* model */}
+                                <img src={post.attributes.image} className="circular-image" />
+                                {/* header */}
+                                <h2>{post.attributes.title}</h2>
+                                <p>by {post.attributes.author}</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div className="ticrslwrapper">
-                <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img
-                                src="https://i.imgur.com/uBljRiB.jpg"
-                                className="circular-image"
-                            />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
-                <div className="ticrslwrapper">
-                <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img
-                                src="https://i.imgur.com/uBljRiB.jpg"
-                                className="circular-image"
-                                alt="circular1"
-                            />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
-                <div className="ticrslwrapper">
-                <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img
-                                src="https://i.imgur.com/uBljRiB.jpg"
-                                className="circular-image"
-                            />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
-                <div className="ticrslwrapper">
-                <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img
-                                src="https://i.imgur.com/uBljRiB.jpg"
-                                className="circular-image"
-                            />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
-                <div className="ticrslwrapper">
-                <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img
-                                src="https://i.imgur.com/uBljRiB.jpg"
-                                className="circular-image"
-                            />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
-                <div className="ticrslwrapper">
-                <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img
-                                src="https://i.imgur.com/uBljRiB.jpg"
-                                className="circular-image"
-                            />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
-                <div className="ticrslwrapper">
-                <div className="ti-box">
-                        <a href="#" className="ti-a">
-                            {/* model */}
-                            <img
-                                src="https://i.imgur.com/uBljRiB.jpg"
-                                className="circular-image"
-                            />
-                            {/* header */}
-                            <h2>Headline Headline Headline</h2>
-                            <p>by Author Name</p>
-                        </a>
-                    </div>
-                </div>
-            </Slider>
-        </div>
-    );
+            )
+        })
+
+        return (
+            <div className="ticrsl" >
+                <h1>THIS ISSUE</h1>
+                <Slider {...settings} >
+                    {cItems}
+    
+                </Slider>
+            </div>
+        );
+        
+    } else {
+        return(<div></div>)
+    }
+
+    
 }
+
 
 export default lastIssue;
