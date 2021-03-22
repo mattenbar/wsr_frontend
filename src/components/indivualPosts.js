@@ -20,7 +20,7 @@ function IndivualPosts(props) {
         return (
             console.log("individual post", post),
             <div>
-                <h1>Individual Post</h1>
+                <h1>LOADING...</h1>
             </div>
         );
     } else {
