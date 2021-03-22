@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { Link } from 'react-router-dom'
 
 function newsMakers(props) {
 
@@ -17,7 +18,7 @@ function newsMakers(props) {
                 <div className="nm-cards" >
                     <div className="ti-carousel-wrapper">
                         <div className="box">
-                            <a href="/">
+                            <Link to={`/posts/${firstPost.id}`} post_id={firstPost.id} className="ti-a">
                                 {/* model */}
                                 <img 
                                     // src="https://i.imgur.com/uBljRiB.jpg"
@@ -27,12 +28,12 @@ function newsMakers(props) {
                                 {/* header */}
                                 <h2>{firstPost.title}</h2>
                                 <p>by {firstPost.author}</p>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="ti-carousel-wrapper">
                         <div className="box">
-                            <a href="/">
+                            <Link to={`/posts/${secondPost.id}`} post_id={secondPost.id} className="ti-a">
                                 {/* model */}
                                 <img
                                     src={secondPost.image}
@@ -41,7 +42,7 @@ function newsMakers(props) {
                                 {/* header */}
                                 <h2>{secondPost.title}</h2>
                                 <p>by {secondPost.author}</p>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

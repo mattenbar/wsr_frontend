@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom'
 
 function lastIssue(props) {
     let settings = {
@@ -53,14 +54,15 @@ function lastIssue(props) {
         let cItems = props.posts.map(post => {
             return(
                 <div key={post.attributes.id} className="ticrslwrapper" >
+                    {console.log(post.id)}
                         <div className="ti-box">
-                            <a href="#" className="ti-a">
+                            <Link to={`/posts/${post.id}`} post_id={post.id} className="ti-a">
                                 {/* model */}
                                 <img src={post.attributes.image} className="circular-image" />
                                 {/* header */}
                                 <h2>{post.attributes.title}</h2>
                                 <p>by {post.attributes.author}</p>
-                            </a>
+                            </Link>
                         </div>
                     </div>
             )
