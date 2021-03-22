@@ -10,7 +10,7 @@ function CapitalConnections(props) {
         
         return (
              
-            console.log("reversed - ", categoryPosts ),
+            // console.log("reversed - ", categoryPosts ),
             <div className="category-show">
                 <div className="category-image"><img src="carouselImages/CapitolConnections.png" alt=""></img></div>
                 <div className="category-header">

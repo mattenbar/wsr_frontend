@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom';
 
 function thisIssue(props) {
     let settings = {
@@ -54,13 +55,13 @@ function thisIssue(props) {
             return(
                 <div key={post.attributes.id} className="ticrslwrapper" >
                         <div className="ti-box">
-                            <a href="#" className="ti-a">
+                            <Link to={`/posts/${post.id}`} post_id={post.id} className="ti-a">
                                 {/* model */}
                                 <img src={post.attributes.image} className="circular-image" />
                                 {/* header */}
                                 <h2>{post.attributes.title}</h2>
                                 <p>by {post.attributes.author}</p>
-                            </a>
+                            </Link>
                         </div>
                     </div>
             )
