@@ -11,7 +11,7 @@ function newsMakers(props) {
         let secondPost = lastTwoPosts[0]
 
         return (
-            console.log("last two - ", lastTwoPosts),
+            // console.log("last two - ", lastTwoPosts),
             <div className="nmcrsl">
                 <h1>NEWSMAKERS ROUNDUP</h1>
                 <div className="nm-cards" >
