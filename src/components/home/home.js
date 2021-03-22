@@ -21,12 +21,12 @@ class Home extends Component {
         <Features features={this.props.features} posts={this.props.posts}/>
         <div className="home-triple-row-grid" >
           <div className="newsmakers-transactions" >
-            <NewsMakers posts={this.props.categories["13"]}/>
-            <Transactions posts={this.props.categories["14"]}/>
+            <NewsMakers posts={this.props.categories["12"]}/>
+            <Transactions posts={this.props.categories["13"]}/>
           </div>
           {/* to change amount of posts in carousel change number below(keep it negative for most recent) */}
           <ThisIssue posts={this.props.posts.slice(-5)}/>
-          <LastIssue posts={this.props.posts.slice(-10,-5)}/>
+          <LastIssue posts={this.props.posts.slice(-10, -5)}/>
         </div>
       </div>
     )

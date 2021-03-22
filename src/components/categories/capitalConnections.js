@@ -23,24 +23,7 @@ function CapitalConnections(props) {
                 </div>
             </div>
         );
-    } else {
-        return (
-            <div className="category-show">
-                {/* <div className="category-image"><img src="carouselImages/CapitolConnections.png" alt=""></img></div>
-                <div className="category-header">
-                    <h1>
-                        CAPITAL 
-                        <br/>
-                        CONNECTIONS
-                    </h1>
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
-                </div> */}
-            </div>
-        )
-    }
-
-    
-    
+    } else { return (<div></div>) }
 }
 
 export default CapitalConnections;

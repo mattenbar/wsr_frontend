@@ -52,7 +52,7 @@ function thisIssue(props) {
 
         let cItems = props.posts.map(post => {
             return(
-                <div className="ticrslwrapper" >
+                <div key={post.attributes.id} className="ticrslwrapper" >
                         <div className="ti-box">
                             <a href="#" className="ti-a">
                                 {/* model */}

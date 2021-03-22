@@ -52,7 +52,7 @@ function lastIssue(props) {
 
         let cItems = props.posts.map(post => {
             return(
-                <div className="ticrslwrapper" >
+                <div key={post.attributes.id} className="ticrslwrapper" >
                         <div className="ti-box">
                             <a href="#" className="ti-a">
                                 {/* model */}
@@ -68,7 +68,7 @@ function lastIssue(props) {
 
         return (
             <div className="ticrsl" >
-                <h1>THIS ISSUE</h1>
+                <h1>LAST ISSUE</h1>
                 <Slider {...settings} >
                     {cItems}
     
