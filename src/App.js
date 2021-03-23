@@ -23,14 +23,14 @@ import Board from './components/board/board';
 import Archives from './components/archives/archives';
 import PostInput from './components/admin/postInput'
 
-import IndividualPost from './components/indivualPosts';
+import IndividualPost from './article/individualPosts';
 
 // import category components
 import CapitalConnections from './components/categories/capitalConnections';
 import DigitalDomains from './components/categories/digitalDomains';
 import PointCounterPoint from './components/categories/pointCounterPoint';
 import ShoutOut from './components/categories/shoutOutAndPutDowns'
-import Beltway from './components/categories/beltwayAndBeyong'
+import Beltway from './components/categories/beltwayAndBeyond'
 import LawyerLand from './components/categories/lawyerLand'
 import Nightmare from './components/categories/nightmare'
 import BuyItOrBuildIt from './components/categories/buyItOrBuildIt'
@@ -82,9 +82,13 @@ class App extends React.Component{
           <Route exact path ="/submit" render={()=> <PostInput posts={this.props.posts} categories={this.props.categories} />}/>
 
           <Route exact path="/posts/:id" component={IndividualPost} />
+          
 
           {/* category pages */}
-          <Route exact path ="/Capital-Connections" render={()=> <CapitalConnections posts={this.props.categories}/>}/>
+    
+          <Route exact path ="/capital-connections" render={()=> <CapitalConnections posts={this.props.categories} categories={this.props.categories}/>}/>
+          <Route exact path="/capital-connections/:id" component={IndividualPost} />
+
           <Route exact path ="/the-digital-domain" render={()=> <DigitalDomains />}/>
           <Route exact path ="/point-counterpoint" render={()=> <PointCounterPoint />}/>
           <Route exact path ="/shout-out-and-put-downs" render={()=> <ShoutOut />}/>

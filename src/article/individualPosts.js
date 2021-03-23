@@ -40,19 +40,19 @@ function IndivualPosts(props) {
             </div>
         </div>
             <div className="individualPostDiv">
-                <img src={post.attributes.image} alt="post-image" className="individualPostImage" />
-                <h2 className="individualPostTitle">{post.attributes.title}</h2>
-                <h3 className="individualPostAuthor">BY {post.attributes.author}</h3>
-                <h3 className="inidvidualPostDate">
-                    {moment
-                        .parseZone(post.attributes.created_at)
-                        .format("MMMM DD, YYYY")
-                    }
-                </h3>
-                <p className="inidvidualPostContent">{post.attributes.content}</p>
-                <div className="socialShare">
-                    <h3>share</h3>
-                </div>
+                    <img src={post.attributes.image} alt="post-image" className="individualPostImage" />
+                    <h2 className="individualPostTitle">{post.attributes.title}</h2>
+                    <h3 className="individualPostAuthor">BY {post.attributes.author}</h3>
+                    <h3 className="inidvidualPostDate">
+                        {moment
+                            .parseZone(post.attributes.created_at)
+                            .format("MMMM DD, YYYY")
+                        }
+                    </h3>
+                    <p className="inidvidualPostContent">{post.attributes.content}</p>
+                    {/* <div className="socialShare">
+                        <h3>share</h3>
+                    </div> */}
             </div>
         
             </>
