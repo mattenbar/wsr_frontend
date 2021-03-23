@@ -29,19 +29,21 @@ import IndividualPost from './components/articles/individualPosts';
 import CapitalConnections from './components/categories/capitalConnections';
 import DigitalDomains from './components/categories/digitalDomains';
 import PointCounterPoint from './components/categories/pointCounterPoint';
-import ShoutOut from './components/categories/shoutOutAndPutDowns'
-import Beltway from './components/categories/beltwayAndBeyond'
-import LawyerLand from './components/categories/lawyerLand'
-import Nightmare from './components/categories/nightmare'
-import BuyItOrBuildIt from './components/categories/buyItOrBuildIt'
-import WalletShare from './components/categories/walletShare'
-import FamilyFeuds from './components/categories/familyFeuds'
-import ProductStrategies from './components/categories/productStrategies'
-import LettersFromLarry from './components/categories/lettersFromLarry'
-import NoteworthyNotes from './components/categories/noteworthyNotes'
-import NewsMakersRoundUp from './components/categories/newsmakersRoundup'
-import TransactionsAndTransitions from './components/categories/transactionsAndTransitions'
-import FromOurPartners from './components/categories/fromOutPartners'
+import ShoutOut from './components/categories/shoutOutAndPutDowns';
+import Beltway from './components/categories/beltwayAndBeyond';
+import Nightmare from './components/categories/nightmare';
+import BuyItOrBuildIt from './components/categories/buyItOrBuildIt';
+import WalletShare from './components/categories/walletShare';
+import LettersFromLarry from './components/categories/lettersFromLarry';
+import NewsMakersRoundUp from './components/categories/newsmakersRoundup';
+import TransactionsAndTransitions from './components/categories/transactionsAndTransitions';
+import DramatisPersonae from './components/categories/dramatisPersonae';
+import OnTheRise from './components/categories/onTheRise';
+import BizarreIndustryBazaar from './components/categories/bizarreIndustryBazaar';
+import InvestmentSolutionsandGatekeepers from './components/categories/investmentSolutions';
+import CastAndCrew from './components/categories/castAndCrew';
+import CyberCryptTales from './components/categories/cyberCryptTales';
+import PeopleMoves from './components/categories/peopleMoves';
 
 
 class App extends React.Component{
@@ -85,25 +87,32 @@ class App extends React.Component{
           
 
           {/* category pages */}
-    
-          <Route exact path ="/capital-connections" render={()=> <CapitalConnections posts={this.props.categories} categories={this.props.categories}/>}/>
-          {/* <Route exact path="/capital-connections/:id" component={CapitalConnectectionPost} /> */}
 
-          <Route exact path ="/the-digital-domain" render={()=> <DigitalDomains />}/>
-          <Route exact path ="/point-counterpoint" render={()=> <PointCounterPoint />}/>
-          <Route exact path ="/shout-out-and-put-downs" render={()=> <ShoutOut />}/>
-          <Route exact path ="/beltway-and-beyond" render={()=> <Beltway />}/>
-          <Route exact path ="/lawyer-land" render={()=> <LawyerLand />}/>
-          <Route exact path ="/nightmare-on-compliance-st" render={()=> <Nightmare />}/>
+          <Route exact path ="/Dramatis-Personae" render={()=> <DramatisPersonae />}/>
+          <Route exact path ="/Wallet-Share" render={()=> <WalletShare />}/>
+          <Route exact path ="/Letters-From-Larry" render={()=> <LettersFromLarry />}/>
+          <Route exact path ="/The-Digital-Domain" render={()=> <DigitalDomains />}/>
+          <Route exact path ="/Capital-Connections" render={()=> <CapitalConnections posts={this.props.categories} categories={this.props.categories}/>}/>
+          <Route exact path ="/Point-Counterpoint" render={()=> <PointCounterPoint />}/>
+          {/* <Route exact path="/capital-connections/:id" component={CapitalConnectectionPost} /> */}
+          
+          <Route exact path ="/On-The-Rise" render={()=> <OnTheRise />}/>
+          <Route exact path ="/NewsMakers-Roundup" render={()=> <NewsMakersRoundUp />}/>
+          <Route exact path ="/Bizarre-Industry-Bazaar" render={()=> <BizarreIndustryBazaar />}/>
+          <Route exact path ="/Investment-Solutions-and-Gatekeepers" render={()=> <InvestmentSolutionsandGatekeepers />}/>
+
           <Route exact path ="/buy-it-or-build-it" render={()=> <BuyItOrBuildIt />}/>
-          <Route exact path ="/wallet-share" render={()=> <WalletShare />}/>
-          <Route exact path ="/family-feuds" render={()=> <FamilyFeuds />}/>
-          <Route exact path ="/product-strategies" render={()=> <ProductStrategies />}/>
-          <Route exact path ="/letters-from-larry" render={()=> <LettersFromLarry />}/>
-          <Route exact path ="/noteworthy-notes" render={()=> <NoteworthyNotes />}/>
-          <Route exact path ="/newsmakers-roundup" render={()=> <NewsMakersRoundUp />}/>
-          <Route exact path ="/transactions-and-transitions" render={()=> <TransactionsAndTransitions />}/>
-          <Route exact path ="/from-our-partners" render={()=> <FromOurPartners />}/>
+          <Route exact path ="/nightmare-on-compliance-st" render={()=> <Nightmare />}/>
+          <Route exact path ="/beltway-and-beyond" render={()=> <Beltway />}/>
+
+          <Route exact path ="/Cast-And-Crew" render={()=> <CastAndCrew />}/>
+          <Route exact path ="//Transactions-And-Transitions" render={()=> <TransactionsAndTransitions />}/>
+          <Route exact path ="/CyberCrypt-Tales" render={()=> <CyberCryptTales />}/>
+          <Route exact path ="/People-Moves" render={()=> <PeopleMoves />}/>
+          
+          <Route exact path ="/Shout-Outs-And-Put-Downs" render={()=> <ShoutOut />}/>
+          
+          
         </Switch>
         <Ads />
         <Footer />
