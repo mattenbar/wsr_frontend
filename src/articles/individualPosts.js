@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {API_URL} from '../apiConstants';
+import {API_URL} from '../../apiConstants';
 import moment from 'moment';
 
 function IndivualPosts(props) {
