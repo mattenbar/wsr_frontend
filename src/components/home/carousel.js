@@ -145,35 +145,36 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/newsmakers-roundup" className="crsltop">
-                            <img src="carouselImages/NewsMakersRoundUp.png" className="top-carousel-model" alt=""/>
+                        <a href="/On-The-Rise" className="crsltop">
+                            <img src="carouselImages/OnTheRise.png" className="top-carousel-model" alt=""/>
                             {/* header */}
-                            <h2>NEWSMAKERS ROUNDUP</h2>
+                            <h2>ON THE RISE</h2>
                         </a>
                     </div>
                 </div>
-
-
-
-
-
-
-
-                
-
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/shout-outs-and-put-downs" className="crsltop">
-                            <img src="carouselImages/ShoutOuts.png" className="top-carousel-model" alt=""/>
+                        <a href="/Buy-It-Or-Build-It" className="crsltop">
+                            <img src="carouselImages/BuyItOrBuildIt.png" className="top-carousel-model" alt=""/>
                             {/* header */}
-                            <h2>SHOUT-OUTS & PUT DOWNS</h2>
+                            <h2>BUY IT OR BUILD IT?</h2>
                         </a>
                     </div>
                 </div>
                 <div className="carousel-wrapper" >
                     <div className="box">
-                        <a href="beltway-and-beyond" className="crsltop">
+                        {/* model */}
+                        <a href="/Nightmare-On-Compliance-St" className="crsltop">
+                            <img src="carouselImages/NightmareOnCompSt.png" className="top-carousel-model" alt=""/>
+                            {/* header */}
+                            <h2>NIGHTMARE ON COMPLIANCE ST</h2>
+                        </a>
+                    </div>
+                </div>
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        <a href="/Beltway-And-Beyond" className="crsltop">
                             <img src="carouselImages/Beltway&Beyond.png" className="top-carousel-model" alt=""/>
                             {/* model */}
                             {/* header */}
@@ -184,65 +185,13 @@ function carousel(props) {
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/lawyer-land" className="crsltop">
-                            <img src="carouselImages/LawyerLand.png" className="top-carousel-model" alt=""/>
+                        <a href="/Shout-Outs-And-Put-Downs" className="crsltop">
+                            <img src="carouselImages/ShoutOuts.png" className="top-carousel-model" alt=""/>
                             {/* header */}
-                            <h2>LAWYER LAND</h2>
+                            <h2>SHOUT-OUTS & PUT DOWNS</h2>
                         </a>
                     </div>
                 </div>
-                <div className="carousel-wrapper" >
-                    <div className="box">
-                        {/* model */}
-                        <a href="/nightmare-on-compliance-st" className="crsltop">
-                            <img src="carouselImages/NightmareOnCompSt.png" className="top-carousel-model" alt=""/>
-                            {/* header */}
-                            <h2>NIGHTMARE ON COMPLIANCE ST</h2>
-                        </a>
-                    </div>
-                </div>
-                
-                <div className="carousel-wrapper" >
-                    <div className="box">
-                        {/* model */}
-                        <a href="/buy-it-or-build-it" className="crsltop">
-                            <img src="carouselImages/BuyItOrBuildIt.png" className="top-carousel-model" alt=""/>
-                            {/* header */}
-                            <h2>BUY IT OR BUILD IT?</h2>
-                        </a>
-                    </div>
-                </div>
-                
-                
-
-                <div className="carousel-wrapper" >
-                    <div className="box">
-                        {/* model */}
-                        <a href="family-feuds" className="crsltop">
-                            <img src="carouselImages/FamilyFeuds.png" className="top-carousel-model" alt=""/>
-                            {/* header */}
-                            <h2>FAMILY FEUDS</h2>
-                        </a>
-                    </div>
-                </div>
-
-                
-
-                
-
-                <div className="carousel-wrapper" >
-                    <div className="box">
-                        {/* model */}
-                        <a href="/noteworthy-notes" className="crsltop">
-                            <img src="carouselImages/NoteworthyNotes.png" className="top-carousel-model" alt=""/>
-                            {/* header */}
-                            <h2>NOTEWORTHY NOTES</h2>
-                        </a>
-                    </div>
-                </div>
-
-                
-
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
@@ -253,17 +202,67 @@ function carousel(props) {
                         </a>
                     </div>
                 </div>
-
                 <div className="carousel-wrapper" >
                     <div className="box">
                         {/* model */}
-                        <a href="/from-our-partners" className="crsltop">
-                            <img src="carouselImages/FromOurPartners.png" className="top-carousel-model" alt=""/>
+                        <a href="/CyberCrypt-Tales" className="crsltop">
+                            <img src="carouselImages/CryptTales.png" className="top-carousel-model" alt=""/>
                             {/* header */}
-                            <h2>FROM OUR PARTNERS</h2>
+                            <h2>CYBERCRRYPT TALES</h2>
                         </a>
                     </div>
                 </div>
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        {/* model */}
+                        <a href="/People-Moves" className="crsltop">
+                            <img src="carouselImages/PeopleMoves.png" className="top-carousel-model" alt=""/>
+                            {/* header */}
+                            <h2>PEOPLE MOVES</h2>
+                        </a>
+                    </div>
+                </div>
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        {/* model */}
+                        <a href="/Cast-And-Crew" className="crsltop">
+                            <img src="carouselImages/Cast&Crew.png" className="top-carousel-model" alt=""/>
+                            {/* header */}
+                            <h2>CAST & CREW</h2>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+                
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
             
             </Slider>
         </div>
