@@ -23,7 +23,7 @@ import Board from './components/board/board';
 import Archives from './components/archives/archives';
 import PostInput from './components/admin/postInput'
 
-import IndividualPost from './article/individualPosts';
+import IndividualPost from './components/articles/individualPosts';
 
 // import category components
 import CapitalConnections from './components/categories/capitalConnections';
@@ -87,7 +87,7 @@ class App extends React.Component{
           {/* category pages */}
     
           <Route exact path ="/capital-connections" render={()=> <CapitalConnections posts={this.props.categories} categories={this.props.categories}/>}/>
-          <Route exact path="/capital-connections/:id" component={IndividualPost} />
+          {/* <Route exact path="/capital-connections/:id" component={CapitalConnectectionPost} /> */}
 
           <Route exact path ="/the-digital-domain" render={()=> <DigitalDomains />}/>
           <Route exact path ="/point-counterpoint" render={()=> <PointCounterPoint />}/>
