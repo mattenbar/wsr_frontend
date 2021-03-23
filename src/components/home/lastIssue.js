@@ -54,7 +54,6 @@ function lastIssue(props) {
         let cItems = props.posts.map(post => {
             return(
                 <div key={post.attributes.id} className="ticrslwrapper" >
-                    {console.log(post.id)}
                         <div className="ti-box">
                             <Link to={`/posts/${post.id}`} post_id={post.id} className="ti-a">
                                 {/* model */}

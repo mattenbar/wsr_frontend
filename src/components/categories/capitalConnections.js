@@ -9,8 +9,6 @@ function CapitalConnections(props) {
         let categoryPosts = props.posts[0]["attributes"]["posts"].reverse()
         
         return (
-             
-            // console.log("reversed - ", categoryPosts ),
             <div className="category-show">
                 <div className="category-image"><img src="carouselImages/CapitolConnections.png" alt=""></img></div>
                 <div className="category-header">

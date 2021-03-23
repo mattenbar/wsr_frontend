@@ -6,6 +6,7 @@ import { connect } from 'react-redux'
 import {fetchPosts} from './actions/fetchPosts'
 import {fetchCategories} from './actions/fetchCategories'
 import {fetchFeatures} from './actions/fetchFeatures'
+import {fetchPointcps} from './actions/fetchPointcps'
 import { getUser } from './actions/userAuth/getUser';
 
 //components
@@ -49,6 +50,7 @@ class App extends React.Component{
     this.props.dispatchFetchPosts()
     this.props.dispatchFetchCategories()
     this.props.dispatchFetchFeatures()
+    this.props.dispatchFetchPointcps()
     
     const token = localStorage.getItem("token")
     if (token) {
@@ -70,7 +72,7 @@ class App extends React.Component{
       <div className="App">
         <NavBar posts={this.props.posts} categories={this.props.categories} user={this.props.user}/>
         <Switch >
-          <Route exact path ="/" render={()=> <Home posts={this.props.posts} categories={this.props.categories} search={this.props.search} features={this.props.features} user={this.props.user} />}/>
+          <Route exact path ="/" render={()=> <Home posts={this.props.posts} categories={this.props.categories} search={this.props.search} features={this.props.features} user={this.props.user} pcps={this.props.pcps}/>}/>
           <Route exact path ="/search" render={()=> <Search posts={this.props.posts} categories={this.props.categories} search={this.props.search}/> } />
           <Route exact path ="/about" render={()=> <AboutUs />}/>
           <Route exact path ="/our-partners" render={()=> <Partners />}/>
@@ -112,7 +114,8 @@ function mSTP(state){
     categories: state.categories,
     search: state.search,
     features: state.features,
-    user: state.user
+    user: state.user,
+    pcps: state.pcps
   }
 }
 
@@ -121,6 +124,7 @@ function mDTP(dispatch){
     dispatchFetchPosts: (posts) => dispatch(fetchPosts(posts)),
     dispatchFetchCategories: (categories) => dispatch(fetchCategories(categories)),
     dispatchFetchFeatures: (features) => dispatch(fetchFeatures(features)),
+    dispatchFetchPointcps: (pcps) => dispatch(fetchPointcps(pcps)),
     dispatchGetUser: (user) => dispatch(getUser(user))
   }
 }
