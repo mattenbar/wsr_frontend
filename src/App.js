@@ -22,6 +22,7 @@ import Partners from './components/partners/partners';
 import Board from './components/board/board';
 import Archives from './components/archives/archives';
 import PostInput from './components/admin/postInput'
+import PointcpInput from './components/admin/pointcpInput'
 
 import IndividualPost from './components/articles/individualPosts';
 
@@ -81,7 +82,7 @@ class App extends React.Component{
           <Route exact path ="/our-board" render={()=> <Board />}/>
           <Route exact path ="/contact-us" render={()=> <ContactUs />}/>
           <Route exact path ="/archives" render={()=> <Archives posts={this.props.posts}/>}/>
-          <Route exact path ="/submit" render={()=> <PostInput posts={this.props.posts} categories={this.props.categories} />}/>
+          <Route exact path ="/submit" render={()=> <PointcpInput posts={this.props.posts} categories={this.props.categories} />}/>
 
           <Route exact path="/posts/:id" component={IndividualPost} />
           

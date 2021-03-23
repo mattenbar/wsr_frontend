@@ -3,7 +3,7 @@ export default function managePcps(state = [], action) {
       case "FETCH_POINTCPS":
           return state.concat(action.payload.pointcp.data);
 
-      case 'ADD_PCP':
+      case 'ADD_POINTCP':
           
           return state.concat(action.payload);
 
