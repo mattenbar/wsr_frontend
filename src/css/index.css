@@ -1726,6 +1726,40 @@ body {
 }
 
 /* -----------------------------------END INDIVUAL POST PAGE---------------------------------------------- */
+/* -----------------------------------INDIVUAL CATEGORY PAGE---------------------------------------------- */
+
+.categoryTopTwo {
+    width: 100%;
+    display: flex;
+}
+
+.categoryTopLeft {
+    width: 49%;
+    margin: 2em 1em 1em 0;
+}
+
+.categoryTopRight img,
+.categoryTopLeft img {
+    width: 100%;
+    height: 43vh;
+    object-fit: cover;
+}
+
+.categoryTopRight {
+    width: 49%;
+    margin: 2em 0 1em 1em;
+}
+
+.newestPostHeader {
+    text-transform: uppercase;
+}
+
+.lightblueAuthor {
+    text-transform: uppercase;
+    color: rgba(0, 59, 91);
+}
+
+/* -----------------------------------END INDIVUAL CATEGORY PAGE---------------------------------------------- */
 
 /* -----------------------------------AD SPACE---------------------------------------------- */
 
