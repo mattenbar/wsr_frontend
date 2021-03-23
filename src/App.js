@@ -28,23 +28,41 @@ import IndividualPost from './components/articles/individualPosts';
 
 // import category components
 import CapitalConnections from './components/categories/capitalConnections';
+import CapitalConnectionArticle from './components/articles/capitalConnectionArticle';
 import DigitalDomains from './components/categories/digitalDomains';
+import DigitalDomainArticle from './components/articles/digitalDomainArticle';
 import PointCounterPoint from './components/categories/pointCounterPoint';
+import PointCounterPointArticle from './components/articles/pointCounterPointArticle';
 import ShoutOut from './components/categories/shoutOutAndPutDowns';
+import ShoutOutArticle from './components/articles/shoutOutArticle';
 import Beltway from './components/categories/beltwayAndBeyond';
+import BeltwayBeyondArticle from './components/articles/beltwayBeyondArticle';
 import Nightmare from './components/categories/nightmare';
+import NightmareComplianceArticle from './components/articles/nightmareComplianceArticle';
 import BuyItOrBuildIt from './components/categories/buyItOrBuildIt';
+import BuyItbuildItArticle from './components/articles/buyItbuildItArticle';
 import WalletShare from './components/categories/walletShare';
+import WalletShareArticle from './components/articles/walletShareArticle';
 import LettersFromLarry from './components/categories/lettersFromLarry';
+import LettersFromLarryArticle from './components/articles/lettersFromLarryArticle';
 import NewsMakersRoundUp from './components/categories/newsmakersRoundup';
+import NewsmakersRoundupArticle from './components/articles/newsmakersRoundupArticle';
 import TransactionsAndTransitions from './components/categories/transactionsAndTransitions';
+import TransactionsTransitionsArticle from './components/articles/transactionsTransitionsArticle';
 import DramatisPersonae from './components/categories/dramatisPersonae';
+import DramatisPersonaeArticle from './components/articles/dramatisPersonaeArticle';
 import OnTheRise from './components/categories/onTheRise';
+import OnTheRiseArticle from './components/articles/onTheRiseArticle';
 import BizarreIndustryBazaar from './components/categories/bizarreIndustryBazaar';
+import BizarreBazaarArticle from './components/articles/bizarreBazaarArticle';
 import InvestmentSolutionsandGatekeepers from './components/categories/investmentSolutions';
+import InvestmentSolutionsArticle from './components/articles/investmentSolutionsArticle';
 import CastAndCrew from './components/categories/castAndCrew';
+import CastCrewArticle from './components/articles/castCrewArticle';
 import CyberCryptTales from './components/categories/cyberCryptTales';
+import CyberCryptArticle from './components/articles/cyberCryptArticle';
 import PeopleMoves from './components/categories/peopleMoves';
+import PeopleMovesArticle from './components/articles/peopleMovesArticle';
 
 
 class App extends React.Component{
@@ -107,7 +125,7 @@ class App extends React.Component{
           <Route exact path ="/beltway-and-beyond" render={()=> <Beltway />}/>
 
           <Route exact path ="/Cast-And-Crew" render={()=> <CastAndCrew />}/>
-          <Route exact path ="//Transactions-And-Transitions" render={()=> <TransactionsAndTransitions />}/>
+          <Route exact path ="/Transactions-And-Transitions" render={()=> <TransactionsAndTransitions />}/>
           <Route exact path ="/CyberCrypt-Tales" render={()=> <CyberCryptTales />}/>
           <Route exact path ="/People-Moves" render={()=> <PeopleMoves />}/>
           
