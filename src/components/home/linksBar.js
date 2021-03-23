@@ -25,7 +25,7 @@ class LinksBar extends Component {
             <a href="/Transactions-And-Transitions">TRANSACTIONS AND TRANSITIONS</a>&nbsp;
             <a href="/CyberCrypt-Tales">CYBERCRRYPT TALES</a>&nbsp;
             <a href="/People-Moves">PEOPLE MOVES</a>&nbsp;
-            <a href="/shout-out-and-put-downs">SHOUT OUTS & PUT DOWNS</a>&nbsp;
+            <a href="/Shout-Outs-And-Put-Downs">SHOUT OUTS & PUT DOWNS</a>&nbsp;
             <a href="/Cast-And-Crew">CAST AND CREW</a>
         </div>
       </div>
