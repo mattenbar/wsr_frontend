@@ -1,12 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
+import { connect } from "react-redux";
 
-function transactions(props) {
+function transactions(state) {
 
-    if (props.posts){
+    if (state.categories.length > 0){
 
-        let posts = props.posts.attributes.posts
+        let posts = state.categories[13].attributes.posts
         let lastTwoPosts = posts.slice(-2)
         let firstPost = lastTwoPosts[1]
         let secondPost = lastTwoPosts[0]
@@ -55,4 +56,10 @@ function transactions(props) {
     }
 }
 
-export default transactions;
+function mSTP(state){
+    return {
+      categories: state.categories,
+    }
+}
+
+export default connect(mSTP)(transactions);
