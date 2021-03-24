@@ -1,14 +1,15 @@
 import React from 'react';
+import {connect} from 'react-redux'
 import { Link } from 'react-router-dom';
 
-function features(props) {
+function features(state) {
 
     
-    if (props.features.length > 0) {
+    if (state.features.length > 0) {
         
-        let leftFeature = props.features[0]["attributes"]["post"]
-        let mainFeature = props.features[1]["attributes"]["post"]
-        let rightFeature = props.features[2]["attributes"]["post"]
+        let leftFeature = state.features[0]["attributes"]["post"]
+        let mainFeature = state.features[1]["attributes"]["post"]
+        let rightFeature = state.features[2]["attributes"]["post"]
 
         return (
             <div className="features">
@@ -46,4 +47,10 @@ function features(props) {
     
 }
 
-export default features;
+function mSTP(state){
+    return {
+      features: state.features,
+    }
+  }
+
+export default connect(mSTP)(features);

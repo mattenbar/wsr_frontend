@@ -1,14 +1,14 @@
 import React from "react";
+import {connect} from 'react-redux'
 import moment from 'moment';
 
-function CapitalConnections(props) {
+function CapitalConnections(state, props) {
     
-    if (props.posts.length > 0){
+    if(state.categories.length > 0){
 
-        //loads post in order of newest to oldest
-        let categoryPosts = props.posts[0]["attributes"]["posts"].reverse()
-        let newestPost = categoryPosts[0]
-        let secondNewestPost = categoryPosts[1]
+        let posts = state.categories[10].attributes.posts.reverse()
+        let newestPost = posts[0]
+        let secondNewestPost = posts[1]
         
         
         return (
@@ -49,4 +49,11 @@ function CapitalConnections(props) {
     } else { return (<div></div>) }
 }
 
-export default CapitalConnections;
+function mSTP(state){
+    return {
+      categories: state.categories,
+      user: state.user
+    }
+  }
+
+export default connect(mSTP)(CapitalConnections);

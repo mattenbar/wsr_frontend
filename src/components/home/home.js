@@ -19,7 +19,7 @@ class Home extends Component {
       <div className="home-container">
         <LinksBar />
         <Carousel />
-        <Features features={this.props.features} posts={this.props.posts}/>
+        <Features />
         <div className="home-triple-row-grid" >
           <div className="newsmakers-transactions" >
             <NewsMakers posts={this.props.categories["12"]}/>
