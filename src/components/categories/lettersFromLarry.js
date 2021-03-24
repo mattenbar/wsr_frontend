@@ -4,8 +4,10 @@ import { connect } from 'react-redux';
 function LettersFromLarry(state) {
 
     if(state.categories.length > 0){
-        debugger
+        
         let posts = state.categories[10].attributes.posts.reverse()
+        let newestPost = posts[0]
+        let secondNewestPost = posts[1]
 
         return (
             <div className="category-show">
