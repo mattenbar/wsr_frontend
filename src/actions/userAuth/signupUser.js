@@ -6,7 +6,6 @@ export const POST_USER_ERRORS = "POST_USER_ERRORS"
 export const POST_USER_FAILURE = "POST_USER_FAILURE"
 
 export const signupUser = ({ first_name, last_name, email, password, company_name }) => (dispatch) => {
-    // console.log(user_name)
     dispatch({ type: POST_USER })
     
     fetch(API_URL + `/users`, {
