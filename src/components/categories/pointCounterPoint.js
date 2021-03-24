@@ -1,20 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { API_URL } from '../../apiConstants';
+import React from "react";
+import { connect } from "react-redux";
 
-function PointCounterPoint(props) {
-    const [posts, setPosts] = useState([]);
-
-    useEffect(() => {
-        fetch(API_URL + "/categories/3")
-            .then((res) => res.json())
-            .then((result) => {
-             
-                setPosts(result.posts.data);
-            })
-            .catch((err) => {
-                alert("Unable to load posts At This Time");
-            });
-    }, []);
+function PointCounterPoint(state) {
+    
 
     return (
         <div className="category-show">
@@ -30,4 +18,11 @@ function PointCounterPoint(props) {
     );
 }
 
-export default PointCounterPoint;
+function mSTP(state){
+    return {
+      pointcp: state.pointcp,
+      user: state.user
+    }
+}
+
+export default connect(mSTP)(PointCounterPoint);
