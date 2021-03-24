@@ -22,11 +22,10 @@ function LettersFromLarry(props) {
             <div className="category-image"><img src="carouselImages/LettersFromLarry.png" alt=""></img></div>
             <div className="category-header">
                 <h1>
-                    letters
-                    <br/>
-                    from larry
+                    letters from larry
                 </h1>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+                <h4 className="tagline">Key trends defining wealth management</h4>
+                <h5>Larry Roth’s shares his latest thoughts  on what’s shaping the wealth management space now and in the future.</h5>
             </div>
            
         </div>

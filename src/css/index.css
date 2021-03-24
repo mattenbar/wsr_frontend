@@ -1357,24 +1357,29 @@ body {
     margin-top: 0;
     padding-right: 1em;
     float: left;
+
 }
 
 .category-show h1 {
+    padding-top: 1%;
     font-size: 3vw;
     padding-left: 0.3em;
+    text-transform: uppercase;
 }
 
 .category-show h4 {
     font-size: 1.4vw;
     color: rgba(0, 59, 91);
     text-transform: uppercase;
-    padding-left: 0.75em;
+    padding-left: 0.72em;
+    padding-bottom: 1%;
 }
 
 .category-header {
-    padding: 1em;
+    
     float: left;
-    text-transform: uppercase;
+    width: 100%;
+    
 }
 
 .category-image {
@@ -1384,6 +1389,20 @@ body {
 
 .category-image img {
     margin-top: 1em;
+}
+
+.tagline{
+    border-bottom: solid black;
+    width: 100%;
+}
+
+.category-show h5{
+    font-size: 1vw;
+    padding-left: 1em;
+    justify-content:left;
+    margin: auto;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
 }
 
 /* -----------------------------------END CATEGORIES------------------------------------------- */

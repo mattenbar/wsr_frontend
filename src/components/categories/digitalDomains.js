@@ -22,12 +22,9 @@ function DigitalDomains(props) {
             <div className="category-show">
                 <div className="category-image"><img src="carouselImages/DigitalDomains.png" alt=""></img></div>
                 <div className="category-header">
-                    <h1>
-                        THE DIGITAL
-                        <br/>
-                        DOMAINS
-                    </h1>
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+                    <h1> THE DIGITAL DOMAIN</h1>
+                    <h4 className="tagline">Transformative tech leaders in the wealth  management space</h4>
+                    <h5>We profile the fintech solutions, strategies and experts who are redefining the how the wealth management industry operates to unlock new  growth opportunities</h5>
                 </div>
             </div>
         )

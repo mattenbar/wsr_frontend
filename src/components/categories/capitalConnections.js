@@ -18,11 +18,10 @@ function CapitalConnections(props) {
                 <div className="category-image"><img src="carouselImages/CapitolConnections.png" alt=""></img></div>
                 <div className="category-header">
                     <h1>
-                        CAPITAL 
-                        <br/>
-                        CONNECTIONS
+                        CAPITAL CONNECTIONS
                     </h1>
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+                    <h4 className="tagline">How wealth management firms and  sources of private capital  drive growth together</h4>
+                    <h5>We spotlight private equity, venture capital or SPAC leaders  focused on wealth management acquisitions, or executives from wealth management firms owned by sources of private capital. Here’s what to look for – And where to watch out.</h5>
                 </div>
             </div>
             <div className="categoryTopTwo">
