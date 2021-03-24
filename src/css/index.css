@@ -1357,7 +1357,6 @@ body {
     margin-top: 0;
     padding-right: 1em;
     float: left;
-
 }
 
 .category-show h1 {
@@ -1376,10 +1375,8 @@ body {
 }
 
 .category-header {
-    
     float: left;
     width: 100%;
-    
 }
 
 .category-image {
@@ -1391,15 +1388,15 @@ body {
     margin-top: 1em;
 }
 
-.tagline{
+.tagline {
     border-bottom: solid black;
     width: 100%;
 }
 
-.category-show h5{
+.category-show h5 {
     font-size: 1vw;
     padding-left: 1em;
-    justify-content:left;
+    justify-content: left;
     margin: auto;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
@@ -1409,12 +1406,10 @@ body {
 
 /* -----------------------------------START ABOUT US------------------------------------------- */
 
-.about-us{
+.about-us {
     text-align: justify;
     font-size: 2vw;
 }
-
-
 
 /* -----------------------------------END ABOUT US------------------------------------------- */
 
@@ -1757,7 +1752,7 @@ body {
 }
 
 /* -----------------------------------END INDIVUAL POST PAGE---------------------------------------------- */
-/* -----------------------------------INDIVUAL CATEGORY PAGE---------------------------------------------- */
+/* -----------------------------------INDIVIDUAL CATEGORY PAGE---------------------------------------------- */
 
 .categoryTopTwo {
     width: 100%;
@@ -1772,7 +1767,7 @@ body {
 .categoryTopRight img,
 .categoryTopLeft img {
     width: 100%;
-    height: 43vh;
+    height: 41vh;
     object-fit: cover;
 }
 
@@ -1790,7 +1785,26 @@ body {
     color: rgba(0, 59, 91);
 }
 
-/* -----------------------------------END INDIVUAL CATEGORY PAGE---------------------------------------------- */
+.categoryRemainingArticles {
+    display: grid;
+    grid-auto-rows: 23em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    margin: 2em 0;
+}
+
+.smallGrid {
+    /* width: 30%; */
+    /* margin: 1em; */
+}
+
+.smallGrid img {
+    width: 100%;
+    height: 36vh;
+    object-fit: cover;
+}
+
+/* -----------------------------------END INDIVIDUAL CATEGORY PAGE---------------------------------------------- */
 
 /* -----------------------------------AD SPACE---------------------------------------------- */
 
