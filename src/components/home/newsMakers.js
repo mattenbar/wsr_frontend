@@ -1,12 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
 import { Link } from 'react-router-dom'
+import { connect } from "react-redux";
 
-function newsMakers(props) {
+function newsMakers(state) {
 
-    if (props.posts){
+    if (state.categories.length > 0){
 
-        let posts = props.posts.attributes.posts
+        let posts = state.categories[12].attributes.posts
         let lastTwoPosts = posts.slice(-2)
         let firstPost = lastTwoPosts[1]
         let secondPost = lastTwoPosts[0]
@@ -58,4 +59,10 @@ function newsMakers(props) {
     
 }
 
-export default newsMakers;
+function mSTP(state){
+    return {
+      categories: state.categories,
+    }
+  }
+
+export default connect(mSTP)(newsMakers);
