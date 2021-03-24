@@ -17,18 +17,15 @@ function ShoutOut(props) {
     }, []);
 
     return (
-  
         <div className="category-show">
-            <div className="category-image"><img src="carouselImages/ShoutOuts.png" alt=""></img></div>
-            <div className="category-header">
-                <h1>
-                    SHOUT OUTS
-                    <br/>
-                    AND PUT DOWNS
-                </h1>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+            <div className="category-image">
+                <img src="carouselImages/ShoutOuts.png" alt=""></img>
             </div>
-           
+            <div className="category-header">
+                <h1>SHOUT OUTS AND PUT DOWNS</h1>
+                <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
+                <h5>Each month, wealth management professionals anonymously send us the  best and worst examples  of leadership, management and mentoring they’ve experienced in the course  of their careers.</h5>
+            </div>
         </div>
     );
 }

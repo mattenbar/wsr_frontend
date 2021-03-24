@@ -19,14 +19,13 @@ function NewsmakersRoundup(props) {
     return (
         
         <div className="category-show">
-            <div className="category-image"><img src="carouselImages/NewsMakersRoundUp.png" alt=""></img></div>
+            <div className="category-image">
+                <img src="carouselImages/NewsMakersRoundUp.png" alt=""></img>
+            </div>
             <div className="category-header">
-                <h1>
-                    newsmakers
-                    <br/>
-                    round-up
-                </h1>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+                <h1>NEWSMAKERS ROUNDUP</h1>
+                <h4 className="tagline">Top news condensed from top wealth management media outlets</h4>
+                <h5>Notes from Larry:  I’ve assembled my personal picks of top news stories from media  outlets covering the wealth management space – And why you should care.</h5>
             </div>
         </div>
     );

@@ -17,16 +17,14 @@ function Nightmare(props) {
     }, []);
 
     return (
-      
         <div className="category-show">
-            <div className="category-image"><img src="carouselImages/NightmareOnCompSt.png" alt=""></img></div>
+            <div className="category-image">
+                <img src="/carouselImages/NightmareOnCompSt.png" alt=""></img>
+            </div>
             <div className="category-header">
-                <h1>
-                    nightmare
-                    <br/>
-                    on compliance st.
-                </h1>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+                <h1>NIGHTMARE ON COMPLIANCE ST </h1>
+                <h4 className="tagline">Your biggest compliance worries addressed</h4>
+                <h5>What are the biggest compliance questions that aren’t easily answered and keep you up at night? Industry-leading compliance expert Sander Ressler answers your anonymous questions.</h5>
             </div>
         </div>
     );

@@ -17,18 +17,15 @@ function TransactionsAndTransitions(props) {
     }, []);
 
     return (
-      
         <div className="category-show">
-            <div className="category-image"><img src="carouselImages/Transactions&Trans.png" alt=""></img></div>
-            <div className="category-header">
-                <h1>
-                    TRANSACTIONS
-                    <br/>
-                    AND TRANSITIONS
-                </h1>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+            <div className="category-image">
+                <img src="carouselImages/Transactions&Trans.png" alt=""></img>
             </div>
-           
+            <div className="category-header">
+                <h1>TRANSACTIONS & TRANSITIONS</h1>
+                <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
+                <h5>DESCRIPTOR WILL GO HERE.</h5>
+            </div>
         </div>
     );
 }

@@ -19,14 +19,13 @@ function WalletShare(props) {
     return (
 
         <div className="category-show">
-            <div className="category-image"><img src="carouselImages/WalletShare.png" alt=""></img></div>
+            <div className="category-image">
+                <img src="carouselImages/WalletShare.png" alt=""></img>
+            </div>
             <div className="category-header">
-                <h1>
-                    wallet
-                    <br/>
-                    share
-                </h1>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+                <h1>WALLET SHARE</h1>
+                <h4 className="tagline">Sales, marketing  and communications strategies and leaders</h4>
+                <h5>Actionable tips and strategies from sales,  marketing and communications leaders  on how to stand out from  the crowd to generate increased growth.</h5>
             </div>
         </div>
     );

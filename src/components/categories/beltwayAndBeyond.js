@@ -20,14 +20,13 @@ function Beltway(props) {
         // posts has actual articles now not just the post id - posts[number]["attributes"] gets the post
         console.log(posts), 
         <div className="category-show">
-            <div className="category-image"><img src="carouselImages/Beltway&Beyond.png" alt=""></img></div>
+            <div className="category-image">
+                <img src="carouselImages/Beltway&Beyond.png" alt=""></img>
+            </div>
             <div className="category-header">
-                <h1>
-                    BELTWAY 
-                    <br/>
-                    AND BEYOND
-                </h1>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
+                <h1>BELTWAY AND BEYOND</h1>
+                <h4 className="tagline">Keeping you up  to speed on key regulatory and legislative  trends</h4>
+                <h5>Keeping wealth  management firms and  other industry participants  aware of the most important legislative and  regulatory trends – And  how to stay ahead of the  curve.</h5>
             </div>
         </div>
     );
