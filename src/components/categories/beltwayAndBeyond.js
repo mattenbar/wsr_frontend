@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 function Beltway(state, props) {
     if (state.categories.length > 0) {
-        
         let posts = state.categories[3].attributes.posts.reverse();
         let newestPost = posts[0];
         let secondNewestPost = posts[1];
