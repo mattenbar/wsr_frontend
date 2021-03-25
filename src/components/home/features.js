@@ -22,7 +22,7 @@ function Features(state) {
                 <div className="feature-wrapper" >
                     <div className="small-square">
                         <Link to={{    
-                            pathname: `/Todays-Top-Features/${leftFeature["id"]}`,
+                            pathname: `${getSlug(leftFeature)}/${leftFeature["id"]}`,
                             // pathname: <Pathname category={state.features[0].attributes.post.category_id} leftFeature={leftFeature}/>,
                             state: {
                                 category: state.features[0].attributes.post.category_id
@@ -35,7 +35,7 @@ function Features(state) {
                     </div>
                     <div className="middle-square">
                         <Link to={{    
-                            pathname: `/Todays-Top-Features/${mainFeature["id"]}`,
+                            pathname: `${getSlug(mainFeature)}/${mainFeature["id"]}`,
                             state: {
                                 category: state.features[1].attributes.post.category_id
                             }
@@ -47,7 +47,7 @@ function Features(state) {
                     </div>
                     <div className="small-square">
                         <Link to={{    
-                            pathname: `/Todays-Top-Features/${rightFeature["id"]}`,
+                            pathname: `${getSlug(rightFeature)}/${rightFeature["id"]}`,
                             state: {
                                 category: state.features[2].attributes.post.category_id
                             }
@@ -66,6 +66,48 @@ function Features(state) {
         )
     }
     
+}
+
+function getSlug(post){
+    switch (post.category_id) {
+        case 1:  
+            return '/Capital-Connections'
+        case 2:  
+            return '/The-Digital-Domain'
+        case 3:  
+            return '/Beltway-And-Beyond'
+        case 4:  
+            return '/Shout-Outs-And-Put-Downs'
+        case 5:  
+            return '/People-Moves'
+        case 6:  
+            return '/Nightmare-On-Compliance-St'
+        case 7:  
+            return '/Buy-It-Or-Build-It'
+        case 8:  
+            return '/Wallet-Share'
+        case 9:  
+            return '/CyberCrypt-Tales'
+        case 10:  
+            return '/On-The-Rise'
+        case 11:  
+            return '/Letters-From-Larry'
+        case 12:  
+            return '/Dramatis-Personae'
+        case 13:  
+            return '/NewsMakers-Roundup'
+        case 14:  
+            return '/Transactions-And-Transitions'
+        case 15:  
+            return '/Cast-And-Crew'
+        case 16:  
+            return '/Bizarre-Industry-Bazaar'
+        case 17:  
+            return '/Investment-Solutions-and-Gatekeepers'
+
+        default:
+            return '/';
+          }
 }
 
 function mSTP(state){
