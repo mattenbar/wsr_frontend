@@ -33,6 +33,7 @@ body {
 @media (min-width: 62em) {
     body {
         padding: 5%;
+        padding-top: 4%;
     }
 }
 
@@ -943,7 +944,12 @@ body {
 
 @media (min-width: 62em) {
     .features {
-        height: 60vh;
+        height: 58vh;
+    }
+
+    .feature-wrapper {
+        margin-top: 2em;
+        height: 88%;
     }
 
     .features h1 {
@@ -960,10 +966,6 @@ body {
 
     .features p {
         font-size: 1em;
-    }
-
-    .feature-wrapper {
-        margin-top: 2em;
     }
 }
 
@@ -1282,6 +1284,7 @@ body {
 .ti-box h2 {
     font-size: 0.75em;
     overflow-wrap: normal;
+    margin-bottom: 0.5em;
 }
 
 .ti-box p {

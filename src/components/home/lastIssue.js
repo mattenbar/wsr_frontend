@@ -56,7 +56,12 @@ function lastIssue(props) {
                 <div key={post.id} className="ticrslwrapper" >
 
                         <div className="ti-box">
-                            <Link to={`/posts/${post.id}`} postId={post.id} className="ti-a">
+                            <Link to={{    
+                                pathname: `/Last-Issue/${post.id}`,
+                                state: {
+                                    category: post.attributes.category_id
+                                }
+                            }} className="ti-a"> 
                                 {/* model */}
                                 <img src={post.attributes.image} className="circular-image" />
                                 {/* header */}

@@ -102,8 +102,10 @@ class App extends React.Component{
           <Route exact path="/archives" render={()=> <Archives posts={this.props.posts}/>}/>
           <Route exact path="/admin" render={()=> <Admin posts={this.props.posts} categories={this.props.categories} />}/>
 
-          <Route exact path="/posts/:id" component={IndividualPost} />
-          
+          <Route exact path="/Todays-Top-Features/:id" component={IndividualPost} />
+          <Route exact path="/This-Issue/:id" component={IndividualPost} />
+          <Route exact path="/Last-Issue/:id" component={IndividualPost} />
+
 
           {/* category pages */}
 
