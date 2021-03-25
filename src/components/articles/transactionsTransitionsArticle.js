@@ -44,9 +44,6 @@ function TransactionsTransitionsArticle(props) {
                             <h5>DESCRIPTOR WILL GO HERE.</h5>
                         </div>
                     </div>
-                    <div className="noPosts">
-                        <h2>ARTICLES COMING SOON</h2>
-                    </div>
                     <div className="individualPostDiv">
                         <img
                             src={post.attributes.image}

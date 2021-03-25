@@ -57,7 +57,12 @@ function thisIssue(state, props) {
             return(
                 <div key={post.attributes.id} className="ticrslwrapper" >
                         <div className="ti-box">
-                            <Link to={`/posts/${post.id}`} post_id={post.id} className="ti-a">
+                            <Link to={{    
+                                pathname: `/This-Issue/${post.id}`,
+                                state: {
+                                    category: post.attributes.category_id
+                                }
+                            }} className="ti-a" > 
                                 {/* model */}
                                 <img src={post.attributes.image} className="circular-image" />
                                 {/* header */}

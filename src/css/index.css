@@ -33,6 +33,7 @@ body {
 @media (min-width: 62em) {
     body {
         padding: 5%;
+        padding-top: 4%;
     }
 }
 
@@ -722,11 +723,13 @@ body {
     align-items: center;
     justify-content: space-around;
     color: black;
+    /* width: 170%; */
     height: 100%;
     margin-top: 3em;
     margin-bottom: 3em;
     margin-right: -5em;
     margin-left: -5em;
+    /* outline: 0; */
 }
 
 .model {
@@ -945,7 +948,12 @@ body {
 
 @media (min-width: 62em) {
     .features {
-        height: 60vh;
+        height: 58vh;
+    }
+
+    .feature-wrapper {
+        margin-top: 2em;
+        height: 88%;
     }
 
     .features h1 {
@@ -962,10 +970,6 @@ body {
 
     .features p {
         font-size: 1em;
-    }
-
-    .feature-wrapper {
-        margin-top: 2em;
     }
 }
 
@@ -1288,6 +1292,7 @@ body {
 .ti-box h2 {
     font-size: 0.75em;
     overflow-wrap: normal;
+    margin-bottom: 0.5em;
     text-transform: capitalize;
 }
 
@@ -1750,8 +1755,8 @@ body {
 
 .individualPostContent {
     margin: 2em 0 4em 0;
-    line-height: 1.4;
-    letter-spacing: 0.5px;
+    line-height: 1.2;
+    /* letter-spacing: 0.25px; */
     white-space: pre-line;
     font-size: 1.25vw;
 }

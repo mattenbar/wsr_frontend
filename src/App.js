@@ -102,8 +102,10 @@ class App extends React.Component{
           <Route exact path="/archives" render={()=> <Archives posts={this.props.posts}/>}/>
           <Route exact path="/admin" render={()=> <Admin posts={this.props.posts} categories={this.props.categories} />}/>
 
-          <Route exact path="/posts/:id" component={IndividualPost} />
-          
+          <Route exact path="/Todays-Top-Features/:id" component={IndividualPost} />
+          <Route exact path="/This-Issue/:id" component={IndividualPost} />
+          <Route exact path="/Last-Issue/:id" component={IndividualPost} />
+
 
           {/* category pages */}
 
@@ -142,7 +144,7 @@ class App extends React.Component{
           <Route exact path="/Cast-And-Crew" render={()=> <CastAndCrew />}/>
           <Route exact path="/Cast-And-Crew/:id" component={CastCrewArticle} />
           <Route exact path="/Transactions-And-Transitions" render={()=> <TransactionsAndTransitions />}/>
-          <Route exact path="/Transactions-And-Transitions" component={TransactionsTransitionsArticle} />
+          <Route exact path="/Transactions-And-Transitions/:id" component={TransactionsTransitionsArticle} />
           <Route exact path="/CyberCrypt-Tales" render={()=> <CyberCryptTales />}/>
           <Route exact path="/CyberCrypt-Tales/:id" component={CyberCryptArticle} />
           <Route exact path="/People-Moves" render={()=> <PeopleMoves />}/>
