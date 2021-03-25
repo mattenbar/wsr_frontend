@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom'
+import {getSlug} from '../../actions/getSlug'
 
 function lastIssue(props) {
     let settings = {
@@ -57,7 +58,7 @@ function lastIssue(props) {
 
                         <div className="ti-box">
                             <Link to={{    
-                                pathname: `/Last-Issue/${post.id}`,
+                                pathname: `${getSlug(post.attributes)}/${post.id}`,
                                 state: {
                                     category: post.attributes.category_id
                                 }

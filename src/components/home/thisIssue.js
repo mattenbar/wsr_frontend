@@ -4,8 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import {getSlug} from '../../actions/getSlug'
 
-function thisIssue(state, props) {
+function thisIssue(state) {
     let settings = {
         arrows: true,
         dots: false,
@@ -54,11 +55,12 @@ function thisIssue(state, props) {
 
         let lastFive = state.posts.slice(-5)
         let cItems = lastFive.map(post => {
+    
             return(
                 <div key={post.attributes.id} className="ticrslwrapper" >
                         <div className="ti-box">
                             <Link to={{    
-                                pathname: `/This-Issue/${post.id}`,
+                                pathname: `${getSlug(post.attributes)}/${post.id}`,
                                 state: {
                                     category: post.attributes.category_id
                                 }
