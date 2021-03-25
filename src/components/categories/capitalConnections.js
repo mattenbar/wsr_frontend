@@ -10,7 +10,7 @@ function CapitalConnections(state, props) {
         let newestPost = posts[0]
         let secondNewestPost = posts[1]
         
-        
+        debugger
         return (
             console.log("category", newestPost),
             <>

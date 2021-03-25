@@ -111,7 +111,7 @@ class App extends React.Component{
           <Route exact path ="/Wallet-Share" render={()=> <WalletShare />}/>
           <Route exact path ="/Letters-From-Larry" render={()=> <LettersFromLarry />}/>
           <Route exact path ="/The-Digital-Domain" render={()=> <DigitalDomains />}/>
-          <Route exact path ="/Capital-Connections" render={()=> <CapitalConnections posts={this.props.categories} categories={this.props.categories}/>}/>
+          <Route exact path ="/Capital-Connections" render={()=> <CapitalConnections />}/>
           <Route exact path ="/Point-Counterpoint" render={()=> <PointCounterPoint />}/>
           {/* <Route exact path="/capital-connections/:id" component={CapitalConnectectionPost} /> */}
           
