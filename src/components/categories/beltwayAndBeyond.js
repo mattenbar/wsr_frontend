@@ -5,7 +5,7 @@ import moment from "moment";
 import { Link } from "react-router-dom";
 
 
-function Beltway(state, props) {
+function Beltway(state) {
     if (state.categories.length > 0) {
         let posts = state.categories[3].attributes.posts.reverse();
         let newestPost = posts[0];
