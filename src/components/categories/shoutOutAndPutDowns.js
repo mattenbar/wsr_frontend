@@ -22,7 +22,7 @@ function ShoutOut(state, props) {
                             <img src={post.image} alt={post.title} />
                             <h2 className="newestPostHeader">{post.title}</h2>
                             <h3 className="lightblueAuthor">{post.author}</h3>
-                            <h3 className="inidvidualPostDate">
+                            <h3 className="individualPostDate">
                                 {moment
                                     .parseZone(post.created_at)
                                     .format("MMMM DD, YYYY")}
@@ -43,7 +43,7 @@ function ShoutOut(state, props) {
                         </div>
                         <div className="category-header">
                             <h1>SHOUT OUTS AND PUT DOWNS</h1>
-                            <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
+                            <h4 className="tagline"> Readers share their best & worst experiences anonymously</h4>
                             <h5>
                                 Each month, wealth management professionals
                                 anonymously send us the best and worst examples
@@ -69,7 +69,7 @@ function ShoutOut(state, props) {
                                 <h3 className="lightblueAuthor">
                                     {newestPost.author}
                                 </h3>
-                                <h3 className="inidvidualPostDate">
+                                <h3 className="individualPostDate">
                                     {moment
                                         .parseZone(newestPost.created_at)
                                         .format("MMMM DD, YYYY")}
@@ -92,7 +92,7 @@ function ShoutOut(state, props) {
                                 <h3 className="lightblueAuthor">
                                     {secondNewestPost.author}
                                 </h3>
-                                <h3 className="inidvidualPostDate">
+                                <h3 className="individualPostDate">
                                     {moment
                                         .parseZone(secondNewestPost.created_at)
                                         .format("MMMM DD, YYYY")}
@@ -117,7 +117,7 @@ function ShoutOut(state, props) {
                         </div>
                         <div className="category-header">
                             <h1>SHOUT OUTS AND PUT DOWNS</h1>
-                            <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
+                            <h4 className="tagline"> Readers share their best & worst experiences anonymously</h4>
                             <h5>
                                 Each month, wealth management professionals
                                 anonymously send us the best and worst examples
@@ -143,7 +143,7 @@ function ShoutOut(state, props) {
                                 <h3 className="lightblueAuthor">
                                     {newestPost.author}
                                 </h3>
-                                <h3 className="inidvidualPostDate">
+                                <h3 className="individualPostDate">
                                     {moment
                                         .parseZone(newestPost.created_at)
                                         .format("MMMM DD, YYYY")}
@@ -166,7 +166,7 @@ function ShoutOut(state, props) {
                                 <h3 className="lightblueAuthor">
                                     {secondNewestPost.author}
                                 </h3>
-                                <h3 className="inidvidualPostDate">
+                                <h3 className="individualPostDate">
                                     {moment
                                         .parseZone(secondNewestPost.created_at)
                                         .format("MMMM DD, YYYY")}
@@ -192,7 +192,7 @@ function ShoutOut(state, props) {
                         </div>
                         <div className="category-header">
                             <h1>SHOUT OUTS AND PUT DOWNS</h1>
-                            <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
+                            <h4 className="tagline"> Readers share their best & worst experiences anonymously</h4>
                             <h5>
                                 Each month, wealth management professionals
                                 anonymously send us the best and worst examples
@@ -216,13 +216,13 @@ function ShoutOut(state, props) {
                     </div>
                     <div className="category-header">
                         <h1>SHOUT OUTS AND PUT DOWNS</h1>
-                        <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
-                        <h5>
-                            Each month, wealth management professionals
-                            anonymously send us the best and worst examples of
-                            leadership, management and mentoring they’ve
-                            experienced in the course of their careers.
-                        </h5>
+                        <h4 className="tagline"> Readers share their best & worst experiences anonymously</h4>
+                            <h5>
+                                Each month, wealth management professionals
+                                anonymously send us the best and worst examples
+                                of leadership, management and mentoring they’ve
+                                experienced in the course of their careers.
+                            </h5>
                     </div>
                 </div>
                 <div className="noPosts">
