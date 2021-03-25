@@ -116,7 +116,7 @@ class App extends React.Component{
           <Route exact path="/The-Digital-Domain" render={()=> <DigitalDomains />}/>
           <Route exact path="/The-Digital-Domain/:id" component={DigitalDomainArticle} />
           <Route exact path="/Capital-Connections" render={()=> <CapitalConnections posts={this.props.categories} categories={this.props.categories}/>}/>
-          <Route exact path="/apital-Connections/:id" component={CapitalConnectionArticle} />
+          <Route exact path="/Capital-Connections/:id" component={CapitalConnectionArticle} />
           <Route exact path="/Point-Counterpoint" render={()=> <PointCounterPoint />}/>
           <Route exact path="/Point-Counterpoint/:id" component={PointCounterPointArticle} />
           
