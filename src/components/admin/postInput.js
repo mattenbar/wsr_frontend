@@ -111,14 +111,10 @@ class PostInput extends React.Component {
                 onEditorChange={this.handleEditorChange}
               />
             </div>  
+            
             <div className="postForm">
               <label>Image</label>
               <input id="files-upload" type="file" name="image" accept="image/*" onChange={this.handleImageChange} />
-            </div> 
-
-            <div className="postForm">
-              <label>YouTube Link</label>
-              <input onChange={this.handlePostChange} type="text" value={this.state.post.youtube} name="youtube" />
             </div> 
 
             <button type="submit">Submit</button>
