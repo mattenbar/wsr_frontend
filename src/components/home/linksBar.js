@@ -5,7 +5,7 @@ class LinksBar extends Component {
     return(
       <div className="linksBar-container">
         <div className="linksBar-top">
-            <a href="/Beltway-And-Beyond">BELTWAY AND BEYOND</a>&nbsp;
+            <a href="/Beltway-And-Beyond">BELTWAY & BEYOND</a>&nbsp;
             <a href="/Bizarre-Industry-Bazaar">BIZARRE INDUSTRY BAZAAR</a>&nbsp;
             <a href="/Buy-It-Or-Build-It">BUY IT OR BUILD IT?</a>&nbsp;
             <a href="/Capital-Connections">CAPITAL CONNECTIONS</a>&nbsp;
@@ -13,7 +13,7 @@ class LinksBar extends Component {
             <a href="/CyberCrypt-Tales">CYBERCRRYPT TALES</a>&nbsp;
             <a href="/The-Digital-Domain">THE DIGITAL DOMAIN</a>&nbsp;
             <a href="/Dramatis-Personae">DRAMATIS PERSONAE</a>&nbsp;
-            <a href="/Investment-Solutions-and-Gatekeepers">INVESTMENT SOLUTIONS AND GATEKEEPERS</a>&nbsp;
+            <a href="/Investment-Solutions-and-Gatekeepers">INVESTMENT SOLUTIONS & GATEKEEPERS</a>&nbsp;
             <br/><br/>
           </div>
           <div className="linksBar-bottom">
@@ -24,7 +24,7 @@ class LinksBar extends Component {
             <a href="/People-Moves">PEOPLE MOVES</a>&nbsp;
             <a href="/Point-Counterpoint">POINT-COUNTERPOINT</a> &nbsp;
             <a href="/Shout-Outs-And-Put-Downs">SHOUT OUTS & PUT DOWNS</a>&nbsp;
-            <a href="/Transactions-And-Transitions">TRANSACTIONS AND TRANSITIONS</a>&nbsp;
+            <a href="/Transactions-And-Transitions">TRANSACTIONS & TRANSITIONS</a>&nbsp;
             <a href="/Wallet-Share">WALLET SHARE</a>&nbsp;
         </div>
       </div>

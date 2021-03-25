@@ -1,7 +1,6 @@
 export const addPost = (data) => {
 
   return (dispatch) => {
-    debugger
     let body = new FormData()
     body.append("image", data.image)
     fetch("http://localhost:3000/api/v1/image_upload",{

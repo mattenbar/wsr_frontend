@@ -22,7 +22,7 @@ function LettersFromLarry(state, props) {
                             <img src={post.image} alt={post.title} />
                             <h2 className="newestPostHeader">{post.title}</h2>
                             <h3 className="lightblueAuthor">{post.author}</h3>
-                            <h3 className="inidvidualPostDate">
+                            <h3 className="individualPostDate">
                                 {moment
                                     .parseZone(post.created_at)
                                     .format("MMMM DD, YYYY")}
@@ -70,7 +70,7 @@ function LettersFromLarry(state, props) {
                                 <h3 className="lightblueAuthor">
                                     {newestPost.author}
                                 </h3>
-                                <h3 className="inidvidualPostDate">
+                                <h3 className="individualPostDate">
                                     {moment
                                         .parseZone(newestPost.created_at)
                                         .format("MMMM DD, YYYY")}
@@ -93,7 +93,7 @@ function LettersFromLarry(state, props) {
                                 <h3 className="lightblueAuthor">
                                     {secondNewestPost.author}
                                 </h3>
-                                <h3 className="inidvidualPostDate">
+                                <h3 className="individualPostDate">
                                     {moment
                                         .parseZone(secondNewestPost.created_at)
                                         .format("MMMM DD, YYYY")}
@@ -145,7 +145,7 @@ function LettersFromLarry(state, props) {
                                 <h3 className="lightblueAuthor">
                                     {newestPost.author}
                                 </h3>
-                                <h3 className="inidvidualPostDate">
+                                <h3 className="individualPostDate">
                                     {moment
                                         .parseZone(newestPost.created_at)
                                         .format("MMMM DD, YYYY")}
@@ -168,7 +168,7 @@ function LettersFromLarry(state, props) {
                                 <h3 className="lightblueAuthor">
                                     {secondNewestPost.author}
                                 </h3>
-                                <h3 className="inidvidualPostDate">
+                                <h3 className="individualPostDate">
                                     {moment
                                         .parseZone(secondNewestPost.created_at)
                                         .format("MMMM DD, YYYY")}

@@ -22,7 +22,7 @@ function TransactionsAndTransitions(state, props) {
                             <img src={post.image} alt={post.title} />
                             <h2 className="newestPostHeader">{post.title}</h2>
                             <h3 className="lightblueAuthor">{post.author}</h3>
-                            <h3 className="inidvidualPostDate">
+                            <h3 className="individualPostDate">
                                 {moment
                                     .parseZone(post.created_at)
                                     .format("MMMM DD, YYYY")}
@@ -43,8 +43,8 @@ function TransactionsAndTransitions(state, props) {
                         </div>
                         <div className="category-header">
                             <h1>TRANSACTIONS & TRANSITIONS</h1>
-                            <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
-                            <h5>DESCRIPTOR WILL GO HERE.</h5>
+                            <h4 className="tagline"> Keep track of industry leaders' moves + deals</h4>
+                            <h5> Need help keeping track of who's where and what's happening? Each month, we'll cover the industry's top advisor recruiting moves and M&A deals to keep you up to date and informed.</h5>
                         </div>
                     </div>
                     <div className="categoryTopTwo">
@@ -64,7 +64,7 @@ function TransactionsAndTransitions(state, props) {
                                 <h3 className="lightblueAuthor">
                                     {newestPost.author}
                                 </h3>
-                                <h3 className="inidvidualPostDate">
+                                <h3 className="individualPostDate">
                                     {moment
                                         .parseZone(newestPost.created_at)
                                         .format("MMMM DD, YYYY")}
@@ -87,7 +87,7 @@ function TransactionsAndTransitions(state, props) {
                                 <h3 className="lightblueAuthor">
                                     {secondNewestPost.author}
                                 </h3>
-                                <h3 className="inidvidualPostDate">
+                                <h3 className="individualPostDate">
                                     {moment
                                         .parseZone(secondNewestPost.created_at)
                                         .format("MMMM DD, YYYY")}
@@ -112,8 +112,8 @@ function TransactionsAndTransitions(state, props) {
                         </div>
                         <div className="category-header">
                             <h1>TRANSACTIONS & TRANSITIONS</h1>
-                            <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
-                            <h5>DESCRIPTOR WILL GO HERE.</h5>
+                            <h4 className="tagline"> Keep track of industry leaders' moves + deals</h4>
+                            <h5>Need help keeping track of who's where and what's happening? Each month, we'll cover the industry's top advisor recruiting moves and M&A deals to keep you up to date and informed.</h5>
                         </div>
                     </div>
                     <div className="categoryTopTwo">
@@ -133,7 +133,7 @@ function TransactionsAndTransitions(state, props) {
                                 <h3 className="lightblueAuthor">
                                     {newestPost.author}
                                 </h3>
-                                <h3 className="inidvidualPostDate">
+                                <h3 className="individualPostDate">
                                     {moment
                                         .parseZone(newestPost.created_at)
                                         .format("MMMM DD, YYYY")}
@@ -156,7 +156,7 @@ function TransactionsAndTransitions(state, props) {
                                 <h3 className="lightblueAuthor">
                                     {secondNewestPost.author}
                                 </h3>
-                                <h3 className="inidvidualPostDate">
+                                <h3 className="individualPostDate">
                                     {moment
                                         .parseZone(secondNewestPost.created_at)
                                         .format("MMMM DD, YYYY")}
@@ -182,8 +182,8 @@ function TransactionsAndTransitions(state, props) {
                         </div>
                         <div className="category-header">
                             <h1>TRANSACTIONS & TRANSITIONS</h1>
-                            <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
-                            <h5>DESCRIPTOR WILL GO HERE.</h5>
+                            <h4 className="tagline"> Keep track of industry leaders' moves + deals</h4>
+                            <h5>Need help keeping track of who's where and what's happening? Each month, we'll cover the industry's top advisor recruiting moves and M&A deals to keep you up to date and informed.</h5>
                         </div>
                     </div>
                     <div className="noPosts">
@@ -204,8 +204,8 @@ function TransactionsAndTransitions(state, props) {
                     </div>
                     <div className="category-header">
                         <h1>TRANSACTIONS & TRANSITIONS</h1>
-                        <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
-                        <h5>DESCRIPTOR WILL GO HERE.</h5>
+                        <h4 className="tagline"> Keep track of industry leaders' moves + deals</h4>
+                        <h5>Need help keeping track of who's where and what's happening? Each month, we'll cover the industry's top advisor recruiting moves and M&A deals to keep you up to date and informed.</h5>
                     </div>
                 </div>
                 <div className="noPosts">

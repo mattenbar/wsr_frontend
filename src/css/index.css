@@ -860,7 +860,7 @@ body {
     margin-top: 2.5em;
     margin-bottom: 2em;
     border-top: 2px solid black;
-    text-align: center;
+    text-align: left;
 }
 
 .features h1 {
@@ -870,21 +870,25 @@ body {
     margin-left: 25%;
     margin-top: -11px;
     background: white;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .features h2 {
     font-size: 0.75em;
+    text-transform: uppercase;
 }
 
 .features p {
     font-size: 0.25em;
+    text-transform: capitalize;
 }
 
 .feature-wrapper {
     margin-top: 1em;
     height: 75%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .small-square {
@@ -968,12 +972,12 @@ body {
 @media (min-width: 100em) {
     .features {
         width: 100%;
-        height: 70vh;
+        height: 55vh;
         margin-top: 2.5em;
         margin-bottom: 2em;
         border-top: 2px solid black;
         padding-top: -1em;
-        text-align: center;
+        text-align: left;
     }
 
     .features h1 {
@@ -995,9 +999,9 @@ body {
 
     .feature-wrapper {
         margin-top: 2em;
-        height: 75%;
+        height: 95%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .small-square {
@@ -1020,7 +1024,7 @@ body {
 
     .middle-square {
         /* margin-top: 6em; */
-        width: 40%;
+        width: 45%;
         height: 80%;
         /* background-color: darkblue; */
     }
@@ -1082,11 +1086,13 @@ body {
 .trcrsl h2 {
     margin-top: -1em;
     font-size: 0.75em;
+    text-transform: capitalize;
 }
 
 .nmcrsl p,
 .trcrsl p {
     font-size: 0.5em;
+    text-transform: capitalize;
 }
 
 .circular-image {
@@ -1166,10 +1172,12 @@ body {
 
 @media (min-width: 100em) {
     .newsmakers-transactions {
-        margin-top: 3em;
-        margin-bottom: 1em;
+        /* margin-top: 3em;
+        
         margin-left: 0.15em;
-        margin-right: 0.15em;
+        margin-right: 0.15em; */
+        height: auto;
+        /* margin-bottom: 3em; */
     }
 
     .nm-cards {
@@ -1186,11 +1194,11 @@ body {
     }
 
     .nmcrsl {
-        height: 38vh;
+        height: auto;
     }
 
     .trcrsl {
-        height: 34vh;
+        height: auto;
     }
 
     .nmcrsl h1,
@@ -1222,8 +1230,8 @@ body {
     }
 
     .circular-image {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         object-fit: cover;
         border-radius: 50%;
         padding: 1em;
@@ -1280,10 +1288,12 @@ body {
 .ti-box h2 {
     font-size: 0.75em;
     overflow-wrap: normal;
+    text-transform: capitalize;
 }
 
 .ti-box p {
     font-size: 0.75em;
+    text-transform: capitalize;
 }
 
 @media (min-width: 43.75em) {
@@ -1330,6 +1340,11 @@ body {
 }
 
 @media (min-width: 100em) {
+
+    .ticrsl{
+        height: auto;
+    }
+
     .ti-box h2 {
         font-size: 1.5em;
         width: 18em;
@@ -1338,6 +1353,8 @@ body {
     .ti-box p {
         font-size: 1.35em;
     }
+
+   
 }
 
 /* -------------------END this issue/ last issue---------------------- */
@@ -1731,11 +1748,12 @@ body {
     margin-bottom: 1em;
 }
 
-.inidvidualPostContent {
+.individualPostContent {
     margin: 2em 0 4em 0;
     line-height: 1.4;
     letter-spacing: 0.5px;
     white-space: pre-line;
+    font-size: 1.25vw;
 }
 
 .individualPostImage {
@@ -1833,13 +1851,37 @@ body {
     transform: translate(-50%, -50%);
 }
 
+
+@media (min-width: 100em) {
+    .categoryRemainingArticles {
+       
+        grid-auto-rows: 40em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+        margin: 2em 0;
+    }
+
+    .newestPostHeader {
+        margin-top: 1em;
+        font-size: 1.5vw;
+    }
+    
+    .lightblueAuthor {
+        font-size: 1vw;
+    }
+
+    .individualPostDate {
+        font-size: 1vw;
+    }
+}
+
 /* -----------------------------------END INDIVIDUAL CATEGORY PAGE---------------------------------------------- */
 
 /* -----------------------------------AD SPACE---------------------------------------------- */
 
 .main-bottom-ads {
-    margin-left: 5%;
-    margin-right: 5%;
+    /* margin-left: 5%;
+    margin-right: 5%; */
     margin-bottom: 0.5em;
 }
 
@@ -1886,13 +1928,23 @@ body {
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 1em;
+        text-align: justify;
     }
 
     .ad-image1 {
-        width: 48%;
-        height: 300px;
-        margin: 1em;
-        object-fit: cover;
+        width: 49%;
+        height: 450px;
+        margin: 0;
+        object-fit: cover;   
+        text-align: justify;
+    }
+    .span-ad-image1{
+        margin-right: 1%;
+    }
+
+    .span-ad-image2{
+        margin-left: 1%;
+        
     }
 }
 
@@ -1904,6 +1956,7 @@ body {
     border: none;
     border-top: solid 3px black;
     width: 100%;
+    text-align: center;
 }
 
 .footer-social-media-links {
@@ -2013,7 +2066,7 @@ body {
         padding-top: 1.8em;
         margin-bottom: 1em;
         left: 49%;
-        text-align: center;
+        
         width: 35%;
     }
     .smb-black {
@@ -2036,13 +2089,13 @@ body {
         color: black;
         text-decoration: none;
         text-transform: uppercase;
-        text-align: center;
+        
         padding: 0.5rem;
         display: block;
     }
 
     .second-row-social-media {
-        padding-top: 2.5%;
+    
         text-align: center;
         width: 22%;
         padding-bottom: 2em;
