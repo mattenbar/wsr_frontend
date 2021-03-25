@@ -93,43 +93,63 @@ class App extends React.Component{
       <div className="App">
         <NavBar posts={this.props.posts} categories={this.props.categories} user={this.props.user}/>
         <Switch >
-          <Route exact path ="/" render={()=> <Home posts={this.props.posts} categories={this.props.categories} search={this.props.search} features={this.props.features} user={this.props.user} pcps={this.props.pcps}/>}/>
-          <Route exact path ="/search" render={()=> <Search posts={this.props.posts} categories={this.props.categories} search={this.props.search}/> } />
-          <Route exact path ="/about" render={()=> <AboutUs />}/>
-          <Route exact path ="/our-partners" render={()=> <Partners />}/>
-          <Route exact path ="/our-board" render={()=> <Board />}/>
-          <Route exact path ="/contact-us" render={()=> <ContactUs />}/>
-          <Route exact path ="/archives" render={()=> <Archives posts={this.props.posts}/>}/>
-          <Route exact path ="/admin" render={()=> <Admin posts={this.props.posts} categories={this.props.categories} />}/>
+          <Route exact path="/" render={()=> <Home posts={this.props.posts} categories={this.props.categories} search={this.props.search} features={this.props.features} user={this.props.user} pcps={this.props.pcps}/>}/>
+          <Route exact path="/search" render={()=> <Search posts={this.props.posts} categories={this.props.categories} search={this.props.search}/> } />
+          <Route exact path="/about" render={()=> <AboutUs />}/>
+          <Route exact path="/our-partners" render={()=> <Partners />}/>
+          <Route exact path="/our-board" render={()=> <Board />}/>
+          <Route exact path="/contact-us" render={()=> <ContactUs />}/>
+          <Route exact path="/archives" render={()=> <Archives posts={this.props.posts}/>}/>
+          <Route exact path="/admin" render={()=> <Admin posts={this.props.posts} categories={this.props.categories} />}/>
 
           <Route exact path="/posts/:id" component={IndividualPost} />
           
 
           {/* category pages */}
 
-          <Route exact path ="/Dramatis-Personae" render={()=> <DramatisPersonae />}/>
-          <Route exact path ="/Wallet-Share" render={()=> <WalletShare />}/>
-          <Route exact path ="/Letters-From-Larry" render={()=> <LettersFromLarry />}/>
-          <Route exact path ="/The-Digital-Domain" render={()=> <DigitalDomains />}/>
-          <Route exact path ="/Capital-Connections" render={()=> <CapitalConnections />}/>
-          <Route exact path ="/Point-Counterpoint" render={()=> <PointCounterPoint />}/>
-          {/* <Route exact path="/capital-connections/:id" component={CapitalConnectectionPost} /> */}
-          
-          <Route exact path ="/On-The-Rise" render={()=> <OnTheRise />}/>
-          <Route exact path ="/NewsMakers-Roundup" render={()=> <NewsMakersRoundUp />}/>
-          <Route exact path ="/Bizarre-Industry-Bazaar" render={()=> <BizarreIndustryBazaar />}/>
-          <Route exact path ="/Investment-Solutions-and-Gatekeepers" render={()=> <InvestmentSolutionsandGatekeepers />}/>
 
-          <Route exact path ="/buy-it-or-build-it" render={()=> <BuyItOrBuildIt />}/>
-          <Route exact path ="/nightmare-on-compliance-st" render={()=> <Nightmare />}/>
-          <Route exact path ="/beltway-and-beyond" render={()=> <Beltway />}/>
+          <Route exact path="/Dramatis-Personae" render={()=> <DramatisPersonae />}/>
+          <Route exact path="/Dramatis-Personae/:id" component={DramatisPersonaeArticle} />
+          <Route exact path="/Wallet-Share" render={()=> <WalletShare />}/>
+          <Route exact path="/Wallet-Share/:id" component={WalletShareArticle} />
+          <Route exact path="/Letters-From-Larry" render={()=> <LettersFromLarry />}/>
+          <Route exact path="/Letters-From-Larry/:id" component={LettersFromLarryArticle} />
+          <Route exact path="/The-Digital-Domain" render={()=> <DigitalDomains />}/>
+          <Route exact path="/The-Digital-Domain/:id" component={DigitalDomainArticle} />
+          <Route exact path="/Capital-Connections" render={()=> <CapitalConnections posts={this.props.categories} categories={this.props.categories}/>}/>
+          <Route exact path="/Capital-Connections/:id" component={CapitalConnectionArticle} />
+          <Route exact path="/Point-Counterpoint" render={()=> <PointCounterPoint />}/>
+          <Route exact path="/Point-Counterpoint/:id" component={PointCounterPointArticle} />
 
-          <Route exact path ="/Cast-And-Crew" render={()=> <CastAndCrew />}/>
-          <Route exact path ="/Transactions-And-Transitions" render={()=> <TransactionsAndTransitions />}/>
-          <Route exact path ="/CyberCrypt-Tales" render={()=> <CyberCryptTales />}/>
-          <Route exact path ="/People-Moves" render={()=> <PeopleMoves />}/>
           
-          <Route exact path ="/Shout-Outs-And-Put-Downs" render={()=> <ShoutOut />}/>
+          
+          <Route exact path="/On-The-Rise" render={()=> <OnTheRise />}/>
+          <Route exact path="/On-The-Rise/:id" component={OnTheRiseArticle} />
+          <Route exact path="/NewsMakers-Roundup" render={()=> <NewsMakersRoundUp />}/>
+          <Route exact path="/NewsMakers-Roundup/:id" component={NewsmakersRoundupArticle} />
+          <Route exact path="/Bizarre-Industry-Bazaar" render={()=> <BizarreIndustryBazaar />}/>
+          <Route exact path="/Bizarre-Industry-Bazaar/:id" component={BizarreBazaarArticle} />
+          <Route exact path="/Investment-Solutions-and-Gatekeepers" render={()=> <InvestmentSolutionsandGatekeepers />}/>
+          <Route exact path="/Investment-Solutions-and-Gatekeepers/:id" component={InvestmentSolutionsArticle} />
+
+          <Route exact path="/Buy-It-Or-Build-It" render={()=> <BuyItOrBuildIt />}/>
+          <Route exact path="/Buy-It-Or-Build-It/:id" component={BuyItbuildItArticle} />
+          <Route exact path="/Nightmare-On-Compliance-St" render={()=> <Nightmare />}/>
+          <Route exact path="/Nightmare-On-Compliance-St/:id" component={NightmareComplianceArticle} />
+          <Route exact path="/Beltway-And-Beyond" render={()=> <Beltway />}/>
+          <Route exact path="/Beltway-And-Beyond/:id" component={BeltwayBeyondArticle} />
+
+          <Route exact path="/Cast-And-Crew" render={()=> <CastAndCrew />}/>
+          <Route exact path="/Cast-And-Crew/:id" component={CastCrewArticle} />
+          <Route exact path="/Transactions-And-Transitions" render={()=> <TransactionsAndTransitions />}/>
+          <Route exact path="/Transactions-And-Transitions" component={TransactionsTransitionsArticle} />
+          <Route exact path="/CyberCrypt-Tales" render={()=> <CyberCryptTales />}/>
+          <Route exact path="/CyberCrypt-Tales/:id" component={CyberCryptArticle} />
+          <Route exact path="/People-Moves" render={()=> <PeopleMoves />}/>
+          <Route exact path="/People-Moves/:id" component={PeopleMovesArticle} />
+          
+          <Route exact path="/Shout-Outs-And-Put-Downs" render={()=> <ShoutOut />}/>
+          <Route exact path="/Shout-Outs-And-Put-Downs/:id" component={ShoutOutArticle} />
           
           
         </Switch>

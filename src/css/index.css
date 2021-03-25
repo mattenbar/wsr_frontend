@@ -1271,7 +1271,8 @@ body {
     align-items: center;
 }
 
-.ti-a {
+.ti-a,
+.ti-b {
     text-decoration: none;
     color: black;
 }
@@ -1357,7 +1358,6 @@ body {
     margin-top: 0;
     padding-right: 1em;
     float: left;
-
 }
 
 .category-show h1 {
@@ -1376,10 +1376,12 @@ body {
 }
 
 .category-header {
-    
     float: left;
     width: 100%;
-    
+}
+
+.category-header h1 {
+    text-transform: uppercase;
 }
 
 .category-image {
@@ -1391,15 +1393,15 @@ body {
     margin-top: 1em;
 }
 
-.tagline{
+.tagline {
     border-bottom: solid black;
     width: 100%;
 }
 
-.category-show h5{
+.category-show h5 {
     font-size: 1vw;
     padding-left: 1em;
-    justify-content:left;
+    justify-content: left;
     margin: auto;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
@@ -1409,12 +1411,10 @@ body {
 
 /* -----------------------------------START ABOUT US------------------------------------------- */
 
-.about-us{
+.about-us {
     text-align: justify;
     font-size: 2vw;
 }
-
-
 
 /* -----------------------------------END ABOUT US------------------------------------------- */
 
@@ -1757,7 +1757,7 @@ body {
 }
 
 /* -----------------------------------END INDIVUAL POST PAGE---------------------------------------------- */
-/* -----------------------------------INDIVUAL CATEGORY PAGE---------------------------------------------- */
+/* -----------------------------------INDIVIDUAL CATEGORY PAGE---------------------------------------------- */
 
 .categoryTopTwo {
     width: 100%;
@@ -1772,7 +1772,7 @@ body {
 .categoryTopRight img,
 .categoryTopLeft img {
     width: 100%;
-    height: 43vh;
+    height: 41vh;
     object-fit: cover;
 }
 
@@ -1790,7 +1790,50 @@ body {
     color: rgba(0, 59, 91);
 }
 
-/* -----------------------------------END INDIVUAL CATEGORY PAGE---------------------------------------------- */
+.categoryRemainingArticles {
+    display: grid;
+    grid-auto-rows: 23em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    margin: 2em 0;
+}
+
+.smallGrid {
+    /* width: 30%; */
+    /* margin: 1em; */
+}
+
+.smallGrid img {
+    width: 100%;
+    height: 36vh;
+    object-fit: cover;
+}
+
+.somePosts {
+    width: 100%;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.noPosts {
+    width: 100%;
+    height: 25vh;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    position: relative;
+}
+
+.noPosts h2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* -----------------------------------END INDIVIDUAL CATEGORY PAGE---------------------------------------------- */
 
 /* -----------------------------------AD SPACE---------------------------------------------- */
 
@@ -1969,12 +2012,18 @@ body {
     .second-row-social-media {
         padding-top: 1.8em;
         margin-bottom: 1em;
-        left: 50%;
+        left: 49%;
         text-align: center;
-        width: 20%;
+        width: 35%;
     }
     .smb-black {
         width: 18%;
+    }
+}
+
+@media (min-width: 80em) {
+    .second-row-social-media {
+        width: 30%;
     }
 }
 
