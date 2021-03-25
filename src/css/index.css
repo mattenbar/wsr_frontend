@@ -2040,6 +2040,13 @@ body {
         padding: 0.5rem;
         display: block;
     }
+
+    .second-row-social-media {
+        padding-top: 2.5%;
+        text-align: center;
+        width: 22%;
+        padding-bottom: 2em;
+    }
 }
 
 /* -----------------------------------END FOOTER---------------------------------------------- */

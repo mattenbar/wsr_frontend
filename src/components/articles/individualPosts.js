@@ -52,7 +52,7 @@ function IndivualPosts(props) {
                             .format("MMMM DD, YYYY")
                         }
                     </h3>
-                    <div className="inidvidualPostContent" dangerouslySetInnerHTML={{ __html: post.attributes.content }} />
+                    <p className="inidvidualPostContent" dangerouslySetInnerHTML={{ __html: post.attributes.content }}></p>
                     {/* <div className="socialShare">
                         <h3>share</h3>
                     </div> */}
