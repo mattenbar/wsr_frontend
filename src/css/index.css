@@ -1380,6 +1380,10 @@ body {
     width: 100%;
 }
 
+.category-header h1 {
+    text-transform: uppercase;
+}
+
 .category-image {
     width: 10vw;
     border-right: solid black;

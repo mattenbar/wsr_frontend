@@ -42,7 +42,7 @@ function LettersFromLarry(state, props) {
                             ></img>
                         </div>
                         <div className="category-header">
-                            <h1>letters from larry</h1>
+                            <h1>Letters from larry</h1>
                             <h4 className="tagline">
                                 Key trends defining wealth management
                             </h4>
@@ -117,7 +117,7 @@ function LettersFromLarry(state, props) {
                             ></img>
                         </div>
                         <div className="category-header">
-                            <h1>letters from larry</h1>
+                            <h1>Letters from larry</h1>
                             <h4 className="tagline">
                                 Key trends defining wealth management
                             </h4>
@@ -193,7 +193,7 @@ function LettersFromLarry(state, props) {
                             ></img>
                         </div>
                         <div className="category-header">
-                            <h1>letters from larry</h1>
+                            <h1>Letters from larry</h1>
                             <h4 className="tagline">
                                 Key trends defining wealth management
                             </h4>
@@ -221,7 +221,7 @@ function LettersFromLarry(state, props) {
                         ></img>
                     </div>
                     <div className="category-header">
-                        <h1>letters from larry</h1>
+                        <h1>Letters from larry</h1>
                         <h4 className="tagline">
                             Key trends defining wealth management
                         </h4>
