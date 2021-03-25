@@ -15,7 +15,7 @@ function ShoutOut(state, props) {
                 return (
                     <div className="smallGrid" key={post.id}>
                         <Link
-                            to={`/Capital-Connections/${post.id}`}
+                            to={`/Shout-Outs-And-Put-Downs/${post.id}`}
                             post_id={post.id}
                             className="ti-b"
                         >
@@ -55,7 +55,7 @@ function ShoutOut(state, props) {
                     <div className="categoryTopTwo">
                         <div className="categoryTopLeft">
                             <Link
-                                to={`/Capital-Connections/${newestPost.id}`}
+                                to={`/Shout-Outs-And-Put-Downs/${newestPost.id}`}
                                 post_id={newestPost.id}
                                 className="ti-b"
                             >
@@ -78,7 +78,7 @@ function ShoutOut(state, props) {
                         </div>
                         <div className="categoryTopRight">
                             <Link
-                                to={`/Capital-Connections/${secondNewestPost.id}`}
+                                to={`/Shout-Outs-And-Put-Downs/${secondNewestPost.id}`}
                                 post_id={secondNewestPost.id}
                                 className="ti-b"
                             >
@@ -129,7 +129,7 @@ function ShoutOut(state, props) {
                     <div className="categoryTopTwo">
                         <div className="categoryTopLeft">
                             <Link
-                                to={`/Capital-Connections/${newestPost.id}`}
+                                to={`/Shout-Outs-And-Put-Downs/${newestPost.id}`}
                                 post_id={newestPost.id}
                                 className="ti-b"
                             >
@@ -152,7 +152,7 @@ function ShoutOut(state, props) {
                         </div>
                         <div className="categoryTopRight">
                             <Link
-                                to={`/Capital-Connections/${secondNewestPost.id}`}
+                                to={`/Shout-Outs-And-Put-Downs/${secondNewestPost.id}`}
                                 post_id={secondNewestPost.id}
                                 className="ti-b"
                             >

@@ -15,7 +15,7 @@ import React from "react";
                         return (
                             <div className="smallGrid" key={post.id}>
                                 <Link
-                                    to={`/Capital-Connections/${post.id}`}
+                                    to={`/CyberCrypt-Tales/${post.id}`}
                                     post_id={post.id}
                                     className="ti-b"
                                 >
@@ -48,7 +48,7 @@ import React from "react";
                                 <div className="categoryTopTwo">
                                     <div className="categoryTopLeft">
                                         <Link
-                                            to={`/Capital-Connections/${newestPost.id}`}
+                                            to={`/CyberCrypt-Tales/${newestPost.id}`}
                                             post_id={newestPost.id}
                                             className="ti-b"
                                         >
@@ -71,7 +71,7 @@ import React from "react";
                                     </div>
                                     <div className="categoryTopRight">
                                         <Link
-                                            to={`/Capital-Connections/${secondNewestPost.id}`}
+                                            to={`/CyberCrypt-Tales/${secondNewestPost.id}`}
                                             post_id={secondNewestPost.id}
                                             className="ti-b"
                                         >
@@ -117,7 +117,7 @@ import React from "react";
                             <div className="categoryTopTwo">
                                 <div className="categoryTopLeft">
                                     <Link
-                                        to={`/Capital-Connections/${newestPost.id}`}
+                                        to={`/CyberCrypt-Tales/${newestPost.id}`}
                                         post_id={newestPost.id}
                                         className="ti-b"
                                     >
@@ -140,7 +140,7 @@ import React from "react";
                                 </div>
                                 <div className="categoryTopRight">
                                     <Link
-                                        to={`/Capital-Connections/${secondNewestPost.id}`}
+                                        to={`/CyberCrypt-Tales/${secondNewestPost.id}`}
                                         post_id={secondNewestPost.id}
                                         className="ti-b"
                                     >
