@@ -10,7 +10,7 @@ function CapitalConnections(state, props) {
         let secondNewestPost = posts[1];
         let remainingPosts = posts.slice(2);
 
-        if (remainingPosts.length > 0) {
+        if (posts.length !== 0 && remainingPosts.length > 0) {
             const remainingPostsMapped = remainingPosts.map((post) => {
                 return (
                     <div className="smallGrid" key={post.id}>
@@ -29,7 +29,6 @@ function CapitalConnections(state, props) {
             });
 
             return (
-                console.log("cc", posts),
                 <>
                     <div className="category-show">
                         <div className="category-image">
@@ -100,9 +99,8 @@ function CapitalConnections(state, props) {
                 </>
             
             );
-        } else if (posts.length < 3){
+        } else if (posts.length !== 0 && posts.length < 3){
             return (
-                console.log("cc", posts),
                 <>
                     <div className="category-show">
                         <div className="category-image">
@@ -165,16 +163,73 @@ function CapitalConnections(state, props) {
                                         .format("MMMM DD, YYYY")}
                                 </h3>
                             </Link>
-                        </div>
-                        <div className="somePosts">MORE POSTS COMING SOON</div>
+                            </div>
+                        <br />
+                    </div>
+                    <div className="somePosts">
+                        <h2>MORE ARTICLES COMING SOON</h2>
                     </div>
                 </>
             );
         } else {
-            return <div className="noPosts">POSTS COMING SOON</div>;
+            return (
+                <>
+                    <div className="category-show">
+                        <div className="category-image">
+                            <img
+                                src="carouselImages/CapitolConnections.png"
+                                alt=""
+                            ></img>
+                        </div>
+                        <div className="category-header">
+                            <h1>CAPITAL CONNECTIONS</h1>
+                            <h4 className="tagline">
+                                How wealth management firms and sources of
+                                private capital drive growth together
+                            </h4>
+                            <h5>
+                                We spotlight private equity, venture capital
+                                or SPAC leaders focused on wealth management
+                                acquisitions, or executives from wealth
+                                management firms owned by sources of private
+                                capital. Here’s what to look for – And where
+                                to watch out.
+                            </h5>
+                        </div>
+                    </div>
+                    <div className="noPosts"><h2>ARTICLES COMING SOON</h2></div>
+                </>
+            )
         }
     } else {
-        return <div className="noPosts">POSTS COMING SOON</div>;
+        return (
+            <>
+            <div className="category-show">
+                <div className="category-image">
+                    <img
+                        src="carouselImages/CapitolConnections.png"
+                        alt=""
+                    ></img>
+                </div>
+                <div className="category-header">
+                    <h1>CAPITAL CONNECTIONS</h1>
+                    <h4 className="tagline">
+                        How wealth management firms and sources of
+                        private capital drive growth together
+                    </h4>
+                    <h5>
+                        We spotlight private equity, venture capital
+                        or SPAC leaders focused on wealth management
+                        acquisitions, or executives from wealth
+                        management firms owned by sources of private
+                        capital. Here’s what to look for – And where
+                        to watch out.
+                    </h5>
+                </div>
+            </div>
+            <div className="noPosts"><h2>ARTICLES COMING SOON</h2></div>
+            </>
+        )
     }
 }
 
