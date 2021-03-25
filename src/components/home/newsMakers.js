@@ -19,7 +19,7 @@ function newsMakers(state) {
                 <div className="nm-cards" >
                     <div className="ti-carousel-wrapper">
                         <div className="box">
-                            <Link to={`/posts/${firstPost.id}`} post_id={firstPost.id} className="ti-a">
+                            <Link to={`/NewsMakers-Roundup/${firstPost.id}`} post_id={firstPost.id} className="ti-a">
                                 {/* model */}
                                 <img 
                                     // src="https://i.imgur.com/uBljRiB.jpg"
@@ -34,7 +34,7 @@ function newsMakers(state) {
                     </div>
                     <div className="ti-carousel-wrapper">
                         <div className="box">
-                            <Link to={`/posts/${secondPost.id}`} post_id={secondPost.id} className="ti-a">
+                            <Link to={`/NewsMakers-Roundup/${secondPost.id}`} post_id={secondPost.id} className="ti-a">
                                 {/* model */}
                                 <img
                                     src={secondPost.image}

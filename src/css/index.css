@@ -722,11 +722,13 @@ body {
     align-items: center;
     justify-content: space-around;
     color: black;
+    /* width: 170%; */
     height: 100%;
     margin-top: 3em;
     margin-bottom: 3em;
     margin-right: -5em;
     margin-left: -5em;
+    /* outline: 0; */
 }
 
 .model {
@@ -1733,8 +1735,8 @@ body {
 
 .inidvidualPostContent {
     margin: 2em 0 4em 0;
-    line-height: 1.4;
-    letter-spacing: 0.5px;
+    line-height: 1.2;
+    /* letter-spacing: 0.25px; */
     white-space: pre-line;
 }
 

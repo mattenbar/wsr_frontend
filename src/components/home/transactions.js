@@ -18,7 +18,7 @@ function transactions(state) {
                 <div className="nm-cards" >
                     <div className="ti-carousel-wrapper">
                         <div className="box">
-                        <Link to={`/posts/${firstPost.id}`} post_id={firstPost.id} className="ti-a">
+                        <Link to={`/Transactions-And-Transitions/${firstPost.id}`} post_id={firstPost.id} className="ti-a">
                                 {/* model */}
                                 <img
                                     src={firstPost.image}
@@ -32,7 +32,7 @@ function transactions(state) {
                     </div>
                     <div className="ti-carousel-wrapper">
                         <div className="box">
-                            <Link to={`/posts/${secondPost.id}`} post_id={secondPost.id} className="ti-a">
+                            <Link to={`/Transactions-And-Transitions/${secondPost.id}`} post_id={secondPost.id} className="ti-a">
                                 {/* model */}
                                 <img
                                     src={secondPost.image}
