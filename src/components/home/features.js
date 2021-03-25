@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {connect} from 'react-redux'
 import { Link } from 'react-router-dom';
+import {getSlug} from '../../actions/getSlug'
 
 function Features(state) {
     
@@ -17,7 +18,7 @@ function Features(state) {
                 <div className="feature-wrapper" >
                     <div className="small-square">
                         <Link to={{    
-                            pathname: `/Todays-Top-Features/${leftFeature["id"]}`,
+                            pathname: `${getSlug(leftFeature)}/${leftFeature["id"]}`,
                             state: {
                                 category: state.features[0].attributes.post.category_id
                             }
@@ -29,7 +30,7 @@ function Features(state) {
                     </div>
                     <div className="middle-square">
                         <Link to={{    
-                            pathname: `/Todays-Top-Features/${mainFeature["id"]}`,
+                            pathname: `${getSlug(mainFeature)}/${mainFeature["id"]}`,
                             state: {
                                 category: state.features[1].attributes.post.category_id
                             }
@@ -41,7 +42,7 @@ function Features(state) {
                     </div>
                     <div className="small-square">
                         <Link to={{    
-                            pathname: `/Todays-Top-Features/${rightFeature["id"]}`,
+                            pathname: `${getSlug(rightFeature)}/${rightFeature["id"]}`,
                             state: {
                                 category: state.features[2].attributes.post.category_id
                             }
@@ -61,6 +62,7 @@ function Features(state) {
     }
     
 }
+
 
 function mSTP(state){
     return {
