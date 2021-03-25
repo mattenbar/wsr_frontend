@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {addPost} from '../../actions/addPost';
+import { Editor } from '@tinymce/tinymce-react';
 
 
 class PostInput extends React.Component {
@@ -37,11 +38,21 @@ class PostInput extends React.Component {
     })
   }
 
+  handleEditorChange = (content, editor) => {
+    console.log('Content was updated:', content);
+    let post = {...this.state.post}
+    let currentState = post
+    currentState["content"] = content
+    this.setState({
+      post: currentState
+    })
+  }
+
   
 
 
 
-  handlePostSubmit = (event) => {
+  handlePostSubmit = (event, editor) => {
     event.preventDefault()
     this.props.dispatchAddPost(this.state.post)
     this.setState({
@@ -66,6 +77,7 @@ class PostInput extends React.Component {
     if (c){
       return (
         <div className="postInput">
+          <h1>Input Post</h1>
           <form onSubmit={this.handlePostSubmit} >
             <div className="postForm">
               <label>Title</label>
@@ -81,17 +93,31 @@ class PostInput extends React.Component {
             </select>
             <div className="postForm">
               <label>Content</label>
-              <textarea onChange={this.handlePostChange} type="textarea" value={this.state.post.content} name="content" />
+              <Editor
+                apiKey="xxdtys70gcr66orzrsr2v65wsqqzeff19c37xij80zax9qck"
+                initialValue="<p>This is the initial content of the editor</p>"
+                init={{
+                  selector: 'textarea',
+                  height: 500,
+                  menubar: 'insert',
+                  default_link_target: '_blank',
+                  plugins: [
+                    'advlist autolink lists link image charmap print preview anchor',
+                    'searchreplace visualblocks code fullscreen',
+                    'insertdatetime media table paste code help wordcount',
+                    'image',
+                    'media',
+                    'link'
+                  ],
+                  toolbar: 'undo redo | formatselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help '
+                }}
+                onEditorChange={this.handleEditorChange}
+              />
             </div>  
 
             <div className="postForm">
               <label>Image</label>
               <input id="files-upload" type="file" name="image" accept="image/*" onChange={this.handleImageChange} />
-            </div> 
-
-            <div className="postForm">
-              <label>YouTube Link</label>
-              <input onChange={this.handlePostChange} type="text" value={this.state.post.youtube} name="youtube" />
             </div> 
 
             <button type="submit">Submit</button>

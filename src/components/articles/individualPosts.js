@@ -34,6 +34,7 @@ function IndivualPosts(props) {
         );
     } else {
         // debugger
+        
         return (
             <>
                 <ArticleHeader category={location.state.category} />
@@ -54,9 +55,8 @@ function IndivualPosts(props) {
                             .parseZone(post.attributes.created_at)
                             .format("MMMM DD, YYYY")}
                     </h3>
-                    <p className="inidvidualPostContent">
-                        {post.attributes.content}
-                    </p>
+
+                    <p className="individualPostContent" dangerouslySetInnerHTML={{ __html: post.attributes.content }}></p>
                     {/* <div className="socialShare">
                     <h3>share</h3>
                 </div> */}

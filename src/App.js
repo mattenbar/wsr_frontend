@@ -109,6 +109,7 @@ class App extends React.Component{
 
           {/* category pages */}
 
+
           <Route exact path="/Dramatis-Personae" render={()=> <DramatisPersonae />}/>
           <Route exact path="/Dramatis-Personae/:id" component={DramatisPersonaeArticle} />
           <Route exact path="/Wallet-Share" render={()=> <WalletShare />}/>
@@ -121,6 +122,7 @@ class App extends React.Component{
           <Route exact path="/Capital-Connections/:id" component={CapitalConnectionArticle} />
           <Route exact path="/Point-Counterpoint" render={()=> <PointCounterPoint />}/>
           <Route exact path="/Point-Counterpoint/:id" component={PointCounterPointArticle} />
+
           
           
           <Route exact path="/On-The-Rise" render={()=> <OnTheRise />}/>

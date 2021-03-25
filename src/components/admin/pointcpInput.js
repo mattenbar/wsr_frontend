@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {addPointcp} from '../../actions/addPointcp';
+import { Editor } from '@tinymce/tinymce-react';
 
 
 class PointcpInput extends React.Component {
@@ -46,6 +47,26 @@ class PointcpInput extends React.Component {
     })
   }
 
+  handleEditorOneChange = (content, editor) => {
+    console.log('Content was updated:', content);
+    let post = {...this.state.post}
+    let currentState = post
+    currentState["contentOne"] = content
+    this.setState({
+      post: currentState
+    })
+  }
+
+  handleEditorTwoChange = (content, editor) => {
+    console.log('Content was updated:', content);
+    let post = {...this.state.post}
+    let currentState = post
+    currentState["contentTwo"] = content
+    this.setState({
+      post: currentState
+    })
+  }
+
   handlePointcpSubmit = (event) => {
     event.preventDefault()
     this.props.dispatchAddPointcp(this.state.pointcp)
@@ -67,6 +88,7 @@ class PointcpInput extends React.Component {
   render(){
       return (
         <div className="pointcpInput">
+          <h1>Input Point Counterpoint</h1>
           <form onSubmit={this.handlePointcpSubmit} >
             <div className="pointcpForm">
               <label>Title One</label>
@@ -78,7 +100,26 @@ class PointcpInput extends React.Component {
             </div>
             <div className="pointcpForm">
               <label>Content One</label>
-              <textarea onChange={this.handlePointcpChange} type="textarea" value={this.state.pointcp.content} name="contentOne" />
+              <Editor
+                apiKey="xxdtys70gcr66orzrsr2v65wsqqzeff19c37xij80zax9qck"
+                initialValue="<p>This is the initial content of the editor</p>"
+                init={{
+                  selector: 'textarea',
+                  height: 500,
+                  menubar: 'insert',
+                  default_link_target: '_blank',
+                  plugins: [
+                    'advlist autolink lists link image charmap print preview anchor',
+                    'searchreplace visualblocks code fullscreen',
+                    'insertdatetime media table paste code help wordcount',
+                    'image',
+                    'media',
+                    'link'
+                  ],
+                  toolbar: 'undo redo | formatselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help '
+                }}
+                onEditorChange={this.handleEditorOneChange}
+              />
             </div>  
             <div className="pointcpForm">
               <label>Image One</label>
@@ -95,7 +136,26 @@ class PointcpInput extends React.Component {
             </div>
             <div className="pointcpForm">
               <label>Content Two</label>
-              <textarea onChange={this.handlePointcpChange} type="textarea" value={this.state.pointcp.content} name="contentTwo" />
+              <Editor
+                apiKey="xxdtys70gcr66orzrsr2v65wsqqzeff19c37xij80zax9qck"
+                initialValue="<p>This is the initial content of the editor</p>"
+                init={{
+                  selector: 'textarea',
+                  height: 500,
+                  menubar: 'insert',
+                  default_link_target: '_blank',
+                  plugins: [
+                    'advlist autolink lists link image charmap print preview anchor',
+                    'searchreplace visualblocks code fullscreen',
+                    'insertdatetime media table paste code help wordcount',
+                    'image',
+                    'media',
+                    'link'
+                  ],
+                  toolbar: 'undo redo | formatselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help '
+                }}
+                onEditorChange={this.handleEditorTwoChange}
+              />
             </div>  
             <div className="pointcpForm">
               <label>Image Two</label>
