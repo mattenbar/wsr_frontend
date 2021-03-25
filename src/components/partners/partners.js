@@ -7,9 +7,9 @@ function partners(props) {
                 <h1>PARTNERS</h1>
             </div>
             <div className="partners-container">
-                <img src="PartnersImages/Advisor.png" alt="advisor"  />
+                <img src="/PartnersImages/Advisor.png" alt="advisor"  />
                 <br/>
-                <img src="PartnersImages/Berkshire.png" alt="advisor"  />
+                <img src="/PartnersImages/Berkshire.png" alt="advisor"  />
             </div>
         </div>
     );

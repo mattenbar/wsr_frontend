@@ -19,7 +19,7 @@ function NoteworthyNotes(props) {
     return (
      
         <div className="category-show">
-            <div className="category-image"><img src="carouselImages/NoteworthyNotes.png" alt=""></img></div>
+            <div className="category-image"><img src="/carouselImages/NoteworthyNotes.png" alt=""></img></div>
             <div className="category-header">
                 <h1>
                     noteworthy

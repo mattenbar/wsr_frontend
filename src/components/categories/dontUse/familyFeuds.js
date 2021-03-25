@@ -19,7 +19,7 @@ function FamilyFeuds(props) {
     return (
         
         <div className="category-show">
-            <div className="category-image"><img src="carouselImages/FamilyFeuds.png" alt=""></img></div>
+            <div className="category-image"><img src="/carouselImages/FamilyFeuds.png" alt=""></img></div>
             <div className="category-header">
                 <h1>
                     FAMILY 

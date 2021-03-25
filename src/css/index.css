@@ -821,7 +821,7 @@ body {
 
     .box h2 {
         /* margin: 0 1em 1em 1em; */
-        font-size: 1.25em;
+        font-size: 1em;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
@@ -1345,8 +1345,7 @@ body {
 }
 
 @media (min-width: 100em) {
-
-    .ticrsl{
+    .ticrsl {
         height: auto;
     }
 
@@ -1358,8 +1357,6 @@ body {
     .ti-box p {
         font-size: 1.35em;
     }
-
-   
 }
 
 /* -------------------END this issue/ last issue---------------------- */
@@ -1856,10 +1853,8 @@ body {
     transform: translate(-50%, -50%);
 }
 
-
 @media (min-width: 100em) {
     .categoryRemainingArticles {
-       
         grid-auto-rows: 40em;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2em;
@@ -1870,7 +1865,7 @@ body {
         margin-top: 1em;
         font-size: 1.5vw;
     }
-    
+
     .lightblueAuthor {
         font-size: 1vw;
     }
@@ -1940,16 +1935,15 @@ body {
         width: 49%;
         height: 450px;
         margin: 0;
-        object-fit: cover;   
+        object-fit: cover;
         text-align: justify;
     }
-    .span-ad-image1{
+    .span-ad-image1 {
         margin-right: 1%;
     }
 
-    .span-ad-image2{
+    .span-ad-image2 {
         margin-left: 1%;
-        
     }
 }
 
@@ -2071,7 +2065,7 @@ body {
         padding-top: 1.8em;
         margin-bottom: 1em;
         left: 49%;
-        
+
         width: 35%;
     }
     .smb-black {
@@ -2094,13 +2088,12 @@ body {
         color: black;
         text-decoration: none;
         text-transform: uppercase;
-        
+
         padding: 0.5rem;
         display: block;
     }
 
     .second-row-social-media {
-    
         text-align: center;
         width: 22%;
         padding-bottom: 2em;

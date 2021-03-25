@@ -18,7 +18,7 @@ function LawyerLand(props) {
 
     return (
         <div className="category-show">
-            <div className="category-image"><img src="carouselImages/LawyerLand.png" alt=""></img></div>
+            <div className="category-image"><img src="/carouselImages/LawyerLand.png" alt=""></img></div>
             <div className="category-header">
                 <h1>
                     lawyer 

@@ -5,7 +5,7 @@ function PointCounterPoint(state) {
     return (
         <div className="category-show">
             <div className="category-image">
-                <img src="carouselImages/PointCounterPoint.png" alt=""></img>
+                <img src="/carouselImages/PointCounterPoint.png" alt=""></img>
             </div>
             <div className="category-header">
                 <h1>POINT-COUNTERPOINT</h1>

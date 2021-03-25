@@ -19,7 +19,7 @@ function ProductStrategies(props) {
     return (
 
         <div className="category-show">
-            <div className="category-image"><img src="carouselImages/ProductStrategies.png" alt=""></img></div>
+            <div className="category-image"><img src="/carouselImages/ProductStrategies.png" alt=""></img></div>
             <div className="category-header">
                 <h1>
                     product

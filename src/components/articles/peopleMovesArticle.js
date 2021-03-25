@@ -31,13 +31,6 @@ function PeopleMovesArticle(props) {
             console.log("individual post", post.attributes),
             (
                 <>
-                    <div className="category-show">
-                        <div className="category-image">
-                            <img
-                                src="/carouselImages/CapitolConnections.png"
-                                alt=""
-                            ></img>
-                        </div>
                         <div className="category-show">
                             <div className="category-image">
                                 <img
@@ -54,7 +47,6 @@ function PeopleMovesArticle(props) {
                                 <h5>DESCRIPTOR WILL GO HERE.</h5>
                             </div>
                         </div>
-                    </div>
                     <div className="individualPostDiv">
                         <img
                             src={post.attributes.image}
