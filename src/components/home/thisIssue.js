@@ -3,8 +3,9 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-function thisIssue(props) {
+function thisIssue(state, props) {
     let settings = {
         arrows: true,
         dots: false,
@@ -49,11 +50,12 @@ function thisIssue(props) {
 
 
 
-    if(props.posts.length > 0){
+    if(state.posts.length > 0){
 
-        let cItems = props.posts.map(post => {
+        let lastFive = state.posts.slice(-5)
+        let cItems = lastFive.map(post => {
             return(
-                <div key={post.id} className="ticrslwrapper" >
+                <div key={post.attributes.id} className="ticrslwrapper" >
                         <div className="ti-box">
                             <Link to={`/posts/${post.id}`} post_id={post.id} className="ti-a">
                                 {/* model */}
@@ -84,4 +86,11 @@ function thisIssue(props) {
     
 }
 
-export default thisIssue;
+function mSTP(state){
+    return {
+      post: state.posts,
+      user: state.user
+    }
+  }
+
+export default connect(mSTP)(thisIssue);

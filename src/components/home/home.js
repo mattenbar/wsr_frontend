@@ -15,6 +15,7 @@ class Home extends Component {
   render(){
 
     return(
+      console.log(this.props),
       
       <div className="home-container">
         <LinksBar />
@@ -22,8 +23,8 @@ class Home extends Component {
         <Features />
         <div className="home-triple-row-grid" >
           <div className="newsmakers-transactions" >
-            <NewsMakers posts={this.props.categories["12"]}/>
-            <Transactions posts={this.props.categories["13"]}/>
+            <NewsMakers />
+            <Transactions />
           </div>
           {/* to change amount of posts in carousel change number below(keep it negative for most recent) */}
           <ThisIssue posts={this.props.posts.slice(-5)}/>

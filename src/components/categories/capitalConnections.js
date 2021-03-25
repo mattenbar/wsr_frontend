@@ -10,6 +10,7 @@ function CapitalConnections(state, props) {
         let secondNewestPost = posts[1];
         let remainingPosts = posts.slice(2);
 
+
         if (posts.length !== 0 && remainingPosts.length > 0) {
             const remainingPostsMapped = remainingPosts.map((post) => {
                 return (
@@ -223,6 +224,7 @@ function CapitalConnections(state, props) {
             );
         }
     } else {
+
         return (
             <>
                 <div className="category-show">

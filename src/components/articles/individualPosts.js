@@ -25,8 +25,9 @@ function IndivualPosts(props) {
         );
     } else {
         // debugger
+        
         return (
-            console.log("individual post", post.attributes),
+            console.log("individual post", typeof(post.attributes.content)),
             <>
             <div className="category-show">
             <div className="category-image"><img src="/carouselImages/CapitolConnections.png" alt="category-image"></img></div>
@@ -39,6 +40,8 @@ function IndivualPosts(props) {
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h4>
             </div>
         </div>
+
+        
             <div className="individualPostDiv">
                     <img src={post.attributes.image} alt="post-image" className="individualPostImage" />
                     <h2 className="individualPostTitle">{post.attributes.title}</h2>
@@ -50,6 +53,7 @@ function IndivualPosts(props) {
                         }
                     </h3>
                     <p className="inidvidualPostContent">{post.attributes.content}</p>
+                    <div dangerouslySetInnerHTML={{ __html: post.attributes.content }} />
                     {/* <div className="socialShare">
                         <h3>share</h3>
                     </div> */}
