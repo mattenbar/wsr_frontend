@@ -77,6 +77,7 @@ class PostInput extends React.Component {
     if (c){
       return (
         <div className="postInput">
+          <h1>Input Post</h1>
           <form onSubmit={this.handlePostSubmit} >
             <div className="postForm">
               <label>Title</label>
@@ -99,19 +100,21 @@ class PostInput extends React.Component {
                   selector: 'textarea',
                   height: 500,
                   menubar: 'insert',
+                  default_link_target: '_blank',
                   plugins: [
                     'advlist autolink lists link image charmap print preview anchor',
                     'searchreplace visualblocks code fullscreen',
                     'insertdatetime media table paste code help wordcount',
                     'image',
-                    'media'
+                    'media',
+                    'link'
                   ],
-                  toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help '
+                  toolbar: 'undo redo | formatselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help '
                 }}
                 onEditorChange={this.handleEditorChange}
               />
             </div>  
-            
+
             <div className="postForm">
               <label>Image</label>
               <input id="files-upload" type="file" name="image" accept="image/*" onChange={this.handleImageChange} />

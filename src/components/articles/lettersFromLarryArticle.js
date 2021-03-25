@@ -67,9 +67,7 @@ function LettersFromLarryArticle(props) {
                                 .parseZone(post.attributes.created_at)
                                 .format("MMMM DD, YYYY")}
                         </h3>
-                        <p className="inidvidualPostContent">
-                            {post.attributes.content}
-                        </p>
+                        <p className="inidvidualPostContent" dangerouslySetInnerHTML={{ __html: post.attributes.content }}></p>
                         {/* <div className="socialShare">
                         <h3>share</h3>
                     </div> */}

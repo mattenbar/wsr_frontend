@@ -8,7 +8,8 @@ function admin(props) {
   return (
       <div>
         <PostInput posts={props.posts} categories={props.categories}/>
-        {/* <PointcpInput /> */}
+        <br/>
+        <PointcpInput />
         
       </div>
   );
