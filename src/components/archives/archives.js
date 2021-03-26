@@ -1,16 +1,37 @@
 import React from 'react';
+import {connect} from 'react-redux'
+import {getSlug} from '../../actions/getSlug'
+import { Link } from 'react-router-dom'
 
-function archives(props) {
+function archives(state) {
+
+    let posts = state.posts.map(post => {
+        return(
+            <div >
+              <li><Link to={{pathname:`${getSlug(post.attributes)}/${post.id}`}}>{post.attributes.title} </Link></li>
+            </div>
+        )
+    })
+
     return (
         <div className="archive">
             <div className="archive-header">
                 <h1>ARCHIVES</h1>
             </div>
             <div className="archive-container">
-
+                <ol>
+                    {posts}
+                </ol>
             </div>
         </div>
     );
 }
 
-export default archives;
+function mSTP(state){
+    return {
+      posts: state.posts,
+      user: state.user
+    }
+  }
+
+export default connect(mSTP)(archives);
