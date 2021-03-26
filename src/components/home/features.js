@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {connect} from 'react-redux'
 import { Link } from 'react-router-dom';
 import {getSlug} from '../../actions/getSlug'
+import moment from "moment";
 
 function Features(state) {
     
@@ -25,7 +26,7 @@ function Features(state) {
                         }} > 
                             <img src={leftFeature["image"]} className="feature-images__small" alt="left-image"/>
                             <h2>{leftFeature["title"]}</h2>
-                            <p>{leftFeature['author']} / {leftFeature['created_at']}</p>
+                            <p>{leftFeature['author']} &nbsp; {moment.parseZone(leftFeature['created_at']).format("MMMM DD, YYYY")}</p>
                         </Link>
                     </div>
                     <div className="middle-square">
@@ -37,7 +38,7 @@ function Features(state) {
                         }} > 
                         <img src={mainFeature["image"]} className="feature-images__small" alt="main-image"/>
                             <h2>{mainFeature["title"]}</h2>
-                            <p>{mainFeature['author']} / {mainFeature['created_at']}</p>
+                            <p>{mainFeature['author']} &nbsp; {moment.parseZone(mainFeature['created_at']).format("MMMM DD, YYYY")}</p>
                         </Link>
                     </div>
                     <div className="small-square">
@@ -49,7 +50,7 @@ function Features(state) {
                         }} > 
                             <img src={rightFeature["image"]} className="feature-images__small" alt="right-image"/>
                             <h2>{rightFeature["title"]}</h2>
-                            <p>{rightFeature['author']} / {rightFeature['created_at']}</p>
+                            <p>{rightFeature['author']} &nbsp; {moment.parseZone(rightFeature['created_at']).format("MMMM DD, YYYY")}</p>
                         </Link>
                     </div>
                 </div>
