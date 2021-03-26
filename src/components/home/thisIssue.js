@@ -53,7 +53,7 @@ function thisIssue(state) {
 
     if(state.posts.length > 0){
 
-        let lastFive = state.posts.slice(-5)
+        let lastFive = state.posts.slice(-5).reverse()
         let cItems = lastFive.map(post => {
     
             return(
