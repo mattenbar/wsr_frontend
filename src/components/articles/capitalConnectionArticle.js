@@ -6,7 +6,6 @@ import ArticleHeaders from './articleHeaders';
 import ArticleEditForm from './articleEditForm';
 import { deletePost } from '../../actions/deletePost';
 import { withRouter } from "react-router";
-import ArticleClassEditForm from './articleEditForm';
 
 function CapitalConnectionArticle(props) {
 
