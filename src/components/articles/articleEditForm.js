@@ -1,174 +1,182 @@
-import React, { useState } from "react";
-import { useSelector, useDispatch } from 'react-redux';
-import { Editor } from '@tinymce/tinymce-react';
+import React from "react";
+import { connect } from "react-redux";
+import { editPost } from "../../actions/editPost";
+import { Editor } from "@tinymce/tinymce-react";
+import { withRouter } from "react-router";
+import history from '../../history';
 
-function ArticleEditForm(props) {
+class ArticleClassEditForm extends React.Component {
+    // post = this.props.post
 
-    let categories = useSelector(state => {
-        return (state.categories)
-    })
-
-    let postInfo = props.post.attributes
-    let post_id = props.post.id
-
-    const defaultPostProps = {
-        title: postInfo.title,
-        author: postInfo.author,
-        content: postInfo.content,
-        image: postInfo.image,
-        category_id: postInfo.category_id
-    }
-
-    const [post, setPost] = useState(defaultPostProps)
-
-    const handleChange = (e) => {
-        console.log(e, e.target.name)
-        setPost({
-            ...post,
-            [e.target.name]: e.target.value
-        })
-    }
-
-    const handleImageChange = (e) => {
-        // let post = {...post}
-        // let currentState = post
-        // currentState["image"] = event.target.files[0]
-        // this.setState({
-        //     post: currentState
-        // })
-        setPost({
-            ...post,
-            [e.target.image]: e.target.files[0]
-        })
-
-    }
-    
-    const handleEditorChange = (content, editor) => {
-        // debugger
-        // console.log(e, content)
-        // // debugger
-        //     // console.log("postbeforeinitialization", post)
-        //     // console.log('Content was updated:', content);
-        //     if (post !== undefined) {
-        //         // let post = {...post}
-        //         let currentState = post
-        //         currentState["content"] = content
-                
-        //         // debugger
-        //         setPost({
-        //             ...post,
-        //             currentState
-        //         })
-        //     }
-        if (post !== undefined) {
-            setPost({
-                content
-            })
+    state = {
+        post: {
+            title: this.props.post.attributes.title,
+            content: this.props.post.attributes.content,
+            author: this.props.post.attributes.author,
+            image: this.props.post.attributes.image,
+            category_id: this.props.post.attributes.category_id,
         }
-    }
+    };
 
-    const dispatch = useDispatch()
+    handlePostChange = (event) => {
+        let post = { ...this.state.post };
+        let currentState = post;
+        let { name, value } = event.target;
+        currentState[name] = value;
+        this.setState({
+            post: currentState,
+        });
+    };
 
-    const handleOnSubmit = (e) => {
-        e.preventDefault()
+    handleImageChange = (event) => {
+        let post = { ...this.state.post };
+        let currentState = post;
+        currentState["image"] = event.target.files[0];
+        this.setState({
+            post: currentState,
+        });
+    };
 
-        debugger
+    handleEditorChange = (content, editor) => {
+        // console.log("Content was updated:", content);
+        let post = { ...this.state.post };
+        let currentState = post;
+        currentState["content"] = content;
+        this.setState({
+            post: currentState,
+        });
+    };
 
-        // dispatch(editPost(post))
+    handleOnSubmit = (e) => {
+        e.preventDefault();
+        
+        let postData = this.state.post
+        let post_id = this.props.post.id
+        postData["id"] = post_id
 
-        // setPost(defaultPostProps)
-        // props.setInEditMode(false)
-    }
+        this.props.dispatchEditPost(postData, post_id);
 
-    let categoriesMapped
+        this.setState({
+            post: {
+                title: this.props.post.attributes.title,
+                content: this.props.post.attributes.content,
+                author: this.props.post.attributes.author,
+                image: {},
+                category_id: this.props.post.attributes.category_id,
+            }
+        });
 
-    if (categories !== undefined) {
-        categoriesMapped = categories.map((category) => (
+        this.props.setInEditMode(false)
+        // this.props.history.push(`/posts/${post_id}`);
+        // this.props.history.push('/')
+        history.back('/')
+        history.back('/')
+
+    };
+
+    render() {
+        // console.log("title", this.props.post.attributes.image)
+        let c = this.props.categories.map((category) => (
             <option
                 key={category.attributes.id}
                 value={category.attributes.id}
                 name="category_id"
-                onChange={handleChange}
+                onChange={this.handleChange}
             >
                 {" "}
                 {category.attributes.id} - {category.attributes.name}
             </option>
         ));
-    }
 
-    return (
-        // console.log("props", props),
-        (
-            <div className="editPostInput">
-                <h1>Edit Article</h1>
-                
-                <form onSubmit={handleOnSubmit}>
-                    <div className="postForm">
-                        <label>Title:&nbsp;</label>
-                        <input
-                            onChange={handleChange}
-                            type="text"
-                            value={post.title}
-                            name="title"
-                        />
-                    </div>
-                    <div className="postForm">
-                        <label>Author:&nbsp;</label>
-                        <input
-                            onChange={handleChange}
-                            type="text"
-                            value={post.author}
-                            name="author"
-                        />
-                    </div>
-                    <select
-                        value={post.category_id}
-                        name="category_id"
-                        onChange={handleChange}
-                    >
-                        <option>Choose Category...</option>
-                        {categoriesMapped}
-                    </select>
-                    <div className="postForm">
-                        <label>Image:&nbsp;</label>
-                        <input
-                            id="files-upload"
-                            type="file"
-                            name="image"
-                            accept="image/*"
-                            onChange={handleImageChange}
-                        />
-                    </div>
-                    <div className="postForm">
-                        <label>Content:&nbsp;</label>
-                        <Editor
-                            apiKey="xxdtys70gcr66orzrsr2v65wsqqzeff19c37xij80zax9qck"
-                            initialValue={post.content}
-                            init={{
-                                selector: "textarea",
-                                height: 500,
-                                menubar: "insert",
-                                default_link_target: "_blank",
-                                plugins: [
-                                    "advlist autolink lists link image charmap print preview anchor",
-                                    "searchreplace visualblocks code fullscreen",
-                                    "insertdatetime media table paste code help wordcount",
-                                    "image",
-                                    "media",
-                                    "link",
-                                ],
-                                toolbar:
-                                    "undo redo | formatselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help ",
-                            }}
-                            name="content"
-                            onEditorChange={handleEditorChange}
-                        />
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        )
-    );
+        if (c) {
+            return (
+                <div className="postInput">
+                    <h1>Edit Post</h1>
+                    <form onSubmit={this.handleOnSubmit}>
+                        <div className="postForm">
+                            <label>Title</label>
+                            <input
+                                onChange={this.handlePostChange}
+                                type="text"
+                                value={this.state.post.title}
+                                name="title"
+                            />
+                        </div>
+                        <div className="postForm">
+                            <label>Author</label>
+                            <input
+                                onChange={this.handlePostChange}
+                                type="text"
+                                value={this.state.post.author}
+                                name="author"
+                            />
+                        </div>
+                        <select
+                            value={this.state.post.category_id}
+                            name="category_id"
+                            onChange={this.handlePostChange}
+                        >
+                            <option>Choose Category...</option>
+                            {c}
+                        </select>
+                        <div className="postForm">
+                            <label>Image</label>
+                            <input
+                                id="files-upload"
+                                type="file"
+                                name="image"
+                                accept="image/*"
+                                onChange={this.handleImageChange}
+                            />
+                        </div>
+                        <div className="postForm">
+                            <label>Content</label>
+                            <Editor
+                                apiKey="xxdtys70gcr66orzrsr2v65wsqqzeff19c37xij80zax9qck"
+                                initialValue={
+                                    this.props.post.attributes.content
+                                }
+                                init={{
+                                    selector: "textarea",
+                                    height: 500,
+                                    menubar: "insert",
+                                    default_link_target: "_blank",
+                                    plugins: [
+                                        "advlist autolink lists link image charmap print preview anchor",
+                                        "searchreplace visualblocks code fullscreen",
+                                        "insertdatetime media table paste code help wordcount",
+                                        "image",
+                                        "media",
+                                        "link",
+                                    ],
+                                    toolbar:
+                                        "undo redo | formatselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help ",
+                                }}
+                                onEditorChange={this.handleEditorChange}
+                            />
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            );
+        } else {
+            return <div></div>;
+        }
+    }
 }
 
-export default ArticleEditForm;
+function mSTP(state) {
+    return {
+        posts: state.posts,
+        categories: state.categories,
+    };
+}
+
+function mDTP(dispatch) {
+    return {
+        dispatchEditPost: (post) => dispatch(editPost(post))
+    };
+}
+
+export default withRouter(connect(mSTP, mDTP)(ArticleClassEditForm));
