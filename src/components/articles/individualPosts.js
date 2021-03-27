@@ -10,14 +10,20 @@ import { withRouter } from "react-router";
 import { Link, useLocation } from "react-router-dom";
 
 function IndivualPosts(props) {
-    let location = useLocation();
-    console.log("location", location);
+    const user = useSelector(state => {
+        return (state.user.user)
+    })
 
-    console.log("ip", props);
+    let admin
+
+    if (user !== undefined) {
+        admin = user.admin
+    }
 
     const post_id = props.match.params.id;
 
     const [post, setPost] = useState([]);
+    const [inEditMode, setInEditMode] = useState(false)
 
     useEffect(() => {
         fetch(API_URL + `/posts/${post_id}`)
@@ -27,9 +33,26 @@ function IndivualPosts(props) {
             });
     }, []);
 
+    const handleOnClick = () => {
+        setInEditMode(true)
+    }
+
+    const handleOnBack = () => {
+        setInEditMode(false)
+    }
+
+    const dispatch = useDispatch()
+
+    const handleOnDELETE = (e) => {
+        e.preventDefault()
+        dispatch(deletePost(post_id))
+        props.history.push('/');
+    }
+
+   
+
     if (post.attributes === undefined) {
         return (
-            console.log("individual post", post),
             (
                 <div>
                     <h1>LOADING...</h1>
@@ -37,34 +60,29 @@ function IndivualPosts(props) {
             )
         );
     } else {
-        // debugger
-        
         return (
             <>
-                <ArticleHeader category={location.state.category} />
-                <div className="individualPostDiv">
-                    <img
-                        src={post.attributes.image}
-                        alt="post-image"
-                        className="individualPostImage"
-                    />
-                    <h2 className="individualPostTitle">
-                        {post.attributes.title}
-                    </h2>
-                    <h3 className="individualPostAuthor">
-                        BY {post.attributes.author}
-                    </h3>
-                    <h3 className="inidvidualPostDate">
-                        {moment
-                            .parseZone(post.attributes.created_at)
-                            .format("MMMM DD, YYYY")}
-                    </h3>
-
-                    <p className="individualPostContent" dangerouslySetInnerHTML={{ __html: post.attributes.content }}></p>
-                    {/* <div className="socialShare">
-                    <h3>share</h3>
-                </div> */}
+                <div className="category-show">
+                    <ArticleHeaders category={post.attributes.category_id} />
                 </div>
+                { inEditMode === false &&
+                    <div className="individualPostDiv" >
+                        <ArticleBody post={post} />
+                        { admin === true && 
+                            <div>
+                                <button onClick={handleOnClick} className="adminButtons">EDIT / DELETE ARTICLE</button>
+                                
+                            </div>
+                        }
+                    </div>
+                }
+                { inEditMode === true && admin === true && 
+                    <div className="individualPostDiv" >
+                        <ArticleEditForm setInEditMode={setInEditMode} post={post} />
+                        <button onClick={handleOnBack} className="adminButtons">BACK TO ARTICLE</button>
+                        <button onClick={handleOnDELETE} className="adminButtons">DELETE ARTICLE</button>
+                    </div>
+                }
             </>
         );
     }
