@@ -20,7 +20,7 @@ function Nightmare(state, props) {
                 return (
                     <div className="smallGrid" key={post.id}>
                         <Link
-                            to={`/Wallet-Share/${post.id}`}
+                            to={`/Nightmare-On-Compliance-St/${post.id}`}
                             post_id={post.id}
                             className="ti-b"
                         >
@@ -45,7 +45,7 @@ function Nightmare(state, props) {
                         { newestPost !== undefined &&
                             <div className="categoryTopLeft">
                                 <Link
-                                    to={`/Wallet-Share/${newestPost.id}`}
+                                    to={`/Nightmare-On-Compliance-St/${newestPost.id}`}
                                     post_id={newestPost.id}
                                     className="ti-b"
                                 >
@@ -70,7 +70,7 @@ function Nightmare(state, props) {
                         { secondNewestPost !== undefined &&
                             <div className="categoryTopRight">
                                 <Link
-                                    to={`/Wallet-Share/${secondNewestPost.id}`}
+                                    to={`/Nightmare-On-Compliance-St/${secondNewestPost.id}`}
                                     post_id={secondNewestPost.id}
                                     className="ti-b"
                                 >

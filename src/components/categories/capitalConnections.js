@@ -20,7 +20,7 @@ function CapitalConnections(state, props) {
                 return (
                     <div className="smallGrid" key={post.id}>
                         <Link
-                            to={`/Wallet-Share/${post.id}`}
+                            to={`/Capital-Connections/${post.id}`}
                             post_id={post.id}
                             className="ti-b"
                         >
@@ -45,7 +45,7 @@ function CapitalConnections(state, props) {
                         { newestPost !== undefined &&
                             <div className="categoryTopLeft">
                                 <Link
-                                    to={`/Wallet-Share/${newestPost.id}`}
+                                    to={`/Capital-Connections/${newestPost.id}`}
                                     post_id={newestPost.id}
                                     className="ti-b"
                                 >
@@ -70,7 +70,7 @@ function CapitalConnections(state, props) {
                         { secondNewestPost !== undefined &&
                             <div className="categoryTopRight">
                                 <Link
-                                    to={`/Wallet-Share/${secondNewestPost.id}`}
+                                    to={`/Capital-Connections/${secondNewestPost.id}`}
                                     post_id={secondNewestPost.id}
                                     className="ti-b"
                                 >

@@ -20,7 +20,7 @@ function CastAndCrew(state, props) {
                 return (
                     <div className="smallGrid" key={post.id}>
                         <Link
-                            to={`/Wallet-Share/${post.id}`}
+                            to={`/Cast-And-Crew/${post.id}`}
                             post_id={post.id}
                             className="ti-b"
                         >
@@ -45,7 +45,7 @@ function CastAndCrew(state, props) {
                         { newestPost !== undefined &&
                             <div className="categoryTopLeft">
                                 <Link
-                                    to={`/Wallet-Share/${newestPost.id}`}
+                                    to={`/Cast-And-Crew/${newestPost.id}`}
                                     post_id={newestPost.id}
                                     className="ti-b"
                                 >
@@ -70,7 +70,7 @@ function CastAndCrew(state, props) {
                         { secondNewestPost !== undefined &&
                             <div className="categoryTopRight">
                                 <Link
-                                    to={`/Wallet-Share/${secondNewestPost.id}`}
+                                    to={`/Cast-And-Crew/${secondNewestPost.id}`}
                                     post_id={secondNewestPost.id}
                                     className="ti-b"
                                 >

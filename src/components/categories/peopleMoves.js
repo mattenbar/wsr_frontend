@@ -20,7 +20,7 @@ function PeopleMoves(state, props) {
                 return (
                     <div className="smallGrid" key={post.id}>
                         <Link
-                            to={`/Wallet-Share/${post.id}`}
+                            to={`/People-Moves/${post.id}`}
                             post_id={post.id}
                             className="ti-b"
                         >
@@ -45,7 +45,7 @@ function PeopleMoves(state, props) {
                         { newestPost !== undefined &&
                             <div className="categoryTopLeft">
                                 <Link
-                                    to={`/Wallet-Share/${newestPost.id}`}
+                                    to={`/People-Moves/${newestPost.id}`}
                                     post_id={newestPost.id}
                                     className="ti-b"
                                 >
@@ -70,7 +70,7 @@ function PeopleMoves(state, props) {
                         { secondNewestPost !== undefined &&
                             <div className="categoryTopRight">
                                 <Link
-                                    to={`/Wallet-Share/${secondNewestPost.id}`}
+                                    to={`/People-Moves/${secondNewestPost.id}`}
                                     post_id={secondNewestPost.id}
                                     className="ti-b"
                                 >

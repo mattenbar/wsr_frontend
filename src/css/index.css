@@ -163,6 +163,11 @@ body {
         margin-right: -19em;
     }
 
+    .auth2-buttons {
+        padding-top: 0.5em;
+        margin-left: -1.75em;
+    }
+
     .auth-buttons__yellow {
         /* margin: 0.5em; */
         /* padding: 0.5em; */
@@ -617,21 +622,21 @@ body {
     .linksBar-bottom {
         padding: 2%;
         text-align: justify;
-        font-size: 0.9vw;
+        font-size: 0.7vw;
         color: black;
-        padding-right: 1em;
-        padding-left: 1em;
+        padding-right: 0;
+        padding-left: 0;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .linksBar-top {
-        margin-bottom: -4em;
-        letter-spacing: 1.5px;
+        margin-bottom: -5em;
+        letter-spacing: 1.2px;
     }
 
     .linksBar-bottom {
         margin-right: 0.5em;
-        letter-spacing: 0;
+        letter-spacing: 1.2px;
     }
 
     .linksBar-top a,
@@ -1774,6 +1779,13 @@ body {
 .socialShare {
     float: right;
     margin-top: -3em;
+}
+
+.adminButtons {
+    margin-bottom: 2em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    padding: 0.2em;
 }
 
 /* -----------------------------------END INDIVUAL POST PAGE---------------------------------------------- */

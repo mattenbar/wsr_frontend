@@ -20,7 +20,7 @@ function CyberCryptTales(state, props) {
                 return (
                     <div className="smallGrid" key={post.id}>
                         <Link
-                            to={`/Wallet-Share/${post.id}`}
+                            to={`/CyberCrypt-Tales/${post.id}`}
                             post_id={post.id}
                             className="ti-b"
                         >
@@ -45,7 +45,7 @@ function CyberCryptTales(state, props) {
                         { newestPost !== undefined &&
                             <div className="categoryTopLeft">
                                 <Link
-                                    to={`/Wallet-Share/${newestPost.id}`}
+                                    to={`/CyberCrypt-Tales/${newestPost.id}`}
                                     post_id={newestPost.id}
                                     className="ti-b"
                                 >
@@ -70,7 +70,7 @@ function CyberCryptTales(state, props) {
                         { secondNewestPost !== undefined &&
                             <div className="categoryTopRight">
                                 <Link
-                                    to={`/Wallet-Share/${secondNewestPost.id}`}
+                                    to={`/CyberCrypt-Tales/${secondNewestPost.id}`}
                                     post_id={secondNewestPost.id}
                                     className="ti-b"
                                 >
