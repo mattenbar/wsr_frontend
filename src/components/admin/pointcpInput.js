@@ -99,6 +99,10 @@ class PointcpInput extends React.Component {
               <input onChange={this.handlePointcpChange} type="text" value={this.state.pointcp.author} name="authorOne" />
             </div>
             <div className="pointcpForm">
+              <label>Image One</label>
+              <input id="files-upload" type="file"  accept="image/*" onChange={this.handleImageOneChange} name="imageTwo"/>
+            </div>
+            <div className="pointcpForm">
               <label>Content One</label>
               <Editor
                 apiKey="xxdtys70gcr66orzrsr2v65wsqqzeff19c37xij80zax9qck"
@@ -120,12 +124,9 @@ class PointcpInput extends React.Component {
                 }}
                 onEditorChange={this.handleEditorOneChange}
               />
-            </div>  
-            <div className="pointcpForm">
-              <label>Image One</label>
-              <input id="files-upload" type="file"  accept="image/*" onChange={this.handleImageOneChange} name="imageTwo"/>
-            </div> 
-
+            </div>   
+                <br/>
+                <br/>
             <div className="pointcpForm">
               <label>Title Two</label>
               <input onChange={this.handlePointcpChange} type="text" value={this.state.pointcp.title} name="titleTwo" />
@@ -134,6 +135,10 @@ class PointcpInput extends React.Component {
               <label>Author Two</label>
               <input onChange={this.handlePointcpChange} type="text" value={this.state.pointcp.author} name="authorTwo" />
             </div>
+            <div className="pointcpForm">
+              <label>Image Two</label>
+              <input id="files-upload" type="file"  accept="image/*" onChange={this.handleImageTwoChange} name="imageTwo"/>
+            </div> 
             <div className="pointcpForm">
               <label>Content Two</label>
               <Editor
@@ -157,10 +162,6 @@ class PointcpInput extends React.Component {
                 onEditorChange={this.handleEditorTwoChange}
               />
             </div>  
-            <div className="pointcpForm">
-              <label>Image Two</label>
-              <input id="files-upload" type="file"  accept="image/*" onChange={this.handleImageTwoChange} name="imageTwo"/>
-            </div> 
 
             <button type="submit">Submit</button>
           </form>

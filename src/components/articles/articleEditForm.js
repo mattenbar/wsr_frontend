@@ -101,6 +101,7 @@ function ArticleEditForm(props) {
         (
             <div className="editPostInput">
                 <h1>Edit Article</h1>
+                
                 <form onSubmit={handleOnSubmit}>
                     <div className="postForm">
                         <label>Title:&nbsp;</label>
