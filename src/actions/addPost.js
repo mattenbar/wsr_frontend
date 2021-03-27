@@ -1,16 +1,18 @@
+import { API_URL } from '../apiConstants';
+
 export const addPost = (data) => {
 
   return (dispatch) => {
     let body = new FormData()
     body.append("image", data.image)
-    fetch("http://localhost:3000/api/v1/image_upload",{
+    fetch(API_URL + '/image_upload',{
     method: "PUT",
     body
     })
     .then(resp => resp.json())
     .then(json => {
       data.image = json.image
-      fetch('http://localhost:3000/api/v1/posts', {
+      fetch(API_URL + '/posts', {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
@@ -19,7 +21,15 @@ export const addPost = (data) => {
       body: JSON.stringify(data)
     })
     .then(response => response.json())
-    .then(post=> dispatch({type: 'ADD_POST', payload: post}))
+    .then(post=> {
+      if (post.success) {
+        alert(post.success)
+        dispatch({type: 'ADD_POST', payload: post})
+      } else if (post.errors) {
+      
+      alert(post.errors.map(error => error))
+      }
+    })
     })
 
     

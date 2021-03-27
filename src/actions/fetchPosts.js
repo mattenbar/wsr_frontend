@@ -6,7 +6,7 @@ export function fetchPosts(data){
 
   return function(dispatch){
     
-    fetch(API_URL + "/posts")
+    fetch(API_URL + '/posts')
       .then(res => res.json())
       .then(postsObj => {
         dispatch({type: FETCH_POSTS, payload: postsObj})

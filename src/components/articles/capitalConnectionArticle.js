@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import ArticleBody from './articleBody';
 import ArticleHeaders from './articleHeaders';
 import ArticleEditForm from './articleEditForm';
+import { deletePost } from '../../actions/deletePost';
+import { withRouter } from "react-router";
 
 function CapitalConnectionArticle(props) {
 
@@ -38,8 +40,12 @@ function CapitalConnectionArticle(props) {
         setInEditMode(false)
     }
 
-    const handleOnDELETE = () => {
-        
+    const dispatch = useDispatch()
+
+    const handleOnDELETE = (e) => {
+        e.preventDefault()
+        dispatch(deletePost(post_id))
+        props.history.push('/');
     }
 
    
@@ -81,4 +87,4 @@ function CapitalConnectionArticle(props) {
     }
 }
 
-export default CapitalConnectionArticle;
+export default withRouter(CapitalConnectionArticle);
