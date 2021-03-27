@@ -658,22 +658,17 @@ body {
         padding-left: 0;
         padding-right: 0;
         margin-right: 0;
+        margin-bottom: -3em;
+        font-size: 0.724vw;
     }
 
     .linksBar-bottom {
         text-align: justify;
+        font-size: 1vw;
         padding-left: 0;
         padding-right: 0;
         margin-right: 0;
-    }
-
-    .linksBar-top {
-        margin-bottom: -3em;
-        font-size: 0.78vw;
-        /* letter-spacing: 1.75px; */
-    }
-    .linksBar-bottom {
-        letter-spacing: 0.2px;
+        
     }
 }
 

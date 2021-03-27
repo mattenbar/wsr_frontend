@@ -52,7 +52,8 @@ function lastIssue(props) {
 
     if(props.posts.length > 0){
 
-        let cItems = props.posts.map(post => {
+        let posts = props.posts.reverse()
+        let cItems = posts.map(post => {
             return(
                 <div key={post.id} className="ticrslwrapper" >
 
