@@ -8,7 +8,6 @@ import SearchBar from './searchBar';
 const NavBar = (props) => {
 
     return (
-        // console.log("navbar", props),
         <>
             <div className="navbar">
                 <div className="nav-left"></div>

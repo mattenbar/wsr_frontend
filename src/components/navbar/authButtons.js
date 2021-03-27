@@ -1,6 +1,6 @@
 import React from 'react';
-// import history from '../../history';
 import { withRouter } from "react-router";
+import { Link } from 'react-router-dom'
 import {useSelector} from "react-redux";
 
 function AuthButtons(props) {
@@ -33,9 +33,21 @@ function AuthButtons(props) {
     } else {
         return (
             <div className="auth2-buttons">
-                {userEmail}
-                <span className="divider">&nbsp;&nbsp;|</span>
-                <button className="auth-buttons__yellow" onClick={handleSignOut}>Sign Out</button>
+                
+                { user.admin === undefined || user.admin === false &&
+                    <>
+                        {userEmail}
+                        <span className="divider">&nbsp;&nbsp;|</span>
+                        <button className="auth-buttons__yellow" onClick={handleSignOut}>Sign Out</button>
+                    </>
+                }
+                { user.admin === true &&
+                    <>
+                        <Link to='/admin' className="adminButton" >ADMIN DASHBOARD</Link>
+                        <span className="divider">&nbsp;&nbsp;|</span>
+                        <button className="auth-buttons__yellow" onClick={handleSignOut}>Sign Out</button>
+                    </>
+                }
             </div>
         )
     }

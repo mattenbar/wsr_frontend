@@ -92,6 +92,10 @@ class PostInput extends React.Component {
               {c}
             </select>
             <div className="postForm">
+              <label>Image</label>
+              <input id="files-upload" type="file" name="image" accept="image/*" onChange={this.handleImageChange} />
+            </div> 
+            <div className="postForm">
               <label>Content</label>
               <Editor
                 apiKey="xxdtys70gcr66orzrsr2v65wsqqzeff19c37xij80zax9qck"
@@ -115,10 +119,7 @@ class PostInput extends React.Component {
               />
             </div>  
 
-            <div className="postForm">
-              <label>Image</label>
-              <input id="files-upload" type="file" name="image" accept="image/*" onChange={this.handleImageChange} />
-            </div> 
+          
 
             <button type="submit">Submit</button>
           </form>

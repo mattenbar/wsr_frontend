@@ -12,8 +12,6 @@ function Features(state) {
         let mainFeature = state.features[1]["attributes"]["post"]
         let rightFeature = state.features[0]["attributes"]["post"]
         return (
-            // state.features[0].attributes.post.category_id
-            console.log("features", state.features[0].attributes.post.category_id),
             <div className="features">
                 <h1>TODAY'S TOP FEATURES</h1>
                 <div className="feature-wrapper" >
