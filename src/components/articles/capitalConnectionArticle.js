@@ -42,9 +42,7 @@ function CapitalConnectionArticle(props) {
         
     }
 
-    const handleOnSubmit = () => {
-
-    }
+   
 
     if (post.attributes === undefined) {
         return (
@@ -73,7 +71,7 @@ function CapitalConnectionArticle(props) {
                 }
                 { inEditMode === true && admin === true && 
                     <div className="individualPostDiv" >
-                        <ArticleEditForm handleOnSubmit={handleOnSubmit} post={post} />
+                        <ArticleEditForm setInEditMode={setInEditMode} post={post} />
                         <button onClick={handleOnBack} className="adminButtons">BACK TO ARTICLE</button>
                         <button onClick={handleOnDELETE} className="adminButtons">DELETE ARTICLE</button>
                     </div>

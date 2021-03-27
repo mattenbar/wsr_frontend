@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { Editor } from '@tinymce/tinymce-react';
 
 function ArticleEditForm(props) {
 
@@ -7,18 +8,67 @@ function ArticleEditForm(props) {
         return (state.categories)
     })
 
+    let postInfo = props.post.attributes
+    let post_id = props.post.id
+
     const defaultPostProps = {
-        title: '',
-        author:'',
-        content:'',
-        image:'',
-        // category_id
+        title: postInfo.title,
+        author: postInfo.author,
+        content: postInfo.content,
+        image: postInfo.image,
+        category_id: postInfo.category_id
     }
 
     const [post, setPost] = useState(defaultPostProps)
 
-    const handleChange = () => {
+    const handleChange = (e) => {
+        setPost({
+            ...post,
+            [e.target.name]: e.target.value
+        })
+    }
 
+    const handleImageChange = (e) => {
+        // let post = {...post}
+        // let currentState = post
+        // currentState["image"] = event.target.files[0]
+        // this.setState({
+        //     post: currentState
+        // })
+        setPost({
+            ...post,
+            [e.target.image]: e.target.files[0]
+        })
+
+    }
+    
+    const handleEditorChange = (content, editor) => {
+            // console.log("postbeforeinitialization", post)
+            // console.log('Content was updated:', content);
+            // let post = {...post}
+            // let currentState = post
+            // currentState["content"] = content
+            // this.setState({
+            //     post: currentState
+            // })
+            debugger
+            // setPost({
+            //     ...post,
+            //     [e.target.content]: content
+            // })
+    }
+
+    const dispatch = useDispatch()
+
+    const handleOnSubmit = (e) => {
+        e.preventDefault()
+
+        debugger
+
+        // dispatch(editPost(post))
+
+        // setPost(defaultPostProps)
+        // props.setInEditMode(false)
     }
 
     let categoriesMapped
@@ -38,42 +88,52 @@ function ArticleEditForm(props) {
     }
 
     return (
-        console.log(props),
+        // console.log("props", props),
         (
             <div className="editPostInput">
-                {/* <h1>Edit Article</h1>
-                <form onSubmit={this.handlePostSubmit}>
+                <h1>Edit Article</h1>
+                <form onSubmit={handleOnSubmit}>
                     <div className="postForm">
-                        <label>Title</label>
+                        <label>Title:&nbsp;</label>
                         <input
-                            onChange={this.handlePostChange}
+                            onChange={handleChange}
                             type="text"
-                            value={this.state.post.title}
+                            value={post.title}
                             name="title"
                         />
                     </div>
                     <div className="postForm">
-                        <label>Author</label>
+                        <label>Author:&nbsp;</label>
                         <input
-                            onChange={this.handlePostChange}
+                            onChange={handleChange}
                             type="text"
-                            value={this.state.post.author}
+                            value={post.author}
                             name="author"
                         />
                     </div>
                     <select
-                        value={this.state.post.category_id}
+                        value={post.category_id}
                         name="category_id"
-                        onChange={this.handlePostChange}
+                        onChange={handleChange}
                     >
                         <option>Choose Category...</option>
-                        {c}
+                        {categoriesMapped}
                     </select>
                     <div className="postForm">
-                        <label>Content</label>
+                        <label>Image:&nbsp;</label>
+                        <input
+                            id="files-upload"
+                            type="file"
+                            name="image"
+                            accept="image/*"
+                            onChange={handleImageChange}
+                        />
+                    </div>
+                    <div className="postForm">
+                        <label>Content:&nbsp;</label>
                         <Editor
                             apiKey="xxdtys70gcr66orzrsr2v65wsqqzeff19c37xij80zax9qck"
-                            initialValue="<p>This is the initial content of the editor</p>"
+                            initialValue={post.content}
                             init={{
                                 selector: "textarea",
                                 height: 500,
@@ -90,46 +150,14 @@ function ArticleEditForm(props) {
                                 toolbar:
                                     "undo redo | formatselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help ",
                             }}
-                            onEditorChange={this.handleEditorChange}
+                            onEditorChange={handleEditorChange}
                         />
                     </div>
-
-                    <div className="postForm">
-                        <label>Image</label>
-                        <input
-                            id="files-upload"
-                            type="file"
-                            name="image"
-                            accept="image/*"
-                            onChange={this.handleImageChange}
-                        />
-                    </div>
-
                     <button type="submit">Submit</button>
-                </form> */}
+                </form>
             </div>
         )
     );
 }
 
 export default ArticleEditForm;
-
-{
-    /* <img
-src={post.attributes.image}
-alt="post-image"
-className="individualPostImage"
-/>
-<h2 className="individualPostTitle">
-{post.attributes.title}
-</h2>
-<h3 className="individualPostAuthor">
-BY {post.attributes.author}
-</h3>
-<h3 className="individualPostDate">
-{moment
-    .parseZone(post.attributes.created_at)
-    .format("MMMM DD, YYYY")}
-</h3>
-<p className="individualPostContent" dangerouslySetInnerHTML={{ __html: post.attributes.content }}></p> */
-}
