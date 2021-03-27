@@ -22,6 +22,7 @@ function ArticleEditForm(props) {
     const [post, setPost] = useState(defaultPostProps)
 
     const handleChange = (e) => {
+        console.log(e, e.target.name)
         setPost({
             ...post,
             [e.target.name]: e.target.value
@@ -43,19 +44,27 @@ function ArticleEditForm(props) {
     }
     
     const handleEditorChange = (content, editor) => {
-            // console.log("postbeforeinitialization", post)
-            // console.log('Content was updated:', content);
-            // let post = {...post}
-            // let currentState = post
-            // currentState["content"] = content
-            // this.setState({
-            //     post: currentState
-            // })
-            debugger
-            // setPost({
-            //     ...post,
-            //     [e.target.content]: content
-            // })
+        // debugger
+        // console.log(e, content)
+        // // debugger
+        //     // console.log("postbeforeinitialization", post)
+        //     // console.log('Content was updated:', content);
+        //     if (post !== undefined) {
+        //         // let post = {...post}
+        //         let currentState = post
+        //         currentState["content"] = content
+                
+        //         // debugger
+        //         setPost({
+        //             ...post,
+        //             currentState
+        //         })
+        //     }
+        if (post !== undefined) {
+            setPost({
+                content
+            })
+        }
     }
 
     const dispatch = useDispatch()
@@ -150,6 +159,7 @@ function ArticleEditForm(props) {
                                 toolbar:
                                     "undo redo | formatselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help ",
                             }}
+                            name="content"
                             onEditorChange={handleEditorChange}
                         />
                     </div>
