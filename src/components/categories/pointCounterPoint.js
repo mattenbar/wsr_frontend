@@ -2,6 +2,12 @@ import React from "react";
 import { connect } from "react-redux";
 
 function PointCounterPoint(state) {
+
+
+    const handleVotingClick = () => {
+        
+    }
+
     return (
         <div className="pointcpContainer">
             <div className="category-show">
@@ -43,10 +49,12 @@ function PointCounterPoint(state) {
                         
                     </div>
                     <div className="pointVote1">
-                        <div className="pv1">
-                            <h2>VOTE FOR JOHN &nbsp;&nbsp;</h2>
-                            <img src='/boxGloveLeft.png' className="boxGlove"/>
-                        </div>
+                        <button className="boxingButton" onClick={handleVotingClick}>
+                            <div className="pv1">
+                                <h2>VOTE FOR JOHN &nbsp;&nbsp;</h2>
+                                <img src='/boxGloveLeft.png' className="boxGlove"/>
+                            </div>
+                        </button>
                     </div>
                 </div>
             
@@ -70,10 +78,12 @@ function PointCounterPoint(state) {
                         
                     </div>
                     <div className="pointVote2">
-                        <div className="pv2">
-                            <h2>VOTE FOR JOHN &nbsp;&nbsp;</h2>
-                            <img src='/boxGloveLeft.png' className="boxGlove"/>
-                        </div>
+                        <button className="boxingButton" onClick={handleVotingClick}>
+                            <div className="pv2">
+                                <h2>VOTE FOR JOHN &nbsp;&nbsp;</h2>
+                                <img src='/boxGloveLeft.png' className="boxGlove"/>
+                            </div>
+                            </button>
                     </div>
                 </div>
             

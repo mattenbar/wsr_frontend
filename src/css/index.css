@@ -1465,6 +1465,10 @@ body {
     right: 0px;
     text-align: right;
 }
+.pv1 {
+    position: absolute;
+    left: 0px;
+}
 
 .pv1,
 .pv2 {
@@ -1472,9 +1476,27 @@ body {
     display: flex;
 }
 
+.pv1 h2,
+.pv2 h2 {
+    font-size: 1.75em;
+}
+
+.pv1:hover,
+.pv1:active,
+.pv2:hover,
+.pv2:active {
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 4px grey;
+}
+
 .boxGlove {
-    width: 4vw;
+    width: 3vw;
     /* margin-top: -20em; */
+}
+.boxingButton {
+    border: none;
+    background: none;
 }
 
 .far {
