@@ -1,10 +1,22 @@
+import { SET_SEARCHTERM, GET_SEARCHTERM } from '../actions/searchAction';
 
-export default function manageSearch (state = [], action) {
+const initialState = {
+    search: ""
+};
+
+export default function manageSearch (state = initialState, action) {
     switch (action.type) {
 
-        case 'SET_SEARCHTERM':
-            console.log("searchReducer", state, action.payload)
-            return state = action.payload
+        case GET_SEARCHTERM:
+            return {...state}
+
+        case SET_SEARCHTERM:
+            state.search = action.payload
+            return {...state}
+
+            // let stateCopy = { ...state }
+            // stateCopy.search = action.payload
+            // return {stateCopy}
             
         default:
             return state

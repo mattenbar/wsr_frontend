@@ -8,12 +8,13 @@ import {fetchCategories} from './actions/fetchCategories'
 import {fetchFeatures} from './actions/fetchFeatures'
 import {fetchPointcps} from './actions/fetchPointcps'
 import { getUser } from './actions/userAuth/getUser';
+import { getSearch } from './actions/searchAction';
 
 //components
 
 import Home from './components/home/home';
 import NavBar from './components/navbar/nav';
-import Search from './components/navbar/search';
+import Search2 from './components/navbar/search2';
 import Footer from './components/footer/footer';
 import Ads from './components/ads/ads';
 import ContactUs from './components/contact/contact';
@@ -72,29 +73,23 @@ class App extends React.Component{
     this.props.dispatchFetchCategories()
     this.props.dispatchFetchFeatures()
     this.props.dispatchFetchPointcps()
+    this.props.dispatchGetSearch()
     
     const token = localStorage.getItem("token")
     if (token) {
       this.props.dispatchGetUser(token)
     }
-    // this.userLogin()
+    
   }
 
-  // userLogin = () => {
-  //   const token = localStorage.getItem("token")
-  //   if (token) {
-  //     // this.props.dispatchGetUser(token)
-  //   }
-  // }
-
   render(){
-    
+    // console.log("app", this.props)
     return (
       <div className="App">
-        <NavBar posts={this.props.posts} categories={this.props.categories} user={this.props.user}/>
+        <NavBar user={this.props.user} search={this.props.search}/>
         <Switch >
           <Route exact path="/" render={()=> <Home posts={this.props.posts} categories={this.props.categories} search={this.props.search} features={this.props.features} user={this.props.user} pcps={this.props.pcps}/>}/>
-          <Route exact path="/search" render={()=> <Search posts={this.props.posts} categories={this.props.categories} search={this.props.search}/> } />
+          <Route exact path="/search" render={()=> <Search2 search={this.props.search}/> } />
           <Route exact path="/about" render={()=> <AboutUs />}/>
           <Route exact path="/our-partners" render={()=> <Partners />}/>
           <Route exact path="/our-board" render={()=> <Board />}/>
@@ -166,7 +161,7 @@ function mSTP(state){
   return {
     posts: state.posts,
     categories: state.categories,
-    search: state.search,
+    search: state.search.search,
     features: state.features,
     user: state.user,
     pcps: state.pcps
@@ -179,7 +174,8 @@ function mDTP(dispatch){
     dispatchFetchCategories: (categories) => dispatch(fetchCategories(categories)),
     dispatchFetchFeatures: (features) => dispatch(fetchFeatures(features)),
     dispatchFetchPointcps: (pcps) => dispatch(fetchPointcps(pcps)),
-    dispatchGetUser: (user) => dispatch(getUser(user))
+    dispatchGetUser: (user) => dispatch(getUser(user)),
+    dispatchGetSearch: (search) => dispatch(getSearch(search))
   }
 }
 

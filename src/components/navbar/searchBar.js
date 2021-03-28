@@ -37,7 +37,9 @@ class SearchBar extends React.Component {
     
     render() {
         return (
-            // console.log("searchBar1", props),
+            console.log("searchBar1", this.props),
+            console.log("searchBar1", this.state),
+            // console.log("searchBar1", search),
             <div className="searchbar">
 
                 <form onSubmit={this.handleOnSubmit} >
@@ -70,3 +72,4 @@ function mDTP(dispatch){
 
 export default withRouter(connect(mSTP, mDTP)(SearchBar));
 // export default SearchBar;
+
