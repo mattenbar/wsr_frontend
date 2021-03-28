@@ -57,7 +57,7 @@ function thisIssue(state) {
         let cItems = lastFive.map(post => {
     
             return(
-                <div key={post.attributes.id} className="ticrslwrapper" >
+                <div key={post.attributes.title} className="ticrslwrapper" >
                         <div className="ti-box">
                             <Link to={{    
                                 pathname: `${getSlug(post.attributes)}/${post.id}`,

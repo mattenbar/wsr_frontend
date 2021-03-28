@@ -53,7 +53,7 @@ class Search extends React.Component {
     }
 
     componentDidMount = () => {
-        console.log("component Mounted", this.props.search)
+        // console.log("component Mounted", this.props.search)
         // console.log("searchTerm", this.state.searchTerm)
         // debugger
         // if (this.state.searchTerm !== undefined) {
@@ -119,7 +119,8 @@ class Search extends React.Component {
     // } 
 
     render() {
-        // console.log("search reducer ", this.props)
+        // console.log("search props ", this.props)
+        // console.log("search state", this.state)
         // debugger
         let postsMapped
         
@@ -179,3 +180,5 @@ function mSTP(state){
 }
 
 export default withRouter(connect(mSTP)(Search));
+
+

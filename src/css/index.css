@@ -1474,6 +1474,7 @@ body {
 .pv2 {
     margin-top: 1em;
     display: flex;
+    transition: all 0.5s ease;
 }
 
 .pv1 h2,

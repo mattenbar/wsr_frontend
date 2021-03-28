@@ -3,9 +3,9 @@ import AuthButtons from './authButtons';
 import PopUpSignUp from './popUpSignUp';
 import PopUpSignIn from './popUpSignIn';
 import SocialMediaButtons from './socialMediaButtons';
-import SearchBar from './searchBar';
+import SearchBar2 from './searchBar2';
 
-const NavBar = (props) => {
+function NavBar(props) {
 
     return (
         <>
@@ -21,7 +21,7 @@ const NavBar = (props) => {
                     </div>
                     <div className="header-right">
                         <div className="header-search-bar">
-                            <SearchBar posts={props.posts} />   
+                            <SearchBar2 search={props.search} />   
                         </div>
                         <div className="mediaButtons">
                             <SocialMediaButtons />
