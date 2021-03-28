@@ -631,7 +631,7 @@ body {
     }
     .linksBar-top {
         margin-bottom: -5em;
-        letter-spacing: 1.2px;
+        letter-spacing: 1px;
     }
 
     .linksBar-bottom {
@@ -1356,11 +1356,177 @@ body {
 
 /* -----------------------------------END HOME---------------------------------------------- */
 
+/* -----------------------------------POINT-COUNTERPOINT---------------------------------------------- */
+
+.pointcpContainer {
+    position: relative;
+}
+
+.pointContainer1,
+.pointContainer2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 52px;
+    /* background-color: darkblue; */
+    border-bottom: 2px solid black;
+}
+
+.pointContainer1 h2,
+.pointContainer2 h2 {
+    color: rgba(0, 59, 91);
+}
+
+.pointContainer2 {
+    margin-bottom: 2em;
+}
+
+.pointcp1,
+.pointcp2 {
+    height: 65vh;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.pointcp3,
+.pointcp4 {
+    height: 65vh;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.pointcp1 {
+    /* background-color: blueviolet; */
+}
+
+.pointcpContent {
+    font-size: 1.25vw;
+    margin-top: 1.25em;
+    text-align: justify;
+    height: 25vh;
+}
+
+.pointcp2 {
+    /* background-color: coral; */
+    align-content: right;
+    text-align: right;
+}
+
+.pointcp3 {
+    /* background-color: darkcyan; */
+}
+
+.pointcp4 {
+    /* background-color: darkred; */
+    align-content: right;
+    text-align: right;
+}
+
+.pointTop {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+}
+
+.pointTop2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+}
+
+.pointHeaderRight {
+    position: relative;
+}
+
+.pointbottom {
+    position: absolute;
+    bottom: 7px;
+}
+
+.pointbottom2 {
+    position: absolute;
+    bottom: 7px;
+    right: 0px;
+}
+
+.pointcpImage {
+    width: 14vw;
+    height: 14vw;
+    object-fit: cover;
+}
+
+.pointVote1,
+.pointVote2 {
+    position: relative;
+}
+
+.pv2 {
+    width: auto;
+    position: absolute;
+    right: 0px;
+    text-align: right;
+}
+
+.pv1,
+.pv2 {
+    margin-top: 1em;
+    display: flex;
+}
+
+.boxGlove {
+    width: 4vw;
+    /* margin-top: -20em; */
+}
+
+.far {
+    color: rgba(0, 0, 0, 0.5);
+}
+.countdown {
+    position: relative;
+    text-align: center;
+}
+.countdownText h2 {
+    position: absolute;
+    bottom: 50px;
+    left: 39%;
+
+    /* width: auto; */
+    /* margin-bottom: -10em; */
+}
+
+.trophyImg {
+    width: 25%;
+}
+
+.winner {
+    width: 20vw;
+    display: flex;
+    /* margin: 0 auto; */
+    position: absolute;
+    left: 39%;
+    bottom: 0%;
+    padding-bottom: 2em;
+}
+
+.winner h2 {
+    color: black;
+}
+
+.winner h1 {
+    color: rgba(0, 59, 91);
+}
+
+.trophyHeaders {
+    text-align: center;
+}
+
+/* -----------------------------------END POINT-COUNTERPOINT---------------------------------------------- */
+
 /* -----------------------------------CATEGORIES---------------------------------------------- */
 
 .category-show {
     display: flex;
-    border-bottom: solid black;
+    border-bottom: 2px solid black;
+    width: 100%;
 }
 
 .category-show img {
@@ -1397,7 +1563,7 @@ body {
 }
 
 .category-image {
-    width: 10vw;
+    width: 12vw;
     border-right: solid black;
 }
 
@@ -1907,17 +2073,27 @@ body {
 
 @media (min-width: 62em) {
     .main-bottom-ads {
-        width: 90%;
-        /* margin-left: 6.75em; */
-        margin-bottom: 0.75em;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 1em;
+        text-align: justify;
         display: inline-block;
     }
 
     .ad-image1 {
-        width: 46%;
-        height: 260px;
-        margin: 1em;
+        width: 49%;
+        height: 300px;
+        margin: 0;
         object-fit: cover;
+        text-align: justify;
+    }
+    .span-ad-image1 {
+        margin-right: 1%;
+    }
+
+    .span-ad-image2 {
+        margin-left: 1%;
     }
 }
 
@@ -2072,7 +2248,7 @@ body {
     .second-row-social-media {
         padding-top: 1.8em;
         margin-bottom: 1em;
-        left: 49%;
+        left: 50%;
 
         width: 35%;
     }
