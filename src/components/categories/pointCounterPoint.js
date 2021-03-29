@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchPointcps } from '../../actions/fetchPointcps';
+import { useSelector } from 'react-redux';
 import moment from "moment";
 import ArticleHeaders from '../articles/articleHeaders';
 
-function PointCounterPoint(state) {
+function PointCounterPoint(props) {
 
     const pointArticles = useSelector(state => {
         // console.log(state.pcps.pointCPPosts[state.pcps.pointCPPosts.length-2].attributes)
@@ -20,13 +19,6 @@ function PointCounterPoint(state) {
     if (pointArticles.length > 0 && pointArticles[pointArticles.length-1] !== undefined) {
         newestSectionOne = pointArticles[pointArticles.length-1].attributes
     }
-
-    const dispatch = useDispatch()
-
-    useEffect(() => {
-
-        dispatch(fetchPointcps())
-    },[])
 
     const handleVotingClick = () => {
         
@@ -48,8 +40,8 @@ function PointCounterPoint(state) {
                 <ArticleHeaders category={18} />
                 { pointArticles.length > 0 &&
                     <>
-                        <div class="pointContainer1">
-                            <div class="pointcp1">
+                        <div className="pointContainer1">
+                            <div className="pointcp1">
                                 <div className="pointTop">
                                 <div className="pointHeaderLeft">
                                         <img src={newestSectionOne.imageOne} alt={newestSectionOne.authorOne} className="pointcpImage"/>
@@ -80,7 +72,7 @@ function PointCounterPoint(state) {
                                 </div>
                             </div>
                         
-                            <div class="pointcp2">
+                            <div className="pointcp2">
                                 <div className="pointTop2">
                                     <div className="pointHeaderRight">
                                         <div className="pointbottom2">
@@ -121,8 +113,8 @@ function PointCounterPoint(state) {
                 }
                 { pointArticles.length > 1 &&
                     <>
-                        <div class="pointContainer2">
-                            <div class="pointcp3">
+                        <div className="pointContainer2">
+                            <div className="pointcp3">
                                 <div className="pointTop">
                                     <div className="pointHeaderLeft">
                                         <img src={olderSectionTwo.imageOne} alt={olderSectionTwo.authorOne} className="pointcpImage"/>
@@ -145,7 +137,7 @@ function PointCounterPoint(state) {
                                 </div>
                             </div>
                         
-                            <div class="pointcp4">
+                            <div className="pointcp4">
                                 <div className="pointTop2">
                                     <div className="pointHeaderRight">
                                         <div className="pointbottom2">
