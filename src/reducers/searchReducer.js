@@ -13,15 +13,9 @@ export default function manageSearch (state = initialState, action) {
             return {...state}
 
         case SET_SEARCHTERM:
-            state.search = action.payload
-            return {...state}
-
-            // let stateCopy = { ...state }
-            // stateCopy.search = action.payload
-            // return {stateCopy}
+            return { ...state, search: action.payload }
 
         case SET_FILTERED_POSTS:
-            // state.filteredPosts = action.payload
             return { ...state, filteredPosts: action.payload }
             
         default:

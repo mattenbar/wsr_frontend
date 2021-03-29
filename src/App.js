@@ -84,7 +84,6 @@ class App extends React.Component{
   }
 
   render(){
-    console.log("app", this.props.search)
     return (
       <div className="App">
         <NavBar user={this.props.user} search={this.props.search}/>

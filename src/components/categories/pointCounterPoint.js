@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchPointcps } from '../../actions/fetchPointcps';
+import moment from "moment";
 
 function PointCounterPoint(state) {
 
+    const pointArticles = useSelector(state => {
+        console.log(state.pcps.pointCPPosts[state.pcps.pointCPPosts.length-2].attributes)
+        return (state.pcps.pointCPPosts)
+    })
+
+    const olderSectionTwo = pointArticles[pointArticles.length-2].attributes
+    const newestSectionOne = pointArticles[pointArticles.length-1].attributes
+
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+
+        dispatch(fetchPointcps())
+    },[])
 
     const handleVotingClick = () => {
         
@@ -31,20 +48,22 @@ function PointCounterPoint(state) {
             <div class="pointContainer1">
                 <div class="pointcp1">
                     <div className="pointTop">
-                        <div className="pointHeaderLeft">
-                            <img src="https://i.imgur.com/smiMYKy.jpg" alt="image1" className="pointcpImage"/>
+                    <div className="pointHeaderLeft">
+                            <img src={newestSectionOne.imageOne} alt={newestSectionOne.authorOne} className="pointcpImage"/>
                         </div>
                         <div className="pointHeaderRight">
                             <div className="pointbottom">
-                            <h1>PERSON A STORY TITLE</h1>
-                            <h2>JOHN DOE</h2>
-                            <h3>December 1, 2020</h3>
+                            <h1>{newestSectionOne.titleOne}</h1>
+                            <h2>{newestSectionOne.authorOne}</h2>
+                            <h3>{moment
+                        .parseZone(newestSectionOne.created_at)
+                        .format("MMMM DD, YYYY")}</h3>
                             </div>
                         </div>
                     </div>
                     <div className="pointcpContent">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim a nulla cursus luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare purus in metus euismod, id pretium enim tincidunt. Duis suscipit ipsum pellentesque elit pretium faucibus. Cras a enim pretium, vehicula diam eget, posuere massa. Donec vulputate tincidunt purus, non bibendum enim mattis id. Donec ultrices leo vel erat volutpat ultrices. Nunc vel erat consequat, porta ligula in, dictum orci. Aliquam finibus metus in porta finibus. Praesent nec nulla sit amet mauris placerat blandit id in sapien. Cras odio mi, congue at odio a, mollis iaculis purus. Nunc rutrum congue mi.
+                            {newestSectionOne.contentOne}
                         </p>
                         
                     </div>
@@ -62,18 +81,20 @@ function PointCounterPoint(state) {
                     <div className="pointTop2">
                         <div className="pointHeaderRight">
                             <div className="pointbottom2">
-                            <h1>PERSON B STORY TITLE</h1>
-                            <h2>JOHN DOE</h2>
-                            <h3>December 1, 2020</h3>
+                            <h1>{newestSectionOne.titleTwo}</h1>
+                            <h2>{newestSectionOne.authorTwo}</h2>
+                            <h3>{moment
+                        .parseZone(newestSectionOne.created_at)
+                        .format("MMMM DD, YYYY")}</h3>
                             </div>
                         </div>
                         <div className="pointHeaderLeft">
-                            <img src="https://i.imgur.com/3gt9XQP.jpg" alt="image1" className="pointcpImage"/>
+                            <img src={newestSectionOne.imageTwo} alt={newestSectionOne.authorTwo} className="pointcpImage"/>
                         </div>
                     </div>
                     <div className="pointcpContent">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim a nulla cursus luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare purus in metus euismod, id pretium enim tincidunt. Duis suscipit ipsum pellentesque elit pretium faucibus. Cras a enim pretium, vehicula diam eget, posuere massa. Donec vulputate tincidunt purus, non bibendum enim mattis id. Donec ultrices leo vel erat volutpat ultrices. Nunc vel erat consequat, porta ligula in, dictum orci. Aliquam finibus metus in porta finibus. Praesent nec nulla sit amet mauris placerat blandit id in sapien. Cras odio mi, congue at odio a, mollis iaculis purus. Nunc rutrum congue mi.
+                            {newestSectionOne.contentTwo}
                         </p>
                         
                     </div>
@@ -97,44 +118,44 @@ function PointCounterPoint(state) {
                 <div class="pointcp3">
                     <div className="pointTop">
                         <div className="pointHeaderLeft">
-                            <img src="https://i.imgur.com/3gt9XQP.jpg" alt="image1" className="pointcpImage"/>
+                            <img src={olderSectionTwo.imageOne} alt={olderSectionTwo.authorOne} className="pointcpImage"/>
                         </div>
                         <div className="pointHeaderRight">
                             <div className="pointbottom">
-                            <h1>PERSON C STORY TITLE</h1>
-                            <h2>JOHN DOE</h2>
-                            <h3>December 1, 2020</h3>
+                            <h1>{olderSectionTwo.titleOne}</h1>
+                            <h2>{olderSectionTwo.authorOne}</h2>
+                            <h3>{moment
+                        .parseZone(olderSectionTwo.created_at)
+                        .format("MMMM DD, YYYY")}</h3>
                             </div>
                         </div>
                     </div>
                     <div className="pointcpContent">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim a nulla cursus luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare purus in metus euismod, id pretium enim tincidunt. Duis suscipit ipsum pellentesque elit pretium faucibus. Cras a enim pretium, vehicula diam eget, posuere massa. Donec vulputate tincidunt purus, non bibendum enim mattis id. Donec ultrices leo vel erat volutpat ultrices. Nunc vel erat consequat, porta ligula in, dictum orci. Aliquam finibus metus in porta finibus. Praesent nec nulla sit amet mauris placerat blandit id in sapien. Cras odio mi, congue at odio a, mollis iaculis purus. Nunc rutrum congue mi.
+                            {olderSectionTwo.contentOne}
                         </p>
                         
                     </div>
-                    {/* <div className="pointVote">
-                        <h2>VOTE FOR JOHN &nbsp;&nbsp;<i className="far fa-thumbs-up fa-1x"></i></h2>
-                        
-                    </div> */}
                 </div>
             
                 <div class="pointcp4">
                     <div className="pointTop2">
                         <div className="pointHeaderRight">
                             <div className="pointbottom2">
-                            <h1>PERSON D STORY TITLE</h1>
-                            <h2>JOHN DOE</h2>
-                            <h3>December 1, 2020</h3>
+                            <h1>{olderSectionTwo.titleTwo}</h1>
+                            <h2>{olderSectionTwo.authorTwo}</h2>
+                            <h3>{moment
+                        .parseZone(olderSectionTwo.created_at)
+                        .format("MMMM DD, YYYY")}</h3>
                             </div>
                         </div>
                         <div className="pointHeaderLeft">
-                            <img src="https://i.imgur.com/smiMYKy.jpg" alt="image1" className="pointcpImage"/>
+                            <img src={olderSectionTwo.imageTwo} alt={olderSectionTwo.authorTwo} className="pointcpImage"/>
                         </div>
                     </div>
                     <div className="pointcpContent">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim a nulla cursus luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare purus in metus euismod, id pretium enim tincidunt. Duis suscipit ipsum pellentesque elit pretium faucibus. Cras a enim pretium, vehicula diam eget, posuere massa. Donec vulputate tincidunt purus, non bibendum enim mattis id. Donec ultrices leo vel erat volutpat ultrices. Nunc vel erat consequat, porta ligula in, dictum orci. Aliquam finibus metus in porta finibus. Praesent nec nulla sit amet mauris placerat blandit id in sapien. Cras odio mi, congue at odio a, mollis iaculis purus. Nunc rutrum congue mi.
+                            {olderSectionTwo.contentTwo}
                         </p>
                         
                     </div>
