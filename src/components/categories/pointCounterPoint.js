@@ -7,7 +7,7 @@ import moment from "moment";
 function PointCounterPoint(state) {
 
     const pointArticles = useSelector(state => {
-        console.log(state.pcps.pointCPPosts[state.pcps.pointCPPosts.length-2].attributes)
+        // console.log(state.pcps.pointCPPosts[state.pcps.pointCPPosts.length-2].attributes)
         return (state.pcps.pointCPPosts)
     })
 
