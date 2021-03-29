@@ -5,6 +5,7 @@ import searchReducer from './searchReducer'
 import featuresReducer from './featuresReducer'
 import userReducer from './userReducer';
 import pointcpReducer from './pointcpReducer'
+import adsReducer from './adsReducer'
 
 
 export default combineReducers({
@@ -13,5 +14,6 @@ export default combineReducers({
   search: searchReducer,
   features: featuresReducer,
   user: userReducer,
-  pcps: pointcpReducer
+  pcps: pointcpReducer,
+  ads: adsReducer
 })

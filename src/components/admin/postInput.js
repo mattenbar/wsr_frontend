@@ -39,7 +39,6 @@ class PostInput extends React.Component {
   }
 
   handleEditorChange = (content, editor) => {
-    console.log('Content was updated:', content);
     let post = {...this.state.post}
     let currentState = post
     currentState["content"] = content

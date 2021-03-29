@@ -18,11 +18,11 @@ export default function managePcps(state = initialState, action) {
             return { ...state, pointCPPosts: action.payload.pointcp.data }
 
         case GET_POINTCP_ERRORS:
-            debugger
+            // debugger
             return{...state}
 
         case GET_POINTCP_FAILURE:
-            debugger
+            // debugger
             return{...state}
 
         case "ADD_POINTCP":

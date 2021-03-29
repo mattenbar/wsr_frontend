@@ -48,22 +48,21 @@ class PointcpInput extends React.Component {
   }
 
   handleEditorOneChange = (content, editor) => {
-    console.log('Content was updated:', content);
-    let post = {...this.state.post}
+    let post = {...this.state.pointcp}
     let currentState = post
     currentState["contentOne"] = content
     this.setState({
-      post: currentState
+      pointcp: currentState
     })
   }
 
   handleEditorTwoChange = (content, editor) => {
-    console.log('Content was updated:', content);
-    let post = {...this.state.post}
+    let post = {...this.state.pointcp}
     let currentState = post
     currentState["contentTwo"] = content
+    debugger
     this.setState({
-      post: currentState
+      pointcp: currentState
     })
   }
 
