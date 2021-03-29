@@ -41,7 +41,7 @@ class AdInput extends React.Component {
     this.props.dispatchAddAd(this.state.ad)
     this.setState({
       ad: {
-        name: '',
+        title: '',
         company: '',
         link: '',
         image: {},
@@ -59,7 +59,7 @@ class AdInput extends React.Component {
           <form onSubmit={this.handleAdSubmit} >
             <div className="adForm">
               <label>Name</label>
-              <input onChange={this.handleAdChange} type="text" value={this.state.ad.name} name="name" />
+              <input onChange={this.handleAdChange} type="text" value={this.state.ad.title} name="title" />
             </div>
             <div className="adForm">
               <label>Company</label>
@@ -67,7 +67,7 @@ class AdInput extends React.Component {
             </div>
             <div className="adForm">
               <label>Link</label>
-              <input onChange={this.handleAdChange} type="text" value={this.state.ad.link} name="link" />
+              <input onChange={this.handleAdChange} type="url" value={this.state.ad.link} name="link" />
             </div>
             
             <div className="adForm">
