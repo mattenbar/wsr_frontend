@@ -86,4 +86,4 @@ function DramatisPersonaeArticle(props) {
     }
 }
 
-export default DramatisPersonaeArticle;
+export default withRouter(DramatisPersonaeArticle);

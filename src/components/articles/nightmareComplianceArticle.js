@@ -86,4 +86,4 @@ function NightmareComplianceArticle(props) {
     }
 }
 
-export default NightmareComplianceArticle;
+export default withRouter(NightmareComplianceArticle);

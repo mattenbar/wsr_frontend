@@ -86,4 +86,4 @@ function PeopleMovesArticle(props) {
     }
 }
 
-export default PeopleMovesArticle;
+export default withRouter(PeopleMovesArticle);

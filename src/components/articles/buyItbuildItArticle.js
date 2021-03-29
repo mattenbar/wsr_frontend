@@ -86,4 +86,4 @@ function BuyItBuildItArticle(props) {
     }
 }
 
-export default BuyItBuildItArticle;
+export default withRouter(BuyItBuildItArticle);

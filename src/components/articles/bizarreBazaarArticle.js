@@ -86,4 +86,4 @@ function BizarreBazaarArticle(props) {
     }
 }
 
-export default BizarreBazaarArticle;
+export default withRouter(BizarreBazaarArticle);
