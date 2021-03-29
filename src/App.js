@@ -97,7 +97,7 @@ class App extends React.Component{
           <Route exact path="/our-board" render={()=> <Board />}/>
           <Route exact path="/contact-us" render={()=> <ContactUs />}/>
           <Route exact path="/archives" render={()=> <Archives posts={this.props.posts}/>}/>
-          <Route exact path="/admin" render={()=> <Admin posts={this.props.posts} categories={this.props.categories} />}/>
+          <Route exact path="/admin" render={()=> <Admin posts={this.props.posts} categories={this.props.categories} features={this.props.features} />}/>
 
           <Route exact path="/Todays-Top-Features/:id" component={IndividualPost} />
           <Route exact path="/This-Issue/:id" component={IndividualPost} />
