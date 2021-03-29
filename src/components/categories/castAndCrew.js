@@ -93,11 +93,11 @@ function CastAndCrew(state, props) {
                             </div>
                         }
                     </div>
-                    { remainingPosts.length < 1 &&
+                    {/* { remainingPosts.length < 1 &&
                         <div className="somePosts">
                             <h2>MORE ARTICLES COMING SOON</h2>
                         </div>
-                    }
+                    } */}
                     { remainingPosts.length > 0 &&
                         <div className="categoryRemainingArticles">
                             {remainingPostsMapped}
