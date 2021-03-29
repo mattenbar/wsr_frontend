@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 
 //actions
 import {fetchPosts} from './actions/fetchPosts'
@@ -83,7 +84,7 @@ class App extends React.Component{
   }
 
   render(){
-    // console.log("app", this.props)
+    console.log("app", this.props.search)
     return (
       <div className="App">
         <NavBar user={this.props.user} search={this.props.search}/>
@@ -179,4 +180,4 @@ function mDTP(dispatch){
   }
 }
 
-export default connect(mSTP, mDTP)(App);
+export default withRouter(connect(mSTP, mDTP)(App));

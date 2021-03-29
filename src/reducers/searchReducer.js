@@ -1,7 +1,9 @@
 import { SET_SEARCHTERM, GET_SEARCHTERM } from '../actions/searchAction';
+import { SET_FILTERED_POSTS } from '../actions/setFilteredPosts';
 
 const initialState = {
-    search: ""
+    search: "",
+    filteredPosts: []
 };
 
 export default function manageSearch (state = initialState, action) {
@@ -17,6 +19,10 @@ export default function manageSearch (state = initialState, action) {
             // let stateCopy = { ...state }
             // stateCopy.search = action.payload
             // return {stateCopy}
+
+        case SET_FILTERED_POSTS:
+            // state.filteredPosts = action.payload
+            return { ...state, filteredPosts: action.payload }
             
         default:
             return state

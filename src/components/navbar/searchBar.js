@@ -72,4 +72,3 @@ function mDTP(dispatch){
 
 export default withRouter(connect(mSTP, mDTP)(SearchBar));
 // export default SearchBar;
-

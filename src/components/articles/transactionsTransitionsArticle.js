@@ -86,4 +86,4 @@ function TransactionsTransitionsArticle(props) {
     }
 }
 
-export default TransactionsTransitionsArticle;
+export default withRouter(TransactionsTransitionsArticle);

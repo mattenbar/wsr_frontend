@@ -86,4 +86,4 @@ function DigitalDomainArticle(props) {
     }
 }
 
-export default DigitalDomainArticle;
+export default withRouter(DigitalDomainArticle);

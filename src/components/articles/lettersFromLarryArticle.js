@@ -86,4 +86,4 @@ function LettersFromLarryArticle(props) {
     }
 }
 
-export default LettersFromLarryArticle;
+export default withRouter(LettersFromLarryArticle);

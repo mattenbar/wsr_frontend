@@ -86,4 +86,4 @@ function OnTheRiseArticle(props) {
     }
 }
 
-export default OnTheRiseArticle;
+export default withRouter(OnTheRiseArticle);

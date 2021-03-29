@@ -86,4 +86,4 @@ function NewsmakersRoundupArticle(props) {
     }
 }
 
-export default NewsmakersRoundupArticle;
+export default withRouter(NewsmakersRoundupArticle);

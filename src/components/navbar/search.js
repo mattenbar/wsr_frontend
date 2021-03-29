@@ -180,5 +180,3 @@ function mSTP(state){
 }
 
 export default withRouter(connect(mSTP)(Search));
-
-

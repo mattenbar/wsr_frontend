@@ -86,4 +86,4 @@ function BeltwayBeyondArticle(props) {
     }
 }
 
-export default BeltwayBeyondArticle;
+export default withRouter(BeltwayBeyondArticle);

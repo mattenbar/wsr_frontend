@@ -86,4 +86,4 @@ function CastCrewArticle(props) {
     }
 }
 
-export default CastCrewArticle;
+export default withRouter(CastCrewArticle);

@@ -2,17 +2,12 @@ import React, { useState } from 'react';
 import history from '../../history';
 
 // redux hooks:
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 // action:
 import { signinUser } from '../../actions/userAuth/signinUser'
 
 function SigninForm(props) {
-
-    const signedinUser = useSelector((state) => {
-        // console.log("sign in", state)
-        // return state.user
-    })
     
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

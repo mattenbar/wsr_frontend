@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import history from '../../history';
 // redux hooks:
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 // action:
 import { signupUser } from '../../actions/userAuth/signupUser';
 
@@ -51,10 +51,6 @@ function SignupForm(props) {
         
         history.back('/');
     }
-
-    const signedinUser = useSelector((state) => {
-        return state.user
-    })
 
     return (
         <div className="signup-form">

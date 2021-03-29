@@ -86,4 +86,4 @@ function WalletShareArticle(props) {
     }
 }
 
-export default WalletShareArticle;
+export default withRouter(WalletShareArticle);

@@ -86,4 +86,4 @@ function CyberCryptArticle(props) {
     }
 }
 
-export default CyberCryptArticle;
+export default withRouter(CyberCryptArticle);

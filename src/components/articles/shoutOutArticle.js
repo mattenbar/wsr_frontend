@@ -86,4 +86,4 @@ function ShoutOutArticle(props) {
     }
 }
 
-export default ShoutOutArticle;
+export default withRouter(ShoutOutArticle);

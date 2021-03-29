@@ -86,4 +86,4 @@ function InvestmentSolutionsArticle(props) {
     }
 }
 
-export default InvestmentSolutionsArticle;
+export default withRouter(InvestmentSolutionsArticle);
