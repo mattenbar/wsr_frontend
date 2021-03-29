@@ -4,7 +4,6 @@ export const GET_SEARCHTERM = "GET_SEARCHTERM"
 
 export const searchAction = (data) => { 
     return (dispatch) => {
-        // console.log("searchAction", data)
         dispatch({ type: SET_SEARCHTERM, payload: data })
     }
 }
