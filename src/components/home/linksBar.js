@@ -5,7 +5,9 @@ class LinksBar extends Component {
     return(
       <div className="linksBar-container">
         <div className="linksBar-top">
+        
           {/* week one */}
+
           <a href="/Letters-From-Larry">LETTERS FROM LARRY</a>&nbsp;
           <a href="/Capital-Connections">CAPITAL CONNECTIONS</a>&nbsp;
           <a href="/Point-Counterpoint">POINT-COUNTERPOINT</a> &nbsp;
@@ -15,6 +17,7 @@ class LinksBar extends Component {
           {/* statshots will go here */}
 
           {/* week two */}
+
           <a href="/NewsMakers-Roundup">NEWSMAKERS ROUNDUP</a>&nbsp;
           <a href="/Bizarre-Industry-Bazaar">BIZARRE INDUSTRY BAZAAR</a>&nbsp;
           <a href="/Investment-Solutions-and-Gatekeepers">INVESTMENT SOLUTIONS & GATEKEEPERS</a>&nbsp;
@@ -22,11 +25,15 @@ class LinksBar extends Component {
           <br/><br/>
           </div>
           <div className="linksBar-bottom">
+
             {/* week 3 */}
+
             <a href="/Nightmare-On-Compliance-St">NIGHTMARE ON COMPLIANCE ST</a>&nbsp;
             <a href="/Beltway-And-Beyond">BELTWAY & BEYOND</a>&nbsp;
             <a href="/Buy-It-Or-Build-It">BUY IT OR BUILD IT?</a>&nbsp;
+
             {/* week 4 */}
+
             <a href="/Transactions-And-Transitions">TRANSACTIONS & TRANSITIONS</a>&nbsp;
             <a href="/CyberCrypt-Tales">CYBERCRRYPT TALES</a>&nbsp;
             <a href="/People-Moves">PEOPLE MOVES</a>&nbsp;

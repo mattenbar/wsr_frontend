@@ -2,6 +2,7 @@ export const addPointcp = (data) => {
 
   return (dispatch) => {
     let body = new FormData()
+    debugger
     body.append("imageOne", data.imageOne)
     body.append("imageTwo", data.imageTwo)
     fetch("http://localhost:3000/api/v1/image_upload_pointcp",{
