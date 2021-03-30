@@ -1,21 +1,4 @@
-// import { API_URL } from '../apiConstants';
-
-// const FETCH_POINTCPS = "FETCH_POINTCPS"
-
-// export function fetchPointcps(data){
-
-//   return function(dispatch){
-    
-//     fetch(API_URL + "/pointcps")
-//       .then(res => res.json())
-//       .then(pcpsObj => {
-//         dispatch({type: FETCH_POINTCPS, payload: pcpsObj})
-//       })
-//     }
-
-// }
-
-import { API_URL } from '../apiConstants';
+import { API_URL } from '../../apiConstants';
 
 export const LOADING_POINTCP = "LOADING_POINTCP"
 export const GET_POINTCP_SUCCESS = "GET_POINTCP_SUCCESS"
@@ -31,7 +14,6 @@ export const fetchPointcps = () => (dispatch) => {
         if (pointcpObj.pointcp !== undefined) {
             return dispatch({ type: GET_POINTCP_SUCCESS, payload: pointcpObj })
         } else {
-            debugger
             alert(pointcpObj.errors.map(error => error))
             return dispatch({ type: GET_POINTCP_ERRORS, payload: pointcpObj })
         }
