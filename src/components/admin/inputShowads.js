@@ -47,12 +47,12 @@ class InputShowads extends React.Component{
       
       return (
         <div className="ShowadsInput">
-          <h1>Select Showads</h1>
+          <h1>Select Ads To Display</h1>
           <form onSubmit={this.handleShowadSubmit} >
             <div className="postForm">
-              <label>Select Showad:</label>
+              <label>Select Left Ad or Right Ad:</label>
               <select value={this.state.showad.showad_id} name="id" onChange={this.handleShowadChange}>
-              <option >Choose Showad...</option>
+              <option >Choose Side...</option>
               <option value={1} name="id" onChange={this.handleChange}> 
                 1 - Left Ad
               </option>
