@@ -11,7 +11,8 @@ export const fetchPointcps = () => (dispatch) => {
     fetch(API_URL + '/pointcps')
     .then(res => res.json())
     .then(pointcpObj => {
-        if (pointcpObj.pointcp !== undefined) {
+        // debugger
+        if (pointcpObj.pointcps !== undefined) {
             return dispatch({ type: GET_POINTCP_SUCCESS, payload: pointcpObj })
         } else {
             alert(pointcpObj.errors.map(error => error))
@@ -19,7 +20,7 @@ export const fetchPointcps = () => (dispatch) => {
         }
     })
     .catch(err => {
-        alert("Unable To Veryify User At This Time")
+        alert("Unable To Get Point-CounterPoint Articles At This Time")
         return dispatch({ type: GET_POINTCP_FAILURE, payload: err })
     })
 }

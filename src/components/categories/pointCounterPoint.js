@@ -65,6 +65,9 @@ function PointCounterPoint(props) {
             let pointcpData2 = {
                 id: newestId,
                 votesPointCPTwo: newestVotes2 + 1
+
+                // send these in with data to validate:
+                // validates :pointcp_id, :user_id, presence: true
             }
 
             dispatch(voteArticleTwo(pointcpData2))
