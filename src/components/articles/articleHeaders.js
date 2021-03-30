@@ -67,7 +67,7 @@ function articleHeaders(props) {
                         </div>
                         <div className="category-header">
                             <h1>SHOUT OUTS AND PUT DOWNS</h1>
-                            <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
+                            <h4 className="tagline"> Readers share their best & worst experiences anonymously</h4>
                             <h5>
                                 Each month, wealth management professionals
                                 anonymously send us the best and worst examples
@@ -344,8 +344,8 @@ function articleHeaders(props) {
                         </div>
                         <div className="category-header">
                             <h1>TRANSACTIONS & TRANSITIONS</h1>
-                            <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
-                            <h5>DESCRIPTOR WILL GO HERE.</h5>
+                            <h4 className="tagline"> Keep track of industry leaders' moves + deals</h4>
+                            <h5>Need help keeping track of who's where and what's happening? Each month, we'll cover the industry's top advisor recruiting moves and M&A deals to keep you up to date and informed.</h5>
                         </div>
                     </div>
             </>
