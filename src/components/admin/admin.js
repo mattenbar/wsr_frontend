@@ -10,15 +10,16 @@ import InputShowads from './inputShowads'
 function admin(props) {
   return (
       <div>
-        {/* <PostInput posts={props.posts} categories={props.categories}/>
-        <br/>
+        <PostInput posts={props.posts} categories={props.categories}/>
+        <br/><br/>
         <PointcpInput />
         <br/><br/>
         <InputFeatures posts={props.posts} features={props.features}/>
-        <br/><br/> */}
+        <br/><br/>
         <InputAd />
         <br/><br/>
         <InputShowads ads={props.ads} />
+        <br/><br/>
       </div>
   );
 }

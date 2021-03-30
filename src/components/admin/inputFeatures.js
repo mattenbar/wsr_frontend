@@ -42,6 +42,8 @@ class InputFeatures extends React.Component{
         {post.id} - {post.attributes.title}
       </option>)
 
+      p = p.reverse()
+
 
     if (p){
       
