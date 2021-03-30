@@ -38,14 +38,19 @@ function PointCounterPoint(props) {
 
     const handleVotingClickButtonOne = (e) => {
         e.preventDefault()
-        // console.log('here1', newestId, newestVotes1 + 1)
 
-        let pointcpData = {
-            id: newestId,
-            votesPointCPOne: newestVotes1 + 1
+        if (!localStorage.token) {
+            alert("Please sign in to vote")
         }
 
-        dispatch(voteArticleOne(pointcpData))
+        if (localStorage.token !== undefined) {
+            let pointcpData = {
+                id: newestId,
+                votesPointCPOne: newestVotes1 + 1
+            }
+
+            dispatch(voteArticleOne(pointcpData))
+        }
 
     }
 
@@ -55,6 +60,7 @@ function PointCounterPoint(props) {
         if (!localStorage.token) {
             alert("Please sign in to vote")
         }
+
         if (localStorage.token !== undefined) {
             let pointcpData2 = {
                 id: newestId,
