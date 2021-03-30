@@ -10,6 +10,7 @@ import {fetchFeatures} from './actions/fetchFeatures'
 import {fetchPointcps} from './actions/pointcp/fetchPointcps';
 import { getUser } from './actions/userAuth/getUser';
 import { getSearch } from './actions/searchAction';
+import { fetchAds} from './actions/fetchAds'
 
 //components
 
@@ -75,6 +76,7 @@ class App extends React.Component{
     this.props.dispatchFetchFeatures()
     this.props.dispatchFetchPointcps()
     this.props.dispatchGetSearch()
+    this.props.dispatchFetchAds()
     
     const token = localStorage.getItem("token")
     if (token) {
@@ -95,7 +97,7 @@ class App extends React.Component{
           <Route exact path="/our-board" render={()=> <Board />}/>
           <Route exact path="/contact-us" render={()=> <ContactUs />}/>
           <Route exact path="/archives" render={()=> <Archives posts={this.props.posts}/>}/>
-          <Route exact path="/admin" render={()=> <Admin posts={this.props.posts} categories={this.props.categories} />}/>
+          <Route exact path="/admin" render={()=> <Admin posts={this.props.posts} categories={this.props.categories} features={this.props.features} />}/>
 
           <Route exact path="/Todays-Top-Features/:id" component={IndividualPost} />
           <Route exact path="/This-Issue/:id" component={IndividualPost} />
@@ -164,7 +166,8 @@ function mSTP(state){
     search: state.search.search,
     features: state.features,
     user: state.user,
-    pcps: state.pcps
+    pcps: state.pcps,
+    ads: state.ads
   }
 }
 
@@ -174,6 +177,7 @@ function mDTP(dispatch){
     dispatchFetchCategories: (categories) => dispatch(fetchCategories(categories)),
     dispatchFetchFeatures: (features) => dispatch(fetchFeatures(features)),
     dispatchFetchPointcps: (pcps) => dispatch(fetchPointcps(pcps)),
+    dispatchFetchAds: (ads) => dispatch(fetchAds(ads)),
     dispatchGetUser: (user) => dispatch(getUser(user)),
     dispatchGetSearch: (search) => dispatch(getSearch(search))
   }
