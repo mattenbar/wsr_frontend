@@ -35,7 +35,7 @@ class LinksBar extends Component {
             {/* week 4 */}
 
             <a href="/Transactions-And-Transitions">TRANSACTIONS & TRANSITIONS</a>&nbsp;
-            <a href="/CyberCrypt-Tales">CYBERCRRYPT TALES</a>&nbsp;
+            <a href="/CyberCrypt-Tales">CYBERCRYPT TALES</a>&nbsp;
             <a href="/People-Moves">PEOPLE MOVES</a>&nbsp;
             <a href="/Shout-Outs-And-Put-Downs">SHOUT OUTS & PUT DOWNS</a>&nbsp;
             <a href="/Cast-And-Crew">CAST & CREW</a>&nbsp;

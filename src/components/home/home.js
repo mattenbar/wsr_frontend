@@ -31,8 +31,8 @@ class Home extends Component {
             {/* <Transactions /> */}
           </div>
           {/* to change amount of posts in carousel change number below(keep it negative for most recent) */}
-          <ThisIssue posts={this.props.posts.slice(-5)}/>
-          <LastIssue posts={this.props.posts.slice(-10, -5)}/>
+          <ThisIssue posts={this.props.posts.slice(-5)} />
+          <LastIssue posts={this.props.posts.slice(-10, -5)} />
         </div>
       </div>
     )
