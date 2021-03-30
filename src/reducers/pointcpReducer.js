@@ -1,4 +1,4 @@
-import { LOADING_POINTCP, GET_POINTCP_SUCCESS, GET_POINTCP_ERRORS, GET_POINTCP_FAILURE } from '../actions/fetchPointcps';
+import { LOADING_POINTCP, GET_POINTCP_SUCCESS, GET_POINTCP_ERRORS, GET_POINTCP_FAILURE } from '../actions/pointcp/fetchPointcps';
 
 const initialState = {
     pointCPPosts: []
@@ -22,7 +22,6 @@ export default function managePcps(state = initialState, action) {
             return{...state}
 
         case GET_POINTCP_FAILURE:
-            debugger
             return{...state}
 
         case "ADD_POINTCP":

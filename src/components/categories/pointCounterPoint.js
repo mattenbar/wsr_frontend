@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import moment from "moment";
 import ArticleHeaders from '../articles/articleHeaders';
+import {voteArticleOne, voteArticleTwo} from '../../actions/pointcp/addVotes';
 
 function PointCounterPoint(props) {
 
@@ -12,16 +13,56 @@ function PointCounterPoint(props) {
     })
 
     let olderSectionTwo 
-    if (pointArticles.length > 0 && pointArticles[pointArticles.length-2] !== undefined) {
+    let olderVotes1
+    let olderVotes2
+    if (pointArticles.length > 1 && pointArticles[pointArticles.length-2] !== undefined) {
         olderSectionTwo = pointArticles[pointArticles.length-2].attributes
-    }
-    let newestSectionOne
-    if (pointArticles.length > 0 && pointArticles[pointArticles.length-1] !== undefined) {
-        newestSectionOne = pointArticles[pointArticles.length-1].attributes
+        olderVotes1 = olderSectionTwo.votesPointCPOne
+        olderVotes2 = olderSectionTwo.votesPointCPTwo
     }
 
-    const handleVotingClick = () => {
-        
+    let newestSectionOne
+    let newestId
+    let newestVotes1
+    let newestVotes2
+    if (pointArticles.length > 0 && pointArticles[pointArticles.length-1] !== undefined) {
+        newestSectionOne = pointArticles[pointArticles.length-1].attributes
+        newestId = pointArticles[pointArticles.length-1].id
+        newestVotes1 = newestSectionOne.votesPointCPOne
+        newestVotes2 = newestSectionOne.votesPointCPTwo 
+    }
+
+
+
+    const dispatch = useDispatch()
+
+    const handleVotingClickButtonOne = (e) => {
+        e.preventDefault()
+        // console.log('here1', newestId, newestVotes1 + 1)
+
+        let pointcpData = {
+            id: newestId,
+            votesPointCPOne: newestVotes1 + 1
+        }
+
+        dispatch(voteArticleOne(pointcpData))
+
+    }
+
+    const handleVotingClickButtonTwo = (e) => {
+        e.preventDefault()
+
+        if (!localStorage.token) {
+            alert("Please sign in to vote")
+        }
+        if (localStorage.token !== undefined) {
+            let pointcpData2 = {
+                id: newestId,
+                votesPointCPTwo: newestVotes2 + 1
+            }
+
+            dispatch(voteArticleTwo(pointcpData2))
+        }
     }
 
     if (pointArticles.length === 0) {
@@ -63,10 +104,11 @@ function PointCounterPoint(props) {
                                     
                                 </div>
                                 <div className="pointVote1">
-                                    <button className="boxingButton" onClick={handleVotingClick}>
+                                    <button className="boxingButton" onClick={handleVotingClickButtonOne} >
                                         <div className="pv1">
                                             <h2>VOTE FOR JOHN &nbsp;&nbsp;</h2>
                                             <img src='/boxGloveLeft.png' className="boxGlove"/>
+                                            <h3 style={{color: "red", fontSize: "1vw"}} >[Votes: {newestSectionOne.votesPointCPOne}]</h3>
                                         </div>
                                     </button>
                                 </div>
@@ -94,12 +136,13 @@ function PointCounterPoint(props) {
                                     
                                 </div>
                                 <div className="pointVote2">
-                                    <button className="boxingButton" onClick={handleVotingClick}>
+                                    <button className="boxingButton" onClick={handleVotingClickButtonTwo} >
                                         <div className="pv2">
+                                            <h3 style={{color: "red", fontSize: "1vw"}}>[Votes: {newestSectionOne.votesPointCPTwo}]</h3>
                                             <h2>VOTE FOR JOHN &nbsp;&nbsp;</h2>
                                             <img src='/boxGloveLeft.png' className="boxGlove"/>
                                         </div>
-                                        </button>
+                                    </button>
                                 </div>
                             </div>
                         
@@ -156,9 +199,7 @@ function PointCounterPoint(props) {
                                     <p>
                                         {olderSectionTwo.contentTwo}
                                     </p>
-                                    
                                 </div>
-                                
                             </div>
                         </div>
                         <div className="winner" >
@@ -177,7 +218,7 @@ function PointCounterPoint(props) {
 
 function mSTP(state) {
     return {
-        pointcp: state.pointcp,
+        pointcp: state.pcps.pointCPPosts,
         user: state.user,
     };
 }

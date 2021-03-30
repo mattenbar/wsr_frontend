@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom'
 import {fetchPosts} from './actions/fetchPosts'
 import {fetchCategories} from './actions/fetchCategories'
 import {fetchFeatures} from './actions/fetchFeatures'
-import {fetchPointcps} from './actions/fetchPointcps'
+import {fetchPointcps} from './actions/pointcp/fetchPointcps';
 import { getUser } from './actions/userAuth/getUser';
 import { getSearch } from './actions/searchAction';
 
