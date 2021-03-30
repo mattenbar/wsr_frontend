@@ -7,7 +7,7 @@ function ads(state) {
     if(state.showads.length > 0){
 
         let leftAd = state.showads[0].attributes.ad
-        let rightAd = state.showads[0].attributes.ad
+        let rightAd = state.showads[1].attributes.ad
 
         return (
             console.log("left ad -", leftAd),
