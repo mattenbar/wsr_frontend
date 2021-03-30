@@ -55,7 +55,7 @@ class AdInput extends React.Component {
     
       return (
         <div className="adInput">
-          <h1>Input Ad</h1>
+          <h1>Upload New Ad</h1>
           <form onSubmit={this.handleAdSubmit} >
             <div className="adForm">
               <label>Name</label>

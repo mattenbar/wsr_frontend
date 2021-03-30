@@ -43,7 +43,6 @@ function mSTP(state){
   return {
     posts: state.posts,
     user: state.user
-    
   }
 }
 

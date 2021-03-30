@@ -1,4 +1,4 @@
-export default function managePosts(state = [], action) {
+export default function manageAds(state = [], action) {
     switch (action.type) {
         case "FETCH_ADS":
             return state.concat(action.payload.ad.data);

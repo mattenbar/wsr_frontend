@@ -7,7 +7,6 @@ import moment from "moment";
 function Features(state) {
     
     if (state.features.length > 0) {
-        // debugger
         let leftFeature = state.features[0]["attributes"]["post"]
         let mainFeature = state.features[1]["attributes"]["post"]
         let rightFeature = state.features[2]["attributes"]["post"]
