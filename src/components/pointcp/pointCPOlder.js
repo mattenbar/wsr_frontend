@@ -44,8 +44,8 @@ function PointCPOlder({olderSectionTwo, olderId}) {
                         </div>
                     </div>
                     <div className="pointcpContent">
-                        <p>
-                            {olderSectionTwo.contentOne}
+                        <p dangerouslySetInnerHTML={{ __html: olderSectionTwo.contentOne}}>
+                        
                         </p>
                         
                     </div>
@@ -67,8 +67,8 @@ function PointCPOlder({olderSectionTwo, olderId}) {
                         </div>
                     </div>
                     <div className="pointcpContent">
-                        <p>
-                            {olderSectionTwo.contentTwo}
+                        <p dangerouslySetInnerHTML={{ __html: olderSectionTwo.contentTwo}}>
+                        
                         </p>
                     </div>
                 </div>
