@@ -1562,6 +1562,11 @@ body {
     width: 100%;
 }
 
+.category-show a{
+    text-decoration: none;
+    color: black;
+}
+
 .category-show img {
     width: 100%;
     object-fit: cover;
