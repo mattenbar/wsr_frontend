@@ -7,9 +7,9 @@ import LinksBar from './linksBar';
 import Carousel from './carousel';
 import Features from './features';
 
-// import NewsMakers from './newsMakers';
+import NewsMakers from './newsMakers';
 import CapitalConnections from './capitalConnections';
-// import Transactions from './transactions';
+import Transactions from './transactions';
 import DigitalDomain from './digitalDomain';
 
 import ThisIssue from './thisIssue';
@@ -25,7 +25,7 @@ class Home extends Component {
         <Features />
         <div className="home-triple-row-grid" >
           <div className="newsmakers-transactions" >
-            <CapitalConnections />
+            <CapitalConnections /> 
             {/* <NewsMakers /> */}
             <DigitalDomain />
             {/* <Transactions /> */}

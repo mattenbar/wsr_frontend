@@ -1101,6 +1101,10 @@ body {
     margin-bottom: 1em;
 }
 
+.comingSoon {
+    padding-top: 3em;
+}
+
 @media (min-width: 43.75em) {
     .nm-cards {
         margin-top: em;
