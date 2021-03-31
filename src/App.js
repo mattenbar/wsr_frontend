@@ -27,6 +27,8 @@ import Board from './components/board/board';
 import Archives from './components/archives/archives';
 import Admin from './components/admin/admin'
 
+import PointCounterPoint from './components/pointcp/pointCounterPoint';
+import PointCounterPointArticle from './components/pointcp/pointCounterPointArticle';
 
 import IndividualPost from './components/articles/individualPosts';
 
@@ -35,8 +37,6 @@ import CapitalConnections from './components/categories/capitalConnections';
 import CapitalConnectionArticle from './components/articles/capitalConnectionArticle';
 import DigitalDomains from './components/categories/digitalDomains';
 import DigitalDomainArticle from './components/articles/digitalDomainArticle';
-import PointCounterPoint from './components/categories/pointCounterPoint';
-import PointCounterPointArticle from './components/articles/pointCounterPointArticle';
 import ShoutOut from './components/categories/shoutOutAndPutDowns';
 import ShoutOutArticle from './components/articles/shoutOutArticle';
 import Beltway from './components/categories/beltwayAndBeyond';
