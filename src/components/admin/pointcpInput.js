@@ -8,6 +8,8 @@ class PointcpInput extends React.Component {
 
   state = {
     pointcp: {
+      topic: '',
+      end_date: '',
       titleOne: '',
       contentOne: '',
       authorOne: '',
@@ -60,7 +62,7 @@ class PointcpInput extends React.Component {
     let post = {...this.state.pointcp}
     let currentState = post
     currentState["contentTwo"] = content
-    debugger
+    // debugger
     this.setState({
       pointcp: currentState
     })
@@ -71,6 +73,8 @@ class PointcpInput extends React.Component {
     this.props.dispatchAddPointcp(this.state.pointcp)
     this.setState({
       pointcp: {
+        topic: '',
+        end_date: '',
         titleOne: '',
         contentOne: '',
         authorOne: '',
@@ -89,6 +93,14 @@ class PointcpInput extends React.Component {
         <div className="pointcpInput">
           <h1>Input Point Counterpoint</h1>
           <form onSubmit={this.handlePointcpSubmit} >
+            <div>
+            <label>End Date</label>
+              <input type="date" onChange={this.handlePointcpChange} name="end_date" value={this.state.pointcp.end_date}/>
+            </div>
+            <div>
+            <label>Topic</label>
+              <input type="text"  onChange={this.handlePointcpChange} name="topic" value={this.state.pointcp.topic}/>
+            </div>
             <div className="pointcpForm">
               <label>Title One</label>
               <input onChange={this.handlePointcpChange} type="text" value={this.state.pointcp.title} name="titleOne" />

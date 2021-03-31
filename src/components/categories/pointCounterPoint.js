@@ -7,29 +7,47 @@ import {voteArticleOne, voteArticleTwo} from '../../actions/pointcp/addVotes';
 
 function PointCounterPoint(props) {
 
+    
+
+    
+
+    const dateDifference = (date1) => {
+// ((currentDay.getTime() - newestSectionOne.end_date.getTime()) / (1000 * 3600 * 24))
+        let currentDay = new Date().toLocaleDateString();
+        date1 = Date.parse(date1)
+        let date2 = Date.parse(currentDay)
+        // let Difference_In_Time = date2.getTime() - date1.getTime()
+        // let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24)
+        let Difference_In_Days = Math.floor((date1 - date2)/(1000 * 3600 * 24))
+        return Difference_In_Days
+        }
+    
+
     const pointArticles = useSelector(state => {
-        // console.log(state.pcps.pointCPPosts[state.pcps.pointCPPosts.length-2].attributes)
+        console.log("state", state)
         return (state.pcps.pointCPPosts)
     })
 
+    const user_id = useSelector(state => {
+        // console.log("state", state.user.user.id)
+        return (state.user.user.id)
+    })
+
     let olderSectionTwo 
-    let olderVotes1
-    let olderVotes2
+
     if (pointArticles.length > 1 && pointArticles[pointArticles.length-2] !== undefined) {
         olderSectionTwo = pointArticles[pointArticles.length-2].attributes
-        olderVotes1 = olderSectionTwo.votesPointCPOne
-        olderVotes2 = olderSectionTwo.votesPointCPTwo
+
     }
 
     let newestSectionOne
     let newestId
-    let newestVotes1
-    let newestVotes2
+   
     if (pointArticles.length > 0 && pointArticles[pointArticles.length-1] !== undefined) {
         newestSectionOne = pointArticles[pointArticles.length-1].attributes
         newestId = pointArticles[pointArticles.length-1].id
-        newestVotes1 = newestSectionOne.votesPointCPOne
-        newestVotes2 = newestSectionOne.votesPointCPTwo 
+        
+        
     }
 
 
@@ -44,9 +62,13 @@ function PointCounterPoint(props) {
         }
 
         if (localStorage.token !== undefined) {
+            
             let pointcpData = {
-                id: newestId,
-                votesPointCPOne: newestVotes1 + 1
+                // id: newestId,
+                pointcp_id: newestId,
+                user_id: user_id,
+                articleOneVote: 1
+                // votesPointCPOne: newestVotes1 + 1
             }
 
             dispatch(voteArticleOne(pointcpData))
@@ -62,10 +84,13 @@ function PointCounterPoint(props) {
         }
 
         if (localStorage.token !== undefined) {
+            // debugger
             let pointcpData2 = {
-                id: newestId,
-                votesPointCPTwo: newestVotes2 + 1
-
+                // id: newestId,
+                // votesPointCPTwo: newestVotes2 + 1
+                pointcp_id: newestId,
+                user_id: user_id,
+                articleTwoVote: 1
                 // send these in with data to validate:
                 // validates :pointcp_id, :user_id, presence: true
             }
@@ -86,6 +111,7 @@ function PointCounterPoint(props) {
         );
     } else {
         return (
+            console.log("newestSectionOne", pointArticles[1]), 
             <div className="pointcpContainer">
                 <ArticleHeaders category={18} />
                 { pointArticles.length > 0 &&
@@ -117,7 +143,7 @@ function PointCounterPoint(props) {
                                         <div className="pv1">
                                             <h2>VOTE FOR JOHN &nbsp;&nbsp;</h2>
                                             <img src='/boxGloveLeft.png' className="boxGlove"/>
-                                            <h3 style={{color: "red", fontSize: "1vw"}} >[Votes: {newestSectionOne.votesPointCPOne}]</h3>
+                                            {/* <h3 style={{color: "red", fontSize: "1vw"}} >[Votes: {newestSectionOne.votesPointCPOne}]</h3> */}
                                         </div>
                                     </button>
                                 </div>
@@ -147,7 +173,7 @@ function PointCounterPoint(props) {
                                 <div className="pointVote2">
                                     <button className="boxingButton" onClick={handleVotingClickButtonTwo} >
                                         <div className="pv2">
-                                            <h3 style={{color: "red", fontSize: "1vw"}}>[Votes: {newestSectionOne.votesPointCPTwo}]</h3>
+                                            {/* <h3 style={{color: "red", fontSize: "1vw"}}>[Votes: {newestSectionOne.votesPointCPTwo}]</h3> */}
                                             <h2>VOTE FOR JOHN &nbsp;&nbsp;</h2>
                                             <img src='/boxGloveLeft.png' className="boxGlove"/>
                                         </div>
@@ -211,13 +237,24 @@ function PointCounterPoint(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="winner" >
-                            <img className="trophyImg" src="/trophy.png" />
-                            <div className="trophyHeaders" >
-                                <h2>WINNER</h2>
-                                <h1>JOHN DOE</h1>
+                        {  dateDifference(olderSectionTwo.end_date) <= 0 &&
+                            <div className="winner" >
+                                <img className="trophyImg" src="/trophy.png" />
+                                <div className="trophyHeaders" >
+                                    <h2>WINNER</h2>
+                                    <h1>{olderSectionTwo.winner}</h1>
+                                </div>
                             </div>
-                        </div>
+                        }
+                        {
+                            dateDifference(olderSectionTwo.end_date) > 0 &&
+                            <div className="winner" >
+                                {/* <img className="trophyImg" src="/trophy.png" /> */}
+                                <div className="trophyHeaders" >
+                                    <h2>Voting Ends In: {dateDifference(olderSectionTwo.end_date)}</h2>
+                                </div>
+                            </div>
+                        }
                     </>
                 }
             </div>

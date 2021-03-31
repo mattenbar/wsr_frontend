@@ -10,7 +10,7 @@ function ads(state) {
         let rightAd = state.showads[1].attributes.ad
 
         return (
-            console.log("left ad -", leftAd),
+            // console.log("left ad -", leftAd),
             <div className="main-bottom-ads">
                 <span className="span-ad-image1"><a href={leftAd.link} target="_blank"><img className="ad-image1" src={leftAd.image} alt="ad-1" /></a></span>
                 <span className="span-ad-image2"><a href={rightAd.link} target="_blank"><img className="ad-image1" src={rightAd.image} alt="ad-2" /></a></span>
