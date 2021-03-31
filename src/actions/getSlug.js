@@ -34,6 +34,8 @@ export function getSlug(post){
             return '/Bizarre-Industry-Bazaar'
         case 17:  
             return '/Investment-Solutions-and-Gatekeepers'
+        case 18:
+            return '/Words-In-Edgewise'
 
         default:
             return '/';
