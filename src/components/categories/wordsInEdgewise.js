@@ -4,8 +4,8 @@ import moment from "moment";
 import { Link } from "react-router-dom";
 import ArticleHeaders from '../articles/articleHeaders';
 
-function Beltway(state) {
-    let categoryId = 3
+function WordsInEdgewise(state) {
+    let categoryId = 17
     let backEndCategory = categoryId + 1
 
     if (state.categories.length > 0) {
@@ -20,7 +20,7 @@ function Beltway(state) {
                 return (
                     <div className="smallGrid" key={post.id}>
                         <Link
-                            to={`/Beltway-And-Beyond/${post.id}`}
+                            to={`/Words-In-Edgewise/${post.id}`}
                             post_id={post.id}
                             className="ti-b"
                         >
@@ -45,7 +45,7 @@ function Beltway(state) {
                         { newestPost !== undefined &&
                             <div className="categoryTopLeft">
                                 <Link
-                                    to={`/Beltway-And-Beyond/${newestPost.id}`}
+                                    to={`/Words-In-Edgewise/${newestPost.id}`}
                                     post_id={newestPost.id}
                                     className="ti-b"
                                 >
@@ -70,7 +70,7 @@ function Beltway(state) {
                         { secondNewestPost !== undefined &&
                             <div className="categoryTopRight">
                                 <Link
-                                    to={`/Beltway-And-Beyond/${secondNewestPost.id}`}
+                                    to={`/Words-In-Edgewise/${secondNewestPost.id}`}
                                     post_id={secondNewestPost.id}
                                     className="ti-b"
                                 >
@@ -134,4 +134,4 @@ function mSTP(state) {
     };
 }
 
-export default connect(mSTP)(Beltway);
+export default connect(mSTP)(WordsInEdgewise);

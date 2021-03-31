@@ -87,9 +87,9 @@ function carousel(props) {
                 </div>
                 <div className="carousel-wrapper" >
                     <div className="box">
-                        <Link to="/Dramatis-Personae" className="crsltop">
-                            <img src="/carouselImages/DramatisPersonae.png" className="top-carousel-model" alt=""/>
-                            <h2>DRAMATIS PERSONAE</h2>
+                        <Link to="/Words-In-Edgewise" className="crsltop">
+                            <img src="/carouselImages/WordsInEdgewise.png" className="top-carousel-model" alt=""/>
+                            <h2>WORDS IN EDGEWISE</h2>
                         </Link>
                     </div>
                 </div>
@@ -177,6 +177,14 @@ function carousel(props) {
                         <Link to="/transactions-and-transitions" className="crsltop">
                             <img src="/carouselImages/Transactions&Trans.png" className="top-carousel-model" alt=""/>
                             <h2>TRANSACTIONS AND TRANSITIONS</h2>
+                        </Link>
+                    </div>
+                </div>
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        <Link to="/Dramatis-Personae" className="crsltop">
+                            <img src="/carouselImages/DramatisPersonae.png" className="top-carousel-model" alt=""/>
+                            <h2>DRAMATIS PERSONAE</h2>
                         </Link>
                     </div>
                 </div>
