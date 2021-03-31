@@ -46,8 +46,8 @@ function PointCPNewest({newestSectionOne, newestId, handleVotingClickButtonOne, 
                         </div>
                     </div>
                     <div className="pointcpContent">
-                        <p>
-                            {newestSectionOne.contentOne}
+                        <p dangerouslySetInnerHTML={{ __html: newestSectionOne.contentOne}}>
+                        
                         </p>
                         
                     </div>
@@ -78,8 +78,8 @@ function PointCPNewest({newestSectionOne, newestId, handleVotingClickButtonOne, 
                         </div>
                     </div>
                     <div className="pointcpContent">
-                        <p>
-                            {newestSectionOne.contentTwo}
+                        <p dangerouslySetInnerHTML={{ __html: newestSectionOne.contentTwo}}>
+                        
                         </p>
                         
                     </div>
