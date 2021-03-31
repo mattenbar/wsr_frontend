@@ -54,8 +54,8 @@ function PointCPNewest({newestSectionOne, newestId, handleVotingClickButtonOne, 
                     <div className="pointVote1">
                         <button className="boxingButton" onClick={handleVotingClickButtonOne} >
                             <div className="pv1">
-                                <h2>VOTE FOR JOHN &nbsp;&nbsp;</h2>
-                                <img src='/boxGloveLeft.png' className="boxGlove"/>
+                                <h2>VOTE FOR JOHN &nbsp;&nbsp;<img src='/boxGloveLeft.png' className="boxGlove"/></h2>
+                                {/* <img src='/boxGloveLeft.png' className="boxGlove"/> */}
                                 {/* <h3 style={{color: "red", fontSize: "1vw"}} >[Votes: {newestSectionOne.votesPointCPOne}]</h3> */}
                             </div>
                         </button>
@@ -87,8 +87,7 @@ function PointCPNewest({newestSectionOne, newestId, handleVotingClickButtonOne, 
                         <button className="boxingButton" onClick={handleVotingClickButtonTwo} >
                             <div className="pv2">
                                 {/* <h3 style={{color: "red", fontSize: "1vw"}}>[Votes: {newestSectionOne.votesPointCPTwo}]</h3> */}
-                                <h2>VOTE FOR JOHN &nbsp;&nbsp;</h2>
-                                <img src='/boxGloveLeft.png' className="boxGlove"/>
+                                <h2>VOTE FOR JOHN &nbsp;&nbsp;<img src='/boxGloveLeft.png' className="boxGlove"/></h2>
                             </div>
                         </button>
                     </div>
