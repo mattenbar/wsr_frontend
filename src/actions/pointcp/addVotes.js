@@ -6,8 +6,11 @@ export const VOTE_ARTICLE_TWO = "VOTE_ARTICLE_TWO"
 export const voteArticleOne = (pointcpData) => (dispatch) => {
     console.log("$$$", pointcpData)
 
-    fetch(API_URL + `/pointcps/${pointcpData.id}`, {
-        method: "PUT",
+    // fetch(API_URL + `/pointcps/${pointcpData.id}`, {
+        // method: "PUT",
+
+    fetch(API_URL + `/pointcpvotes`, {
+        method: "POST",
         headers: {
             "Content-Type": "application/json",
             "Accept": "application/json"
@@ -23,8 +26,10 @@ export const voteArticleOne = (pointcpData) => (dispatch) => {
 export const voteArticleTwo = (pointcpData2) => (dispatch) => {
     console.log("///", pointcpData2)
 
-    fetch(API_URL + `/pointcps/${pointcpData2.id}`, {
-        method: "PUT",
+    // fetch(API_URL + `/pointcps/${pointcpData2.id}`, {
+    //     method: "PUT",
+    fetch(API_URL + `/pointcpvotes`, {
+        method: "POST",
         headers: {
             "Content-Type": "application/json",
             "Accept": "application/json"
@@ -36,7 +41,6 @@ export const voteArticleTwo = (pointcpData2) => (dispatch) => {
         console.log("pointcpObj2", pointcpObj2)
     })
 }
-
 
 // export const addVotes1 = (pointcpData) => (dispatch) => {
     

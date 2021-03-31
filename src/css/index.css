@@ -664,7 +664,7 @@ body {
 
     .linksBar-bottom {
         text-align: justify;
-        font-size: .95vw;
+        font-size: 0.95vw;
         padding-left: 0;
         padding-right: 0;
         margin-right: 0;
@@ -1479,7 +1479,9 @@ body {
 
 .pv1 h2,
 .pv2 h2 {
-    font-size: 1.75em;
+    /* display: inline-block; */
+    font-size: 2vw;
+    width: 100%;
 }
 
 .pv1:hover,
@@ -1492,7 +1494,7 @@ body {
 }
 
 .boxGlove {
-    width: 3vw;
+    width: 3.5vw;
     /* margin-top: -20em; */
 }
 .boxingButton {
@@ -1503,7 +1505,7 @@ body {
 .far {
     color: rgba(0, 0, 0, 0.5);
 }
-.countdown {
+.newestCountdown {
     position: relative;
     text-align: center;
 }
@@ -1516,8 +1518,12 @@ body {
     /* margin-bottom: -10em; */
 }
 
+.countdownTrophyImg {
+    width: 8%;
+}
+
 .trophyImg {
-    width: 25%;
+    width: 40%;
 }
 
 .winner {
