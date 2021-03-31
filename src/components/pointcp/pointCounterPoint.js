@@ -74,7 +74,7 @@ function PointCounterPoint(props) {
             <div className="pointcpContainer">
                     <ArticleHeaders category={"point-counterpoint"} />
                     <PointCPNewest
-                        newestSectionOne={newestSectionOne}
+                        article={newestSectionOne}
                         newestId={newestId}
                         handleVotingClickButtonOne={
                             handleVotingClickButtonOne
@@ -85,8 +85,10 @@ function PointCounterPoint(props) {
                     />
                     {pointArticles.length > 1 && 
                         <PointCPOlder
-                            olderSectionTwo={olderSectionTwo}
+                            article={olderSectionTwo}
                             olderId={olderId}
+                            handleVotingClickButtonOne={handleVotingClickButtonOne}
+                            handleVotingClickButtonTwo={handleVotingClickButtonTwo}
                         />
                     }
             </div>
