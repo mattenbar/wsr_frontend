@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import moment from "moment";
 import {API_URL} from '../../apiConstants';
 
-function PointCPNewest({newestSectionOne, newestId, handleVotingClickButtonOne, handleVotingClickButtonTwo}) {
+function PointCPNewest({article, newestId, handleVotingClickButtonOne, handleVotingClickButtonTwo}) {
 
     const [winner, setWinner] = useState('')
 
@@ -25,92 +25,117 @@ function PointCPNewest({newestSectionOne, newestId, handleVotingClickButtonOne, 
         return Difference_In_Days;
     };
 
+    const getDivs = (divName) => {
+            switch(divName){
+                case "pointVote1":
+                    return (<div className="pointVote1">
+                        <button className="boxingButton" onClick={handleVotingClickButtonOne} >
+                            <div className="pv1">
+                                <h2>VOTE FOR {article.authorOne} &nbsp;&nbsp;<img src='/boxGloveLeft.png' className="boxGlove"/></h2>
+                                {/* <img src='/boxGloveLeft.png' className="boxGlove"/> */}
+                                {/* <h3 style={{color: "red", fontSize: "1vw"}} >[Votes: {article.votesPointCPOne}]</h3> */}
+                            </div>
+                        </button>
+                    </div>)
+
+                case "pointVote2":
+                    return(
+                        <div className="pointVote2">
+                            <button className="boxingButton" onClick={handleVotingClickButtonTwo} >
+                                <div className="pv2">
+                                    {/* <h3 style={{color: "red", fontSize: "1vw"}}>[Votes: {article.votesPointCPTwo}]</h3> */}
+                                    <h2>VOTE FOR {article.authorTwo} &nbsp;&nbsp;<img src='/boxGloveLeft.png' className="boxGlove"/></h2>
+                                </div>
+                            </button>
+                        </div>
+                    )
+
+                case "newestCountdown":
+                    return(
+                        <div className="newestCountdown" >
+                            <div className="countdownText" >
+                                <h2 style={{color: "rgb(0, 59, 91)"}}>VOTING ENDS IN {dateDifference(article.end_date)} DAYS</h2>
+                            </div>
+                        </div>
+                    )
+                
+                case "newestWinner":
+                    return(
+                        <div className="newestWinner" >
+                            <img className="countdownTrophyImg" src="/trophy.png" />
+                        <div className="trophyHeaders" >
+                            <h2>WINNER</h2>
+                            <h1>{winner}</h1>
+                        </div>
+                </div>  
+                    )
+
+                default:
+                    <div></div>
+            }
+    }
+
 
     return (
-        console.log(dateDifference(newestSectionOne.end_date)),
         <>
             <div className="pointContainer1">
                 <div className="pointcp1">
                     <div className="pointTop">
                     <div className="pointHeaderLeft">
-                            <img src={newestSectionOne.imageOne} alt={newestSectionOne.authorOne} className="pointcpImage"/>
+                            <img src={article.imageOne} alt={article.authorOne} className="pointcpImage"/>
                         </div>
                         <div className="pointHeaderRight">
                             <div className="pointbottom">
-                            <h1>{newestSectionOne.titleOne}</h1>
-                            <h2>{newestSectionOne.authorOne}</h2>
+                            <h1>{article.titleOne}</h1>
+                            <h2>{article.authorOne}</h2>
                             <h3>{moment
-                        .parseZone(newestSectionOne.created_at)
+                        .parseZone(article.created_at)
                         .format("MMMM DD, YYYY")}</h3>
                             </div>
                         </div>
                     </div>
                     <div className="pointcpContent">
-                        <p dangerouslySetInnerHTML={{ __html: newestSectionOne.contentOne}}>
+                        <p dangerouslySetInnerHTML={{ __html: article.contentOne}}>
                         
                         </p>
                         
                     </div>
-                    <div className="pointVote1">
-                        <button className="boxingButton" onClick={handleVotingClickButtonOne} >
-                            <div className="pv1">
-                                <h2>VOTE FOR JOHN &nbsp;&nbsp;<img src='/boxGloveLeft.png' className="boxGlove"/></h2>
-                                {/* <img src='/boxGloveLeft.png' className="boxGlove"/> */}
-                                {/* <h3 style={{color: "red", fontSize: "1vw"}} >[Votes: {newestSectionOne.votesPointCPOne}]</h3> */}
-                            </div>
-                        </button>
-                    </div>
+                    {dateDifference(article.end_date) > 0 &&
+                        getDivs("pointVote1")
+                    }
                 </div>
             
                 <div className="pointcp2">
                     <div className="pointTop2">
                         <div className="pointHeaderRight">
                             <div className="pointbottom2">
-                            <h1>{newestSectionOne.titleTwo}</h1>
-                            <h2>{newestSectionOne.authorTwo}</h2>
+                            <h1>{article.titleTwo}</h1>
+                            <h2>{article.authorTwo}</h2>
                             <h3>{moment
-                        .parseZone(newestSectionOne.created_at)
+                        .parseZone(article.created_at)
                         .format("MMMM DD, YYYY")}</h3>
                             </div>
                         </div>
                         <div className="pointHeaderLeft">
-                            <img src={newestSectionOne.imageTwo} alt={newestSectionOne.authorTwo} className="pointcpImage"/>
+                            <img src={article.imageTwo} alt={article.authorTwo} className="pointcpImage"/>
                         </div>
                     </div>
                     <div className="pointcpContent">
-                        <p dangerouslySetInnerHTML={{ __html: newestSectionOne.contentTwo}}>
-                        
-                        </p>
-                        
+                        <p dangerouslySetInnerHTML={{ __html: article.contentTwo}}></p>
                     </div>
-                    <div className="pointVote2">
-                        <button className="boxingButton" onClick={handleVotingClickButtonTwo} >
-                            <div className="pv2">
-                                {/* <h3 style={{color: "red", fontSize: "1vw"}}>[Votes: {newestSectionOne.votesPointCPTwo}]</h3> */}
-                                <h2>VOTE FOR JOHN &nbsp;&nbsp;<img src='/boxGloveLeft.png' className="boxGlove"/></h2>
-                            </div>
-                        </button>
-                    </div>
+                    {dateDifference(article.end_date) > 0 &&
+                        getDivs("pointVote2")
+                    }
                 </div>
-            
+                {
+                dateDifference(article.end_date) > 0 &&
+                getDivs("newestCountdown")
+                }
+                {  dateDifference(article.end_date) <= 0 &&
+                getDivs("newestWinner")
+                }
             </div>
-            {
-                dateDifference(newestSectionOne.end_date) > 0 &&
-                <div className="newestCountdown" >
-                    <div className="countdownText" >
-                        <h2 style={{color: "rgb(0, 59, 91)"}}>VOTING ENDS IN {dateDifference(newestSectionOne.end_date)} DAYS</h2>
-                    </div>
-                </div>
-            }
-            {  dateDifference(newestSectionOne.end_date) <= 0 &&
-                <div className="newestWinner" >
-                    <img className="countdownTrophyImg" src="/trophy.png" />
-                    <div className="trophyHeaders" >
-                        <h2>WINNER</h2>
-                        <h1>{winner}</h1>
-                    </div>
-                </div>
-            }
+            
         </>
     );
 }

@@ -6,8 +6,8 @@ const initialState = {
 
 export default function managePcps(state = initialState, action) {
     switch (action.type) {
-        // case "FETCH_POINTCPS":
-        //     return state.concat(action.payload.pointcp.data);
+        case "FETCH_POINTCPS":
+            return state.concat(action.payload.pointcp.data);
 
         case LOADING_POINTCP:
             // debugger
