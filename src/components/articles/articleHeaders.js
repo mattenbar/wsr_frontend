@@ -1,38 +1,39 @@
 import React from 'react';
 
 function articleHeaders(props) {
-    if (props.category === 1){
+    
+    switch (props.category) {
+        case 1:  
         return (
-            <>
-                <div className="category-show">
-                        <div className="category-image">
-                            <img
-                                src="/carouselImages/CapitolConnections.png"
-                                alt=""
-                            ></img>
-                        </div>
-                        <div className="category-header">
-                            <h1>CAPITAL CONNECTIONS</h1>
-                            <h4 className="tagline">
-                                How wealth management firms and sources of
-                                private capital drive growth together
-                            </h4>
-                            <h5>
-                                We spotlight private equity, venture capital or
-                                SPAC leaders focused on wealth management
-                                acquisitions, or executives from wealth
-                                management firms owned by sources of private
-                                capital. Here’s what to look for – And where to
-                                watch out.
-                            </h5>
-                        </div>
-                    </div>
-            </>
-        );
-    } else if (props.category === 2){
-        return (
-            <>
-                <div className="category-show">
+                    <>
+                        <div className="category-show">
+                                <div className="category-image">
+                                    <img
+                                        src="/carouselImages/CapitolConnections.png"
+                                        alt=""
+                                    ></img>
+                                </div>
+                                <div className="category-header">
+                                    <h1>CAPITAL CONNECTIONS</h1>
+                                    <h4 className="tagline">
+                                        How wealth management firms and sources of
+                                        private capital drive growth together
+                                    </h4>
+                                    <h5>
+                                        We spotlight private equity, venture capital or
+                                        SPAC leaders focused on wealth management
+                                        acquisitions, or executives from wealth
+                                        management firms owned by sources of private
+                                        capital. Here’s what to look for – And where to
+                                        watch out.
+                                    </h5>
+                                </div>
+                            </div>
+                    </>)
+        case 2:  
+            return (
+                <>
+                    <div className="category-show">
                         <div className="category-image">
                             <img
                                 src="/carouselImages/DigitalDomains.png"
@@ -53,133 +54,133 @@ function articleHeaders(props) {
                             </h5>
                         </div>
                     </div>
-            </>
-        );
-    } else if (props.category === 3){
+                </>
+            )
+        case 3:  
         return (
-            <>
-                <div className="category-show">
-                        <div className="category-image">
-                            <img
-                                src="/carouselImages/ShoutOuts.png"
-                                alt=""
-                            ></img>
-                        </div>
-                        <div className="category-header">
-                            <h1>SHOUT OUTS AND PUT DOWNS</h1>
-                            <h4 className="tagline"> Readers share their best & worst experiences anonymously</h4>
-                            <h5>
-                                Each month, wealth management professionals
-                                anonymously send us the best and worst examples
-                                of leadership, management and mentoring they’ve
-                                experienced in the course of their careers.
-                            </h5>
-                        </div>
-                    </div>
-            </>
-        );
-    } else if (props.category === 4){
-        return (
-            <>
-                <div className="category-show">
-                        <div className="category-image">
-                            <img
-                                src="/carouselImages/Beltway&Beyond.png"
-                                alt=""
-                            ></img>
-                        </div>
-                        <div className="category-header">
-                            <h1>BELTWAY AND BEYOND</h1>
-                            <h4 className="tagline">
-                                Keeping you up to speed on key regulatory and
-                                legislative trends
-                            </h4>
-                            <h5>
-                                Keeping wealth management firms and other
-                                industry participants aware of the most
-                                important legislative and regulatory trends –
-                                And how to stay ahead of the curve.
-                            </h5>
-                        </div>
-                    </div>
-            </>
-        );
-    } else if (props.category === 5){
-        return (
-            <>
-                <div className="category-show">
+                    <>
+                        <div className="category-show">
+                                <div className="category-image">
+                                    <img
+                                        src="/carouselImages/ShoutOuts.png"
+                                        alt=""
+                                    ></img>
+                                </div>
+                                <div className="category-header">
+                                    <h1>SHOUT OUTS AND PUT DOWNS</h1>
+                                    <h4 className="tagline"> Readers share their best & worst experiences anonymously</h4>
+                                    <h5>
+                                        Each month, wealth management professionals
+                                        anonymously send us the best and worst examples
+                                        of leadership, management and mentoring they’ve
+                                        experienced in the course of their careers.
+                                    </h5>
+                                </div>
+                            </div>
+                    </>
+                )
+        case 4:  
+            return (
+                <>
+                    <div className="category-show">
                             <div className="category-image">
                                 <img
-                                    src="/carouselImages/PeopleMoves.png"
+                                    src="/carouselImages/Beltway&Beyond.png"
                                     alt=""
                                 ></img>
                             </div>
                             <div className="category-header">
-                                <h1>PEOPLE MOVES</h1>
+                                <h1>BELTWAY AND BEYOND</h1>
                                 <h4 className="tagline">
-                                    {" "}
-                                    TAGLINE WILL GO HERE
+                                    Keeping you up to speed on key regulatory and
+                                    legislative trends
                                 </h4>
-                                <h5>DESCRIPTOR WILL GO HERE.</h5>
+                                <h5>
+                                    Keeping wealth management firms and other
+                                    industry participants aware of the most
+                                    important legislative and regulatory trends –
+                                    And how to stay ahead of the curve.
+                                </h5>
                             </div>
                         </div>
-            </>
-        );
-    } else if (props.category === 6){
-        return (
-            <>
-                <div className="category-show">
-                        <div className="category-image">
-                            <img
-                                src="/carouselImages/NightmareOnCompSt.png"
-                                alt=""
-                            ></img>
+                </>
+            );
+        case 5:  
+            return (
+                <>
+                    <div className="category-show">
+                                <div className="category-image">
+                                    <img
+                                        src="/carouselImages/PeopleMoves.png"
+                                        alt=""
+                                    ></img>
+                                </div>
+                                <div className="category-header">
+                                    <h1>PEOPLE MOVES</h1>
+                                    <h4 className="tagline">
+                                        {" "}
+                                        TAGLINE WILL GO HERE
+                                    </h4>
+                                    <h5>DESCRIPTOR WILL GO HERE.</h5>
+                                </div>
+                            </div>
+                </>
+            );
+        case 6:  
+            return (
+                <>
+                    <div className="category-show">
+                            <div className="category-image">
+                                <img
+                                    src="/carouselImages/NightmareOnCompSt.png"
+                                    alt=""
+                                ></img>
+                            </div>
+                            <div className="category-header">
+                                <h1>NIGHTMARE ON COMPLIANCE ST </h1>
+                                <h4 className="tagline">
+                                    Your biggest compliance worries addressed
+                                </h4>
+                                <h5>
+                                    What are the biggest compliance questions that
+                                    aren’t easily answered and keep you up at night?
+                                    Industry-leading compliance expert Sander
+                                    Ressler answers your anonymous questions.
+                                </h5>
+                            </div>
                         </div>
-                        <div className="category-header">
-                            <h1>NIGHTMARE ON COMPLIANCE ST </h1>
-                            <h4 className="tagline">
-                                Your biggest compliance worries addressed
-                            </h4>
-                            <h5>
-                                What are the biggest compliance questions that
-                                aren’t easily answered and keep you up at night?
-                                Industry-leading compliance expert Sander
-                                Ressler answers your anonymous questions.
-                            </h5>
+                </>
+            );
+        case 7:  
+            return (
+                <>
+                    <div className="category-show">
+                            <div className="category-image">
+                                <img
+                                    src="/carouselImages/BuyItOrBuildIt.png"
+                                    alt=""
+                                ></img>
+                            </div>
+                            <div className="category-header">
+                                <h1>BUY IT OR BUILD IT?</h1>
+                                <h4 className="tagline">
+                                    What’s best: Proprietary, outsourced or blended
+                                    solutions?
+                                </h4>
+                                <h5>
+                                    Third-party solutions continue to proliferate.
+                                    Are wealth management leaders better off with
+                                    proprietary solutions, outside services, or a
+                                    mix of both? Each month, we’ll speak to a
+                                    different industry leader on a specific “buy it
+                                    or build it” dilemma – And how to best address
+                                    it.
+                                </h5>
+                            </div>
                         </div>
-                    </div>
-            </>
-        );
-    } else if (props.category === 7){
-        return (
-            <>
-                <div className="category-show">
-                        <div className="category-image">
-                            <img
-                                src="/carouselImages/BuyItOrBuildIt.png"
-                                alt=""
-                            ></img>
-                        </div>
-                        <div className="category-header">
-                            <h1>BUY IT OR BUILD IT?</h1>
-                            <h4 className="tagline">
-                                What’s best: Proprietary, outsourced or blended
-                                solutions?
-                            </h4>
-                            <h5>
-                                Third-party solutions continue to proliferate.
-                                Are wealth management leaders better off with
-                                proprietary solutions, outside services, or a
-                                mix of both? Each month, we’ll speak to a
-                                different industry leader on a specific “buy it
-                                or build it” dilemma – And how to best address
-                                it.
-                            </h5>
-                        </div>
-                    </div>
-            </>
-        );
-    } else if (props.category === 8){
+                </>
+            );
+        case 8:  
         return (
             <>
                 <div className="category-show">
@@ -205,10 +206,10 @@ function articleHeaders(props) {
                     </div>
             </>
         );
-    } else if (props.category === 9){
-        return (
-            <>
-                <div className="category-show">
+        case 9:  
+            return (
+                <>
+                    <div className="category-show">
                         <div className="category-image">
                             <img
                                 src="/carouselImages/CryptTales.png"
@@ -228,59 +229,59 @@ function articleHeaders(props) {
                             </h5>
                         </div>
                     </div>
-            </>
-        );
-    } else if (props.category === 10){
-        return (
-            <>
-                <div className="category-show">
-                        <div className="category-image">
-                            <img
-                                src="/carouselImages/OnTheRise.png"
-                                alt=""
-                            ></img>
+                </>
+            );
+        case 10:  
+            return (
+                <>
+                    <div className="category-show">
+                            <div className="category-image">
+                                <img
+                                    src="/carouselImages/OnTheRise.png"
+                                    alt=""
+                                ></img>
+                            </div>
+                            <div className="category-header">
+                                <h1>ON THE RISE</h1>
+                                <h4 className="tagline">
+                                    Diversity and next gen success stories
+                                </h4>
+                                <h5>
+                                    Each month, our “On The Rise” section spotlights
+                                    a financial advisor or executive who exemplifies
+                                    how wealth management is being positively
+                                    transformed through greater diversity – In terms
+                                    of gender, culture and age.
+                                </h5>
+                            </div>
                         </div>
-                        <div className="category-header">
-                            <h1>ON THE RISE</h1>
-                            <h4 className="tagline">
-                                Diversity and next gen success stories
-                            </h4>
-                            <h5>
-                                Each month, our “On The Rise” section spotlights
-                                a financial advisor or executive who exemplifies
-                                how wealth management is being positively
-                                transformed through greater diversity – In terms
-                                of gender, culture and age.
-                            </h5>
+                </>
+            );
+        case 11:  
+            return (
+                <>
+                    <div className="category-show">
+                            <div className="category-image">
+                                <img
+                                    src="/carouselImages/LettersFromLarry.png"
+                                    alt=""
+                                ></img>
+                            </div>
+                            <div className="category-header">
+                                <h1>Letters from larry</h1>
+                                <h4 className="tagline">
+                                    Key trends defining wealth management
+                                </h4>
+                                <h5>
+                                    Larry Roth’s shares his latest thoughts on
+                                    what’s shaping the wealth management space now
+                                    and in the future.
+                                </h5>
+                            </div>
                         </div>
-                    </div>
-            </>
-        );
-    } else if (props.category === 11){
-        return (
-            <>
-                <div className="category-show">
-                        <div className="category-image">
-                            <img
-                                src="/carouselImages/LettersFromLarry.png"
-                                alt=""
-                            ></img>
-                        </div>
-                        <div className="category-header">
-                            <h1>Letters from larry</h1>
-                            <h4 className="tagline">
-                                Key trends defining wealth management
-                            </h4>
-                            <h5>
-                                Larry Roth’s shares his latest thoughts on
-                                what’s shaping the wealth management space now
-                                and in the future.
-                            </h5>
-                        </div>
-                    </div>
-            </>
-        );
-    } else if (props.category === 12){
+                </>
+            );
+        case 12:  
         return (
             <>
                 <div className="category-show">
@@ -306,7 +307,7 @@ function articleHeaders(props) {
                     </div>
             </>
         );
-    } else if (props.category === 13){
+        case 13:  
         return (
             <>
                 <div className="category-show">
@@ -332,137 +333,141 @@ function articleHeaders(props) {
                     </div>
             </>
         );
-    } else if (props.category === 14){
-        return (
-            <>
-                <div className="category-show">
+        case 14:  
+            return (
+                <>
+                    <div className="category-show">
+                            <div className="category-image">
+                                <img
+                                    src="/carouselImages/Transactions&Trans.png"
+                                    alt=""
+                                ></img>
+                            </div>
+                            <div className="category-header">
+                                <h1>TRANSACTIONS & TRANSITIONS</h1>
+                                <h4 className="tagline"> Keep track of industry leaders' moves + deals</h4>
+                                <h5>Need help keeping track of who's where and what's happening? Each month, we'll cover the industry's top advisor recruiting moves and M&A deals to keep you up to date and informed.</h5>
+                            </div>
+                        </div>
+                </>
+            );
+        case 15:  
+            return (
+                <>
+                    <div className="category-show">
+                            <div className="category-image">
+                                <img
+                                    src="/carouselImages/Cast&Crew.png"
+                                    alt=""
+                                ></img>
+                            </div>
+                            <div className="category-header">
+                                <h1>CAST & CREW</h1>
+                                <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
+                                <h5>DESCRIPTOR WILL GO HERE.</h5>
+                            </div>
+                        </div>
+                </>
+            );
+        case 16:  
+            return (
+                <>
+                    <div className="category-show">
+                            <div className="category-image">
+                                <img
+                                    src="/carouselImages/BizarreIndustryBazaar.png"
+                                    alt=""
+                                ></img>
+                            </div>
+                            <div className="category-header">
+                                <h1>BIZARRE INDUSTRY BAZAAR</h1>
+                                <h4 className="tagline">
+                                    The weirder side of wealth management
+                                </h4>
+                                <h5>
+                                    It’s a wild and weird wealth management industry
+                                    sometimes – We bring you some of the strangest
+                                    stories, so you don’t have to experience it
+                                    directly.
+                                </h5>
+                            </div>
+                        </div>
+                </>
+            );
+        case 17:  
+            return (
+                <>
+                    <div className="category-show">
+                            <div className="category-image">
+                                <img
+                                    src="/carouselImages/InvestmentSolutions&Gatekeepers.png"
+                                    alt=""
+                                ></img>
+                            </div>
+                            <div className="category-header">
+                                <h1> INVESTMENT SOLUTIONS & GATEKEEPERS</h1>
+                                <h4 className="tagline">
+                                    Innovative investment solutions and gatekeepers
+                                </h4>
+                                <h5>
+                                    Third-party asset managers need to know what IBD
+                                    and RIA gatekeepers are seeking. Gatekeepers
+                                    want to know about third-party asset managers
+                                    that can drove value for financial advisors. We
+                                    connect these two vital audiences.
+                                </h5>
+                            </div>
+                        </div>
+                </>
+            );
+        case 18:
+            return (
+                <>
+                    <div className="category-show">
                         <div className="category-image">
-                            <img
-                                src="/carouselImages/Transactions&Trans.png"
-                                alt=""
-                            ></img>
+                            <img src="/carouselImages/WordsInEdgewise.png" alt=""></img>
                         </div>
                         <div className="category-header">
-                            <h1>TRANSACTIONS & TRANSITIONS</h1>
-                            <h4 className="tagline"> Keep track of industry leaders' moves + deals</h4>
-                            <h5>Need help keeping track of who's where and what's happening? Each month, we'll cover the industry's top advisor recruiting moves and M&A deals to keep you up to date and informed.</h5>
-                        </div>
-                    </div>
-            </>
-        );
-    } else if (props.category === 15){
-        return (
-            <>
-                <div className="category-show">
-                        <div className="category-image">
-                            <img
-                                src="/carouselImages/Cast&Crew.png"
-                                alt=""
-                            ></img>
-                        </div>
-                        <div className="category-header">
-                            <h1>CAST & CREW</h1>
-                            <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
-                            <h5>DESCRIPTOR WILL GO HERE.</h5>
-                        </div>
-                    </div>
-            </>
-        );
-    } else if (props.category === 16){
-        return (
-            <>
-                <div className="category-show">
-                        <div className="category-image">
-                            <img
-                                src="/carouselImages/BizarreIndustryBazaar.png"
-                                alt=""
-                            ></img>
-                        </div>
-                        <div className="category-header">
-                            <h1>BIZARRE INDUSTRY BAZAAR</h1>
+                            <h1>Words In Edgewise</h1>
                             <h4 className="tagline">
-                                The weirder side of wealth management
+                                {" "}
+                                Words in edgewise from wealth management leaders
                             </h4>
                             <h5>
-                                It’s a wild and weird wealth management industry
-                                sometimes – We bring you some of the strangest
-                                stories, so you don’t have to experience it
-                                directly.
+                                DESCRIPTOR will go here
                             </h5>
                         </div>
                     </div>
-            </>
-        );
-    } else if (props.category === 17){
-        return (
-            <>
-                <div className="category-show">
-                        <div className="category-image">
-                            <img
-                                src="/carouselImages/InvestmentSolutions&Gatekeepers.png"
-                                alt=""
-                            ></img>
+                </>
+            )
+        
+            case "point-counterpoint":
+                return (
+                    <>
+                        <div className="category-show">
+                            <div className="category-image">
+                                <img src="/carouselImages/PointCounterPoint.png" alt=""></img>
+                            </div>
+                            <div className="category-header">
+                                <h1>POINT-COUNTERPOINT</h1>
+                                <h4 className="tagline">
+                                    {" "}
+                                    Two industry leaders enter – One industry leader wins.
+                                </h4>
+                                <h5>
+                                    Our readers select the victors by delivering them with the
+                                    most likes. Select like in the next 30 days for your vote to
+                                    be counted! We’ll announce the winner at the bottom of next
+                                    month’s Point Counterpoint story.
+                                </h5>
+                            </div>
                         </div>
-                        <div className="category-header">
-                            <h1> INVESTMENT SOLUTIONS & GATEKEEPERS</h1>
-                            <h4 className="tagline">
-                                Innovative investment solutions and gatekeepers
-                            </h4>
-                            <h5>
-                                Third-party asset managers need to know what IBD
-                                and RIA gatekeepers are seeking. Gatekeepers
-                                want to know about third-party asset managers
-                                that can drove value for financial advisors. We
-                                connect these two vital audiences.
-                            </h5>
-                        </div>
-                    </div>
-            </>
-        );
-    } else if (props.category === 19){
-        return (
-            <>
-                <div className="category-show">
-                    <div className="category-image">
-                        <img src="/carouselImages/PointCounterPoint.png" alt=""></img>
-                    </div>
-                    <div className="category-header">
-                        <h1>POINT-COUNTERPOINT</h1>
-                        <h4 className="tagline">
-                            {" "}
-                            Two industry leaders enter – One industry leader wins.
-                        </h4>
-                        <h5>
-                            Our readers select the victors by delivering them with the
-                            most likes. Select like in the next 30 days for your vote to
-                            be counted! We’ll announce the winner at the bottom of next
-                            month’s Point Counterpoint story.
-                        </h5>
-                    </div>
-                </div>
-            </>
-        )
-    } else if (props.category === 18){
-        return (
-            <>
-                <div className="category-show">
-                    <div className="category-image">
-                        <img src="/carouselImages/WordsInEdgewise.png" alt=""></img>
-                    </div>
-                    <div className="category-header">
-                        <h1>Words In Edgewise</h1>
-                        <h4 className="tagline">
-                            {" "}
-                            Words in edgewise from wealth management leaders
-                        </h4>
-                        <h5>
-                            DESCRIPTOR will go here
-                        </h5>
-                    </div>
-                </div>
-            </>
-        )
-    }
+                    </>
+                )
+
+        default:
+            return <div>something went wrong in articleHeaders.js</div>;
+          }
 }
 
 export default articleHeaders;

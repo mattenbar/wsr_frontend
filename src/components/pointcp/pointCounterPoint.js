@@ -72,7 +72,7 @@ function PointCounterPoint(props) {
         return (
             console.log(pointArticles.length > 1),
             <div className="pointcpContainer">
-                    <ArticleHeaders category={18} />
+                    <ArticleHeaders category={"point-counterpoint"} />
                     <PointCPNewest
                         newestSectionOne={newestSectionOne}
                         newestId={newestId}
@@ -94,7 +94,7 @@ function PointCounterPoint(props) {
     } else {
         return (
             <>
-                <ArticleHeaders category={18} />
+                <ArticleHeaders category={"point-counterpoint"} />
                 <div className="noPosts">
                     {/* <h1>LOADING...</h1> */}
                     <h2>POINT-COUNTERPOINT COMING SOON</h2>
