@@ -12,7 +12,7 @@ class LinksBar extends Component {
           <a href="/Capital-Connections">CAPITAL CONNECTIONS</a>&nbsp;
           <a href="/Point-Counterpoint">POINT-COUNTERPOINT</a> &nbsp;
           <a href="/The-Digital-Domain">THE DIGITAL DOMAIN</a>&nbsp;
-          <a href="/Dramatis-Personae">DRAMATIS PERSONAE</a>&nbsp;
+          <a href="/Words-In-Edgewise">WORDS IN EDGEWISE</a>&nbsp;
           <a href="/Wallet-Share">WALLET SHARE</a>&nbsp;
           {/* statshots will go here */}
 
@@ -35,6 +35,7 @@ class LinksBar extends Component {
             {/* week 4 */}
 
             <a href="/Transactions-And-Transitions">TRANSACTIONS & TRANSITIONS</a>&nbsp;
+            <a href="/Dramatis-Personae">DRAMATIS PERSONAE</a>&nbsp;
             <a href="/CyberCrypt-Tales">CYBERCRYPT TALES</a>&nbsp;
             <a href="/People-Moves">PEOPLE MOVES</a>&nbsp;
             <a href="/Shout-Outs-And-Put-Downs">SHOUT OUTS & PUT DOWNS</a>&nbsp;

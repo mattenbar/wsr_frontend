@@ -419,7 +419,7 @@ function articleHeaders(props) {
                     </div>
             </>
         );
-    } else if (props.category === 18){
+    } else if (props.category === 19){
         return (
             <>
                 <div className="category-show">
@@ -437,6 +437,26 @@ function articleHeaders(props) {
                             most likes. Select like in the next 30 days for your vote to
                             be counted! We’ll announce the winner at the bottom of next
                             month’s Point Counterpoint story.
+                        </h5>
+                    </div>
+                </div>
+            </>
+        )
+    } else if (props.category === 18){
+        return (
+            <>
+                <div className="category-show">
+                    <div className="category-image">
+                        <img src="/carouselImages/WordsInEdgewise.png" alt=""></img>
+                    </div>
+                    <div className="category-header">
+                        <h1>Words In Edgewise</h1>
+                        <h4 className="tagline">
+                            {" "}
+                            Words in edgewise from wealth management leaders
+                        </h4>
+                        <h5>
+                            DESCRIPTOR will go here
                         </h5>
                     </div>
                 </div>

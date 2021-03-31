@@ -1,3 +1,5 @@
+import { API_URL } from '../apiConstants';
+
 export const addPointcp = (data) => {
 
   return (dispatch) => {
@@ -5,7 +7,7 @@ export const addPointcp = (data) => {
     debugger
     body.append("imageOne", data.imageOne)
     body.append("imageTwo", data.imageTwo)
-    fetch("http://localhost:3000/api/v1/image_upload_pointcp",{
+    fetch(API_URL + "/image_upload_pointcp",{
     method: "PUT",
     body
     })
@@ -13,7 +15,7 @@ export const addPointcp = (data) => {
     .then(json => {
       data.imageOne = json.imageOne
       data.imageTwo = json.imageTwo
-      fetch('http://localhost:3000/api/v1/pointcps', {
+      fetch(API_URL + 'pointcps', {
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'

@@ -77,7 +77,7 @@ function PointCounterPoint(props) {
     if (pointArticles.length === 0) {
         return (
             <>
-                <ArticleHeaders category={18} />
+                <ArticleHeaders category={19} />
                 <div className="noPosts">
                     {/* <h1>LOADING...</h1> */}
                     <h2>POINT-COUNTERPOINT COMING SOON</h2>
@@ -87,7 +87,7 @@ function PointCounterPoint(props) {
     } else {
         return (
             <div className="pointcpContainer">
-                <ArticleHeaders category={18} />
+                <ArticleHeaders category={19} />
                 { pointArticles.length > 0 &&
                     <>
                         <div className="pointContainer1">
