@@ -11,6 +11,7 @@ function SignupForm(props) {
     const [company_name, setCompany] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [password_confirmation, setPasswordConfirmation] = useState('')
 
     const handleFirstNameChange = (e) => {
         setFirstNameChange(e.target.value)
@@ -28,28 +29,37 @@ function SignupForm(props) {
         setPassword(e.target.value)
     }
 
+    const handlePasswordConfirmationChange = (e) => {
+        setPasswordConfirmation(e.target.value)
+    }
+
     const dispatch = useDispatch();
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        const user = {
-            first_name: first_name,
-            last_name: last_name,
-            company_name: company_name,
-            email: email,
-            password: password
-        }
+        if (password=== password_confirmation) {
 
-        dispatch(signupUser(user))
-                
-        setFirstNameChange('')
-        setLastNameChange('')
-        setCompany('')
-        setEmail('')
-        setPassword('')
-        
-        history.back('/');
+            const user = {
+                first_name: first_name,
+                last_name: last_name,
+                company_name: company_name,
+                email: email,
+                password: password
+            }
+
+            dispatch(signupUser(user))
+                    
+            setFirstNameChange('')
+            setLastNameChange('')
+            setCompany('')
+            setEmail('')
+            setPassword('')
+            
+            history.back('/');
+        } else {
+            alert("Please make sure Password and Password Confirmation Fields Match")
+        }  
     }
 
     return (
@@ -72,8 +82,13 @@ function SignupForm(props) {
                     <input type="email" onChange={handleEmailChange} value={email} />
                 </div>
                 <div className="field">
-                    <label>Password</label>
-                    <input type="password" onChange={handlePasswordChange} value={password} />
+                    <label>Password</label><br />
+                    <label style={{fontSize: "1vw"}} >(*must include 1 Capital & 1 Number)</label>
+                    <input type="password" onChange={handlePasswordChange} value={password} pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"/>
+                </div>
+                <div className="field">
+                    <label>Password Confirmation</label>
+                    <input type="password" onChange={handlePasswordConfirmationChange} value={password_confirmation} />
                 </div>
                 <button className="form-button" type="submit" >Submit</button>
             </form>
