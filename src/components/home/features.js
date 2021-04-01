@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {connect} from 'react-redux'
 import { Link } from 'react-router-dom';
-import {getSlug} from '../../actions/getSlug'
+import {GetSlug} from '../../actions/getSlug'
 import moment from "moment";
 
 function Features(state) {
@@ -18,7 +18,7 @@ function Features(state) {
                 <div className="feature-wrapper" >
                     <div className="small-square">
                         <Link to={{    
-                            pathname: `${getSlug(leftFeature)}/${leftFeature["id"]}`,
+                            pathname: `${GetSlug(leftFeature)}/${leftFeature["id"]}`,
                             state: {
                                 category: state.features[0].attributes.post.category_id
                             }
@@ -30,7 +30,7 @@ function Features(state) {
                     </div>
                     <div className="middle-square">
                         <Link to={{    
-                            pathname: `${getSlug(mainFeature)}/${mainFeature["id"]}`,
+                            pathname: `${GetSlug(mainFeature)}/${mainFeature["id"]}`,
                             state: {
                                 category: state.features[1].attributes.post.category_id
                             }
@@ -42,7 +42,7 @@ function Features(state) {
                     </div>
                     <div className="small-square">
                         <Link to={{    
-                            pathname: `${getSlug(rightFeature)}/${rightFeature["id"]}`,
+                            pathname: `${GetSlug(rightFeature)}/${rightFeature["id"]}`,
                             state: {
                                 category: state.features[2].attributes.post.category_id
                             }

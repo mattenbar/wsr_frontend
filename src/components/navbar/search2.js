@@ -1,5 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import {GetSlug} from '../../actions/getSlug'
+import {Link} from 'react-router-dom'
 
 function Search2(props) {
 
@@ -13,10 +15,15 @@ function Search2(props) {
 
     if (filteredPosts.length > 0) {
         postsMapped = filteredPosts.map(post => {
+            let slug = GetSlug(post.attributes)
+            
             return (
                 <div key={post.id} className="searchResultPost">
                     <li>
-                        <h3>{post.attributes.title}</h3>
+                        
+                        <Link to={`${slug}/${post.id}`}post_id={post.id}>
+                            <h3>{post.attributes.title}</h3>
+                        </Link>
                     </li>
                 </div>
             )

@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux'
-import {getSlug} from '../../actions/getSlug'
+import {GetSlug} from '../../actions/getSlug'
 import { Link } from 'react-router-dom'
 
 function archives(state) {
@@ -8,7 +8,7 @@ function archives(state) {
     let posts = state.posts.map(post => {
         return(
             <div >
-              <li><Link to={{pathname:`${getSlug(post.attributes)}/${post.id}`}}>{post.attributes.title} </Link></li>
+              <li><Link to={{pathname:`${GetSlug(post.attributes)}/${post.id}`}}>{post.attributes.title} </Link></li>
             </div>
         )
     })

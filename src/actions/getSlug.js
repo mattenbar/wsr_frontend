@@ -1,4 +1,7 @@
-export function getSlug(post){
+export function GetSlug(post){
+    if(post.post){
+        post = post.post
+    }
     switch (post.category_id) {
         case 1:  
             return '/Capital-Connections'
