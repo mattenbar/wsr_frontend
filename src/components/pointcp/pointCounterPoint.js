@@ -7,6 +7,7 @@ import PointCPOlder from "./pointCPOlder";
 import PointcpEditForm from './pointcpEditForm';
 import history from '../../history';
 import {deletePointcp} from '../../actions/pointcp/deletePointcp';
+import {Link} from 'react-router-dom';
 
 function PointCounterPoint(props) {
 
@@ -145,6 +146,9 @@ function PointCounterPoint(props) {
                             <button onClick={handleOnDelete2} className="adminButtons">DELETE ARTICLE</button>
                         </div>
                     }
+                    <div>
+                        <Link to="/Point-Counterpoint-Archives" className="linkToArchives">POINT-COUNTERPOINT ARCHIVES</Link>
+                    </div>
             </div>
         )
     } else {

@@ -78,7 +78,13 @@ function PointCPNewest({admin, article, newestId, handleVotingClickButtonOne, ha
 
 
     return (
-        <>
+        <>  
+        <div className="pointcptopic" >
+            <div>
+                <h3>TOPIC:</h3>
+                <h1>{article.topic}</h1>
+            </div>
+        </div>
             <div className="pointContainer1">
                 <div className="pointcp1">
                     <div className="pointTop">
@@ -106,7 +112,6 @@ function PointCPNewest({admin, article, newestId, handleVotingClickButtonOne, ha
                         getDivs("pointVote1")
                     }
                 </div>
-            
                 <div className="pointcp2">
                     <div className="pointTop2">
                         <div className="pointHeaderRight">

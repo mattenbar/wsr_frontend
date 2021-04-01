@@ -1364,6 +1364,7 @@ body {
 
 .pointcpContainer {
     position: relative;
+    margin-bottom: 2em;
 }
 
 .pointContainer1,
@@ -1545,11 +1546,27 @@ body {
 }
 
 .winner h1 {
-    color: rgba(0, 59, 91);
+    color: rgb(0, 59, 91);
 }
 
 .trophyHeaders {
     text-align: center;
+}
+
+.linkToArchives {
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: rgb(0, 59, 91);
+    transition: all 0.5s ease;
+    margin: 1em;
+}
+
+.linkToArchives:hover,
+.linkToArchives:active {
+    font-size: 1.75vw;
+    transform: translateY(-5px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 4px grey;
 }
 
 /* -----------------------------------END POINT-COUNTERPOINT---------------------------------------------- */
@@ -1562,7 +1579,7 @@ body {
     width: 100%;
 }
 
-.category-show a{
+.category-show a {
     text-decoration: none;
     color: black;
 }
@@ -1979,6 +1996,33 @@ body {
     margin-left: 1em;
     margin-bottom: 1em;
     padding: 0.2em;
+}
+
+.likeButton,
+.dislikeButton {
+    width: 2.5vw;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin: 1vw;
+}
+
+.likeButton:hover,
+.likeButton:active,
+.dislikeButton:hover,
+.dislikeButton:active {
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 4px grey;
+}
+
+.likeImage,
+.dislikeImage {
+    width: 100%;
 }
 
 /* -----------------------------------END INDIVUAL POST PAGE---------------------------------------------- */

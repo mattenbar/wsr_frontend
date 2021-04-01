@@ -29,6 +29,7 @@ import Admin from './components/admin/admin'
 
 import PointCounterPoint from './components/pointcp/pointCounterPoint';
 import PointCounterPointArticle from './components/pointcp/pointCounterPointArticle';
+import PointCounterpointArchives from './components/pointcp/pointcpArchives';
 
 import IndividualPost from './components/articles/individualPosts';
 
@@ -68,6 +69,7 @@ import CyberCryptArticle from './components/articles/cyberCryptArticle';
 import PeopleMoves from './components/categories/peopleMoves';
 import PeopleMovesArticle from './components/articles/peopleMovesArticle';
 import WordsInEdgewise from './components/categories/wordsInEdgewise'
+import WordsInEdgewiseArticle from './components/articles/wordsInEdgewiseArticle';
 
 
 class App extends React.Component{
@@ -106,6 +108,10 @@ class App extends React.Component{
           <Route exact path="/This-Issue/:id" component={IndividualPost} />
           <Route exact path="/Last-Issue/:id" component={IndividualPost} />
 
+          <Route exact path="/Point-Counterpoint" render={()=> <PointCounterPoint />}/>
+          <Route exact path="/Point-Counterpoint/:id" component={PointCounterPointArticle} />
+          <Route exact path="/Point-Counterpoint-Archives" component={PointCounterpointArchives} />
+
 
           {/* category pages */}
 
@@ -120,10 +126,6 @@ class App extends React.Component{
           <Route exact path="/The-Digital-Domain/:id" component={DigitalDomainArticle} />
           <Route exact path="/Capital-Connections" render={()=> <CapitalConnections posts={this.props.categories} categories={this.props.categories}/>}/>
           <Route exact path="/Capital-Connections/:id" component={CapitalConnectionArticle} />
-          <Route exact path="/Point-Counterpoint" render={()=> <PointCounterPoint />}/>
-          <Route exact path="/Point-Counterpoint/:id" component={PointCounterPointArticle} />
-
-          
           
           <Route exact path="/On-The-Rise" render={()=> <OnTheRise />}/>
           <Route exact path="/On-The-Rise/:id" component={OnTheRiseArticle} />
@@ -154,6 +156,7 @@ class App extends React.Component{
           <Route exact path="/Shout-Outs-And-Put-Downs/:id" component={ShoutOutArticle} />
 
           <Route exact path="/Words-In-Edgewise" render={()=> <WordsInEdgewise />}/>
+          <Route exact path="/Words-In-Edgewise/:id" component={WordsInEdgewiseArticle} />
           
           
         </Switch>

@@ -7,8 +7,7 @@ import ArticleEditForm from './articleEditForm';
 import { deletePost } from '../../actions/deletePost';
 import { withRouter } from "react-router";
 
-function CapitalConnectionArticle(props) {
-
+function WordsInEdgewise(props) {
     const user = useSelector(state => {
         return (state.user.user)
     })
@@ -47,7 +46,9 @@ function CapitalConnectionArticle(props) {
         dispatch(deletePost(post_id))
         props.history.push('/');
     }
-    
+
+   
+
     if (post.attributes === undefined) {
         return (
             (
@@ -67,7 +68,8 @@ function CapitalConnectionArticle(props) {
                         <ArticleBody post={post} />
                         { admin === true && 
                             <div>
-                                <button onClick={handleOnClick} className="adminButtons">EDIT / DELETE ARTICLE</button>         
+                                <button onClick={handleOnClick} className="adminButtons">EDIT / DELETE ARTICLE</button>
+                                
                             </div>
                         }
                     </div>
@@ -84,4 +86,4 @@ function CapitalConnectionArticle(props) {
     }
 }
 
-export default withRouter(CapitalConnectionArticle);
+export default withRouter(WordsInEdgewise);
