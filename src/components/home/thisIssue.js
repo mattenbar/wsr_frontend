@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import {getSlug} from '../../actions/getSlug'
+import {GetSlug} from '../../actions/getSlug'
 
 function thisIssue(state) {
     let settings = {
@@ -60,7 +60,7 @@ function thisIssue(state) {
                 <div key={post.attributes.title} className="ticrslwrapper" >
                         <div className="ti-box">
                             <Link to={{    
-                                pathname: `${getSlug(post.attributes)}/${post.id}`,
+                                pathname: `${GetSlug(post.attributes)}/${post.id}`,
                                 state: {
                                     category: post.attributes.category_id
                                 }
