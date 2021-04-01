@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import moment from "moment";
 import {API_URL} from '../../apiConstants';
+import { Link } from 'react-router-dom';
 
 
 function PointCPNewest({admin, article, newestId, handleVotingClickButtonOne, handleVotingClickButtonTwo, handleEditDeleteClick}) {
@@ -21,7 +22,7 @@ function PointCPNewest({admin, article, newestId, handleVotingClickButtonOne, ha
         date1 = Date.parse(date1);
         let date2 = Date.parse(currentDay);
         let Difference_In_Days = Math.floor(
-            (date1 - date2) / (1000 * 3600 * 24)
+            ((date1 - date2) / (1000 * 3600 * 24)) + 1
         );
         return Difference_In_Days;
     };
@@ -88,19 +89,28 @@ function PointCPNewest({admin, article, newestId, handleVotingClickButtonOne, ha
             <div className="pointContainer1">
                 <div className="pointcp1">
                     <div className="pointTop">
-                    <div className="pointHeaderLeft">
-                        <img src={article.imageOne} alt={article.authorOne} className="pointcpImage"/>
-                    </div>
-
-                        <div className="pointHeaderRight">
-                            <div className="pointbottom">
-                            <h1>{article.titleOne}</h1>
-                            <h2>{article.authorOne}</h2>
-                            <h3>{moment
-                        .parseZone(article.created_at)
-                        .format("MMMM DD, YYYY")}</h3>
+                        
+                            <div className="pointHeaderLeft">
+                                <img src={article.imageOne} alt={article.authorOne} className="pointcpImage"/>
                             </div>
-                        </div>
+                            
+                                <div className="pointHeaderRight">
+                                    <Link to={{    
+                                    pathname: `/Point-Counterpoint/${newestId}`,
+                                    state: {
+                                        pointcp_id: newestId
+                                    }
+                                }} className="pointcpLinks"> 
+                                        <div className="pointbottom">
+                                            <h1>{article.titleOne}</h1>
+                                            <h2>{article.authorOne}</h2>
+                                            <h3>{moment
+                                        .parseZone(article.created_at)
+                                        .format("MMMM DD, YYYY")}</h3>
+                                        </div>
+                                    </Link>
+                                </div>
+                            
                     </div>
                     <div className="pointcpContent">
                         <p dangerouslySetInnerHTML={{ __html: article.contentOne}}>
@@ -114,18 +124,26 @@ function PointCPNewest({admin, article, newestId, handleVotingClickButtonOne, ha
                 </div>
                 <div className="pointcp2">
                     <div className="pointTop2">
-                        <div className="pointHeaderRight">
-                            <div className="pointbottom2">
-                            <h1>{article.titleTwo}</h1>
-                            <h2>{article.authorTwo}</h2>
-                            <h3>{moment
-                        .parseZone(article.created_at)
-                        .format("MMMM DD, YYYY")}</h3>
+                            <div className="pointHeaderRight">
+                            <Link to={{    
+                            pathname: `/Point-Counterpoint/${newestId}`,
+                            state: {
+                                pointcp_id: newestId
+                            }
+                        }} className="pointcpLinks"> 
+                                <div className="pointbottom2">
+                                <h1>{article.titleTwo}</h1>
+                                <h2>{article.authorTwo}</h2>
+                                <h3>{moment
+                            .parseZone(article.created_at)
+                            .format("MMMM DD, YYYY")}</h3>
+                                </div>
+                                </Link>
                             </div>
-                        </div>
-                        <div className="pointHeaderLeft">
-                            <img src={article.imageTwo} alt={article.authorTwo} className="pointcpImage"/>
-                        </div>
+                            <div className="pointHeaderLeft">
+                                <img src={article.imageTwo} alt={article.authorTwo} className="pointcpImage"/>
+                            </div>
+                            
                     </div>
                     <div className="pointcpContent">
                         <p dangerouslySetInnerHTML={{ __html: article.contentTwo}}></p>

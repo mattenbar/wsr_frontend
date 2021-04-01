@@ -142,8 +142,8 @@ function PointCounterPoint(props) {
                     { inEditMode2 === true &&
                         <div className="individualPostDiv">
                             <PointcpEditForm setInEditMode={setInEditMode1} pointcpArticle={olderSectionTwo} pointcp_id={olderId}/>
-                            <button onClick={handleOnBack2} className="adminButtons">BACK TO ARTICLE</button>
-                            <button onClick={handleOnDelete2} className="adminButtons">DELETE ARTICLE</button>
+                            <button onClick={handleOnBack2} className="adminButtons">BACK TO POINT-CP</button>
+                            <button onClick={handleOnDelete2} className="adminButtons">DELETE POINT-CP</button>
                         </div>
                     }
                     <div>

@@ -1569,6 +1569,22 @@ body {
     text-shadow: 2px 2px 4px grey;
 }
 
+.pointcpLinks {
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: black;
+    transition: all 0.5s ease;
+    margin: 1em;
+}
+
+.pointcpLinks:hover,
+.pointcpLinks:active {
+    /* font-size: 1.55vw; */
+    transform: translateY(-2px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 2px rgb(148, 146, 146);
+}
+
 /* -----------------------------------END POINT-COUNTERPOINT---------------------------------------------- */
 
 /* -----------------------------------CATEGORIES---------------------------------------------- */
