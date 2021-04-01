@@ -77,6 +77,12 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
 
     return (
         <>
+            <div className="pointcptopic" >
+                <div>
+                    <h3>TOPIC:</h3>
+                    <h1>{article.topic}</h1>
+                </div>
+            </div>
             <div className="pointContainer2">
                 <div className="pointcp3">
                     <div className="pointTop">
