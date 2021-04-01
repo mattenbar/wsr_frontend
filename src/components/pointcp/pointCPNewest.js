@@ -2,7 +2,8 @@ import React, {useState, useEffect} from 'react';
 import moment from "moment";
 import {API_URL} from '../../apiConstants';
 
-function PointCPNewest({newestSectionOne, newestId, handleVotingClickButtonOne, handleVotingClickButtonTwo}) {
+function PointCPNewest({admin, newestSectionOne, newestId, handleVotingClickButtonOne, handleVotingClickButtonTwo, handleEditDeleteClick}) {
+
 
     const [winner, setWinner] = useState('')
 
@@ -27,14 +28,13 @@ function PointCPNewest({newestSectionOne, newestId, handleVotingClickButtonOne, 
 
 
     return (
-        console.log(dateDifference(newestSectionOne.end_date)),
         <>
             <div className="pointContainer1">
                 <div className="pointcp1">
                     <div className="pointTop">
                     <div className="pointHeaderLeft">
-                            <img src={newestSectionOne.imageOne} alt={newestSectionOne.authorOne} className="pointcpImage"/>
-                        </div>
+                        <img src={newestSectionOne.imageOne} alt={newestSectionOne.authorOne} className="pointcpImage"/>
+                    </div>
                         <div className="pointHeaderRight">
                             <div className="pointbottom">
                             <h1>{newestSectionOne.titleOne}</h1>
@@ -92,8 +92,14 @@ function PointCPNewest({newestSectionOne, newestId, handleVotingClickButtonOne, 
                         </button>
                     </div>
                 </div>
-            
+                { admin &&
+                    <div>
+                        <button onClick={handleEditDeleteClick} className="adminButtons">EDIT / DELETE ARTICLE</button>
+                    </div>
+                    
+                }
             </div>
+            
             {
                 dateDifference(newestSectionOne.end_date) > 0 &&
                 <div className="newestCountdown" >

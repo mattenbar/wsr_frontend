@@ -4,7 +4,7 @@ export const addPointcp = (data) => {
 
   return (dispatch) => {
     let body = new FormData()
-    debugger
+    // debugger
     body.append("imageOne", data.imageOne)
     body.append("imageTwo", data.imageTwo)
     fetch(API_URL + "/image_upload_pointcp",{
@@ -15,7 +15,7 @@ export const addPointcp = (data) => {
     .then(json => {
       data.imageOne = json.imageOne
       data.imageTwo = json.imageTwo
-      fetch(API_URL + 'pointcps', {
+      fetch(API_URL + '/pointcps', {
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'

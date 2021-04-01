@@ -1,6 +1,6 @@
 import React from 'react';
 
-function beltwayBeyondArticle(props) {
+function PointCounterPointArticle(props) {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function beltwayBeyondArticle(props) {
     );
 }
 
-export default beltwayBeyondArticle;
+export default PointCounterPointArticle;

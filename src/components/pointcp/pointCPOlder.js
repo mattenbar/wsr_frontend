@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import moment from "moment";
 import {API_URL} from '../../apiConstants';
 
-function PointCPOlder({olderSectionTwo, olderId}) {
+function PointCPOlder({admin, olderSectionTwo, olderId, handleEditDeleteClick2}) {
 
     const [winner, setWinner] = useState('')
 
@@ -72,6 +72,12 @@ function PointCPOlder({olderSectionTwo, olderId}) {
                         </p>
                     </div>
                 </div>
+                { admin &&
+                    <div>
+                        <button onClick={handleEditDeleteClick2} className="adminButtons">EDIT / DELETE ARTICLE</button>
+                    </div>
+                    
+                }
             </div>
             {
                 dateDifference(olderSectionTwo.end_date) > 0 &&
