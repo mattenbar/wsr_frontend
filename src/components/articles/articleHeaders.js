@@ -1,20 +1,21 @@
 import React from 'react';
 
 function articleHeaders(props) {
-    
+
+
     switch (props.category) {
         case 1:  
         return (
                     <>
                         <div className="category-show">
                                 <div className="category-image">
-                                    <img
+                                    <a href={'/Capital-Connections'}><img
                                         src="/carouselImages/CapitolConnections.png"
                                         alt=""
-                                    ></img>
+                                    ></img></a>
                                 </div>
                                 <div className="category-header">
-                                    <h1>CAPITAL CONNECTIONS</h1>
+                                    <a href={'/Capital-Connections'}><h1>CAPITAL CONNECTIONS</h1></a>
                                     <h4 className="tagline">
                                         How wealth management firms and sources of
                                         private capital drive growth together
@@ -35,13 +36,13 @@ function articleHeaders(props) {
                 <>
                     <div className="category-show">
                         <div className="category-image">
-                            <img
+                            <a href={'/The-Digital-Domain'}><img
                                 src="/carouselImages/DigitalDomains.png"
                                 alt=""
-                            ></img>
+                            ></img></a>
                         </div>
                         <div className="category-header">
-                            <h1> THE DIGITAL DOMAIN</h1>
+                            <a href={'/The-Digital-Domain'}><h1> THE DIGITAL DOMAIN</h1></a>
                             <h4 className="tagline">
                                 Transformative tech leaders in the wealth
                                 management space
@@ -61,13 +62,13 @@ function articleHeaders(props) {
                     <>
                         <div className="category-show">
                                 <div className="category-image">
-                                    <img
+                                <a href={'/Shout-Outs-And-Put-Downs'}><img
                                         src="/carouselImages/ShoutOuts.png"
                                         alt=""
-                                    ></img>
+                                    ></img></a>
                                 </div>
                                 <div className="category-header">
-                                    <h1>SHOUT OUTS AND PUT DOWNS</h1>
+                                <a href={'/Shout-Outs-And-Put-Downs'}><h1>SHOUT OUTS AND PUT DOWNS</h1></a>
                                     <h4 className="tagline"> Readers share their best & worst experiences anonymously</h4>
                                     <h5>
                                         Each month, wealth management professionals
@@ -84,13 +85,13 @@ function articleHeaders(props) {
                 <>
                     <div className="category-show">
                             <div className="category-image">
-                                <img
+                            <a href={'/Beltway-And-Beyond'}><img
                                     src="/carouselImages/Beltway&Beyond.png"
                                     alt=""
-                                ></img>
+                                ></img></a>
                             </div>
                             <div className="category-header">
-                                <h1>BELTWAY AND BEYOND</h1>
+                            <a href={'/Beltway-And-Beyond'}><h1>BELTWAY AND BEYOND</h1></a>
                                 <h4 className="tagline">
                                     Keeping you up to speed on key regulatory and
                                     legislative trends
@@ -110,15 +111,15 @@ function articleHeaders(props) {
                 <>
                     <div className="category-show">
                                 <div className="category-image">
-                                    <img
+                                <a href={'/People-Moves'}><img
                                         src="/carouselImages/PeopleMoves.png"
                                         alt=""
-                                    ></img>
+                                    ></img></a>
                                 </div>
                                 <div className="category-header">
-                                    <h1>PEOPLE MOVES</h1>
+                                <a href={'/People-Moves'}><h1>PEOPLE MOVES</h1></a>
                                     <h4 className="tagline">
-                                        {" "}
+                                        
                                         TAGLINE WILL GO HERE
                                     </h4>
                                     <h5>DESCRIPTOR WILL GO HERE.</h5>
@@ -131,13 +132,13 @@ function articleHeaders(props) {
                 <>
                     <div className="category-show">
                             <div className="category-image">
-                                <img
+                            <a href={'/Nightmare-On-Compliance-St'}><img
                                     src="/carouselImages/NightmareOnCompSt.png"
                                     alt=""
-                                ></img>
+                                ></img></a>
                             </div>
                             <div className="category-header">
-                                <h1>NIGHTMARE ON COMPLIANCE ST </h1>
+                            <a href={'/Nightmare-On-Compliance-St'}><h1>NIGHTMARE ON COMPLIANCE ST </h1></a>
                                 <h4 className="tagline">
                                     Your biggest compliance worries addressed
                                 </h4>
@@ -156,13 +157,13 @@ function articleHeaders(props) {
                 <>
                     <div className="category-show">
                             <div className="category-image">
-                                <img
+                                <a href={'/Buy-It-Or-Build-It'}><img
                                     src="/carouselImages/BuyItOrBuildIt.png"
                                     alt=""
-                                ></img>
+                                ></img></a>
                             </div>
                             <div className="category-header">
-                                <h1>BUY IT OR BUILD IT?</h1>
+                                <a href={'/Buy-It-Or-Build-It'}><h1>BUY IT OR BUILD IT?</h1></a>
                                 <h4 className="tagline">
                                     What’s best: Proprietary, outsourced or blended
                                     solutions?
@@ -185,13 +186,13 @@ function articleHeaders(props) {
             <>
                 <div className="category-show">
                         <div className="category-image">
-                            <img
+                            <a href={'/Wallet-Share'}><img
                                 src="/carouselImages/WalletShare.png"
                                 alt=""
-                            ></img>
+                            ></img></a>
                         </div>
                         <div className="category-header">
-                            <h1>WALLET SHARE</h1>
+                            <a href={'/Wallet-Share'}><h1>WALLET SHARE</h1></a>
                             <h4 className="tagline">
                                 Sales, marketing and communications strategies
                                 and leaders
@@ -211,15 +212,15 @@ function articleHeaders(props) {
                 <>
                     <div className="category-show">
                         <div className="category-image">
-                            <img
+                            <a href={'/CyberCrypt-Tales'}><img
                                 src="/carouselImages/CryptTales.png"
                                 alt=""
-                            ></img>
+                            ></img></a>
                         </div>
                         <div className="category-header">
-                            <h1>CYBERCRYPT TALES</h1>
+                            <a href={'/CyberCrypt-Tales'}><h1>CYBERCRYPT TALES</h1></a>
                             <h4 className="tagline">
-                                {" "}
+                                
                                 Keeping you ahead of the curve on cybersecurity
                             </h4>
                             <h5>
@@ -236,13 +237,13 @@ function articleHeaders(props) {
                 <>
                     <div className="category-show">
                             <div className="category-image">
-                                <img
+                                <a href={'/On-The-Rise'}><img
                                     src="/carouselImages/OnTheRise.png"
                                     alt=""
-                                ></img>
+                                ></img></a>
                             </div>
                             <div className="category-header">
-                                <h1>ON THE RISE</h1>
+                                <a href={'/On-The-Rise'}><h1>ON THE RISE</h1></a>
                                 <h4 className="tagline">
                                     Diversity and next gen success stories
                                 </h4>
@@ -262,13 +263,13 @@ function articleHeaders(props) {
                 <>
                     <div className="category-show">
                             <div className="category-image">
-                                <img
+                                <a href={'/Letters-From-Larry'}><img
                                     src="/carouselImages/LettersFromLarry.png"
                                     alt=""
-                                ></img>
+                                ></img></a>
                             </div>
                             <div className="category-header">
-                                <h1>Letters from larry</h1>
+                                <a href={'/Letters-From-Larry'}><h1>Letters from larry</h1></a>
                                 <h4 className="tagline">
                                     Key trends defining wealth management
                                 </h4>
@@ -286,13 +287,13 @@ function articleHeaders(props) {
             <>
                 <div className="category-show">
                         <div className="category-image">
-                            <img
+                            <a href={'/Dramatis-Personae'}><img
                                 src="/carouselImages/DramatisPersonae.png"
                                 alt=""
-                            ></img>
+                            ></img></a>
                         </div>
                         <div className="category-header">
-                            <h1>DRAMATIS PERSONAE</h1>
+                            <a href={'/Dramatis-Personae'}><h1>DRAMATIS PERSONAE</h1></a>
                             <h4 className="tagline">
                                 Spotlighting creative and contrarian firms and
                                 their leaders
@@ -312,13 +313,13 @@ function articleHeaders(props) {
             <>
                 <div className="category-show">
                         <div className="category-image">
-                            <img
+                            <a href={'/NewsMakers-Roundup'}><img
                                 src="/carouselImages/NewsMakersRoundUp.png"
                                 alt=""
-                            ></img>
+                            ></img></a>
                         </div>
                         <div className="category-header">
-                            <h1>NEWSMAKERS ROUNDUP</h1>
+                            <a href={'/NewsMakers-Roundup'}><h1>NEWSMAKERS ROUNDUP</h1></a>
                             <h4 className="tagline">
                                 Top news condensed from top wealth management
                                 media outlets
@@ -338,13 +339,13 @@ function articleHeaders(props) {
                 <>
                     <div className="category-show">
                             <div className="category-image">
-                                <img
+                                <a href={'/Transactions-And-Transitions'}><img
                                     src="/carouselImages/Transactions&Trans.png"
                                     alt=""
-                                ></img>
+                                ></img></a>
                             </div>
                             <div className="category-header">
-                                <h1>TRANSACTIONS & TRANSITIONS</h1>
+                                <a href={'/Transactions-And-Transitions'}><h1>TRANSACTIONS & TRANSITIONS</h1></a>
                                 <h4 className="tagline"> Keep track of industry leaders' moves + deals</h4>
                                 <h5>Need help keeping track of who's where and what's happening? Each month, we'll cover the industry's top advisor recruiting moves and M&A deals to keep you up to date and informed.</h5>
                             </div>
@@ -356,13 +357,13 @@ function articleHeaders(props) {
                 <>
                     <div className="category-show">
                             <div className="category-image">
-                                <img
+                                <a href={'/Cast-And-Crew'}><img
                                     src="/carouselImages/Cast&Crew.png"
                                     alt=""
-                                ></img>
+                                ></img></a>
                             </div>
                             <div className="category-header">
-                                <h1>CAST & CREW</h1>
+                                <a href={'/Cast-And-Crew'}><h1>CAST & CREW</h1></a>
                                 <h4 className="tagline"> TAGLINE WILL GO HERE</h4>
                                 <h5>DESCRIPTOR WILL GO HERE.</h5>
                             </div>
@@ -374,13 +375,13 @@ function articleHeaders(props) {
                 <>
                     <div className="category-show">
                             <div className="category-image">
-                                <img
+                                <a href={'/Bizarre-Industry-Bazaar'}><img
                                     src="/carouselImages/BizarreIndustryBazaar.png"
                                     alt=""
-                                ></img>
+                                ></img></a>
                             </div>
                             <div className="category-header">
-                                <h1>BIZARRE INDUSTRY BAZAAR</h1>
+                                <a href={'/Bizarre-Industry-Bazaar'}><h1>BIZARRE INDUSTRY BAZAAR</h1></a>
                                 <h4 className="tagline">
                                     The weirder side of wealth management
                                 </h4>
@@ -399,13 +400,13 @@ function articleHeaders(props) {
                 <>
                     <div className="category-show">
                             <div className="category-image">
-                                <img
+                                <a href={'/Investment-Solutions-and-Gatekeepers'}><img
                                     src="/carouselImages/InvestmentSolutions&Gatekeepers.png"
                                     alt=""
-                                ></img>
+                                ></img></a>
                             </div>
                             <div className="category-header">
-                                <h1> INVESTMENT SOLUTIONS & GATEKEEPERS</h1>
+                                <a href={'/Investment-Solutions-and-Gatekeepers'}><h1> INVESTMENT SOLUTIONS & GATEKEEPERS</h1></a>
                                 <h4 className="tagline">
                                     Innovative investment solutions and gatekeepers
                                 </h4>
@@ -425,12 +426,15 @@ function articleHeaders(props) {
                 <>
                     <div className="category-show">
                         <div className="category-image">
-                            <img src="/carouselImages/WordsInEdgewise.png" alt=""></img>
+                            <a href={'/Words-In-Edgewise'}><img 
+                                src="/carouselImages/WordsInEdgewise.png" 
+                                alt="">
+                            </img></a>
                         </div>
                         <div className="category-header">
-                            <h1>Words In Edgewise</h1>
+                            <a href={'/Words-In-Edgewise'}><h1>Words In Edgewise</h1></a>
                             <h4 className="tagline">
-                                {" "}
+                                
                                 Words in edgewise from wealth management leaders
                             </h4>
                             <h5>
@@ -446,12 +450,12 @@ function articleHeaders(props) {
                     <>
                         <div className="category-show">
                             <div className="category-image">
-                                <img src="/carouselImages/PointCounterPoint.png" alt=""></img>
+                                <a href={'/Point-Counterpoint'}><img src="/carouselImages/PointCounterPoint.png" alt=""></img></a>
                             </div>
                             <div className="category-header">
-                                <h1>POINT-COUNTERPOINT</h1>
+                                <a href={'/Point-Counterpoint'}></a><h1>POINT-COUNTERPOINT</h1>
                                 <h4 className="tagline">
-                                    {" "}
+                                    
                                     Two industry leaders enter – One industry leader wins.
                                 </h4>
                                 <h5>

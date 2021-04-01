@@ -123,9 +123,9 @@ function carousel(props) {
                 </div>
                 <div className="carousel-wrapper" >
                     <div className="box">
-                        <Link to="/Investment-Solutions-and-Gatekeepers" className="crsltop">
+                        <Link to="/Investment-Solutions-And-Gatekeepers" className="crsltop">
                             <img src="/carouselImages/InvestmentSolutions&Gatekeepers.png" className="top-carousel-model" alt=""/>
-                            <h2>INVESTMENT SOLUTIONS AND GATEKEEPERS</h2>
+                            <h2>INVESTMENT SOLUTIONS & GATEKEEPERS</h2>
                         </Link>
                     </div>
                 </div>
@@ -155,7 +155,7 @@ function carousel(props) {
                         <Link to="/Beltway-And-Beyond" className="crsltop">
                             <img src="/carouselImages/Beltway&Beyond.png" className="top-carousel-model" alt=""/>
 
-                            <h2>BELTWAY AND BEYOND</h2>
+                            <h2>BELTWAY & BEYOND</h2>
                         </Link>
                     </div>
                 </div>
@@ -174,9 +174,9 @@ function carousel(props) {
                 
                 <div className="carousel-wrapper" >
                     <div className="box">
-                        <Link to="/transactions-and-transitions" className="crsltop">
+                        <Link to="/transactions-And-transitions" className="crsltop">
                             <img src="/carouselImages/Transactions&Trans.png" className="top-carousel-model" alt=""/>
-                            <h2>TRANSACTIONS AND TRANSITIONS</h2>
+                            <h2>TRANSACTIONS & TRANSITIONS</h2>
                         </Link>
                     </div>
                 </div>

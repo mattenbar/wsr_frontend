@@ -105,7 +105,7 @@ function PointCounterPoint(props) {
                     { inEditMode1 === false &&
                         <PointCPNewest
                             admin={admin}
-                            newestSectionOne={newestSectionOne}
+                            article={newestSectionOne}
                             newestId={newestId}
                             handleVotingClickButtonOne={
                                 handleVotingClickButtonOne
