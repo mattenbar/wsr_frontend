@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {addPost} from '../../actions/addPost';
 import { Editor } from '@tinymce/tinymce-react';
+import {GetSlug} from '../../actions/getSlug'
 
 
 class PostInput extends React.Component {
@@ -12,7 +13,6 @@ class PostInput extends React.Component {
       content: '',
       author: '',
       image: {},
-      youtube: '',
       category_id: 0
     },
     category:{
@@ -51,7 +51,7 @@ class PostInput extends React.Component {
 
 
 
-  handlePostSubmit = (event, editor) => {
+  handlePostSubmit = (event) => {
     event.preventDefault()
     this.props.dispatchAddPost(this.state.post)
     this.setState({
@@ -60,12 +60,13 @@ class PostInput extends React.Component {
         content: '',
         author: '',
         image: '',
-        youtube: '',
         category_id: 0
       },
       category:{
         name: ''}
     })
+    
+    window.location.href = `/admin`;
   }
   
 
