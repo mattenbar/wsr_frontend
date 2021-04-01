@@ -69,8 +69,7 @@ function CapitalConnectionArticle(props) {
                         <ArticleBody post={post} />
                         { admin === true && 
                             <div>
-                                <button onClick={handleOnClick} className="adminButtons">EDIT / DELETE ARTICLE</button>
-                                
+                                <button onClick={handleOnClick} className="adminButtons">EDIT / DELETE ARTICLE</button>         
                             </div>
                         }
                     </div>
@@ -88,3 +87,4 @@ function CapitalConnectionArticle(props) {
 }
 
 export default withRouter(CapitalConnectionArticle);
+

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import moment from "moment";
 import {API_URL} from '../../apiConstants';
 
-function PointCPOlder({article, olderId}, handleVotingClickButtonOne, handleVotingClickButtonTwo) {
+function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVotingClickButtonOne, handleVotingClickButtonTwo}) {
 
     const [winner, setWinner] = useState('')
 
@@ -126,6 +126,11 @@ function PointCPOlder({article, olderId}, handleVotingClickButtonOne, handleVoti
                         getDivs("pointVote2")
                     }
                 </div>
+                { admin &&
+                    <div>
+                        <button onClick={handleEditDeleteClick2} className="adminButtons">EDIT / DELETE ARTICLE</button>
+                    </div>
+                    
                 {dateDifference(article.end_date) > 0 &&
                     getDivs("newestCountdown")
                 }
