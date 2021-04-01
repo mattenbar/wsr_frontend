@@ -94,7 +94,7 @@ class PointcpEditForm extends React.Component {
         })
 
         this.props.setInEditMode(false)
-        history.back('/')
+        window.location.reload()
     }
 
     render() {

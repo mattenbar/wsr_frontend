@@ -10,6 +10,7 @@ export const deletePost = (id) => {
         })
         .then(res => res.json())
         .then(postObj => {
+            console.log("postObj", postObj)
             if (postObj.success) {
                 alert(postObj.success)
                 dispatch({type: DELETE_POST, payload: postObj})

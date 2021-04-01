@@ -2,7 +2,6 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {addPost} from '../../actions/addPost';
 import { Editor } from '@tinymce/tinymce-react';
-import {GetSlug} from '../../actions/getSlug'
 
 
 class PostInput extends React.Component {
@@ -54,6 +53,7 @@ class PostInput extends React.Component {
   handlePostSubmit = (event) => {
     event.preventDefault()
     this.props.dispatchAddPost(this.state.post)
+    
     this.setState({
       post: {
         title: '',
@@ -65,8 +65,6 @@ class PostInput extends React.Component {
       category:{
         name: ''}
     })
-    
-    window.location.href = `/admin`;
   }
   
 
@@ -146,4 +144,4 @@ function mDTP(dispatch){
 }
 
 
-export default connect(mSTP, mDTP)(PostInput)
+export default connect(mSTP, mDTP)(PostInput);

@@ -67,10 +67,8 @@ class ArticleClassEditForm extends React.Component {
         });
 
         this.props.setInEditMode(false)
-        // this.props.history.push(`/posts/${post_id}`);
-        // this.props.history.push('/')
-        history.back('/')
-        history.back('/')
+        
+        window.location.reload()
 
     };
 
