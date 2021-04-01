@@ -1,6 +1,7 @@
 import React from 'react';
 import {useSelector} from 'react-redux';
 import ArticleHeaders from '../articles/articleHeaders';
+import { Link } from 'react-router-dom';
 
 function PointcpArchives(props) {
 
@@ -13,7 +14,14 @@ function PointcpArchives(props) {
         const mappedPointCP = pointcpArticles.map(article => {
             return (
                 <div>
-                    <li>{article.attributes.titleOne} vs {article.attributes.titleTwo}</li>
+                    <Link to={{    
+                        pathname: `/Point-Counterpoint/${article.id}`,
+                        state: {
+                            pointcp_id: article.id
+                        }
+                    }} className="pointcpLinks"> 
+                        <li>{article.attributes.titleOne} vs {article.attributes.titleTwo}</li>
+                    </Link>
                 </div>
             )
         })
