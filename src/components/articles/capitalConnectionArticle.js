@@ -87,4 +87,3 @@ function CapitalConnectionArticle(props) {
 }
 
 export default withRouter(CapitalConnectionArticle);
-

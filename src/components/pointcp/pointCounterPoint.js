@@ -5,6 +5,8 @@ import { voteArticleOne, voteArticleTwo } from "../../actions/pointcp/addVotes";
 import PointCPNewest from "./pointCPNewest";
 import PointCPOlder from "./pointCPOlder";
 import PointcpEditForm from './pointcpEditForm';
+import history from '../../history';
+import {deletePointcp} from '../../actions/pointcp/deletePointcp';
 
 function PointCounterPoint(props) {
 
@@ -91,11 +93,15 @@ function PointCounterPoint(props) {
         }
 
         const handleOnDelete1 = (e) => {
-
+            e.preventDefault()
+            dispatch(deletePointcp(newestId))
+            history.back('/')
         }
 
         const handleOnDelete2 = (e) => {
-
+            e.preventDefault()
+            dispatch(deletePointcp(olderId))
+            history.back('/')
         }
 
         return (
@@ -119,8 +125,8 @@ function PointCounterPoint(props) {
                     { inEditMode1 === true &&
                         <div className="individualPostDiv">
                             <PointcpEditForm setInEditMode={setInEditMode1} pointcpArticle={newestSectionOne} pointcp_id={newestId} />
-                            <button onClick={handleOnBack1} className="adminButtons">BACK TO ARTICLE</button>
-                            <button onClick={handleOnDelete1} className="adminButtons">DELETE ARTICLE</button>
+                            <button onClick={handleOnBack1} className="adminButtons">BACK TO POINT-CP</button>
+                            <button onClick={handleOnDelete1} className="adminButtons">DELETE POINT-CP</button>
                         </div>
                     }
 
