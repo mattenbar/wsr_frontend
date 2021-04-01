@@ -68,6 +68,7 @@ import CyberCryptArticle from './components/articles/cyberCryptArticle';
 import PeopleMoves from './components/categories/peopleMoves';
 import PeopleMovesArticle from './components/articles/peopleMovesArticle';
 import WordsInEdgewise from './components/categories/wordsInEdgewise'
+import WordsInEdgewiseArticle from './components/articles/wordsInEdgewiseArticle';
 
 
 class App extends React.Component{
@@ -154,6 +155,7 @@ class App extends React.Component{
           <Route exact path="/Shout-Outs-And-Put-Downs/:id" component={ShoutOutArticle} />
 
           <Route exact path="/Words-In-Edgewise" render={()=> <WordsInEdgewise />}/>
+          <Route exact path="/Words-In-Edgewise/:id" component={WordsInEdgewiseArticle} />
           
           
         </Switch>
