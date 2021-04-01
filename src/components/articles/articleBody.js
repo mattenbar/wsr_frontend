@@ -53,7 +53,7 @@ function ArticleBody(props) {
     }
     
     return (
-        console.log("postvotes", post),
+        // console.log("postvotes", post),
         <>
                 <img
                     src={post.attributes.image}
@@ -71,9 +71,18 @@ function ArticleBody(props) {
                         .parseZone(post.attributes.created_at)
                         .format("MMMM DD, YYYY")}
                 </h3>
-                <p className="individualPostContent" dangerouslySetInnerHTML={{ __html: post.attributes.content }}></p>
-                <button onClick={handleLike} className="likeButton"><img className="likeImage" src={'/thumbsUp.png'} alt="thumbsUp"/></button>
-                <button onClick={handleDislike} className="dislikeButton"><img className="dislikeImage" src={'/thumbsDown.png'} alt="thumbsDown"/></button>
+                { userId &&  
+                    <>
+                        <p className="individualPostContent" dangerouslySetInnerHTML={{ __html: post.attributes.content }}></p>
+                        <button onClick={handleLike} className="likeButton"><img className="likeImage" src={'/thumbsUp.png'} alt="thumbsUp"/></button>
+                        <button onClick={handleDislike} className="dislikeButton"><img className="dislikeImage" src={'/thumbsDown.png'} alt="thumbsDown"/></button>
+                    </>
+                }
+                {!userId && 
+                    <>
+                        <div><h1>Please Sign In To Read More</h1></div>
+                    </>
+                }
                 {/* <div className="socialShare">
                 <h3>share</h3>
                 </div> */}

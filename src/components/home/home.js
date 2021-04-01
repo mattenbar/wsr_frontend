@@ -19,6 +19,7 @@ class Home extends Component {
   render(){
 
     return(
+      console.log("home", this.props.posts),
       <div className="home-container">
         <LinksBar />
         <Carousel />
@@ -31,8 +32,12 @@ class Home extends Component {
             {/* <Transactions /> */}
           </div>
           {/* to change amount of posts in carousel change number below(keep it negative for most recent) */}
-          <ThisIssue posts={this.props.posts.slice(-5)} />
-          <LastIssue posts={this.props.posts.slice(-10, -5)} />
+          {this.props.posts.length > 0 && 
+          <>
+            <ThisIssue posts={this.props.posts.slice(-5)} />
+            <LastIssue posts={this.props.posts.slice(-10, -5)} />
+          </>
+        }
         </div>
       </div>
     )
