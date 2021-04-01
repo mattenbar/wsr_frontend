@@ -20,7 +20,6 @@ function Search2(props) {
             return (
                 <div key={post.id} className="searchResultPost">
                     <li>
-                        
                         <Link to={`${slug}/${post.id}`}post_id={post.id}>
                             <h3>{post.attributes.title}</h3>
                         </Link>
@@ -31,7 +30,7 @@ function Search2(props) {
         return (
             <div key={props.search} className="searchPage">
                 <div>
-                    <ul>{postsMapped}</ul>
+                    <ol>{postsMapped}</ol>
                 </div>
             </div>
         );

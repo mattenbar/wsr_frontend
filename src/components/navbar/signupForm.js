@@ -84,7 +84,11 @@ function SignupForm(props) {
                 <div className="field">
                     <label>Password</label><br />
                     <label style={{fontSize: ".75vw"}} >(*must be 8 characters include 1 Capital Letter, 1 Special Character & 1 Number)</label>
+<<<<<<< HEAD
                     <input type="password" onChange={handlePasswordChange} value={password} pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/>
+=======
+                    <input type="password" onChange={handlePasswordChange} value={password} pattern="^(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/>
+>>>>>>> a31722ab505359a8e394e9f5a850a901e44f7f51
                 </div>
                 <div className="field">
                     <label>Password Confirmation</label>

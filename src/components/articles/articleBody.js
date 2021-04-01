@@ -27,6 +27,7 @@ function ArticleBody(props) {
                 post_id: post.id,
                 user_id: userId,
                 like: 1,
+                dislike: 0,
             };
 
             dispatch(addLikesDislikes(postVoteData));
@@ -45,6 +46,7 @@ function ArticleBody(props) {
             let postVoteData = {
                 post_id: post.id,
                 user_id: userId,
+                like: 0,
                 dislike: 1,
             };
 
