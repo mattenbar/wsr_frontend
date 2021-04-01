@@ -1364,6 +1364,7 @@ body {
 
 .pointcpContainer {
     position: relative;
+    margin-bottom: 2em;
 }
 
 .pointContainer1,
@@ -1545,11 +1546,27 @@ body {
 }
 
 .winner h1 {
-    color: rgba(0, 59, 91);
+    color: rgb(0, 59, 91);
 }
 
 .trophyHeaders {
     text-align: center;
+}
+
+.linkToArchives {
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: rgb(0, 59, 91);
+    transition: all 0.5s ease;
+    margin: 1em;
+}
+
+.linkToArchives:hover,
+.linkToArchives:active {
+    font-size: 1.75vw;
+    transform: translateY(-5px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 4px grey;
 }
 
 /* -----------------------------------END POINT-COUNTERPOINT---------------------------------------------- */
