@@ -28,11 +28,20 @@ body {
     -moz-osx-font-smoothing: grayscale;
     /* padding: 2em; */
     font-family: europaRegular;
+    max-width: 87em;
+    margin: auto;
 }
 
 @media (min-width: 62em) {
     body {
         padding: 5%;
+        padding-top: 4%;
+    }
+}
+
+@media (min-width: 85em) {
+    body {
+        padding: 0;
         padding-top: 4%;
     }
 }
