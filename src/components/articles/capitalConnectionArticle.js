@@ -47,9 +47,7 @@ function CapitalConnectionArticle(props) {
         dispatch(deletePost(post_id))
         props.history.push('/');
     }
-
-   
-
+    
     if (post.attributes === undefined) {
         return (
             (

@@ -72,9 +72,8 @@ function ArticleBody(props) {
                         .format("MMMM DD, YYYY")}
                 </h3>
                 <p className="individualPostContent" dangerouslySetInnerHTML={{ __html: post.attributes.content }}></p>
-                <button onClick={handleLike}>LIKE</button>
-                <br />
-                <button onClick={handleDislike}>DISLIKE</button>
+                <button onClick={handleLike} className="likeButton"><img className="likeImage" src={'/thumbsUp.png'} alt="thumbsUp"/></button>
+                <button onClick={handleDislike} className="dislikeButton"><img className="dislikeImage" src={'/thumbsDown.png'} alt="thumbsDown"/></button>
                 {/* <div className="socialShare">
                 <h3>share</h3>
                 </div> */}
