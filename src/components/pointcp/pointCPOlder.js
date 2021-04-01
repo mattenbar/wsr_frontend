@@ -130,6 +130,7 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
                     <div>
                         <button onClick={handleEditDeleteClick2} className="adminButtons">EDIT / DELETE ARTICLE</button>
                     </div>
+                }
                     
                 {dateDifference(article.end_date) > 0 &&
                     getDivs("newestCountdown")

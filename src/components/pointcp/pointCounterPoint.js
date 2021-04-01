@@ -127,7 +127,7 @@ function PointCounterPoint(props) {
                     { inEditMode2 === false && pointArticles.length > 1 && 
                         <PointCPOlder
                             admin={admin}
-                            olderSectionTwo={olderSectionTwo}
+                            article={olderSectionTwo}
                             olderId={olderId}
                             handleEditDeleteClick2={handleEditDeleteClick2}
                         />
