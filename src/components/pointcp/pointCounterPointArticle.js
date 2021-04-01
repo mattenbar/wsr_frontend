@@ -54,6 +54,7 @@ function PointCounterPointArticle(props) {
                 pointcp_id: pointcp_id,
                 user_id: user_id,
                 articleOneVote: 1,
+                articleTwoVote: 0,
             };
 
             dispatch(voteArticleOne(pointcpData));
@@ -71,6 +72,7 @@ function PointCounterPointArticle(props) {
             let pointcpData2 = {
                 pointcp_id: pointcp_id,
                 user_id: user_id,
+                articleOneVote: 0,
                 articleTwoVote: 1,
             };
 

@@ -1,4 +1,6 @@
+
 import { API_URL } from '../apiConstants';
+
 
 export const addPost = (data) => {
 
@@ -25,6 +27,7 @@ export const addPost = (data) => {
       if (post.success) {
         alert(post.success)
         dispatch({type: 'ADD_POST', payload: post})
+        
       } else if (post.errors) {
       
       alert(post.errors.map(error => error))
