@@ -31,4 +31,3 @@ export default function managePcps(state = initialState, action) {
             return state;
     }
 }
-
