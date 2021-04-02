@@ -76,3 +76,4 @@ function mSTP(state){
   }
 
 export default connect(mSTP)(newsMakers);
+

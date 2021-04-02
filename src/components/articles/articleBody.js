@@ -89,7 +89,7 @@ function ArticleBody(props) {
                 {!userId && 
                     <>
                         <p className="individualPostContent" dangerouslySetInnerHTML={{ __html: truncatedContent + ' ...'}}></p>
-                        <h3 className="loginReadMore">Please <a href="#popup" >Sign Up</a> / <a href="#popup2" >Sign In</a> To Read More</h3>
+                        <h3 className="loginReadMore">Please <a href="#popup" >Sign Up</a> / <a href="#popup2" >Sign In</a> For Free To Read More</h3>
                     </>
                 }
                 {/* <div className="socialShare">

@@ -536,7 +536,6 @@ body {
 }
 
 @media (min-width: 66em) {
-
     .linksBarWeekOne-container {
         visibility: visible;
         display: contents;
@@ -550,10 +549,9 @@ body {
     .linksBarWeekOne-container a {
         color: black;
         text-decoration: none;
-        
     }
 
-    .linksBarWeekOne-links{
+    .linksBarWeekOne-links {
         margin-top: 2em;
         margin-bottom: 2em;
     }
@@ -571,10 +569,9 @@ body {
     .linksBarWeekTwo-container a {
         color: black;
         text-decoration: none;
-        
     }
 
-    .linksBarWeekTwo-links{
+    .linksBarWeekTwo-links {
         margin-top: 2em;
         margin-bottom: 2em;
     }
@@ -586,16 +583,11 @@ body {
 
     .linksBarWeekTwo-Bottom {
         font-size: 1.072em;
-        letter-spacing: .09em;
+        letter-spacing: 0.09em;
     }
 
-
-
-
-
-
     /* final linksbar */
-    
+
     .linksBar-container {
         visibility: visible;
         display: contents;
@@ -1008,10 +1000,10 @@ body {
     }
 
     .trcrsl h1 {
-        width: 50%;
-        margin-left: 30%;
-        margin-right: 30%;
-        font-size: 1.25em;
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 150%;
     }
 
     .trcrsl h2 {
@@ -1028,7 +1020,7 @@ body {
 
 .ticrsl {
     width: 100%;
-    height: 35em;
+    height: 17em;
     margin-bottom: 2em;
     border-top: 2px solid black;
     text-align: center;
@@ -1083,7 +1075,7 @@ body {
 
 @media (min-width: 43.75em) {
     .ticrsl {
-        height: 20em;
+        height: 17em;
         margin-bottom: 1em;
     }
 }
@@ -1096,16 +1088,16 @@ body {
 
 @media (min-width: 62em) {
     .ticrsl {
-        height: 20em;
+        height: 17em;
         /* margin-bottom: 4em; */
     }
 
     .ticrsl h1 {
-        width: 16%;
-        margin-left: 42%;
-        margin-right: 42%;
+        width: 20%;
+        margin-left: 40%;
+        margin-right: 40%;
         margin-top: -18px;
-        font-size: 2em;
+        font-size: 200%;
     }
 
     .ticrsl h2 {
@@ -1162,37 +1154,37 @@ body {
         color: rgba(0, 59, 91);
     }
 
+    .pointContainer1 {
+        padding-bottom: 3em;
+    }
+
     .pointContainer2 {
+        padding-bottom: 1em;
         margin-bottom: 2em;
     }
 
     .pointcp1,
     .pointcp2 {
-        height: auto;
-        /* margin-top: 2em; */
+        height: 30em;
+        /* overflow: hidden; */
         margin-bottom: 4em;
-    }
-
-    .pointcp3,
-    .pointcp4 {
-        height: auto;
-        margin-top: 0em;
-        margin-bottom: 2em;
+        position: relative;
     }
 
     .pointcp1 {
     }
 
-    .pointcpContent {
-        font-size: 1.1em;
-        margin-top: 1.25em;
-        text-align: justify;
-        height: auto;
-    }
-
     .pointcp2 {
         align-content: right;
         text-align: right;
+    }
+
+    .pointcp3,
+    .pointcp4 {
+        height: 30em;
+        margin-top: 0em;
+        margin-bottom: 4em;
+        position: relative;
     }
 
     .pointcp3 {
@@ -1201,6 +1193,21 @@ body {
     .pointcp4 {
         align-content: right;
         text-align: right;
+    }
+
+    .pointcpContent {
+        font-size: 1.1em;
+        margin-top: 1.25em;
+        text-align: justify;
+        height: 15em;
+        overflow: hidden;
+    }
+
+    .pointcpContent p {
+        max-height: 10em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* background: -webkit-linear-gradient(#000, #fff); */
     }
 
     .pointTop {
@@ -1236,9 +1243,18 @@ body {
         object-fit: cover;
     }
 
-    .pointVote1,
+    .pointVote1 {
+        position: absolute;
+        left: 0;
+        bottom: -3em;
+    }
+
     .pointVote2 {
-        position: relative;
+        width: auto;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        bottom: -3em;
     }
 
     .pointVote3,
@@ -1247,29 +1263,31 @@ body {
         margin-bottom: 4em;
     }
 
-    .pv2 {
-        width: auto;
-        position: absolute;
-        right: 0px;
-        text-align: right;
+    .boxingButton {
+        border: none;
+        background: none;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        cursor: pointer;
     }
-    .pv1 {
-        position: absolute;
-        left: 0px;
+
+    .boxingButton:focus {
+        box-shadow: none !important;
     }
 
     .pv1,
     .pv2 {
-        margin-top: 1em;
         display: flex;
         transition: all 0.5s ease;
     }
 
     .pv1 h2,
     .pv2 h2 {
+        margin-top: 0.2em;
         /* display: inline-block; */
         font-size: 2em;
         width: 100%;
+        text-transform: uppercase;
     }
 
     .pv1:hover,
@@ -1285,17 +1303,6 @@ body {
         width: 3.5em;
         height: 3.5em;
         /* margin-top: -20em; */
-    }
-    .boxingButton {
-        border: none;
-        background: none;
-        margin-top: 3em;
-        margin-bottom: 2em;
-    }
-
-    .boxingButton h2 {
-        margin-top: 0.2em;
-        margin-bottom: 2em;
     }
 
     .boxingButton3 {
@@ -1352,13 +1359,13 @@ body {
 
     .countdownText h2 {
         position: absolute;
-        bottom: 3.5em;
+        bottom: 1em;
         left: 39%;
     }
 
     .countdownText2 h2 {
         position: absolute;
-        bottom: 7em;
+        bottom: 5em;
         left: 39%;
     }
 
@@ -1389,7 +1396,7 @@ body {
     }
 
     .editDeletePointCP {
-        margin-top: 0em;
+        margin-top: 5em;
     }
 
     .editDeletePointCP1 {
@@ -1768,7 +1775,7 @@ body {
 /* -----------------------------------INDIVUAL POST PAGE---------------------------------------------- */
 
 .individualPostDiv {
-    border-bottom: solid 3px black;
+    /* border-bottom: solid 3px black; */
     text-align: justify;
     margin-bottom: 1em;
 }
@@ -1927,6 +1934,8 @@ body {
     /* margin-left: 5%;
     margin-right: 5%; */
     margin-bottom: 0.5em;
+    padding-top: 1.7em;
+    border-top: 2px solid black;
 }
 
 .ad-image1 {
