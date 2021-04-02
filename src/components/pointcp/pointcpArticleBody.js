@@ -82,6 +82,7 @@ return (
                         
                             <div className="pointHeaderRight">
                                     <div className="pointbottom">
+                                        <h1>Agree</h1>
                                         <h1>{article.titleOne}</h1>
                                         <h2>{article.authorOne}</h2>
                                         <h3>{moment
@@ -105,6 +106,7 @@ return (
                 <div className="pointTop2">
                         <div className="pointHeaderRight"> 
                             <div className="pointbottom2">
+                            <h1>Disagree</h1>
                             <h1>{article.titleTwo}</h1>
                             <h2>{article.authorTwo}</h2>
                             <h3>{moment
