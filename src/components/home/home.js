@@ -3,6 +3,9 @@ import {connect} from 'react-redux';
 // import {Link} from "react-router-dom"
 
 //importing components for home
+import LinksBarWeekOne from './linksbars/linksBarWeekOne'
+import LinksBarWeekTwo from './linksbars/linksBarWeekTwo'
+import LinksBarWeekThree from './linksbars/linksBarWeekThree'
 import LinksBar from './linksBar';
 import Carousel from './carousel';
 import Features from './features';
@@ -21,7 +24,10 @@ class Home extends Component {
     return(
       console.log("home", this.props.posts),
       <div className="home-container">
-        <LinksBar />
+        {/* <LinksBarWeekOne /> */}
+        <LinksBarWeekTwo />
+        {/* <LinksBarWeekThree /> */}
+        {/* <LinksBar /> */}
         <Carousel />
         <Features />
         <div className="home-triple-row-grid" >
