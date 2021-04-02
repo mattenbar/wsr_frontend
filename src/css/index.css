@@ -556,11 +556,16 @@ body {
         display: contents;
         /* padding: 2%; */
         text-align: justify;
-        font-size: .62vw;
+        font-size: .63vw;
         color: black;
         padding-right: 0;
         padding-left: 0;
         margin-bottom: 1em;
+    }
+
+    .linksBar-links {
+        margin-bottom: 2em;
+        
     }
 
 
@@ -569,7 +574,7 @@ body {
         text-decoration: none;
         text-align: justify;
         padding: 0;
-        
+       
     
 
     }
@@ -828,7 +833,7 @@ body {
 
 @media (min-width: 62em) {
     .features {
-        height: 58vh;
+        height: 32vh;
     }
 
     .feature-wrapper {

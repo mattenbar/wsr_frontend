@@ -99,6 +99,7 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
                                 }
                         }} className="pointcpLinks"> 
                                 <div className="pointbottom">
+                                <h1>Agree</h1>
                                 <h1>{article.titleOne}</h1>
                                 <h2>{article.authorOne}</h2>
                                 <h3>{moment
@@ -131,6 +132,7 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
                             }
                         }} className="pointcpLinks"> 
                                 <div className="pointbottom2">
+                                <h1>Disagree</h1>
                                 <h1>{article.titleTwo}</h1>
                                 <h2>{article.authorTwo}</h2>
                                 <h3>{moment
@@ -151,18 +153,19 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
                         getDivs("pointVote2")
                     }
                 </div>
-                { admin &&
-                    <div>
-                        <button onClick={handleEditDeleteClick2} className="adminButtons">EDIT / DELETE ARTICLE</button>
-                    </div>
-                }
-                    
                 {dateDifference(article.end_date) > 0 &&
                     getDivs("newestCountdown")
                 }
                 {dateDifference(article.end_date) <= 0 &&
                     getDivs("newestWinner")
                 }
+                { admin &&
+                    <div>
+                        <button onClick={handleEditDeleteClick2} className="adminButtons">EDIT / DELETE ARTICLE</button>
+                    </div>
+                }
+                    
+                
             </div>
             
         </>
