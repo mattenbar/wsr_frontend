@@ -1995,7 +1995,7 @@ body {
     line-height: 1.2;
     /* letter-spacing: 0.25px; */
     white-space: pre-line;
-    font-size: 1.25vw;
+    font-size: 1.75vw;
 }
 
 .individualPostImage {
@@ -2009,6 +2009,11 @@ body {
 .individualPostTitle,
 .individualPostAuthor {
     text-transform: uppercase;
+}
+
+.loginReadMore {
+    margin-top: -3em;
+    padding-bottom: 3em;
 }
 
 .socialShare {
