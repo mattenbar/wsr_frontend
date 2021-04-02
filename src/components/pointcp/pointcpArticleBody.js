@@ -16,23 +16,25 @@ function pointcpArticleBody({admin, article, winner, pointcp_id, handleVotingCli
     const getDivs = (divName) => {
         switch(divName){
             case "pointVote1":
-                return (<div className="pointVote1">
-                    <button className="boxingButton" onClick={handleVotingClickButtonOne} >
-                        <div className="pv1">
-                            <h2>VOTE FOR {article.authorOne} &nbsp;&nbsp;<img src='/boxGloveLeft.png' className="boxGlove"/></h2>
-                            {/* <img src='/boxGloveLeft.png' className="boxGlove"/> */}
-                            {/* <h3 style={{color: "red", fontSize: "1vw"}} >[Votes: {article.votesPointCPOne}]</h3> */}
-                        </div>
-                    </button>
-                </div>)
+                return (
+                    <div className="pointVote3">
+                        <button className="boxingButton3" onClick={handleVotingClickButtonOne} >
+                            <div className="pv1">
+                                <h2>VOTE FOR {article.authorOne} &nbsp;&nbsp;</h2><img src='/boxGloveLeft.png' className="boxGlove"/>
+                                {/* <img src='/boxGloveLeft.png' className="boxGlove"/> */}
+                                {/* <h3 style={{color: "red", fontSize: "1vw"}} >[Votes: {article.votesPointCPOne}]</h3> */}
+                            </div>
+                        </button>
+                    </div>
+                )
 
             case "pointVote2":
                 return(
-                    <div className="pointVote2">
-                        <button className="boxingButton" onClick={handleVotingClickButtonTwo} >
+                    <div className="pointVote4">
+                        <button className="boxingButton3" onClick={handleVotingClickButtonTwo} >
                             <div className="pv2">
                                 {/* <h3 style={{color: "red", fontSize: "1vw"}}>[Votes: {article.votesPointCPTwo}]</h3> */}
-                                <h2>VOTE FOR {article.authorTwo} &nbsp;&nbsp;<img src='/boxGloveLeft.png' className="boxGlove"/></h2>
+                                <h2>VOTE FOR {article.authorTwo} &nbsp;&nbsp;</h2><img src='/boxGloveLeft.png' className="boxGlove"/>
                             </div>
                         </button>
                     </div>
@@ -40,8 +42,8 @@ function pointcpArticleBody({admin, article, winner, pointcp_id, handleVotingCli
 
             case "newestCountdown":
                 return(
-                    <div className="newestCountdown" >
-                        <div className="countdownText" >
+                    <div className="newestCountdown3" >
+                        <div className="countdownText3" >
                             <h2 style={{color: "rgb(0, 59, 91)"}}>VOTING ENDS IN {dateDifference(article.end_date)} DAYS</h2>
                         </div>
                     </div>
@@ -49,7 +51,7 @@ function pointcpArticleBody({admin, article, winner, pointcp_id, handleVotingCli
             
             case "newestWinner":
                 return(
-                    <div className="newestWinner" >
+                    <div className="newestWinner3" >
                         <img className="countdownTrophyImg" src="/trophy.png" />
                     <div className="trophyHeaders" >
                         <h2>WINNER</h2>
@@ -82,6 +84,7 @@ return (
                         
                             <div className="pointHeaderRight">
                                     <div className="pointbottom">
+                                        <h1>AGREE</h1>
                                         <h1>{article.titleOne}</h1>
                                         <h2>{article.authorOne}</h2>
                                         <h3>{moment
@@ -105,6 +108,7 @@ return (
                 <div className="pointTop2">
                         <div className="pointHeaderRight"> 
                             <div className="pointbottom2">
+                            <h1>DISAGREE</h1>
                             <h1>{article.titleTwo}</h1>
                             <h2>{article.authorTwo}</h2>
                             <h3>{moment

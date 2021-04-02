@@ -1494,6 +1494,12 @@ body {
         position: relative;
     }
 
+    .pointVote3,
+    .pointVote4 {
+        position: relative;
+        margin-bottom: 4em;
+    }
+
     .pv2 {
         width: auto;
         position: absolute;
@@ -1545,6 +1551,18 @@ body {
         margin-bottom: 2em;
     }
 
+    .boxingButton3 {
+        border: none;
+        background: none;
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+
+    .boxingButton3 h2 {
+        margin-top: 0.2em;
+        margin-bottom: 2em;
+    }
+
     .far {
         color: rgba(0, 0, 0, 0.5);
     }
@@ -1570,6 +1588,11 @@ body {
         margin-top: -5em;
     }
 
+    .newestCountdown3 {
+        text-align: center;
+        margin-bottom: 0em;
+    }
+
     .newestWinner2 {
         width: 50vw;
         display: flex;
@@ -1590,6 +1613,12 @@ body {
         position: absolute;
         bottom: 7em;
         left: 39%;
+    }
+
+    .countdownText3 h2 {
+        position: absolute;
+        bottom: -14em;
+        left: 40%;
     }
 
     .countdownTrophyImg {
