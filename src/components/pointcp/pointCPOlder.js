@@ -98,7 +98,8 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
                                     pointcp_id: olderId
                                 }
                         }} className="pointcpLinks"> 
-                                <div className="pointbottom">
+                            <div className="pointbottom">
+                                <h1>AGREE</h1>
                                 <h1>{article.titleOne}</h1>
                                 <h2>{article.authorOne}</h2>
                                 <h3>{moment
@@ -130,7 +131,8 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
                                 pointcp_id: olderId
                             }
                         }} className="pointcpLinks"> 
-                                <div className="pointbottom2">
+                            <div className="pointbottom2">
+                                <h1>DISAGREE</h1>
                                 <h1>{article.titleTwo}</h1>
                                 <h2>{article.authorTwo}</h2>
                                 <h3>{moment
