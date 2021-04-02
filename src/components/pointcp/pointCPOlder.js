@@ -170,11 +170,6 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
                 {dateDifference(article.end_date) <= 0 &&
                     getDivs("newestWinner")
                 }
-                { admin &&
-                    <div>
-                        <button onClick={handleEditDeleteClick2} className="adminButtons">EDIT / DELETE ARTICLE</button>
-                    </div>
-                }
                     
                 
             </div>
