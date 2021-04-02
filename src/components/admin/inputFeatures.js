@@ -42,7 +42,7 @@ class InputFeatures extends React.Component{
         {post.id} - {post.attributes.title}
       </option>)
 
-      p = p.reverse()
+      p = p.reverse().slice(0,10)
 
 
     if (p){
