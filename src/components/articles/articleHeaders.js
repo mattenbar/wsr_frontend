@@ -534,8 +534,8 @@ function articleHeaders(props) {
                             </a>
                         </div>
                         <div className="category-header">
-                            <a href={"/Point-Counterpoint"}></a>
-                            <h1>POINT-COUNTERPOINT</h1>
+                            <a href={"/Point-Counterpoint"}>
+                            <h1>POINT-COUNTERPOINT</h1></a>
                             <h4 className="tagline">
                                 Two industry leaders enter – One industry leader
                                 wins.

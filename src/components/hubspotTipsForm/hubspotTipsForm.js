@@ -9,12 +9,12 @@ function HubspotTipsForm(props) {
   const FORM_APPLICABLE_CATEGORIES_LIST = [
     {
       path: 'letters-from-larry',
-      formHeader: 'Have trends you’d like to point out for future Letters from Larry?  Submit your idea here',
+      formHeader: 'Have topics you’d like to point out for future Letters from Larry?  Submit your idea here:',
       formSubject: 'Letters From Larry',
     },
     {
       path: 'capital-connections',
-      formHeader: 'Do you have a successful story of your own to share when it comes to M&A deals, a new capital structure partnership or the sale of your business to a strategic or financial buyer?  Let us know here',
+      formHeader: 'Do you have a success story of your own to share when it comes to M&A deals, a new capital structure partnership or the sale of your business to a strategic or financial buyer?  Let us know here:',
       formSubject: 'Capital Connections',
     },
     {
@@ -24,37 +24,37 @@ function HubspotTipsForm(props) {
     },
     {
       path: 'the-digital-domain',
-      formHeader: 'Do you have a fintech firm, expert or solution you’d like us to cover? Let us know here',
+      formHeader: 'Do you have a fintech firm, expert or solution you’d like us to cover? Let us know here:',
       formSubject: 'The Digital Domain',
     },
     {
       path: 'wallet-share',
-      formHeader: 'Have ideas on sales, marketing and communications techniques to share with our community? Share your thoughts with us here',
+      formHeader: 'Have ideas on sales, marketing and communications techniques to share with our community? Share your thoughts with us here:',
       formSubject: 'Wallet Share',
     },
     {
       path: 'bizarre-industry-bazaar',
-      formHeader: 'Have a weird industry story you’d like to share? Let us know here.',
+      formHeader: 'Have a weird industry story you’d like to share? Let us know here:.',
       formSubject: 'Bizarre Industry Bazaar',
     },
     {
       path: 'investment-solutions-and-gatekeepers',
-      formHeader: 'Let us know if you have news to share about third-party asset managers or financial product platforms here',
+      formHeader: 'Let us know if you have news to share about third-party asset managers or financial product platforms here:',
       formSubject: 'Investment Solutions & Gatekeepers',
     },
     {
       path: 'nightmare-on-compliance-st',
-      formHeader: 'Have a compliance dilemma that doesn’t align with a black-and-white answer? Sander can help you navigate the gray areas of compliance – Submit your anonymous queries here',
+      formHeader: 'Have a compliance dilemma that doesn’t align with a black-and-white answer? Sander can help you navigate the gray areas of compliance – Submit your anonymous queries here:',
       formSubject: 'Nightmare on Compliance Street',
     },
     {
       path: 'buy-it-or-build-it',
-      formHeader: 'Have a “buy it or build it” dilemma or solution you’d like to share? Let us know here',
+      formHeader: 'Have a “buy it or build it” dilemma or solution you’d like to share? Let us know here:',
       formSubject: 'Buy It or Build It?',
     },
     {
       path: 'cybercrypt-tales',
-      formHeader: 'Have a cybersecurity question that you’d like to share anonymously for Sid Yenemanra to answer? Submit your anonymous queries here',
+      formHeader: 'Have a cybersecurity question that you’d like to share anonymously for Sid Yenemanra to answer? Submit your anonymous queries here:',
       formSubject: 'CyberCrypt Tales',
     },
   ];
