@@ -9,7 +9,7 @@ class PointcpInput extends React.Component {
   state = {
     pointcp: {
       topic: '',
-      end_date: '',
+      end_date: 'YYYY-MM-DD',
       titleOne: '',
       contentOne: '',
       authorOne: '',
@@ -94,7 +94,8 @@ class PointcpInput extends React.Component {
           <h1>Input Point Counterpoint</h1>
           <form onSubmit={this.handlePointcpSubmit} >
             <div>
-            <label>End Date</label>
+            <label>End Date </label>
+              <p> note: date picker only works on chrome - if using safari input format must be YYYY-MM-DD </p>
               <input type="date" onChange={this.handlePointcpChange} name="end_date" value={this.state.pointcp.end_date}/>
             </div>
             <div>
@@ -102,19 +103,19 @@ class PointcpInput extends React.Component {
               <input type="text"  onChange={this.handlePointcpChange} name="topic" value={this.state.pointcp.topic}/>
             </div>
             <div className="pointcpForm">
-              <label>Title One</label>
+              <label>Agree Title</label>
               <input onChange={this.handlePointcpChange} type="text" value={this.state.pointcp.title} name="titleOne" />
             </div>
             <div className="pointcpForm">
-              <label>Author One</label>
+              <label>Agree Author</label>
               <input onChange={this.handlePointcpChange} type="text" value={this.state.pointcp.author} name="authorOne" />
             </div>
             <div className="pointcpForm">
-              <label>Image One</label>
+              <label>Agree Image</label>
               <input id="files-upload" type="file"  accept="image/*" onChange={this.handleImageOneChange} name="imageTwo"/>
             </div>
             <div className="pointcpForm">
-              <label>Content One</label>
+              <label>Agree Content</label>
               <Editor
                 apiKey="xxdtys70gcr66orzrsr2v65wsqqzeff19c37xij80zax9qck"
                 initialValue="<p>This is the initial content of the editor</p>"
@@ -139,19 +140,19 @@ class PointcpInput extends React.Component {
                 <br/>
                 <br/>
             <div className="pointcpForm">
-              <label>Title Two</label>
+              <label>Disagree Title</label>
               <input onChange={this.handlePointcpChange} type="text" value={this.state.pointcp.title} name="titleTwo" />
             </div>
             <div className="pointcpForm">
-              <label>Author Two</label>
+              <label>Disagree Author</label>
               <input onChange={this.handlePointcpChange} type="text" value={this.state.pointcp.author} name="authorTwo" />
             </div>
             <div className="pointcpForm">
-              <label>Image Two</label>
+              <label>Disagree Image</label>
               <input id="files-upload" type="file"  accept="image/*" onChange={this.handleImageTwoChange} name="imageTwo"/>
             </div> 
             <div className="pointcpForm">
-              <label>Content Two</label>
+              <label>Disagree Content</label>
               <Editor
                 apiKey="xxdtys70gcr66orzrsr2v65wsqqzeff19c37xij80zax9qck"
                 initialValue="<p>This is the initial content of the editor</p>"

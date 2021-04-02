@@ -42,6 +42,8 @@ class InputShowads extends React.Component{
         {ad.id} - {ad.attributes.title} - {ad.attributes.company}
       </option>)
 
+      ads = ads.reverse().slice(0,10)
+
 
     if (ads){
       
