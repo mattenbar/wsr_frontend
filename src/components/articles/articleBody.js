@@ -12,6 +12,10 @@ function ArticleBody(props) {
 
     let post = props.post
 
+    let content = props.post.attributes.content
+
+    const truncatedContent = content.slice(0, 450);
+
     const dispatch = useDispatch()
 
     const handleLike = (e) => {
@@ -55,7 +59,7 @@ function ArticleBody(props) {
     }
     
     return (
-        // console.log("postvotes", post),
+        console.log("post"),
         <>
                 <img
                     src={post.attributes.image}
@@ -75,14 +79,15 @@ function ArticleBody(props) {
                 </h3>
                 { userId &&  
                     <>
-                        <p className="individualPostContent" dangerouslySetInnerHTML={{ __html: post.attributes.content }}></p>
+                        <p className="individualPostContent" dangerouslySetInnerHTML={{ __html: content }}></p>
                         <button onClick={handleLike} className="likeButton"><img className="likeImage" src={'/thumbsUp.png'} alt="thumbsUp"/></button>
                         <button onClick={handleDislike} className="dislikeButton"><img className="dislikeImage" src={'/thumbsDown.png'} alt="thumbsDown"/></button>
                     </>
                 }
                 {!userId && 
                     <>
-                        <div><h1>Please Sign In To Read More</h1></div>
+                        <p className="individualPostContent" dangerouslySetInnerHTML={{ __html: truncatedContent + ' ...'}}></p>
+                        <h3 className="loginReadMore">Please <a href="#popup" >Sign Up</a> / <a href="#popup2" >Sign In</a> To Read More</h3>
                     </>
                 }
                 {/* <div className="socialShare">
