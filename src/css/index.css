@@ -1383,227 +1383,279 @@ body {
 
 /* -----------------------------------POINT-COUNTERPOINT---------------------------------------------- */
 
-.pointcpContainer {
-    position: relative;
-    margin-bottom: 2em;
-}
+@media (min-width: 80em) {
+    .pointcpContainer {
+        position: relative;
+        margin-bottom: 2em;
+    }
 
-.pointContainer1,
-.pointContainer2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 52px;
-    /* background-color: darkblue; */
-    border-bottom: 2px solid black;
-}
+    .pointcptopic {
+        margin-top: 1em;
+        text-align: center;
+    }
 
-.pointContainer1 h2,
-.pointContainer2 h2 {
-    color: rgba(0, 59, 91);
-}
+    .pointcptopic h3 {
+        width: auto;
+    }
+    .pointcptopic h1 {
+        width: auto;
+    }
 
-.pointContainer2 {
-    margin-bottom: 2em;
-}
+    .pointContainer1,
+    .pointContainer2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 52px;
+        /* background-color: darkblue; */
+        border-bottom: 2px solid black;
+    }
 
-.pointcp1,
-.pointcp2 {
-    height: 65vh;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
+    .pointContainer1 h2,
+    .pointContainer2 h2 {
+        color: rgba(0, 59, 91);
+    }
 
-.pointcp3,
-.pointcp4 {
-    height: 65vh;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
+    .pointContainer2 {
+        margin-bottom: 2em;
+    }
 
-.pointcp1 {
-    /* background-color: blueviolet; */
-}
+    .pointcp1,
+    .pointcp2 {
+        height: auto;
+        /* margin-top: 2em; */
+        margin-bottom: 4em;
+    }
 
-.pointcpContent {
-    font-size: 1.25vw;
-    margin-top: 1.25em;
-    text-align: justify;
-    height: 25vh;
-}
+    .pointcp3,
+    .pointcp4 {
+        height: auto;
+        margin-top: 0em;
+        margin-bottom: 2em;
+    }
 
-.pointcp2 {
-    /* background-color: coral; */
-    align-content: right;
-    text-align: right;
-}
+    .pointcp1 {
+    }
 
-.pointcp3 {
-    /* background-color: darkcyan; */
-}
+    .pointcpContent {
+        font-size: 1.25vw;
+        margin-top: 1.25em;
+        text-align: justify;
+        height: 25vh;
+    }
 
-.pointcp4 {
-    /* background-color: darkred; */
-    align-content: right;
-    text-align: right;
-}
+    .pointcp2 {
+        align-content: right;
+        text-align: right;
+    }
 
-.pointTop {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 10px;
-}
+    .pointcp3 {
+    }
 
-.pointTop2 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 10px;
-}
+    .pointcp4 {
+        align-content: right;
+        text-align: right;
+    }
 
-.pointHeaderRight {
-    position: relative;
-}
+    .pointTop {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10px;
+    }
 
-.pointbottom {
-    position: absolute;
-    bottom: 7px;
-}
+    .pointTop2 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 10px;
+    }
 
-.pointbottom2 {
-    position: absolute;
-    bottom: 7px;
-    right: 0px;
-}
+    .pointHeaderRight {
+        position: relative;
+    }
 
-.pointcpImage {
-    width: 14vw;
-    height: 14vw;
-    object-fit: cover;
-}
+    .pointbottom {
+        position: absolute;
+        bottom: 7px;
+    }
 
-.pointVote1,
-.pointVote2 {
-    position: relative;
-}
+    .pointbottom2 {
+        position: absolute;
+        bottom: 7px;
+        right: 0px;
+    }
 
-.pv2 {
-    width: auto;
-    position: absolute;
-    right: 0px;
-    text-align: right;
-}
-.pv1 {
-    position: absolute;
-    left: 0px;
-}
+    .pointcpImage {
+        width: 14vw;
+        height: 14vw;
+        object-fit: cover;
+    }
 
-.pv1,
-.pv2 {
-    margin-top: 1em;
-    display: flex;
-    transition: all 0.5s ease;
-}
+    .pointVote1,
+    .pointVote2 {
+        position: relative;
+    }
 
-.pv1 h2,
-.pv2 h2 {
-    /* display: inline-block; */
-    font-size: 2vw;
-    width: 100%;
-}
+    .pv2 {
+        width: auto;
+        position: absolute;
+        right: 0px;
+        text-align: right;
+    }
+    .pv1 {
+        position: absolute;
+        left: 0px;
+    }
 
-.pv1:hover,
-.pv1:active,
-.pv2:hover,
-.pv2:active {
-    transform: translateY(-3px);
-    transition: all 0.5s ease;
-    text-shadow: 2px 2px 4px grey;
-}
+    .pv1,
+    .pv2 {
+        margin-top: 1em;
+        display: flex;
+        transition: all 0.5s ease;
+    }
 
-.boxGlove {
-    width: 3.5vw;
-    /* margin-top: -20em; */
-}
-.boxingButton {
-    border: none;
-    background: none;
-}
+    .pv1 h2,
+    .pv2 h2 {
+        /* display: inline-block; */
+        font-size: 2vw;
+        width: 100%;
+    }
 
-.far {
-    color: rgba(0, 0, 0, 0.5);
-}
-.newestCountdown {
-    position: relative;
-    text-align: center;
-}
-.countdownText h2 {
-    position: absolute;
-    bottom: 50px;
-    left: 39%;
+    .pv1:hover,
+    .pv1:active,
+    .pv2:hover,
+    .pv2:active {
+        transform: translateY(-3px);
+        transition: all 0.5s ease;
+        text-shadow: 2px 2px 4px grey;
+    }
 
-    /* width: auto; */
-    /* margin-bottom: -10em; */
-}
+    .boxGlove {
+        width: 3.5em;
+        height: 3.5em;
+        /* margin-top: -20em; */
+    }
+    .boxingButton {
+        border: none;
+        background: none;
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
 
-.countdownTrophyImg {
-    width: 8%;
-}
+    .boxingButton h2 {
+        margin-top: 0.2em;
+        margin-bottom: 2em;
+    }
 
-.trophyImg {
-    width: 40%;
-}
+    .far {
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .newestCountdown1 {
+        position: relative;
+        text-align: center;
+    }
 
-.winner {
-    width: 20vw;
-    display: flex;
-    /* margin: 0 auto; */
-    position: absolute;
-    left: 39%;
-    bottom: 0%;
-    padding-bottom: 2em;
-}
+    .newestWinner1 {
+        /* margin-top: -50em; */
+        width: 50vw;
+        display: flex;
+        /* margin: 0 auto; */
+        position: absolute;
+        left: 40%;
+        bottom: 46%;
+        padding-bottom: 2em;
+    }
 
-.winner h2 {
-    color: black;
-}
+    .newestCountdown2 {
+        /* position: relative; */
+        text-align: center;
+        margin-top: -5em;
+    }
 
-.winner h1 {
-    color: rgb(0, 59, 91);
-}
+    .newestWinner2 {
+        width: 50vw;
+        display: flex;
+        /* margin: 0 auto; */
+        position: absolute;
+        left: 41%;
+        bottom: 5%;
+        padding-bottom: 2em;
+    }
 
-.trophyHeaders {
-    text-align: center;
-}
+    .countdownText h2 {
+        position: absolute;
+        bottom: 3.5em;
+        left: 39%;
+    }
 
-.linkToArchives {
-    text-decoration: none;
-    font-size: 1.5vw;
-    color: rgb(0, 59, 91);
-    transition: all 0.5s ease;
-    margin: 1em;
-}
+    .countdownText2 h2 {
+        position: absolute;
+        bottom: 7em;
+        left: 39%;
+    }
 
-.linkToArchives:hover,
-.linkToArchives:active {
-    font-size: 1.75vw;
-    transform: translateY(-5px);
-    transition: all 0.5s ease;
-    text-shadow: 2px 2px 4px grey;
-}
+    .countdownTrophyImg {
+        width: 8%;
+    }
 
-.pointcpLinks {
-    text-decoration: none;
-    font-size: 1.5vw;
-    color: black;
-    transition: all 0.5s ease;
-    margin: 1em;
-}
+    .trophyImg {
+        width: 40%;
+    }
 
-.pointcpLinks:hover,
-.pointcpLinks:active {
-    /* font-size: 1.55vw; */
-    transform: translateY(-2px);
-    transition: all 0.5s ease;
-    text-shadow: 2px 2px 2px rgb(148, 146, 146);
+    .winner h2 {
+        color: black;
+    }
+
+    .winner h1 {
+        color: rgb(0, 59, 91);
+    }
+
+    .trophyHeaders {
+        text-align: center;
+    }
+
+    .editDeletePointCP {
+        margin-top: 0em;
+    }
+
+    .editDeletePointCP1 {
+        margin-top: 2.5em;
+    }
+
+    .linkToArchives-Container {
+        width: 40%;
+        margin: auto;
+    }
+
+    .linkToArchives {
+        text-decoration: none;
+        font-size: 2vw;
+        color: rgb(0, 59, 91);
+        transition: all 0.5s ease;
+        margin: 1em;
+    }
+
+    .linkToArchives:hover,
+    .linkToArchives:active {
+        font-size: 1.75vw;
+        transform: translateY(-5px);
+        transition: all 0.5s ease;
+        text-shadow: 2px 2px 4px grey;
+    }
+
+    .pointcpLinks {
+        text-decoration: none;
+        font-size: 1.5vw;
+        color: black;
+        transition: all 0.5s ease;
+        margin: 1em;
+    }
+
+    .pointcpLinks:hover,
+    .pointcpLinks:active {
+        /* font-size: 1.55vw; */
+        transform: translateY(-2px);
+        transition: all 0.5s ease;
+        text-shadow: 2px 2px 2px rgb(148, 146, 146);
+    }
 }
 
 /* -----------------------------------END POINT-COUNTERPOINT---------------------------------------------- */

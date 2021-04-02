@@ -33,7 +33,7 @@ function PointCPNewest({admin, article, newestId, handleVotingClickButtonOne, ha
                     return (<div className="pointVote1">
                         <button className="boxingButton" onClick={handleVotingClickButtonOne} >
                             <div className="pv1">
-                                <h2>VOTE FOR {article.authorOne} &nbsp;&nbsp;<img src='/boxGloveLeft.png' className="boxGlove"/></h2>
+                                <h2>VOTE FOR {article.authorOne} &nbsp;&nbsp;</h2><img src='/boxGloveLeft.png' className="boxGlove"/>
                                 {/* <img src='/boxGloveLeft.png' className="boxGlove"/> */}
                                 {/* <h3 style={{color: "red", fontSize: "1vw"}} >[Votes: {article.votesPointCPOne}]</h3> */}
                             </div>
@@ -46,7 +46,7 @@ function PointCPNewest({admin, article, newestId, handleVotingClickButtonOne, ha
                             <button className="boxingButton" onClick={handleVotingClickButtonTwo} >
                                 <div className="pv2">
                                     {/* <h3 style={{color: "red", fontSize: "1vw"}}>[Votes: {article.votesPointCPTwo}]</h3> */}
-                                    <h2>VOTE FOR {article.authorTwo} &nbsp;&nbsp;<img src='/boxGloveLeft.png' className="boxGlove"/></h2>
+                                    <h2>VOTE FOR {article.authorTwo} &nbsp;&nbsp;</h2><img src='/boxGloveLeft.png' className="boxGlove"/>
                                 </div>
                             </button>
                         </div>
@@ -54,7 +54,7 @@ function PointCPNewest({admin, article, newestId, handleVotingClickButtonOne, ha
 
                 case "newestCountdown":
                     return(
-                        <div className="newestCountdown" >
+                        <div className="newestCountdown1" >
                             <div className="countdownText" >
                                 <h2 style={{color: "rgb(0, 59, 91)"}}>VOTING ENDS IN {dateDifference(article.end_date)} DAYS</h2>
                             </div>
@@ -63,11 +63,11 @@ function PointCPNewest({admin, article, newestId, handleVotingClickButtonOne, ha
                 
                 case "newestWinner":
                     return(
-                        <div className="newestWinner" >
+                        <div className="newestWinner1" >
                             <img className="countdownTrophyImg" src="/trophy.png" />
                         <div className="trophyHeaders" >
-                            <h2>WINNER</h2>
-                            <h1>{winner}</h1>
+                            <h2 style={{color: "black)"}}>WINNER</h2>
+                            <h1 style={{color: "rgb(0, 59, 91)"}}>{winner}</h1>
                         </div>
                 </div>  
                     )
@@ -80,12 +80,12 @@ function PointCPNewest({admin, article, newestId, handleVotingClickButtonOne, ha
 
     return (
         <>  
-        <div className="pointcptopic" >
-            <div>
-                <h3>TOPIC:</h3>
-                <h1>{article.topic}</h1>
+            <div className="pointcptopic" >
+                <div>
+                    <h3>TOPIC:</h3>
+                    <h1>{article.topic}</h1>
+                </div>
             </div>
-        </div>
             <div className="pointContainer1">
                 <div className="pointcp1">
                     <div className="pointTop">
@@ -118,9 +118,11 @@ function PointCPNewest({admin, article, newestId, handleVotingClickButtonOne, ha
                         </p>
                         
                     </div>
-                    {dateDifference(article.end_date) > 0 &&
-                        getDivs("pointVote1")
-                    }
+                    <div className="votingInfo" >
+                        {dateDifference(article.end_date) > 0 &&
+                            getDivs("pointVote1")
+                        }
+                    </div>
                 </div>
                 <div className="pointcp2">
                     <div className="pointTop2">
@@ -153,7 +155,7 @@ function PointCPNewest({admin, article, newestId, handleVotingClickButtonOne, ha
                     }
                 </div>
                 { admin &&
-                    <div>
+                    <div className="editDeletePointCP">
                         <button onClick={handleEditDeleteClick} className="adminButtons">EDIT / DELETE ARTICLE</button>
                     </div>
                     
