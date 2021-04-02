@@ -55,7 +55,6 @@ body {
 .navbar {
     width: 100%;
     display: table;
-    
 }
 
 .nav-left {
@@ -132,10 +131,7 @@ body {
 
 .matchingPasswords {
     text-decoration: none;
-    /* font-size: 1.5vw; */
-    /* color: rgb(0, 59, 91); */
     transition: all 0.5s ease;
-    /* margin: 1em; */
 }
 
 .divider {
@@ -166,31 +162,28 @@ body {
 
 @media (min-width: 62em) {
     .navbar {
-        height: 18em;
+        height: 15em;
         vertical-align: bottom;
     }
     .nav-left {
         width: 5%;
-        
     }
 
     .nav-right {
         width: 95%;
         vertical-align: middle;
-       
     }
 
-    .nav-content{
+    .nav-content {
         display: grid;
-        height: 15vh;
+        height: 12em;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
-        
     }
 
     .nav-header {
         vertical-align: middle;
-        padding-top: .75em;
+        padding-top: 0.75em;
     }
 
     .header-login-signup {
@@ -198,7 +191,6 @@ body {
         position: absolute;
         bottom: 1em;
         right: 0;
-        
     }
 
     .nav-header h1 {
@@ -233,7 +225,6 @@ body {
         text-align: center;
     }
 }
-
 
 /* -----------------------------------search bar---------------------------------------------- */
 .header-search-bar {
@@ -282,7 +273,7 @@ body {
     }
 } */
 
-@media (min-width: 62em) {
+@media (min-width: 80em) {
     .header-search-bar {
         padding-bottom: 2.5em;
         margin-top: 0em;
@@ -290,8 +281,6 @@ body {
         /* margin-right: 20em; */
     }
 }
-
-
 
 /* -----------------------------------social media buttons---------------------------------------------- */
 
@@ -315,21 +304,19 @@ body {
     }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 80em) {
     .smb-yellow {
         width: 12%;
         margin-top: 0em;
     }
 }
 
-
-
 /* -----------------------------------END social media buttons---------------------------------------------- */
 
 /* -------------------------POP UP---------------------------- */
 
 .popup {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
@@ -531,15 +518,13 @@ body {
     }
 }
 
-
-
 /* --------------------END POP UP------------------------- */
 
 /* -----------------------------------END NAVBAR---------------------------------------------- */
 
 /* -----------------------------------START HOME---------------------------------------------- */
 
-.home-container{
+.home-container {
     margin-top: 1em;
 }
 
@@ -624,9 +609,8 @@ body {
 
     .linksBar-links {
         margin-bottom: 2em;
-        
     }
-    
+
     .linksBar-Top {
         font-size: 1.023em;
         margin-bottom: 1em;
@@ -641,18 +625,16 @@ body {
         font-size: 1.071em;
     }
 
-
     .linksBar-container a {
         color: black;
         text-decoration: none;
         padding: 0;
     }
 
-    .linksBar-container a:hover{
+    .linksBar-container a:hover {
         text-decoration: underline;
     }
 }
-
 
 /* -------------------END HOME/ LINKS BAR------------------- */
 
@@ -809,15 +791,14 @@ body {
     }
 }
 
-
 /* -------------------END image/link carousel------------- */
 /* -------------------START features---------------------- */
 
 .features {
     width: 100%;
-    height: 30vh;
+    height: 30em;
     margin-top: 2.5em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     border-top: 2px solid black;
     text-align: left;
 }
@@ -880,7 +861,7 @@ body {
 
 @media (min-width: 43.75em) {
     .features {
-        height: 30vh;
+        height: 30em;
         margin: 0;
     }
 
@@ -902,7 +883,7 @@ body {
 
 @media (min-width: 62em) {
     .features {
-        height: 32vh;
+        height: 28em;
     }
 
     .feature-wrapper {
@@ -940,22 +921,16 @@ body {
     margin-top: 0.5em;
 }
 
-.nmcrsl,
 .trcrsl {
     width: 100%;
     border-top: 2px solid black;
     text-align: center;
 }
 
-.nmcrsl {
-    height: 38vh;
-}
-
 .trcrsl {
-    height: 34vh;
+    height: 17em;
 }
 
-.nmcrsl h1,
 .trcrsl h1 {
     width: 66%;
     margin-left: 17%;
@@ -965,20 +940,17 @@ body {
     font-size: 1em;
 }
 
-.nmcrsl a,
 .trcrsl a {
     text-decoration: none;
     color: black;
 }
 
-.nmcrsl h2,
 .trcrsl h2 {
     margin-top: -1em;
     font-size: 0.75em;
     text-transform: capitalize;
 }
 
-.nmcrsl p,
 .trcrsl p {
     font-size: 0.5em;
     text-transform: capitalize;
@@ -1002,9 +974,8 @@ body {
         margin-top: em;
     }
 
-    .nmcrsl,
     .trcrsl {
-        height: 25vh;
+        height: 17em;
         margin-top: 1.5em;
     }
 
@@ -1016,7 +987,6 @@ body {
 }
 
 @media (min-width: 56.25em) {
-    .nmcrsl,
     .trcrsl {
         margin-bottom: 2em;
     }
@@ -1032,17 +1002,9 @@ body {
         margin-top: 0;
     }
 
-    .nmcrsl,
     .trcrsl {
         width: 48%;
-        height: 33vh;
-    }
-
-    .nmcrsl h1 {
-        width: 50%;
-        margin-left: 25%;
-        margin-right: 25%;
-        font-size: 1.25em;
+        height: 17em;
     }
 
     .trcrsl h1 {
@@ -1052,25 +1014,21 @@ body {
         font-size: 1.25em;
     }
 
-    .nmcrsl h2,
     .trcrsl h2 {
         font-size: 1.25em;
     }
 
-    .nmcrsl p,
     .trcrsl p {
         font-size: 1em;
     }
 }
-
-
 
 /* -------------------END newsmakers roundup/transactions & transitions---------------------- */
 /* -------------------START this issue/ last issue ---------------------- */
 
 .ticrsl {
     width: 100%;
-    height: 35vh;
+    height: 35em;
     margin-bottom: 2em;
     border-top: 2px solid black;
     text-align: center;
@@ -1125,7 +1083,7 @@ body {
 
 @media (min-width: 43.75em) {
     .ticrsl {
-        height: 25vh;
+        height: 20em;
         margin-bottom: 1em;
     }
 }
@@ -1138,8 +1096,8 @@ body {
 
 @media (min-width: 62em) {
     .ticrsl {
-        height: 33vh;
-        margin-bottom: 4em;
+        height: 20em;
+        /* margin-bottom: 4em; */
     }
 
     .ticrsl h1 {
@@ -1165,8 +1123,6 @@ body {
         align-items: center;
     }
 }
-
-
 
 /* -------------------END this issue/ last issue---------------------- */
 
@@ -1228,10 +1184,10 @@ body {
     }
 
     .pointcpContent {
-        font-size: 1.25vw;
+        font-size: 1.1em;
         margin-top: 1.25em;
         text-align: justify;
-        height: 25vh;
+        height: auto;
     }
 
     .pointcp2 {
@@ -1275,8 +1231,8 @@ body {
     }
 
     .pointcpImage {
-        width: 14vw;
-        height: 14vw;
+        width: 12em;
+        height: 12em;
         object-fit: cover;
     }
 
@@ -1312,7 +1268,7 @@ body {
     .pv1 h2,
     .pv2 h2 {
         /* display: inline-block; */
-        font-size: 2vw;
+        font-size: 2em;
         width: 100%;
     }
 
@@ -1364,7 +1320,7 @@ body {
 
     .newestWinner1 {
         /* margin-top: -50em; */
-        width: 50vw;
+        width: 50em;
         display: flex;
         /* margin: 0 auto; */
         position: absolute;
@@ -1385,7 +1341,7 @@ body {
     }
 
     .newestWinner2 {
-        width: 50vw;
+        width: 50em;
         display: flex;
         /* margin: 0 auto; */
         position: absolute;
@@ -1447,7 +1403,7 @@ body {
 
     .linkToArchives {
         text-decoration: none;
-        font-size: 2vw;
+        font-size: 1.75em;
         color: rgb(0, 59, 91);
         transition: all 0.5s ease;
         margin: 1em;
@@ -1455,19 +1411,11 @@ body {
 
     .linkToArchives:hover,
     .linkToArchives:active {
-        font-size: 1.75vw;
+        font-size: 1.8em;
         transform: translateY(-5px);
         transition: all 0.5s ease;
         text-shadow: 2px 2px 4px grey;
     }
-
-    /* .pointcpLinks {
-        text-decoration: none;
-        font-size: 1.5vw;
-        color: black;
-        transition: all 0.5s ease;
-        margin: 1em;
-    } */
 
     .archiveContainer {
         margin-top: 4em;
@@ -1479,11 +1427,9 @@ body {
     }
 
     .pointcpLinksList li {
-        /* list-style-type: none; Remove bullets */
-        padding: 0; /* Remove padding */
-        /* padding-left: 2em; */
-        margin: 0.5em; /* Remove margins */
-        font-size: 1.5vw;
+        padding: 0;
+        margin: 0.5em;
+        font-size: 1.25em;
         color: black;
     }
 
@@ -1495,7 +1441,6 @@ body {
 
     .pointcpLinks:hover,
     .pointcpLinks:active {
-        /* font-size: 1.55vw; */
         transform: translateY(-2px);
         transition: all 0.5s ease;
         text-shadow: 2px 2px 2px rgb(148, 146, 146);
@@ -1528,13 +1473,13 @@ body {
 
 .category-show h1 {
     padding-top: 1%;
-    font-size: 3vw;
+    font-size: 2.75em;
     padding-left: 0.3em;
     text-transform: uppercase;
 }
 
 .category-show h4 {
-    font-size: 1.4vw;
+    font-size: 1.25em;
     color: rgba(0, 59, 91);
     text-transform: uppercase;
     padding-left: 0.72em;
@@ -1551,7 +1496,7 @@ body {
 }
 
 .category-image {
-    width: 12vw;
+    width: 12em;
     border-right: solid black;
 }
 
@@ -1565,7 +1510,7 @@ body {
 }
 
 .category-show h5 {
-    font-size: 1vw;
+    font-size: 0.9em;
     padding-left: 1em;
     justify-content: left;
     margin: auto;
@@ -1579,7 +1524,7 @@ body {
 
 .about-us {
     text-align: justify;
-    font-size: 2vw;
+    font-size: 1.75em;
 }
 
 /* -----------------------------------END ABOUT US------------------------------------------- */
@@ -1630,11 +1575,11 @@ body {
     padding-bottom: 2%;
     text-align: center;
     font-weight: 300;
-    font-size: 3vw;
+    font-size: 2.6em;
 }
 
 .contact_us p {
-    font-size: 2vw;
+    font-size: 1.65em;
     text-align: justify;
     padding-top: 2%;
     padding-bottom: 2em;
@@ -1819,7 +1764,6 @@ body {
     }
 }
 
-
 /* -----------------------------------END OUR BOARD---------------------------------------------- */
 /* -----------------------------------INDIVUAL POST PAGE---------------------------------------------- */
 
@@ -1834,12 +1778,12 @@ body {
     line-height: 1.2;
     /* letter-spacing: 0.25px; */
     white-space: pre-line;
-    font-size: 1.5vw;
+    font-size: 1.25em;
 }
 
 .individualPostImage {
     width: 100%;
-    height: 57vh;
+    height: 27em;
     object-fit: cover;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -1869,7 +1813,7 @@ body {
 
 .likeButton,
 .dislikeButton {
-    width: 2.5vw;
+    width: 2.25em;
     background: none;
     color: inherit;
     border: none;
@@ -1877,7 +1821,7 @@ body {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    margin: 1vw;
+    margin: 1em;
 }
 
 .likeButton:hover,
@@ -1914,7 +1858,7 @@ body {
 .categoryTopRight img,
 .categoryTopLeft img {
     width: 100%;
-    height: 41vh;
+    height: 20em;
     object-fit: cover;
 }
 
@@ -1947,7 +1891,7 @@ body {
 
 .smallGrid img {
     width: 100%;
-    height: 36vh;
+    height: 17em;
     object-fit: cover;
 }
 
@@ -1974,8 +1918,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
 
 /* -----------------------------------END INDIVIDUAL CATEGORY PAGE---------------------------------------------- */
 
@@ -2032,8 +1974,6 @@ body {
         margin-left: 1%;
     }
 }
-
-
 
 /* -----------------------------------END AD SPACE---------------------------------------------- */
 
@@ -2176,8 +2116,6 @@ body {
         width: 30%;
     }
 }
-
-
 
 /* -----------------------------------END FOOTER---------------------------------------------- */
 
