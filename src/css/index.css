@@ -166,7 +166,7 @@ body {
 
 @media (min-width: 62em) {
     .navbar {
-        height: 20vh;
+        height: 18em;
         vertical-align: bottom;
     }
     .nav-left {
@@ -558,15 +558,19 @@ body {
         /* padding: 2%; */
         text-align: justify;
         color: black;
-        padding-right: 0;
-        padding-left: 0;
-        margin-bottom: 1em;
+
+        font-size: 1.123em;
     }
 
     .linksBarWeekOne-container a {
         color: black;
         text-decoration: none;
-        padding: 0;
+        
+    }
+
+    .linksBarWeekOne-links{
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
 
     .linksBar-container {
