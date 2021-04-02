@@ -556,7 +556,6 @@ body {
         display: contents;
         /* padding: 2%; */
         text-align: justify;
-        font-size: .63vw;
         color: black;
         padding-right: 0;
         padding-left: 0;
@@ -567,12 +566,25 @@ body {
         margin-bottom: 2em;
         
     }
+    
+    .linksBar-Top {
+        font-size: 1.023em;
+        margin-bottom: 1em;
+    }
+
+    .linksBar-Middle {
+        font-size: 1.0768em;
+        margin-bottom: 1em;
+    }
+
+    .linksBar-Bottom {
+        font-size: 1.071em;
+    }
 
 
     .linksBar-container a {
         color: black;
         text-decoration: none;
-        text-align: justify;
         padding: 0;
        
     
