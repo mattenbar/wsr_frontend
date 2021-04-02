@@ -551,6 +551,24 @@ body {
 }
 
 @media (min-width: 66em) {
+
+    .linksBarWeekOne-container {
+        visibility: visible;
+        display: contents;
+        /* padding: 2%; */
+        text-align: justify;
+        color: black;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 1em;
+    }
+
+    .linksBarWeekOne-container a {
+        color: black;
+        text-decoration: none;
+        padding: 0;
+    }
+
     .linksBar-container {
         visibility: visible;
         display: contents;
@@ -586,9 +604,6 @@ body {
         color: black;
         text-decoration: none;
         padding: 0;
-       
-    
-
     }
 
     .linksBar-container a:hover{
