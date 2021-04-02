@@ -28,18 +28,18 @@ body {
     -moz-osx-font-smoothing: grayscale;
     /* padding: 2em; */
     font-family: europaRegular;
-    max-width: 87em;
+    max-width: 80em;
     margin: auto;
 }
 
-@media (min-width: 62em) {
+@media (min-width: 55em) {
     body {
         padding: 5%;
         padding-top: 4%;
     }
 }
 
-@media (min-width: 85em) {
+@media (min-width: 80em) {
     body {
         padding: 0;
         padding-top: 4%;
@@ -2007,7 +2007,7 @@ body {
     line-height: 1.2;
     /* letter-spacing: 0.25px; */
     white-space: pre-line;
-    font-size: 1.75vw;
+    font-size: 1.5vw;
 }
 
 .individualPostImage {
@@ -2060,6 +2060,10 @@ body {
     transform: translateY(-3px);
     transition: all 0.5s ease;
     text-shadow: 2px 2px 4px grey;
+}
+
+.articleLikes {
+    margin-top: -2.5em;
 }
 
 .likeImage,

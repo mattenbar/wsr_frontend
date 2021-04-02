@@ -18,7 +18,8 @@ function AuthButtons(props) {
 
     const handleSignOut = () => {
         localStorage.removeItem("token")
-        props.history.push('/');
+        // props.history.push('/');
+        window.location.reload()
     }
 
     if (localStorage.getItem("token") === null) {
