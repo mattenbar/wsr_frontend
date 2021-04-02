@@ -148,7 +148,7 @@ function PointCounterPoint(props) {
                             <button onClick={handleOnDelete2} className="adminButtons">DELETE POINT-CP</button>
                         </div>
                     }
-                    <div>
+                    <div className="linkToArchives-Container">
                         <Link to="/Point-Counterpoint-Archives" className="linkToArchives">POINT-COUNTERPOINT ARCHIVES</Link>
                     </div>
             </div>

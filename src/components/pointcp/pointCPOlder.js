@@ -32,7 +32,7 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
                 return (<div className="pointVote1">
                     <button className="boxingButton" onClick={handleVotingClickButtonOne} >
                         <div className="pv1">
-                            <h2>VOTE FOR {article.authorOne} &nbsp;&nbsp;<img src='/boxGloveLeft.png' className="boxGlove"/></h2>
+                            <h2>VOTE FOR {article.authorOne} &nbsp;&nbsp;</h2><img src='/boxGloveLeft.png' className="boxGlove"/>
                             {/* <img src='/boxGloveLeft.png' className="boxGlove"/> */}
                             {/* <h3 style={{color: "red", fontSize: "1vw"}} >[Votes: {article.votesPointCPOne}]</h3> */}
                         </div>
@@ -45,7 +45,7 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
                         <button className="boxingButton" onClick={handleVotingClickButtonTwo} >
                             <div className="pv2">
                                 {/* <h3 style={{color: "red", fontSize: "1vw"}}>[Votes: {article.votesPointCPTwo}]</h3> */}
-                                <h2>VOTE FOR {article.authorTwo} &nbsp;&nbsp;<img src='/boxGloveLeft.png' className="boxGlove"/></h2>
+                                <h2>VOTE FOR {article.authorTwo} &nbsp;&nbsp;</h2><img src='/boxGloveLeft.png' className="boxGlove"/>
                             </div>
                         </button>
                     </div>
@@ -53,8 +53,8 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
 
             case "newestCountdown":
                 return(
-                    <div className="newestCountdown" >
-                        <div className="countdownText" >
+                    <div className="newestCountdown2" >
+                        <div className="countdownText2" >
                             <h2 style={{color: "rgb(0, 59, 91)"}}>VOTING ENDS IN {dateDifference(article.end_date)} DAYS</h2>
                         </div>
                     </div>
@@ -62,13 +62,13 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
             
             case "newestWinner":
                 return(
-                    <div className="newestWinner" >
-                        <img className="countdownTrophyImg" src="/trophy.png" />
-                    <div className="trophyHeaders" >
-                        <h2>WINNER</h2>
-                        <h1>{winner}</h1>
-                    </div>
-            </div>  
+                    <div className="newestWinner2" >
+                            <img className="countdownTrophyImg" src="/trophy.png" />
+                        <div className="trophyHeaders" >
+                            <h2 style={{color: "black"}}>WINNER</h2>
+                            <h1 style={{color: "rgb(0, 59, 91)"}}>{winner}</h1>
+                        </div>
+                    </div>  
                 )
 
             default:
@@ -98,8 +98,9 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
                                     pointcp_id: olderId
                                 }
                         }} className="pointcpLinks"> 
-                                <div className="pointbottom">
-                                <h1>Agree</h1>
+
+                            <div className="pointbottom">
+                                <h1>AGREE</h1>
                                 <h1>{article.titleOne}</h1>
                                 <h2>{article.authorOne}</h2>
                                 <h3>{moment
@@ -131,8 +132,10 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
                                 pointcp_id: olderId
                             }
                         }} className="pointcpLinks"> 
-                                <div className="pointbottom2">
-                                <h1>Disagree</h1>
+
+                            <div className="pointbottom2">
+                                <h1>DISAGREE</h1>
+
                                 <h1>{article.titleTwo}</h1>
                                 <h2>{article.authorTwo}</h2>
                                 <h3>{moment
@@ -153,6 +156,14 @@ function PointCPOlder({admin, article, olderId, handleEditDeleteClick2, handleVo
                         getDivs("pointVote2")
                     }
                 </div>
+
+                { admin &&
+                    <div className="editDeletePointCP1">
+                        <button onClick={handleEditDeleteClick2} className="adminButtons">EDIT / DELETE ARTICLE</button>
+                    </div>
+                }
+                    
+
                 {dateDifference(article.end_date) > 0 &&
                     getDivs("newestCountdown")
                 }
