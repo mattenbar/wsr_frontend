@@ -24,7 +24,7 @@ class LinksBar extends Component {
             
           </div>
           <div className="linksBar-Bottom">
-          <a href="/Point-Counterpoint">POINT-COUNTERPOINT</a> &nbsp; | &nbsp;
+            <a href="/Point-Counterpoint">POINT-COUNTERPOINT</a> &nbsp; | &nbsp;
             <a href="/Statshots">STATSHOTS</a> &nbsp; | &nbsp;
             <a href="/Shout-Outs-And-Put-Downs">SHOUT OUTS & PUT DOWNS</a>&nbsp; | &nbsp;
             <a href="/Transactions-And-Transitions">TRANSACTIONS & TRANSITIONS</a>&nbsp; | &nbsp;
