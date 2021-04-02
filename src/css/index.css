@@ -1670,12 +1670,35 @@ body {
         text-shadow: 2px 2px 4px grey;
     }
 
-    .pointcpLinks {
+    /* .pointcpLinks {
         text-decoration: none;
         font-size: 1.5vw;
         color: black;
         transition: all 0.5s ease;
         margin: 1em;
+    } */
+
+    .archiveContainer {
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+
+    .pointcpLinksList {
+        padding-left: 2em;
+    }
+
+    .pointcpLinksList li {
+        /* list-style-type: none; Remove bullets */
+        padding: 0; /* Remove padding */
+        /* padding-left: 2em; */
+        margin: 0.5em; /* Remove margins */
+        font-size: 1.5vw;
+        color: black;
+    }
+
+    .pointcpLinks {
+        text-decoration: none;
+        transition: all 0.5s ease;
     }
 
     .pointcpLinks:hover,
