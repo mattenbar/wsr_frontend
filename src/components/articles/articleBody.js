@@ -80,8 +80,10 @@ function ArticleBody(props) {
                 { userId &&  
                     <>
                         <p className="individualPostContent" dangerouslySetInnerHTML={{ __html: content }}></p>
-                        <button onClick={handleLike} className="likeButton"><img className="likeImage" src={'/thumbsUp.png'} alt="thumbsUp"/></button>
-                        <button onClick={handleDislike} className="dislikeButton"><img className="dislikeImage" src={'/thumbsDown.png'} alt="thumbsDown"/></button>
+                        <div className="articleLikes">
+                            <button onClick={handleLike} className="likeButton"><img className="likeImage" src={'/thumbsUp.png'} alt="thumbsUp"/></button>
+                            <button onClick={handleDislike} className="dislikeButton"><img className="dislikeImage" src={'/thumbsDown.png'} alt="thumbsDown"/></button>
+                        </div>
                     </>
                 }
                 {!userId && 
