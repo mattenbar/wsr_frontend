@@ -70,6 +70,7 @@ import PeopleMoves from './components/categories/peopleMoves';
 import PeopleMovesArticle from './components/articles/peopleMovesArticle';
 import WordsInEdgewise from './components/categories/wordsInEdgewise'
 import WordsInEdgewiseArticle from './components/articles/wordsInEdgewiseArticle';
+import HubspotTipsForm from "./components/hubspotTipsForm/hubspotTipsForm";
 
 
 class App extends React.Component{
@@ -160,6 +161,7 @@ class App extends React.Component{
           
           
         </Switch>
+        <HubspotTipsForm/>
         <Ads />
         <Footer />
       </div>
