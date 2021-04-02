@@ -121,6 +121,14 @@ body {
     text-shadow: 2px 2px 4px grey;
 }
 
+.matchingPasswords {
+    text-decoration: none;
+    /* font-size: 1.5vw; */
+    /* color: rgb(0, 59, 91); */
+    transition: all 0.5s ease;
+    /* margin: 1em; */
+}
+
 .divider {
     font-size: 1.15em;
     color: rgb(255, 208, 2);
