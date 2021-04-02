@@ -24,8 +24,8 @@ class Home extends Component {
     return(
       console.log("home", this.props.posts),
       <div className="home-container">
-        <LinksBarWeekOne />
-        {/* <LinksBarWeekTwo /> */}
+        {/* <LinksBarWeekOne /> */}
+        <LinksBarWeekTwo />
         {/* <LinksBarWeekThree /> */}
         {/* <LinksBar /> */}
         <Carousel />

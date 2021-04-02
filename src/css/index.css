@@ -573,6 +573,44 @@ body {
         margin-bottom: 2em;
     }
 
+    .linksBarWeekTwo-container {
+        visibility: visible;
+        display: contents;
+        /* padding: 2%; */
+        text-align: justify;
+        color: black;
+
+        font-size: 1.123em;
+    }
+
+    .linksBarWeekTwo-container a {
+        color: black;
+        text-decoration: none;
+        
+    }
+
+    .linksBarWeekTwo-links{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .linksBarWeekTwo-Top {
+        font-size: 1.061em;
+        margin-bottom: 1em;
+    }
+
+    .linksBarWeekTwo-Bottom {
+        font-size: 1.072em;
+        letter-spacing: .09em;
+    }
+
+
+
+
+
+
+    /* final linksbar */
+    
     .linksBar-container {
         visibility: visible;
         display: contents;
