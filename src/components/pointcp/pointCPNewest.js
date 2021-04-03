@@ -36,7 +36,10 @@ function PointCPNewest({
             case "pointVote1":
                 return (
                     <div className="pointVote1">
-                        <button className="boxingButton" onClick={handleVotingClickButtonOne}>
+                        <button
+                            className="boxingButton"
+                            onClick={handleVotingClickButtonOne}
+                        >
                             <div className="pv1">
                                 <h2>
                                     VOTE FOR {article.authorOne} &nbsp;&nbsp;
@@ -53,7 +56,10 @@ function PointCPNewest({
             case "pointVote2":
                 return (
                     <div className="pointVote2">
-                        <button className="boxingButton" onClick={handleVotingClickButtonTwo} >
+                        <button
+                            className="boxingButton"
+                            onClick={handleVotingClickButtonTwo}
+                        >
                             <div className="pv2">
                                 <h2>
                                     VOTE FOR {article.authorTwo} &nbsp;&nbsp;
@@ -100,10 +106,20 @@ function PointCPNewest({
     return (
         <>
             <div className="pointcptopic">
-                <div>
-                    <h3>TOPIC:</h3>
-                    <h1>{article.topic}</h1>
-                </div>
+                <Link
+                    to={{
+                        pathname: `/Point-Counterpoint/${newestId}`,
+                        state: {
+                            pointcp_id: newestId,
+                        },
+                    }}
+                    className="pointcpLinks"
+                >
+                    <div>
+                        <h3>TOPIC:</h3>
+                        <h1>{article.topic}</h1>
+                    </div>
+                </Link>
             </div>
             <div className="pointContainer1">
                 <div className="pointcp1">
@@ -117,26 +133,16 @@ function PointCPNewest({
                         </div>
 
                         <div className="pointHeaderRight">
-                            <Link
-                                to={{
-                                    pathname: `/Point-Counterpoint/${newestId}`,
-                                    state: {
-                                        pointcp_id: newestId,
-                                    },
-                                }}
-                                className="pointcpLinks"
-                            >
-                                <div className="pointbottom">
-                                    <h1>AGREE</h1>
-                                    <h1>{article.titleOne}</h1>
-                                    <h2>{article.authorOne}</h2>
-                                    <h3>
-                                        {moment
-                                            .parseZone(article.created_at)
-                                            .format("MMMM DD, YYYY")}
-                                    </h3>
-                                </div>
-                            </Link>
+                            <div className="pointbottom">
+                                <h1>AGREE</h1>
+                                <h1>{article.titleOne}</h1>
+                                <h2>{article.authorOne}</h2>
+                                <h3>
+                                    {moment
+                                        .parseZone(article.created_at)
+                                        .format("MMMM DD, YYYY")}
+                                </h3>
+                            </div>
                         </div>
                     </div>
                     <div className="pointcpContent">
@@ -147,8 +153,8 @@ function PointCPNewest({
                         ></p>
                     </div>
                     <>
-                            {dateDifference(article.end_date) > 0 &&
-                                getDivs("pointVote1")}
+                        {dateDifference(article.end_date) > 0 &&
+                            getDivs("pointVote1")}
                     </>
                 </div>
                 <div className="pointcp2">
@@ -192,7 +198,7 @@ function PointCPNewest({
                     </div>
                     <>
                         {dateDifference(article.end_date) > 0 &&
-                        getDivs("pointVote2")}
+                            getDivs("pointVote2")}
                     </>
                 </div>
                 {admin && (
