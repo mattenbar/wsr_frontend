@@ -55,6 +55,7 @@ function SignupForm(props) {
             setCompany('')
             setEmail('')
             setPassword('')
+            setPasswordConfirmation('')
             
             history.back('/');
         } else {

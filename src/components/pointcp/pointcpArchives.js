@@ -11,8 +11,8 @@ function PointcpArchives(props) {
     })
 
     if (pointcpArticles !== undefined) {
-
-        const mappedPointCP = pointcpArticles.map(article => {
+        let reversedPointArticles = pointcpArticles.reverse()
+        const mappedPointCP = reversedPointArticles.map(article => {
             return (
                 <div className="pointcpLinksList">
                     <Link to={{    

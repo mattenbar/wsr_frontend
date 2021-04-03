@@ -6,8 +6,10 @@ import moment from "moment";
 
 function archives(state) {
 
-    let reversedPosts = state.posts.reverse()
-    let posts = reversedPosts.map((post) => {
+    // why doesn't this always work? -->
+    // let reversedPosts = state.posts.reverse()
+    // let posts = reversedPosts.map((post) => {
+        let posts = state.posts.map((post) => {
         return (
             <div className="pointcpLinksList">
                 <li>
