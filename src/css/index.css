@@ -1122,7 +1122,7 @@ body {
 
 /* -----------------------------------POINT-COUNTERPOINT---------------------------------------------- */
 
-@media (min-width: 80em) {
+@media (min-width: 62em) {
     .pointcpContainer {
         position: relative;
         margin-bottom: 2em;
@@ -1404,8 +1404,10 @@ body {
     }
 
     .linkToArchives-Container {
-        width: 40%;
-        margin: auto;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        text-align: center;
     }
 
     .linkToArchives {
@@ -1548,6 +1550,29 @@ body {
     margin-bottom: 2em;
     text-align: center;
 }
+
+.archive-container {
+}
+
+/* .pointcpLinksList li {
+    padding: 0;
+    margin: 0.5em;
+    font-size: 1.25em;
+    color: black;
+}
+
+.pointcpLinks {
+    text-decoration: none;
+    transition: all 0.5s ease;
+    color: black;
+}
+
+.pointcpLinks:hover,
+.pointcpLinks:active {
+    transform: translateY(-2px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 2px rgb(148, 146, 146);
+} */
 
 /* -----------------------------------END ARCHIVES------------------------------------------- */
 
