@@ -35,16 +35,16 @@ function AuthButtons(props) {
                 
                 { user.admin === undefined || user.admin === false &&
                     <>
-                        {userEmail}
+                        <span className="userEmail">{userEmail}</span>
                         <span className="divider">&nbsp;&nbsp;|</span>
-                        <button className="auth-buttons__yellow" onClick={handleSignOut}>Sign Out</button>
+                        <button className="auth-buttons__yellow" onClick={handleSignOut}>&nbsp;Sign Out</button>
                     </>
                 }
                 { user.admin === true &&
                     <>
                         <Link to='/admin' className="adminButton" >ADMIN DASHBOARD</Link>
                         <span className="divider">&nbsp;&nbsp;|</span>
-                        <button className="auth-buttons__yellow" onClick={handleSignOut}>Sign Out</button>
+                        <button className="auth-buttons__yellow" onClick={handleSignOut}>&nbsp;Sign Out</button>
                     </>
                 }
             </div>
