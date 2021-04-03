@@ -1,10 +1,6 @@
 import { API_URL } from '../../apiConstants';
 
 export const voteArticleOne = (pointcpData) => (dispatch) => {
-    console.log("$$$", pointcpData)
-
-    // fetch(API_URL + `/pointcps/${pointcpData.id}`, {
-        // method: "PUT",
 
     fetch(API_URL + `/pointcpvotes`, {
         method: "POST",
@@ -21,10 +17,7 @@ export const voteArticleOne = (pointcpData) => (dispatch) => {
 }
 
 export const voteArticleTwo = (pointcpData2) => (dispatch) => {
-    console.log("///", pointcpData2)
 
-    // fetch(API_URL + `/pointcps/${pointcpData2.id}`, {
-    //     method: "PUT",
     fetch(API_URL + `/pointcpvotes`, {
         method: "POST",
         headers: {

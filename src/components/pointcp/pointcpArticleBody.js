@@ -66,7 +66,6 @@ function pointcpArticleBody({admin, article, winner, pointcp_id, handleVotingCli
 }
 
 return (
-    console.log(article),
     <>  
     <div className="pointcptopic" >
         <div>
