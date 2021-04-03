@@ -6,7 +6,6 @@ import {addLikesDislikes} from '../../actions/articles/addLikesDislikes'
 function ArticleBody(props) {
 
     const userId = useSelector( state => {
-        // console.log("store", state.user.user.id)
         return state.user.user.id
     })
 
@@ -20,7 +19,6 @@ function ArticleBody(props) {
 
     const handleLike = (e) => {
         e.preventDefault();
-        console.log("like")
 
         if (!localStorage.token) {
             alert("Please sign in to vote");
@@ -40,7 +38,6 @@ function ArticleBody(props) {
 
     const handleDislike = (e) => {
         e.preventDefault();
-        console.log("dislike")
 
         if (!localStorage.token) {
             alert("Please sign in to vote");
@@ -59,7 +56,6 @@ function ArticleBody(props) {
     }
     
     return (
-        console.log("post"),
         <>
                 <img
                     src={post.attributes.image}

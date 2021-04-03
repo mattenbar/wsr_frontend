@@ -2,8 +2,8 @@ import React from 'react';
 
 function partners(props) {
     return (
-        <div className="partner">
-            <div className="partners-header">
+        <div className="board">
+            <div className="board-header">
                 <h1>PARTNERS</h1>
             </div>
             <div className="partners-container">

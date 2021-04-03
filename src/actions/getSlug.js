@@ -1,5 +1,4 @@
 export function GetSlug(post){
-    // console.log("post debugger", post)
     if(post.post){
         post = post.post
     }

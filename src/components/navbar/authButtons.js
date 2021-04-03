@@ -18,13 +18,11 @@ function AuthButtons(props) {
 
     const handleSignOut = () => {
         localStorage.removeItem("token")
-        // props.history.push('/');
         window.location.reload()
     }
 
     if (localStorage.getItem("token") === null) {
         return (
-            // console.log("auth", userEmail),
             <div className="auth-buttons">
                 <button className="auth-buttons__yellow"><a href="#popup2">Sign In</a></button>
                 <span className="divider">|</span>

@@ -38,7 +38,6 @@ class ArticleClassEditForm extends React.Component {
     };
 
     handleEditorChange = (content, editor) => {
-        // console.log("Content was updated:", content);
         let post = { ...this.state.post };
         let currentState = post;
         currentState["content"] = content;
@@ -73,7 +72,6 @@ class ArticleClassEditForm extends React.Component {
     };
 
     render() {
-        // console.log("title", this.props.post.attributes.image)
         let c = this.props.categories.map((category) => (
             <option
                 key={category.attributes.id}

@@ -17,7 +17,6 @@ function PointCPNewest({
         fetch(API_URL + `/pointcps/${newestId}`)
             .then((res) => res.json())
             .then((data) => {
-                // console.log("data", data) //this also has tally of votes for each side if needed
                 setWinner(data.winner);
             });
     }, []);

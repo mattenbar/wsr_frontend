@@ -109,7 +109,6 @@ function PointCounterPoint(props) {
         };
 
         return (
-            // console.log(pointArticles.length > 1),
             <div className="pointcpContainer">
                 <ArticleHeaders category={"point-counterpoint"} />
                 {inEditMode1 === false && (

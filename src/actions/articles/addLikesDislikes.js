@@ -1,8 +1,6 @@
 import { API_URL } from '../../apiConstants';
 
 export const addLikesDislikes = (postVoteData) => (dispatch) => {
-    console.log("$$$", postVoteData)
-    // debugger
 
     fetch(API_URL + `/postvotes`, {
         method: "POST",

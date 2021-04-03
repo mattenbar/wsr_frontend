@@ -12,7 +12,6 @@ function Features(state) {
         let rightFeature = state.features[2]["attributes"]["post"]
 
         return (
-            // console.log(state.features.reverse()),
             <div className="features">
                 <h1>TODAY'S TOP FEATURES</h1>
                 <div className="feature-wrapper" >

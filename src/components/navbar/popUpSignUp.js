@@ -2,7 +2,6 @@ import React from 'react';
 import SignupForm from './signupForm';
 
 function popUpSignUp(props) {
-    // console.log("popupsignup", props)
     return (
         <div className="popup" id="popup"> 
             <div className="popup__content">
