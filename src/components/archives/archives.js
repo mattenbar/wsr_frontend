@@ -32,6 +32,8 @@ function archives(state) {
         );
     });
 
+    posts.reverse()
+
     return (
         <div className="archive-container">
             <div className="archive-header">

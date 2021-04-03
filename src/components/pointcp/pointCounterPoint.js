@@ -40,7 +40,7 @@ function PointCounterPoint(props) {
 
         const handleVotingClickButtonOne = (e) => {
             e.preventDefault();
-
+            
             if (!localStorage.token) {
                 alert("Please sign in to vote");
             }
@@ -149,6 +149,8 @@ function PointCounterPoint(props) {
                         article={olderSectionTwo}
                         olderId={olderId}
                         handleEditDeleteClick2={handleEditDeleteClick2}
+                        handleVotingClickButtonOne={handleVotingClickButtonOne}
+                        handleVotingClickButtonTwo={handleVotingClickButtonTwo}
                     />
                 )}
                 {inEditMode2 === true && (
