@@ -25,9 +25,9 @@ class Home extends Component {
       console.log("home", this.props.posts),
       <div className="home-container">
         {/* <LinksBarWeekOne /> */}
-        <LinksBarWeekTwo />
+        {/* <LinksBarWeekTwo /> */}
         {/* <LinksBarWeekThree /> */}
-        {/* <LinksBar /> */}
+        <LinksBar />
         <Carousel />
         <Features />
         <div className="home-triple-row-grid" >
