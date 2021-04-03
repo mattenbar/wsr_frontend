@@ -1606,6 +1606,10 @@ body {
 
 /* -----------------------------------START ARCHIVES------------------------------------------- */
 
+.archive-container {
+    margin-bottom: 3em;
+}
+
 .archive-header {
     width: 100%;
     font-size: 1.15em;

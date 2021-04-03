@@ -33,7 +33,7 @@ function archives(state) {
     });
 
     return (
-        <div className="archive">
+        <div className="archive-container">
             <div className="archive-header">
                 <h1>ARCHIVES</h1>
             </div>
