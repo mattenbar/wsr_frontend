@@ -189,7 +189,7 @@ body {
     .header-login-signup {
         margin-left: 0;
         position: absolute;
-        bottom: 1em;
+        bottom: 0.5em;
         right: 0;
     }
 
@@ -211,6 +211,10 @@ body {
     .auth2-buttons {
         padding-top: 0.5em;
         /* margin-left: -1.75em; */
+    }
+
+    .userEmail {
+        font-size: 1.25em;
     }
 
     .auth-buttons__yellow {
@@ -275,8 +279,8 @@ body {
 
 @media (min-width: 80em) {
     .header-search-bar {
-        padding-bottom: 2.5em;
-        margin-top: 0em;
+        /* padding-bottom: 2.5em; */
+        margin-top: 1.5em;
         /* margin-left: 0em; */
         /* margin-right: 20em; */
     }
@@ -305,6 +309,11 @@ body {
 }
 
 @media (min-width: 80em) {
+    .social-media-buttons {
+        margin-left: 0;
+        margin-top: 3em;
+        margin-right: -1em;
+    }
     .smb-yellow {
         width: 12%;
         margin-top: 0em;
