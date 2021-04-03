@@ -98,7 +98,7 @@ function PointCPNewest({
     };
 
     return (
-        <>
+        <div>
             <div className="pointcptopic">
                 <div>
                     <h3>TOPIC:</h3>
@@ -146,10 +146,7 @@ function PointCPNewest({
                             }}
                         ></p>
                     </div>
-                    <>
-                            {dateDifference(article.end_date) > 0 &&
-                                getDivs("pointVote1")}
-                    </>
+                    
                 </div>
                 <div className="pointcp2">
                     <div className="pointTop2">
@@ -190,10 +187,19 @@ function PointCPNewest({
                             }}
                         ></p>
                     </div>
-                    <>
-                        {dateDifference(article.end_date) > 0 &&
-                        getDivs("pointVote2")}
-                    </>
+                   
+                </div>
+                
+                <div className="countdown-and-voting">
+
+                    {dateDifference(article.end_date) > 0 && getDivs("newestCountdown")} 
+                    
+                    <div className="voting-container">
+                        {dateDifference(article.end_date) > 0 && getDivs("pointVote2")}
+
+                        {dateDifference(article.end_date) > 0 && getDivs("pointVote1")}
+                    </div>
+
                 </div>
                 {admin && (
                     <div className="editDeletePointCP">
@@ -205,11 +211,16 @@ function PointCPNewest({
                         </button>
                     </div>
                 )}
-            </div>
+            
+                
 
-            {dateDifference(article.end_date) > 0 && getDivs("newestCountdown")}
+            </div>
+            
+            
+
+           
             {dateDifference(article.end_date) <= 0 && getDivs("newestWinner")}
-        </>
+        </div>
     );
 }
 

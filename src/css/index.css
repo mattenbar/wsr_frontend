@@ -1214,6 +1214,10 @@ body {
     .pointContainer2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        /* grid-auto-rows: minmax(min-content, max-content); */
+        grid-auto-rows: minmax(auto-fit, auto);
+        /* grid-template-rows: auto 1fr; */
+        /* grid-auto-rows: auto; */
         grid-gap: 52px;
         /* background-color: darkblue; */
         border-bottom: 2px solid black;
@@ -1226,6 +1230,7 @@ body {
 
     .pointContainer1 {
         padding-bottom: 3em;
+        position: relative;
     }
 
     .pointContainer2 {
@@ -1239,14 +1244,18 @@ body {
         /* overflow: hidden; */
         margin-bottom: 4em;
         position: relative;
+        height: auto;
+                            /* this is relative/parent */
     }
 
-    .pointcp1 {
-    }
+    /* .pointcp1 {
+        height: auto;
+    } */
 
     .pointcp2 {
         align-content: right;
         text-align: right;
+        
     }
 
     .pointcp3,
@@ -1255,10 +1264,13 @@ body {
         margin-top: 0em;
         margin-bottom: 4em;
         position: relative;
+        height: auto;
+                                  /* this is relative/parent */
+
     }
 
-    .pointcp3 {
-    }
+    
+
 
     .pointcp4 {
         align-content: right;
@@ -1269,16 +1281,22 @@ body {
         font-size: 1.1em;
         margin-top: 1.25em;
         text-align: justify;
-        height: 15em;
-        overflow: hidden;
+        height: auto;
+        /* keeping text short  - fix to height auto */
+        /* height: 15em;  
+                                
+        overflow: hidden; */
     }
-
-    .pointcpContent p {
+    
+    /* keeping text short  - fix to take out max-height / take out overflow hidden*/
+    /* .pointcpContent p {
         max-height: 10em;
+                                
+
         overflow: hidden;
-        text-overflow: ellipsis;
-        /* background: -webkit-linear-gradient(#000, #fff); */
-    }
+    } */
+
+    
 
     .pointTop {
         display: grid;
@@ -1297,12 +1315,12 @@ body {
     }
 
     .pointbottom {
-        position: absolute;
+        /* position: absolute; */
         bottom: 7px;
     }
 
     .pointbottom2 {
-        position: absolute;
+        /* position: absolute; */
         bottom: 7px;
         right: 0px;
     }
@@ -1313,25 +1331,9 @@ body {
         object-fit: cover;
     }
 
-    .pointVote1 {
-        position: absolute;
-        left: 0;
-        bottom: -3em;
-    }
+    
 
-    .pointVote2 {
-        width: auto;
-        text-align: right;
-        position: absolute;
-        right: 0;
-        bottom: -3em;
-    }
-
-    .pointVote3,
-    .pointVote4 {
-        position: relative;
-        margin-bottom: 4em;
-    }
+    
 
     .boxingButton {
         border: none;
@@ -1391,8 +1393,29 @@ body {
         color: rgba(0, 0, 0, 0.5);
     }
     .newestCountdown1 {
-        position: relative;
-        text-align: center;
+        /* width: 200%;
+        position: relative; */
+        text-align: right;
+    }
+
+    .countdown-and-voting{
+        width:209%;
+    }
+
+    .pointVote1 { 
+        float: left;
+    }
+
+    .pointVote2 {
+        float: right;
+    }
+
+    .pointVote3{
+        float: left;
+    }
+
+    .pointVote4 {
+        float: right;
     }
 
     .newestWinner1 {
@@ -1428,19 +1451,22 @@ body {
     }
 
     .countdownText h2 {
-        position: absolute;
-        bottom: 1em;
-        left: 39%;
+        /* position: absolute; */
+        bottom: 2em;
+        text-align: center;
+        width: 100%;
+        left: 53%;
     }
 
     .countdownText2 h2 {
-        position: absolute;
+        /* position: absolute; */
         bottom: 5em;
-        left: 39%;
+
+        /* left: 39%; */
     }
 
     .countdownText3 h2 {
-        position: absolute;
+        /* position: absolute; */
         bottom: -14em;
         left: 40%;
     }
@@ -1864,7 +1890,7 @@ body {
 }
 
 /* -----------------------------------END OUR BOARD---------------------------------------------- */
-/* -----------------------------------INDIVUAL POST PAGE---------------------------------------------- */
+/* -----------------------------------INDIVIDUAL POST PAGE---------------------------------------------- */
 
 .individualPostDiv {
     /* border-bottom: solid 3px black; */

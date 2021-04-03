@@ -33,9 +33,9 @@ function PointCPOlder({
 
     const getDivs = (divName) => {
         switch (divName) {
-            case "pointVote1":
+            case "pointVote3":
                 return (
-                    <div className="pointVote1">
+                    <div className="pointVote3">
                         <button
                             className="boxingButton"
                             onClick={handleVotingClickButtonOne}
@@ -55,9 +55,9 @@ function PointCPOlder({
                     </div>
                 );
 
-            case "pointVote2":
+            case "pointVote4":
                 return (
-                    <div className="pointVote2">
+                    <div className="pointVote4">
                         <button
                             className="boxingButton"
                             onClick={handleVotingClickButtonTwo}
@@ -78,8 +78,8 @@ function PointCPOlder({
 
             case "newestCountdown":
                 return (
-                    <div className="newestCountdown2">
-                        <div className="countdownText2">
+                    <div className="newestCountdown1">
+                        <div className="countdownText">
                             <h2 style={{ color: "rgb(0, 59, 91)" }}>
                                 VOTING ENDS IN{" "}
                                 {dateDifference(article.end_date)} DAYS
@@ -154,8 +154,7 @@ function PointCPOlder({
                             }}
                         ></p>
                     </div>
-                    {dateDifference(article.end_date) > 0 &&
-                        getDivs("pointVote1")}
+                    
                 </div>
 
                 <div className="pointcp4">
@@ -198,10 +197,17 @@ function PointCPOlder({
                             }}
                         ></p>
                     </div>
-                    {dateDifference(article.end_date) > 0 &&
-                        getDivs("pointVote2")}
+                    
                 </div>
-
+                <div className="countdown-and-voting">
+                
+                    {dateDifference(article.end_date) > 0 && getDivs("newestCountdown")}
+                    <div className="voting-container">
+                        {dateDifference(article.end_date) > 0 && getDivs("pointVote3")}
+                        {dateDifference(article.end_date) > 0 && getDivs("pointVote4")}
+                    </div>
+                </div>
+                
                 {admin && (
                     <div className="editDeletePointCP1">
                         <button
@@ -212,11 +218,11 @@ function PointCPOlder({
                         </button>
                     </div>
                 )}
-
-                {dateDifference(article.end_date) > 0 &&
-                    getDivs("newestCountdown")}
-                {dateDifference(article.end_date) <= 0 &&
-                    getDivs("newestWinner")}
+                
+                     
+                
+                {dateDifference(article.end_date) <= 0 && getDivs("newestWinner")}
+                
             </div>
         </>
     );
