@@ -54,7 +54,10 @@ function Search2(props) {
                 <div className="board-header">
                     <h1>SEARCH RESULTS</h1>
                 </div>
-                <div><h2>NO ARTICLES AT THIS TIME</h2><h3>Please Retry Your Search Above</h3></div>
+                <div className="noSearchArticles">
+                    <h2>NO ARTICLES AT THIS TIME</h2>
+                    <h3>Please Retry Your Search Above</h3>
+                </div>
             </div>
         )
     }
