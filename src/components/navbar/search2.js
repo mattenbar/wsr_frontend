@@ -17,22 +17,45 @@ function Search2(props) {
     if (filteredPosts.length > 0) {
         postsMapped = filteredPosts.map(post => {
             let slug = GetSlug(post.attributes)
-            
-            return (
-                <div key={post.id} className="pointcpLinksList">
-                    <Link to={`${slug}/${post.id}`} post_id={post.id} className="pointcpLinks">
-                        <li>
-                            <span>{post.attributes.title}</span>
-                            <span>&nbsp;</span>
-                            <span>- by {post.attributes.author}</span>
-                            <span>&nbsp;</span>
-                            <span>| {moment
-                            .parseZone(post.attributes.created_at)
-                            .format("MMMM DD, YYYY")}</span>
-                        </li>
-                    </Link>
-                </div>
-            )
+            if (post.attributes.title !== undefined) {
+                return (
+                    <div key={post.id} className="pointcpLinksList">
+                        <Link to={`${slug}/${post.id}`} post_id={post.id} className="pointcpLinks">
+                            <li>
+                                <span>{post.attributes.title}</span>
+                                <span>&nbsp;</span>
+                                <span>- by {post.attributes.author}</span>
+                                <span>&nbsp;</span>
+                                <span>| {moment
+                                .parseZone(post.attributes.created_at)
+                                .format("MMMM DD, YYYY")}</span>
+                            </li>
+                        </Link>
+                    </div>
+                )
+            } else {
+                return (
+                    <div key={post.id} className="pointcpLinksList">
+                        {/* <Link to={`Point-Counterpoint/${post.id}`} post_id={post.id} className="pointcpLinks"> */}
+                        <Link to={{    
+                            pathname: `Point-Counterpoint/${post.id}`,
+                            state: {
+                                pointcp_id: post.id
+                            }
+                        }} className="pointcpLinks" > 
+                            <li>
+                                <span>{post.attributes.topic}</span>
+                                <span>&nbsp;</span>
+                                {/* <span>- by {post.attributes.author}</span>
+                                <span>&nbsp;</span> */}
+                                <span>| {moment
+                                .parseZone(post.attributes.created_at)
+                                .format("MMMM DD, YYYY")}</span>
+                            </li>
+                        </Link>
+                    </div>
+                )
+            }
         })
         return (
 

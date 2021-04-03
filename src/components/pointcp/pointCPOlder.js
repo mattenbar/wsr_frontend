@@ -109,10 +109,20 @@ function PointCPOlder({
     return (
         <>
             <div className="pointcptopic">
-                <div>
-                    <h3>TOPIC:</h3>
-                    <h1>{article.topic}</h1>
-                </div>
+                <Link
+                    to={{
+                        pathname: `/Point-Counterpoint/${olderId}`,
+                        state: {
+                            pointcp_id: olderId,
+                        },
+                    }}
+                    className="pointcpLinks"
+                >
+                    <div>
+                        <h3>TOPIC:</h3>
+                        <h1>{article.topic}</h1>
+                    </div>
+                </Link>
             </div>
             <div className="pointContainer2">
                 <div className="pointcp3">
@@ -125,26 +135,16 @@ function PointCPOlder({
                             />
                         </div>
                         <div className="pointHeaderRight">
-                            <Link
-                                to={{
-                                    pathname: `/Point-Counterpoint/${olderId}`,
-                                    state: {
-                                        pointcp_id: olderId,
-                                    },
-                                }}
-                                className="pointcpLinks"
-                            >
-                                <div className="pointbottom">
-                                    <h1>AGREE</h1>
-                                    <h1>{article.titleOne}</h1>
-                                    <h2>{article.authorOne}</h2>
-                                    <h3>
-                                        {moment
-                                            .parseZone(article.created_at)
-                                            .format("MMMM DD, YYYY")}
-                                    </h3>
-                                </div>
-                            </Link>
+                            <div className="pointbottom">
+                                <h1>AGREE</h1>
+                                <h1>{article.titleOne}</h1>
+                                <h2>{article.authorOne}</h2>
+                                <h3>
+                                    {moment
+                                        .parseZone(article.created_at)
+                                        .format("MMMM DD, YYYY")}
+                                </h3>
+                            </div>
                         </div>
                     </div>
                     <div className="pointcpContent">

@@ -6,14 +6,14 @@ import { setFilteredPosts } from '../../actions/setFilteredPosts';
 function SearchBar2(props) {
 
     const storeProps = useSelector(state => {
-
         return state
     })
 
     const posts = storeProps.posts
 
+    const pointcpArticles = storeProps.pcps.pointCPPosts
+
     const [searchTerm, setSearchTerm] = useState("")
-    const [fireRedirect, setFireRedirect] = useState(false)
 
     const handleOnChange = (e) => {
         setSearchTerm(e.target.value)
@@ -37,6 +37,16 @@ function SearchBar2(props) {
                     filteredPosts = filteredPosts.concat(posts.filter(post => post["attributes"]["title"].toLowerCase().includes(searchTermsArray[i].toLowerCase()) ||
                     post["attributes"]["author"].toLowerCase().includes(searchTermsArray[i].toLowerCase()) ||
                     post["attributes"]["content"].toLowerCase().includes(searchTermsArray[i].toLowerCase())
+                    ))
+                }
+                for (let i = 0; i < searchTermsArray.length; i++) {
+                    filteredPosts = filteredPosts.concat(pointcpArticles.filter(article => article["attributes"]["titleOne"].toLowerCase().includes(searchTermsArray[i].toLowerCase()) ||
+                        article["attributes"]["titleTwo"].toLowerCase().includes(searchTermsArray[i].toLowerCase()) ||
+                        article["attributes"]["authorOne"].toLowerCase().includes(searchTermsArray[i].toLowerCase()) ||
+                        article["attributes"]["authorTwo"].toLowerCase().includes(searchTermsArray[i].toLowerCase()) ||
+                        article["attributes"]["contentOne"].toLowerCase().includes(searchTermsArray[i].toLowerCase()) ||
+                        article["attributes"]["contentOne"].toLowerCase().includes(searchTermsArray[i].toLowerCase()) ||
+                        article["attributes"]["topic"].toLowerCase().includes(searchTermsArray[i].toLowerCase())
                     ))
                 }
             }
