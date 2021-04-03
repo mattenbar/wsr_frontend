@@ -1400,6 +1400,7 @@ body {
 
     .countdown-and-voting{
         width:209%;
+        height: auto;
     }
 
     .pointVote1 { 
@@ -1895,7 +1896,7 @@ body {
 .individualPostDiv {
     /* border-bottom: solid 3px black; */
     text-align: justify;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .individualPostContent {
