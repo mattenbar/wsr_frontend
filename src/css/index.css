@@ -286,6 +286,11 @@ body {
     }
 }
 
+.noSearchArticles {
+    height: 30em;
+    padding-top: 15%;
+}
+
 /* -----------------------------------social media buttons---------------------------------------------- */
 
 .smb-yellow {
@@ -2179,4 +2184,8 @@ body {
 
 .postForm {
     margin: 1em;
+}
+
+.hubspot {
+    border-top: 2px solid black;
 }

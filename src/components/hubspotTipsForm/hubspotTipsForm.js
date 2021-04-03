@@ -133,10 +133,10 @@ function HubspotTipsForm(props) {
   });
 
   return (
-    <>
+    <div className="hubspot">
       <h2 className={!isUserLoggedIn || !showOnCurrentPage || !loaded ? 'hidden': 'hubspot-form-header'}>{formHeader}</h2>
       <div id="hubspot-tips-form" className={!isUserLoggedIn || !showOnCurrentPage ? 'hidden': ''}></div>
-    </>
+    </div>
   );
 }
 

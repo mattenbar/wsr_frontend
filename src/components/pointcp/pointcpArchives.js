@@ -27,7 +27,7 @@ function PointcpArchives(props) {
                             <span>{article.attributes.topic}</span>
                             <span>&nbsp;</span>
                             <span>- {moment
-                            .parseZone(article.attributes.end_date)
+                            .parseZone(article.attributes.created_at)
                             .format("MMMM DD, YYYY")}</span>
                             
                         </li>
