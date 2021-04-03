@@ -536,6 +536,11 @@ body {
 }
 
 @media (min-width: 66em) {
+
+
+    /* week one */
+
+
     .linksBarWeekOne-container {
         visibility: visible;
         display: contents;
@@ -551,15 +556,22 @@ body {
         text-decoration: none;
     }
 
-    .linksBarWeekOne-links {
+
+    .linksBarWeekOne-container a:hover{
+        text-decoration: underline;
+    }
+
+    .linksBarWeekOne-links{
+
         margin-top: 2em;
         margin-bottom: 2em;
     }
 
+    /* week two */
+
     .linksBarWeekTwo-container {
         visibility: visible;
         display: contents;
-        /* padding: 2%; */
         text-align: justify;
         color: black;
 
@@ -571,7 +583,13 @@ body {
         text-decoration: none;
     }
 
-    .linksBarWeekTwo-links {
+
+    .linksBarWeekTwo-container a:hover{
+        text-decoration: underline;
+    }
+
+    .linksBarWeekTwo-links{
+
         margin-top: 2em;
         margin-bottom: 2em;
     }
@@ -585,6 +603,44 @@ body {
         font-size: 1.072em;
         letter-spacing: 0.09em;
     }
+
+
+    /* week three */
+    .linksBarWeekThree-container {
+        visibility: visible;
+        display: contents;
+        /* padding: 2%; */
+        text-align: justify;
+        color: black;
+
+        font-size: 1.123em;
+    }
+
+    .linksBarWeekThree-container a {
+        color: black;
+        text-decoration: none;
+        
+    }
+
+    .linksBarWeekThree-container a:hover{
+        text-decoration: underline;
+    }
+
+    .linksBarWeekThree-links{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .linksBarWeekThree-Top {
+        font-size: .806em;
+        margin-bottom: 1em;
+    }
+
+    .linksBarWeekThree-Bottom {
+        font-size: .85em;
+        letter-spacing: .078em;
+    }
+
 
     /* final linksbar */
 

@@ -24,9 +24,9 @@ class Home extends Component {
     return(
       <div className="home-container">
         {/* <LinksBarWeekOne /> */}
-        <LinksBarWeekTwo />
+        {/* <LinksBarWeekTwo /> */}
         {/* <LinksBarWeekThree /> */}
-        {/* <LinksBar /> */}
+        <LinksBar />
         <Carousel />
         <Features />
         <div className="home-triple-row-grid" >
