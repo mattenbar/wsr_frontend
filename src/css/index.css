@@ -1433,6 +1433,7 @@ body {
 
     .pointcpLinksList {
         padding-left: 2em;
+        text-align: left;
     }
 
     .pointcpLinksList li {
@@ -1553,7 +1554,6 @@ body {
 
 .archive-container {
 }
-
 /* .pointcpLinksList li {
     padding: 0;
     margin: 0.5em;
