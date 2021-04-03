@@ -18,7 +18,7 @@ function pointcpArticleBody({admin, article, winner, pointcp_id, handleVotingCli
             case "pointVote1":
                 return (
                     <div className="pointVote3">
-                        <button className="boxingButton3" onClick={handleVotingClickButtonOne} >
+                        <button className="boxingButton" onClick={handleVotingClickButtonOne} >
                             <div className="pv1">
                                 <h2>VOTE FOR {article.authorOne} &nbsp;&nbsp;</h2><img src='/boxGloveLeft.png' className="boxGlove"/>
                                 {/* <img src='/boxGloveLeft.png' className="boxGlove"/> */}
@@ -31,7 +31,7 @@ function pointcpArticleBody({admin, article, winner, pointcp_id, handleVotingCli
             case "pointVote2":
                 return(
                     <div className="pointVote4">
-                        <button className="boxingButton3" onClick={handleVotingClickButtonTwo} >
+                        <button className="boxingButton" onClick={handleVotingClickButtonTwo} >
                             <div className="pv2">
                                 {/* <h3 style={{color: "red", fontSize: "1vw"}}>[Votes: {article.votesPointCPTwo}]</h3> */}
                                 <h2>VOTE FOR {article.authorTwo} &nbsp;&nbsp;</h2><img src='/boxGloveLeft.png' className="boxGlove"/>
@@ -73,7 +73,7 @@ return (
             <h1>{article.topic}</h1>
         </div>
     </div>
-        <div className="pointContainer1">
+        <div className="pointContainer2">
             <div className="pointcp1">
                 <div className="pointTop">
                     
@@ -101,9 +101,7 @@ return (
                     </p>
                     
                 </div>
-                {dateDifference(article.end_date) > 0 &&
-                    getDivs("pointVote1")
-                }
+                
             </div>
             <div className="pointcp2">
                 <div className="pointTop2">
@@ -127,8 +125,33 @@ return (
                 <div className="pointcpContent">
                     <p dangerouslySetInnerHTML={{ __html: article.contentTwo}}></p>
                 </div>
+
+                
+
+
+
+
+                
+            </div>
+            <div className="countdown-and-voting">
+                
                 {dateDifference(article.end_date) > 0 &&
-                    getDivs("pointVote2")
+                    getDivs("newestCountdown")
+                }
+
+                <div className="voting-container">
+
+                    {dateDifference(article.end_date) > 0 &&
+                        getDivs("pointVote1")
+                    }
+
+                    {dateDifference(article.end_date) > 0 &&
+                        getDivs("pointVote2")
+                    }
+                </div>
+                
+                { dateDifference(article.end_date) <= 0 &&
+                    getDivs("newestWinner")
                 }
             </div>
             { admin &&
@@ -139,13 +162,7 @@ return (
             }
         </div>
 
-            {
-            dateDifference(article.end_date) > 0 &&
-            getDivs("newestCountdown")
-            }
-            {  dateDifference(article.end_date) <= 0 &&
-            getDivs("newestWinner")
-            }
+            
     </>
 );
 }
