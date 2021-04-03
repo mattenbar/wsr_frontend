@@ -26,7 +26,11 @@ function PointCounterPointArticle(props) {
 
     let location = useLocation();
 
-    let pointcp_id = props.location.state.pointcp_id
+    let pointcp_id
+    if (props.location.state) {
+        pointcp_id = props.location.state.pointcp_id
+    }
+
 
     const [pointcpArticle, setPointcpArticle] = useState([]);
     const [winner, setWinner] = useState('')
@@ -34,12 +38,14 @@ function PointCounterPointArticle(props) {
     const [inEditMode, setInEditMode] = useState(false)
 
     useEffect(() => {
-        fetch(API_URL + `/pointcps/${pointcp_id}`)
-            .then((res) => res.json())
-            .then((data) => {
-                setPointcpArticle(data.pointcp.data);
-                setWinner(data.winner)
-            });
+        if (pointcp_id) {
+            fetch(API_URL + `/pointcps/${pointcp_id}`)
+                .then((res) => res.json())
+                .then((data) => {
+                    setPointcpArticle(data.pointcp.data);
+                    setWinner(data.winner)
+                });
+        }
     }, []);
 
     const handleVotingClickButtonOne = (e) => {

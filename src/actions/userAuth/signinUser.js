@@ -6,7 +6,6 @@ export const SIGN_IN_ERRORS = "SIGN_IN_ERRORS"
 export const SIGN_IN_FAILURE = "SIGN_IN_FAILURE"
 
 export const signinUser = ({ first_name, last_name, email, password, company_name }) => (dispatch) => {
-    // console.log(user_name)
     dispatch({ type: SIGN_IN_USER })
     
     fetch(API_URL + '/login', {

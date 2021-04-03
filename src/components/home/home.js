@@ -22,7 +22,6 @@ class Home extends Component {
   render(){
 
     return(
-      console.log("home", this.props.posts),
       <div className="home-container">
         {/* <LinksBarWeekOne /> */}
         {/* <LinksBarWeekTwo /> */}

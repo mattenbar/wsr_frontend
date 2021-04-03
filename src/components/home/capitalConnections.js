@@ -14,7 +14,6 @@ function newsMakers(state) {
 
         if (posts.length > 0){
             return (
-                console.log(posts),  
                 <div className="trcrsl">
                     <h1>CAPITAL CONNECTIONS</h1>
                     <div className="nm-cards" >
@@ -76,3 +75,4 @@ function mSTP(state){
   }
 
 export default connect(mSTP)(newsMakers);
+

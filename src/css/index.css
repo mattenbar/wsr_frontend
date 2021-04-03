@@ -55,7 +55,6 @@ body {
 .navbar {
     width: 100%;
     display: table;
-    
 }
 
 .nav-left {
@@ -132,10 +131,7 @@ body {
 
 .matchingPasswords {
     text-decoration: none;
-    /* font-size: 1.5vw; */
-    /* color: rgb(0, 59, 91); */
     transition: all 0.5s ease;
-    /* margin: 1em; */
 }
 
 .divider {
@@ -166,31 +162,28 @@ body {
 
 @media (min-width: 62em) {
     .navbar {
-        height: 18em;
+        height: 15em;
         vertical-align: bottom;
     }
     .nav-left {
         width: 5%;
-        
     }
 
     .nav-right {
         width: 95%;
         vertical-align: middle;
-       
     }
 
-    .nav-content{
+    .nav-content {
         display: grid;
-        height: 15vh;
+        height: 12em;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
-        
     }
 
     .nav-header {
         vertical-align: middle;
-        padding-top: .75em;
+        padding-top: 0.75em;
     }
 
     .header-login-signup {
@@ -198,7 +191,6 @@ body {
         position: absolute;
         bottom: 1em;
         right: 0;
-        
     }
 
     .nav-header h1 {
@@ -233,7 +225,6 @@ body {
         text-align: center;
     }
 }
-
 
 /* -----------------------------------search bar---------------------------------------------- */
 .header-search-bar {
@@ -282,7 +273,7 @@ body {
     }
 } */
 
-@media (min-width: 62em) {
+@media (min-width: 80em) {
     .header-search-bar {
         padding-bottom: 2.5em;
         margin-top: 0em;
@@ -290,8 +281,6 @@ body {
         /* margin-right: 20em; */
     }
 }
-
-
 
 /* -----------------------------------social media buttons---------------------------------------------- */
 
@@ -315,21 +304,19 @@ body {
     }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 80em) {
     .smb-yellow {
         width: 12%;
         margin-top: 0em;
     }
 }
 
-
-
 /* -----------------------------------END social media buttons---------------------------------------------- */
 
 /* -------------------------POP UP---------------------------- */
 
 .popup {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
@@ -531,15 +518,13 @@ body {
     }
 }
 
-
-
 /* --------------------END POP UP------------------------- */
 
 /* -----------------------------------END NAVBAR---------------------------------------------- */
 
 /* -----------------------------------START HOME---------------------------------------------- */
 
-.home-container{
+.home-container {
     margin-top: 1em;
 }
 
@@ -552,7 +537,9 @@ body {
 
 @media (min-width: 66em) {
 
+
     /* week one */
+
 
     .linksBarWeekOne-container {
         visibility: visible;
@@ -567,14 +554,15 @@ body {
     .linksBarWeekOne-container a {
         color: black;
         text-decoration: none;
-        
     }
+
 
     .linksBarWeekOne-container a:hover{
         text-decoration: underline;
     }
 
     .linksBarWeekOne-links{
+
         margin-top: 2em;
         margin-bottom: 2em;
     }
@@ -593,14 +581,15 @@ body {
     .linksBarWeekTwo-container a {
         color: black;
         text-decoration: none;
-        
     }
+
 
     .linksBarWeekTwo-container a:hover{
         text-decoration: underline;
     }
 
     .linksBarWeekTwo-links{
+
         margin-top: 2em;
         margin-bottom: 2em;
     }
@@ -612,8 +601,9 @@ body {
 
     .linksBarWeekTwo-Bottom {
         font-size: 1.072em;
-        letter-spacing: .09em;
+        letter-spacing: 0.09em;
     }
+
 
     /* week three */
     .linksBarWeekThree-container {
@@ -652,11 +642,8 @@ body {
     }
 
 
-
-
-
     /* final linksbar */
-    
+
     .linksBar-container {
         visibility: visible;
         display: contents;
@@ -670,9 +657,8 @@ body {
 
     .linksBar-links {
         margin-bottom: 2em;
-        
     }
-    
+
     .linksBar-Top {
         font-size: 1.023em;
         margin-bottom: 1em;
@@ -687,18 +673,16 @@ body {
         font-size: 1.071em;
     }
 
-
     .linksBar-container a {
         color: black;
         text-decoration: none;
         padding: 0;
     }
 
-    .linksBar-container a:hover{
+    .linksBar-container a:hover {
         text-decoration: underline;
     }
 }
-
 
 /* -------------------END HOME/ LINKS BAR------------------- */
 
@@ -855,15 +839,14 @@ body {
     }
 }
 
-
 /* -------------------END image/link carousel------------- */
 /* -------------------START features---------------------- */
 
 .features {
     width: 100%;
-    height: 30vh;
+    height: 30em;
     margin-top: 2.5em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     border-top: 2px solid black;
     text-align: left;
 }
@@ -926,7 +909,7 @@ body {
 
 @media (min-width: 43.75em) {
     .features {
-        height: 30vh;
+        height: 30em;
         margin: 0;
     }
 
@@ -948,7 +931,7 @@ body {
 
 @media (min-width: 62em) {
     .features {
-        height: 32vh;
+        height: 28em;
     }
 
     .feature-wrapper {
@@ -986,22 +969,16 @@ body {
     margin-top: 0.5em;
 }
 
-.nmcrsl,
 .trcrsl {
     width: 100%;
     border-top: 2px solid black;
     text-align: center;
 }
 
-.nmcrsl {
-    height: 38vh;
-}
-
 .trcrsl {
-    height: 34vh;
+    height: 17em;
 }
 
-.nmcrsl h1,
 .trcrsl h1 {
     width: 66%;
     margin-left: 17%;
@@ -1011,20 +988,17 @@ body {
     font-size: 1em;
 }
 
-.nmcrsl a,
 .trcrsl a {
     text-decoration: none;
     color: black;
 }
 
-.nmcrsl h2,
 .trcrsl h2 {
     margin-top: -1em;
     font-size: 0.75em;
     text-transform: capitalize;
 }
 
-.nmcrsl p,
 .trcrsl p {
     font-size: 0.5em;
     text-transform: capitalize;
@@ -1048,9 +1022,8 @@ body {
         margin-top: em;
     }
 
-    .nmcrsl,
     .trcrsl {
-        height: 25vh;
+        height: 17em;
         margin-top: 1.5em;
     }
 
@@ -1062,7 +1035,6 @@ body {
 }
 
 @media (min-width: 56.25em) {
-    .nmcrsl,
     .trcrsl {
         margin-bottom: 2em;
     }
@@ -1078,45 +1050,33 @@ body {
         margin-top: 0;
     }
 
-    .nmcrsl,
     .trcrsl {
         width: 48%;
-        height: 33vh;
-    }
-
-    .nmcrsl h1 {
-        width: 50%;
-        margin-left: 25%;
-        margin-right: 25%;
-        font-size: 1.25em;
+        height: 17em;
     }
 
     .trcrsl h1 {
-        width: 50%;
-        margin-left: 30%;
-        margin-right: 30%;
-        font-size: 1.25em;
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 150%;
     }
 
-    .nmcrsl h2,
     .trcrsl h2 {
         font-size: 1.25em;
     }
 
-    .nmcrsl p,
     .trcrsl p {
         font-size: 1em;
     }
 }
-
-
 
 /* -------------------END newsmakers roundup/transactions & transitions---------------------- */
 /* -------------------START this issue/ last issue ---------------------- */
 
 .ticrsl {
     width: 100%;
-    height: 35vh;
+    height: 17em;
     margin-bottom: 2em;
     border-top: 2px solid black;
     text-align: center;
@@ -1171,7 +1131,7 @@ body {
 
 @media (min-width: 43.75em) {
     .ticrsl {
-        height: 25vh;
+        height: 17em;
         margin-bottom: 1em;
     }
 }
@@ -1184,16 +1144,16 @@ body {
 
 @media (min-width: 62em) {
     .ticrsl {
-        height: 33vh;
-        margin-bottom: 4em;
+        height: 17em;
+        /* margin-bottom: 4em; */
     }
 
     .ticrsl h1 {
-        width: 16%;
-        margin-left: 42%;
-        margin-right: 42%;
+        width: 20%;
+        margin-left: 40%;
+        margin-right: 40%;
         margin-top: -18px;
-        font-size: 2em;
+        font-size: 200%;
     }
 
     .ticrsl h2 {
@@ -1212,15 +1172,13 @@ body {
     }
 }
 
-
-
 /* -------------------END this issue/ last issue---------------------- */
 
 /* -----------------------------------END HOME---------------------------------------------- */
 
 /* -----------------------------------POINT-COUNTERPOINT---------------------------------------------- */
 
-@media (min-width: 80em) {
+@media (min-width: 62em) {
     .pointcpContainer {
         position: relative;
         margin-bottom: 2em;
@@ -1252,37 +1210,37 @@ body {
         color: rgba(0, 59, 91);
     }
 
+    .pointContainer1 {
+        padding-bottom: 3em;
+    }
+
     .pointContainer2 {
+        padding-bottom: 1em;
         margin-bottom: 2em;
     }
 
     .pointcp1,
     .pointcp2 {
-        height: auto;
-        /* margin-top: 2em; */
+        height: 30em;
+        /* overflow: hidden; */
         margin-bottom: 4em;
-    }
-
-    .pointcp3,
-    .pointcp4 {
-        height: auto;
-        margin-top: 0em;
-        margin-bottom: 2em;
+        position: relative;
     }
 
     .pointcp1 {
     }
 
-    .pointcpContent {
-        font-size: 1.25vw;
-        margin-top: 1.25em;
-        text-align: justify;
-        height: 25vh;
-    }
-
     .pointcp2 {
         align-content: right;
         text-align: right;
+    }
+
+    .pointcp3,
+    .pointcp4 {
+        height: 30em;
+        margin-top: 0em;
+        margin-bottom: 4em;
+        position: relative;
     }
 
     .pointcp3 {
@@ -1291,6 +1249,21 @@ body {
     .pointcp4 {
         align-content: right;
         text-align: right;
+    }
+
+    .pointcpContent {
+        font-size: 1.1em;
+        margin-top: 1.25em;
+        text-align: justify;
+        height: 15em;
+        overflow: hidden;
+    }
+
+    .pointcpContent p {
+        max-height: 10em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* background: -webkit-linear-gradient(#000, #fff); */
     }
 
     .pointTop {
@@ -1321,14 +1294,23 @@ body {
     }
 
     .pointcpImage {
-        width: 14vw;
-        height: 14vw;
+        width: 12em;
+        height: 12em;
         object-fit: cover;
     }
 
-    .pointVote1,
+    .pointVote1 {
+        position: absolute;
+        left: 0;
+        bottom: -3em;
+    }
+
     .pointVote2 {
-        position: relative;
+        width: auto;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        bottom: -3em;
     }
 
     .pointVote3,
@@ -1337,29 +1319,31 @@ body {
         margin-bottom: 4em;
     }
 
-    .pv2 {
-        width: auto;
-        position: absolute;
-        right: 0px;
-        text-align: right;
+    .boxingButton {
+        border: none;
+        background: none;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        cursor: pointer;
     }
-    .pv1 {
-        position: absolute;
-        left: 0px;
+
+    .boxingButton:focus {
+        box-shadow: none !important;
     }
 
     .pv1,
     .pv2 {
-        margin-top: 1em;
         display: flex;
         transition: all 0.5s ease;
     }
 
     .pv1 h2,
     .pv2 h2 {
+        margin-top: 0.2em;
         /* display: inline-block; */
-        font-size: 2vw;
+        font-size: 2em;
         width: 100%;
+        text-transform: uppercase;
     }
 
     .pv1:hover,
@@ -1375,17 +1359,6 @@ body {
         width: 3.5em;
         height: 3.5em;
         /* margin-top: -20em; */
-    }
-    .boxingButton {
-        border: none;
-        background: none;
-        margin-top: 3em;
-        margin-bottom: 2em;
-    }
-
-    .boxingButton h2 {
-        margin-top: 0.2em;
-        margin-bottom: 2em;
     }
 
     .boxingButton3 {
@@ -1410,7 +1383,7 @@ body {
 
     .newestWinner1 {
         /* margin-top: -50em; */
-        width: 50vw;
+        width: 50em;
         display: flex;
         /* margin: 0 auto; */
         position: absolute;
@@ -1431,7 +1404,7 @@ body {
     }
 
     .newestWinner2 {
-        width: 50vw;
+        width: 50em;
         display: flex;
         /* margin: 0 auto; */
         position: absolute;
@@ -1442,13 +1415,13 @@ body {
 
     .countdownText h2 {
         position: absolute;
-        bottom: 3.5em;
+        bottom: 1em;
         left: 39%;
     }
 
     .countdownText2 h2 {
         position: absolute;
-        bottom: 7em;
+        bottom: 5em;
         left: 39%;
     }
 
@@ -1479,7 +1452,7 @@ body {
     }
 
     .editDeletePointCP {
-        margin-top: 0em;
+        margin-top: 5em;
     }
 
     .editDeletePointCP1 {
@@ -1487,13 +1460,15 @@ body {
     }
 
     .linkToArchives-Container {
-        width: 40%;
-        margin: auto;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        text-align: center;
     }
 
     .linkToArchives {
         text-decoration: none;
-        font-size: 2vw;
+        font-size: 1.75em;
         color: rgb(0, 59, 91);
         transition: all 0.5s ease;
         margin: 1em;
@@ -1501,19 +1476,11 @@ body {
 
     .linkToArchives:hover,
     .linkToArchives:active {
-        font-size: 1.75vw;
+        font-size: 1.8em;
         transform: translateY(-5px);
         transition: all 0.5s ease;
         text-shadow: 2px 2px 4px grey;
     }
-
-    /* .pointcpLinks {
-        text-decoration: none;
-        font-size: 1.5vw;
-        color: black;
-        transition: all 0.5s ease;
-        margin: 1em;
-    } */
 
     .archiveContainer {
         margin-top: 4em;
@@ -1522,14 +1489,13 @@ body {
 
     .pointcpLinksList {
         padding-left: 2em;
+        text-align: left;
     }
 
     .pointcpLinksList li {
-        /* list-style-type: none; Remove bullets */
-        padding: 0; /* Remove padding */
-        /* padding-left: 2em; */
-        margin: 0.5em; /* Remove margins */
-        font-size: 1.5vw;
+        padding: 0;
+        margin: 0.5em;
+        font-size: 1.25em;
         color: black;
     }
 
@@ -1541,7 +1507,6 @@ body {
 
     .pointcpLinks:hover,
     .pointcpLinks:active {
-        /* font-size: 1.55vw; */
         transform: translateY(-2px);
         transition: all 0.5s ease;
         text-shadow: 2px 2px 2px rgb(148, 146, 146);
@@ -1574,13 +1539,13 @@ body {
 
 .category-show h1 {
     padding-top: 1%;
-    font-size: 3vw;
+    font-size: 2.75em;
     padding-left: 0.3em;
     text-transform: uppercase;
 }
 
 .category-show h4 {
-    font-size: 1.4vw;
+    font-size: 1.25em;
     color: rgba(0, 59, 91);
     text-transform: uppercase;
     padding-left: 0.72em;
@@ -1597,7 +1562,7 @@ body {
 }
 
 .category-image {
-    width: 12vw;
+    width: 12em;
     border-right: solid black;
 }
 
@@ -1611,7 +1576,7 @@ body {
 }
 
 .category-show h5 {
-    font-size: 1vw;
+    font-size: 0.9em;
     padding-left: 1em;
     justify-content: left;
     margin: auto;
@@ -1625,7 +1590,7 @@ body {
 
 .about-us {
     text-align: justify;
-    font-size: 2vw;
+    font-size: 1.75em;
 }
 
 /* -----------------------------------END ABOUT US------------------------------------------- */
@@ -1643,20 +1608,31 @@ body {
     text-align: center;
 }
 
+.archive-container {
+}
+/* .pointcpLinksList li {
+    padding: 0;
+    margin: 0.5em;
+    font-size: 1.25em;
+    color: black;
+}
+
+.pointcpLinks {
+    text-decoration: none;
+    transition: all 0.5s ease;
+    color: black;
+}
+
+.pointcpLinks:hover,
+.pointcpLinks:active {
+    transform: translateY(-2px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 2px rgb(148, 146, 146);
+} */
+
 /* -----------------------------------END ARCHIVES------------------------------------------- */
 
 /* -----------------------------------START PARTNERS------------------------------------------- */
-
-.partners-header {
-    width: 100%;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: 300;
-    border-bottom: solid 3px black;
-    padding: 1.5em;
-    margin-bottom: 2em;
-    text-align: center;
-}
 
 .partners-container {
     text-align: center;
@@ -1676,11 +1652,11 @@ body {
     padding-bottom: 2%;
     text-align: center;
     font-weight: 300;
-    font-size: 3vw;
+    font-size: 2.6em;
 }
 
 .contact_us p {
-    font-size: 2vw;
+    font-size: 1.65em;
     text-align: justify;
     padding-top: 2%;
     padding-bottom: 2em;
@@ -1691,6 +1667,10 @@ body {
     display: block;
     color: black;
     width: 100%;
+}
+
+.shortenP {
+    margin-bottom: -1em;
 }
 
 /* -----------------------------------END Contact Us---------------------------------------------- */
@@ -1865,12 +1845,11 @@ body {
     }
 }
 
-
 /* -----------------------------------END OUR BOARD---------------------------------------------- */
 /* -----------------------------------INDIVUAL POST PAGE---------------------------------------------- */
 
 .individualPostDiv {
-    border-bottom: solid 3px black;
+    /* border-bottom: solid 3px black; */
     text-align: justify;
     margin-bottom: 1em;
 }
@@ -1880,12 +1859,12 @@ body {
     line-height: 1.2;
     /* letter-spacing: 0.25px; */
     white-space: pre-line;
-    font-size: 1.5vw;
+    font-size: 1.25em;
 }
 
 .individualPostImage {
     width: 100%;
-    height: 57vh;
+    height: 27em;
     object-fit: cover;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -1915,7 +1894,7 @@ body {
 
 .likeButton,
 .dislikeButton {
-    width: 2.5vw;
+    width: 2.25em;
     background: none;
     color: inherit;
     border: none;
@@ -1923,7 +1902,7 @@ body {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    margin: 1vw;
+    margin: 1em;
 }
 
 .likeButton:hover,
@@ -1960,7 +1939,7 @@ body {
 .categoryTopRight img,
 .categoryTopLeft img {
     width: 100%;
-    height: 41vh;
+    height: 20em;
     object-fit: cover;
 }
 
@@ -1993,7 +1972,7 @@ body {
 
 .smallGrid img {
     width: 100%;
-    height: 36vh;
+    height: 17em;
     object-fit: cover;
 }
 
@@ -2021,8 +2000,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-
-
 /* -----------------------------------END INDIVIDUAL CATEGORY PAGE---------------------------------------------- */
 
 /* -----------------------------------AD SPACE---------------------------------------------- */
@@ -2031,6 +2008,8 @@ body {
     /* margin-left: 5%;
     margin-right: 5%; */
     margin-bottom: 0.5em;
+    padding-top: 1.7em;
+    border-top: 2px solid black;
 }
 
 .ad-image1 {
@@ -2078,8 +2057,6 @@ body {
         margin-left: 1%;
     }
 }
-
-
 
 /* -----------------------------------END AD SPACE---------------------------------------------- */
 
@@ -2222,8 +2199,6 @@ body {
         width: 30%;
     }
 }
-
-
 
 /* -----------------------------------END FOOTER---------------------------------------------- */
 

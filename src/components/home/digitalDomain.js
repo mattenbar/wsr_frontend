@@ -16,7 +16,6 @@ function transactions(state) {
 
         if (posts.length > 0){
             return (
-                console.log(posts),  
                 <div className="trcrsl">
                     <h1>THE DIGITAL DOMAIN</h1>
                     <div className="nm-cards" >

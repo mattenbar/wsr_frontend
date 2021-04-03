@@ -1,17 +1,36 @@
-import React from 'react';
-import {connect} from 'react-redux'
-import {GetSlug} from '../../actions/getSlug'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { connect } from "react-redux";
+import { GetSlug } from "../../actions/getSlug";
+import { Link } from "react-router-dom";
+import moment from "moment";
 
 function archives(state) {
 
-    let posts = state.posts.map(post => {
-        return(
-            <div >
-              <li><Link to={{pathname:`${GetSlug(post.attributes)}/${post.id}`}}>{post.attributes.title} </Link></li>
+    // why doesn't this always work? -->
+    // let reversedPosts = state.posts.reverse()
+    // let posts = reversedPosts.map((post) => {
+        let posts = state.posts.map((post) => {
+        return (
+            <div className="pointcpLinksList">
+                <li>
+                    <Link
+                        to={{
+                            pathname: `${GetSlug(post.attributes)}/${post.id}`,
+                        }}
+                        className="pointcpLinks"
+                    >
+                        <span>{post.attributes.title}</span>
+                        <span>&nbsp;</span>
+                        <span>- by {post.attributes.author}</span>
+                            <span>&nbsp;</span>
+                            <span>| {moment
+                            .parseZone(post.attributes.created_at)
+                            .format("MMMM DD, YYYY")}</span>
+                    </Link>
+                </li>
             </div>
-        )
-    })
+        );
+    });
 
     return (
         <div className="archive">
@@ -19,19 +38,17 @@ function archives(state) {
                 <h1>ARCHIVES</h1>
             </div>
             <div className="archive-container">
-                <ol>
-                    {posts}
-                </ol>
+                <ol>{posts}</ol>
             </div>
         </div>
     );
 }
 
-function mSTP(state){
+function mSTP(state) {
     return {
-      posts: state.posts,
-      user: state.user
-    }
-  }
+        posts: state.posts,
+        user: state.user,
+    };
+}
 
 export default connect(mSTP)(archives);
