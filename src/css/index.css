@@ -917,17 +917,20 @@ body {
     }
 }
 
-@media (min-width: 55em) {
+/* @media (min-width: 55em) {
     .carousel-top {
         margin: 0 0 2em 0;
         border-top: 2px solid black;
         border-bottom: 2px solid black;
     }
-}
+} */
 
 @media (min-width: 65em) {
     .carousel-top {
         margin: 0 0 3em 0;
+        margin: 0 0 2em 0;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
     }
 
     .box h2 {
@@ -1378,11 +1381,14 @@ body {
 /* -----------------------------------END HOME---------------------------------------------- */
 
 /* -----------------------------------POINT-COUNTERPOINT---------------------------------------------- */
-
-@media (min-width: 80em) {
+@media (min-width: 48em) {
     .pointcpContainer {
         position: relative;
         margin-bottom: 2em;
+    }
+
+    .pointcp-topic{
+        margin:1em;
     }
 
     .pointcptopic {
@@ -1401,12 +1407,8 @@ body {
     .pointContainer2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* grid-auto-rows: minmax(min-content, max-content); */
         grid-auto-rows: minmax(auto-fit, auto);
-        /* grid-template-rows: auto 1fr; */
-        /* grid-auto-rows: auto; */
         grid-gap: 52px;
-        /* background-color: darkblue; */
         border-bottom: 2px solid black;
     }
 
@@ -1445,7 +1447,7 @@ body {
         margin-bottom: 4em;
         position: relative;
         height: auto;
-        /* this is relative/parent */
+        
     }
 
     .pointcp4 {
@@ -1458,19 +1460,10 @@ body {
         margin-top: 1.25em;
         text-align: justify;
         height: auto;
-        /* keeping text short  - fix to height auto */
-        /* height: 15em;  
-                                
-        overflow: hidden; */
+        
     }
 
-    /* keeping text short  - fix to take out max-height / take out overflow hidden*/
-    /* .pointcpContent p {
-        max-height: 10em;
-                                
-
-        overflow: hidden;
-    } */
+    
 
     .pointTop {
         display: grid;
@@ -1489,12 +1482,341 @@ body {
     }
 
     .pointbottom {
-        /* position: absolute; */
         bottom: 7px;
     }
 
     .pointbottom2 {
+        bottom: 7px;
+        right: 0px;
+    }
+
+    .pointcpImage {
+        width: 12em;
+        height: 12em;
+        object-fit: cover;
+    }
+
+    .boxingButton {
+        border: none;
+        background: none;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        cursor: pointer;
+    }
+
+    .boxingButton:focus {
+        box-shadow: none !important;
+    }
+
+    .pv1,
+    .pv2 {
+        display: flex;
+        transition: all 0.5s ease;
+    }
+
+    .pv1 h2,
+    .pv2 h2 {
+        margin-top: 0.2em;
+        /* display: inline-block; */
+        font-size: 2em;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    .pv1:hover,
+    .pv1:active,
+    .pv2:hover,
+    .pv2:active {
+        transform: translateY(-3px);
+        transition: all 0.5s ease;
+        text-shadow: 2px 2px 4px grey;
+    }
+
+    .boxGlove {
+        width: 3.5em;
+        height: 3.5em;
+        /* margin-top: -20em; */
+    }
+
+    .boxingButton3 {
+        border: none;
+        background: none;
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+
+    .boxingButton3 h2 {
+        margin-top: 0.2em;
+        margin-bottom: 2em;
+    }
+
+    .far {
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .newestCountdown1 {
+        /* width: 200%;
+        position: relative; */
+        text-align: right;
+    }
+
+    .countdown-and-voting {
+        width: 209%;
+        height: auto;
+    }
+
+    .pointVote1 {
+        float: left;
+    }
+
+    .pointVote2 {
+        float: right;
+    }
+
+    .pointVote3 {
+        float: left;
+    }
+
+    .pointVote4 {
+        float: right;
+    }
+
+    .newestWinner1 {
+        bottom: 2em;
+        text-align: center;
+        left: 53%;
+        display: flex;
+        vertical-align: middle;
+    }
+
+    .newestCountdown2 {
+        /* position: relative; */
+        text-align: center;
+        margin-top: -5em;
+    }
+
+    .newestCountdown3 {
+        text-align: center;
+        margin-bottom: 0em;
+    }
+
+    .newestWinner2 {
+        width: 50em;
+        display: flex;
+        /* margin: 0 auto; */
+        position: absolute;
+        left: 41%;
+        bottom: 5%;
+        padding-bottom: 2em;
+    }
+
+    .countdownText h2 {
         /* position: absolute; */
+        bottom: 2em;
+        text-align: center;
+        width: 100%;
+        left: 53%;
+    }
+
+    .countdownText2 h2 {
+        /* position: absolute; */
+        bottom: 5em;
+
+        /* left: 39%; */
+    }
+
+    .countdownText3 h2 {
+        /* position: absolute; */
+        bottom: -14em;
+        left: 40%;
+    }
+
+    .countdownTrophyImg {
+        width: 2em;
+        vertical-align: middle;
+    }
+
+
+    .winner h2 {
+        color: black;
+    }
+
+    .winner h1 {
+        color: rgb(0, 59, 91);
+    }
+
+    .trophyHeaders {
+        text-align: center;
+        width: 100%;
+        display: flex;
+    }
+
+    .trophyHeaders h1 {
+        width: 100%;
+    }
+
+    .editDeletePointCP {
+        margin-top: 5em;
+    }
+
+    .editDeletePointCP1 {
+        margin-top: 2.5em;
+    }
+
+    .linkToArchives-Container {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        text-align: center;
+    }
+
+    .linkToArchives {
+        text-decoration: none;
+        font-size: 1.75em;
+        color: rgb(0, 59, 91);
+        transition: all 0.5s ease;
+        margin: 1em;
+    }
+
+    .linkToArchives:hover,
+    .linkToArchives:active {
+        font-size: 1.8em;
+        transform: translateY(-5px);
+        transition: all 0.5s ease;
+        text-shadow: 2px 2px 4px grey;
+    }
+
+    .archiveContainer {
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+
+    .pointcpLinksList {
+        padding-left: 2em;
+        text-align: left;
+    }
+
+    .pointcpLinksList li {
+        padding: 0;
+        margin: 0.5em;
+        font-size: 1.25em;
+        color: black;
+    }
+
+    .pointcpLinks {
+        text-decoration: none;
+        transition: all 0.5s ease;
+        color: black;
+    }
+
+    .pointcpLinks:hover,
+    .pointcpLinks:active {
+        transform: translateY(-2px);
+        transition: all 0.5s ease;
+        text-shadow: 2px 2px 2px rgb(148, 146, 146);
+    }
+}
+
+@media (min-width: 64em) {
+    .pointcpContainer {
+        position: relative;
+        margin-bottom: 2em;
+    }
+
+    .pointcptopic {
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .pointcptopic h3 {
+        width: auto;
+    }
+    .pointcptopic h1 {
+        width: auto;
+    }
+
+    .pointContainer1,
+    .pointContainer2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(auto-fit, auto);
+        grid-gap: 52px;
+        border-bottom: 2px solid black;
+    }
+
+    .pointContainer1 h2,
+    .pointContainer2 h2 {
+        color: rgba(0, 59, 91);
+    }
+
+    .pointContainer1 {
+        padding-bottom: 3em;
+        position: relative;
+    }
+
+    .pointContainer2 {
+        padding-bottom: 1em;
+        margin-bottom: 2em;
+    }
+
+    .pointcp1,
+    .pointcp2 {
+        height: 30em;
+        margin-bottom: 4em;
+        position: relative;
+        height: auto;
+    }
+
+    .pointcp2 {
+        align-content: right;
+        text-align: right;
+    }
+
+    .pointcp3,
+    .pointcp4 {
+        height: 30em;
+        margin-top: 0em;
+        margin-bottom: 4em;
+        position: relative;
+        height: auto;
+        
+    }
+
+    .pointcp4 {
+        align-content: right;
+        text-align: right;
+    }
+
+    .pointcpContent {
+        font-size: 1.1em;
+        margin-top: 1.25em;
+        text-align: justify;
+        height: auto;
+        
+    }
+
+    
+
+    .pointTop {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10px;
+    }
+
+    .pointTop2 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .pointHeaderRight {
+        position: relative;
+    }
+
+    .pointbottom {
+        bottom: 7px;
+    }
+
+    .pointbottom2 {
         bottom: 7px;
         right: 0px;
     }
@@ -2394,10 +2716,41 @@ body {
     }
 }
 
+@media (min-width: 47em){
+
+    .footer .nav{
+        font-size: .8em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav__item{
+        text-align: center;
+    }
+
+    .nav__link:link,
+    .nav__link:visited {
+        margin-right: 0rem;
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.2em;
+    }
+
+    .second-row-social-media {
+        left: 50%;
+        padding-bottom: 2em;
+    }
+
+}
+
 @media (min-width: 80em) {
     .nav__link:link,
     .nav__link:visited {
         font-size: 1.3em;
+        
     }
 
     .second-row-social-media {
