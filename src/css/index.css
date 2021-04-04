@@ -886,9 +886,7 @@ body {
 
 @media (min-width: 43.75em) {
     .carousel-top {
-        margin: 0 0 2em 0;
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
+        margin: 0 0 1.5em 0;
     }
 
     .crsltop {
@@ -905,9 +903,17 @@ body {
     }
 }
 
+@media (min-width: 55em) {
+    .carousel-top {
+        margin: 0 0 2em 0;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+}
+
 @media (min-width: 65em) {
     .carousel-top {
-        margin: 0 0 4em 0;
+        margin: 0 0 3em 0;
     }
 
     .box h2 {
@@ -1113,7 +1119,7 @@ body {
 /* -------------------START newsmakers roundup/transactions & transitions---------------------- */
 .newsmakers-transactions {
     margin-top: 3em;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 
 .nm-cards {
@@ -1129,7 +1135,7 @@ body {
 }
 
 .trcrsl {
-    height: 17em;
+    height: 15em;
 }
 
 .trcrsl h1 {
@@ -1172,11 +1178,11 @@ body {
 
 @media (min-width: 43.75em) {
     .nm-cards {
-        margin-top: em;
+        margin-top: 1em;
     }
 
     .trcrsl {
-        height: 17em;
+        height: 15em;
         margin-top: 1.5em;
     }
 
@@ -1188,7 +1194,12 @@ body {
 }
 
 @media (min-width: 56.25em) {
+    .nm-cards {
+        margin-top: 1.5em;
+    }
+
     .trcrsl {
+        height: 15em;
         margin-bottom: 2em;
     }
 }
