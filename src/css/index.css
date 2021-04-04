@@ -2229,8 +2229,7 @@ body {
 .main-bottom-ads {
     margin-bottom: 0.25em;
     padding-top: 1.25em;
-    /* border-top: 2px solid black; */
-    margin-left: 0.75em;
+    margin-left: 0.4em;
 }
 
 .ad-image1 {
@@ -2242,20 +2241,57 @@ body {
 
 @media (min-width: 43.75em) {
     .main-bottom-ads {
+        padding-top: 1em;
         display: inline-block;
+        margin-left: 0;
+        padding-bottom: 0.75em;
     }
 
     .ad-image1 {
-        width: 45%;
+        width: 49%;
         height: 250px;
-        margin: 1em;
+        margin: 0;
         object-fit: cover;
+        text-align: justify;
+    }
+    .span-ad-image1 {
+        margin-right: 1%;
+    }
+
+    .span-ad-image2 {
+        margin-left: 1%;
+    }
+}
+
+@media (min-width: 55em) {
+    .main-bottom-ads {
+        width: 100%;
+        margin-left: 0em;
+        margin-right: 0;
+        margin-bottom: 0.8em;
+        text-align: justify;
+        display: inline-block;
+        padding-bottom: 0;
+    }
+
+    .ad-image1 {
+        width: 49%;
+        height: 300px;
+        margin: 0;
+        object-fit: cover;
+        text-align: justify;
+    }
+    .span-ad-image1 {
+        margin-right: 1%;
+    }
+
+    .span-ad-image2 {
+        margin-left: 1%;
     }
 }
 
 @media (min-width: 80em) {
     .main-bottom-ads {
-        width: 100%;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 1em;
