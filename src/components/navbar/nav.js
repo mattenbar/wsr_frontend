@@ -4,6 +4,7 @@ import PopUpSignUp from "./popUpSignUp";
 import PopUpSignIn from "./popUpSignIn";
 import SocialMediaButtons from "./socialMediaButtons";
 import SearchBar2 from "./searchBar2";
+import { Link } from "react-router-dom";
 
 
 function NavBar(props) {
@@ -15,11 +16,11 @@ function NavBar(props) {
           <div className="nav-content">
             
             <div className="nav-header">
-              <a href="/">
+              <Link to={`/`}>
                 <h1>Wealth</h1>
                 <h1>Solutions</h1>
                 <h1>Report</h1>
-              </a>
+              </Link>
             </div>
 
             <div className="header-right">
