@@ -77,11 +77,14 @@ function lastIssue(props) {
 
         return (
             <div className="ticrsl" >
-                <h1>LAST ISSUE</h1>
-                <Slider {...settings} >
-                    {cItems}
-    
-                </Slider>
+                <div className="ticrsl-move-left" >
+                    <h1>LAST ISSUE</h1>
+                    <Slider {...settings} >
+                        {cItems}
+        
+                    </Slider>
+                </div>
+
             </div>
         );
         
