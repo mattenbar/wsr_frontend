@@ -32,15 +32,12 @@ body {
     font-family: europaRegular;
     box-sizing: border-box;
     margin: 0;
-    /* -webkit-font-smoothing: antialiased; */
     -moz-osx-font-smoothing: grayscale;
-    /* padding: 2em; */
     font-family: europaRegular;
     max-width: 80em;
     margin: auto;
-    /* -webkit-text-size-adjust: none; */
-    -webkit-font-smoothing: subpixel-antialiased !important; 
-    text-rendering:optimizeLegibility !important;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    text-rendering: optimizeLegibility !important;
 }
 
 @media (min-width: 55em) {
@@ -263,7 +260,6 @@ body {
 /* -----------------------------------search bar---------------------------------------------- */
 .header-search-bar {
     margin-top: 1em;
-    /* margin-left: 3.75em; */
 }
 
 .searchbarinput {
@@ -279,7 +275,6 @@ body {
 }
 
 .searchbarinput::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgb(255, 208, 2);
     font-size: 1.5em;
 }
@@ -299,27 +294,9 @@ body {
     width: 20%;
 }
 
-/* @media (min-width: 43.75em) {
-    .header-search-bar {
-        width: 11em;
-        padding-bottom: 2em;
-        margin-top: -5em;
-    }
-} */
-
 @media (min-width: 80em) {
     .header-search-bar {
-        /* padding-bottom: 2.5em; */
         margin-top: 1.5em;
-        /* margin-left: 0em; */
-        /* margin-right: 20em; */
-    }
-    .searchbarinput {
-        background-color: rgb(0, 59, 91, 0.1);
-        font-size: 1em;
-        padding-top: 1em;
-        padding-bottom: 0.5em;
-        padding-left: 0.5em;
     }
 }
 
@@ -356,12 +333,6 @@ body {
     }
 }
 
-@media (min-width: 55em) {
-    .smb-yellow {
-        width: 4.3em;
-    }
-}
-
 @media (min-width: 80em) {
     .social-media-buttons {
         margin-top: 2.75em;
@@ -391,7 +362,7 @@ body {
 }
 
 .popup__content {
-    width: 30em;
+    width: 15em;
     height: 16rem;
     background-color: white;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
@@ -442,6 +413,7 @@ body {
 }
 
 .leftpopupleft {
+    width: 0;
 }
 
 .popup__right {
@@ -477,10 +449,13 @@ body {
 .popup__right label {
     font-size: 0.75em;
 }
+.field {
+    margin-top: 0.5em;
+}
 
 @media (min-width: 43.75em) {
     .popup__content {
-        width: 40em;
+        width: 35em;
         height: 13rem;
         top: 40%;
         left: 50%;
@@ -531,6 +506,13 @@ body {
 
     .popup__right label {
         font-size: 0.75em;
+    }
+}
+
+@media (min-width: 55em) {
+    .popup__content {
+        top: 50%;
+        left: 50%;
     }
 }
 
@@ -807,7 +789,7 @@ body {
     margin-right: -5em;
     margin-left: -5em;
     /* outline: 0; */
-    width:auto;
+    width: auto;
 }
 
 .model {
