@@ -355,7 +355,6 @@ body {
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 2000;
-    /* display: none; */
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s;
@@ -412,13 +411,8 @@ body {
     display: none;
 }
 
-.leftpopupleft {
-    width: 0;
-}
-
 .popup__right {
     width: 40%;
-    /* float: right; */
     display: table-cell;
     vertical-align: middle;
     padding: 2em 4rem;
@@ -458,7 +452,6 @@ body {
         width: 35em;
         height: 13rem;
         top: 40%;
-        left: 50%;
     }
 
     .popup__left {
@@ -491,28 +484,16 @@ body {
 
     .popup__right {
         width: 60%;
-        vertical-align: middle;
-        padding: 2em 4rem;
     }
 
     .popup__right h1 {
         font-size: 1.5em;
-        color: rgba(0, 59, 91, 1);
-    }
-
-    .popup__right h3 {
-        font-size: 0.75em;
-    }
-
-    .popup__right label {
-        font-size: 0.75em;
     }
 }
 
 @media (min-width: 55em) {
     .popup__content {
         top: 50%;
-        left: 50%;
     }
 }
 
@@ -520,28 +501,14 @@ body {
     .popup__content {
         width: 720px;
         height: 15rem;
-        top: 50%;
     }
 
     .popup__left {
-        height: 100%;
         width: 40%;
-
         font-size: 1.5em;
-        padding-left: 0.5em;
         padding-top: 3.5%;
     }
 
-    .leftpopupleft {
-        width: 5%;
-        height: 100%;
-    }
-
-    .popup__right {
-        width: 60%;
-        vertical-align: middle;
-        padding: 2em 4rem;
-    }
     .popup__right h1 {
         font-size: 2em;
         padding-bottom: 0.25em;
@@ -554,6 +521,7 @@ body {
     .popup__right label {
         font-size: 1em;
     }
+
     .popup__right input {
         font-size: 1.25em;
         margin-left: 1em;
@@ -589,20 +557,9 @@ body {
     .linksBarWeekOne-container {
         visibility: visible;
         display: contents;
-    }
-}
-
-@media (min-width: 66em) {
-    /* week one */
-
-    .linksBarWeekOne-container {
-        visibility: visible;
-        display: contents;
-        /* padding: 2%; */
         text-align: justify;
         color: black;
-        /* font-size: 109.1%; */
-        font-size: 1.123em;
+        font-size: 0.77em;
     }
 
     .linksBarWeekOne-container a {
@@ -627,6 +584,7 @@ body {
         text-align: justify;
         color: black;
 
+        /* will need css font size here */
         font-size: 1.123em;
     }
 
@@ -640,16 +598,19 @@ body {
     }
 
     .linksBarWeekTwo-links {
+        /* will need css checkup here*/
         margin-top: 2em;
         margin-bottom: 2em;
     }
 
     .linksBarWeekTwo-Top {
+        /* will need css font size here */
         font-size: 1.061em;
         margin-bottom: 1em;
     }
 
     .linksBarWeekTwo-Bottom {
+        /* will need css font size here */
         font-size: 1.072em;
         letter-spacing: 0.09em;
     }
@@ -658,10 +619,10 @@ body {
     .linksBarWeekThree-container {
         visibility: visible;
         display: contents;
-        /* padding: 2%; */
         text-align: justify;
         color: black;
 
+        /* will need css font size here */
         font-size: 1.123em;
     }
 
@@ -672,6 +633,100 @@ body {
 
     .linksBarWeekThree-container a:hover {
         text-decoration: underline;
+    }
+
+    .linksBarWeekThree-links {
+        /* will need css */
+    }
+
+    .linksBarWeekThree-Top {
+        /* will need css */
+    }
+
+    .linksBarWeekThree-Bottom {
+        /* will need css */
+    }
+
+    /* final linksbar */
+
+    .linksBar-container {
+        visibility: visible;
+        display: contents;
+        text-align: justify;
+        color: black;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 1em;
+    }
+
+    .linksBar-links {
+        margin-bottom: 2em;
+    }
+
+    .linksBar-Top {
+        /* will need css */
+    }
+
+    .linksBar-Middle {
+        /* will need css */
+    }
+
+    .linksBar-Bottom {
+        /* will need css */
+    }
+
+    .linksBar-container a {
+        color: black;
+        text-decoration: none;
+        padding: 0;
+    }
+
+    .linksBar-container a:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 62em) {
+    .linksBarWeekOne-container {
+        font-size: 0.79em;
+    }
+}
+
+@media (min-width: 75em) {
+    .linksBarWeekOne-container {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 80em) {
+    /* week one */
+
+    .linksBarWeekOne-container {
+        font-size: 1.123em;
+    }
+
+    .linksBarWeekOne-links {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    /* week two */
+
+    .linksBarWeekTwo-container {
+        font-size: 1.123em;
+    }
+
+    .linksBarWeekTwo-Top {
+        font-size: 1.061em;
+    }
+
+    .linksBarWeekTwo-Bottom {
+        font-size: 1.072em;
+    }
+
+    /* week three */
+    .linksBarWeekThree-container {
+        font-size: 1.123em;
     }
 
     .linksBarWeekThree-links {
@@ -691,17 +746,6 @@ body {
 
     /* final linksbar */
 
-    .linksBar-container {
-        visibility: visible;
-        display: contents;
-        /* padding: 2%; */
-        text-align: justify;
-        color: black;
-        padding-right: 0;
-        padding-left: 0;
-        margin-bottom: 1em;
-    }
-
     .linksBar-links {
         margin-bottom: 2em;
     }
@@ -718,16 +762,6 @@ body {
 
     .linksBar-Bottom {
         font-size: 1.071em;
-    }
-
-    .linksBar-container a {
-        color: black;
-        text-decoration: none;
-        padding: 0;
-    }
-
-    .linksBar-container a:hover {
-        text-decoration: underline;
     }
 }
 
