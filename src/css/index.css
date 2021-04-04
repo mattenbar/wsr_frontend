@@ -559,7 +559,7 @@ body {
         display: contents;
         text-align: justify;
         color: black;
-        font-size: 0.77em;
+        /* font-size: 0.77em; */
     }
 
     .linksBarWeekOne-container a {
@@ -585,7 +585,7 @@ body {
         color: black;
 
         /* will need css font size here */
-        font-size: 1.123em;
+        /* font-size: 1.123em; */
     }
 
     .linksBarWeekTwo-container a {
@@ -605,13 +605,13 @@ body {
 
     .linksBarWeekTwo-Top {
         /* will need css font size here */
-        font-size: 1.061em;
+        /* font-size: 1.061em; */
         margin-bottom: 1em;
     }
 
     .linksBarWeekTwo-Bottom {
         /* will need css font size here */
-        font-size: 1.072em;
+        /* font-size: 1.072em; */
         letter-spacing: 0.09em;
     }
 
@@ -623,7 +623,7 @@ body {
         color: black;
 
         /* will need css font size here */
-        font-size: 1.123em;
+        /* font-size: 1.123em; */
     }
 
     .linksBarWeekThree-container a {
@@ -688,13 +688,13 @@ body {
 
 @media (min-width: 62em) {
     .linksBarWeekOne-container {
-        font-size: 0.79em;
+        /* font-size: 0.79em; */
     }
 }
 
 @media (min-width: 75em) {
     .linksBarWeekOne-container {
-        font-size: 1em;
+        /* font-size: 1em; */
     }
 }
 
@@ -702,31 +702,48 @@ body {
     /* week one */
 
     .linksBarWeekOne-container {
-        font-size: 1.123em;
+        /* font-size: 1.123em; */
+        width: 80em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
     }
 
     .linksBarWeekOne-links {
         margin-top: 2em;
         margin-bottom: 2em;
+        width: 80em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
     }
 
     /* week two */
 
     .linksBarWeekTwo-container {
-        font-size: 1.123em;
+        /* font-size: 1.123em; */
     }
 
     .linksBarWeekTwo-Top {
-        font-size: 1.061em;
+        /* font-size: 1.061em; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .linksBarWeekTwo-Bottom {
-        font-size: 1.072em;
+        /* font-size: 1.072em; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     /* week three */
     .linksBarWeekThree-container {
-        font-size: 1.123em;
+        font-size: .9em;
+        
     }
 
     .linksBarWeekThree-links {
@@ -735,13 +752,19 @@ body {
     }
 
     .linksBarWeekThree-Top {
-        font-size: 0.806em;
+        /* font-size: 0.806em; */
         margin-bottom: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .linksBarWeekThree-Bottom {
-        font-size: 0.85em;
-        letter-spacing: 0.078em;
+        /* font-size: 0.85em; */
+        /* letter-spacing: 0.078em; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     /* final linksbar */
@@ -751,17 +774,26 @@ body {
     }
 
     .linksBar-Top {
-        font-size: 1.023em;
+        /* font-size: 1.023em; */
         margin-bottom: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .linksBar-Middle {
-        font-size: 1.0768em;
+        /* font-size: 1.0768em; */
         margin-bottom: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .linksBar-Bottom {
-        font-size: 1.071em;
+        /* font-size: 1.071em; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
@@ -1674,7 +1706,7 @@ body {
 }
 
 .category-show h5 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding-left: 1em;
     justify-content: left;
     margin: auto;
