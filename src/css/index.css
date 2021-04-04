@@ -2420,12 +2420,43 @@ body {
     src: url("../fonts/EuropaRegular.ttf") format("truetype");
 }
 
-.postInput {
-    margin: 5em;
+ .postInput {
+    /* margin: 5em; */
+    border: black solid 1px;
+    padding: 5em;
+    margin-top: 2em;
 }
 
 .postForm {
     margin: 1em;
+} 
+
+.pointcpInput{
+    border: black solid 1px;
+    padding: 5em;
+}
+
+.pointcpForm {
+    margin: 1em;
+} 
+
+.FeaturesInput{
+    border: black solid 1px;
+    padding: 5em;
+}
+
+.adInput{
+    border: black solid 1px;
+    padding: 5em;
+}
+
+.adForm{
+    margin: 1em;
+}
+
+.ShowadsInput{
+    border: black solid 1px;
+    padding: 5em;
 }
 
 .hubspot {
