@@ -133,6 +133,17 @@ body {
     text-transform: uppercase;
     transition: all 0.5s ease;
 }
+
+.auth-buttons__yellow-signout {
+    width: 103px;
+    color: rgb(255, 208, 2);
+    background-color: Transparent;
+    border: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
 .auth-buttons__yellow a {
     text-decoration: none;
     color: rgb(255, 208, 2);
@@ -268,6 +279,13 @@ body {
 
     .auth-buttons__yellow {
         width: 100px;
+    }
+
+    .auth-buttons__yellow-signout {
+        font-size: 1.25em;
+    }
+    .userEmail {
+        font-size: 1.35em;
     }
 
     .auth2-buttons {
@@ -944,7 +962,6 @@ body {
     .crsltop {
         margin-right: -3em;
         margin-left: -3em;
-
     }
 
     .top-carousel-model {
@@ -2207,17 +2224,16 @@ body {
 /* -----------------------------------AD SPACE---------------------------------------------- */
 
 .main-bottom-ads {
-    /* margin-left: 5%;
-    margin-right: 5%; */
-    margin-bottom: 0.5em;
-    padding-top: 1.7em;
-    border-top: 2px solid black;
+    margin-bottom: 0.25em;
+    padding-top: 1.25em;
+    /* border-top: 2px solid black; */
+    margin-left: 0.75em;
 }
 
 .ad-image1 {
     width: 90%;
     height: 250px;
-    margin: 1em;
+    margin: 0 1em 1em 1em;
     object-fit: cover;
 }
 
@@ -2411,8 +2427,6 @@ body {
     margin-bottom: 1em;
 }
 
-/* -----------------------------------END HUBSPOT TIPS FORM---------------------------------------------- */
-
 @font-face {
     font-family: europaRegular;
     src: url("../fonts/EuropaRegular.ttf") format("truetype");
@@ -2429,3 +2443,5 @@ body {
 .hubspot {
     border-top: 2px solid black;
 }
+
+/* -----------------------------------END HUBSPOT TIPS FORM---------------------------------------------- */
