@@ -568,13 +568,13 @@ body {
     display: none;
 }
 
-@media (min-width: 55em) {
+
+@media (min-width: 65em) {
     .linksBarWeekOne-container {
         visibility: visible;
         display: contents;
         text-align: justify;
         color: black;
-        /* font-size: 0.77em; */
     }
 
     .linksBarWeekOne-container a {
@@ -589,6 +589,7 @@ body {
     .linksBarWeekOne-links {
         margin-top: 2em;
         margin-bottom: 2em;
+        font-size: .8em;
     }
 
     /* week two */
@@ -599,8 +600,6 @@ body {
         text-align: justify;
         color: black;
 
-        /* will need css font size here */
-        /* font-size: 1.123em; */
     }
 
     .linksBarWeekTwo-container a {
@@ -627,7 +626,7 @@ body {
     .linksBarWeekTwo-Bottom {
         /* will need css font size here */
         /* font-size: 1.072em; */
-        letter-spacing: 0.09em;
+        
     }
 
     /* week three */
@@ -676,18 +675,28 @@ body {
 
     .linksBar-links {
         margin-bottom: 2em;
+        font-size: .72em;
     }
 
     .linksBar-Top {
         /* will need css */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .linksBar-Middle {
         /* will need css */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .linksBar-Bottom {
         /* will need css */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .linksBar-container a {
@@ -701,23 +710,11 @@ body {
     }
 }
 
-@media (min-width: 62em) {
-    .linksBarWeekOne-container {
-        /* font-size: 0.79em; */
-    }
-}
-
-@media (min-width: 75em) {
-    .linksBarWeekOne-container {
-        /* font-size: 1em; */
-    }
-}
 
 @media (min-width: 80em) {
     /* week one */
 
     .linksBarWeekOne-container {
-        /* font-size: 1.123em; */
         width: 80em;
         display: flex;
         flex-direction: row;
@@ -731,29 +728,33 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        font-size: 1em;
+        
     }
 
     /* week two */
 
     .linksBarWeekTwo-container {
-        /* font-size: 1.123em; */
+        
     }
 
     .linksBarWeekTwo-Top {
-        /* font-size: 1.061em; */
+       
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     .linksBarWeekTwo-Bottom {
-        /* font-size: 1.072em; */
+        
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     /* week three */
+
     .linksBarWeekThree-container {
         font-size: 0.9em;
     }
@@ -783,10 +784,11 @@ body {
 
     .linksBar-links {
         margin-bottom: 2em;
+        font-size: 1em;
     }
 
     .linksBar-Top {
-        /* font-size: 1.023em; */
+
         margin-bottom: 1em;
         display: flex;
         flex-direction: row;
@@ -794,7 +796,7 @@ body {
     }
 
     .linksBar-Middle {
-        /* font-size: 1.0768em; */
+        
         margin-bottom: 1em;
         display: flex;
         flex-direction: row;
@@ -802,7 +804,6 @@ body {
     }
 
     .linksBar-Bottom {
-        /* font-size: 1.071em; */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -1391,16 +1392,11 @@ body {
     .pointcp1,
     .pointcp2 {
         height: 30em;
-        /* overflow: hidden; */
         margin-bottom: 4em;
         position: relative;
         height: auto;
-        /* this is relative/parent */
     }
 
-    /* .pointcp1 {
-        height: auto;
-    } */
 
     .pointcp2 {
         align-content: right;
@@ -1559,14 +1555,11 @@ body {
     }
 
     .newestWinner1 {
-        /* margin-top: -50em; */
-        width: 50em;
+        bottom: 2em;
+        text-align: center;
+        left: 53%;
         display: flex;
-        /* margin: 0 auto; */
-        position: absolute;
-        left: 40%;
-        bottom: 46%;
-        padding-bottom: 2em;
+        vertical-align: middle;
     }
 
     .newestCountdown2 {
@@ -1612,12 +1605,13 @@ body {
     }
 
     .countdownTrophyImg {
-        width: 8%;
+        width: 2em;
+        vertical-align: middle;
     }
 
-    .trophyImg {
+    /* .trophyImg {
         width: 40%;
-    }
+    } */
 
     .winner h2 {
         color: black;
@@ -1629,6 +1623,12 @@ body {
 
     .trophyHeaders {
         text-align: center;
+        width: 100%;
+        display: flex; 
+    }
+
+    .trophyHeaders h1 {
+        width: 100%;
     }
 
     .editDeletePointCP {
