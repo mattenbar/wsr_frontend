@@ -93,12 +93,13 @@ class PointcpInput extends React.Component {
         <div className="pointcpInput">
           <h1>Input Point Counterpoint</h1>
           <form onSubmit={this.handlePointcpSubmit} >
-            <div>
+            <div className="pointcpForm">
             <label>End Date </label>
               <p> note: date picker only works on chrome - if using safari input format must be YYYY-MM-DD </p>
+              <br/>
               <input type="date" onChange={this.handlePointcpChange} name="end_date" value={this.state.pointcp.end_date}/>
             </div>
-            <div>
+            <div className="pointcpForm">
             <label>Topic</label>
               <input type="text"  onChange={this.handlePointcpChange} name="topic" value={this.state.pointcp.topic}/>
             </div>
