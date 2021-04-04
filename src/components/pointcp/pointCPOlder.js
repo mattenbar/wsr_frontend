@@ -87,15 +87,13 @@ function PointCPOlder({
 
             case "newestWinner":
                 return (
-                    <div className="newestWinner2">
-                        <img className="countdownTrophyImg" src="/trophy.png" />
-                        <div className="trophyHeaders">
-                            <h2 style={{ color: "black" }}>WINNER</h2>
-                            <h1 style={{ color: "rgb(0, 59, 91)" }}>
-                                {winner}
-                            </h1>
-                        </div>
+                    <div className="newestWinner1">
+                    <div className="trophyHeaders">
+                        <h1 style={{ color: "rgb(0, 59, 91)" }}>
+                            <img className="countdownTrophyImg" src="/trophy.png" /> Winner: {winner}
+                        </h1>
                     </div>
+                </div>
                 );
 
             default:
@@ -190,6 +188,7 @@ function PointCPOlder({
                 <div className="countdown-and-voting">
                 
                     {dateDifference(article.end_date) > 0 && getDivs("newestCountdown")}
+                    {dateDifference(article.end_date) <= 0 && getDivs("newestWinner")}
                     <div className="voting-container">
                         {dateDifference(article.end_date) > 0 && getDivs("pointVote3")}
                         {dateDifference(article.end_date) > 0 && getDivs("pointVote4")}
@@ -209,7 +208,7 @@ function PointCPOlder({
                 
                      
                 
-                {dateDifference(article.end_date) <= 0 && getDivs("newestWinner")}
+                
                 
             </div>
         </>

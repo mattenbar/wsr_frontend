@@ -48,13 +48,13 @@ function pointcpArticleBody({admin, article, winner, pointcp_id, handleVotingCli
             
             case "newestWinner":
                 return(
-                    <div className="newestWinner3" >
-                        <img className="countdownTrophyImg" src="/trophy.png" />
-                    <div className="trophyHeaders" >
-                        <h2>WINNER</h2>
-                        <h1>{winner}</h1>
+                    <div className="newestWinner1">
+                        <div className="trophyHeaders">
+                            <h1 style={{ color: "rgb(0, 59, 91)" }}>
+                                <img className="countdownTrophyImg" src="/trophy.png" /> Winner: {winner}
+                            </h1>
+                        </div>
                     </div>
-            </div>  
                 )
 
             default:
@@ -131,9 +131,19 @@ return (
                 
             </div>
             <div className="countdown-and-voting">
+
+                { admin &&
+                    <div>
+                        <button onClick={handleEditDeleteClick} className="adminButtons">EDIT / DELETE ARTICLE</button>
+                    </div>
+                    
+                }
                 
                 {dateDifference(article.end_date) > 0 &&
                     getDivs("newestCountdown")
+                }
+                { dateDifference(article.end_date) <= 0 &&
+                    getDivs("newestWinner")
                 }
 
                 <div className="voting-container">
@@ -147,16 +157,9 @@ return (
                     }
                 </div>
                 
-                { dateDifference(article.end_date) <= 0 &&
-                    getDivs("newestWinner")
-                }
-            </div>
-            { admin &&
-                <div>
-                    <button onClick={handleEditDeleteClick} className="adminButtons">EDIT / DELETE ARTICLE</button>
-                </div>
                 
-            }
+            </div>
+            
         </div>
 
             

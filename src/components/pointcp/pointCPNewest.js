@@ -85,14 +85,12 @@ function PointCPNewest({
                     </div>
                 );
 
-            case "newestWinner":
+            case "newestWinner1":
                 return (
                     <div className="newestWinner1">
-                        <img className="countdownTrophyImg" src="/trophy.png" />
                         <div className="trophyHeaders">
-                            <h2 style={{ color: "black)" }}>WINNER</h2>
                             <h1 style={{ color: "rgb(0, 59, 91)" }}>
-                                {winner}
+                                <img className="countdownTrophyImg" src="/trophy.png" /> Winner: {winner}
                             </h1>
                         </div>
                     </div>
@@ -187,6 +185,8 @@ function PointCPNewest({
                 <div className="countdown-and-voting">
 
                     {dateDifference(article.end_date) > 0 && getDivs("newestCountdown")} 
+                    {dateDifference(article.end_date) <= 0 && getDivs("newestWinner1")}
+                    
                     
                     <div className="voting-container">
                         {dateDifference(article.end_date) > 0 && getDivs("pointVote2")}
@@ -212,7 +212,7 @@ function PointCPNewest({
             
 
            
-            {dateDifference(article.end_date) <= 0 && getDivs("newestWinner")}
+            
         </div>
     );
 }
