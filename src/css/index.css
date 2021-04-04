@@ -30,6 +30,7 @@ body {
     font-family: europaRegular;
     max-width: 80em;
     margin: auto;
+    -webkit-text-size-adjust: none;
 }
 
 @media (min-width: 55em) {
@@ -561,8 +562,9 @@ body {
         /* padding: 2%; */
         text-align: justify;
         color: black;
-
+        /* font-size: 109.1%; */
         font-size: 1.123em;
+        
     }
 
     .linksBarWeekOne-container a {
