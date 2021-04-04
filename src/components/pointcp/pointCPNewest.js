@@ -156,15 +156,6 @@ function PointCPNewest({
                 <div className="pointcp2">
                     <div className="pointTop2">
                         <div className="pointHeaderRight">
-                            <Link
-                                to={{
-                                    pathname: `/Point-Counterpoint/${newestId}`,
-                                    state: {
-                                        pointcp_id: newestId,
-                                    },
-                                }}
-                                className="pointcpLinks"
-                            >
                                 <div className="pointbottom2">
                                     <h1>DISAGREE</h1>
                                     <h1>{article.titleTwo}</h1>
@@ -175,7 +166,6 @@ function PointCPNewest({
                                             .format("MMMM DD, YYYY")}
                                     </h3>
                                 </div>
-                            </Link>
                         </div>
                         <div className="pointHeaderLeft">
                             <img
