@@ -122,6 +122,7 @@ body {
 
 .header-login-signup {
     margin-left: 0em;
+    margin-top: 1em;
 }
 
 .auth-buttons__yellow {
@@ -212,6 +213,7 @@ body {
 
     .header-login-signup {
         margin-left: 0;
+        margin-top: oem;
         position: absolute;
         bottom: 1.3em;
         right: -0.5em;
@@ -234,6 +236,7 @@ body {
 
     .auth2-buttons {
         margin-left: -1.75em;
+        font-size: 1em !important;
     }
 
     .userEmail {
@@ -242,7 +245,7 @@ body {
 
     .auth-buttons__yellow {
         width: 93px;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .divider {
@@ -282,7 +285,7 @@ body {
     }
 
     .auth-buttons__yellow-signout {
-        font-size: 1.25em;
+        font-size: 1em;
     }
     .userEmail {
         font-size: 1.35em;
@@ -2363,7 +2366,7 @@ body {
 
 .adminButton {
     /* all: unset; */
-    font-size: 1.2em;
+    font-size: 1em;
     cursor: pointer;
     text-decoration: none;
     color: rgb(255, 208, 2);
