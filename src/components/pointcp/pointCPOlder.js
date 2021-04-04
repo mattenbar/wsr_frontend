@@ -48,8 +48,6 @@ function PointCPOlder({
                                     src="/boxGloveLeft.png"
                                     className="boxGlove"
                                 />
-                                {/* <img src='/boxGloveLeft.png' className="boxGlove"/> */}
-                                {/* <h3 style={{color: "red", fontSize: "1vw"}} >[Votes: {article.votesPointCPOne}]</h3> */}
                             </div>
                         </button>
                     </div>
@@ -63,7 +61,6 @@ function PointCPOlder({
                             onClick={handleVotingClickButtonTwo}
                         >
                             <div className="pv2">
-                                {/* <h3 style={{color: "red", fontSize: "1vw"}}>[Votes: {article.votesPointCPTwo}]</h3> */}
                                 <h2>
                                     VOTE FOR {article.authorTwo} &nbsp;&nbsp;
                                 </h2>

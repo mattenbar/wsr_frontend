@@ -40,7 +40,7 @@ body {
     text-rendering: optimizeLegibility !important;
 }
 
-@media (min-width: 55em) {
+@media (min-width: 43em) {
     body {
         padding: 5%;
         padding-top: 4%;
@@ -90,6 +90,8 @@ body {
     text-transform: uppercase;
     vertical-align: bottom;
     padding-top: 0.5em;
+    text-align: center;
+    margin-left: -1.5em;
 }
 
 .nav-header h1 {
@@ -179,6 +181,8 @@ body {
         padding-top: 0.75em;
         font-size: 1em;
         margin-top: 0.5em;
+        text-align: left;
+        margin-left: 0em;
     }
 
     .header-login-signup {
@@ -771,13 +775,11 @@ body {
 
 .carousel-top {
     width: 100%;
-    margin: 0 0 4em 0;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    margin: 0 0 1em 0;
 }
 
 .slick-prev {
-    margin-left: 40px;
+    margin-left: 33px;
     z-index: 1020;
 }
 
@@ -816,18 +818,15 @@ body {
     align-items: center;
     justify-content: space-around;
     color: black;
-    /* width: 170%; */
     height: 100%;
     margin-top: 3em;
     margin-bottom: 3em;
     margin-right: -5em;
     margin-left: -5em;
-    /* outline: 0; */
     width: auto;
 }
 
 .model {
-    /* margin-top: 1em; */
     height: 30%;
 }
 
@@ -838,56 +837,58 @@ body {
 }
 
 .top-carousel-model {
-    width: 35%;
+    width: 30%;
 }
 
 @media (min-width: 43.75em) {
+    .carousel-top {
+        margin: 0 0 2em 0;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
     .crsltop {
         margin-top: 2.25em;
         margin-bottom: 2.5em;
     }
 
     .box h2 {
-        font-size: 1em;
+        font-size: 0.75em;
+    }
+
+    .top-carousel-model {
+        width: 30%;
+    }
+}
+
+@media (min-width: 65em) {
+    .carousel-top {
+        margin: 0 0 4em 0;
+    }
+
+    .box h2 {
+        font-size: 0.8em;
     }
 }
 
 @media (min-width: 80em) {
     .slick-prev {
         margin-left: 60px;
-        z-index: 1020;
     }
 
     .slick-next {
         margin-right: 60px;
-        z-index: 1021;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-        color: grey !important;
-        font-size: 30px !important;
     }
 
     .carousel-wrapper {
-        position: relative;
         width: 80%;
-        /* padding: 0 1em; */
         box-sizing: border-box;
-        /* margin-top: -2em; */
         justify-content: center;
         align-items: center;
     }
 
-    .carousel-wrapper:active,
-    .carousel-wrapper:hover,
-    .carousel-wrapper:focus {
-        outline: none;
-        border: none;
-    }
-
     .box {
-        margin-top: 2em; /*this is where to fix the big screeen!!!!!! */
+        margin-top: 2em;
     }
 
     .slick-slider ul {
@@ -899,25 +900,8 @@ body {
         margin-left: -3em;
     }
 
-    /* .model {
-        height: 65%;
-    } */
-
-    .box img {
-        /* margin-bottom: -3em; */
-        /* margin-top: 1em; */ /* this might need to be added!!!!!!!!! */
-        /* width: 35%; */
-    }
-
     .top-carousel-model {
         width: 25%;
-    }
-
-    .box h2 {
-        /* margin: 0 1em 1em 1em; */
-        font-size: 1em;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
     }
 }
 
@@ -926,8 +910,8 @@ body {
 
 .features {
     width: 100%;
-    height: 30em;
-    margin-top: 2.5em;
+    height: 20em;
+    margin-top: 1em;
     margin-bottom: 4em;
     border-top: 2px solid black;
     text-align: left;
@@ -956,14 +940,14 @@ body {
 
 .feature-wrapper {
     margin-top: 1em;
-    height: 75%;
-    display: flex;
-    justify-content: space-between;
+    height: 100%;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .small-square {
-    width: 25%;
-    height: 100%;
+    width: 75%;
+    height: 33%;
 }
 
 .small-square a,
@@ -980,7 +964,7 @@ body {
 
 .middle-square {
     width: 35%;
-    height: 100%;
+    height: 33%;
 }
 
 .middle-square img {
@@ -991,15 +975,21 @@ body {
 
 @media (min-width: 43.75em) {
     .features {
-        height: 30em;
+        height: 20em;
         margin: 0;
     }
 
+    .feature-wrapper {
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .features h1 {
-        font-size: 1.5em;
+        font-size: 1.25em;
         width: 40%;
         margin-left: 30%;
-        margin-left: 30%;
+        margin-top: -14px;
     }
 
     .features h2 {
@@ -1008,6 +998,49 @@ body {
 
     .features p {
         font-size: 0.75em;
+    }
+
+    .small-square {
+        width: 25%;
+        height: 100%;
+    }
+
+    .small-square a,
+    .middle-square a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .small-square img {
+        width: 100%;
+        height: 85%;
+        object-fit: cover;
+    }
+
+    .middle-square {
+        width: 35%;
+        height: 100%;
+    }
+
+    .middle-square img {
+        width: 100%;
+        height: 85%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 55em) {
+    .features {
+        height: 25em;
+    }
+
+    .feature-wrapper {
+        height: 90%;
+    }
+
+    .features h1 {
+        font-size: 1.5em;
+        margin-top: -17px;
     }
 }
 
@@ -1022,9 +1055,7 @@ body {
     }
 
     .features h1 {
-        font-size: 1.75em;
         width: 26%;
-        margin-left: 37%;
         margin-left: 37%;
         margin-top: -18px;
     }

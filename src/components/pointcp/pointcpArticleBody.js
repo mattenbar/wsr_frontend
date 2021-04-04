@@ -21,8 +21,6 @@ function pointcpArticleBody({admin, article, winner, pointcp_id, handleVotingCli
                         <button className="boxingButton" onClick={handleVotingClickButtonOne} >
                             <div className="pv1">
                                 <h2>VOTE FOR {article.authorOne} &nbsp;&nbsp;</h2><img src='/boxGloveLeft.png' className="boxGlove"/>
-                                {/* <img src='/boxGloveLeft.png' className="boxGlove"/> */}
-                                {/* <h3 style={{color: "red", fontSize: "1vw"}} >[Votes: {article.votesPointCPOne}]</h3> */}
                             </div>
                         </button>
                     </div>
@@ -33,7 +31,6 @@ function pointcpArticleBody({admin, article, winner, pointcp_id, handleVotingCli
                     <div className="pointVote4">
                         <button className="boxingButton" onClick={handleVotingClickButtonTwo} >
                             <div className="pv2">
-                                {/* <h3 style={{color: "red", fontSize: "1vw"}}>[Votes: {article.votesPointCPTwo}]</h3> */}
                                 <h2>VOTE FOR {article.authorTwo} &nbsp;&nbsp;</h2><img src='/boxGloveLeft.png' className="boxGlove"/>
                             </div>
                         </button>
