@@ -948,6 +948,7 @@ body {
     .crsltop {
         margin-right: -3em;
         margin-left: -3em;
+        width: auto;
     }
 
     .top-carousel-model {
