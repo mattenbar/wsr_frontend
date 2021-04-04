@@ -67,30 +67,30 @@ function SignupForm(props) {
         <div className="signup-form">
             <form className="form" onSubmit={handleSubmit}>
                 <div className="field">
-                    <label>First Name</label>
+                    <label>First Name</label><br/>
                     <input type="text" onChange={handleFirstNameChange} value={first_name} />
                 </div>
                 <div className="field">
-                    <label>Last Name</label>
+                    <label>Last Name</label><br/>
                     <input type="text" onChange={handleLastNameChange} value={last_name} />
                 </div>
                 <div className="field">
-                    <label>Company</label>
+                    <label>Company</label><br/>
                     <input type="text" onChange={handleCompanyChange} value={company_name} />
                 </div>
                 <div className="field">
-                    <label>Email</label>
+                    <label>Email</label><br/>
                     <input type="email" onChange={handleEmailChange} value={email} />
                 </div>
                 <div className="field">
                     <label>Password</label><br />
-                    <label style={{fontSize: ".75vw"}} >(*must be 8 characters, include 1 Capital Letter, 1 Special Character & 1 Number)</label>
+                    <label style={{fontSize: ".75vw"}} >(*must be 8 characters, include 1 Capital Letter, 1 Special Character & 1 Number)</label><br/>
                     <input style={{ width: "80%" }} type="password" onChange={handlePasswordChange} value={password} pattern="^(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/>{ password && password === password_confirmation && 
                 <span className="matchingPasswords"> &#9989;</span>
             }
                 </div>
                 <div className="field">
-                    <label>Password Confirmation</label>
+                    <label>Password Confirmation</label><br/>
                     
                     <input style={{ width: "80%" }} type="password" onChange={handlePasswordConfirmationChange} value={password_confirmation} />{ password && password === password_confirmation && 
                 <span className="matchingPasswords"> &#9989;</span>
