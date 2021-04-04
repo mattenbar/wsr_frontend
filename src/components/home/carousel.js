@@ -105,7 +105,7 @@ function carousel(props) {
 
                 {/* week two */}
 
-                <div className="carousel-wrapper" >
+                {/* <div className="carousel-wrapper" >
                     <div className="box">
                         <Link to="/newsmakers-roundup" className="crsltop">
                             <img src="/carouselImages/NewsMakersRoundUp.png" className="top-carousel-model" alt=""/>
@@ -136,13 +136,13 @@ function carousel(props) {
                             <h2>ON THE RISE</h2>
                         </Link>
                     </div>
-                </div>
+                </div> */}
 
 
                 {/* week 3 */}
 
                 
-                <div className="carousel-wrapper" >
+                {/* <div className="carousel-wrapper" >
                     <div className="box">
                         <Link to="/Nightmare-On-Compliance-St" className="crsltop">
                             <img src="/carouselImages/NightmareOnCompSt.png" className="top-carousel-model" alt=""/>
@@ -166,13 +166,13 @@ function carousel(props) {
                             <h2>BUY IT OR BUILD IT?</h2>
                         </Link>
                     </div>
-                </div>
+                </div> */}
 
 
                 {/* week 4 */}
                 
                 
-                <div className="carousel-wrapper" >
+                {/* <div className="carousel-wrapper" >
                     <div className="box">
                         <Link to="/transactions-And-transitions" className="crsltop">
                             <img src="/carouselImages/Transactions&Trans.png" className="top-carousel-model" alt=""/>
@@ -219,7 +219,7 @@ function carousel(props) {
                             <h2>CAST & CREW</h2>
                         </Link>
                     </div>
-                </div>
+                </div> */}
 
                 
             </Slider>
