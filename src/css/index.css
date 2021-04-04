@@ -299,6 +299,9 @@ body {
 }
 
 @media (min-width: 80em) {
+    .searchbarinput {
+        font-size: 1em;
+    }
     .header-search-bar {
         margin-top: 1.5em;
     }
@@ -711,7 +714,6 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
     }
 
     .linksBarWeekOne-links {
@@ -721,7 +723,6 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
     }
 
     /* week two */
@@ -746,8 +747,7 @@ body {
 
     /* week three */
     .linksBarWeekThree-container {
-        font-size: .9em;
-        
+        font-size: 0.9em;
     }
 
     .linksBarWeekThree-links {
