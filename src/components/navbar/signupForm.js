@@ -84,7 +84,7 @@ function SignupForm(props) {
                 </div>
                 <div className="field">
                     <label>Password</label><br />
-                    <label style={{fontSize: ".75vw"}} >(*must be 8 characters, include 1 Capital Letter, 1 Special Character & 1 Number)</label><br/>
+                    <label style={{fontSize: ".75%"}} >(*must be 8 characters, include 1 Capital Letter, 1 Special Character & 1 Number)</label><br/>
                     <input style={{ width: "80%" }} type="password" onChange={handlePasswordChange} value={password} pattern="^(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/>{ password && password === password_confirmation && 
                 <span className="matchingPasswords"> &#9989;</span>
             }

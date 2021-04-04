@@ -42,11 +42,11 @@ function SigninForm(props) {
         <div className="signin-form">
             <form className='form' onSubmit={handleSubmit}>
                 <div className="field">
-                    <label>Email</label>
+                    <label>Email</label><br />
                     <input type="email" onChange={handleEmailChange} value={email} />
                 </div>
                 <div className="field">
-                    <label>Password</label>
+                    <label>Password</label><br />
                     <input type="password" onChange={handlePasswordChange} value={password} />
                 </div>
                 <button className="form-button" type="submit" >Log In</button>
