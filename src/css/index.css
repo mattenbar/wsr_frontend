@@ -116,7 +116,8 @@ body {
 }
 
 .social-media-buttons {
-    margin-left: 0;
+    visibility: hidden;
+    display: none;
 }
 
 .header-login-signup {
@@ -156,6 +157,13 @@ body {
 }
 
 @media (min-width: 43.75em) {
+    .social-media-buttons {
+        visibility: visible;
+        display: content;
+
+        margin-left: 0;
+    }
+
     .navbar {
         height: 10em;
     }
@@ -858,6 +866,10 @@ body {
     width: auto;
 }
 
+.crsltop a {
+    width: auto;
+}
+
 .model {
     height: 30%;
 }
@@ -942,9 +954,9 @@ body {
 
 .features {
     width: 100%;
-    height: 20em;
+    height: 13em;
     margin-top: 1em;
-    margin-bottom: 4em;
+    margin-bottom: -2em;
     border-top: 2px solid black;
     text-align: left;
 }
@@ -966,20 +978,21 @@ body {
 }
 
 .features p {
-    font-size: 0.25em;
+    font-size: 6px;
     text-transform: capitalize;
 }
 
 .feature-wrapper {
     margin-top: 1em;
     height: 100%;
-    /* display: flex;
-    justify-content: space-between; */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .small-square {
-    width: 75%;
-    height: 33%;
+    width: 30%;
+    height: 75%;
 }
 
 .small-square a,
@@ -995,8 +1008,8 @@ body {
 }
 
 .middle-square {
-    width: 35%;
-    height: 33%;
+    width: 30%;
+    height: 75%;
 }
 
 .middle-square img {
@@ -1007,14 +1020,15 @@ body {
 
 @media (min-width: 43.75em) {
     .features {
-        height: 20em;
+        height: 18em;
         margin: 0;
     }
 
     .feature-wrapper {
-        height: 90%;
+        height: 93%;
         display: flex;
         justify-content: space-between;
+        text-align: left;
     }
 
     .features h1 {
@@ -1043,21 +1057,9 @@ body {
         text-decoration: none;
     }
 
-    .small-square img {
-        width: 100%;
-        height: 85%;
-        object-fit: cover;
-    }
-
     .middle-square {
         width: 35%;
         height: 100%;
-    }
-
-    .middle-square img {
-        width: 100%;
-        height: 85%;
-        object-fit: cover;
     }
 }
 
@@ -1073,6 +1075,12 @@ body {
     .features h1 {
         font-size: 1.5em;
         margin-top: -17px;
+    }
+    .features h2 {
+        font-size: 1.25em;
+    }
+    .features p {
+        font-size: 1em;
     }
 }
 
