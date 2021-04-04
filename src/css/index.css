@@ -878,27 +878,28 @@ body {
     height: 100%;
     margin-top: 3em;
     margin-bottom: 3em;
-    margin-right: -5em;
-    margin-left: -5em;
-    width: auto;
+    /* margin-right: -5em; */
+    margin-left: 1em;
+    width: 10em;
+    height: 10em;
 }
 
 .crsltop a {
-    width: auto;
+    margin: 0;
 }
 
 .model {
     height: 30%;
 }
 
-.box h2 {
-    font-size: 0.5em;
+.crsltop h2 {
+    font-size: 0.75em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
 .top-carousel-model {
-    width: 30%;
+    width: 70%;
 }
 
 @media (min-width: 43.75em) {
