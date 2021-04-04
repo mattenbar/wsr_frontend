@@ -1,5 +1,7 @@
+/* everything before these will be iphone 6/7/8 */
+
 @media (min-width: 43.75em) {
-    /* 700 */
+    /* 700 ipad */
 }
 
 @media (min-width: 55em) {
@@ -7,7 +9,11 @@
 }
 
 @media (min-width: 62em) {
-    /* 992 */
+    /* 992 didn't use*/
+}
+
+@media (min-width: 80em) {
+    /* 1280 */
 }
 
 @media (min-width: 100em) {
@@ -23,6 +29,7 @@
 }
 
 body {
+    font-family: europaRegular;
     box-sizing: border-box;
     margin: 0;
     /* -webkit-font-smoothing: antialiased; */
@@ -64,19 +71,18 @@ body {
 .nav-left {
     width: 10%;
     background-color: rgb(255, 208, 2);
-    /* float: left; */
     display: table-cell;
 }
 
 .nav-right {
-    width: 90%;
+    width: 100%;
     background: linear-gradient(
         90deg,
         rgba(40, 115, 172, 1) 0%,
         rgba(0, 59, 91, 1) 59%
     );
     display: table-cell;
-    /* vertical-align: middle; */
+    vertical-align: middle;
     padding: 0em 0rem;
     color: rgb(255, 208, 2);
     overflow: hidden;
@@ -86,6 +92,7 @@ body {
     font-size: 1em;
     text-transform: uppercase;
     vertical-align: bottom;
+    padding-top: 0.5em;
 }
 
 .nav-header h1 {
@@ -100,20 +107,25 @@ body {
     text-decoration: none;
 }
 
+.header-right {
+    margin-top: 1em;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 1em;
+    position: relative;
+    margin-bottom: 1em;
+}
+
 .social-media-buttons {
-    /* margin-left: 3.5em; */
     margin-left: 0;
 }
 
 .header-login-signup {
-    /* margin-left: 2.75em; */
     margin-left: 0em;
 }
 
 .auth-buttons__yellow {
-    /* margin: 0.5em; */
-    /* padding: 0.5em; */
-    width: 100px;
+    width: 103px;
     color: rgb(255, 208, 2);
     background-color: Transparent;
     border: none;
@@ -144,37 +156,17 @@ body {
     text-align: center;
 }
 
-/* @media (min-width: 43.75em) {
-    .nav-header {
-        font-size: 1.25em;
-    }
-
-    .header-right {
-
-        margin-top: 0em;
-        margin-right: -21em;
-    }
-
-    .social-media-buttons {
-        margin-left: 0;
-    }
-
-    .header-login-signup {
-        margin-left: 0;
-    }
-} */
-
-@media (min-width: 62em) {
+@media (min-width: 43.75em) {
     .navbar {
-        height: 15em;
-        vertical-align: bottom;
+        height: 10em;
     }
+
     .nav-left {
         width: 5%;
     }
 
     .nav-right {
-        width: 95%;
+        width: 100%;
         vertical-align: middle;
     }
 
@@ -188,33 +180,34 @@ body {
     .nav-header {
         vertical-align: middle;
         padding-top: 0.75em;
+        font-size: 1em;
+        margin-top: 0.5em;
     }
 
     .header-login-signup {
         margin-left: 0;
         position: absolute;
-        bottom: 0.5em;
-        right: 0;
+        bottom: 1.3em;
+        right: -0.5em;
     }
 
     .nav-header h1 {
         margin-bottom: -0.2em;
         padding-left: 0.5em;
-        font-size: 3.5em;
+        font-size: 3em;
     }
 
     .header-right {
-        /* float: right; */
-        margin-top: 0em;
+        margin-top: 1em;
         text-align: right;
         vertical-align: middle;
         margin-right: 2em;
         position: relative;
+        margin-bottom: 0em;
     }
 
     .auth2-buttons {
-        padding-top: 0.5em;
-        /* margin-left: -1.75em; */
+        margin-left: -1.75em;
     }
 
     .userEmail {
@@ -222,9 +215,7 @@ body {
     }
 
     .auth-buttons__yellow {
-        /* margin: 0.5em; */
-        /* padding: 0.5em; */
-        width: 100px;
+        width: 93px;
         font-size: 1.2em;
     }
 
@@ -234,9 +225,44 @@ body {
     }
 }
 
+@media (min-width: 80em) {
+    .navbar {
+        height: 15em;
+    }
+
+    .nav-right {
+        width: 95%;
+    }
+
+    .nav-header {
+        margin-top: 0em;
+    }
+
+    .header-login-signup {
+        bottom: 0.5em;
+        right: 0;
+    }
+
+    .nav-header h1 {
+        font-size: 3.5em;
+    }
+
+    .header-right {
+        margin-top: 0em;
+    }
+
+    .auth-buttons__yellow {
+        width: 100px;
+    }
+
+    .auth2-buttons {
+        padding-top: 0.5em;
+    }
+}
+
 /* -----------------------------------search bar---------------------------------------------- */
 .header-search-bar {
-    /* margin-top: 1em; */
+    margin-top: 1em;
     /* margin-left: 3.75em; */
 }
 
@@ -288,6 +314,13 @@ body {
         /* margin-left: 0em; */
         /* margin-right: 20em; */
     }
+    .searchbarinput {
+        background-color: rgb(0, 59, 91, 0.1);
+        font-size: 1em;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+        padding-left: 0.5em;
+    }
 }
 
 .noSearchArticles {
@@ -298,7 +331,7 @@ body {
 /* -----------------------------------social media buttons---------------------------------------------- */
 
 .smb-yellow {
-    width: 25%;
+    width: 4em;
     padding: 1em 1em 0 1em;
     transition: all 0.5s ease;
 }
@@ -311,20 +344,30 @@ body {
 }
 
 @media (min-width: 43.75em) {
+    .social-media-buttons {
+        margin-left: 0;
+        margin-top: 2em;
+        margin-right: -1em;
+    }
+
     .smb-yellow {
-        width: 13%;
+        width: 4.3em;
         padding: 0 1em;
+    }
+}
+
+@media (min-width: 55em) {
+    .smb-yellow {
+        width: 4.3em;
     }
 }
 
 @media (min-width: 80em) {
     .social-media-buttons {
-        margin-left: 0;
-        margin-top: 3em;
-        margin-right: -1em;
+        margin-top: 2.75em;
     }
     .smb-yellow {
-        width: 12%;
+        width: 12.9%;
         margin-top: 0em;
     }
 }
@@ -491,7 +534,7 @@ body {
     }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 80em) {
     .popup__content {
         width: 720px;
         height: 15rem;
@@ -542,8 +585,10 @@ body {
 
 /* -----------------------------------START HOME---------------------------------------------- */
 
-.home-container {
-    margin-top: 1em;
+@media (min-width: 55em) {
+    .home-container {
+        margin-top: 1em;
+    }
 }
 
 /* -------------------START HOME/ LINKS BAR----------------- */
@@ -551,6 +596,18 @@ body {
 .linksBar-container {
     visibility: hidden;
     display: none;
+}
+
+.linksBarWeekOne-container {
+    visibility: hidden;
+    display: none;
+}
+
+@media (min-width: 55em) {
+    .linksBarWeekOne-container {
+        visibility: visible;
+        display: contents;
+    }
 }
 
 @media (min-width: 66em) {
@@ -564,7 +621,6 @@ body {
         color: black;
         /* font-size: 109.1%; */
         font-size: 1.123em;
-        
     }
 
     .linksBarWeekOne-container a {
@@ -780,7 +836,7 @@ body {
     }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 80em) {
     .slick-prev {
         margin-left: 60px;
         z-index: 1020;
@@ -939,7 +995,7 @@ body {
     }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 80em) {
     .features {
         height: 28em;
     }
@@ -1050,7 +1106,7 @@ body {
     }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 80em) {
     .newsmakers-transactions {
         margin-top: 1em;
         margin-bottom: 1em;
@@ -1152,7 +1208,7 @@ body {
     }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 80em) {
     .ticrsl {
         height: 17em;
         /* margin-bottom: 4em; */
@@ -1188,7 +1244,7 @@ body {
 
 /* -----------------------------------POINT-COUNTERPOINT---------------------------------------------- */
 
-@media (min-width: 62em) {
+@media (min-width: 80em) {
     .pointcpContainer {
         position: relative;
         margin-bottom: 2em;
@@ -1849,7 +1905,7 @@ body {
     }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 80em) {
     .board-container {
         font-size: 1em;
         grid-auto-rows: 10em;
@@ -2062,7 +2118,7 @@ body {
     }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 80em) {
     .main-bottom-ads {
         width: 100%;
         margin-left: 0;
@@ -2206,7 +2262,7 @@ body {
     }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 80em) {
     .nav__link:link,
     .nav__link:visited {
         font-size: 1.3em;
