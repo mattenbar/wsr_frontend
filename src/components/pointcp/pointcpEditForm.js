@@ -152,7 +152,7 @@ class PointcpEditForm extends React.Component {
                         <label>Content One</label>
                         <Editor
                             apiKey="xxdtys70gcr66orzrsr2v65wsqqzeff19c37xij80zax9qck"
-                            initialValue={this.state.pointcp.contentOne}
+                            initialValue={this.props.pointcpArticle.contentOne}
                             init={{
                                 selector: "textarea",
                                 height: 500,
@@ -206,7 +206,7 @@ class PointcpEditForm extends React.Component {
                         <label>Content Two</label>
                         <Editor
                             apiKey="xxdtys70gcr66orzrsr2v65wsqqzeff19c37xij80zax9qck"
-                            initialValue={this.state.pointcp.contentTwo}
+                            initialValue={this.props.pointcpArticle.contentTwo}
                             init={{
                                 selector: "textarea",
                                 height: 500,
