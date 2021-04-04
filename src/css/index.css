@@ -157,11 +157,17 @@ body {
 }
 
 @media (min-width: 43.75em) {
+    .mediaButtons {
+        margin-top: 1.75em;
+        margin-right: -1em;
+    }
     .social-media-buttons {
         visibility: visible;
-        display: content;
+        display: contents;
 
-        margin-left: 0;
+        /* margin-left: 0; */
+        margin-top: 2em;
+        margin-right: -1em;
     }
 
     .navbar {
@@ -567,7 +573,6 @@ body {
     display: none;
 }
 
-
 @media (min-width: 65em) {
     .linksBarWeekOne-container {
         visibility: visible;
@@ -588,7 +593,7 @@ body {
     .linksBarWeekOne-links {
         margin-top: 2em;
         margin-bottom: 2em;
-        font-size: .8em;
+        font-size: 0.8em;
     }
 
     /* week two */
@@ -598,7 +603,6 @@ body {
         display: contents;
         text-align: justify;
         color: black;
-
     }
 
     .linksBarWeekTwo-container a {
@@ -625,7 +629,6 @@ body {
     .linksBarWeekTwo-Bottom {
         /* will need css font size here */
         /* font-size: 1.072em; */
-        
     }
 
     /* week three */
@@ -674,7 +677,7 @@ body {
 
     .linksBar-links {
         margin-bottom: 2em;
-        font-size: .72em;
+        font-size: 0.72em;
     }
 
     .linksBar-Top {
@@ -709,7 +712,6 @@ body {
     }
 }
 
-
 @media (min-width: 80em) {
     /* week one */
 
@@ -729,24 +731,20 @@ body {
         justify-content: space-between;
 
         font-size: 1em;
-        
     }
 
     /* week two */
 
     .linksBarWeekTwo-container {
-        
     }
 
     .linksBarWeekTwo-Top {
-       
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     .linksBarWeekTwo-Bottom {
-        
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -787,7 +785,6 @@ body {
     }
 
     .linksBar-Top {
-
         margin-bottom: 1em;
         display: flex;
         flex-direction: row;
@@ -795,7 +792,6 @@ body {
     }
 
     .linksBar-Middle {
-        
         margin-bottom: 1em;
         display: flex;
         flex-direction: row;
@@ -1421,7 +1417,6 @@ body {
         height: auto;
     }
 
-
     .pointcp2 {
         align-content: right;
         text-align: right;
@@ -1648,7 +1643,7 @@ body {
     .trophyHeaders {
         text-align: center;
         width: 100%;
-        display: flex; 
+        display: flex;
     }
 
     .trophyHeaders h1 {
