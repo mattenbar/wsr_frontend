@@ -37,7 +37,7 @@ function AuthButtons(props) {
                     <>
                         <span className="userEmail">{userEmail}</span>
                         <span className="divider">&nbsp;&nbsp;|</span>
-                        <button className="auth-buttons__yellow" onClick={handleSignOut}>&nbsp;Sign Out</button>
+                        <button className="auth-buttons__yellow-signout" onClick={handleSignOut}>&nbsp;Sign Out</button>
                     </>
                 }
                 { user.admin === true &&
