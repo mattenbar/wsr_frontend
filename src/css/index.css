@@ -1245,7 +1245,6 @@ body {
 .ticrsl {
     width: 100%;
     height: 16em;
-    /* margin-bottom: 2em; */
     border-top: 2px solid black;
     text-align: center;
 }
@@ -1261,7 +1260,6 @@ body {
 
 .ticrslwrapper {
     position: relative;
-    /* box-sizing: border-box; */
 }
 
 .ticrslwrapper:active,
@@ -1299,7 +1297,6 @@ body {
 
 @media (min-width: 43.75em) {
     .ticrsl {
-        height: 16em;
         margin-bottom: 0.75em;
     }
 
@@ -1313,7 +1310,6 @@ body {
 
     .ti-box h2 {
         font-size: 1em;
-        margin-bottom: 0.5em;
     }
 
     .ti-box p {
@@ -1326,9 +1322,12 @@ body {
         margin-bottom: 3em;
     }
 
+    .ticrsl h1 {
+        font-size: 130%;
+    }
+
     .ti-box h2 {
         font-size: 1.25em;
-        margin-bottom: 0.5em;
     }
 
     .ti-box p {
@@ -1339,7 +1338,6 @@ body {
 @media (min-width: 80em) {
     .ticrsl {
         height: 17em;
-        /* margin-bottom: 4em; */
     }
 
     .ticrsl h1 {
