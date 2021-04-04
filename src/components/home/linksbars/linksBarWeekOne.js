@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Textfit } from "react-textfit";
+
 class linksBarWeekOne extends Component {
   render() {
     return (

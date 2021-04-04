@@ -65,7 +65,7 @@ function pointcpArticleBody({admin, article, winner, pointcp_id, handleVotingCli
 return (
     <>  
     <div className="pointcptopic" >
-        <div>
+        <div className="pointcp-topic">
             <h3>TOPIC:</h3>
             <h1>{article.topic}</h1>
         </div>
