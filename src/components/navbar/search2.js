@@ -13,7 +13,6 @@ function Search2(props) {
     const filteredPosts = storeProps.search.filteredPosts
 
     let postsMapped
-
     if (filteredPosts.length > 0) {
         postsMapped = filteredPosts.map(post => {
             let slug = GetSlug(post.attributes)
@@ -57,6 +56,9 @@ function Search2(props) {
                 )
             }
         })
+
+        // postsMapped.reverse()
+
         return (
 
             <div className="board">

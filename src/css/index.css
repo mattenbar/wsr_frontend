@@ -2,6 +2,10 @@
     /* 700 */
 }
 
+@media (min-width: 55em) {
+    /* 880 */
+}
+
 @media (min-width: 62em) {
     /* 992 */
 }
@@ -550,10 +554,7 @@ body {
 }
 
 @media (min-width: 66em) {
-
-
     /* week one */
-
 
     .linksBarWeekOne-container {
         visibility: visible;
@@ -570,13 +571,11 @@ body {
         text-decoration: none;
     }
 
-
-    .linksBarWeekOne-container a:hover{
+    .linksBarWeekOne-container a:hover {
         text-decoration: underline;
     }
 
-    .linksBarWeekOne-links{
-
+    .linksBarWeekOne-links {
         margin-top: 2em;
         margin-bottom: 2em;
     }
@@ -597,13 +596,11 @@ body {
         text-decoration: none;
     }
 
-
-    .linksBarWeekTwo-container a:hover{
+    .linksBarWeekTwo-container a:hover {
         text-decoration: underline;
     }
 
-    .linksBarWeekTwo-links{
-
+    .linksBarWeekTwo-links {
         margin-top: 2em;
         margin-bottom: 2em;
     }
@@ -617,7 +614,6 @@ body {
         font-size: 1.072em;
         letter-spacing: 0.09em;
     }
-
 
     /* week three */
     .linksBarWeekThree-container {
@@ -633,28 +629,26 @@ body {
     .linksBarWeekThree-container a {
         color: black;
         text-decoration: none;
-        
     }
 
-    .linksBarWeekThree-container a:hover{
+    .linksBarWeekThree-container a:hover {
         text-decoration: underline;
     }
 
-    .linksBarWeekThree-links{
+    .linksBarWeekThree-links {
         margin-top: 2em;
         margin-bottom: 2em;
     }
 
     .linksBarWeekThree-Top {
-        font-size: .806em;
+        font-size: 0.806em;
         margin-bottom: 1em;
     }
 
     .linksBarWeekThree-Bottom {
-        font-size: .85em;
-        letter-spacing: .078em;
+        font-size: 0.85em;
+        letter-spacing: 0.078em;
     }
-
 
     /* final linksbar */
 
@@ -1245,7 +1239,7 @@ body {
         margin-bottom: 4em;
         position: relative;
         height: auto;
-                            /* this is relative/parent */
+        /* this is relative/parent */
     }
 
     /* .pointcp1 {
@@ -1255,7 +1249,6 @@ body {
     .pointcp2 {
         align-content: right;
         text-align: right;
-        
     }
 
     .pointcp3,
@@ -1265,12 +1258,8 @@ body {
         margin-bottom: 4em;
         position: relative;
         height: auto;
-                                  /* this is relative/parent */
-
+        /* this is relative/parent */
     }
-
-    
-
 
     .pointcp4 {
         align-content: right;
@@ -1287,7 +1276,7 @@ body {
                                 
         overflow: hidden; */
     }
-    
+
     /* keeping text short  - fix to take out max-height / take out overflow hidden*/
     /* .pointcpContent p {
         max-height: 10em;
@@ -1295,8 +1284,6 @@ body {
 
         overflow: hidden;
     } */
-
-    
 
     .pointTop {
         display: grid;
@@ -1330,10 +1317,6 @@ body {
         height: 12em;
         object-fit: cover;
     }
-
-    
-
-    
 
     .boxingButton {
         border: none;
@@ -1398,12 +1381,12 @@ body {
         text-align: right;
     }
 
-    .countdown-and-voting{
-        width:209%;
+    .countdown-and-voting {
+        width: 209%;
         height: auto;
     }
 
-    .pointVote1 { 
+    .pointVote1 {
         float: left;
     }
 
@@ -1411,7 +1394,7 @@ body {
         float: right;
     }
 
-    .pointVote3{
+    .pointVote3 {
         float: left;
     }
 
