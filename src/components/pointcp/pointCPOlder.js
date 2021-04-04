@@ -160,15 +160,7 @@ function PointCPOlder({
                 <div className="pointcp4">
                     <div className="pointTop2">
                         <div className="pointHeaderRight">
-                            <Link
-                                to={{
-                                    pathname: `/Point-Counterpoint/${olderId}`,
-                                    state: {
-                                        pointcp_id: olderId,
-                                    },
-                                }}
-                                className="pointcpLinks"
-                            >
+
                                 <div className="pointbottom2">
                                     <h1>DISAGREE</h1>
 
@@ -180,7 +172,6 @@ function PointCPOlder({
                                             .format("MMMM DD, YYYY")}
                                     </h3>
                                 </div>
-                            </Link>
                         </div>
                         <div className="pointHeaderLeft">
                             <img
