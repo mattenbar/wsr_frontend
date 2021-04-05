@@ -2838,17 +2838,19 @@ body {
 
 .category-header h1 {
     text-transform: uppercase;
-    padding: 50px 0;
-    margin-left: 0.5em;
+    margin-top: .5em;
+    margin-left: .5em;
+    margin-bottom: .5em;
 }
 
 .category-image {
-    width: 12em;
+    width: 5em;
     border-right: solid black;
 }
 
 .category-image img {
-    margin-top: 1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 .tagline {
@@ -2912,13 +2914,14 @@ body {
 
     .category-header h1 {
         padding: 0;
-        margin-left: 0.3em;
+        margin-bottom: 0;
+        margin-left: .3em;
         text-transform: uppercase;
         margin-top: 0.1em;
     }
 
     .category-image {
-        width: 12em;
+        width: 10em;
         border-right: solid black;
     }
 
@@ -3096,29 +3099,74 @@ body {
 /* -----------------------------------END CATEGORIES------------------------------------------- */
 
 /* -----------------------------------START ABOUT US------------------------------------------- */
-
 .about-us {
     text-align: justify;
-    font-size: 1.75em;
+    font-size: 1em;
+    margin: 1em;
+}  
+
+@media (min-width: 46em){
+    .about-us {
+        margin: 0;
+        text-align: justify;
+        font-size: 1.75em;
+    }  
 }
+
 
 /* -----------------------------------END ABOUT US------------------------------------------- */
 
 /* -----------------------------------START ARCHIVES------------------------------------------- */
+    .archive-container {
+        margin-bottom: 3em;
+    }
 
-.archive-container {
-    margin-bottom: 3em;
+    .archive-container ol{
+        font-size: .6em;
+        margin-left: 1em;
+    }
+
+
+    .archive-header {
+        width: 100%;
+        font-size: 1.15em;
+        text-transform: uppercase;
+        font-weight: 300;
+        border-bottom: solid 3px black;
+        padding: 1.5em;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+
+@media (min-width:46em){
+    .archive-container {
+        margin-bottom: 3em;
+    }
+
+    .archive-container ol{
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+
+    .archive-header {
+        width: 100%;
+        font-size: 1.15em;
+        text-transform: uppercase;
+        font-weight: 300;
+        border-bottom: solid 3px black;
+        padding: 1.5em;
+        margin-bottom: 2em;
+        text-align: center;
+    }
 }
 
-.archive-header {
-    width: 100%;
-    font-size: 1.15em;
-    text-transform: uppercase;
-    font-weight: 300;
-    border-bottom: solid 3px black;
-    padding: 1.5em;
-    margin-bottom: 2em;
-    text-align: center;
+@media (min-width:46em){
+    .archive-container ol{
+        font-size: 1.2em;
+        margin-left: 0em;
+    }
+
 }
 
 /* -----------------------------------END ARCHIVES------------------------------------------- */
@@ -3137,6 +3185,10 @@ body {
 /* -----------------------------------END PARTNERS------------------------------------------- */
 
 /* -----------------------------------Contact Us---------------------------------------------- */
+.contact_us{
+    margin-left: 1em;
+    margin-right: 1em;
+}
 
 .contact_us h1 {
     padding-top: 2%;
@@ -3147,7 +3199,7 @@ body {
 }
 
 .contact_us p {
-    font-size: 1.65em;
+    font-size: .8em;
     text-align: justify;
     padding-top: 2%;
     padding-bottom: 2em;
@@ -3161,8 +3213,58 @@ body {
 }
 
 .shortenP {
+    
     margin-bottom: -1em;
+} 
+
+@media(min-width: 46em){
+
+    .contact_us{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact_us h1 {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: center;
+        font-weight: 300;
+        font-size: 2.6em;
+    }
+    
+    .contact_us p {
+        font-size: 1.1em;
+        text-align: justify;
+        padding-top: 2%;
+        padding-bottom: 2em;
+    }
+    
+    .blackLine {
+        border-bottom: solid 2px black;
+        display: block;
+        color: black;
+        width: 100%;
+    }
+    
+    .shortenP {
+        
+        margin-bottom: -1em;
+    }
+
 }
+
+@media(min-width: 64em){
+    .contact_us p {
+        font-size: 1.4em;
+    }
+}
+
+@media(min-width: 80em){
+    .contact_us p {
+        font-size: 2em;
+    }
+}
+
 
 /* -----------------------------------END Contact Us---------------------------------------------- */
 
