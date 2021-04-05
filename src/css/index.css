@@ -854,8 +854,8 @@ body {
 
 .carousel-wrapper {
     position: relative;
-    margin-top: -2em;
-    margin-bottom: -2em;
+    margin-top: -3.5em;
+    margin-bottom: -3em;
 }
 
 .carousel-wrapper:active,
@@ -896,12 +896,12 @@ body {
 
 .crsltop h2 {
     font-size: 0.75em;
-    margin-top: 0.5em;
+    margin-top: -1em;
     margin-bottom: 0.5em;
 }
 
 .top-carousel-model {
-    width: 70%;
+    width: 65%;
 }
 
 @media (min-width: 43.75em) {
@@ -2838,9 +2838,9 @@ body {
 
 .category-header h1 {
     text-transform: uppercase;
-    margin-top: .5em;
-    margin-left: .5em;
-    margin-bottom: .5em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .category-image {
@@ -2849,8 +2849,8 @@ body {
 }
 
 .category-image img {
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .tagline {
@@ -2915,7 +2915,7 @@ body {
     .category-header h1 {
         padding: 0;
         margin-bottom: 0;
-        margin-left: .3em;
+        margin-left: 0.3em;
         text-transform: uppercase;
         margin-top: 0.1em;
     }
@@ -3103,51 +3103,48 @@ body {
     text-align: justify;
     font-size: 1em;
     margin: 1em;
-}  
+}
 
-@media (min-width: 46em){
+@media (min-width: 46em) {
     .about-us {
         margin: 0;
         text-align: justify;
         font-size: 1.75em;
-    }  
+    }
 }
-
 
 /* -----------------------------------END ABOUT US------------------------------------------- */
 
 /* -----------------------------------START ARCHIVES------------------------------------------- */
+.archive-container {
+    margin-bottom: 3em;
+}
+
+.archive-container ol {
+    font-size: 0.6em;
+    margin-left: 1em;
+}
+
+.archive-header {
+    width: 100%;
+    font-size: 1.15em;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-bottom: solid 3px black;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+@media (min-width: 46em) {
     .archive-container {
         margin-bottom: 3em;
     }
 
-    .archive-container ol{
-        font-size: .6em;
-        margin-left: 1em;
-    }
-
-
-    .archive-header {
-        width: 100%;
-        font-size: 1.15em;
-        text-transform: uppercase;
-        font-weight: 300;
-        border-bottom: solid 3px black;
-        padding: 1.5em;
-        margin-bottom: 2em;
-        text-align: center;
-    }
-
-@media (min-width:46em){
-    .archive-container {
-        margin-bottom: 3em;
-    }
-
-    .archive-container ol{
+    .archive-container ol {
         font-size: 1em;
         margin-left: 1em;
     }
-
 
     .archive-header {
         width: 100%;
@@ -3161,12 +3158,11 @@ body {
     }
 }
 
-@media (min-width:46em){
-    .archive-container ol{
+@media (min-width: 46em) {
+    .archive-container ol {
         font-size: 1.2em;
         margin-left: 0em;
     }
-
 }
 
 /* -----------------------------------END ARCHIVES------------------------------------------- */
@@ -3185,7 +3181,7 @@ body {
 /* -----------------------------------END PARTNERS------------------------------------------- */
 
 /* -----------------------------------Contact Us---------------------------------------------- */
-.contact_us{
+.contact_us {
     margin-left: 1em;
     margin-right: 1em;
 }
@@ -3199,7 +3195,7 @@ body {
 }
 
 .contact_us p {
-    font-size: .8em;
+    font-size: 0.8em;
     text-align: justify;
     padding-top: 2%;
     padding-bottom: 2em;
@@ -3213,13 +3209,11 @@ body {
 }
 
 .shortenP {
-    
     margin-bottom: -1em;
-} 
+}
 
-@media(min-width: 46em){
-
-    .contact_us{
+@media (min-width: 46em) {
+    .contact_us {
         margin-left: 0;
         margin-right: 0;
     }
@@ -3231,40 +3225,37 @@ body {
         font-weight: 300;
         font-size: 2.6em;
     }
-    
+
     .contact_us p {
         font-size: 1.1em;
         text-align: justify;
         padding-top: 2%;
         padding-bottom: 2em;
     }
-    
+
     .blackLine {
         border-bottom: solid 2px black;
         display: block;
         color: black;
         width: 100%;
     }
-    
+
     .shortenP {
-        
         margin-bottom: -1em;
     }
-
 }
 
-@media(min-width: 64em){
+@media (min-width: 64em) {
     .contact_us p {
         font-size: 1.4em;
     }
 }
 
-@media(min-width: 80em){
+@media (min-width: 80em) {
     .contact_us p {
         font-size: 2em;
     }
 }
-
 
 /* -----------------------------------END Contact Us---------------------------------------------- */
 
@@ -3442,25 +3433,23 @@ body {
 /* -----------------------------------INDIVIDUAL POST PAGE---------------------------------------------- */
 
 .individualPostDiv {
-    /* border-bottom: solid 3px black; */
     text-align: justify;
-    margin-bottom: 2em;
+    margin: 0 1em 2em 1em;
 }
 
 .individualPostContent {
     margin: 2em 0 4em 0;
     line-height: 1.2;
-    /* letter-spacing: 0.25px; */
     white-space: pre-line;
     font-size: 1.25em;
 }
 
 .individualPostImage {
     width: 100%;
-    height: 27em;
+    height: 15em;
     object-fit: cover;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
 .individualPostTitle,
@@ -3468,9 +3457,13 @@ body {
     text-transform: uppercase;
 }
 
+.individualPostDiv p {
+    font-size: 1em;
+}
+
 .loginReadMore {
-    margin-top: -3em;
-    padding-bottom: 3em;
+    margin-top: -1em;
+    padding-bottom: 1em;
 }
 
 .socialShare {
@@ -3514,6 +3507,125 @@ body {
 .likeImage,
 .dislikeImage {
     width: 100%;
+}
+
+@media (min-width: 43.75em) {
+    .individualPostDiv {
+        margin: 0 0 2em 0;
+    }
+
+    .individualPostImage {
+        width: 100%;
+        height: 19em;
+        object-fit: cover;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .individualPostTitle {
+        font-size: 1.75em;
+    }
+    .individualPostAuthor {
+        font-size: 1.25em;
+    }
+    .individualPostDate2 {
+        font-size: 1.15em;
+    }
+
+    .individualPostDiv p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 55em) {
+    .individualPostImage {
+        height: 25em;
+    }
+}
+
+@media (min-width: 80em) {
+    .individualPostDiv {
+        text-align: justify;
+        margin-bottom: 2em;
+    }
+
+    .individualPostContent {
+        margin: 2em 0 4em 0;
+        line-height: 1.2;
+        white-space: pre-line;
+        font-size: 1.25em;
+    }
+
+    .individualPostImage {
+        height: 27em;
+    }
+
+    .individualPostTitle {
+        font-size: 1.75em;
+    }
+    .individualPostAuthor {
+        font-size: 1.4em;
+    }
+    .individualPostDate2 {
+        font-size: 1.25em;
+    }
+
+    .individualPostDiv p {
+        font-size: 1.15em;
+    }
+
+    .individualPostTitle,
+    .individualPostAuthor {
+        text-transform: uppercase;
+    }
+
+    .loginReadMore {
+        margin-top: -2em;
+        padding-bottom: 2em;
+    }
+
+    .socialShare {
+        float: right;
+        margin-top: -3em;
+    }
+
+    .adminButtons {
+        margin-bottom: 2em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        padding: 0.2em;
+    }
+
+    .likeButton,
+    .dislikeButton {
+        width: 2.25em;
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        margin: 1em;
+    }
+
+    .likeButton:hover,
+    .likeButton:active,
+    .dislikeButton:hover,
+    .dislikeButton:active {
+        transform: translateY(-3px);
+        transition: all 0.5s ease;
+        text-shadow: 2px 2px 4px grey;
+    }
+
+    .articleLikes {
+        margin-top: -2.5em;
+    }
+
+    .likeImage,
+    .dislikeImage {
+        width: 100%;
+    }
 }
 
 /* -----------------------------------END INDIVUAL POST PAGE---------------------------------------------- */
