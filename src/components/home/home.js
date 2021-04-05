@@ -31,16 +31,16 @@ class Home extends Component {
         <Features />
         <div className="home-triple-row-grid" >
           <div className="newsmakers-transactions" >
-            <CapitalConnections /> 
+            {/* <CapitalConnections />  */}
             {/* <NewsMakers /> */}
-            <DigitalDomain />
+            {/* <DigitalDomain /> */}
             {/* <Transactions /> */}
           </div>
           {/* to change amount of posts in carousel change number below(keep it negative for most recent) */}
           {this.props.posts.length > 0 && 
           <>
-            <ThisIssue posts={this.props.posts.slice(-5)} />
-            <LastIssue posts={this.props.posts.slice(-10, -5)} />
+            {/* <ThisIssue posts={this.props.posts.slice(-5)} /> */}
+            {/* <LastIssue posts={this.props.posts.slice(-10, -5)} /> */}
           </>
         }
         </div>

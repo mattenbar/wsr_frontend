@@ -12,7 +12,7 @@ function BizarreIndustryBazaar(state, props) {
         let posts = state.categories[categoryId].attributes.posts.reverse();
         let newestPost = posts[0];
         let secondNewestPost = posts[1];
-        let remainingPosts = posts.slice(2);
+        let remainingPosts = posts.slice(2,10);
         let remainingPostsMapped = []
 
         if (remainingPosts.length > 0) {
