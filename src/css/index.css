@@ -3151,6 +3151,10 @@ body {
 /* -----------------------------------END PARTNERS------------------------------------------- */
 
 /* -----------------------------------Contact Us---------------------------------------------- */
+.contact_us{
+    margin-left: 1em;
+    margin-right: 1em;
+}
 
 .contact_us h1 {
     padding-top: 2%;
@@ -3161,7 +3165,7 @@ body {
 }
 
 .contact_us p {
-    font-size: 1.65em;
+    font-size: .8em;
     text-align: justify;
     padding-top: 2%;
     padding-bottom: 2em;
@@ -3175,8 +3179,58 @@ body {
 }
 
 .shortenP {
+    
     margin-bottom: -1em;
+} 
+
+@media(min-width: 46em){
+
+    .contact_us{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact_us h1 {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: center;
+        font-weight: 300;
+        font-size: 2.6em;
+    }
+    
+    .contact_us p {
+        font-size: 1.1em;
+        text-align: justify;
+        padding-top: 2%;
+        padding-bottom: 2em;
+    }
+    
+    .blackLine {
+        border-bottom: solid 2px black;
+        display: block;
+        color: black;
+        width: 100%;
+    }
+    
+    .shortenP {
+        
+        margin-bottom: -1em;
+    }
+
 }
+
+@media(min-width: 64em){
+    .contact_us p {
+        font-size: 1.4em;
+    }
+}
+
+@media(min-width: 80em){
+    .contact_us p {
+        font-size: 2em;
+    }
+}
+
 
 /* -----------------------------------END Contact Us---------------------------------------------- */
 
