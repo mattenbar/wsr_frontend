@@ -1689,6 +1689,13 @@ body {
     .archiveContainer {
         margin-top: 4em;
         margin-bottom: 4em;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+
+    .archiveContainer h1{
+        font-size: 1.2em;
+        margin-bottom: 1em;
     }
 
     .pointcpLinksList {
@@ -1714,6 +1721,10 @@ body {
         transform: translateY(-2px);
         transition: all 0.5s ease;
         text-shadow: 2px 2px 2px rgb(148, 146, 146);
+    }
+
+    .pointcpArchives ol{
+        font-size: .7em;
     }
 
 @media (min-width: 48em) {
@@ -2052,6 +2063,14 @@ body {
         transform: translateY(-2px);
         transition: all 0.5s ease;
         text-shadow: 2px 2px 2px rgb(148, 146, 146);
+    }
+
+    .archiveContainer h1{
+        font-size: 1.5em;
+    }
+
+    .pointcpArchives ol{
+        font-size: 1em;
     }
 }
 
@@ -2410,6 +2429,14 @@ body {
         transform: translateY(-2px);
         transition: all 0.5s ease;
         text-shadow: 2px 2px 2px rgb(148, 146, 146);
+    }
+
+    .archiveContainer h1{
+        font-size: 1.8em;
+    }
+
+    .pointcpArchives ol{
+        font-size: 1.2em;
     }
 }
 
@@ -3095,6 +3122,7 @@ body {
     margin-bottom: 3em;
 }
 
+
 .archive-header {
     width: 100%;
     font-size: 1.15em;
@@ -3106,27 +3134,6 @@ body {
     text-align: center;
 }
 
-.archive-container {
-}
-/* .pointcpLinksList li {
-    padding: 0;
-    margin: 0.5em;
-    font-size: 1.25em;
-    color: black;
-}
-
-.pointcpLinks {
-    text-decoration: none;
-    transition: all 0.5s ease;
-    color: black;
-}
-
-.pointcpLinks:hover,
-.pointcpLinks:active {
-    transform: translateY(-2px);
-    transition: all 0.5s ease;
-    text-shadow: 2px 2px 2px rgb(148, 146, 146);
-} */
 
 /* -----------------------------------END ARCHIVES------------------------------------------- */
 
@@ -3790,6 +3797,9 @@ body {
 }
 
 @media (min-width: 80em) {
+.hubspot{
+    margin:0;
+}
 .hubspot-form-header {
     margin-top: 1em;
     margin-bottom: 1em;
