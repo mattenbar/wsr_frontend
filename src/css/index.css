@@ -1384,27 +1384,350 @@ body {
 /* -----------------------------------END HOME---------------------------------------------- */
 
 /* -----------------------------------POINT-COUNTERPOINT---------------------------------------------- */
-@media (min-width: 48em) {
+
     .pointcpContainer {
+        margin-left: 1em;
+        margin-right: 1em;
         position: relative;
         margin-bottom: 2em;
     }
 
-    .pointcp-topic{
-        margin:1em;
-    }
 
     .pointcptopic {
-        margin-top: 1em;
+        margin: 1em;
         text-align: center;
     }
 
-    .pointcptopic h3 {
-        width: auto;
+
+    .pointContainer1 h2,
+    .pointContainer2 h2 {
+        color: rgba(0, 59, 91);
     }
-    .pointcptopic h1 {
-        width: auto;
+
+    .pointContainer1 {
+        padding-bottom: 3em;
+        position: relative;
     }
+
+    .pointContainer2 {
+        padding-bottom: 1em;
+        margin-bottom: 2em;
+        margin:1em;
+    }
+
+    .pointcp1,
+    .pointcp2 {
+        height: 30em;
+        margin-bottom: 2em;
+        position: relative;
+        height: auto;
+    }
+
+    .pointcp2 {
+        align-content: right;
+        text-align: right;
+    }
+
+    .pointcp3,
+    .pointcp4 {
+        height: 30em;
+        margin-top: 0em;
+        margin-bottom: 2em;
+        position: relative;
+        height: auto;
+        
+    }
+
+    .pointcp4 {
+        align-content: right;
+        text-align: right;
+    }
+
+    .pointcpContent {
+        font-size: 1.1em;
+        margin-top: 1.25em;
+        text-align: justify;
+        height: auto;
+        
+    }
+
+    
+
+    .pointTop {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10px;
+    }
+
+    .pointTop2 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .pointHeaderRight {
+        position: relative;
+    }
+
+    .pointbottom h1 {
+        font-size: 1.2em;
+    }
+    .pointbottom h2 {
+        font-size: .9em;
+    }
+
+    .pointbottom h3 {
+        font-size: .9em;
+    }
+
+    .pointbottom2 {
+        bottom: 7px;
+        right: 0px;
+    }
+
+    .pointbottom2 h1 {
+        font-size: 1.2em;
+    }
+    .pointbottom2 h2 {
+        font-size: .9em;
+    }
+
+    .pointbottom2 h3 {
+        font-size: .9em;
+    }
+
+    .pointcpImage {
+        width: 10em;
+        height: 10em;
+        object-fit: cover;
+    }
+
+    .boxingButton {
+        border: none;
+        background: none;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        cursor: pointer;
+    }
+
+    .boxingButton:focus {
+        box-shadow: none !important;
+    }
+
+    .pv1,
+    .pv2 {
+        display: flex;
+        transition: all 0.5s ease;
+    }
+
+    .pv1 h2,
+    .pv2 h2 {
+        margin-top: 0.2em;
+        /* display: inline-block; */
+        margin-top: 1em;
+        font-size: .6em;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    .pv1:hover,
+    .pv1:active,
+    .pv2:hover,
+    .pv2:active {
+        transform: translateY(-3px);
+        transition: all 0.5s ease;
+        text-shadow: 2px 2px 4px grey;
+    }
+
+    .boxGlove {
+        width: 2em;
+        height: 2em;
+        /* margin-top: -20em; */
+    }
+
+    .boxingButton3 {
+        border: none;
+        background: none;
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+
+    .boxingButton3 h2 {
+        margin-top: 0.2em;
+        margin-bottom: 2em;
+    }
+
+    .far {
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .newestCountdown1 {
+        /* width: 200%;
+        position: relative; */
+        text-align: right;
+    }
+
+    .countdownText3 h2 {
+        font-size: .8em;
+    }
+
+    .countdown-and-voting {
+        width: 100%;
+        height: auto;
+    }
+
+    .pointVote1 {
+        float: left;
+    }
+
+    .pointVote2 {
+        float: right;
+    }
+
+    .pointVote3 {
+        float: left;
+    }
+
+    .pointVote4 {
+        float: right;
+    }
+
+    .newestWinner1 {
+        bottom: 2em;
+        text-align: center;
+        left: 53%;
+        display: flex;
+        vertical-align: middle;
+    }
+
+    .newestCountdown2 {
+        /* position: relative; */
+        text-align: center;
+        margin-top: -5em;
+    }
+
+    .newestCountdown3 {
+        text-align: center;
+        margin-bottom: 0em;
+    }
+
+    .newestWinner2 {
+        width: 50em;
+        display: flex;
+        /* margin: 0 auto; */
+        position: absolute;
+        left: 41%;
+        bottom: 5%;
+        padding-bottom: 2em;
+    }
+
+    .countdownText h2 {
+        /* position: absolute; */
+        bottom: 2em;
+        text-align: center;
+        width: 100%;
+        left: 53%;
+        font-size: .8em;
+    }
+
+
+    .countdownTrophyImg {
+        width: 2em;
+        vertical-align: middle;
+    }
+
+
+    .winner h2 {
+        color: black;
+    }
+
+    .winner h1 {
+        color: rgb(0, 59, 91);
+    }
+
+    .trophyHeaders {
+        text-align: center;
+        width: 100%;
+        display: flex;
+    }
+
+    .trophyHeaders h1 {
+        width: 100%;
+    }
+
+    .editDeletePointCP {
+        margin-top: 5em;
+    }
+
+    .editDeletePointCP1 {
+        margin-top: 2.5em;
+    }
+
+    .linkToArchives-Container {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        text-align: center;
+    }
+
+    .linkToArchives {
+        text-decoration: none;
+        font-size: 1em;
+        color: rgb(0, 59, 91);
+        transition: all 0.5s ease;
+        margin: 1em;
+    }
+
+    .linkToArchives:hover,
+    .linkToArchives:active {
+        font-size: 1em;
+        transform: translateY(-5px);
+        transition: all 0.5s ease;
+        text-shadow: 2px 2px 4px grey;
+    }
+
+    .archiveContainer {
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+
+    .pointcpLinksList {
+        padding-left: 2em;
+        text-align: left;
+    }
+
+    .pointcpLinksList li {
+        padding: 0;
+        margin: 0.5em;
+        font-size: 1.25em;
+        color: black;
+    }
+
+    .pointcpLinks {
+        text-decoration: none;
+        transition: all 0.5s ease;
+        color: black;
+    }
+
+    .pointcpLinks:hover,
+    .pointcpLinks:active {
+        transform: translateY(-2px);
+        transition: all 0.5s ease;
+        text-shadow: 2px 2px 2px rgb(148, 146, 146);
+    }
+
+@media (min-width: 48em) {
+    .pointcpContainer {
+        position: relative;
+        margin-bottom: 2em;
+        margin:0;
+    }
+
+
+    .pointcptopic {
+        margin: 1em;
+        text-align: center;
+    }
+
 
     .pointContainer1,
     .pointContainer2 {
@@ -1447,7 +1770,7 @@ body {
     .pointcp4 {
         height: 30em;
         margin-top: 0em;
-        margin-bottom: 4em;
+        margin-bottom: 2em;
         position: relative;
         height: auto;
         
@@ -1484,8 +1807,15 @@ body {
         position: relative;
     }
 
-    .pointbottom {
-        bottom: 7px;
+    .pointbottom h1 {
+        font-size: 1.2em;
+    }
+    .pointbottom h2 {
+        font-size: .9em;
+    }
+
+    .pointbottom h3 {
+        font-size: .9em;
     }
 
     .pointbottom2 {
@@ -1493,9 +1823,20 @@ body {
         right: 0px;
     }
 
+    .pointbottom2 h1 {
+        font-size: 1.2em;
+    }
+    .pointbottom2 h2 {
+        font-size: .9em;
+    }
+
+    .pointbottom2 h3 {
+        font-size: .9em;
+    }
+
     .pointcpImage {
-        width: 12em;
-        height: 12em;
+        width: 10em;
+        height: 10em;
         object-fit: cover;
     }
 
@@ -1505,6 +1846,10 @@ body {
         margin-top: 1em;
         margin-bottom: 1em;
         cursor: pointer;
+    }
+
+    .countdownText3 h2{
+        font-size: 1.2em;
     }
 
     .boxingButton:focus {
@@ -1521,7 +1866,8 @@ body {
     .pv2 h2 {
         margin-top: 0.2em;
         /* display: inline-block; */
-        font-size: 2em;
+        margin-top: .9em;
+        font-size: 1.2em;
         width: 100%;
         text-transform: uppercase;
     }
@@ -1618,20 +1964,9 @@ body {
         text-align: center;
         width: 100%;
         left: 53%;
+        font-size: 1.2em;
     }
 
-    .countdownText2 h2 {
-        /* position: absolute; */
-        bottom: 5em;
-
-        /* left: 39%; */
-    }
-
-    .countdownText3 h2 {
-        /* position: absolute; */
-        bottom: -14em;
-        left: 40%;
-    }
 
     .countdownTrophyImg {
         width: 2em;
@@ -1731,6 +2066,7 @@ body {
     }
 
     .pointcptopic h3 {
+        font-size: 2em;
         width: auto;
     }
     .pointcptopic h1 {
@@ -1815,8 +2151,31 @@ body {
         position: relative;
     }
 
-    .pointbottom {
+    .pointbottom h1 {
+        font-size: 1.6em;
+    }
+    .pointbottom h2 {
+        font-size: 1.4em;
+    }
+
+    .pointbottom h3 {
+        font-size: 1.2em;
+    }
+
+    .pointbottom2 {
         bottom: 7px;
+        right: 0px;
+    }
+
+    .pointbottom2 h1 {
+        font-size: 1.8em;
+    }
+    .pointbottom2 h2 {
+        font-size: 1.4em;
+    }
+
+    .pointbottom2 h3 {
+        font-size: 1.2em;
     }
 
     .pointbottom2 {
@@ -1852,7 +2211,8 @@ body {
     .pv2 h2 {
         margin-top: 0.2em;
         /* display: inline-block; */
-        font-size: 2em;
+        font-size: 1.5em;
+        margin-top: .7em;
         width: 100%;
         text-transform: uppercase;
     }
@@ -1960,8 +2320,362 @@ body {
 
     .countdownText3 h2 {
         /* position: absolute; */
-        bottom: -14em;
-        left: 40%;
+        font-size: 1.5em;
+    }
+
+    .countdownTrophyImg {
+        width: 2em;
+        vertical-align: middle;
+    }
+
+    /* .trophyImg {
+        width: 40%;
+    } */
+
+    .winner h2 {
+        color: black;
+    }
+
+    .winner h1 {
+        color: rgb(0, 59, 91);
+    }
+
+    .trophyHeaders {
+        text-align: center;
+        width: 100%;
+        display: flex;
+    }
+
+    .trophyHeaders h1 {
+        width: 100%;
+    }
+
+    .editDeletePointCP {
+        margin-top: 5em;
+    }
+
+    .editDeletePointCP1 {
+        margin-top: 2.5em;
+    }
+
+    .linkToArchives-Container {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        text-align: center;
+    }
+
+    .linkToArchives {
+        text-decoration: none;
+        font-size: 1.75em;
+        color: rgb(0, 59, 91);
+        transition: all 0.5s ease;
+        margin: 1em;
+    }
+
+    .linkToArchives:hover,
+    .linkToArchives:active {
+        font-size: 1.8em;
+        transform: translateY(-5px);
+        transition: all 0.5s ease;
+        text-shadow: 2px 2px 4px grey;
+    }
+
+    .archiveContainer {
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+
+    .pointcpLinksList {
+        padding-left: 2em;
+        text-align: left;
+    }
+
+    .pointcpLinksList li {
+        padding: 0;
+        margin: 0.5em;
+        font-size: 1.25em;
+        color: black;
+    }
+
+    .pointcpLinks {
+        text-decoration: none;
+        transition: all 0.5s ease;
+        color: black;
+    }
+
+    .pointcpLinks:hover,
+    .pointcpLinks:active {
+        transform: translateY(-2px);
+        transition: all 0.5s ease;
+        text-shadow: 2px 2px 2px rgb(148, 146, 146);
+    }
+}
+
+@media (min-width: 80em) {
+    .pointcpContainer {
+        position: relative;
+        margin-bottom: 2em;
+    }
+
+    .pointcptopic {
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .pointcptopic h3 {
+        width: auto;
+    }
+    .pointcptopic h1 {
+        width: auto;
+    }
+
+    .pointContainer1,
+    .pointContainer2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(auto-fit, auto);
+        grid-gap: 52px;
+        border-bottom: 2px solid black;
+    }
+
+    .pointContainer1 h2,
+    .pointContainer2 h2 {
+        color: rgba(0, 59, 91);
+    }
+
+    .pointContainer1 {
+        padding-bottom: 3em;
+        position: relative;
+    }
+
+    .pointContainer2 {
+        padding-bottom: 1em;
+        margin-bottom: 2em;
+    }
+
+    .pointcp1,
+    .pointcp2 {
+        height: 30em;
+        margin-bottom: 4em;
+        position: relative;
+        height: auto;
+    }
+
+    .pointcp2 {
+        align-content: right;
+        text-align: right;
+    }
+
+    .pointcp3,
+    .pointcp4 {
+        height: 30em;
+        margin-top: 0em;
+        margin-bottom: 4em;
+        position: relative;
+        height: auto;
+        
+    }
+
+    .pointcp4 {
+        align-content: right;
+        text-align: right;
+    }
+
+    .pointcpContent {
+        font-size: 1.1em;
+        margin-top: 1.25em;
+        text-align: justify;
+        height: auto;
+        
+    }
+
+    
+
+    .pointTop {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10px;
+    }
+
+    .pointTop2 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .pointHeaderRight {
+        position: relative;
+    }
+
+    .pointbottom h1 {
+        font-size: 2em;
+    }
+    .pointbottom h2 {
+        font-size: 1.5em;
+    }
+
+    .pointbottom h3 {
+        font-size: 1.4em;
+    }
+
+    .pointbottom2 {
+        bottom: 7px;
+        right: 0px;
+    }
+
+    .pointbottom2 h1 {
+        font-size: 2em;
+    }
+    .pointbottom2 h2 {
+        font-size: 1.5em;
+    }
+
+    .pointbottom2 h3 {
+        font-size: 1.4em;
+    }
+
+    .pointbottom2 {
+        bottom: 7px;
+        right: 0px;
+    }
+
+    .pointcpImage {
+        width: 12em;
+        height: 12em;
+        object-fit: cover;
+    }
+
+    .boxingButton {
+        border: none;
+        background: none;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        cursor: pointer;
+    }
+
+    .boxingButton:focus {
+        box-shadow: none !important;
+    }
+
+    .pv1,
+    .pv2 {
+        display: flex;
+        transition: all 0.5s ease;
+    }
+
+    .pv1 h2,
+    .pv2 h2 {
+        margin-top: 0.4em;
+        /* display: inline-block; */
+        font-size: 2em;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    .pv1:hover,
+    .pv1:active,
+    .pv2:hover,
+    .pv2:active {
+        transform: translateY(-3px);
+        transition: all 0.5s ease;
+        text-shadow: 2px 2px 4px grey;
+    }
+
+    .boxGlove {
+        width: 4em;
+        height: 4em;
+        /* margin-top: -20em; */
+    }
+
+    .boxingButton3 {
+        border: none;
+        background: none;
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+
+    .boxingButton3 h2 {
+        margin-top: 0.2em;
+        margin-bottom: 2em;
+    }
+
+    .far {
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .newestCountdown1 {
+        /* width: 200%;
+        position: relative; */
+        text-align: right;
+    }
+
+    .countdown-and-voting {
+        width: 209%;
+        height: auto;
+    }
+
+    .pointVote1 {
+        float: left;
+    }
+
+    .pointVote2 {
+        float: right;
+    }
+
+    .pointVote3 {
+        float: left;
+    }
+
+    .pointVote4 {
+        float: right;
+    }
+
+    .newestWinner1 {
+        bottom: 2em;
+        text-align: center;
+        left: 53%;
+        display: flex;
+        vertical-align: middle;
+    }
+
+    .newestCountdown2 {
+        /* position: relative; */
+        text-align: center;
+        margin-top: -5em;
+    }
+
+    .newestCountdown3 {
+        text-align: center;
+        margin-bottom: 0em;
+    }
+
+    .newestWinner2 {
+        width: 50em;
+        display: flex;
+        /* margin: 0 auto; */
+        position: absolute;
+        left: 41%;
+        bottom: 5%;
+        padding-bottom: 2em;
+    }
+
+    .countdownText h2 {
+        /* position: absolute; */
+        bottom: 2em;
+        text-align: center;
+        width: 100%;
+        left: 53%;
+    }
+
+    .countdownText2 h2 {
+        /* position: absolute; */
+        bottom: 5em;
+
+        /* left: 39%; */
+    }
+
+    .countdownText3 h2 {
+        font-size: 1.8em;
     }
 
     .countdownTrophyImg {
@@ -2061,6 +2775,7 @@ body {
     display: flex;
     border-bottom: 2px solid black;
     width: 100%;
+    
 }
 
 .category-show a {
@@ -2079,7 +2794,7 @@ body {
 
 .category-show h1 {
     padding-top: 1%;
-    font-size: 2.75em;
+    font-size: 1.5em;
     padding-left: 0.3em;
     text-transform: uppercase;
 }
@@ -2090,6 +2805,8 @@ body {
     text-transform: uppercase;
     padding-left: 0.72em;
     padding-bottom: 1%;
+    visibility: hidden;
+    display: none;
 }
 
 .category-header {
@@ -2099,6 +2816,8 @@ body {
 
 .category-header h1 {
     text-transform: uppercase;
+    padding: 50px 0;
+    margin-left: .5em;
 }
 
 .category-image {
@@ -2113,6 +2832,7 @@ body {
 .tagline {
     border-bottom: solid black;
     width: 100%;
+    
 }
 
 .category-show h5 {
@@ -2122,6 +2842,239 @@ body {
     margin: auto;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
+    visibility: hidden;
+    display: none;
+}
+
+@media (min-width: 48em){
+    .category-show {
+        display: flex;
+        border-bottom: 2px solid black;
+        width: 100%;
+    }
+    
+    .category-show a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .category-show img {
+        width: 100%;
+        object-fit: cover;
+        margin: 1%;
+        margin-top: 0;
+        padding-right: 1em;
+        float: left;
+    }
+    
+    .category-show h1 {
+        padding-top: 1%;
+        font-size: 2em;
+        padding-left: 0.3em;
+        text-transform: uppercase;
+    }
+    
+    .category-show h4 {
+        font-size: 1em;
+        color: rgba(0, 59, 91);
+        text-transform: uppercase;
+        padding-left: 0.72em;
+        padding-bottom: 1%;
+        visibility: visible;
+        display: block;
+    }
+    
+    .category-header {
+        float: left;
+        width: 100%;
+    }
+    
+    .category-header h1 {
+        padding: 0;
+        margin-left: .3em;
+        text-transform: uppercase;
+        margin-top: .1em;
+    }
+    
+    .category-image {
+        width: 12em;
+        border-right: solid black;
+    }
+    
+    .category-image img {
+        margin-top: 1em;
+    }
+    
+    .tagline {
+        border-bottom: solid black;
+        width: 100%;
+    }
+    
+    .category-show h5 {
+        font-size: .9em;
+        padding-left: 1em;
+        justify-content: left;
+        margin: auto;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        vertical-align: middle;
+        visibility: visible;
+        display: block;
+    }
+
+}
+
+@media (min-width: 64em){
+    
+    .category-show {
+        display: flex;
+        border-bottom: 2px solid black;
+        width: 100%;
+        
+    }
+    
+    .category-show a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .category-show img {
+        width: 100%;
+        object-fit: cover;
+        margin: 1%;
+        margin-top: 0;
+        padding-right: 1em;
+        float: left;
+    }
+    
+    .category-show h1 {
+        padding-top: 1%;
+        font-size: 2.75em;
+        padding-left: 0.3em;
+        text-transform: uppercase;
+    }
+    
+    .category-show h4 {
+        font-size: 1.25em;
+        color: rgba(0, 59, 91);
+        text-transform: uppercase;
+        padding-left: 0.72em;
+        padding-bottom: 1%;
+        visibility: visible;
+        display: block;
+    }
+    
+    .category-header {
+        float: left;
+        width: 100%;
+    }
+    
+    .category-header h1 {
+        text-transform: uppercase;
+        margin-left: 0;
+    }
+    
+    .category-image {
+        width: 12em;
+        border-right: solid black;
+    }
+    
+    .category-image img {
+        margin-top: 1em;
+    }
+    
+    .tagline {
+        border-bottom: solid black;
+        width: 100%;
+    }
+    
+    .category-show h5 {
+        font-size: .9em;
+        padding-left: 1em;
+        justify-content: left;
+        margin: auto;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        visibility: visible;
+        display: block;
+    }
+
+}
+
+@media (min-width: 80em){
+    .category-show {
+        display: flex;
+        border-bottom: 2px solid black;
+        width: 100%;
+    }
+    
+    .category-show a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .category-show img {
+        width: 100%;
+        object-fit: cover;
+        margin: 1%;
+        margin-top: 0;
+        padding-right: 1em;
+        float: left;
+    }
+    
+    .category-show h1 {
+        padding-top: 1%;
+        font-size: 2.75em;
+        padding-left: 0.3em;
+        text-transform: uppercase;
+    }
+    
+    .category-show h4 {
+        font-size: 1.25em;
+        color: rgba(0, 59, 91);
+        text-transform: uppercase;
+        padding-left: 0.72em;
+        padding-bottom: 1%;
+        visibility: visible;
+        display: block;
+    }
+    
+    .category-header {
+        float: left;
+        width: 100%;
+    }
+    
+    .category-header h1 {
+        text-transform: uppercase;
+    }
+    
+    .category-image {
+        width: 12em;
+        border-right: solid black;
+    }
+    
+    .category-image img {
+        margin-top: 1em;
+    }
+    
+    .tagline {
+        border-bottom: solid black;
+        width: 100%;
+        visibility: visible;
+        display: contents;
+    }
+    
+    .category-show h5 {
+        font-size: 1.1em;
+        padding-left: 1em;
+        justify-content: left;
+        margin: auto;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        visibility: visible;
+        display:block;
+    }
+
 }
 
 /* -----------------------------------END CATEGORIES------------------------------------------- */
@@ -2767,7 +3720,39 @@ body {
 
 }
 
+@media (min-width: 64em){
+
+    .footer .nav{
+        font-size: .8em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav__item{
+        text-align: center;
+    }
+
+    .nav__link:link,
+    .nav__link:visited {
+        margin-right: 0rem;
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .second-row-social-media {
+        left: 50%;
+        padding-bottom: 2em;
+    }
+
+}
+
 @media (min-width: 80em) {
+    .footer .nav{
+        font-size: 1.3em;
+    }
     .nav__link {
         width: 100%;
         margin-left: -5%;
@@ -2791,17 +3776,32 @@ body {
 
 /* -----------------------------------HUBSPOT TIPS FORM---------------------------------------------- */
 
+.hubspot{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right:1em;
+}
+
 .hubspot-form-header {
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
-@font-face {
-    font-family: europaRegular;
-    src: url("../fonts/EuropaRegular.ttf") format("truetype");
+@media (min-width: 80em) {
+.hubspot-form-header {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 }
 
- .postInput {
+
+ 
+
+/* -----------------------------------END HUBSPOT TIPS FORM---------------------------------------------- */
+/* admin */
+
+.postInput {
     /* margin: 5em; */
     border: black solid 1px;
     padding: 5em;
@@ -2844,4 +3844,9 @@ body {
     border-top: 2px solid black;
 }
 
-/* -----------------------------------END HUBSPOT TIPS FORM---------------------------------------------- */
+/* end admin */
+
+@font-face {
+    font-family: europaRegular;
+    src: url("../fonts/EuropaRegular.ttf") format("truetype");
+}
