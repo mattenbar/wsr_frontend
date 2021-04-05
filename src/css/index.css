@@ -3108,11 +3108,20 @@ body {
 /* -----------------------------------END CATEGORIES------------------------------------------- */
 
 /* -----------------------------------START ABOUT US------------------------------------------- */
-
 .about-us {
     text-align: justify;
-    font-size: 1.75em;
+    font-size: 1em;
+    margin: 1em;
+}  
+
+@media (min-width: 46em){
+    .about-us {
+        margin: 0;
+        text-align: justify;
+        font-size: 1.75em;
+    }  
 }
+
 
 /* -----------------------------------END ABOUT US------------------------------------------- */
 
