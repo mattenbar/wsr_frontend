@@ -2832,17 +2832,19 @@ body {
 
 .category-header h1 {
     text-transform: uppercase;
-    padding: 50px 0;
+    margin-top: .5em;
     margin-left: .5em;
+    margin-bottom: .5em;
 }
 
 .category-image {
-    width: 12em;
+    width: 5em;
     border-right: solid black;
 }
 
 .category-image img {
-    margin-top: 1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 .tagline {
@@ -2907,13 +2909,14 @@ body {
     
     .category-header h1 {
         padding: 0;
+        margin-bottom: 0;
         margin-left: .3em;
         text-transform: uppercase;
         margin-top: .1em;
     }
     
     .category-image {
-        width: 12em;
+        width: 10em;
         border-right: solid black;
     }
     
