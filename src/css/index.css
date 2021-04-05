@@ -2137,7 +2137,6 @@ body {
         margin-bottom: 4em;
         position: relative;
         height: auto;
-        
     }
 
     .pointcp4 {
@@ -2150,10 +2149,7 @@ body {
         margin-top: 1.25em;
         text-align: justify;
         height: auto;
-        
     }
-
-    
 
     .pointTop {
         display: grid;
@@ -2348,10 +2344,6 @@ body {
         vertical-align: middle;
     }
 
-    /* .trophyImg {
-        width: 40%;
-    } */
-
     .winner h2 {
         color: black;
     }
@@ -2502,7 +2494,6 @@ body {
         margin-bottom: 4em;
         position: relative;
         height: auto;
-        
     }
 
     .pointcp4 {
@@ -2515,10 +2506,7 @@ body {
         margin-top: 1.25em;
         text-align: justify;
         height: auto;
-        
     }
-
-    
 
     .pointTop {
         display: grid;
@@ -3432,25 +3420,31 @@ body {
 /* -----------------------------------INDIVIDUAL CATEGORY PAGE---------------------------------------------- */
 
 .categoryTopTwo {
-    width: 100%;
-    display: flex;
-}
-
-.categoryTopLeft {
-    width: 49%;
-    margin: 2em 1em 1em 0;
+    padding-top: 2em;
+    text-align: center;
 }
 
 .categoryTopRight img,
 .categoryTopLeft img {
-    width: 100%;
+    width: 90%;
     height: 20em;
     object-fit: cover;
 }
 
+.smallGrid {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.smallGrid img {
+    width: 90%;
+    height: 20em;
+    object-fit: cover;
+}
+
+.categoryTopLeft,
 .categoryTopRight {
-    width: 49%;
-    margin: 2em 0 1em 1em;
+    margin-bottom: 2em;
 }
 
 .newestPostHeader {
@@ -3462,47 +3456,133 @@ body {
     color: rgba(0, 59, 91);
 }
 
-.categoryRemainingArticles {
-    display: grid;
-    grid-auto-rows: 23em;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2em;
-    margin: 2em 0;
+@media (min-width: 43.75em) {
+    .categoryTopTwo {
+        padding-top: 0;
+        width: 100%;
+        display: flex;
+        text-align: left;
+    }
+
+    .categoryTopLeft {
+        width: 49%;
+        margin: 2em 1em 1em 0;
+    }
+
+    .categoryTopRight img,
+    .categoryTopLeft img {
+        width: 100%;
+        height: 15em;
+        object-fit: cover;
+    }
+
+    .categoryTopRight {
+        width: 49%;
+        margin: 2em 0 1em 1em;
+    }
+
+    .categoryRemainingArticles {
+        display: grid;
+        grid-auto-rows: 18em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+        margin: 1em 0 2em 0;
+    }
+
+    .newestPostHeader {
+        font-size: 1.25em;
+    }
+
+    .lightblueAuthor {
+        font-size: 1em;
+    }
+
+    .individualPostDate {
+        font-size: 0.85em;
+    }
+
+    .smallGrid {
+        /* width: 30%; */
+        /* margin: 1em; */
+        text-align: left;
+    }
+
+    .smallGrid img {
+        width: 100%;
+        height: 13em;
+        object-fit: cover;
+    }
+
+    .somePosts {
+        width: 100%;
+        text-align: center;
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    .noPosts {
+        width: 100%;
+        height: 25vh;
+        text-align: center;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        position: relative;
+    }
+
+    .noPosts h2 {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
-.smallGrid {
-    /* width: 30%; */
-    /* margin: 1em; */
+@media (min-width: 55em) {
+    .categoryTopRight img,
+    .categoryTopLeft img {
+        width: 100%;
+        height: 20em;
+        object-fit: cover;
+    }
+
+    .categoryRemainingArticles {
+        grid-auto-rows: 23em;
+        grid-gap: 2em;
+        margin: 2em 0;
+    }
+
+    .smallGrid img {
+        width: 100%;
+        height: 17em;
+        object-fit: cover;
+    }
+
+    .newestPostHeader {
+        font-size: 1.35em;
+    }
+
+    .lightblueAuthor {
+        font-size: 1.1em;
+    }
+
+    .individualPostDate {
+        font-size: 1em;
+    }
 }
 
-.smallGrid img {
-    width: 100%;
-    height: 17em;
-    object-fit: cover;
-}
+@media (min-width: 80em) {
+    .newestPostHeader {
+        font-size: 1.75em;
+    }
 
-.somePosts {
-    width: 100%;
-    text-align: center;
-    margin-top: 5em;
-    margin-bottom: 5em;
-}
+    .lightblueAuthor {
+        font-size: 1.35em;
+    }
 
-.noPosts {
-    width: 100%;
-    height: 25vh;
-    text-align: center;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    position: relative;
-}
-
-.noPosts h2 {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    .individualPostDate {
+        font-size: 1.25em;
+    }
 }
 
 /* -----------------------------------END INDIVIDUAL CATEGORY PAGE---------------------------------------------- */
@@ -3698,16 +3778,15 @@ body {
     }
 }
 
-@media (min-width: 47em){
-
-    .footer .nav{
-        font-size: .8em;
+@media (min-width: 47em) {
+    .footer .nav {
+        font-size: 0.8em;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .nav__item{
+    .nav__item {
         text-align: center;
     }
 
@@ -3725,7 +3804,6 @@ body {
         left: 50%;
         padding-bottom: 2em;
     }
-
 }
 
 @media (min-width: 64em){
@@ -3765,7 +3843,6 @@ body {
         width: 100%;
         margin-left: -5%;
         font-size: 1.3em;
-        
     }
 
     .second-row-social-media {
@@ -3821,32 +3898,32 @@ body {
 
 .postForm {
     margin: 1em;
-} 
+}
 
-.pointcpInput{
+.pointcpInput {
     border: black solid 1px;
     padding: 5em;
 }
 
 .pointcpForm {
     margin: 1em;
-} 
+}
 
-.FeaturesInput{
+.FeaturesInput {
     border: black solid 1px;
     padding: 5em;
 }
 
-.adInput{
+.adInput {
     border: black solid 1px;
     padding: 5em;
 }
 
-.adForm{
+.adForm {
     margin: 1em;
 }
 
-.ShowadsInput{
+.ShowadsInput {
     border: black solid 1px;
     padding: 5em;
 }
