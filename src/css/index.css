@@ -255,8 +255,13 @@ body {
 }
 
 @media (min-width: 80em) {
+    .mediaButtons {
+        margin-right: -0.7em;
+    }
+
     .navbar {
         height: 15em;
+        margin-bottom: -1em;
     }
 
     .nav-right {
@@ -307,7 +312,7 @@ body {
     border: 3px solid rgb(255, 208, 2);
     border-radius: 4px;
     color: white;
-    font-size: 0.9em;
+    font-size: 0.86em;
     padding-top: 1em;
     padding-bottom: 0.5em;
     padding-left: 0.5em;
@@ -333,9 +338,19 @@ body {
     width: 20%;
 }
 
-@media (min-width: 80em) {
+@media (min-width: 55em) {
     .searchbarinput {
-        font-size: 1em;
+        font-size: 0.87em;
+    }
+}
+
+@media (min-width: 80em) {
+    .searchbar {
+        margin-right: 0.4em;
+    }
+
+    .searchbarinput {
+        font-size: 0.95em;
     }
     .header-search-bar {
         margin-top: 1.5em;
@@ -370,8 +385,14 @@ body {
     }
 
     .smb-yellow {
-        width: 4.3em;
+        width: 4.2em;
         padding: 0 1em;
+    }
+}
+
+@media (min-width: 55em) {
+    .smb-yellow {
+        width: 4.17em;
     }
 }
 
@@ -380,7 +401,7 @@ body {
         margin-top: 2.75em;
     }
     .smb-yellow {
-        width: 12.9%;
+        width: 4.5em;
         margin-top: 0em;
     }
 }
@@ -963,7 +984,7 @@ body {
 
 @media (min-width: 80em) {
     .carousel-top {
-        margin: 0 0 1em 0;
+        margin: 0 0 2em 0;
     }
 
     .carousel-wrapper {
@@ -3294,6 +3315,7 @@ body {
 
 .individual span {
     padding-bottom: 1em;
+    width: 100%;
 }
 
 .individualImage {
@@ -3304,6 +3326,34 @@ body {
 
 .boardname {
     text-transform: uppercase;
+}
+
+.individual h3 {
+    width: 75%;
+    font-size: 1.5em;
+    height: 3em;
+    margin-left: 2.2em;
+}
+
+.popup__content2 {
+    width: 25em;
+    height: 16rem;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: black;
+    border-radius: 3px;
+    display: table;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.4s 0.2s;
+}
+
+.popup:target .popup__content2 {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .popupbuttonboard {
@@ -3351,6 +3401,11 @@ body {
     margin-bottom: 0.5em;
 }
 
+.seemoreboard {
+    margin-top: -2em;
+    font-size: 1em;
+}
+
 @media (min-width: 43.75em) {
     .board-header {
         margin-bottom: 2em;
@@ -3374,6 +3429,10 @@ body {
         padding: 1em;
         margin: 1em;
         grid-row: auto / span 2;
+    }
+
+    .popup__content2 {
+        width: 50em;
     }
 
     .boardpopup__left {
@@ -3401,6 +3460,41 @@ body {
         padding: 2em 4rem;
         font-size: 1.5em;
     }
+
+    .boardname {
+        font-size: 2.5em;
+    }
+
+    .individual h3 {
+        font-size: 1.8em;
+        height: 3em;
+        width: 100%;
+        margin-left: 0em;
+    }
+
+    .seemoreboard {
+        margin-top: -3em;
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 55em) {
+    .boardname {
+        font-size: 2.5em;
+    }
+
+    .individual h3 {
+        font-size: 1.8em;
+        height: 3em;
+    }
+
+    .popup__content2 {
+        width: 65em;
+    }
+
+    .boardpopup__right p {
+        font-size: 0.75em;
+    }
 }
 
 @media (min-width: 80em) {
@@ -3424,8 +3518,25 @@ body {
         width: 50%;
     }
 
+    .boardpopup__right p {
+        font-size: 1em;
+    }
+
     .popupbuttonboard {
         margin-top: 1.5em;
+    }
+    .boardname {
+        font-size: 1.5em;
+    }
+
+    .individual h3 {
+        font-size: 1em;
+        height: 3em;
+    }
+
+    .seemoreboard {
+        font-size: 1em;
+        margin-top: -2em;
     }
 }
 

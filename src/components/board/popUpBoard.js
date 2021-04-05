@@ -3,7 +3,7 @@ import React from 'react';
 function popUpBoard(props) {
     return (
         <div className="popup" id={props.name}> 
-            <div className="popup__content">
+            <div className="popup__content2">
                 <div className="boardpopup__left">
 
                 </div>
