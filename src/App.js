@@ -71,6 +71,7 @@ import PeopleMovesArticle from './components/articles/peopleMovesArticle';
 import WordsInEdgewise from './components/categories/wordsInEdgewise'
 import WordsInEdgewiseArticle from './components/articles/wordsInEdgewiseArticle';
 import HubspotTipsForm from "./components/hubspotTipsForm/hubspotTipsForm";
+import Statshots from './components/categories/statshots'
 
 
 class App extends React.Component{
@@ -116,7 +117,7 @@ class App extends React.Component{
 
           {/* category pages */}
 
-          <Route exact path="/Statshots" render={()=> <DramatisPersonae />}/>
+          <Route exact path="/Statshots" render={()=> <Statshots />}/>
 
           <Route exact path="/Dramatis-Personae" render={()=> <DramatisPersonae />}/>
           <Route exact path="/Dramatis-Personae/:id" component={DramatisPersonaeArticle} />
