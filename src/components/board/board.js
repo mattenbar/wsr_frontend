@@ -1,18 +1,5 @@
 import React, {Component} from 'react';
 
-//import board members
-// import MattBrown from './mattBrown'
-// import BrendanClark from './brendanClark'
-// import LisaGok from './lisaGok'
-// import HarryGrand from './harryGrand'
-// import JeffNash from './jeffNash'
-// import MaryOsaka from './maryOsaka'
-// import ChrisPaulitz from './chrisPaulitz'
-// import JimRoth from './jimRoth'
-// import SusanThedar from './susanThedar'
-// import CathyWeathorford from './cathyWeatherford'
-// import SidYenamandra from './sidYenamandra'
-
 import { boardMembers } from './boardMembers';
 import IndBoardMember from './indBoardMember';
 
