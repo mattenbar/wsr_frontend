@@ -21,14 +21,14 @@ function carousel(props) {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 1
+                    slidesToScroll: 4
                 }
                 },
                 {
-                breakpoint: 1008,
+                breakpoint: 880,
                 settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 1
+                    slidesToScroll: 4
                 }
                 },
                 {

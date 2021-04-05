@@ -396,7 +396,7 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 2000;
+    z-index: 1000;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s;
@@ -833,16 +833,17 @@ body {
 .carousel-top {
     width: 100%;
     margin: 0 0 1em 0;
+    z-index: 2002;
 }
 
 .slick-prev {
     margin-left: 38px;
-    z-index: 1020;
+    z-index: 2020;
 }
 
 .slick-next {
     margin-right: 39px;
-    z-index: 1021;
+    z-index: 2021;
 }
 
 .slick-prev:before,
@@ -882,6 +883,7 @@ body {
     margin-left: 1em;
     width: 10em;
     height: 10em;
+    z-index: 2030;
 }
 
 .crsltop a {
@@ -904,34 +906,51 @@ body {
 
 @media (min-width: 43.75em) {
     .carousel-top {
-        margin: 0 0 1.5em 0;
+        margin: 0 0 1em 0;
+    }
+
+    .carousel-wrapper {
+        position: relative;
+        margin-top: -3em;
+        margin-bottom: -3em;
+        margin-left: 0.5em;
     }
 
     .crsltop {
-        margin-top: 2.25em;
+        /* margin-top: 2.25em; */
         margin-bottom: 2.5em;
+        margin-left: 2em;
+        margin-right: 0;
+    }
+
+    .crsltop a {
+        margin-top: 0;
     }
 
     .box h2 {
         font-size: 0.75em;
     }
 
+    .crsltop h2 {
+        font-size: 0.75em;
+        margin-top: -2em;
+        margin-bottom: 0.5em;
+    }
+
     .top-carousel-model {
-        width: 30%;
+        width: 50%;
     }
 }
 
-/* @media (min-width: 55em) {
+@media (min-width: 55em) {
     .carousel-top {
-        margin: 0 0 2em 0;
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
+        margin-top: -1.5em;
+        margin-bottom: 2em;
     }
-} */
+}
 
 @media (min-width: 65em) {
     .carousel-top {
-        margin: 0 0 3em 0;
         margin: 0 0 2em 0;
         border-top: 2px solid black;
         border-bottom: 2px solid black;
@@ -943,36 +962,40 @@ body {
 }
 
 @media (min-width: 80em) {
-    .slick-prev {
-        margin-left: 60px;
-    }
-
-    .slick-next {
-        margin-right: 60px;
+    .carousel-top {
+        margin: 0 0 1em 0;
     }
 
     .carousel-wrapper {
-        width: 80%;
-        box-sizing: border-box;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .box {
-        margin-top: 2em;
-    }
-
-    .slick-slider ul {
-        list-style: none;
+        position: relative;
+        margin-top: -3em;
+        margin-bottom: -3em;
+        margin-left: 0.5em;
     }
 
     .crsltop {
-        margin-right: -3em;
-        margin-left: -3em;
+        /* margin-top: 2.25em; */
+        margin-bottom: 2.5em;
+        margin-left: 5em;
+        margin-right: 0;
+    }
+
+    .crsltop a {
+        margin-top: 0;
+    }
+
+    .box h2 {
+        font-size: 0.75em;
+    }
+
+    .crsltop h2 {
+        font-size: 0.75em;
+        margin-top: -2em;
+        margin-bottom: 0.5em;
     }
 
     .top-carousel-model {
-        width: 25%;
+        width: 50%;
     }
 }
 
@@ -1386,360 +1409,350 @@ body {
 
 /* -----------------------------------POINT-COUNTERPOINT---------------------------------------------- */
 
-    .pointcpContainer {
-        margin-left: 1em;
-        margin-right: 1em;
-        position: relative;
-        margin-bottom: 2em;
-    }
+.pointcpContainer {
+    margin-left: 1em;
+    margin-right: 1em;
+    position: relative;
+    margin-bottom: 2em;
+}
 
+.pointcptopic {
+    margin: 1em;
+    text-align: center;
+}
 
-    .pointcptopic {
-        margin: 1em;
-        text-align: center;
-    }
+.pointContainer1 h2,
+.pointContainer2 h2 {
+    color: rgba(0, 59, 91);
+}
 
+.pointContainer1 {
+    padding-bottom: 3em;
+    position: relative;
+}
 
-    .pointContainer1 h2,
-    .pointContainer2 h2 {
-        color: rgba(0, 59, 91);
-    }
+.pointContainer2 {
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    margin: 1em;
+}
 
-    .pointContainer1 {
-        padding-bottom: 3em;
-        position: relative;
-    }
+.pointcp1,
+.pointcp2 {
+    height: 30em;
+    margin-bottom: 2em;
+    position: relative;
+    height: auto;
+}
 
-    .pointContainer2 {
-        padding-bottom: 1em;
-        margin-bottom: 2em;
-        margin:1em;
-    }
+.pointcp2 {
+    align-content: right;
+    text-align: right;
+}
 
-    .pointcp1,
-    .pointcp2 {
-        height: 30em;
-        margin-bottom: 2em;
-        position: relative;
-        height: auto;
-    }
+.pointcp3,
+.pointcp4 {
+    height: 30em;
+    margin-top: 0em;
+    margin-bottom: 2em;
+    position: relative;
+    height: auto;
+}
 
-    .pointcp2 {
-        align-content: right;
-        text-align: right;
-    }
+.pointcp4 {
+    align-content: right;
+    text-align: right;
+}
 
-    .pointcp3,
-    .pointcp4 {
-        height: 30em;
-        margin-top: 0em;
-        margin-bottom: 2em;
-        position: relative;
-        height: auto;
-        
-    }
+.pointcpContent {
+    font-size: 1.1em;
+    margin-top: 1.25em;
+    text-align: justify;
+    height: auto;
+}
 
-    .pointcp4 {
-        align-content: right;
-        text-align: right;
-    }
+.pointTop {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+}
 
-    .pointcpContent {
-        font-size: 1.1em;
-        margin-top: 1.25em;
-        text-align: justify;
-        height: auto;
-        
-    }
+.pointTop2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+}
 
-    
+.pointHeaderRight {
+    position: relative;
+}
 
-    .pointTop {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 10px;
-    }
+.pointbottom h1 {
+    font-size: 1.2em;
+}
+.pointbottom h2 {
+    font-size: 0.9em;
+}
 
-    .pointTop2 {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-gap: 10px;
-    }
+.pointbottom h3 {
+    font-size: 0.9em;
+}
 
-    .pointHeaderRight {
-        position: relative;
-    }
+.pointbottom2 {
+    bottom: 7px;
+    right: 0px;
+}
 
-    .pointbottom h1 {
-        font-size: 1.2em;
-    }
-    .pointbottom h2 {
-        font-size: .9em;
-    }
+.pointbottom2 h1 {
+    font-size: 1.2em;
+}
+.pointbottom2 h2 {
+    font-size: 0.9em;
+}
 
-    .pointbottom h3 {
-        font-size: .9em;
-    }
+.pointbottom2 h3 {
+    font-size: 0.9em;
+}
 
-    .pointbottom2 {
-        bottom: 7px;
-        right: 0px;
-    }
+.pointcpImage {
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+}
 
-    .pointbottom2 h1 {
-        font-size: 1.2em;
-    }
-    .pointbottom2 h2 {
-        font-size: .9em;
-    }
+.boxingButton {
+    border: none;
+    background: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
 
-    .pointbottom2 h3 {
-        font-size: .9em;
-    }
+.boxingButton:focus {
+    box-shadow: none !important;
+}
 
-    .pointcpImage {
-        width: 10em;
-        height: 10em;
-        object-fit: cover;
-    }
+.pv1,
+.pv2 {
+    display: flex;
+    transition: all 0.5s ease;
+}
 
-    .boxingButton {
-        border: none;
-        background: none;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        cursor: pointer;
-    }
+.pv1 h2,
+.pv2 h2 {
+    margin-top: 0.2em;
+    /* display: inline-block; */
+    margin-top: 1em;
+    font-size: 0.6em;
+    width: 100%;
+    text-transform: uppercase;
+}
 
-    .boxingButton:focus {
-        box-shadow: none !important;
-    }
+.pv1:hover,
+.pv1:active,
+.pv2:hover,
+.pv2:active {
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 4px grey;
+}
 
-    .pv1,
-    .pv2 {
-        display: flex;
-        transition: all 0.5s ease;
-    }
+.boxGlove {
+    width: 2em;
+    height: 2em;
+    /* margin-top: -20em; */
+}
 
-    .pv1 h2,
-    .pv2 h2 {
-        margin-top: 0.2em;
-        /* display: inline-block; */
-        margin-top: 1em;
-        font-size: .6em;
-        width: 100%;
-        text-transform: uppercase;
-    }
+.boxingButton3 {
+    border: none;
+    background: none;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
 
-    .pv1:hover,
-    .pv1:active,
-    .pv2:hover,
-    .pv2:active {
-        transform: translateY(-3px);
-        transition: all 0.5s ease;
-        text-shadow: 2px 2px 4px grey;
-    }
+.boxingButton3 h2 {
+    margin-top: 0.2em;
+    margin-bottom: 2em;
+}
 
-    .boxGlove {
-        width: 2em;
-        height: 2em;
-        /* margin-top: -20em; */
-    }
-
-    .boxingButton3 {
-        border: none;
-        background: none;
-        margin-top: 2em;
-        margin-bottom: 4em;
-    }
-
-    .boxingButton3 h2 {
-        margin-top: 0.2em;
-        margin-bottom: 2em;
-    }
-
-    .far {
-        color: rgba(0, 0, 0, 0.5);
-    }
-    .newestCountdown1 {
-        /* width: 200%;
+.far {
+    color: rgba(0, 0, 0, 0.5);
+}
+.newestCountdown1 {
+    /* width: 200%;
         position: relative; */
-        text-align: right;
-    }
+    text-align: right;
+}
 
-    .countdownText3 h2 {
-        font-size: .8em;
-    }
+.countdownText3 h2 {
+    font-size: 0.8em;
+}
 
-    .countdown-and-voting {
-        width: 100%;
-        height: auto;
-    }
+.countdown-and-voting {
+    width: 100%;
+    height: auto;
+}
 
-    .pointVote1 {
-        float: left;
-    }
+.pointVote1 {
+    float: left;
+}
 
-    .pointVote2 {
-        float: right;
-    }
+.pointVote2 {
+    float: right;
+}
 
-    .pointVote3 {
-        float: left;
-    }
+.pointVote3 {
+    float: left;
+}
 
-    .pointVote4 {
-        float: right;
-    }
+.pointVote4 {
+    float: right;
+}
 
-    .newestWinner1 {
-        bottom: 2em;
-        text-align: center;
-        left: 53%;
-        display: flex;
-        vertical-align: middle;
-    }
+.newestWinner1 {
+    bottom: 2em;
+    text-align: center;
+    left: 53%;
+    display: flex;
+    vertical-align: middle;
+}
 
-    .newestCountdown2 {
-        /* position: relative; */
-        text-align: center;
-        margin-top: -5em;
-    }
+.newestCountdown2 {
+    /* position: relative; */
+    text-align: center;
+    margin-top: -5em;
+}
 
-    .newestCountdown3 {
-        text-align: center;
-        margin-bottom: 0em;
-    }
+.newestCountdown3 {
+    text-align: center;
+    margin-bottom: 0em;
+}
 
-    .newestWinner2 {
-        width: 50em;
-        display: flex;
-        /* margin: 0 auto; */
-        position: absolute;
-        left: 41%;
-        bottom: 5%;
-        padding-bottom: 2em;
-    }
+.newestWinner2 {
+    width: 50em;
+    display: flex;
+    /* margin: 0 auto; */
+    position: absolute;
+    left: 41%;
+    bottom: 5%;
+    padding-bottom: 2em;
+}
 
-    .countdownText h2 {
-        /* position: absolute; */
-        bottom: 2em;
-        text-align: center;
-        width: 100%;
-        left: 53%;
-        font-size: .8em;
-    }
+.countdownText h2 {
+    /* position: absolute; */
+    bottom: 2em;
+    text-align: center;
+    width: 100%;
+    left: 53%;
+    font-size: 0.8em;
+}
 
+.countdownTrophyImg {
+    width: 2em;
+    vertical-align: middle;
+}
 
-    .countdownTrophyImg {
-        width: 2em;
-        vertical-align: middle;
-    }
+.winner h2 {
+    color: black;
+}
 
+.winner h1 {
+    color: rgb(0, 59, 91);
+}
 
-    .winner h2 {
-        color: black;
-    }
+.trophyHeaders {
+    text-align: center;
+    width: 100%;
+    display: flex;
+}
 
-    .winner h1 {
-        color: rgb(0, 59, 91);
-    }
+.trophyHeaders h1 {
+    width: 100%;
+}
 
-    .trophyHeaders {
-        text-align: center;
-        width: 100%;
-        display: flex;
-    }
+.editDeletePointCP {
+    margin-top: 5em;
+}
 
-    .trophyHeaders h1 {
-        width: 100%;
-    }
+.editDeletePointCP1 {
+    margin-top: 2.5em;
+}
 
-    .editDeletePointCP {
-        margin-top: 5em;
-    }
+.linkToArchives-Container {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
 
-    .editDeletePointCP1 {
-        margin-top: 2.5em;
-    }
+.linkToArchives {
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(0, 59, 91);
+    transition: all 0.5s ease;
+    margin: 1em;
+}
 
-    .linkToArchives-Container {
-        width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
-        text-align: center;
-    }
+.linkToArchives:hover,
+.linkToArchives:active {
+    font-size: 1em;
+    transform: translateY(-5px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 4px grey;
+}
 
-    .linkToArchives {
-        text-decoration: none;
-        font-size: 1em;
-        color: rgb(0, 59, 91);
-        transition: all 0.5s ease;
-        margin: 1em;
-    }
+.archiveContainer {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
 
-    .linkToArchives:hover,
-    .linkToArchives:active {
-        font-size: 1em;
-        transform: translateY(-5px);
-        transition: all 0.5s ease;
-        text-shadow: 2px 2px 4px grey;
-    }
+.archiveContainer h1 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
 
-    .archiveContainer {
-        margin-top: 4em;
-        margin-bottom: 4em;
-        margin-right: 1em;
-        margin-left: 1em;
-    }
+.pointcpLinksList {
+    padding-left: 2em;
+    text-align: left;
+}
 
-    .archiveContainer h1{
-        font-size: 1.2em;
-        margin-bottom: 1em;
-    }
+.pointcpLinksList li {
+    padding: 0;
+    margin: 0.5em;
+    font-size: 1.25em;
+    color: black;
+}
 
-    .pointcpLinksList {
-        padding-left: 2em;
-        text-align: left;
-    }
+.pointcpLinks {
+    text-decoration: none;
+    transition: all 0.5s ease;
+    color: black;
+}
 
-    .pointcpLinksList li {
-        padding: 0;
-        margin: 0.5em;
-        font-size: 1.25em;
-        color: black;
-    }
+.pointcpLinks:hover,
+.pointcpLinks:active {
+    transform: translateY(-2px);
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 2px rgb(148, 146, 146);
+}
 
-    .pointcpLinks {
-        text-decoration: none;
-        transition: all 0.5s ease;
-        color: black;
-    }
-
-    .pointcpLinks:hover,
-    .pointcpLinks:active {
-        transform: translateY(-2px);
-        transition: all 0.5s ease;
-        text-shadow: 2px 2px 2px rgb(148, 146, 146);
-    }
-
-    .pointcpArchives ol{
-        font-size: .7em;
-    }
+.pointcpArchives ol {
+    font-size: 0.7em;
+}
 
 @media (min-width: 48em) {
     .pointcpContainer {
         position: relative;
         margin-bottom: 2em;
-        margin:0;
+        margin: 0;
     }
-
 
     .pointcptopic {
         margin: 1em;
         text-align: center;
     }
-
 
     .pointContainer1,
     .pointContainer2 {
@@ -1785,7 +1798,6 @@ body {
         margin-bottom: 2em;
         position: relative;
         height: auto;
-        
     }
 
     .pointcp4 {
@@ -1798,10 +1810,7 @@ body {
         margin-top: 1.25em;
         text-align: justify;
         height: auto;
-        
     }
-
-    
 
     .pointTop {
         display: grid;
@@ -1823,11 +1832,11 @@ body {
         font-size: 1.2em;
     }
     .pointbottom h2 {
-        font-size: .9em;
+        font-size: 0.9em;
     }
 
     .pointbottom h3 {
-        font-size: .9em;
+        font-size: 0.9em;
     }
 
     .pointbottom2 {
@@ -1839,11 +1848,11 @@ body {
         font-size: 1.2em;
     }
     .pointbottom2 h2 {
-        font-size: .9em;
+        font-size: 0.9em;
     }
 
     .pointbottom2 h3 {
-        font-size: .9em;
+        font-size: 0.9em;
     }
 
     .pointcpImage {
@@ -1860,7 +1869,7 @@ body {
         cursor: pointer;
     }
 
-    .countdownText3 h2{
+    .countdownText3 h2 {
         font-size: 1.2em;
     }
 
@@ -1878,7 +1887,7 @@ body {
     .pv2 h2 {
         margin-top: 0.2em;
         /* display: inline-block; */
-        margin-top: .9em;
+        margin-top: 0.9em;
         font-size: 1.2em;
         width: 100%;
         text-transform: uppercase;
@@ -1979,12 +1988,10 @@ body {
         font-size: 1.2em;
     }
 
-
     .countdownTrophyImg {
         width: 2em;
         vertical-align: middle;
     }
-
 
     .winner h2 {
         color: black;
@@ -2065,11 +2072,11 @@ body {
         text-shadow: 2px 2px 2px rgb(148, 146, 146);
     }
 
-    .archiveContainer h1{
+    .archiveContainer h1 {
         font-size: 1.5em;
     }
 
-    .pointcpArchives ol{
+    .pointcpArchives ol {
         font-size: 1em;
     }
 }
@@ -2228,7 +2235,7 @@ body {
         margin-top: 0.2em;
         /* display: inline-block; */
         font-size: 1.5em;
-        margin-top: .7em;
+        margin-top: 0.7em;
         width: 100%;
         text-transform: uppercase;
     }
@@ -2423,11 +2430,11 @@ body {
         text-shadow: 2px 2px 2px rgb(148, 146, 146);
     }
 
-    .archiveContainer h1{
+    .archiveContainer h1 {
         font-size: 1.8em;
     }
 
-    .pointcpArchives ol{
+    .pointcpArchives ol {
         font-size: 1.2em;
     }
 }
@@ -2791,7 +2798,6 @@ body {
     display: flex;
     border-bottom: 2px solid black;
     width: 100%;
-    
 }
 
 .category-show a {
@@ -2833,7 +2839,7 @@ body {
 .category-header h1 {
     text-transform: uppercase;
     padding: 50px 0;
-    margin-left: .5em;
+    margin-left: 0.5em;
 }
 
 .category-image {
@@ -2848,7 +2854,6 @@ body {
 .tagline {
     border-bottom: solid black;
     width: 100%;
-    
 }
 
 .category-show h5 {
@@ -2862,18 +2867,18 @@ body {
     display: none;
 }
 
-@media (min-width: 48em){
+@media (min-width: 48em) {
     .category-show {
         display: flex;
         border-bottom: 2px solid black;
         width: 100%;
     }
-    
+
     .category-show a {
         text-decoration: none;
         color: black;
     }
-    
+
     .category-show img {
         width: 100%;
         object-fit: cover;
@@ -2882,14 +2887,14 @@ body {
         padding-right: 1em;
         float: left;
     }
-    
+
     .category-show h1 {
         padding-top: 1%;
         font-size: 2em;
         padding-left: 0.3em;
         text-transform: uppercase;
     }
-    
+
     .category-show h4 {
         font-size: 1em;
         color: rgba(0, 59, 91);
@@ -2899,35 +2904,35 @@ body {
         visibility: visible;
         display: block;
     }
-    
+
     .category-header {
         float: left;
         width: 100%;
     }
-    
+
     .category-header h1 {
         padding: 0;
-        margin-left: .3em;
+        margin-left: 0.3em;
         text-transform: uppercase;
-        margin-top: .1em;
+        margin-top: 0.1em;
     }
-    
+
     .category-image {
         width: 12em;
         border-right: solid black;
     }
-    
+
     .category-image img {
         margin-top: 1em;
     }
-    
+
     .tagline {
         border-bottom: solid black;
         width: 100%;
     }
-    
+
     .category-show h5 {
-        font-size: .9em;
+        font-size: 0.9em;
         padding-left: 1em;
         justify-content: left;
         margin: auto;
@@ -2937,23 +2942,20 @@ body {
         visibility: visible;
         display: block;
     }
-
 }
 
-@media (min-width: 64em){
-    
+@media (min-width: 64em) {
     .category-show {
         display: flex;
         border-bottom: 2px solid black;
         width: 100%;
-        
     }
-    
+
     .category-show a {
         text-decoration: none;
         color: black;
     }
-    
+
     .category-show img {
         width: 100%;
         object-fit: cover;
@@ -2962,14 +2964,14 @@ body {
         padding-right: 1em;
         float: left;
     }
-    
+
     .category-show h1 {
         padding-top: 1%;
         font-size: 2.75em;
         padding-left: 0.3em;
         text-transform: uppercase;
     }
-    
+
     .category-show h4 {
         font-size: 1.25em;
         color: rgba(0, 59, 91);
@@ -2979,33 +2981,33 @@ body {
         visibility: visible;
         display: block;
     }
-    
+
     .category-header {
         float: left;
         width: 100%;
     }
-    
+
     .category-header h1 {
         text-transform: uppercase;
         margin-left: 0;
     }
-    
+
     .category-image {
         width: 12em;
         border-right: solid black;
     }
-    
+
     .category-image img {
         margin-top: 1em;
     }
-    
+
     .tagline {
         border-bottom: solid black;
         width: 100%;
     }
-    
+
     .category-show h5 {
-        font-size: .9em;
+        font-size: 0.9em;
         padding-left: 1em;
         justify-content: left;
         margin: auto;
@@ -3014,21 +3016,20 @@ body {
         visibility: visible;
         display: block;
     }
-
 }
 
-@media (min-width: 80em){
+@media (min-width: 80em) {
     .category-show {
         display: flex;
         border-bottom: 2px solid black;
         width: 100%;
     }
-    
+
     .category-show a {
         text-decoration: none;
         color: black;
     }
-    
+
     .category-show img {
         width: 100%;
         object-fit: cover;
@@ -3037,14 +3038,14 @@ body {
         padding-right: 1em;
         float: left;
     }
-    
+
     .category-show h1 {
         padding-top: 1%;
         font-size: 2.75em;
         padding-left: 0.3em;
         text-transform: uppercase;
     }
-    
+
     .category-show h4 {
         font-size: 1.25em;
         color: rgba(0, 59, 91);
@@ -3054,32 +3055,32 @@ body {
         visibility: visible;
         display: block;
     }
-    
+
     .category-header {
         float: left;
         width: 100%;
     }
-    
+
     .category-header h1 {
         text-transform: uppercase;
     }
-    
+
     .category-image {
         width: 12em;
         border-right: solid black;
     }
-    
+
     .category-image img {
         margin-top: 1em;
     }
-    
+
     .tagline {
         border-bottom: solid black;
         width: 100%;
         visibility: visible;
         display: contents;
     }
-    
+
     .category-show h5 {
         font-size: 1.1em;
         padding-left: 1em;
@@ -3088,9 +3089,8 @@ body {
         padding-top: 1.5%;
         padding-bottom: 1.5%;
         visibility: visible;
-        display:block;
+        display: block;
     }
-
 }
 
 /* -----------------------------------END CATEGORIES------------------------------------------- */
@@ -3110,7 +3110,6 @@ body {
     margin-bottom: 3em;
 }
 
-
 .archive-header {
     width: 100%;
     font-size: 1.15em;
@@ -3121,7 +3120,6 @@ body {
     margin-bottom: 2em;
     text-align: center;
 }
-
 
 /* -----------------------------------END ARCHIVES------------------------------------------- */
 
@@ -3806,16 +3804,15 @@ body {
     }
 }
 
-@media (min-width: 64em){
-
-    .footer .nav{
-        font-size: .8em;
+@media (min-width: 64em) {
+    .footer .nav {
+        font-size: 0.8em;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .nav__item{
+    .nav__item {
         text-align: center;
     }
 
@@ -3832,11 +3829,10 @@ body {
         left: 50%;
         padding-bottom: 2em;
     }
-
 }
 
 @media (min-width: 80em) {
-    .footer .nav{
+    .footer .nav {
         font-size: 1.3em;
     }
     .nav__link {
@@ -3861,11 +3857,11 @@ body {
 
 /* -----------------------------------HUBSPOT TIPS FORM---------------------------------------------- */
 
-.hubspot{
+.hubspot {
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 1em;
-    margin-right:1em;
+    margin-right: 1em;
 }
 
 .hubspot-form-header {
@@ -3874,17 +3870,14 @@ body {
 }
 
 @media (min-width: 80em) {
-.hubspot{
-    margin:0;
+    .hubspot {
+        margin: 0;
+    }
+    .hubspot-form-header {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
 }
-.hubspot-form-header {
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-}
-
-
- 
 
 /* -----------------------------------END HUBSPOT TIPS FORM---------------------------------------------- */
 /* admin */
