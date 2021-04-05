@@ -68,7 +68,7 @@ function ArticleBody(props) {
                 <h3 className="individualPostAuthor">
                     BY {post.attributes.author}
                 </h3>
-                <h3 className="individualPostDate">
+                <h3 className="individualPostDate2">
                     {moment
                         .parseZone(post.attributes.created_at)
                         .format("MMMM DD, YYYY")}
