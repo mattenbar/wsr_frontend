@@ -3117,22 +3117,58 @@ body {
 /* -----------------------------------END ABOUT US------------------------------------------- */
 
 /* -----------------------------------START ARCHIVES------------------------------------------- */
+    .archive-container {
+        margin-bottom: 3em;
+    }
 
-.archive-container {
-    margin-bottom: 3em;
+    .archive-container ol{
+        font-size: .6em;
+        margin-left: 1em;
+    }
+
+
+    .archive-header {
+        width: 100%;
+        font-size: 1.15em;
+        text-transform: uppercase;
+        font-weight: 300;
+        border-bottom: solid 3px black;
+        padding: 1.5em;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+
+@media (min-width:46em){
+    .archive-container {
+        margin-bottom: 3em;
+    }
+
+    .archive-container ol{
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+
+    .archive-header {
+        width: 100%;
+        font-size: 1.15em;
+        text-transform: uppercase;
+        font-weight: 300;
+        border-bottom: solid 3px black;
+        padding: 1.5em;
+        margin-bottom: 2em;
+        text-align: center;
+    }
 }
 
+@media (min-width:46em){
+    .archive-container ol{
+        font-size: 1.2em;
+        margin-left: 0em;
+    }
 
-.archive-header {
-    width: 100%;
-    font-size: 1.15em;
-    text-transform: uppercase;
-    font-weight: 300;
-    border-bottom: solid 3px black;
-    padding: 1.5em;
-    margin-bottom: 2em;
-    text-align: center;
 }
+
 
 
 /* -----------------------------------END ARCHIVES------------------------------------------- */
