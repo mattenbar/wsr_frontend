@@ -133,8 +133,8 @@ function PointCPNewest({
                         <div className="pointHeaderRight">
                             <div className="pointbottom">
                                 <h1>AGREE</h1>
-                                <h1>{article.titleOne}</h1>
                                 <h2>{article.authorOne}</h2>
+                                <h1>{article.titleOne}</h1>
                                 <h3>
                                     {moment
                                         .parseZone(article.created_at)
@@ -156,8 +156,8 @@ function PointCPNewest({
                         <div className="pointHeaderRight">
                                 <div className="pointbottom2">
                                     <h1>DISAGREE</h1>
-                                    <h1>{article.titleTwo}</h1>
                                     <h2>{article.authorTwo}</h2>
+                                    <h1>{article.titleTwo}</h1>
                                     <h3>
                                         {moment
                                             .parseZone(article.created_at)
