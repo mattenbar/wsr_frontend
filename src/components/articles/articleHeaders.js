@@ -529,8 +529,8 @@ function articleHeaders(props) {
                         <div className="category-image">
                             <Link to={"/Point-Counterpoint"}>
                                 <img
-                                    src="/carouselImages/PointCounterPoint.png"
-                                    alt=""
+                                    src="/carouselImages/PointCounterPoint.jpg"
+                                    alt="point cp logo"
                                 ></img>
                             </Link>
                         </div>

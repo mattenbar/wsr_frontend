@@ -70,7 +70,7 @@ function carousel(props) {
                     <div className="box">
                         <Link to="/point-counterpoint" className="crsltop">
 
-                            <img src="/carouselImages/PointCounterPoint.png" className="top-carousel-model" alt=""/>
+                            <img src="/carouselImages/PointCounterPoint.jpg" className="top-carousel-model" alt="point cp logo"/>
                             <h2>POINT-COUNTERPOINT</h2>
                         </Link>
                     </div>
