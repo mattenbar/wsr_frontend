@@ -1503,7 +1503,19 @@ body {
     margin-top: 1.25em;
     text-align: justify;
     height: auto;
+    /* padding-right: 1em;
+    padding-left: 1em; */
 }
+
+.pointcpContent li{
+    /* margin-right: 1.1em; */
+    margin-left: 1.1em;
+}
+
+.pointcpContent img{
+    margin: 10px;
+}
+
 
 .pointTop {
     display: grid;
@@ -3566,6 +3578,15 @@ body {
     line-height: 1.2;
     white-space: pre-line;
     font-size: 1.25em;
+}
+
+.individualPostContent li{
+    margin-left: 1.1em;
+}
+
+.individualPostContent img{
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .individualPostImage {
