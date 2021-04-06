@@ -109,7 +109,8 @@ class PostInput extends React.Component {
                     'insertdatetime media table paste code help wordcount',
                     'image',
                     'media',
-                    'link'
+                    'link',
+                    "imagetools",
                   ],
                   toolbar: 'undo redo | formatselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help '
                 }}
