@@ -1429,6 +1429,18 @@ body {
 
 /* -----------------------------------END HOME---------------------------------------------- */
 
+
+/* statshots */
+
+.statshots-container img {
+    margin: 1em;
+    width: 90%;
+}
+
+
+
+/* end statshots */
+
 /* -----------------------------------POINT-COUNTERPOINT---------------------------------------------- */
 
 .pointcpContainer {
