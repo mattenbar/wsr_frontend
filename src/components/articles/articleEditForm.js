@@ -143,6 +143,7 @@ class ArticleClassEditForm extends React.Component {
                                         "image",
                                         "media",
                                         "link",
+                                        "imagetools",
                                     ],
                                     toolbar:
                                         "undo redo | formatselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help ",
