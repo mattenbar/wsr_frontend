@@ -52,7 +52,6 @@ class ArticleClassEditForm extends React.Component {
         let postData = this.state.post
         let post_id = this.props.post.id
         postData["id"] = post_id
-
         this.props.dispatchEditPost(postData, post_id);
 
         this.setState({

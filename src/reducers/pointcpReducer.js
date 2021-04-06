@@ -10,15 +10,15 @@ export default function managePcps(state = initialState, action) {
             return state.concat(action.payload.pointcp.data);
 
         case LOADING_POINTCP:
-            // debugger
+          
             return{...state}
 
         case GET_POINTCP_SUCCESS:
-            // debugger
+          
             return { ...state, pointCPPosts: action.payload.pointcps.data }
 
         case GET_POINTCP_ERRORS:
-            // debugger
+          
             return{...state}
 
         case GET_POINTCP_FAILURE:

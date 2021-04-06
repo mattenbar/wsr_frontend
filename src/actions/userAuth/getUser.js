@@ -15,9 +15,9 @@ export const getUser = (token) => (dispatch) => {
     })
     .then(res => res.json())
     .then(data => {
-        // debugger
+      
         if (data.id !== undefined) {
-            // debugger
+          
             return dispatch({ type: GET_USER_SUCCESS, payload: data })
         } else {
             alert(data.errors.map(error => error))

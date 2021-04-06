@@ -3,7 +3,6 @@ import { API_URL } from '../../apiConstants';
 export const EDIT_POINTCP = "EDIT_POINTCP"
 
 export const editPointcp = (pointcpData) => {
-    // debugger
     if (pointcpData.imageOne["name"] !== undefined && pointcpData.imageTwo["name"] !== undefined) {
         return (dispatch) => {
             let body = new FormData();
@@ -15,7 +14,7 @@ export const editPointcp = (pointcpData) => {
             })
                 .then((resp) => resp.json())
                 .then((json) => {
-                    // debugger
+            
                     pointcpData.imageOne = json.imageOne;
                     pointcpData.imageTwo = json.imageTwo;
                     fetch(API_URL + `/pointcps/${pointcpData.id}`, {
@@ -28,7 +27,7 @@ export const editPointcp = (pointcpData) => {
                     })
                     .then(res => res.json())
                     .then(pointcp => {
-                        // debugger
+                
                         if (pointcp.success) {
                             alert(pointcp.success);
                             dispatch({ type: EDIT_POINTCP, payload: pointcp });
@@ -59,7 +58,7 @@ export const editPointcp = (pointcpData) => {
                     })
                     .then(res => res.json())
                     .then(pointcp => {
-                        // debugger
+                
                         if (pointcp.success) {
                             alert(pointcp.success);
                             dispatch({ type: EDIT_POINTCP, payload: pointcp });
@@ -90,7 +89,7 @@ export const editPointcp = (pointcpData) => {
                     })
                     .then(res => res.json())
                     .then(pointcp => {
-                        // debugger
+                
                         if (pointcp.success) {
                             alert(pointcp.success);
                             dispatch({ type: EDIT_POINTCP, payload: pointcp });

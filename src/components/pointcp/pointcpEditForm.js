@@ -63,7 +63,7 @@ class PointcpEditForm extends React.Component {
         let post = { ...this.state.pointcp };
         let currentState = post;
         currentState["contentTwo"] = content;
-        // debugger
+       
         this.setState({
             pointcp: currentState,
         });

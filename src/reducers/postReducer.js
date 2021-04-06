@@ -10,7 +10,7 @@ export default function managePosts(state = [], action) {
         // action.payload.post.data.attributes
             if(action.payload.post.data.attributes) {
                 getSlug = GetSlug(action.payload.post.data.attributes)
-                // debugger
+
             }
         }
         // continue
@@ -21,7 +21,6 @@ export default function managePosts(state = [], action) {
             return state.concat(action.payload.post.data);
 
         case 'ADD_POST':
-            // debugger
             window.location.href = `${getSlug}/${action.payload.post.data.id}`;
             // return state.concat(action.payload);
 
@@ -29,7 +28,6 @@ export default function managePosts(state = [], action) {
             return state = action.payload.posts.data
 
         case EDIT_POST:
-            // debugger
             
             // window.location.href = `${getSlug}/${action.payload.post.data.id}`;
             return {...state, state: state.map(post => parseInt(post.id) === action.payload.post.id ? action.payload.post : post)}
