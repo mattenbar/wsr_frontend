@@ -11,7 +11,8 @@ export const addPost = (data) => {
     method: "PUT",
     body
     })
-    .then(resp => resp.json())
+    .then(resp => 
+      resp.json())
     .then(json => {
       data.image = json.image
       fetch(API_URL + '/posts', {

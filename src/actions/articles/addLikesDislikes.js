@@ -12,7 +12,7 @@ export const addLikesDislikes = (postVoteData) => (dispatch) => {
     })
     .then(res => res.json())
     .then(postVoteObj => {
-        // debugger
+
         console.log("postVoteObj", postVoteObj)
     })
 }

@@ -3,7 +3,9 @@ import { API_URL } from "../apiConstants";
 export const EDIT_POST = "EDIT_POST"
 
 export const editPost = (data, post_id) => {
+    
     if (data.image["name"] !== undefined) {
+       
         return (dispatch) => {
             let body = new FormData();
             body.append("image", data.image);

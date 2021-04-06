@@ -11,7 +11,6 @@ export const fetchPointcps = () => (dispatch) => {
     fetch(API_URL + '/pointcps')
     .then(res => res.json())
     .then(pointcpObj => {
-        // debugger
         if (pointcpObj.pointcps !== undefined) {
             return dispatch({ type: GET_POINTCP_SUCCESS, payload: pointcpObj })
         } else {
