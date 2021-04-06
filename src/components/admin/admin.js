@@ -4,11 +4,17 @@ import PointcpInput from './pointcpInput'
 import InputFeatures from './inputFeatures'
 import InputAd from './inputAd'
 import InputShowads from './inputShowads'
+import {useSelector} from 'react-redux'
 
 
+function Admin(props) {
 
-function admin(props) {
-  return (
+  const admin = useSelector(state=>{
+    return state.user.user.admin
+  })
+
+  if (admin){
+    return (
       <div>
         <PostInput posts={props.posts} categories={props.categories}/>
         <br/><br/>
@@ -21,7 +27,15 @@ function admin(props) {
         <InputShowads ads={props.ads} />
         <br/><br/>
       </div>
-  );
+    );
+  }else{
+    return(
+      <div>
+        <h1>MUST BE ADMIN TO ACCESS</h1>
+      </div>
+    )
+  }
+  
 }
 
-export default admin;
+export default Admin;
