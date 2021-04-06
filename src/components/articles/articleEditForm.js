@@ -136,6 +136,8 @@ class ArticleClassEditForm extends React.Component {
                                     height: 500,
                                     menubar: "insert",
                                     default_link_target: "_blank",
+                                    image_title: true,
+                                    image_caption: true,
                                     plugins: [
                                         "advlist autolink lists link image charmap print preview anchor",
                                         "searchreplace visualblocks code fullscreen",
