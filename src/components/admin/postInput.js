@@ -112,7 +112,7 @@ class PostInput extends React.Component {
                     'link',
                     "imagetools",
                   ],
-                  toolbar: 'undo redo | formatselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help '
+                  toolbar: 'undo redo | styleselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help '
                 }}
                 onEditorChange={this.handleEditorChange}
               />
