@@ -92,9 +92,6 @@ class PointcpEditForm extends React.Component {
                 imageTwo: {},
             }
         })
-
-        this.props.setInEditMode(false)
-        window.location.reload()
     }
 
     render() {
@@ -154,7 +151,7 @@ class PointcpEditForm extends React.Component {
                             apiKey="xxdtys70gcr66orzrsr2v65wsqqzeff19c37xij80zax9qck"
                             initialValue={this.props.pointcpArticle.contentOne}
                             init={{
-                                selector: "textarea",
+                                selector: "textarea#image-tools",
                                 height: 500,
                                 menubar: "insert",
                                 default_link_target: "_blank",
@@ -211,7 +208,7 @@ class PointcpEditForm extends React.Component {
                             apiKey="xxdtys70gcr66orzrsr2v65wsqqzeff19c37xij80zax9qck"
                             initialValue={this.props.pointcpArticle.contentTwo}
                             init={{
-                                selector: "textarea",
+                                selector: "textarea#image-tools",
                                 height: 500,
                                 menubar: "insert",
                                 default_link_target: "_blank",

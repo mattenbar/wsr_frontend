@@ -10,6 +10,7 @@ class ArticleClassEditForm extends React.Component {
 
     state = {
         post: {
+
             title: this.props.post.attributes.title,
             content: this.props.post.attributes.content,
             author: this.props.post.attributes.author,
@@ -52,10 +53,11 @@ class ArticleClassEditForm extends React.Component {
         let postData = this.state.post
         let post_id = this.props.post.id
         postData["id"] = post_id
-        this.props.dispatchEditPost(postData, post_id);
+        this.props.dispatchEditPost(postData);
 
         this.setState({
             post: {
+
                 title: this.props.post.attributes.title,
                 content: this.props.post.attributes.content,
                 author: this.props.post.attributes.author,
@@ -63,10 +65,6 @@ class ArticleClassEditForm extends React.Component {
                 category_id: this.props.post.attributes.category_id,
             }
         });
-
-        this.props.setInEditMode(false)
-        
-        window.location.reload()
 
     };
 
@@ -132,7 +130,7 @@ class ArticleClassEditForm extends React.Component {
                                     this.props.post.attributes.content
                                 }
                                 init={{
-                                    selector: "textarea",
+                                    selector: "textarea#image-tools",
                                     height: 500,
                                     menubar: "insert",
                                     default_link_target: "_blank",
