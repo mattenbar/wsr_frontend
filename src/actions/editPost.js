@@ -3,7 +3,9 @@ import { API_URL } from "../apiConstants";
 export const EDIT_POST = "EDIT_POST";
 
 export const editPost = (data, post_id) => {
+   
   if (data.image["name"] !== undefined) {
+    // debugger
     return (dispatch) => {
       let body = new FormData();
       body.append("image", data.image);
@@ -13,8 +15,9 @@ export const editPost = (data, post_id) => {
       })
         .then((resp) => resp.json())
         .then((json) => {
+            // debugger
           data.image = json.image;
-          fetch(API_URL + `/posts/${post_id}`, {
+          fetch(API_URL + `/posts/${data.id}`, {
             headers: {
               "Content-Type": "application/json",
               Accept: "application/json",
@@ -34,8 +37,9 @@ export const editPost = (data, post_id) => {
         });
     };
   } else if (data.image["name"] === undefined) {
+    // debugger
     return (dispatch) => {
-      fetch(API_URL + `/posts/${post_id}`, {
+      fetch(API_URL + `/posts/${data.id}`, {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",

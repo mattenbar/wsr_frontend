@@ -1,4 +1,5 @@
 import { LOADING_POINTCP, GET_POINTCP_SUCCESS, GET_POINTCP_ERRORS, GET_POINTCP_FAILURE } from '../actions/pointcp/fetchPointcps';
+import {EDIT_POINTCP} from '../actions/pointcp/editPointcp'
 
 const initialState = {
     pointCPPosts: []
@@ -26,6 +27,11 @@ export default function managePcps(state = initialState, action) {
 
         case "ADD_POINTCP":
             return state.concat(action.payload);
+
+        case EDIT_POINTCP:
+            
+            window.location.reload()
+            return state.concat(action.payload)
 
         default:
             return state;

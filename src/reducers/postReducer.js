@@ -7,13 +7,13 @@ export default function managePosts(state = [], action) {
    
     if (action.payload) {
         if(action.payload.post) {
-        // action.payload.post.data.attributes
-            if(action.payload.post.data.attributes) {
-                getSlug = GetSlug(action.payload.post.data.attributes)
+            if(action.payload.post.data){
+                if(action.payload.post.data.attributes) {
+                    getSlug = GetSlug(action.payload.post.data.attributes)
 
+                }
             }
         }
-        // continue
     }
 
     switch (action.type) {
@@ -29,6 +29,7 @@ export default function managePosts(state = [], action) {
 
         case EDIT_POST:
             
+            window.location.reload()
             // window.location.href = `${getSlug}/${action.payload.post.data.id}`;
             return {...state, state: state.map(post => parseInt(post.id) === action.payload.post.id ? action.payload.post : post)}
 
