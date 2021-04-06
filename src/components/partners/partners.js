@@ -19,7 +19,7 @@ function partners(props) {
                 <br/>
                 <img src="/partners/cetera-logo.svg" alt="partner"  />
                 <br/>
-                <img src="/partners/clarkcapitalmanagement.png" alt="partner"  />
+                <img src="/partners/clarkcapitalmanagement.jpg" alt="partner"  />
                 <br/>
                 <img src="/partners/financial services institute - fsi.jpeg" alt="partner"  />
                 <br/>

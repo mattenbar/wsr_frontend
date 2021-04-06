@@ -3920,7 +3920,7 @@ body {
 }
 
 .ad-image1 {
-    width: 90%;
+    width: 100%;
     /* height: 250px; */
     margin: 0 1em 1em 1em;
     object-fit: cover;
@@ -3960,7 +3960,7 @@ body {
     }
 
     .ad-image1 {
-        height: auto;
+        height: 300px;
     }
     .span-ad-image1 {
         margin-right: 1%;
@@ -3977,7 +3977,7 @@ body {
     }
 
     .ad-image1 {
-        
+        height: auto;
         margin: 0;
         text-align: justify;
     }
@@ -4257,4 +4257,7 @@ body {
 @font-face {
     font-family: europaRegular;
     src: url("../fonts/EuropaRegular.ttf") format("truetype");
+}
+.home-triple-row-grid{
+    margin-top: 4em;
 }

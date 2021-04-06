@@ -516,7 +516,7 @@ function articleHeaders(props) {
                             <h4 className="tagline">
                                 Words in edgewise from wealth management leaders
                             </h4>
-                            <h5>DESCRIPTOR will go here</h5>
+                            <h5>Get the best techniques + advice on a variety of subjects from across the wealth management industry</h5>
                         </div>
                     </div>
                 </>
