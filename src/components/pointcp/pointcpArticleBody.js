@@ -83,8 +83,8 @@ return (
 
                                         <h1>AGREE</h1>
 
-                                        <h2>{article.authorOne}</h2>
-                                        <h1>{article.titleOne}</h1>
+                                        <h1>{article.authorOne}</h1>
+                                        <h2>{article.titleOne}</h2>
                                         
                                         <h3>{moment
                                     .parseZone(article.created_at)
@@ -108,8 +108,8 @@ return (
 
                             <h1>DISAGREE</h1>
                             
-                            <h2>{article.authorTwo}</h2>               
-                            <h1>{article.titleTwo}</h1>
+                            <h1>{article.authorTwo}</h1>               
+                            <h2>{article.titleTwo}</h2>
                             
                             <h3>{moment
                         .parseZone(article.created_at)
