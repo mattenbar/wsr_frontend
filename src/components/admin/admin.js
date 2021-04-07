@@ -31,7 +31,11 @@ function Admin(props) {
   }else{
     return(
       <div>
-        <h1>MUST BE ADMIN TO ACCESS</h1>
+        <br/><br/>
+        <br/><br/>
+        <h1>YOU MUST BE AN ADMIN TO ACCESS THIS PAGE</h1>
+        <br/><br/>
+        <br/><br/>
       </div>
     )
   }
