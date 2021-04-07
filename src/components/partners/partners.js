@@ -7,29 +7,29 @@ function partners(props) {
                 <h1>PARTNERS</h1>
             </div>
             <div className="partners-container">
-                <img src="/PartnersImages/Advisor.png" alt="partner"  />
-                <br/>
+                <img src="/PartnersImages/AdvisorGroup.jpg" alt="partner"  />
+                
+                <img src="/PartnersImages/AngelesWealth.jpg" alt="partner"  />
+                
                 <img src="/PartnersImages/Berkshire.png" alt="partner"  />
-                <br/>
-                <img src="/partners/angeles-wealth.svg" alt="partner"  />
-                <br/>
-                <img src="/partners/bridgemark.png" alt="partner"  />
-                <br/>
-                <img src="/partners/CAIS.jpeg" alt="partner"  />
-                <br/>
-                <img src="/partners/cetera-logo.svg" alt="partner"  />
-                <br/>
-                <img src="/partners/clarkcapitalmanagement.jpg" alt="partner"  />
-                <br/>
-                <img src="/partners/financial services institute - fsi.jpeg" alt="partner"  />
-                <br/>
-                <img src="/partners/Logo_Entreda.png" alt="partner"  />
-                <br/>
-                <img src="/partners/Merit-LIfe-logo.jpeg" alt="partner"  />
-                <br/>
-                <img src="/partners/oysterllc-logo.png" alt="partner"  />
-                <br/>
-                <img src="/partners/ucla logos.jpeg" alt="partner"  />
+                
+                <img src="/PartnersImages/Bridgemark.jpg" alt="partner"  />
+                
+                <img src="/PartnersImages/Cais.jpg" alt="partner"  />
+                
+                <img src="/PartnersImages/Cetera.jpg" alt="partner"  />
+                
+                <img src="/PartnersImages/ClarkCapital.jpg" alt="partner"  />
+                
+                <img src="/PartnersImages/Entreda.jpg" alt="partner"  />
+                
+                <img src="/PartnersImages/FSI.jpg" alt="partner"  />
+                
+                <img src="/PartnersImages/MeritLIfe.jpg" alt="partner"  />
+                
+                <img src="/PartnersImages/Oysterllc.jpg" alt="partner"  />
+                
+                <img src="/PartnersImages/UCLA.jpg" alt="partner"  />
                 
             </div>
         </div>
