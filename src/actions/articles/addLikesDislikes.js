@@ -12,7 +12,14 @@ export const addLikesDislikes = (postVoteData) => (dispatch) => {
     })
     .then(res => res.json())
     .then(postVoteObj => {
-
-        console.log("postVoteObj", postVoteObj)
+        if (postVoteObj.failure) {
+            alert(postVoteObj.failure)
+        }
+        
+        if (postVoteObj.success) {
+            
+            alert("Thank you for voting.")
+        } 
+        
     })
 }
