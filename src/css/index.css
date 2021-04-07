@@ -1028,7 +1028,7 @@ body {
     width: 100%;
     height: 13em;
     margin-top: 1em;
-    margin-bottom: -2em;
+    /* margin-bottom: -2em; */
     border-top: 2px solid black;
     text-align: left;
 }
@@ -1198,6 +1198,7 @@ body {
     height: 15em;
     border-top: 2px solid black;
     text-align: center;
+    margin-bottom: 1.1em;
 }
 
 .trcrsl a {
@@ -1249,6 +1250,7 @@ body {
         width: 48%;
         height: 16em;
         margin-top: 1.5em;
+        margin-bottom: 2em;
     }
 
     .nm-cards {
@@ -1266,7 +1268,7 @@ body {
 
 @media (min-width: 56.25em) {
     .trcrsl {
-        margin-bottom: 2em;
+        margin-bottom: 5em;
     }
 
     .trcrsl h1 {
@@ -1294,6 +1296,7 @@ body {
 
     .trcrsl {
         height: 17em;
+        margin-bottom: 2em;
     }
 
     .nm-cards {
@@ -1366,7 +1369,7 @@ body {
 
 @media (min-width: 43.75em) {
     .ticrsl {
-        margin-bottom: 0.75em;
+        margin-bottom: 2em;
     }
 
     .ticrsl-move-left {
@@ -1388,7 +1391,7 @@ body {
 
 @media (min-width: 56.25em) {
     .ticrsl {
-        margin-bottom: 3em;
+        margin-bottom: 5em;
     }
 
     .ticrsl h1 {
@@ -1509,7 +1512,8 @@ body {
 
 .pointcpContent li{
     /* margin-right: 1.1em; */
-    margin-left: 1.1em;
+    margin-left: 2em;
+    
 }
 
 .pointcpContent img{
@@ -3587,6 +3591,8 @@ body {
 .individualPostContent img{
     margin-left: 1em;
     margin-right: 1em;
+    width: 90%;
+    height: auto;
 }
 
 .individualPostImage {
