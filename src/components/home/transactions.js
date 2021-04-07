@@ -27,7 +27,7 @@ function transactions(state) {
                                     />
                                     {/* header */}
                                     <h2>{firstPost.title}</h2>
-                                    <p>by {firstPost.author}</p>
+                                    <p>{firstPost.author}</p>
                                 </Link>
                             </div>
                         </div>
@@ -41,7 +41,7 @@ function transactions(state) {
                                     />
                                     {/* header */}
                                     <h2>{secondPost.title}</h2>
-                                    <p>by {secondPost.author}</p>
+                                    <p>{secondPost.author}</p>
                                 </Link>
                             </div>
                         </div>

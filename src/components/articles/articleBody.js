@@ -66,7 +66,7 @@ function ArticleBody(props) {
                     {post.attributes.title}
                 </h2>
                 <h3 className="individualPostAuthor">
-                    BY {post.attributes.author}
+                    {post.attributes.author}
                 </h3>
                 <h3 className="individualPostDate2">
                     {moment

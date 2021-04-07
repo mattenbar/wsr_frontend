@@ -51,8 +51,8 @@ function thisIssue(state) {
 
 
 
-    if(state.posts.length > 0){
-
+    if(state.posts.length > 0 && state.pointcps.pointCPPosts.length > 0){
+        console.log(state.pointcps.pointCPPosts)
         let lastFive = state.posts.slice(-5).reverse()
         let cItems = lastFive.map(post => {
     
@@ -69,19 +69,40 @@ function thisIssue(state) {
                                 <img src={post.attributes.image} className="circular-image" />
                                 {/* header */}
                                 <h2>{post.attributes.title}</h2>
-                                <p>by {post.attributes.author}</p>
+                                <p>{post.attributes.author}</p>
                             </Link>
                         </div>
                     </div>
             )
         })
 
+        let pointCpReverse = state.pointcps.pointCPPosts.reverse()
+        let mostRecentPcp = pointCpReverse[0]
+
+        console.log(mostRecentPcp)
         return (
             <div className="ticrsl" >
                 <h1>THIS ISSUE</h1>
                 <div className="ticrsl-move-left" >
                     <Slider {...settings} >
                         {cItems}
+                        <div key={mostRecentPcp.attributes.title} className="ticrslwrapper" >
+                        <div className="ti-box">
+                            <Link to={{    
+                                pathname: `point-counterpoint/${mostRecentPcp.id}`,
+                                state: {
+                                    category: mostRecentPcp.attributes.category_id
+                                }
+                            }} className="ti-a" > 
+                                {/* model */}
+                                <img src="/carouselImages/PointCounterPoint.jpg" className="circular-image" />
+                                {/* header */}
+                                <h2>{mostRecentPcp.attributes.topic}</h2>
+                                <p>with {mostRecentPcp.attributes.authorOne} VS. {mostRecentPcp.attributes.authorTwo}</p>
+                            </Link>
+                        </div>
+                    </div>
+                        
         
                     </Slider>
                 </div>
@@ -98,7 +119,8 @@ function thisIssue(state) {
 function mSTP(state){
     return {
       post: state.posts,
-      user: state.user
+      user: state.user,
+      pointcps: state.pcps
     }
   }
 
