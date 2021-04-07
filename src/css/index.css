@@ -1073,15 +1073,15 @@ body {
     text-decoration: none;
 }
 
+.middle-square {
+    width: 30%;
+    height: 75%;
+}
+
 .small-square img {
     width: 100%;
     height: 85%;
     object-fit: cover;
-}
-
-.middle-square {
-    width: 30%;
-    height: 75%;
 }
 
 .middle-square img {
@@ -1159,6 +1159,18 @@ body {
 @media (min-width: 80em) {
     .features {
         height: 28em;
+    }
+
+    .small-square img {
+        width: 100%;
+        height: 18em;
+        object-fit: cover;
+    }
+    
+    .middle-square img {
+        width: 100%;
+        height: 18em;
+        object-fit: cover;
     }
 
     .feature-wrapper {
@@ -1436,9 +1448,25 @@ body {
 /* statshots */
 
 .statshots-container img {
-    margin: 1em;
-    width: 90%;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.statshots-container{
+    width: 100%;
+    text-align: justify;
+}
+
+.statshots-container p {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
 
 
 
@@ -3582,6 +3610,7 @@ body {
     line-height: 1.2;
     white-space: pre-line;
     font-size: 1.25em;
+    
 }
 
 .individualPostContent li{
@@ -3740,7 +3769,7 @@ body {
     }
 
     .individualPostImage {
-        height: 14em;
+        height: 18em;
     }
 
     .individualPostTitle {
@@ -4007,7 +4036,7 @@ body {
 
     .ad-image1 {
         width: 49%;
-        height: 250px;
+        height: auto;
         margin: 0;
         object-fit: cover;
         text-align: justify;
