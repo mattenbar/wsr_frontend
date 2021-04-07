@@ -1321,6 +1321,10 @@ body {
         margin-right: 20%;
         font-size: 150%;
     }
+
+    .circular-image {
+        margin-top: 1em;
+    }
 }
 
 /* -------------------END newsmakers roundup/transactions & transitions---------------------- */
