@@ -3588,11 +3588,41 @@ body {
     margin-left: 1.1em;
 }
 
+/* .individualPostContent strong span{
+    font-weight: 900;
+}*/
+
+.individualPostContent strong{
+    font-weight: 900;
+} 
+
+
+
+.image.align-right{
+    float: right;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.image.align-left{
+    float: left;
+    
+}
+
+.image.align-center{
+    text-align: center;
+    
+}
+
+.individualPostContent figcaption{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
 .individualPostContent img{
     margin-left: 1em;
     margin-right: 1em;
-    width: 90%;
-    height: auto;
 }
 
 .individualPostImage {
