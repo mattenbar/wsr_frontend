@@ -3651,7 +3651,8 @@ body {
 
 
 .individualPostContent img{
-    max-width:100%;
+    max-width:90%;
+    height: auto;
     margin-right: 1em;
     margin-left: 1em;
 }
@@ -3782,7 +3783,8 @@ body {
     }
 
     .individualPostContent img{
-        max-width: 99%;
+        max-width: 100%;
+        height: auto;
         margin-right: 1em;
         margin-left: 1em;
     }
