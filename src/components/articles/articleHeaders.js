@@ -59,7 +59,7 @@ function articleHeaders(props) {
                                 We profile the fintech solutions, strategies and
                                 experts who are redefining the how the wealth
                                 management industry operates to unlock new
-                                growth opportunities
+                                growth opportunities.
                             </h5>
                         </div>
                     </div>
@@ -318,7 +318,7 @@ function articleHeaders(props) {
                                 Key trends defining wealth management
                             </h4>
                             <h5>
-                                Larry Roth’s shares his latest thoughts on
+                                Larry Roth shares his latest thoughts on
                                 what’s shaping the wealth management space now
                                 and in the future.
                             </h5>
@@ -404,7 +404,7 @@ function articleHeaders(props) {
                             </Link>
                             <h4 className="tagline">
                                 {" "}
-                                Keep track of industry leaders' moves + deals
+                                Keep track of industry leaders' moves & deals
                             </h4>
                             <h5>
                                 Need help keeping track of who's where and
@@ -516,7 +516,7 @@ function articleHeaders(props) {
                             <h4 className="tagline">
                                 Words in edgewise from wealth management leaders
                             </h4>
-                            <h5>Get the best techniques + advice on a variety of subjects from across the wealth management industry</h5>
+                            <h5>Get the best techniques & advice on a variety of subjects from across the wealth management industry.</h5>
                         </div>
                     </div>
                 </>

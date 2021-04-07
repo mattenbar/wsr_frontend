@@ -68,7 +68,7 @@ function lastIssue(props) {
                                 <img src={post.attributes.image} className="circular-image" />
                                 {/* header */}
                                 <h2>{post.attributes.title}</h2>
-                                <p>by {post.attributes.author}</p>
+                                <p>{post.attributes.author}</p>
                             </Link>
                         </div>
                     </div>

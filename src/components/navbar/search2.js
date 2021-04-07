@@ -23,7 +23,7 @@ function Search2(props) {
                             <li>
                                 <span>{post.attributes.title}</span>
                                 <span>&nbsp;</span>
-                                <span>- by {post.attributes.author}</span>
+                                <span>- {post.attributes.author}</span>
                                 <span>&nbsp;</span>
                                 <span>| {moment
                                 .parseZone(post.attributes.created_at)

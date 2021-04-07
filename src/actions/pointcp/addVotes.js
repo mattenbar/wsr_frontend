@@ -28,6 +28,14 @@ export const voteArticleTwo = (pointcpData2) => (dispatch) => {
     })
     .then(res => res.json())
     .then(pointcpObj2 => {
-        console.log("pointcpObj2", pointcpObj2)
+        
+        if (pointcpObj2.failure) {
+            alert(pointcpObj2.failure)
+        }
+        
+        if (pointcpObj2.success) {
+            
+            alert("Thank you for voting.")
+        } 
     })
 }
