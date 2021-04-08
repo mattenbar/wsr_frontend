@@ -60,6 +60,8 @@ function LettersFromLarryArticle(props) {
     } else {
         return (
             <>
+                <meta name="image" property="og:image" content={post.attributes.image}></meta>
+                <meta name="title" property="og:title" content={post.attributes.title}></meta>
                 <div className="category-show">
                     <ArticleHeaders category={post.attributes.category_id} />
                 </div>
