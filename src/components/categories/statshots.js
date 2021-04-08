@@ -10,9 +10,9 @@ function Statshots() {
         <div className="statshots-container">
                 <img src="/statshots/Stat Shot_Top Apps.jpg" alt="statshot" />
                   <p>
-                    Following based on WSR survey of pre-launch registered readers. 
-                    For more information about the intersection of health and wealth in this issue, 
-                    please check out&nbsp;
+                    Following based on a WSR survey of pre-launch registered readers as of March 31, 2021. 
+                    For more information about the intersection of health, wellness and wealth management, 
+                    please check out Life Coaching & Financial Advice After Covid by Conor Delaney in this week’s issue&nbsp;
                     <a href="https://www.wealthsolutionsreport.com/Words-In-Edgewise/31">
                     Conor Delaney’s article.
                     </a>

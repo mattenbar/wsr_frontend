@@ -33,7 +33,7 @@ export const boardMembers = [
         name: 'Sid Yenamandra',
         title: 'CEO, Entreda',
         about: 'Sid co-founded Entreda in 2011 and is responsible for all aspects of the company’s vision and day-to-day operations. Sid is a serial entrepreneur with three start-ups under his belt. Prior to Entreda, Sid served as Vice President of Product and Business Development at venture funded start-up Plato Networks which he sold to Netlogic Microsystems subsequently acquired by Broadcom for $4B. Prior to Plato Networks, Sid worked on several technology ventures in Silicon Valley and was part of an elite team, funded by the NSA, to develop a Suite B flow-through cryptographic processor to protect critical infrastructure of US National Interest. Sid holds dual Bachelor of Science Degrees in Electrical Engineering and Computer Science from University of California, Berkeley.  Sid serves on the advisory board of numerous venture-funded start-up’s and is an active contributor and speaker for many cybersecurity organizations.',
-        img: 'boardImages/sidYenamandra.png'
+        img: 'boardImages/Sid.png'
     },
     {
         key: 'BM108',
@@ -45,7 +45,7 @@ export const boardMembers = [
     {
         key: 'BM104',
         name: 'Harry Grand',
-        title: 'Senior Managing Director, Angeles Wealth',
+        title: 'Senior Managing Director, Head of the New York Office at Angeles Wealth',
         about: 'Prior to joining Angeles Wealth, Harry held several leadership positions including Managing Director, Head of Client Advisory at Chilton Trust, Senior Vice President at Lazard Wealth Management and Chief of Staff to the President and CEO of Rockefeller & Co. Harry earned a Masters of Business Administration with a concentration in Finance and Marketing from Columbia Business School. He received a B.A. from Hamilton College with a double major in International Politics and French, and a minor in Art History. Fluent in French, Harry holds the Certificat Pratique de Langue Française from the Sorbonne in Paris. Harry is a member of the Young Presidents’ Organization and serves as Trustee for the Rippowam Cisqua School. He also serves on the board of Supportive Care Matters and acts as a Class Agent for The Taft School, Hamilton College and Columbia Business School.',
         img: 'boardImages/harryGrand.png'
     },
@@ -61,7 +61,7 @@ export const boardMembers = [
         name: 'Susan Theder',
         title: 'Chief Marketing Officer, Advisor Group',
         about: 'Susan Theder is Chief Marketing Officer at Advisor Group, one of the nation’s largest networks of independent financial advisors, overseeing more than $228 billion in client assets under administration. As CMO, Susan develops ways to enhance the effectiveness of the Firm’s communications and drive awareness of all our platform has to offer. She also focuses on developing programs to support our advisors’ growth objectives. Susan has spent over 25 years in financial services, most recently as Chief Marketing Officer at Cetera Financial Group, overseeing marketing and communications for its 11 independently managed broker-dealers.',
-        img: 'boardImages/susanThedar.png'
+        img: 'boardImages/Susan.png'
     },
     {
         key: 'BM102',
