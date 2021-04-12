@@ -521,6 +521,81 @@ function articleHeaders(props) {
                     </div>
                 </>
             );
+        case 19:
+            return (
+              <>
+                  <div className="category-show">
+                      <div className="category-image">
+                          <Link to={"/Noteworthy-Notes"}>
+                              <img
+                                src="/carouselImages/NoteworthyNotes.png"
+                                alt=""
+                              ></img>
+                          </Link>
+                      </div>
+                      <div className="category-header">
+                          <Link to={"/Noteworthy-Notes"}>
+                              <h1>NOTEWORTHY NOTES</h1>
+                          </Link>
+                          <h4 className="tagline">
+                              Noteworthy analysis on investing, the markets and the economy
+                          </h4>
+                          <h5>
+                          </h5>
+                      </div>
+                  </div>
+              </>
+            );
+        case 20:
+            return (
+              <>
+                  <div className="category-show">
+                      <div className="category-image">
+                          <Link to={"/Health-And-Wealth"}>
+                              <img
+                                src="/carouselImages/HealthAndWealth.png"
+                                alt=""
+                              ></img>
+                          </Link>
+                      </div>
+                      <div className="category-header">
+                          <Link to={"/Health-And-Wealth"}>
+                              <h1>HEALTH & WEALTH</h1>
+                          </Link>
+                          <h4 className="tagline">
+                              The intersection of health, wellness and financial advice
+                          </h4>
+                          <h5>
+                          </h5>
+                      </div>
+                  </div>
+              </>
+            );
+        case 21:
+            return (
+              <>
+                  <div className="category-show">
+                      <div className="category-image">
+                          <Link to={"/Upmarket"}>
+                              <img
+                                src="/carouselImages/Upmarket.png"
+                                alt=""
+                              ></img>
+                          </Link>
+                      </div>
+                      <div className="category-header">
+                          <Link to={"/Upmarket"}>
+                              <h1>UPMARKET</h1>
+                          </Link>
+                          <h4 className="tagline">
+                              How to succeed in serving HNW and UHNW individuals and families
+                          </h4>
+                          <h5>
+                          </h5>
+                      </div>
+                  </div>
+              </>
+            );
 
         case "point-counterpoint":
             return (

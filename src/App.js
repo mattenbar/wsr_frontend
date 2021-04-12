@@ -72,6 +72,12 @@ import WordsInEdgewise from './components/categories/wordsInEdgewise'
 import WordsInEdgewiseArticle from './components/articles/wordsInEdgewiseArticle';
 import HubspotTipsForm from "./components/hubspotTipsForm/hubspotTipsForm";
 import Statshots from './components/categories/statshots'
+import NoteworthyNotes from "./components/categories/noteworthyNotes";
+import NoteworthyNotesArticle from './components/articles/noteworthyNotesArticle';
+import HealthAndWealth from "./components/categories/healthAndWealth";
+import HealthAndWealthArticle from './components/articles/healthAndWealthArticle';
+import Upmarket from "./components/categories/upmarket";
+import UpmarketArticle from './components/articles/upmarketArticle';
 
 
 class App extends React.Component{
@@ -174,6 +180,16 @@ class App extends React.Component{
           <Route exact path="/Words-In-Edgewise/:id" component={WordsInEdgewiseArticle} />
           
           
+
+          <Route exact path="/Noteworthy-Notes" render={()=> <NoteworthyNotes />}/>
+          <Route exact path="/Noteworthy-Notes/:id" component={NoteworthyNotesArticle} />
+
+          <Route exact path="/Health-And-Wealth" render={()=> <HealthAndWealth />}/>
+          <Route exact path="/Health-And-Wealth/:id" component={HealthAndWealthArticle} />
+
+          <Route exact path="/Upmarket" render={()=> <Upmarket />}/>
+          <Route exact path="/Upmarket/:id" component={UpmarketArticle} />
+
         </Switch>
         <HubspotTipsForm/>
         <Ads />
