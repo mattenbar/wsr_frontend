@@ -669,6 +669,12 @@ body {
         margin-bottom: 1em;
     }
 
+    .linksBarWeekTwo-Middle {
+        /* will need css font size here */
+        /* font-size: 1.061em; */
+        margin-bottom: 1em;
+    }
+
     .linksBarWeekTwo-Bottom {
         /* will need css font size here */
         /* font-size: 1.072em; */
@@ -782,6 +788,12 @@ body {
     }
 
     .linksBarWeekTwo-Top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .linksBarWeekTwo-Middle {
         display: flex;
         flex-direction: row;
         justify-content: space-between;

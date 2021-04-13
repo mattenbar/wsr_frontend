@@ -541,6 +541,7 @@ function articleHeaders(props) {
                               Noteworthy analysis on investing, the markets and the economy
                           </h4>
                           <h5>
+                              Latest research on investing, the markets and the economy
                           </h5>
                       </div>
                   </div>
@@ -566,6 +567,7 @@ function articleHeaders(props) {
                               The intersection of health, wellness and financial advice
                           </h4>
                           <h5>
+                              The intersection of health, wellness and financial advice
                           </h5>
                       </div>
                   </div>
@@ -591,6 +593,7 @@ function articleHeaders(props) {
                               How to succeed in serving HNW and UHNW individuals and families
                           </h4>
                           <h5>
+                              How to grow your business more effectively
                           </h5>
                       </div>
                   </div>
