@@ -134,6 +134,30 @@ function carousel(props) {
                             <h2>ON THE RISE</h2>
                         </Link>
                     </div>
+                </div>
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        <Link to="/noteworthy-notes" className="crsltop" >
+                            <img src="/carouselImages/NoteworthyNotes.png" className="top-carousel-model" alt=""/>
+                            <h2>NOTEWORTHY NOTES</h2>
+                        </Link>
+                    </div>
+                </div>
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        <Link to="/health-and-wealth" className="crsltop" >
+                            <img src="/carouselImages/HealthAndWealth.png" className="top-carousel-model" alt=""/>
+                            <h2>HEALTH & WEALTH</h2>
+                        </Link>
+                    </div>
+                </div>
+                <div className="carousel-wrapper" >
+                    <div className="box">
+                        <Link to="/upmarket" className="crsltop" >
+                            <img src="/carouselImages/Upmarket.png" className="top-carousel-model" alt=""/>
+                            <h2>UPMARKET</h2>
+                        </Link>
+                    </div>
                 </div> */}
 
 

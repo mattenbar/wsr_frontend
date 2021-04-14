@@ -39,6 +39,12 @@ export function GetSlug(post){
             return '/Investment-Solutions-and-Gatekeepers'
         case 18:
             return '/Words-In-Edgewise'
+        case 19:
+            return '/Noteworthy-Notes'
+        case 20:
+            return '/Health-And-Wealth'
+        case 21:
+            return '/Upmarket'
 
         default:
             return '/';
