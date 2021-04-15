@@ -23,8 +23,8 @@ class Home extends Component {
 
     return(
       <div className="home-container">
-        <LinksBarWeekOne />
-        {/* <LinksBarWeekTwo /> */}
+        {/*<LinksBarWeekOne />*/}
+         <LinksBarWeekTwo />
         {/* <LinksBarWeekThree /> */}
         {/* <LinksBar /> */}
         <Carousel />
