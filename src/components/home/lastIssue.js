@@ -134,12 +134,12 @@ function lastIssue(state) {
               className="ti-a"
             >
               {/* model */}
-              {GetCat(post.attributes)}
+              
               <img src={post.attributes.image} className="circular-image" />
               {/* header */}
               <h2>{post.attributes.title}</h2>
               <p>{post.attributes.author}</p>
-              
+              {GetCat(post.attributes)}
             </Link>
           </div>
         </div>

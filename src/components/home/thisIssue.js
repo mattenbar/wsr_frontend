@@ -66,12 +66,12 @@ function thisIssue(state) {
               className="ti-a"
             >
               {/* model */}
-              {GetCat(post.attributes)}
+              
               <img src={post.attributes.image} className="circular-image" />
               {/* header */}
               <h2>{post.attributes.title}</h2>
               <p>{post.attributes.author}</p>
-
+              {GetCat(post.attributes)}
               
             </Link>
             
@@ -102,15 +102,7 @@ function thisIssue(state) {
                   className="ti-a"
                 >
                   {/* model */}
-                  <Link
-                  className="get-cat"
-                    
-                    to={{
-                      pathname: `/Point-Counterpoint`,
-                    }}
-                  >
-                    <h2>Point CounterPoint</h2>
-                  </Link>
+                  
                   <img
                     src="/carouselImages/PointCounterPoint.jpg"
                     className="circular-image"
@@ -121,6 +113,15 @@ function thisIssue(state) {
                     with {mostRecentPcp.attributes.authorOne} VS.{" "}
                     {mostRecentPcp.attributes.authorTwo}
                   </p>
+                  <Link
+                  className="get-cat"
+                    
+                    to={{
+                      pathname: `/Point-Counterpoint`,
+                    }}
+                  >
+                    <h2>Point CounterPoint</h2>
+                  </Link>
                 </Link>
               </div>
             </div>
