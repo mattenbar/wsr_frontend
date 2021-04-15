@@ -50,7 +50,7 @@ function lastIssue(state) {
   };
 
   if (state.posts.length > 0 && state.pointcps.pointCPPosts.length > 1) {
-    let lastFive = state.posts.slice(-10, -5).reverse();
+    let lastFive = state.posts.slice(-14, -9).reverse();
     let cItems = lastFive.map((post) => {
       return (
         <div key={post.id} className="ticrslwrapper">
