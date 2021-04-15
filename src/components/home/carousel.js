@@ -52,7 +52,7 @@ function carousel(props) {
         <div className="carousel-top" >
             <Slider {...settings} >
                 {/* week one */}
-                <div className="carousel-wrapper" >              
+                {/*<div className="carousel-wrapper" >
                         <Link to="/letters-from-larry" className="crsltop">
                             <img src="/carouselImages/LettersFromLarry.png" className="top-carousel-model" alt=""/>
                             <h2>LETTERS FROM LARRY</h2>
@@ -98,12 +98,12 @@ function carousel(props) {
                             <h2>WALLET SHARE</h2>
                         </Link>
                     </div>
-                </div>
+                </div>*/}
 
 
                 {/* week two */}
 
-                {/* <div className="carousel-wrapper" >
+                 <div className="carousel-wrapper" >
                     <div className="box">
                         <Link to="/newsmakers-roundup" className="crsltop">
                             <img src="/carouselImages/NewsMakersRoundUp.png" className="top-carousel-model" alt=""/>
@@ -158,7 +158,7 @@ function carousel(props) {
                             <h2>UPMARKET</h2>
                         </Link>
                     </div>
-                </div> */}
+                </div>
 
 
                 {/* week 3 */}
