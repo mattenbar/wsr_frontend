@@ -647,8 +647,8 @@ body {
     /* week two */
 
     .linksBarWeekTwo-container {
-        visibility: visible;
-        display: contents;
+        /* visibility: visible;
+        display: contents; */
         text-align: justify;
         color: black;
         font-size: .88em;
@@ -768,29 +768,12 @@ body {
 }
 
 @media (min-width: 80em) {
-    /* week one */
-
-    .linksBarWeekOne-container {
-        width: 80em;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .linksBarWeekOne-links {
-        margin-top: 2em;
-        margin-bottom: 2em;
-        width: 80em;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        font-size: 1em;
-    }
 
     /* week two */
 
     .linksBarWeekTwo-container {
+        visibility: visible;
+        display: contents;
     }
 
     .linksBarWeekTwo-Top {
