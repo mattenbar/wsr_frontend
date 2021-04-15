@@ -10,8 +10,8 @@ export const boardMembers = [
     {
         key: 'BM103',
         name: 'Chris Paulitz',
-        title: 'Head of Strategic Initiatives, Financial Services Institute',
-        about: 'Chris is a veteran of Capitol Hill, spending more than a decade in presidential and congressional campaigns, working as a spokesman and strategic advisor for both U.S. House and Senate leadership offices, the Republican National Committee, the National Republican Congressional Committee and the Bush administration. After directing the communications department for U.S. Senator Kay Bailey Hutchison (R-TX), Chris ended his public service as Senior Advisor to former U.S. Senator George V. Voinovich of Ohio. For the last two years before joining FSI, he served as Senior Vice President of Communications, Marketing and Public Affairs for the Insured Retirement Institute. Chris earned a bachelor’s degree in communication and journalism from The Ohio State University.',
+        title: 'Head of Strategic Initiatives, Financial Services Institute (FSI)',
+        about: 'Chris joined the Financial Services Institute (FSI) in 2011 after a decades-long career on Capitol Hill and as a Presidential Appointee. After leading all membership and marketing at FSI, he took over FSI’s strategic initiatives including a new, revolutionary health insurance program for financial advisors under the CoveredAdvisor Benefits Program umbrella. Prior to FSI he served as SVP of Communications, Marketing and Public Affairs for the Insured Retirement Institute, after working as a spokesman and strategic advisor for both U.S. House and Senate leadership offices, the Republican National Committee, the National Republican Congressional Committee and the Bush Administration. Chris is married with seven children and earned a bachelor’s degree in communication and journalism from The Ohio State University.',
         img: 'boardImages/chrisPaulitz.png'
     },
     {
