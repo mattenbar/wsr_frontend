@@ -616,6 +616,11 @@ body {
     display: none;
 }
 
+.linksBarWeekTwo-container {
+    visibility: hidden;
+    display: none;
+}
+
 @media (min-width: 65em) {
     .linksBarWeekOne-container {
         visibility: visible;
