@@ -40,7 +40,7 @@ class Home extends Component {
           {this.props.posts.length > 0 && 
           <>
             <ThisIssue posts={this.props.posts.slice(-5)} />
-            {/* <LastIssue posts={this.props.posts.slice(-10, -5)} /> */}
+            <LastIssue posts={this.props.posts.slice(-10, -5)} />
           </>
         }
         </div>
