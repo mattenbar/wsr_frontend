@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import { GetSlug } from "../../actions/getSlug";
 import { connect } from "react-redux";
+import {GetCat} from '../../actions/getCat'
 
 function lastIssue(state) {
   let settings = {
@@ -65,6 +66,7 @@ function lastIssue(state) {
               className="ti-a"
             >
               {/* model */}
+              {GetCat(post.attributes)}
               <img src={post.attributes.image} className="circular-image" />
               {/* header */}
               <h2>{post.attributes.title}</h2>
@@ -132,10 +134,12 @@ function lastIssue(state) {
               className="ti-a"
             >
               {/* model */}
+              {GetCat(post.attributes)}
               <img src={post.attributes.image} className="circular-image" />
               {/* header */}
               <h2>{post.attributes.title}</h2>
               <p>{post.attributes.author}</p>
+              
             </Link>
           </div>
         </div>
