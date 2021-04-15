@@ -78,6 +78,8 @@ function lastIssue(state) {
     let pointCpReverse = state.pointcps.pointCPPosts.reverse();
     let mostRecentPcp = pointCpReverse[1];
 
+
+
     return (
       <div className="ticrsl">
         <div className="ticrsl-move-left">
@@ -113,8 +115,45 @@ function lastIssue(state) {
         </div>
       </div>
     );
-  } else {
-    return <div></div>;
+  } else if(state.posts.length > 0) {
+    
+    let lastTen = state.posts.reverse();
+    let cItems = lastTen.map((post) => {
+      return (
+        <div key={post.id} className="ticrslwrapper">
+          <div className="ti-box">
+            <Link
+              to={{
+                pathname: `${GetSlug(post.attributes)}/${post.id}`,
+                state: {
+                  category: post.attributes.category_id,
+                },
+              }}
+              className="ti-a"
+            >
+              {/* model */}
+              <img src={post.attributes.image} className="circular-image" />
+              {/* header */}
+              <h2>{post.attributes.title}</h2>
+              <p>{post.attributes.author}</p>
+            </Link>
+          </div>
+        </div>
+      )
+    })
+    
+
+    return (
+      
+      <div className="ticrsl">
+        <div className="ticrsl-move-left">
+          <h1>LAST ISSUE</h1>
+          <Slider {...settings}>
+            {cItems}
+          </Slider>
+        </div>
+      </div>
+    )
   }
 }
 
