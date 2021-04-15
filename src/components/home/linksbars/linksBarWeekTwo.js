@@ -29,7 +29,7 @@ class LinksBarWeekTwo extends Component {
                 <Link to="/On-The-Rise">ON THE RISE</Link>&nbsp; | &nbsp;
                 <Link to="/Point-Counterpoint">POINT-COUNTERPOINT</Link> &nbsp; | &nbsp;
                 <Link to="/Statshots">STATSHOTS</Link>&nbsp; | &nbsp;
-                <Link to="/Upmarket">UPMARKET</Link>
+                <Link to="/Upmarket">UPMARKET</Link>&nbsp; | &nbsp;
                 <Link to="/Words-In-Edgewise">WORDS IN EDGEWISE</Link>&nbsp; | &nbsp;
                 <Link to="/Wallet-Share">WALLET SHARE</Link>
 
