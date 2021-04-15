@@ -24,6 +24,7 @@ class LinksBarWeekTwo extends Component {
             <div className="linksBarWeekTwo-Middle">
 
                 <Link to="/NewsMakers-Roundup">NEWSMAKERS ROUNDUP</Link>&nbsp; | &nbsp;
+                <Link to="/Nightmare-On-Compliance-St">NIGHTMARE ON COMPLIANCE ST</Link>&nbsp; | &nbsp;
                 <Link to="/Noteworthy-Notes">NOTEWORTHY NOTES</Link>&nbsp; | &nbsp;
                 <Link to="/On-The-Rise">ON THE RISE</Link>&nbsp; | &nbsp;
                 <Link to="/Point-Counterpoint">POINT-COUNTERPOINT</Link> &nbsp; | &nbsp;
