@@ -212,7 +212,7 @@ export function GetCat(post) {
             pathname:"/Noteworthy-Notes",
           }}
         >
-          <h2>Investment Solutions & Gatekeepers</h2>
+          <h2>Noteworthy Notes</h2>
         </Link>
       );
     case 20:
@@ -223,7 +223,7 @@ export function GetCat(post) {
             pathname:"/Health-And-Wealth",
           }}
         >
-          <h2>Health& Wealth</h2>
+          <h2>Health & Wealth</h2>
         </Link>
       );
     case 21:
@@ -234,7 +234,7 @@ export function GetCat(post) {
             pathname:"/Upmarket",
           }}
         >
-          <h2>Investment Solutions & Gatekeepers</h2>
+          <h2>Upmarket</h2>
         </Link>
       );
 
