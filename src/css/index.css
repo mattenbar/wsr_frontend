@@ -1892,6 +1892,12 @@ body {
         text-align: right;
     }
 
+    .pointcp2 .pointcpContent{
+        border-left:  2px solid black;
+        padding-left: 2em;
+        margin-left: -1.1em;
+    }
+
     .pointcp3,
     .pointcp4 {
         height: 30em;
