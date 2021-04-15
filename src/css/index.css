@@ -1262,6 +1262,7 @@ body {
     border-radius: 50%;
     padding: 1em;
     margin-bottom: 1em;
+    margin-left: 1em;
 }
 
 .comingSoon {
@@ -1292,6 +1293,10 @@ body {
 
     .trcrsl p {
         font-size: 0.75em;
+    }
+
+    .circular-image {
+        margin-left: 2em;
     }
 }
 
@@ -1341,6 +1346,7 @@ body {
 
     .circular-image {
         margin-top: 1em;
+        margin-left: 0;
     }
 }
 
@@ -1387,6 +1393,7 @@ body {
 .ti-b {
     text-decoration: none;
     color: black;
+    
 }
 
 .ti-box h2 {
@@ -1443,7 +1450,7 @@ body {
 
 @media (min-width: 80em) {
     .ticrsl {
-        height: 17em;
+        height: auto;
         margin-bottom: 8em;
     }
 
@@ -4434,4 +4441,10 @@ body {
     .home-triple-row-grid{
         margin-top: 2em;
     }
+}
+
+.get-cat{
+    margin-top: 1em;
+    text-decoration: none;
+    color: black;
 }

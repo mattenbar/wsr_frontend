@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { GetSlug } from "../../actions/getSlug";
+import {GetCat} from '../../actions/getCat'
 
 function thisIssue(state) {
   let settings = {
@@ -54,6 +55,7 @@ function thisIssue(state) {
       return (
         <div key={post.attributes.title} className="ticrslwrapper">
           <div className="ti-box">
+            
             <Link
               to={{
                 pathname: `${GetSlug(post.attributes)}/${post.id}`,
@@ -64,11 +66,15 @@ function thisIssue(state) {
               className="ti-a"
             >
               {/* model */}
+              {GetCat(post.attributes)}
               <img src={post.attributes.image} className="circular-image" />
               {/* header */}
               <h2>{post.attributes.title}</h2>
               <p>{post.attributes.author}</p>
+
+              
             </Link>
+            
           </div>
         </div>
       );
@@ -96,6 +102,15 @@ function thisIssue(state) {
                   className="ti-a"
                 >
                   {/* model */}
+                  <Link
+                  className="get-cat"
+                    
+                    to={{
+                      pathname: `/Point-Counterpoint`,
+                    }}
+                  >
+                    <h2>Point CounterPoint</h2>
+                  </Link>
                   <img
                     src="/carouselImages/PointCounterPoint.jpg"
                     className="circular-image"
