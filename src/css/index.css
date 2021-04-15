@@ -1175,7 +1175,7 @@ body {
 
 @media (min-width: 80em) {
     .features {
-        height: 28em;
+        height: auto;
     }
 
     .small-square img {
@@ -1910,6 +1910,12 @@ body {
     .pointcp4 {
         align-content: right;
         text-align: right;
+    }
+
+    .pointcp4 .pointcpContent{
+        border-left:  2px solid black;
+        padding-left: 2em;
+        margin-left: -1.1em;
     }
 
     .pointcpContent {
@@ -4415,5 +4421,17 @@ body {
     src: url("../fonts/EuropaRegular.ttf") format("truetype");
 }
 .home-triple-row-grid{
-    margin-top: 4em;
+    margin-top: 3em;
+}
+
+@media (min-width: 46em) {
+    .home-triple-row-grid{
+        margin-top: 5em;
+    }
+}
+
+@media (min-width: 80em) {
+    .home-triple-row-grid{
+        margin-top: 2em;
+    }
 }
