@@ -651,6 +651,7 @@ body {
         display: contents;
         text-align: justify;
         color: black;
+        font-size: .9em;
     }
 
     .linksBarWeekTwo-container a {
