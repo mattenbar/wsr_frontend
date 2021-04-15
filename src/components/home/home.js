@@ -31,9 +31,9 @@ class Home extends Component {
         <Features />
         <div className="home-triple-row-grid" >
           <div className="newsmakers-transactions" >
-            <CapitalConnections /> 
+            {/* <CapitalConnections /> */}
             {/* <NewsMakers /> */}
-            <DigitalDomain />
+            {/* <DigitalDomain /> */}
             {/* <Transactions /> */}
           </div>
           {/* to change amount of posts in carousel change number below(keep it negative for most recent) */}
