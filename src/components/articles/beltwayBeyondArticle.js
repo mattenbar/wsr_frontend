@@ -23,12 +23,14 @@ function BeltwayBeyondArticle(props) {
     const [post, setPost] = useState([]);
     const [inEditMode, setInEditMode] = useState(false)
 
+    // eslint-disable-next-line
     useEffect(() => {
         fetch(API_URL + `/posts/${post_id}`)
             .then((res) => res.json())
             .then((data) => {
                 setPost(data.post.data);
             });
+            // eslint-disable-next-line
     }, []);
 
     const handleOnClick = () => {

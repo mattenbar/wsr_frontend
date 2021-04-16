@@ -9,7 +9,7 @@ function ads(state) {
         return (
             <div className="main-bottom-ads">
                 <span className="span-ad-image1">
-                    <a href={leftAd.link} target="_blank">
+                    <a href={leftAd.link} target="_blank" rel="noreferrer">
                         <img
                             className="ad-image1"
                             src={leftAd.image}
@@ -18,7 +18,7 @@ function ads(state) {
                     </a>
                 </span>
                 <span className="span-ad-image2">
-                    <a href={rightAd.link} target="_blank">
+                    <a href={rightAd.link} target="_blank" rel="noreferrer">
                         <img
                             className="ad-image1"
                             src={rightAd.image}

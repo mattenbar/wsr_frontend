@@ -5,9 +5,6 @@ import ArticleBody from './articleBody';
 import ArticleHeaders from './articleHeaders';
 import ArticleEditForm from './articleEditForm';
 import { deletePost } from '../../actions/deletePost';
-import { withRouter } from "react-router";
-
-import { Link, useLocation } from "react-router-dom";
 
 function IndivualPosts(props) {
     const user = useSelector(state => {

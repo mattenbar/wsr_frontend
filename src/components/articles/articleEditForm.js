@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { editPost } from "../../actions/editPost";
 import { Editor } from "@tinymce/tinymce-react";
 import { withRouter } from "react-router-dom";
-import history from '../../history';
 
 class ArticleClassEditForm extends React.Component {
     // post = this.props.post

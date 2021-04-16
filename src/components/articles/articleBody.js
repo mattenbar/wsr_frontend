@@ -59,7 +59,7 @@ function ArticleBody(props) {
         <>
                 <img
                     src={post.attributes.image}
-                    alt="post-image"
+                    alt="ind-post"
                     className="individualPostImage"
                 />
                 <h2 className="individualPostTitle">
