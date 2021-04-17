@@ -14,7 +14,7 @@ function PointcpArchives(props) {
 
         const mappedPointCP = pointcpArticles.map(article => {
             return (
-                <div className="pointcpLinksList">
+                <div className="pointcpLinksList" key={article.id}>
                     <Link to={{    
                         pathname: `/Point-Counterpoint/${article.id}`,
                         state: {

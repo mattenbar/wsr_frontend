@@ -49,7 +49,6 @@ function thisIssue(state) {
   };
 
   if (state.posts.length > 0 && state.pointcps.pointCPPosts.length > 0) {
-    console.log(state.pointcps.pointCPPosts);
     let lastFive = state.posts.slice(-9).reverse();
     let cItems = lastFive.map((post) => {
       return (
@@ -83,7 +82,6 @@ function thisIssue(state) {
     let pointCpReverse = state.pointcps.pointCPPosts.reverse();
     let mostRecentPcp = pointCpReverse[0];
 
-    console.log(mostRecentPcp);
     return (
       <div className="ticrsl">
         <h1>THIS ISSUE</h1>

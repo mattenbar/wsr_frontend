@@ -12,7 +12,7 @@ export const voteArticleOne = (pointcpData) => (dispatch) => {
     })
     .then(res => res.json())
     .then(pointcpObj => {
-        console.log("pointcpObj", pointcpObj)
+        // console.log("pointcpObj", pointcpObj)
     })
 }
 

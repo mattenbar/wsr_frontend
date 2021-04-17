@@ -35,7 +35,6 @@ function Search2(props) {
             } else {
                 return (
                     <div key={post.id} className="pointcpLinksList">
-                        {/* <Link to={`Point-Counterpoint/${post.id}`} post_id={post.id} className="pointcpLinks"> */}
                         <Link to={{    
                             pathname: `Point-Counterpoint/${post.id}`,
                             state: {
