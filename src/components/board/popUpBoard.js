@@ -8,6 +8,7 @@ function popUpBoard(props) {
 
                 </div>
                 <div className="boardpopup__right" >
+                {/* eslint-disable-next-line */}
                 <a href="#" className="popup__close">&times;</a>
                     <div>
                         <h1>{props.name}</h1>

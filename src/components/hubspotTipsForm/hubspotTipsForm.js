@@ -75,6 +75,7 @@ function HubspotTipsForm(props) {
     setFormReference($form);
   };
 
+  // eslint-disable-next-line
   const { loaded, error, formCreated } = useHubspotForm({
     portalId: '8815329',
     formId: '30223fb5-f913-49e9-b298-87b18ba6f3c2',
@@ -106,12 +107,12 @@ function HubspotTipsForm(props) {
   useEffect(() => {
     updateFormWithUser(formReference);
   });
-
+// eslint-disable-next-line
   useEffect(() => {
     const isUserLoggedIn = !!localStorage.token;
     setIsUserLoggedIn(isUserLoggedIn);
   });
-
+// eslint-disable-next-line
   useEffect(() => {
     const currentPagePath = location.pathname.toLowerCase();
     let showOnCurrentPage = false;
@@ -126,10 +127,10 @@ function HubspotTipsForm(props) {
         break;
       }
     }
-
     setShowOnCurrentPage(showOnCurrentPage);
     setFormHeader(currentFormHeader);
     setFormSubject(currentFormSubject);
+    // eslint-disable-next-line
   });
 
   return (

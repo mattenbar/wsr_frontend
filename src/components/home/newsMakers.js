@@ -1,5 +1,4 @@
 import React from "react";
-import Slider from "react-slick";
 import { Link } from 'react-router-dom'
 import { connect } from "react-redux";
 
@@ -24,6 +23,7 @@ function newsMakers(state) {
                                     <img
                                         src={firstPost.image}
                                         className="circular-image"
+                                        alt=""
                                     />
                                     {/* header */}
                                     <h2>{firstPost.title}</h2>
@@ -38,6 +38,7 @@ function newsMakers(state) {
                                     <img
                                         src={secondPost.image}
                                         className="circular-image"
+                                        alt=""
                                     />
                                     {/* header */}
                                     <h2>{secondPost.title}</h2>

@@ -24,6 +24,7 @@ function PointCounterPointArticle(props) {
     admin = user.admin;
   }
 
+  // eslint-disable-next-line
   let location = useLocation();
 
   let pointcp_id;
@@ -45,6 +46,7 @@ function PointCounterPointArticle(props) {
           setWinner(data.winner);
         });
     }
+    // eslint-disable-next-line
   }, []);
 
   const handleVotingClickButtonOne = (e) => {

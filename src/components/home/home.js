@@ -3,16 +3,20 @@ import {connect} from 'react-redux';
 // import {Link} from "react-router-dom"
 
 //importing components for home
+// eslint-disable-next-line
 import LinksBarWeekOne from './linksbars/linksBarWeekOne'
+// eslint-disable-next-line
 import LinksBarWeekTwo from './linksbars/linksBarWeekTwo'
+// eslint-disable-next-line
 import LinksBarWeekThree from './linksbars/linksBarWeekThree'
+// eslint-disable-next-line
 import LinksBar from './linksBar';
 import Carousel from './carousel';
 import Features from './features';
-
-import NewsMakers from './newsMakers';
-import CapitalConnections from './capitalConnections';
-import Transactions from './transactions';
+// eslint-disable-next-line
+import NewsMakers from './newsMakers';// eslint-disable-next-line
+import CapitalConnections from './capitalConnections';// eslint-disable-next-line
+import Transactions from './transactions';// eslint-disable-next-line
 import DigitalDomain from './digitalDomain';
 
 import ThisIssue from './thisIssue';

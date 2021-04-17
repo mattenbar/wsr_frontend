@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { editPointcp } from "../../actions/pointcp/editPointcp";
 import { Editor } from "@tinymce/tinymce-react";
 import { withRouter } from "react-router-dom";
-import history from '../../history';
 
 class PointcpEditForm extends React.Component {
 

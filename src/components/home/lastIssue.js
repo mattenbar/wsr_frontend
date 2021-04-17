@@ -67,7 +67,7 @@ function lastIssue(state) {
             >
               {/* model */}
               {GetCat(post.attributes)}
-              <img src={post.attributes.image} className="circular-image" />
+              <img src={post.attributes.image} className="circular-image" alt=""/>
               {/* header */}
               <h2>{post.attributes.title}</h2>
               <p>{post.attributes.author}</p>
@@ -103,6 +103,7 @@ function lastIssue(state) {
                   <img
                     src="/carouselImages/PointCounterPoint.jpg"
                     className="circular-image"
+                    alt=""
                   />
                   {/* header */}
                   <h2>{mostRecentPcp.attributes.topic}</h2>
@@ -135,7 +136,7 @@ function lastIssue(state) {
             >
               {/* model */}
               
-              <img src={post.attributes.image} className="circular-image" />
+              <img src={post.attributes.image} className="circular-image" alt=""/>
               {/* header */}
               <h2>{post.attributes.title}</h2>
               <p>{post.attributes.author}</p>

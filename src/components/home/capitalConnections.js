@@ -1,5 +1,4 @@
 import React from "react";
-import Slider from "react-slick";
 import { Link } from 'react-router-dom'
 import { connect } from "react-redux";
 
@@ -22,6 +21,7 @@ function newsMakers(state) {
                             <Link to={`/Capital-Connections/${firstPost.id}`} post_id={firstPost.id} className="ti-a">
                                     {/* model */}
                                     <img
+                                        alt="first post"
                                         src={firstPost.image}
                                         className="circular-image"
                                     />
@@ -36,6 +36,7 @@ function newsMakers(state) {
                                 <Link to={`/Capital-Connections/${secondPost.id}`} post_id={secondPost.id} className="ti-a">
                                     {/* model */}
                                     <img
+                                        alt=""
                                         src={secondPost.image}
                                         className="circular-image"
                                     />

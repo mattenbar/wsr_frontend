@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import moment from "moment";
 
 function pointcpArticleBody({admin, article, winner, pointcp_id, handleVotingClickButtonOne, handleVotingClickButtonTwo, handleEditDeleteClick}) {
@@ -20,7 +20,7 @@ function pointcpArticleBody({admin, article, winner, pointcp_id, handleVotingCli
                     <div className="pointVote3">
                         <button className="boxingButton" onClick={handleVotingClickButtonOne} >
                             <div className="pv1">
-                                <h2>VOTE FOR {article.authorOne} &nbsp;&nbsp;</h2><img src='/boxGloveLeft.png' className="boxGlove"/>
+                                <h2>VOTE FOR {article.authorOne} &nbsp;&nbsp;</h2><img src='/boxGloveLeft.png' className="boxGlove" alt=""/>
                             </div>
                         </button>
                     </div>
@@ -31,7 +31,7 @@ function pointcpArticleBody({admin, article, winner, pointcp_id, handleVotingCli
                     <div className="pointVote4">
                         <button className="boxingButton" onClick={handleVotingClickButtonTwo} >
                             <div className="pv2">
-                                <h2>VOTE FOR {article.authorTwo} &nbsp;&nbsp;</h2><img src='/boxGloveLeft.png' className="boxGlove"/>
+                                <h2>VOTE FOR {article.authorTwo} &nbsp;&nbsp;</h2><img src='/boxGloveLeft.png' className="boxGlove" alt=""/>
                             </div>
                         </button>
                     </div>
@@ -51,7 +51,7 @@ function pointcpArticleBody({admin, article, winner, pointcp_id, handleVotingCli
                     <div className="newestWinner1">
                         <div className="trophyHeaders">
                             <h1 style={{ color: "rgb(0, 59, 91)" }}>
-                                <img className="countdownTrophyImg" src="/trophy.png" /> Winner: {winner}
+                                <img className="countdownTrophyImg" src="/trophy.png" alt="" /> Winner: {winner}
                             </h1>
                         </div>
                     </div>

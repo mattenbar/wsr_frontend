@@ -1,8 +1,6 @@
 import React from "react";
-import Slider from "react-slick";
 import { Link } from 'react-router-dom';
 import { connect } from "react-redux";
-import { post } from "jquery";
 
 function transactions(state) {
 
@@ -24,6 +22,7 @@ function transactions(state) {
                             <Link to={`/The-Digital-Domain/${firstPost.id}`} post_id={firstPost.id} className="ti-a">
                                     {/* model */}
                                     <img
+                                        alt=""
                                         src={firstPost.image}
                                         className="circular-image"
                                     />
@@ -38,6 +37,7 @@ function transactions(state) {
                                 <Link to={`/The-Digital-Domain/${secondPost.id}`} post_id={secondPost.id} className="ti-a">
                                     {/* model */}
                                     <img
+                                    alt=""
                                         src={secondPost.image}
                                         className="circular-image"
                                     />

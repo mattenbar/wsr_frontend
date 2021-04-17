@@ -12,6 +12,7 @@ function popUpSignUp(props) {
                         <h1>Report</h1>
                 </div>
                 <div className="popup__right" >
+                {/* eslint-disable-next-line */}
                     <a href="#" className="popup__close">&times;</a>
                     <h1 className="heading-secondary" >Sign UP</h1>
                     <h3 className="heading-tertiary">Create A Free Account</h3>

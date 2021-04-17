@@ -22,7 +22,7 @@ export default function managePosts(state = [], action) {
 
         case 'ADD_POST':
             window.location.href = `${getSlug}/${action.payload.post.data.id}`;
-            // return state.concat(action.payload);
+            return state
 
         case DELETE_POST:
             return state = action.payload.posts.data
@@ -30,7 +30,6 @@ export default function managePosts(state = [], action) {
         case EDIT_POST:
             
             window.location.reload()
-            // window.location.href = `${getSlug}/${action.payload.post.data.id}`;
             return {...state, state: state.map(post => parseInt(post.id) === action.payload.post.id ? action.payload.post : post)}
 
         default:
