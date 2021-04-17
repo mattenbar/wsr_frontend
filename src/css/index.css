@@ -63,7 +63,6 @@ body {
 .navbar {
     width: 100%;
     display: table;
-   
 }
 
 .nav-left {
@@ -262,7 +261,6 @@ body {
 
     .navbar {
         height: 15em;
-        
     }
 
     .nav-right {
@@ -471,8 +469,8 @@ body {
 }
 
 .popup__left {
-    visibility: hidden;
-    display: none;
+    width: 0;
+    font-size: 0em;
 }
 
 .popup__right {
@@ -522,8 +520,8 @@ body {
         height: 100%;
         width: 35%;
         font-size: 1em;
-        visibility: visible;
-        display: content;
+        /* visibility: visible;
+        display: content; */
 
         height: 100%;
         background: linear-gradient(
@@ -651,7 +649,7 @@ body {
         display: contents; */
         text-align: justify;
         color: black;
-        font-size: .88em;
+        font-size: 0.88em;
     }
 
     .linksBarWeekTwo-container a {
@@ -768,7 +766,6 @@ body {
 }
 
 @media (min-width: 80em) {
-
     /* week two */
 
     .linksBarWeekTwo-container {
@@ -1167,7 +1164,7 @@ body {
         height: 18em;
         object-fit: cover;
     }
-    
+
     .middle-square img {
         width: 100%;
         height: 18em;
@@ -1377,7 +1374,6 @@ body {
 .ti-b {
     text-decoration: none;
     color: black;
-    
 }
 
 .ti-box h2 {
@@ -1458,7 +1454,6 @@ body {
 
 /* -----------------------------------END HOME---------------------------------------------- */
 
-
 /* statshots */
 
 .statshots-container img {
@@ -1468,7 +1463,7 @@ body {
     margin-right: auto;
 }
 
-.statshots-container{
+.statshots-container {
     width: 100%;
     text-align: justify;
 }
@@ -1480,9 +1475,6 @@ body {
     margin-right: auto;
     margin-top: 1em;
 }
-
-
-
 
 /* end statshots */
 
@@ -1552,16 +1544,14 @@ body {
     padding-left: 1em; */
 }
 
-.pointcpContent li{
+.pointcpContent li {
     /* margin-right: 1.1em; */
     margin-left: 2em;
-    
 }
 
-.pointcpContent img{
+.pointcpContent img {
     margin: 10px;
 }
-
 
 .pointTop {
     display: grid;
@@ -1883,8 +1873,8 @@ body {
         text-align: right;
     }
 
-    .pointcp2 .pointcpContent{
-        border-left:  2px solid black;
+    .pointcp2 .pointcpContent {
+        border-left: 2px solid black;
         padding-left: 2em;
         margin-left: -1.1em;
     }
@@ -1903,8 +1893,8 @@ body {
         text-align: right;
     }
 
-    .pointcp4 .pointcpContent{
-        border-left:  2px solid black;
+    .pointcp4 .pointcpContent {
+        border-left: 2px solid black;
         padding-left: 2em;
         margin-left: -1.1em;
     }
@@ -3637,34 +3627,28 @@ body {
     white-space: pre-line;
     font-size: 1.25em;
     /* text-align: justify; */
-    
 }
 
-.individualPostContent li{
+.individualPostContent li {
     margin-left: 1.1em;
 }
 
-
-.individualPostContent strong{
+.individualPostContent strong {
     font-weight: 900;
-} 
+}
 
-
-
-.image.align-right{
+.image.align-right {
     float: right;
     margin-left: 1em;
     margin-right: 1em;
 }
 
-.image.align-left{
+.image.align-left {
     float: left;
-    
 }
 
-.image.align-center{
+.image.align-center {
     text-align: center;
-    
 }
 
 .individualPostContent figcaption{
@@ -3674,17 +3658,16 @@ body {
     text-align: justify;
 }
 
-
-.individualPostContent img{
-    max-width:90%;
+.individualPostContent img {
+    max-width: 90%;
     height: auto;
     margin-right: 1em;
     margin-left: 1em;
 }
 
-.individualPostContent iframe{
-    max-width:100%;
-    
+.individualPostContent iframe {
+    max-width: 100%;
+
     /* margin-right: 1em;
     margin-left: 1em; */
 }
@@ -3700,10 +3683,9 @@ body {
 .individualPostTitle,
 .individualPostAuthor {
     text-transform: uppercase;
-    
 }
 
-.individualPostTitle{
+.individualPostTitle {
     font-size: 1.2em;
 }
 
@@ -3712,7 +3694,6 @@ body {
 }
 
 .loginReadMore {
-    
     margin-top: 10em;
     padding-bottom: 1em;
 }
@@ -3790,7 +3771,6 @@ body {
 }
 
 @media (min-width: 55em) {
-
     .individualPostDiv {
         text-align: justify;
         margin-bottom: 2em;
@@ -3814,7 +3794,7 @@ body {
         font-size: 1.25em;
     }
 
-    .individualPostContent img{
+    .individualPostContent img {
         max-width: 100%;
         height: auto;
         margin-right: 1em;
@@ -4121,14 +4101,13 @@ body {
         width: 5em;
     }
 
-    .main-bottom-ads img{
+    .main-bottom-ads img {
         width: 49%;
         height: auto;
     }
 
     .span-ad-image2 {
         margin-left: 1%;
-        
     }
 }
 
@@ -4419,23 +4398,23 @@ body {
     font-family: europaRegular;
     src: url("../fonts/EuropaRegular.ttf") format("truetype");
 }
-.home-triple-row-grid{
+.home-triple-row-grid {
     margin-top: 3em;
 }
 
 @media (min-width: 46em) {
-    .home-triple-row-grid{
+    .home-triple-row-grid {
         margin-top: 5em;
     }
 }
 
 @media (min-width: 80em) {
-    .home-triple-row-grid{
+    .home-triple-row-grid {
         margin-top: 2em;
     }
 }
 
-.get-cat{
+.get-cat {
     margin-top: 1em;
     text-decoration: none;
     color: black;
