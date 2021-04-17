@@ -133,7 +133,6 @@ function PointCounterPointArticle(props) {
             />
             <div className="linkToArchives-Container">
               <Link
-                Link
                 to="/Point-Counterpoint-Archives"
                 className="linkToArchives"
               >
