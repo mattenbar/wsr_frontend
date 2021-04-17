@@ -29,6 +29,7 @@ function NightmareComplianceArticle(props) {
             .then((data) => {
                 setPost(data.post.data);
             });
+            // eslint-disable-next-line
     }, []);
 
     const handleOnClick = () => {

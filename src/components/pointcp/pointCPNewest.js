@@ -19,6 +19,7 @@ function PointCPNewest({
             .then((data) => {
                 setWinner(data.winner);
             });
+            // eslint-disable-next-line
     }, []);
 
     const dateDifference = (date1) => {
@@ -47,6 +48,7 @@ function PointCPNewest({
                                 <img
                                     src="/boxGloveLeft.png"
                                     className="boxGlove"
+                                    alt=""
                                 />
                             </div>
                         </button>
@@ -67,6 +69,7 @@ function PointCPNewest({
                                 <img
                                     src="/boxGloveLeft.png"
                                     className="boxGlove"
+                                    alt=""
                                 />
                             </div>
                         </button>
@@ -90,7 +93,7 @@ function PointCPNewest({
                     <div className="newestWinner1">
                         <div className="trophyHeaders">
                             <h1 style={{ color: "rgb(0, 59, 91)" }}>
-                                <img className="countdownTrophyImg" src="/trophy.png" /> Winner: {winner}
+                                <img className="countdownTrophyImg" src="/trophy.png" alt="" /> Winner: {winner}
                             </h1>
                         </div>
                     </div>

@@ -32,7 +32,7 @@ function AuthButtons(props) {
     } else {
         return (
             <div className="auth2-buttons">
-                
+                {/* eslint-disable-next-line */}
                 { user.admin === undefined || user.admin === false &&
                     <>
                         <span className="userEmail">{userEmail}</span>

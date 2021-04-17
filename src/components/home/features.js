@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {connect} from 'react-redux'
 import { Link } from 'react-router-dom';
 import {GetSlug} from '../../actions/getSlug'
@@ -22,7 +22,7 @@ function Features(state) {
                                 category: state.features[0].attributes.post.category_id
                             }
                         }} > 
-                            <img src={leftFeature["image"]} className="feature-images__small" alt="left-image"/>
+                            <img src={leftFeature["image"]} className="feature-images__small" alt=""/>
                             <h2>{leftFeature["title"]}</h2>
                             <p>{leftFeature['author']} &nbsp; {moment.parseZone(leftFeature['created_at']).format("MMMM DD, YYYY")}</p>
                         </Link>
@@ -34,7 +34,7 @@ function Features(state) {
                                 category: state.features[1].attributes.post.category_id
                             }
                         }} > 
-                        <img src={mainFeature["image"]} className="feature-images__small" alt="main-image"/>
+                        <img src={mainFeature["image"]} className="feature-images__small" alt=""/>
                             <h2>{mainFeature["title"]}</h2>
                             <p>{mainFeature['author']} &nbsp; {moment.parseZone(mainFeature['created_at']).format("MMMM DD, YYYY")}</p>
                         </Link>
@@ -46,7 +46,7 @@ function Features(state) {
                                 category: state.features[2].attributes.post.category_id
                             }
                         }} > 
-                            <img src={rightFeature["image"]} className="feature-images__small" alt="right-image"/>
+                            <img src={rightFeature["image"]} className="feature-images__small" alt=""/>
                             <h2>{rightFeature["title"]}</h2>
                             <p>{rightFeature['author']} &nbsp; {moment.parseZone(rightFeature['created_at']).format("MMMM DD, YYYY")}</p>
                         </Link>
