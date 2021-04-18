@@ -686,8 +686,8 @@ body {
 
     /* week three */
     .linksBarWeekThree-container {
-        visibility: visible;
-        display: contents;
+        /* visibility: visible;
+        display: contents; */
         text-align: justify;
         color: black;
 
@@ -794,7 +794,7 @@ body {
     /* week three */
 
     .linksBarWeekThree-container {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .linksBarWeekThree-links {
@@ -804,6 +804,13 @@ body {
 
     .linksBarWeekThree-Top {
         /* font-size: 0.806em; */
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .linksBarWeekThree-Middle {
         margin-bottom: 1em;
         display: flex;
         flex-direction: row;
@@ -822,7 +829,7 @@ body {
 
     .linksBar-links {
         margin-bottom: 2em;
-        font-size: 1em;
+        font-size: .89em;
     }
 
     .linksBar-Top {
@@ -4422,5 +4429,13 @@ body {
 
 .tox.tox-tinymce{
     margin-left: -6em;
-    width: 80em;
+
+    /* width: 80em; */
+    font-family: europaRegular;
+    margin-top: 1em;
 }
+
+.pointcpForm .tox-tinymce{
+    margin-left: 0;
+}
+
