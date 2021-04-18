@@ -122,8 +122,9 @@ class PointcpInput extends React.Component {
                 initialValue="<p>This is the initial content of the editor</p>"
                 init={{
                   selector: 'textarea',
-                  height: 500,
-                  menubar: 'insert',
+                  width: 614,
+                  height: 800,
+                  menubar: ['insert', 'edit'],
                   default_link_target: '_blank',
                   image_title: true,
                   image_caption: true,
@@ -134,9 +135,10 @@ class PointcpInput extends React.Component {
                     'image',
                     'media',
                     'link',
-                    "imagetools"
+                    "imagetools",
+                    'paste'
                   ],
-                  toolbar: 'undo redo | styleselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help '
+                  toolbar: 'undo redo | styleselect | paste | pastetext | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help '
                 }}
                 onEditorChange={this.handleEditorOneChange}
               />
@@ -162,8 +164,9 @@ class PointcpInput extends React.Component {
                 initialValue="<p>This is the initial content of the editor</p>"
                 init={{
                   selector: 'textarea',
-                  height: 500,
-                  menubar: 'insert',
+                  width: 597,
+                  height: 800,
+                  menubar: ['insert', 'edit'],
                   default_link_target: '_blank',
                   image_title: true,
                   image_caption: true,
@@ -175,8 +178,9 @@ class PointcpInput extends React.Component {
                     'media',
                     'link',
                     "imagetools",
+                    'paste'
                   ],
-                  toolbar: 'undo redo | styleselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help '
+                  toolbar: 'undo redo | styleselect | paste | pastetext | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help '
                 }}
                 onEditorChange={this.handleEditorTwoChange}
               />

@@ -164,9 +164,10 @@ class PointcpEditForm extends React.Component {
                                     "media",
                                     "link",
                                     "imagetools",
+                                    'paste'
                                 ],
                                 toolbar:
-                                    "undo redo | styleselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help ",
+                                    "undo redo | styleselect | paste | pastetext | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help ",
                             }}
                             onEditorChange={this.handleEditorOneChange}
                         />
@@ -221,9 +222,10 @@ class PointcpEditForm extends React.Component {
                                     "media",
                                     "link",
                                     "imagetools",
+                                    'paste'
                                 ],
                                 toolbar:
-                                    "undo redo | styleselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help ",
+                                    "undo redo | styleselect | paste | pastetext | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help ",
                             }}
                             onEditorChange={this.handleEditorTwoChange}
                         />

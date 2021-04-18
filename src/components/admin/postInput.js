@@ -100,8 +100,9 @@ class PostInput extends React.Component {
                 initialValue="<p>This is the initial content of the editor</p>"
                 init={{
                   selector: 'textarea',
+                  width: 1280,
                   height: 500,
-                  menubar: 'insert',
+                  menubar: ['insert', 'edit'],
                   default_link_target: '_blank',
                   image_title: true,
                   image_caption: true,
@@ -113,9 +114,9 @@ class PostInput extends React.Component {
                     'media',
                     'link',
                     "imagetools",
-                    'preview',
+                    'paste',
                   ],
-                  toolbar: 'undo redo | styleselect | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help | preview'
+                  toolbar: 'undo redo | styleselect | paste | pastetext | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help | preview'
                 }}
                 onEditorChange={this.handleEditorChange}
               />
