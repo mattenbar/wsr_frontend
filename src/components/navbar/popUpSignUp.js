@@ -5,7 +5,7 @@ function popUpSignUp(props) {
     return (
         <div className="popup" id="popup"> 
             <div className="popup__content">
-            <div className="leftpopupleft" ></div>
+                <div className="leftpopupleft" ></div>
                 <div className="popup__left">
                         <h1>Wealth</h1>
                         <h1>Solutions</h1>
