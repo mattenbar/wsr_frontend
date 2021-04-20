@@ -147,7 +147,7 @@ class ArticleClassEditForm extends React.Component {
                                         'paste'
                                     ],
                                     toolbar:
-                                        "undo redo | styleselect | paste | pastetext | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help ",
+                                        "undo redo | styleselect | paste | pastetext | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | preview | help ",
                                 }}
                                 onEditorChange={this.handleEditorChange}
                             />
