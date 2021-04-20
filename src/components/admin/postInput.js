@@ -101,7 +101,7 @@ class PostInput extends React.Component {
                 init={{
                   selector: 'textarea',
                   width: 1280,
-                  height: 500,
+                  height: 800,
                   menubar: ['insert', 'edit'],
                   default_link_target: '_blank',
                   image_title: true,
