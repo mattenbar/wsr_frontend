@@ -130,7 +130,8 @@ class ArticleClassEditForm extends React.Component {
                                 }
                                 init={{
                                     selector: "textarea",
-                                    height: 500,
+                                    width: 1280,
+                                    height: 800,
                                     menubar: "insert",
                                     default_link_target: "_blank",
                                     image_title: true,

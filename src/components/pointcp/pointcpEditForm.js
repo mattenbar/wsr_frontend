@@ -164,10 +164,11 @@ class PointcpEditForm extends React.Component {
                                     "media",
                                     "link",
                                     "imagetools",
-                                    'paste'
+                                    'paste',
+                                    'visualblocks'
                                 ],
                                 toolbar:
-                                    "undo redo | styleselect | paste | pastetext | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help ",
+                                    "undo redo | styleselect | paste | pastetext | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | visualblocks | help ",
                             }}
                             onEditorChange={this.handleEditorOneChange}
                         />
