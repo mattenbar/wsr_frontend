@@ -115,8 +115,9 @@ class PostInput extends React.Component {
                     'link',
                     "imagetools",
                     'paste',
+                    'code'
                   ],
-                  toolbar: 'undo redo | styleselect | paste | pastetext | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help | preview'
+                  toolbar: 'undo redo | styleselect | paste pastetext | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image media | removeformat | help | code | preview'
                 }}
                 onEditorChange={this.handleEditorChange}
               />

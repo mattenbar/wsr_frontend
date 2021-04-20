@@ -131,11 +131,12 @@ class ArticleClassEditForm extends React.Component {
                                 init={{
                                     selector: "textarea",
                                     width: 1280,
-                                    height: 800,
+                                    height: 1280,
                                     menubar: "insert",
                                     default_link_target: "_blank",
                                     image_title: true,
                                     image_caption: true,
+                                    image_advtab: true,
                                     plugins: [
                                         "advlist autolink lists link image charmap print preview anchor",
                                         "searchreplace visualblocks code fullscreen",
@@ -144,10 +145,13 @@ class ArticleClassEditForm extends React.Component {
                                         "media",
                                         "link",
                                         "imagetools",
-                                        'paste'
+                                        'paste',
+                                        'code',
                                     ],
-                                    toolbar:
-                                        "undo redo | styleselect | paste | pastetext | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | media | removeformat | help ",
+                                    
+                                    toolbar: [
+                                        "undo redo | styleselect | paste pastetext | link | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image media | removeformat | preview | code | help "
+                                        ],
                                 }}
                                 onEditorChange={this.handleEditorChange}
                             />
