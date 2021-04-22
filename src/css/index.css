@@ -1468,6 +1468,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .statshots-container {
@@ -1481,6 +1483,31 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
+}
+
+.statshots-container h2 {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.statshots-container h3 {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.statshots-container ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 3em;
 }
 
 /* end statshots */
