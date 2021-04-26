@@ -8,6 +8,9 @@ import { deletePost } from '../../actions/deletePost';
 import { withRouter } from "react-router";
 
 function CapitalConnectionArticle(props) {
+    useEffect(() => {
+        document.title = 'Capital Connections | Wealth Solutions Report';
+    });
 
     const user = useSelector(state => {
         return (state.user.user)

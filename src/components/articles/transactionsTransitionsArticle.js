@@ -8,6 +8,10 @@ import { deletePost } from '../../actions/deletePost';
 import { withRouter } from "react-router";
 
 function TransactionsTransitionsArticle(props) {
+    useEffect(() => {
+        document.title = 'Transactions & Transitions | Wealth Solutions Report';
+    });
+
     const user = useSelector(state => {
         return (state.user.user)
     })

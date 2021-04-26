@@ -8,6 +8,10 @@ import { deletePost } from '../../actions/deletePost';
 import { withRouter } from "react-router";
 
 function BuyItBuildItArticle(props) {
+    useEffect(() => {
+        document.title = 'Buy It Or Build It | Wealth Solutions Report';
+    });
+
     const user = useSelector(state => {
         return (state.user.user)
     })

@@ -4,6 +4,9 @@ import { boardMembers } from './boardMembers';
 import IndBoardMember from './indBoardMember';
 
 class Board extends Component{
+  componentDidMount(){
+    document.title = "Our Board | Wealth Solutions Report";
+  }
 
 boardMembersMapped = () => {
   return boardMembers.map( member => <IndBoardMember

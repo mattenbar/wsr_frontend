@@ -8,6 +8,10 @@ import { deletePost } from '../../actions/deletePost';
 import { withRouter } from "react-router";
 
 function WalletShareArticle(props) {
+    useEffect(() => {
+        document.title = 'Wallet Share | Wealth Solutions Report';
+    });
+
     const user = useSelector(state => {
         return (state.user.user)
     })

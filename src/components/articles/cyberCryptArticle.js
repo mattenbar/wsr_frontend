@@ -8,6 +8,10 @@ import { deletePost } from '../../actions/deletePost';
 import { withRouter } from "react-router";
 
 function CyberCryptArticle(props) {
+    useEffect(() => {
+        document.title = 'Cybercrypt Tales | Wealth Solutions Report';
+    });
+
     const user = useSelector(state => {
         return (state.user.user)
     })

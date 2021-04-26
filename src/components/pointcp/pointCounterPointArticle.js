@@ -12,6 +12,10 @@ import { Link } from "react-router-dom";
 import { voteArticleOne, voteArticleTwo } from "../../actions/pointcp/addVotes";
 
 function PointCounterPointArticle(props) {
+  useEffect(() => {
+    document.title = 'Point-Counterpoint | Wealth Solutions Report';
+  });
+
   const user = useSelector((state) => {
     return state.user.user;
   });

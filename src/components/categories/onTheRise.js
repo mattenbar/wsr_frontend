@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { connect } from "react-redux";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import ArticleHeaders from '../articles/articleHeaders';
 
 function OnTheRise(state, props) {
+    useEffect(() => {
+      document.title = 'On The Rise | Wealth Solutions Report';
+    });
+
     let categoryId = 9
     let backEndCategory = categoryId + 1
 

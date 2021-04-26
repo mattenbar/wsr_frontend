@@ -8,6 +8,10 @@ import { deletePost } from '../../actions/deletePost';
 import { withRouter } from "react-router";
 
 function OnTheRiseArticle(props) {
+    useEffect(() => {
+        document.title = 'On The Rise | Wealth Solutions Report';
+    });
+
     const user = useSelector(state => {
         return (state.user.user)
     })

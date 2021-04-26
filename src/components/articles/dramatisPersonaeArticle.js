@@ -8,6 +8,10 @@ import { deletePost } from '../../actions/deletePost';
 import { withRouter } from "react-router";
 
 function DramatisPersonaeArticle(props) {
+    useEffect(() => {
+        document.title = 'Dramatis Personae | Wealth Solutions Report';
+    });
+
     const user = useSelector(state => {
         return (state.user.user)
     })

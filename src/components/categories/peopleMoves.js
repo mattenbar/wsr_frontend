@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { connect } from "react-redux";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import ArticleHeaders from '../articles/articleHeaders';
 
 function PeopleMoves(state, props) {
+    useEffect(() => {
+      document.title = 'People Moves | Wealth Solutions Report';
+    });
+
     let categoryId = 4
     let backEndCategory = categoryId + 1
 

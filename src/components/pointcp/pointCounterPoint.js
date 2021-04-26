@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { useSelector, useDispatch } from "react-redux";
 import ArticleHeaders from "../articles/articleHeaders";
 import { voteArticleOne, voteArticleTwo } from "../../actions/pointcp/addVotes";
@@ -10,6 +10,10 @@ import { deletePointcp } from "../../actions/pointcp/deletePointcp";
 import { Link } from "react-router-dom";
 
 function PointCounterPoint(props) {
+    useEffect(() => {
+        document.title = 'Point-Counterpoint | Wealth Solutions Report';
+    });
+
     const [inEditMode1, setInEditMode1] = useState(false);
     const [inEditMode2, setInEditMode2] = useState(false);
 

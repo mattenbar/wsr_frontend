@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 function Statshots() {
+  useEffect(() => {
+    document.title = 'Statshots | Wealth Solutions Report';
+  });
 
   return (
     <div className="board">

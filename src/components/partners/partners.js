@@ -1,6 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
-function partners(props) {
+function Partners(props) {
+    useEffect(() => {
+      document.title = 'Partners | Wealth Solutions Report';
+    });
+
     return (
         <div className="board">
             <div className="board-header">
@@ -36,4 +40,4 @@ function partners(props) {
     );
 }
 
-export default partners;
+export default Partners;

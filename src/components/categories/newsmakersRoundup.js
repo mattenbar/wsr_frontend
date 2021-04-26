@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { connect } from "react-redux";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import ArticleHeaders from '../articles/articleHeaders';
 
 function NewsmakersRoundup(state, props) {
+    useEffect(() => {
+      document.title = 'Newsmakers Roundup | Wealth Solutions Report';
+    });
+
     let categoryId = 12
     let backEndCategory = categoryId + 1
 
