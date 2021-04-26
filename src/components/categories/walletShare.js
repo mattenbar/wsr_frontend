@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { connect } from "react-redux";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import ArticleHeaders from '../articles/articleHeaders';
 
 function WalletShare(state, props) {
+    useEffect(() => {
+      document.title = 'Wallet Share | Wealth Solutions Report';
+    });
+
     let categoryId = 7
     let backEndCategory = categoryId + 1
 

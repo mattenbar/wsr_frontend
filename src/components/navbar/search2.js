@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useSelector } from 'react-redux';
 import {GetSlug} from '../../actions/getSlug'
 import {Link} from 'react-router-dom'
 import moment from "moment";
 
 function Search2(props) {
+    useEffect(() => {
+      document.title = 'Search | Wealth Solutions Report';
+    });
 
     const storeProps = useSelector(state => {
         return state

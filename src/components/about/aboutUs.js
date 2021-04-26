@@ -1,6 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
-function aboutUs(props) {
+function AboutUs(props) {
+    useEffect(() => {
+      document.title = 'About Us | Wealth Solutions Report';
+    });
+
     return (
         <div className="board">
         <div className="board-header">
@@ -18,4 +22,4 @@ function aboutUs(props) {
     );
 }
 
-export default aboutUs;
+export default AboutUs;

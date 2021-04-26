@@ -8,6 +8,10 @@ import { deletePost } from '../../actions/deletePost';
 import { withRouter } from "react-router";
 
 function NewsmakersRoundupArticle(props) {
+    useEffect(() => {
+        document.title = 'Newsmakers Roundup | Wealth Solutions Report';
+    });
+
     const user = useSelector(state => {
         return (state.user.user)
     })

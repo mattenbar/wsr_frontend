@@ -8,6 +8,10 @@ import { deletePost } from '../../actions/deletePost';
 import { withRouter } from "react-router";
 
 function ShoutOutArticle(props) {
+    useEffect(() => {
+        document.title = 'Shout Outs And Put Downs | Wealth Solutions Report';
+    });
+
     const user = useSelector(state => {
         return (state.user.user)
     })

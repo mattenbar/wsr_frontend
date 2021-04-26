@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import PostInput from './postInput'
 import PointcpInput from './pointcpInput'
 import InputFeatures from './inputFeatures'
@@ -8,6 +8,9 @@ import {useSelector} from 'react-redux'
 
 
 function Admin(props) {
+  useEffect(() => {
+    document.title = 'Admin | Wealth Solutions Report';
+  });
 
   const admin = useSelector(state=>{
     return state.user.user.admin

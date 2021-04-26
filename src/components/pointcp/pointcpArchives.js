@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useSelector} from 'react-redux';
 import ArticleHeaders from '../articles/articleHeaders';
 import { Link } from 'react-router-dom';
 import moment from "moment";
 
 function PointcpArchives(props) {
+    useEffect(() => {
+      document.title = 'Point-Counterpoint Archives | Wealth Solutions Report';
+    });
 
     const pointcpArticles = useSelector(state => {
         return (state.pcps.pointCPPosts)

@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { connect } from "react-redux";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import ArticleHeaders from '../articles/articleHeaders';
 
 function DramatisPersonae(state, props) {
+    useEffect(() => {
+      document.title = 'Dramatis Personae | Wealth Solutions Report';
+    });
+
     let categoryId = 11
     let backEndCategory = categoryId + 1
 

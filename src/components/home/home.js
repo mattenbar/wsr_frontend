@@ -23,6 +23,10 @@ import ThisIssue from './thisIssue';
 import LastIssue from './lastIssue';
 
 class Home extends Component {
+  componentDidMount(){
+    document.title = "Wealth Solutions Report";
+  }
+
   render(){
 
     return(

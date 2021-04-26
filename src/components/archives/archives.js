@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { connect } from "react-redux";
 import { GetSlug } from "../../actions/getSlug";
 import { Link } from "react-router-dom";
 import moment from "moment";
 
-function archives(state) {
+function Archives(state) {
+    useEffect(() => {
+      document.title = 'Archives | Wealth Solutions Report';
+    });
 
     // why doesn't this always work? -->
     // let reversedPosts = state.posts.reverse()
@@ -53,4 +56,4 @@ function mSTP(state) {
     };
 }
 
-export default connect(mSTP)(archives);
+export default connect(mSTP)(Archives);

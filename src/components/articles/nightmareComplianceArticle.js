@@ -8,6 +8,10 @@ import { deletePost } from '../../actions/deletePost';
 import { withRouter } from "react-router";
 
 function NightmareComplianceArticle(props) {
+    useEffect(() => {
+        document.title = 'Nightmare On Compliance St | Wealth Solutions Report';
+    });
+
     const user = useSelector(state => {
         return (state.user.user)
     })

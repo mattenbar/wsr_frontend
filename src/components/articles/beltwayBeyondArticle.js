@@ -8,6 +8,10 @@ import { deletePost } from '../../actions/deletePost';
 import { withRouter } from "react-router";
 
 function BeltwayBeyondArticle(props) {
+    useEffect(() => {
+        document.title = 'Beltway And Beyond | Wealth Solutions Report';
+    });
+
     const user = useSelector(state => {
         return (state.user.user)
     })

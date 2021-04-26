@@ -8,6 +8,10 @@ import { deletePost } from '../../actions/deletePost';
 import { withRouter } from "react-router";
 
 function BizarreBazaarArticle(props) {
+    useEffect(() => {
+        document.title = 'Bizarre Industry Bazaar | Wealth Solutions Report';
+    });
+
     const user = useSelector(state => {
         return (state.user.user)
     })

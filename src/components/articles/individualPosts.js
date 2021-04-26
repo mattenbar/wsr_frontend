@@ -7,6 +7,10 @@ import ArticleEditForm from './articleEditForm';
 import { deletePost } from '../../actions/deletePost';
 
 function IndivualPosts(props) {
+    useEffect(() => {
+        document.title = 'Post | Wealth Solutions Report';
+    });
+
     const user = useSelector(state => {
         return (state.user.user)
     })

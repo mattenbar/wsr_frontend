@@ -1,6 +1,10 @@
-import React from "react";
+import React, {useEffect} from "react";
 
-function contact(props) {
+function Contact(props) {
+    useEffect(() => {
+        document.title = 'Contact Us | Wealth Solutions Report';
+    });
+
     return (
         <div className="board">
             <div className="board-header">
@@ -39,4 +43,4 @@ function contact(props) {
     );
 }
 
-export default contact;
+export default Contact;
