@@ -590,7 +590,7 @@ function articleHeaders(props) {
                               <h1>UPMARKET</h1>
                           </Link>
                           <h4 className="tagline">
-                              How to succeed in serving HNW and UHNW individuals and families
+                              Strategies and insights for aggressively growing your business
                           </h4>
                           <h5>
                               How to grow your business more effectively
