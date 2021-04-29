@@ -194,7 +194,7 @@ function carousel(props) {
                 {/* week 4 */}
                 
                 
-                {/* <div className="carousel-wrapper" >
+                 {/*<div className="carousel-wrapper" >
                     <div className="box">
                         <Link to="/transactions-And-transitions" className="crsltop">
                             <img src="/carouselImages/Transactions&Trans.png" className="top-carousel-model" alt=""/>
@@ -209,7 +209,7 @@ function carousel(props) {
                             <h2>DRAMATIS PERSONAE</h2>
                         </Link>
                     </div>
-                </div>
+                </div>*/}
                 <div className="carousel-wrapper" >
                     <div className="box">
                         <Link to="/CyberCrypt-Tales" className="crsltop">
@@ -218,7 +218,7 @@ function carousel(props) {
                         </Link>
                     </div>
                 </div>
-                <div className="carousel-wrapper" >
+                {/*<div className="carousel-wrapper" >
                     <div className="box">
                         <Link to="/People-Moves" className="crsltop">
                             <img src="/carouselImages/PeopleMoves.png" className="top-carousel-model" alt=""/>
@@ -241,7 +241,7 @@ function carousel(props) {
                             <h2>CAST & CREW</h2>
                         </Link>
                     </div>
-                </div> */}
+                </div>*/}
 
                 
             </Slider>

@@ -37,7 +37,8 @@ class LinksBarWeekTwo extends Component {
 
             <div className="linksBarWeekTwo-Bottom">
 
-                <Link to="/Beltway-And-Beyond">BELTWAY & BEYOND</Link>
+                <Link to="/Beltway-And-Beyond">BELTWAY & BEYOND</Link>&nbsp; | &nbsp;
+                <Link to="/CyberCrypt-Tales">CYBERCRYPT TALES</Link>
 
             </div>
 
