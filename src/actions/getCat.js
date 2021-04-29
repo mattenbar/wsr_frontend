@@ -31,23 +31,23 @@ export function GetCat(post) {
     case 3:
       return (
         <Link
-        className="get-cat"
-          to={{
-            pathname: "/Beltway-And-Beyond",
-          }}
-        >
-          <h2>Beltway And Beyond</h2>
-        </Link>
-      );
-    case 4:
-      return (
-        <Link
-        className="get-cat"
+          className="get-cat"
           to={{
             pathname: "/Shout-Outs-And-Put-Downs",
           }}
         >
           <h2>Shout Outs & Put Downs</h2>
+        </Link>
+      );
+    case 4:
+      return (
+        <Link
+          className="get-cat"
+          to={{
+            pathname: "/Beltway-And-Beyond",
+          }}
+        >
+          <h2>Beltway And Beyond</h2>
         </Link>
       );
     case 5:
@@ -102,7 +102,7 @@ export function GetCat(post) {
             pathname: "/CyberCrypt-Tales",
           }}
         >
-          <h2>Nightmare On Compliance St</h2>
+          <h2>Cybercrypt Tales</h2>
         </Link>
       );
     case 10:
