@@ -11,39 +11,26 @@ function Statshots() {
             <h1>STATSHOTS</h1>
         </div>
         <div className="statshots-container">
-            <h2>Financial Advisors’ ESG Perspectives</h2>
-            <h3>WSJ Survey of Financial Advisor Readers:  Consensus on climate change’s reality and its risks, but not much else</h3>
+            <h2>MOST FREQUENT FINRA ARBITRATION CLAIMS</h2>
+            <h3>Pandemic Or Not, FINRA Arbitration Claims Proceed – Here’s What To Look Out For</h3>
 
             <p>
-              From megafires to polar vortexes to increasingly damaging hurricanes, climate change has unquestionably catapulted to top of mind status for many Americans.
+              As William Shakespeare wrote in Hamlet, “When sorrows come, they come not single spies but in battalions.”
             </p>
             <p>
-              With the intensification of climate change-driven disasters has come a calibration of opinions across the industry on ESG-related issues.
+              Or as one of my favorite uncles used to say, “You’ve got dumpster fires and camp fires – From the outside looking in, they’re obviously different.  But if you’re actually in the flames, you’re gonna get burned either way.”
             </p>
             <p>
-              For this week’s Earth Day issue, WSJ conducted a survey of our financial advisor readers to provide an update of where the wealth management space stands today on ESG, and the results are…interesting:
-              <ul>
-                <li>The vast majority of financial advisors agree that climate change is real.</li>
-                <li>A very clear majority agree that climate change represents a significant future economic risk to our country and investors.</li>
-                <li>Similarly, the overwhelming majority of financial advisors believe traditional mutual fund and ETF product structures are capable of delivering everything their clients need by way of ESG investing.</li>
-              </ul>
-             </p>
-            <p>
-              However, there is no clear consensus on whether more ESG-focused investment solutions can help address climate change, or if mass affluent retail investors currently enjoy sufficient access to high quality ESG investments.
+              For wealth management firms and their financial advisors, FINRA arbitration claims have proven to be one of the few consistent features of an otherwise fast-changing industry, especially during the pandemic.
             </p>
             <p>
-              Similarly, our survey respondents on whether the wealth management industry would be helped by more real asset investment opportunities in renewable energy in the form of retail alts that are accessible to everyday investors.
+              As we move into the second half of 2021, it’s worth reviewing the most frequent types of claims to ensure you and your business are as well-prepared as possible for any kinds of compliance supervision fires that might be kindling – Whether they are camp fires or dumpster fires.
             </p>
             <p>
-              Ultimately, these survey results potentially speak to a perceived lack of true impact that the present landscape of ESG investing solutions for the masses offer – And some confusion about how to better align ESG goals with investing that truly drives impact and value for investors.
+              Sander Ressler is Managing Director of <a href="https://eeoutsourcing.com/" target="_blank">Essential Edge Compliance Outsourcing Services, LLC</a>
             </p>
-            <img src="/statshots/Stat Shot_ PieChart.jpg" alt="statshot" />
-            <p>
-              <strong>
-                James Miller is Contributing Editor & Research Analyst at Wealth Solutions Report.  He can be reached via email at <a href="mailto:ContributingEd@wealthsolutionsreport.com">ContributingEd@wealthsolutionsreport.com</a>
-              </strong>
-            </p>
-          </div>
+            <img src="/statshots/Stat Shot_ FinraLogo.jpg" alt="statshot" />
+        </div>
 
 
     </div>
