@@ -21,7 +21,6 @@ class LinksBarWeekTwo extends Component {
 
             </div>
 
-
             <div className="linksBarWeekTwo-Middle">
 
                 <Link to="/NewsMakers-Roundup">NEWSMAKERS ROUNDUP</Link>&nbsp; | &nbsp;
@@ -32,6 +31,13 @@ class LinksBarWeekTwo extends Component {
                 <Link to="/Upmarket">UPMARKET</Link>&nbsp; | &nbsp;
                 <Link to="/Words-In-Edgewise">WORDS IN EDGEWISE</Link>&nbsp; | &nbsp;
                 <Link to="/Wallet-Share">WALLET SHARE</Link>
+
+            </div>
+
+
+            <div className="linksBarWeekTwo-Bottom">
+
+                <Link to="/Beltway-And-Beyond">BELTWAY & BEYOND</Link>
 
             </div>
 

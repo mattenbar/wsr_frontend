@@ -164,14 +164,14 @@ function carousel(props) {
                 {/* week 3 */}
 
                 
-                {/* <div className="carousel-wrapper" >
+                 {/*<div className="carousel-wrapper" >
                     <div className="box">
                         <Link to="/Nightmare-On-Compliance-St" className="crsltop">
                             <img src="/carouselImages/NightmareOnCompSt.png" className="top-carousel-model" alt=""/>
                             <h2>NIGHTMARE ON COMPLIANCE ST</h2>
                         </Link>
                     </div>
-                </div>
+                </div>*/}
                 <div className="carousel-wrapper" >
                     <div className="box">
                         <Link to="/Beltway-And-Beyond" className="crsltop">
@@ -181,14 +181,14 @@ function carousel(props) {
                         </Link>
                     </div>
                 </div>
-                <div className="carousel-wrapper" >
+                {/*<div className="carousel-wrapper" >
                     <div className="box">
                         <Link to="/Buy-It-Or-Build-It" className="crsltop">
                             <img src="/carouselImages/BuyItOrBuildIt.png" className="top-carousel-model" alt=""/>
                             <h2>BUY IT OR BUILD IT?</h2>
                         </Link>
                     </div>
-                </div> */}
+                </div>*/}
 
 
                 {/* week 4 */}
