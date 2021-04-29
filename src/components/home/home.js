@@ -47,7 +47,7 @@ class Home extends Component {
           {/* to change amount of posts in carousel change number below(keep it negative for most recent) */}
           {this.props.posts.length > 0 && 
           <>
-            <ThisIssue posts={this.props.posts.slice(-9)} />
+            <ThisIssue posts={this.props.posts.slice(-4)} />
             <LastIssue posts={this.props.posts.slice(-14, -9)} />
           </>
         }

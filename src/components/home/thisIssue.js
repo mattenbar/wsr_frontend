@@ -88,42 +88,42 @@ function thisIssue(state) {
         <div className="ticrsl-move-left">
           <Slider {...settings}>
             {cItems}
-            <div key={mostRecentPcp.attributes.title} className="ticrslwrapper">
-              <div className="ti-box">
-                <Link
-                  to={{
-                    pathname: `/Point-Counterpoint/${mostRecentPcp.id}`,
-                    state: {
-                      pointcp_id: mostRecentPcp.id,
-                    },
-                  }}
-                  className="ti-a"
-                >
-                  {/* model */}
-                  
-                  <img
-                    src="/carouselImages/PointCounterPoint.jpg"
-                    className="circular-image"
-                    alt=""
-                  />
-                  {/* header */}
-                  <h2>{mostRecentPcp.attributes.topic}</h2>
-                  <p>
-                    with {mostRecentPcp.attributes.authorOne} VS.{" "}
-                    {mostRecentPcp.attributes.authorTwo}
-                  </p>
-                  <Link
-                  className="get-cat"
-                    
-                    to={{
-                      pathname: `/Point-Counterpoint`,
-                    }}
-                  >
-                    <h2>Point CounterPoint</h2>
-                  </Link>
-                </Link>
-              </div>
-            </div>
+            {/*<div key={mostRecentPcp.attributes.title} className="ticrslwrapper">*/}
+            {/*  <div className="ti-box">*/}
+            {/*    <Link*/}
+            {/*      to={{*/}
+            {/*        pathname: `/Point-Counterpoint/${mostRecentPcp.id}`,*/}
+            {/*        state: {*/}
+            {/*          pointcp_id: mostRecentPcp.id,*/}
+            {/*        },*/}
+            {/*      }}*/}
+            {/*      className="ti-a"*/}
+            {/*    >*/}
+            {/*      /!* model *!/*/}
+            {/*      */}
+            {/*      <img*/}
+            {/*        src="/carouselImages/PointCounterPoint.jpg"*/}
+            {/*        className="circular-image"*/}
+            {/*        alt=""*/}
+            {/*      />*/}
+            {/*      /!* header *!/*/}
+            {/*      <h2>{mostRecentPcp.attributes.topic}</h2>*/}
+            {/*      <p>*/}
+            {/*        with {mostRecentPcp.attributes.authorOne} VS.{" "}*/}
+            {/*        {mostRecentPcp.attributes.authorTwo}*/}
+            {/*      </p>*/}
+            {/*      <Link*/}
+            {/*      className="get-cat"*/}
+            {/*        */}
+            {/*        to={{*/}
+            {/*          pathname: `/Point-Counterpoint`,*/}
+            {/*        }}*/}
+            {/*      >*/}
+            {/*        <h2>Point CounterPoint</h2>*/}
+            {/*      </Link>*/}
+            {/*    </Link>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
           </Slider>
         </div>
       </div>

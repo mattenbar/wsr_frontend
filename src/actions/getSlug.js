@@ -7,10 +7,10 @@ export function GetSlug(post){
             return '/Capital-Connections'
         case 2:  
             return '/The-Digital-Domain'
-        case 3:  
-            return '/Beltway-And-Beyond'
-        case 4:  
+        case 3:
             return '/Shout-Outs-And-Put-Downs'
+        case 4:
+            return 'Beltway-And-Beyond'
         case 5:  
             return '/People-Moves'
         case 6:  
