@@ -84,7 +84,7 @@ function thisIssue(state) {
 
     return (
       <div className="ticrsl">
-        <h1>THIS ISSUE</h1>
+        <h1>THIS WEEK</h1>
         <div className="ticrsl-move-left">
           <Slider {...settings}>
             {cItems}
