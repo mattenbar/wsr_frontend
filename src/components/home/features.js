@@ -13,7 +13,7 @@ function Features(state) {
 
         return (
             <div className="features">
-                <h1>TODAY'S TOP FEATURES</h1>
+                <h1>TOP FEATURES</h1>
                 <div className="feature-wrapper" >
                     <div className="small-square">
                         <Link to={{    

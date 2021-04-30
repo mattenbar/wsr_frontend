@@ -85,7 +85,7 @@ function lastIssue(state) {
     return (
       <div className="ticrsl">
         <div className="ticrsl-move-left">
-          <h1>LAST ISSUE</h1>
+          <h1>LAST WEEK</h1>
           <Slider {...settings}>
             {cItems}
             <div key={mostRecentPcp.attributes.title} className="ticrslwrapper">
@@ -152,7 +152,7 @@ function lastIssue(state) {
       
       <div className="ticrsl">
         <div className="ticrsl-move-left">
-          <h1>LAST ISSUE</h1>
+          <h1>LAST WEEK</h1>
           <Slider {...settings}>
             {cItems}
           </Slider>
