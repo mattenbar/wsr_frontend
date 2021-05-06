@@ -11,25 +11,38 @@ function Statshots() {
             <h1>STATSHOTS</h1>
         </div>
         <div className="statshots-container">
-            <h2>MOST FREQUENT FINRA ARBITRATION CLAIMS</h2>
-            <h3>Pandemic Or Not, FINRA Arbitration Claims Proceed – Here’s What To Look Out For</h3>
+            <h2>Healthcare Costs for Independent Financial Advisors – 5 Most Expensive and Least Expensive States</h2>
+            <h3>While growth opportunities are significant for independent financial advisors, one of the single largest overhead items for any independent advisor continues to be healthcare for the professional, his or her family members and full-time staff, if any.
+              <br/><br/>Thinking of going independent? Bear in mind that the state you live in will determine how costly securing your own healthcare insurance could be.</h3>
 
             <p>
-              As William Shakespeare wrote in Hamlet, “When sorrows come, they come not single spies but in battalions.”
+              TOP 5 MOST EXPENSIVE STATES FOR ADVISORS:
+              <ol>
+                <li>New York *Northern California</li>
+                <li>New Jersey</li>
+                <li>Massachusetts</li>
+                <li>Texas</li>
+                <li>Florida</li>
+              </ol>
             </p>
+
             <p>
-              Or as one of my favorite uncles used to say, “You’ve got dumpster fires and camp fires – From the outside looking in, they’re obviously different.  But if you’re actually in the flames, you’re gonna get burned either way.”
+              TOP 5 LEAST EXPENSIVE STATES FOR ADVISORS:
+              <ol>
+                <li>Hawaii</li>
+                <li>Alabama</li>
+                <li>Michigan</li>
+                <li>Idaho</li>
+                <li>West Virginia</li>
+              </ol>
             </p>
-            <p>
-              For wealth management firms and their financial advisors, FINRA arbitration claims have proven to be one of the few consistent features of an otherwise fast-changing industry, especially during the pandemic.
-            </p>
-            <p>
-              As we move into the second half of 2021, it’s worth reviewing the most frequent types of claims to ensure you and your business are as well-prepared as possible for any kinds of compliance supervision fires that might be kindling – Whether they are camp fires or dumpster fires.
-            </p>
-            <p>
-              Sander Ressler is Managing Director of <a href="https://eeoutsourcing.com/" target="_blank">Essential Edge Compliance Outsourcing Services, LLC</a>
-            </p>
-            <img src="/statshots/Stat Shot_ FinraLogo.jpg" alt="statshot" />
+
+            <p>Source: FSI CoveredAdviser</p>
+            <p>*We get it. “Northern California” isn’t a state.</p>
+            <p>But due to low costs in Southern California, overall California numbers are not a helpful gauge against reality.</p>
+            <p>Northern California, along with New York, are the two most expensive areas of the country for independent financial advisors who need to purchase their own healthcare insurance.</p>
+
+            <img src="/statshots/Stat Shot_ Advise Expense.jpg" alt="statshot" />
         </div>
 
 
