@@ -1502,9 +1502,11 @@ body {
     margin-top: 1em;
     margin-bottom: 1.5em;
     text-align: center;
+    font-weight: bold;
+    font-style: italic;
 }
 
-.statshots-container ul {
+.statshots-container ul,ol {
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 3em;
