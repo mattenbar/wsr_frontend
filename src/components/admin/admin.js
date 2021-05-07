@@ -5,6 +5,7 @@ import InputFeatures from './inputFeatures'
 import InputAd from './inputAd'
 import InputShowads from './inputShowads'
 import {useSelector} from 'react-redux'
+import StatshotsInput from "./statshotsInput";
 
 
 function Admin(props) {
@@ -22,6 +23,8 @@ function Admin(props) {
         <PostInput posts={props.posts} categories={props.categories}/>
         <br/><br/>
         <PointcpInput />
+        <br/><br/>
+        <StatshotsInput />
         <br/><br/>
         <InputFeatures posts={props.posts} features={props.features}/>
         <br/><br/>
