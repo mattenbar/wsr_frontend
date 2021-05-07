@@ -7,6 +7,7 @@ import userReducer from './userReducer';
 import pointcpReducer from './pointcpReducer'
 import adsReducer from './adsReducer'
 import showadsReducer from './showadsReducer'
+import statshotsReducer from './statshotReducer'
 
 
 export default combineReducers({
@@ -17,5 +18,6 @@ export default combineReducers({
   user: userReducer,
   pcps: pointcpReducer,
   ads: adsReducer,
-  showads: showadsReducer
+  showads: showadsReducer,
+  statshots: statshotsReducer,
 })

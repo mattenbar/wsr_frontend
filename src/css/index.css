@@ -1463,53 +1463,27 @@ body {
 
 /* statshots */
 
-.statshots-container img {
+.statshots-container {
     width: 75%;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    white-space: pre-line;
+}
+
+.statshots-container img {
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
     margin-bottom: 1em;
-}
-
-.statshots-container {
-    width: 100%;
-    text-align: justify;
-}
-
-.statshots-container p {
-    width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-}
-
-.statshots-container h2 {
-    width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    text-align: center;
-}
-
-.statshots-container h3 {
-    width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    margin-bottom: 1.5em;
-    text-align: center;
-    font-weight: bold;
-    font-style: italic;
 }
 
 .statshots-container ul,ol {
-    margin-top: 1em;
-    margin-bottom: 1em;
     margin-left: 3em;
+    white-space: initial;
 }
 
 /* end statshots */
