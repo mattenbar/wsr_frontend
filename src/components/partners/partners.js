@@ -27,9 +27,9 @@ function Partners(props) {
                 
                 <img src="/PartnersImages/Entreda.jpg" alt="partner"  />
                 
-                <img src="/PartnersImages/FSI.jpg" alt="partner"  />
+                <img src="/PartnersImages/FSI-New.png" alt="partner"  />
                 
-                <img src="/PartnersImages/MeritLIfeLogo.jpg" alt="partner"  />
+                <img src="/PartnersImages/MeritLIfeLogo-New.jpg" alt="partner"  />
                 
                 <img src="/PartnersImages/Oysterllc.jpg" alt="partner"  />
                 
